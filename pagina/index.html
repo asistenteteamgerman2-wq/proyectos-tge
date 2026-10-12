@@ -1537,7 +1537,7 @@ Responde SOLO con JSON: {"imagenes":[{"n":0,"tipo":"foto","texto":[{"x":0,"y":0,
     const mc = T.match(/(\d{1,2})\s*(?:cuotas|meses)/i); if (mc && plan.cuotasPct) plan.meses = Number(mc[1]);
     const cnt = re => (L.match(re) || []).length;
     const tipoC = [["Villa", cnt(/villas?\b/g)], ["Penthouse", cnt(/penthouses?/g)], ["Townhouse", cnt(/townhouses?/g)], ["Casa", cnt(/\bcasas?\b/g)], ["Solar", cnt(/\b(solares|lotes?)\b/g)], ["Apartamento", cnt(/apartamentos?|aptos?\b|apartments?|condos?/g) + 1]].sort((a, b) => b[1] - a[1]);
-    return clean({ nombre, tipo: tipoC[0][0], zona, direccion: "", estado, entrega, frase: "", descripcion, tipologias, parqueos, amenidades, porque: [], cercanias: [], faq: [], plan });
+    return clean({ nombre: cleanName(nombre), tipo: tipoC[0][0], zona, direccion: "", estado, entrega, frase: "", descripcion, tipologias, parqueos, amenidades, porque: [], cercanias: [], faq: [], plan });
   }
   // Sin Claude no se pueden quitar letras: se quedan las fotos más grandes y la más ancha va de portada.
   function localPhotos(photos) {
@@ -1548,13 +1548,19 @@ Responde SOLO con JSON: {"imagenes":[{"n":0,"tipo":"foto","texto":[{"x":0,"y":0,
   }
   const PROMPT = `Eres asistente del Team Germanescarfullery (RE/MAX Metropolitana, República Dominicana). Lee el brochure inmobiliario de abajo y responde SOLO con un objeto JSON con esta forma exacta:
 {"nombre":"","tipo":"Apartamento|Penthouse|Casa|Villa|Townhouse|Solar|Local comercial|Oficina","zona":"barrio y ciudad","direccion":"","estado":"En planos|En construcción|Terminado","entrega":"mes y año o vacío","frase":"frase comercial de máximo 9 palabras","descripcion":"3 párrafos cortos separados por \\n","tipologias":[{"hab":2,"banos":2,"m2":95,"desde":185000}],"parqueos":0,"amenidades":["..."],"porque":[{"titulo":"","texto":""}],"cercanias":[{"lugar":"","tiempo":"5 min"}],"faq":[{"p":"","r":""}],"plan":{"separacion":0,"firmaPct":0,"cuotasPct":0,"meses":0,"entregaPct":0}}
-Reglas: "tipo" es el tipo principal de propiedad que vende el proyecto (si son apartamentos con algunos penthouses, pon "Apartamento"). Usa solo datos del brochure; no inventes cifras, precios, áreas, fechas ni distancias (deja 0, "" o [] si no aparecen). "desde" es el precio mínimo en dólares de ese tipo de unidad; si el precio está en pesos dominicanos pon 0. Una entrada en "tipologias" por cantidad de habitaciones (estudios = 1). "porque": 4 argumentos de venta basados en lo que dice el brochure (ubicación, calidad, rentabilidad, amenidades). "faq": 4 preguntas útiles con respuestas tomadas del brochure. "plan": forma de pago del brochure: "separacion" monto de reserva en US$; "firmaPct" porcentaje total a pagar hasta la firma del contrato (incluye la separación); "cuotasPct" porcentaje en cuotas durante la construcción y "meses" cuántas cuotas; "entregaPct" porcentaje contra entrega. Deja 0 lo que no aparezca.
+Reglas: "tipo" es el tipo principal de propiedad que vende el proyecto (si son apartamentos con algunos penthouses, pon "Apartamento"). Usa solo datos del brochure; no inventes cifras, precios, áreas, fechas ni distancias (deja 0, "" o [] si no aparecen). "desde" es el precio mínimo en dólares de ese tipo de unidad; si el precio está en pesos dominicanos pon 0. Una entrada en "tipologias" por cantidad de habitaciones (estudios = 1); nunca repitas la misma cantidad de habitaciones: si hay varios modelos con las mismas habitaciones, usa el precio y el metraje más bajos. "nombre" es el nombre comercial del proyecto tal como lo anuncia el brochure (nunca el nombre del archivo, de la constructora ni palabras como "Brochure" o "Presentación"); si el brochure no dice el nombre del proyecto, deja "". "porque": 4 argumentos de venta basados en lo que dice el brochure (ubicación, calidad, rentabilidad, amenidades). "faq": 4 preguntas útiles con respuestas tomadas del brochure. "plan": forma de pago del brochure: "separacion" monto de reserva en US$; "firmaPct" porcentaje total a pagar hasta la firma del contrato (incluye la separación); "cuotasPct" porcentaje en cuotas durante la construcción y "meses" cuántas cuotas; "entregaPct" porcentaje contra entrega. Deja 0 lo que no aparezca.
 Estilo de todos los textos: español sencillo, claro y fácil de leer, con un tono elegante y cálido, tratando al lector de usted. Frases cortas (máximo 20 palabras), sin palabras rebuscadas, sin exageraciones ni signos de exclamación, sin mayúsculas innecesarias. Redacta con tus propias palabras y hazlo más bonito que el brochure, pero sin cambiar ningún dato. "descripcion": 3 párrafos de 35 a 60 palabras cada uno (qué es el proyecto, cómo se vive allí, por qué conviene). "porque.texto": una o dos frases, máximo 30 palabras. "faq.r": máximo 40 palabras.`;
+  const cleanName = n => String(n || "").replace(/_+/g, " ").replace(/\((ingl[eé]s|english|espa[nñ]ol|spanish)\)/gi, "").replace(/\s[-–]\s*tipolog[ií]as?\b.*$/i, "")
+    .replace(/^\s*\d+[.)-]\s*/, "").replace(/\bbrochure\b/gi, "").replace(/\s+/g, " ").trim();
+  const oneHab = ts => { const m = new Map(); for (const t of ts) { const o = m.get(t.hab); if (!o) { m.set(t.hab, { ...t }); continue; }
+      if (t.desde > 0 && (!o.desde || t.desde < o.desde)) o.desde = t.desde; if (t.m2 > 0 && (!o.m2 || t.m2 < o.m2)) o.m2 = t.m2; o.banos = Math.max(o.banos || 0, t.banos || 0); }
+    return [...m.values()].sort((a, b) => a.hab - b.hab); };
+  const badName = n => !n || n.length < 3 || /^(presentaci[oó]n|promotora|combinar|copia|scan|escaneo|documento|untitled|sin t[ií]tulo|img|whatsapp)/i.test(n) || /\b\d{1,2} de [a-z]+ de \d{4}\b/i.test(n) || /^\d+$/.test(n);
   const clean = d => ({
-    nombre: String(d.nombre || "").slice(0, 80), tipo: TIPOS_P[d.tipo] ? d.tipo : "Apartamento", zona: String(d.zona || "").slice(0, 80), direccion: String(d.direccion || "").slice(0, 160),
+    nombre: cleanName(d.nombre).slice(0, 80), tipo: TIPOS_P[d.tipo] ? d.tipo : "Apartamento", zona: String(d.zona || "").slice(0, 80), direccion: String(d.direccion || "").slice(0, 160),
     estado: ["En planos", "En construcción", "Terminado"].includes(d.estado) ? d.estado : "En planos",
     entrega: String(d.entrega || "").slice(0, 40), frase: String(d.frase || "").slice(0, 90), descripcion: String(d.descripcion || "").slice(0, 1800),
-    tipologias: (Array.isArray(d.tipologias) ? d.tipologias : []).map(t => ({ hab: Math.max(1, Math.min(5, Math.round(Number(t.hab) || 1))), banos: Number(t.banos) || 0, m2: Number(t.m2) || 0, desde: Math.max(0, Number(t.desde) || 0) })).slice(0, 8),
+    tipologias: oneHab((Array.isArray(d.tipologias) ? d.tipologias : []).map(t => ({ hab: Math.max(1, Math.min(5, Math.round(Number(t.hab) || 1))), banos: Number(t.banos) || 0, m2: Number(t.m2) || 0, desde: Math.max(0, Number(t.desde) || 0) }))).slice(0, 8),
     parqueos: Number(d.parqueos) || 0,
     amenidades: (Array.isArray(d.amenidades) ? d.amenidades : []).map(String).filter(Boolean).slice(0, 16),
     porque: (Array.isArray(d.porque) ? d.porque : []).filter(x => x && x.titulo).map(x => ({ titulo: String(x.titulo).slice(0, 60), texto: String(x.texto || "").slice(0, 240) })).slice(0, 4),
@@ -1564,6 +1570,23 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
   });
   const SAMPLE_ERR = { not_granted: "Para leer el brochure, permite que la página use Claude.", rate_limited: "Claude está ocupado. Espera un minuto e intenta de nuevo.", prompt_too_large: "El brochure es demasiado largo. Prueba con una versión más corta.", invalid_json: "Claude no pudo leer bien este brochure. Intenta de nuevo o llena los datos a mano." };
 
+  // Lee el brochure con Claude; si el PDF es solo imágenes y esta vista no puede mandar imágenes, no falla: usa el poco texto que haya o el nombre del archivo.
+  async function askBrochure(text, renderPages, fileName) {
+    const plain = text.replace(/--- Página \d+ ---/g, "").replace(/\s+/g, "");
+    const hint = "\nNombre del archivo: " + fileName;
+    const hard = x => x?.code === "not_granted" || x?.code === "rate_limited";
+    if (plain.length > 300) return { c: clean(await S.sample.json(PROMPT + hint + "\n\nBROCHURE:\n" + text, { modelTier: "default" }) || {}) };
+    const lim = await S.sample.limits().catch(() => null);
+    if (lim?.images) {
+      try { const pgs = await renderPages(); return { c: clean(await S.sample.json(PROMPT + hint + "\n\nEl brochure viene en las imágenes adjuntas.", { modelTier: "default", images: pgs.slice(0, lim.images.maxCount || 4) }) || {}) }; }
+      catch (x) { if (hard(x)) throw x; }
+    }
+    if (plain.length > 40) {
+      try { return { c: clean(await S.sample.json(PROMPT + hint + "\n\nEste brochure casi no trae texto (es mayormente imágenes). Usa lo poco que hay y el nombre del archivo; deja vacío lo que no aparezca.\n\nBROCHURE:\n" + text, { modelTier: "default" }) || {}), partial: true }; }
+      catch (x) { if (hard(x)) throw x; }
+    }
+    return { c: parseBrochureLocal(text, fileName), partial: true };
+  }
   async function readBrochure(file, say) {
     say("Abriendo el brochure…");
     const { text, photos, renderPages } = await readPdf(file);
@@ -1572,16 +1595,8 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
     const blobs = await Promise.all(clean_.map(c => toJpeg(c, 0.85)));
     if (!S.sample) return { c: parseBrochureLocal(text, file.name), blobs, local: true };
     say("Claude está leyendo el brochure…");
-    let data;
-    const textual = text.replace(/--- Página \d+ ---/g, "").replace(/\s+/g, "").length > 300;
-    if (textual) data = await S.sample.json(PROMPT + "\n\nBROCHURE:\n" + text, { modelTier: "default" });
-    else {
-      const lim = await S.sample.limits().catch(() => null);
-      if (!lim?.images) throw { code: "no_text" };
-      const pgs = await renderPages();
-      data = await S.sample.json(PROMPT + "\n\nEl brochure viene en las imágenes adjuntas.", { modelTier: "default", images: pgs.slice(0, lim.images.maxCount || 4) });
-    }
-    return { c: clean(data || {}), blobs };
+    const r = await askBrochure(text, renderPages, file.name);
+    return { c: r.c, blobs, partial: r.partial };
   }
 
   /* ---------- bulk upload ---------- */
@@ -1613,9 +1628,17 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
     S.draft = { extra: pickExtra(c), blobs: [], fotos: [] }; renderGal();
     $("galField").scrollIntoView({ block: "center" });
   }
+  function reviewToForm(f) {
+    const { c, blobs } = f.review, cap = bulk.cap; f.review = null; f.st = "Pasado al formulario para revisar"; f.cls = ""; renderBulk();
+    $("bulkSheet").hidden = true; openForm();
+    fillForm({ ...c, nombre: badName(c.nombre) ? "" : c.nombre, captador: cap.nombre, captadorTel: cap.tel || "" }); $("f-capt").value = cap.nombre; $("f-tel").value = cap.tel || "";
+    S.gal = blobs.map(b => ({ blob: b, url: URL.createObjectURL(b) })); S.draft = { extra: pickExtra(c), blobs, fotos: [] }; renderGal();
+    $("formErr").textContent = "Este brochure no se leyó completo: escribe el nombre del proyecto y revisa precios y metros antes de guardar."; $("f-nombre").focus();
+  }
   function renderBulk() {
     $("bList").replaceChildren(...bulk.files.map(f => h("li", f.hold ? { style: "flex-wrap:wrap" } : {}, h("span", {}, f.file.name), h("span", { class: "st " + (f.cls || "") }, f.st),
-      f.hold && !bulk.running ? h("div", { class: "bacts", style: "flex-basis:100%" }, h("button", { type: "button", class: "pri", onclick: () => holdToForm(f) }, "Agregar fotos"), h("button", { type: "button", onclick: () => holdSave(f) }, "Subir sin fotos")) : null)));
+      f.hold && !bulk.running ? h("div", { class: "bacts", style: "flex-basis:100%" }, h("button", { type: "button", class: "pri", onclick: () => holdToForm(f) }, "Agregar fotos"), h("button", { type: "button", onclick: () => holdSave(f) }, "Subir sin fotos")) : null,
+      f.review && !bulk.running ? h("div", { class: "bacts", style: "flex-basis:100%" }, h("button", { type: "button", class: "pri", onclick: () => reviewToForm(f) }, "Revisar y subir"), h("button", { type: "button", onclick: () => { f.review = null; f.st = "No se subió"; f.cls = ""; renderBulk(); } }, "No subir")) : null)));
     $("bGo").disabled = bulk.running || !bulk.files.some(f => f.st === "En espera");
   }
   let zipReady;
@@ -1662,9 +1685,10 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
       if (bulk.stop) break;
       const say = t => { f.st = t; f.cls = "run"; renderBulk(); };
       try {
-        const { c, blobs } = await readBrochure(f.file, say);
-        const nm = c.nombre || f.file.name.replace(/\.pdf$/i, ""), dp = findDup(nm, null, bulk.done);
+        const { c, blobs, partial } = await readBrochure(f.file, say);
+        const nm = c.nombre || cleanName(f.file.name.replace(/\.pdf$/i, "")), dp = findDup(nm, null, bulk.done, c);
         if (dp) { f.st = "Ya está en la página: " + dp.nombre + " · no se subió otra vez"; f.cls = ""; skip++; renderBulk(); continue; }
+        if (badName(nm) || (partial && !c.descripcion && !priceSig(c))) { f.st = "Revisar antes de subir: no se encontró bien el nombre o los datos del proyecto"; f.cls = "warn"; f.review = { c, blobs }; held++; renderBulk(); continue; }
         if (!blobs.length) { f.st = "Sin fotos · no se subió todavía"; f.cls = "warn"; f.hold = c; held++; renderBulk(); continue; }
         const fotos = [];
         for (let i = 0; i < blobs.length; i++) { say(`Subiendo fotos (${i + 1} de ${blobs.length})…`); fotos.push((await S.assets.upload(blobs[i], { contentType: "image/jpeg" })).id); }
@@ -1672,7 +1696,7 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
         const body = bulkBody(c, f, cap, fotos);
         await S.db.collection("proyectos").doc("p" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7)).set(body);
         bulk.done.push(nm);
-        f.st = "Lista ✓ " + body.nombre + (fotos.length ? ` (${fotos.length} fotos)` : " (sin fotos)"); f.cls = "ok"; ok++;
+        f.st = "Lista ✓ " + body.nombre + (fotos.length ? ` (${fotos.length} fotos)` : " (sin fotos)") + (partial ? " · PDF de imágenes: revisa nombre y precio" : ""); f.cls = partial ? "warn" : "ok"; ok++;
       } catch (x) {
         f.st = x?.code === "no_text" ? "No se pudo leer (PDF escaneado)" : SAMPLE_ERR[x?.code] ? SAMPLE_ERR[x.code] : "Error, intenta de nuevo"; f.cls = "err"; fail++;
         if (x?.code === "not_granted") break;
@@ -1697,17 +1721,8 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
       const blobs = await Promise.all(clean_.map(c => toJpeg(c, 0.85)));
       S.gal = blobs.map(b => ({ blob: b, url: URL.createObjectURL(b) })); renderGal();
       setStatus(S.sample ? "Claude está leyendo el brochure y armando la landing… (puede tardar hasta un minuto)" : "Leyendo el texto del brochure…");
-      let data;
-      const textual = text.replace(/--- Página \d+ ---/g, "").replace(/\s+/g, "").length > 300;
-      if (!S.sample) data = null;
-      else if (textual) data = await S.sample.json(PROMPT + "\n\nBROCHURE:\n" + text, { modelTier: "default" });
-      else {
-        const lim = await S.sample.limits().catch(() => null);
-        if (!lim?.images) throw { code: "no_text" };
-        const pgs = await renderPages();
-        data = await S.sample.json(PROMPT + "\n\nEl brochure viene en las imágenes adjuntas.", { modelTier: "default", images: pgs.slice(0, lim.images.maxCount || 4) });
-      }
-      const c = S.sample ? clean(data || {}) : parseBrochureLocal(text, file.name);
+      const r = S.sample ? await askBrochure(text, renderPages, file.name) : { c: parseBrochureLocal(text, file.name), partial: true };
+      const c = r.c;
       const keepCapt = { captador: $("f-capt").value, captadorTel: $("f-tel").value };
       fillForm({ ...c, ...keepCapt });
       { const dp = !S.editing && findDup($("f-nombre").value, null); if (dp) $("formErr").textContent = "Ojo: “" + dp.nombre + "” ya está en la página. Si lo guardas no se va a duplicar; mejor edita el existente."; }
@@ -1715,6 +1730,7 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
       setStatus(""); S.busy = false; renderGal();
       $("formErr").textContent = "";
       if (!S.sample) toast("Datos sacados del brochure sin Claude: revisa nombre, precios, metros y textos antes de guardar.");
+      else if (r.partial) toast("Este PDF es casi todo imágenes: se tomaron las fotos y lo que se pudo leer. Completa nombre, precios y metros antes de guardar.");
       else toast(blobs.length ? `Datos listos con ${blobs.length} ${blobs.length === 1 ? "foto" : "fotos"} sin texto. Revisa y guarda.` : "Ojo: el brochure no trae fotos que se puedan usar. Agrega fotos antes de guardar.");
       $("f-capt").focus();
     } catch (x) {
@@ -1731,11 +1747,19 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
   drop.addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("over"); handlePdf(e.dataTransfer.files[0]); });
 
   /* ---------- duplicates ---------- */
-  const DUP_STOP = new Set(["torre","tower","residencial","residences","residence","proyecto","project","the","de","del","la","el","los","las","y","by","condo","condos","apartamentos","apartments","suites"]);
+  const DUP_STOP = new Set(["torre","tower","residencial","residences","residence","proyecto","project","the","de","del","la","el","los","las","y","by","at","en","in","condo","condos","apartamentos","apartments","suites",
+    "villas","villa","duplex","brochure","ingles","english","espanol","tipologias","tipologia","punta","cana","vistacana","vista","bavaro","santo","domingo","rd","tipo","modelo","etapa"]);
+  const priceSig = p => { const ts = (p.tipologias || []).filter(t => t.desde > 0).map(t => (t.hab || 1) + ":" + Math.round(t.desde / 1000)).sort(); return ts.length ? ts.join(",") : ""; };
   const dupKey = n => { const w = String(n || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().split(" ").filter(Boolean);
-    const k = w.filter(x => !DUP_STOP.has(x)); return (k.length ? k : w).sort().join(" "); };
-  const findDup = (nombre, exceptId, extra = []) => { const k = dupKey(nombre); if (!k) return null;
-    return S.projects.find(p => p.id !== exceptId && dupKey(p.nombre) === k) || extra.find(x => dupKey(x) === k) && { nombre: extra.find(x => dupKey(x) === k) } || null; };
+    const k = w.filter(x => !DUP_STOP.has(x) && x.length > 1); return (k.length ? k : w).sort().join(" "); };
+  // Repetido = mismo nombre (sin palabras de relleno ni de lugar) o mismos precios por habitación en la misma zona.
+  const findDup = (nombre, exceptId, extra = [], cand = null) => { const k = dupKey(nombre); if (!k) return null;
+    const zoneW = z => new Set(fold(z).split(/[^a-z0-9]+/).filter(w => w.length > 3));
+    const sameZone = (a, b) => { const A = zoneW(a), B = zoneW(b); return [...A].some(w => B.has(w)); };
+    const sig = cand ? priceSig(cand) : "";
+    return S.projects.find(p => p.id !== exceptId && dupKey(p.nombre) === k)
+      || (sig && S.projects.find(p => p.id !== exceptId && priceSig(p) === sig && sameZone(p.zona, cand.zona)))
+      || extra.find(x => dupKey(x) === k) && { nombre: extra.find(x => dupKey(x) === k) } || null; };
 
   /* ---------- save ---------- */
   $("form").addEventListener("submit", async e => {
@@ -1747,6 +1771,7 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
     if (!nombre) { err.textContent = "Escribe el nombre del proyecto o sube el brochure."; $("f-nombre").focus(); return; }
     if (!captador) { err.textContent = "Escribe el nombre del asesor."; $("f-capt").focus(); return; }
     if (url && !safeUrl(url)) { err.textContent = "El enlace debe empezar con https://"; $("f-url").focus(); return; }
+    if (!S.editing && badName(nombre)) { err.textContent = "“" + nombre + "” no parece el nombre de un proyecto. Escribe el nombre comercial del proyecto."; $("f-nombre").focus(); return; }
     const dup = findDup(nombre, S.editing);
     if (dup) { err.replaceChildren("Este proyecto ya está en la página como “" + dup.nombre + "”. No se sube dos veces. ",
       dup.id ? h("button", { class: "link-btn", type: "button", onclick: () => { const d = dup; S.busy = false; closeForm(); openForm(S.projects.find(x => x.id === d.id)); } }, "Abrir el existente para editarlo") : ""); $("f-nombre").focus(); return; }
