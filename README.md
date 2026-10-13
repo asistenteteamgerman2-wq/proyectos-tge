@@ -2,14 +2,15 @@
 
 Hub de landings y catálogo de proyectos del Team Germanescarfullery. La versión oficial (con base de datos compartida) vive como Artifact en Claude; este repositorio guarda el código, una copia de los datos y las instrucciones para conectar el CRM.
 
-Team Germanescarfullery · RE/MAX Metropolitana · actualizado el 12 de octubre de 2026 · 39 proyectos
+Team Germanescarfullery · RE/MAX Metropolitana · actualizado el 13 de octubre de 2026 · 47 proyectos
 
 ## Qué hay en este repositorio
-- `Proyectos-TGE-completo.html`: la página entera en un solo archivo, con los 39 proyectos y sus fotos. Se abre con doble clic. Lo que se cambie ahí se guarda solo en ese navegador.
+- `Proyectos-TGE-completo.html`: la página entera en un solo archivo, con los 47 proyectos y sus fotos. Se abre con doble clic. Lo que se cambie ahí se guarda solo en ese navegador.
 - `pagina/index.html`: el código completo de la página "Proyectos TGE" (hub de landings, catálogo para clientes, envío por WhatsApp, carruseles de Instagram, filtros por tipo, región y subregión, presupuesto, m²/ft², favoritos y bloqueo de proyectos duplicados).
-- `datos.json`: los 39 proyectos (con tipologías, precios, amenidades, plan de pago, FAQ, etc.) y los asesores (sin contraseñas).
+- `Proyectos-que-faltan.csv`: los 92 proyectos del CRM (de 129) que todavía no están en la página, con precios, entrega y contacto.
+- `datos.json`: los 47 proyectos (con tipologías, precios, amenidades, plan de pago, FAQ, etc.) y los asesores (sin contraseñas).
 - `fotos/`: las fotos de los proyectos (hasta 3 por proyecto; la primera es la portada), comprimidas para que el ZIP quepa en un correo. En `datos.json`, cada proyecto tiene `fotos_archivos` con el nombre de cada foto. Los que tienen `fotos_incompletas: true` tenían más fotos en la página original.
-- Pendiente de revisar: "Residencial Palmeras Resipal" e "Independent Villas Punta Cana" podrían ser el mismo proyecto; "Residencias de marca Meliá" y "Garden City" tienen las habitaciones mal leídas. 14 proyectos no tienen precio real o tienen precio de ejemplo (`precioRef: true`).
+- Pendiente de revisar: 7 proyectos están "Por completar" (sin precio o sin fotos). Posibles repetidos por confirmar: Palmeras Resipal / Independent Villas; Residencias Meliá / La Vista by Meliá; los planos "Tipología Arena", "Tipología Mar" y "Residencial Ciudad del Sol" (Verón).
 
 ## Instrucciones para Claude (pegar esto en la otra cuenta)
 1. Publica `pagina/index.html` como un Artifact con estas capacidades: `sample`, `assets`, `db`, `downloads`, `user`.

@@ -1,10 +1,10 @@
 {
   "equipo": "Team Germanescarfullery",
-  "exportado": "2026-10-12",
-  "total_proyectos": 39,
+  "exportado": "2026-10-13",
+  "total_proyectos": 47,
   "proyectos": [
     {
-      "actualizado": "2026-09-29T21:11:54.656Z",
+      "actualizado": "2026-10-13T18:59:34.331Z",
       "amenidades": [
         "Spa",
         "Restaurante",
@@ -40,6 +40,7 @@
       ],
       "descripcion": "Residencial Palmeras Resipal trae a Punta Cana un concepto fresco y moderno de villas independientes, pensado para ofrecer a sus propietarios un lugar seguro y armonioso, basado en el respeto y la seguridad de las familias.\nLas villas cuentan con acabados de calidad, incluyendo jacuzzi, closets y gabinetes de melamina, topes de granito, baños revestidos en cerámica porcelanato de 60x60 y puertas principales de madera sólida, todo en un entorno rodeado de amenidades y cercano a los principales puntos de interés de la zona.\nCon entregas listas, en proceso de finalización y programadas para septiembre de 2027, el proyecto ofrece distintas modalidades de pago adaptadas a cada etapa de construcción, siendo una oportunidad ideal tanto para vivienda como para inversión.",
       "direccion": "",
+      "disp": "Disponible",
       "entrega": "septiembre 2027",
       "estado": "En construcción",
       "faq": [
@@ -68,6 +69,13 @@
       "frase": "Villas independientes frente a la tranquilidad de Punta Cana",
       "nombre": "Residencial Palmeras Resipal",
       "parqueos": 2,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 0,
+        "meses": 0,
+        "separacion": 0
+      },
       "porque": [
         {
           "texto": "A solo 10 minutos del aeropuerto internacional de Punta Cana, plazas comerciales y supermercados.",
@@ -86,6 +94,9 @@
           "titulo": "Amenidades completas"
         }
       ],
+      "precioRef": false,
+      "preciosAl": "2026-09-29T21:11:54.656Z",
+      "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 0,
@@ -183,10 +194,12 @@
           "titulo": "Amenidades excepcionales"
         }
       ],
+      "precioRef": false,
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipologias": [
         {
           "banos": 0,
-          "desde": 1161000,
+          "desde": 178000,
           "hab": 1,
           "m2": 0
         }
@@ -317,7 +330,7 @@
       ]
     },
     {
-      "actualizado": "2026-09-30T20:55:11.213Z",
+      "actualizado": "2026-10-13T19:04:42.842Z",
       "amenidades": [
         "comunidad cerrada con control de acceso",
         "seguridad 24/7",
@@ -346,6 +359,7 @@
       ],
       "descripcion": "Villas duplex ubicadas en Ciudad las Canas, Cap Cana, con entrega en 2025. Cuentan con 3 habitaciones, 3.5 baños, 2 parqueos y áreas desde 365 hasta 374 metros cuadrados.\nSe vive en una comunidad cerrada con control de acceso y seguridad las 24 horas. Sus acabados incluyen cocina modular con tope de cuarzo y porcelanato importado en todos los ambientes.\nConviene por su ubicación estratégica a pocos minutos del aeropuerto, el downtown y las principales playas, con facilidades de pago de hasta 24 meses.",
       "direccion": "Ciudad las Canas, Cap Cana",
+      "disp": "Disponible",
       "entrega": "2025",
       "estado": "En construcción",
       "faq": [
@@ -374,6 +388,13 @@
       "frase": "su villa de lujo cerca de todo en Cap Cana",
       "nombre": "Villas Duplex Punta Cana",
       "parqueos": 2,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 0,
+        "meses": 0,
+        "separacion": 0
+      },
       "porque": [
         {
           "texto": "está a minutos del aeropuerto, el downtown y las principales playas de Punta Cana.",
@@ -392,6 +413,9 @@
           "titulo": "facilidades de pago"
         }
       ],
+      "precioRef": false,
+      "preciosAl": "2026-09-30T20:55:11.213Z",
+      "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 4,
@@ -410,7 +434,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-01T19:43:33.430Z",
+      "actualizado": "2026-10-13T19:02:05.774Z",
       "amenidades": [
         "Piscina infinita",
         "Jacuzzi",
@@ -467,13 +491,20 @@
         }
       ],
       "fotos": [
-        "b9d2168c9c88a1f01579362e0e49dc26",
         "2239ea88c69c26f93b5c6625d38e4a00",
-        "2b21a2043dd03c773ebeccedad84437f"
+        "2b21a2043dd03c773ebeccedad84437f",
+        "826cbc18d64e34ee272b0d650f2bb40c"
       ],
       "frase": "Viva la calma frente al mar caribeño",
       "nombre": "Emerald Suites",
       "parqueos": 1,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 0,
+        "meses": 0,
+        "separacion": 0
+      },
       "porque": [
         {
           "texto": "Está en Dominicus, a 15 minutos del aeropuerto de La Romana, con vuelos directos desde Europa y América.",
@@ -492,17 +523,19 @@
           "titulo": "Amenidades frente al mar"
         }
       ],
-      "precioRef": true,
+      "precioRef": false,
+      "preciosAl": "2026-10-12T21:50:00.000Z",
+      "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 1,
-          "desde": 165000,
+          "desde": 260000,
           "hab": 1,
           "m2": 75.8
         },
         {
           "banos": 2,
-          "desde": 215000,
+          "desde": 360000,
           "hab": 2,
           "m2": 101.2
         }
@@ -511,13 +544,13 @@
       "zona": "Dominicus, Bayahibe, La Altagracia",
       "id": "pmupxzebbf36e2",
       "fotos_archivos": [
-        "b9d2168c9c88a1f01579362e0e49dc26.jpg",
         "2239ea88c69c26f93b5c6625d38e4a00.jpg",
-        "2b21a2043dd03c773ebeccedad84437f.jpg"
+        "2b21a2043dd03c773ebeccedad84437f.jpg",
+        "826cbc18d64e34ee272b0d650f2bb40c.jpg"
       ]
     },
     {
-      "actualizado": "2026-10-02T20:43:39.279Z",
+      "actualizado": "2026-10-13T19:01:31.992Z",
       "amenidades": [
         "Área social en rooftop",
         "Piscina",
@@ -620,8 +653,8 @@
           "titulo": "Diseño inteligente"
         }
       ],
-      "precioRef": true,
-      "preciosAl": "2026-10-02T20:43:39.279Z",
+      "precioRef": false,
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -632,7 +665,7 @@
         },
         {
           "banos": 2,
-          "desde": 179000,
+          "desde": 165078,
           "hab": 2,
           "m2": 59.1
         }
@@ -748,7 +781,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-09T21:13:32.149Z",
+      "actualizado": "2026-10-13T18:58:05.249Z",
       "amenidades": [
         "Piscina",
         "Gimnasio",
@@ -833,24 +866,24 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-09T21:13:32.149Z",
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 0,
-          "desde": 0,
+          "desde": 72219,
           "hab": 1,
           "m2": 39
         },
         {
           "banos": 0,
-          "desde": 0,
+          "desde": 77209,
           "hab": 2,
           "m2": 61
         },
         {
           "banos": 0,
-          "desde": 0,
+          "desde": 83622,
           "hab": 3,
           "m2": 70
         }
@@ -865,7 +898,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-09T21:14:01.964Z",
+      "actualizado": "2026-10-13T18:58:59.152Z",
       "amenidades": [
         "Casa club de dos niveles",
         "Salón para eventos con terraza en segundo nivel",
@@ -910,9 +943,9 @@
         }
       ],
       "fotos": [
+        "27307748abf33111800d00dfe1cfcaae",
         "273234767ba14218d54cf966aa106b4e",
-        "aa69108002966905bac7a6953af208fc",
-        "9fba38ecba5fd33f0fb2c28e0d74ab0b"
+        "aa69108002966905bac7a6953af208fc"
       ],
       "frase": "Un lugar para construir su próximo capítulo",
       "nombre": "Brisas del Prado",
@@ -943,12 +976,12 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-09T21:14:01.964Z",
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 2,
-          "desde": 0,
+          "desde": 86500,
           "hab": 3,
           "m2": 0
         }
@@ -957,9 +990,9 @@
       "zona": "Av. Ecológica, Santo Domingo Este",
       "id": "pmv1gqkbwsmpbr",
       "fotos_archivos": [
+        "27307748abf33111800d00dfe1cfcaae.jpg",
         "273234767ba14218d54cf966aa106b4e.jpg",
-        "aa69108002966905bac7a6953af208fc.jpg",
-        "9fba38ecba5fd33f0fb2c28e0d74ab0b.jpg"
+        "aa69108002966905bac7a6953af208fc.jpg"
       ]
     },
     {
@@ -1192,7 +1225,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-09T21:22:00.784Z",
+      "actualizado": "2026-10-13T19:02:40.891Z",
       "amenidades": [],
       "captador": "German Escarfullery",
       "captadorId": "cmuoj7lj5qjre",
@@ -1222,9 +1255,7 @@
         }
       ],
       "fotos": [
-        "fa1f14da0bc4dea61f34b531e7422b3d",
-        "9f1914154fe848309447f80ecf5b9bfd",
-        "fcc7548e92ef2a08354763657777684e"
+        "fa1f14da0bc4dea61f34b531e7422b3d"
       ],
       "frase": "Acabados de calidad en el corazón de Vavaro",
       "nombre": "Colinas de Punta Cana",
@@ -1255,12 +1286,12 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-09T21:22:00.784Z",
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 0,
-          "desde": 0,
+          "desde": 83500,
           "hab": 1,
           "m2": 0
         }
@@ -1269,13 +1300,11 @@
       "zona": "Bávaro, Punta Cana",
       "id": "pmv1h0tsgr8601",
       "fotos_archivos": [
-        "fa1f14da0bc4dea61f34b531e7422b3d.jpg",
-        "9f1914154fe848309447f80ecf5b9bfd.jpg",
-        "fcc7548e92ef2a08354763657777684e.jpg"
+        "fa1f14da0bc4dea61f34b531e7422b3d.jpg"
       ]
     },
     {
-      "actualizado": "2026-10-09T21:23:05.369Z",
+      "actualizado": "2026-10-13T19:01:51.504Z",
       "amenidades": [
         "Patio privado desde 48 m²",
         "Jacuzzi opcional en el patio",
@@ -1345,8 +1374,8 @@
       ],
       "fotos": [
         "5435f01830bf729ab88392d61dc235a0",
-        "f4e680ed332895f99eb0a20427e4f111",
-        "fe07c3f34713a2ee3bf033c2ead89b78"
+        "fe07c3f34713a2ee3bf033c2ead89b78",
+        "2958936b128ef9ef5060eb9a8b0f7d8b"
       ],
       "frase": "Villas dúplex con patio y jacuzzi cerca de todo",
       "nombre": "Duo Terra Dúplex",
@@ -1392,12 +1421,12 @@
       "id": "pmv1h27miupkuk",
       "fotos_archivos": [
         "5435f01830bf729ab88392d61dc235a0.jpg",
-        "f4e680ed332895f99eb0a20427e4f111.jpg",
-        "fe07c3f34713a2ee3bf033c2ead89b78.jpg"
+        "fe07c3f34713a2ee3bf033c2ead89b78.jpg",
+        "2958936b128ef9ef5060eb9a8b0f7d8b.jpg"
       ]
     },
     {
-      "actualizado": "2026-10-09T21:23:30.988Z",
+      "actualizado": "2026-10-13T19:04:58.015Z",
       "amenidades": [
         "Piscina tipo playa",
         "Piscina infinita",
@@ -1447,8 +1476,8 @@
       ],
       "fotos": [
         "b2914c5a6fa28d2312dfb87ae9e4a25d",
-        "5aa4d889f92d856acfb451c1fb469ca0",
-        "df8b66b89ab1e84e76273149e39f6029"
+        "df8b66b89ab1e84e76273149e39f6029",
+        "5aa4d889f92d856acfb451c1fb469ca0"
       ],
       "frase": "Viva e invierta en un entorno verde en Punta Cana",
       "nombre": "Evergarden Life Residences",
@@ -1500,8 +1529,8 @@
       "id": "pmv1h2re4zb5u2",
       "fotos_archivos": [
         "b2914c5a6fa28d2312dfb87ae9e4a25d.jpg",
-        "5aa4d889f92d856acfb451c1fb469ca0.jpg",
-        "df8b66b89ab1e84e76273149e39f6029.jpg"
+        "df8b66b89ab1e84e76273149e39f6029.jpg",
+        "5aa4d889f92d856acfb451c1fb469ca0.jpg"
       ]
     },
     {
@@ -1603,7 +1632,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-09T21:24:42.862Z",
+      "actualizado": "2026-10-13T19:00:59.303Z",
       "amenidades": [
         "Residencial cerrado con verja perimetral",
         "Seguridad 24/7 con acceso controlado a cada bloque",
@@ -1670,9 +1699,9 @@
         }
       ],
       "fotos": [
+        "7dd1c2a6d16e26ebc0827a6ea4257038",
         "ec8e3492145dff40f25f2bb5584017b9",
-        "903bcdc419bdaf6441f55d20718b1190",
-        "756197c81902f5d8837316581c10351e"
+        "903bcdc419bdaf6441f55d20718b1190"
       ],
       "frase": "Su apartamento en Punta Cana, cerca de todo",
       "nombre": "Gayacana",
@@ -1717,13 +1746,13 @@
       "zona": "Punta Cana",
       "id": "pmv1h4aummok42",
       "fotos_archivos": [
+        "7dd1c2a6d16e26ebc0827a6ea4257038.jpg",
         "ec8e3492145dff40f25f2bb5584017b9.jpg",
-        "903bcdc419bdaf6441f55d20718b1190.jpg",
-        "756197c81902f5d8837316581c10351e.jpg"
+        "903bcdc419bdaf6441f55d20718b1190.jpg"
       ]
     },
     {
-      "actualizado": "2026-10-09T21:35:50.933Z",
+      "actualizado": "2026-10-13T19:01:19.790Z",
       "amenidades": [
         "Lobby y salón de eventos",
         "Piscina",
@@ -1827,18 +1856,18 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-09T21:35:50.933Z",
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 2,
-          "desde": 0,
+          "desde": 139900,
           "hab": 1,
           "m2": 56
         },
         {
           "banos": 3,
-          "desde": 0,
+          "desde": 159900,
           "hab": 2,
           "m2": 80
         }
@@ -1971,7 +2000,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-09T21:37:35.536Z",
+      "actualizado": "2026-10-13T18:57:14.003Z",
       "amenidades": [
         "Piscina semiolímpica",
         "Gimnasio al aire libre",
@@ -2096,7 +2125,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-09T21:38:19.056Z",
+      "actualizado": "2026-10-13T18:57:47.188Z",
       "amenidades": [
         "Casa club de diseño contemporáneo",
         "Piscina con área de solárium",
@@ -2149,8 +2178,8 @@
       ],
       "fotos": [
         "906afbc3e7cfa1d9e12c3e5f01071092",
-        "30cdc406032ea3948abc0a3997aff4f1",
-        "098805e6d856056a02cbcea9b9a1aefa"
+        "098805e6d856056a02cbcea9b9a1aefa",
+        "4eeff9139fc6e058584eeb79ac7e3ed7"
       ],
       "frase": "Su próxima inversión en una zona en crecimiento",
       "nombre": "Palmas de la Romana",
@@ -2202,12 +2231,12 @@
       "id": "pmv1hlsmo085pt",
       "fotos_archivos": [
         "906afbc3e7cfa1d9e12c3e5f01071092.jpg",
-        "30cdc406032ea3948abc0a3997aff4f1.jpg",
-        "098805e6d856056a02cbcea9b9a1aefa.jpg"
+        "098805e6d856056a02cbcea9b9a1aefa.jpg",
+        "4eeff9139fc6e058584eeb79ac7e3ed7.jpg"
       ]
     },
     {
-      "actualizado": "2026-10-09T21:39:01.596Z",
+      "actualizado": "2026-10-13T18:55:46.215Z",
       "amenidades": [
         "Piscina para adultos y niños",
         "Piscina con juego acuático infantil",
@@ -2257,9 +2286,9 @@
         }
       ],
       "fotos": [
+        "1c8a3ec0c72c7f40c0b9e3b021ee6d49",
         "eeea531877a6a4ca26a17cc3aba7f66a",
-        "098c4c5f493c1cb640b564fd60bafed4",
-        "46243773fc0435c44bbe7d0f02984480"
+        "098c4c5f493c1cb640b564fd60bafed4"
       ],
       "frase": "Viva e invierta en Punta Cana con respaldo",
       "nombre": "Palmera 8 Residences",
@@ -2316,13 +2345,13 @@
       "zona": "Punta Cana, La Altagracia",
       "id": "pmv1hmpgcbdrzj",
       "fotos_archivos": [
+        "1c8a3ec0c72c7f40c0b9e3b021ee6d49.jpg",
         "eeea531877a6a4ca26a17cc3aba7f66a.jpg",
-        "098c4c5f493c1cb640b564fd60bafed4.jpg",
-        "46243773fc0435c44bbe7d0f02984480.jpg"
+        "098c4c5f493c1cb640b564fd60bafed4.jpg"
       ]
     },
     {
-      "actualizado": "2026-10-09T21:40:36.574Z",
+      "actualizado": "2026-10-13T19:00:00.006Z",
       "amenidades": [
         "Piscina privada",
         "Terraza techada",
@@ -2362,9 +2391,7 @@
         }
       ],
       "fotos": [
-        "92c96bad04a8a124b4343f6562354565",
-        "ea076b27ad4544b76c39409e04067218",
-        "df7ed796cd05cabb95a2af49435c873f"
+        "92c96bad04a8a124b4343f6562354565"
       ],
       "frase": "Villas de dos niveles con piscina propia",
       "nombre": "Resipal Etapa II",
@@ -2395,18 +2422,18 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-09T21:40:36.574Z",
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipo": "Villa",
       "tipologias": [
         {
           "banos": 3,
-          "desde": 0,
+          "desde": 215000,
           "hab": 2,
           "m2": 0
         },
         {
           "banos": 3,
-          "desde": 0,
+          "desde": 285000,
           "hab": 3,
           "m2": 0
         }
@@ -2415,9 +2442,7 @@
       "zona": "Bávaro, La Altagracia",
       "id": "pmv1hoqqmnjk32",
       "fotos_archivos": [
-        "92c96bad04a8a124b4343f6562354565.jpg",
-        "ea076b27ad4544b76c39409e04067218.jpg",
-        "df7ed796cd05cabb95a2af49435c873f.jpg"
+        "92c96bad04a8a124b4343f6562354565.jpg"
       ]
     },
     {
@@ -2859,24 +2884,24 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-12T20:55:18.512Z",
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 0,
-          "desde": 0,
+          "desde": 130000,
           "hab": 1,
           "m2": 0
         },
         {
           "banos": 0,
-          "desde": 0,
+          "desde": 184000,
           "hab": 2,
           "m2": 0
         },
         {
           "banos": 0,
-          "desde": 0,
+          "desde": 206000,
           "hab": 3,
           "m2": 0
         }
@@ -2891,7 +2916,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-12T20:56:45.861Z",
+      "actualizado": "2026-10-13T19:02:23.390Z",
       "amenidades": [
         "Piscina",
         "Gazebo",
@@ -2947,7 +2972,7 @@
       "fotos": [
         "f7fd2414f22e58f16f2468671469f8b3",
         "a1491bab9025225efd6d3c36f76c11ca",
-        "bb2edf1a6cf1cc9586fb40efaad5e23c"
+        "47e62125be9f769e530738db5de9a983"
       ],
       "frase": "Apartamentos listos para entrega cerca de la playa",
       "nombre": "Apartamentos Bávaro",
@@ -2994,11 +3019,11 @@
       "fotos_archivos": [
         "f7fd2414f22e58f16f2468671469f8b3.jpg",
         "a1491bab9025225efd6d3c36f76c11ca.jpg",
-        "bb2edf1a6cf1cc9586fb40efaad5e23c.jpg"
+        "47e62125be9f769e530738db5de9a983.jpg"
       ]
     },
     {
-      "actualizado": "2026-10-12T20:58:04.531Z",
+      "actualizado": "2026-10-13T18:57:29.331Z",
       "amenidades": [
         "Piscina de adultos",
         "Piscina infantil",
@@ -3046,8 +3071,8 @@
       ],
       "fotos": [
         "6dc92bce47eec22818249013c2d708df",
-        "4d1e2e87d824784b0c2f4f065eda5992",
-        "82334604697096af2d15daf682d69793"
+        "82334604697096af2d15daf682d69793",
+        "d66fda2b33339d1d0824b150b8264c3b"
       ],
       "frase": "Viva e invierta en Verón, cerca del aeropuerto",
       "nombre": "Pradera Alta",
@@ -3105,8 +3130,8 @@
       "id": "pmv5qhlkj8ogu6",
       "fotos_archivos": [
         "6dc92bce47eec22818249013c2d708df.jpg",
-        "4d1e2e87d824784b0c2f4f065eda5992.jpg",
-        "82334604697096af2d15daf682d69793.jpg"
+        "82334604697096af2d15daf682d69793.jpg",
+        "d66fda2b33339d1d0824b150b8264c3b.jpg"
       ]
     },
     {
@@ -3334,7 +3359,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-12T21:08:25.215Z",
+      "actualizado": "2026-10-13T19:00:18.116Z",
       "amenidades": [
         "Piscina privada en cada villa",
         "Terraza techada con pergolado",
@@ -3573,11 +3598,12 @@
       ]
     },
     {
-      "actualizado": "2026-10-12T21:10:42.820Z",
+      "actualizado": "2026-10-13T19:04:29.875Z",
       "amenidades": [
         "Gimnasio",
         "Bar",
-        "Lobby de doble altura, climatizado y amueblado",
+        "Lobby de doble altura",
+        "climatizado y amueblado",
         "Área de niños",
         "Seguridad 24/7",
         "Cerco eléctrico",
@@ -3634,8 +3660,8 @@
         }
       ],
       "fotos": [
+        "201d04e11702311d2e5e0a9aae81e76c",
         "36b05bfd014884b3e609a9c701d61100",
-        "df836cdeeb0f785f97487c871fb40bd4",
         "ea9d7fcd5f6bc49a5ac78fce8411881f"
       ],
       "frase": "Vistas amplias y diseño moderno en el corazón de Naco",
@@ -3681,8 +3707,8 @@
       "zona": "Naco, Santo Domingo",
       "id": "pmv5qxuo424a3p",
       "fotos_archivos": [
+        "201d04e11702311d2e5e0a9aae81e76c.jpg",
         "36b05bfd014884b3e609a9c701d61100.jpg",
-        "df836cdeeb0f785f97487c871fb40bd4.jpg",
         "ea9d7fcd5f6bc49a5ac78fce8411881f.jpg"
       ]
     },
@@ -3901,12 +3927,12 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-12T21:14:58.613Z",
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 0,
-          "desde": 0,
+          "desde": 135000,
           "hab": 1,
           "m2": 0
         }
@@ -3921,7 +3947,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-12T21:15:54.419Z",
+      "actualizado": "2026-10-13T18:58:32.305Z",
       "amenidades": [
         "Piscina",
         "Casa club",
@@ -4175,7 +4201,7 @@
       ]
     },
     {
-      "actualizado": "2026-10-12T21:17:12.829Z",
+      "actualizado": "2026-10-13T19:02:58.273Z",
       "amenidades": [
         "Casa Club",
         "Laguna central",
@@ -4247,7 +4273,7 @@
       "fotos": [
         "b6d07f9d35c38f56ba667eb35a2b20d0",
         "614847a66abc6b6af2867d38ec842671",
-        "e534dc43f1efc1436e8d1532326d4d1e"
+        "ad0424287ef086d3c5369009efebc145"
       ],
       "frase": "Ciudad jardín frente a la Laguna de Bávaro",
       "nombre": "La Reserva",
@@ -4278,12 +4304,12 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-12T21:17:12.829Z",
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipo": "Villa",
       "tipologias": [
         {
           "banos": 0,
-          "desde": 0,
+          "desde": 92500,
           "hab": 1,
           "m2": 0
         }
@@ -4294,7 +4320,7 @@
       "fotos_archivos": [
         "b6d07f9d35c38f56ba667eb35a2b20d0.jpg",
         "614847a66abc6b6af2867d38ec842671.jpg",
-        "e534dc43f1efc1436e8d1532326d4d1e.jpg"
+        "ad0424287ef086d3c5369009efebc145.jpg"
       ]
     },
     {
@@ -4403,30 +4429,18 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-12T21:17:36.609Z",
+      "preciosAl": "2026-10-12T21:50:00.000Z",
       "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 1,
-          "desde": 0,
+          "desde": 132100,
           "hab": 1,
           "m2": 63
         },
         {
-          "banos": 2,
-          "desde": 0,
-          "hab": 1,
-          "m2": 82
-        },
-        {
-          "banos": 2,
-          "desde": 0,
-          "hab": 1,
-          "m2": 88
-        },
-        {
           "banos": 3,
-          "desde": 0,
+          "desde": 146539,
           "hab": 2,
           "m2": 118
         }
@@ -4439,6 +4453,759 @@
         "36a31c94795730c7483ccfd317733f9d.jpg",
         "73aff8084a46b993bda72734e1b0b4b9.jpg"
       ]
+    },
+    {
+      "actualizado": "2026-10-13T19:03:30.373Z",
+      "amenidades": [
+        "Servicios de conserjería",
+        "Piscinas de lujo",
+        "Gimnasio",
+        "Casa club",
+        "Acceso privado a la playa",
+        "Restaurantes de alta cocina",
+        "Jardineras",
+        "Terraza privada en algunas unidades",
+        "Piscina privada en algunas unidades",
+        "Estacionamiento"
+      ],
+      "captador": "German Escarfullery",
+      "captadorId": "cmuoj7lj5qjre",
+      "captadorTel": "",
+      "cercanias": [
+        {
+          "lugar": "Aeropuerto de Punta Cana",
+          "tiempo": "10 min"
+        },
+        {
+          "lugar": "Meliá Hotels & Resorts",
+          "tiempo": "12 min"
+        }
+      ],
+      "descripcion": "La Vista by Meliá reúne 230 residencias de lujo con marca, entregadas completamente amuebladas. Se encuentra en el centro de Punta Cana y es operada por Meliá Hotels International.\nAquí usted disfruta de servicios de conserjería, piscinas, gimnasio y casa club. También cuenta con acceso privado a la playa y restaurantes de alta cocina, todo pensado para su comodidad.\nEs una oportunidad para invertir en un destino turístico muy visitado. La marca Meliá aporta respaldo y gestión profesional, y los planes de pago permiten comenzar desde un 20 % de inicial.",
+      "direccion": "",
+      "disp": "Disponible",
+      "entrega": "",
+      "estado": "En planos",
+      "faq": [
+        {
+          "p": "¿Cuántas residencias tiene el proyecto?",
+          "r": "El proyecto cuenta con 230 residencias de lujo de marca, todas completamente amuebladas."
+        },
+        {
+          "p": "¿Quién opera La Vista by Meliá?",
+          "r": "Las residencias son operadas por Meliá Hotels International."
+        },
+        {
+          "p": "¿Qué tan cerca está del aeropuerto?",
+          "r": "Se encuentra a 10 minutos del aeropuerto de Punta Cana y a 12 minutos de Meliá Hotels & Resorts."
+        },
+        {
+          "p": "¿Qué opciones de pago existen?",
+          "r": "Hay múltiples planes de pago, con opciones disponibles desde un 20 % de inicial."
+        }
+      ],
+      "fotos": [
+        "b07e08822a64a1f0b4c41c0494f0de47",
+        "e4cde04374b757a9ec75df4fd2bb1133",
+        "4ddcd29ef3e1e56098547c578843b786"
+      ],
+      "frase": "Residencias de marca Meliá en el centro de Punta Cana",
+      "nombre": "La Vista by Meliá",
+      "parqueos": 0,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 20,
+        "meses": 0,
+        "separacion": 0
+      },
+      "porque": [
+        {
+          "texto": "Está en el centro de Punta Cana, a 10 minutos del aeropuerto y a 12 minutos de Meliá Hotels & Resorts.",
+          "titulo": "Ubicación central"
+        },
+        {
+          "texto": "Meliá Hotels International opera las residencias, con gestión y servicio de nivel mundial que aportan valor y demanda a la propiedad.",
+          "titulo": "Marca de prestigio"
+        },
+        {
+          "texto": "Las 230 residencias se entregan completamente amuebladas, con servicios de conserjería y espacios de bienestar y recreo.",
+          "titulo": "Listas para disfrutar"
+        },
+        {
+          "texto": "Punta Cana es parte del destino turístico más visitado del Caribe, con alta demanda de alquileres de alojamientos de lujo.",
+          "titulo": "Destino con demanda"
+        }
+      ],
+      "precioRef": false,
+      "preciosAl": "2026-10-13T19:00:00.000Z",
+      "tipo": "Apartamento",
+      "tipologias": [
+        {
+          "banos": 0,
+          "desde": 255000,
+          "hab": 1,
+          "m2": 0
+        }
+      ],
+      "url": "",
+      "zona": "Centro de Punta Cana, La Altagracia",
+      "id": "pmv714fy9jfz90",
+      "fotos_archivos": [
+        "b07e08822a64a1f0b4c41c0494f0de47.jpg",
+        "e4cde04374b757a9ec75df4fd2bb1133.jpg",
+        "4ddcd29ef3e1e56098547c578843b786.jpg"
+      ]
+    },
+    {
+      "actualizado": "2026-10-13T19:05:18.347Z",
+      "amenidades": [
+        "Zona comercial",
+        "Fitness center",
+        "Lobby",
+        "Área de niños",
+        "Bar y lounge",
+        "Portero las 24 horas",
+        "Estacionamiento soterrado",
+        "Cerradura inteligente",
+        "Área de asadores",
+        "Espacios de co-working",
+        "Ascensores",
+        "Transporte a la playa",
+        "Lockers (consultar disponibilidad)",
+        "Firepit",
+        "Línea blanca incluida",
+        "Piscina"
+      ],
+      "captador": "German Escarfullery",
+      "captadorId": "cmuoj7lj5qjre",
+      "captadorTel": "",
+      "cercanias": [
+        {
+          "lugar": "Playa Pública Bayahíbe",
+          "tiempo": ""
+        },
+        {
+          "lugar": "Destacamento Bayahíbe Armada de RD",
+          "tiempo": ""
+        },
+        {
+          "lugar": "Playa Bayahíbe",
+          "tiempo": ""
+        },
+        {
+          "lugar": "Estro Art Cafe & Bistro",
+          "tiempo": ""
+        },
+        {
+          "lugar": "Dominican Attitude Excursions",
+          "tiempo": ""
+        },
+        {
+          "lugar": "Parque de Bayahíbe",
+          "tiempo": ""
+        }
+      ],
+      "descripcion": "Ocean Residences Bayahíbe es un proyecto residencial que une arquitectura moderna y naturaleza tropical. Su fachada ondulada imita el movimiento del océano y se integra con las palmeras y la vegetación.\nUsted disfrutará de balcones con jardines suspendidos y vistas panorámicas. Las áreas comunes invitan al descanso, entre espejos de agua, piscina, firepit y paisajismo tropical. Es un estilo de vida sereno, junto al mar.\nBayahíbe es un destino turístico conocido, con playas vírgenes y una demanda creciente. Por eso, este proyecto puede ser una buena opción tanto para vivir como para invertir, con servicios y comodidades pensados para usted.",
+      "direccion": "",
+      "disp": "Disponible",
+      "entrega": "",
+      "estado": "En planos",
+      "faq": [
+        {
+          "p": "¿Qué tipos de apartamentos ofrece el proyecto?",
+          "r": "Ofrece apartamentos de 1 y 2 habitaciones, y algunos modelos de 2 habitaciones con mayor metraje. Las áreas totales incluyen terraza."
+        },
+        {
+          "p": "¿Los apartamentos incluyen electrodomésticos?",
+          "r": "Sí. El brochure indica que la línea blanca está incluida para mayor comodidad de los residentes."
+        },
+        {
+          "p": "¿Hay estacionamiento y seguridad?",
+          "r": "Sí. Hay estacionamiento soterrado, cerraduras inteligentes, porteros electrónicos, vigilancia y portero las 24 horas."
+        },
+        {
+          "p": "¿Las áreas y planos son definitivos?",
+          "r": "No. Los planos son de referencia y pueden variar. Consulte el plano específico de su apartamento en el contrato."
+        }
+      ],
+      "fotos": [
+        "4e4b02a4f502f90bcdca0da847027d53",
+        "1d94a72329033a5b3ddc39732bfa7a9d",
+        "b0ce072e51b87e9c655befd8b75e386c"
+      ],
+      "frase": "Un rincón junto al mar, rodeado de naturaleza",
+      "nombre": "Ocean Residences Bayahíbe",
+      "parqueos": 0,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 0,
+        "meses": 0,
+        "separacion": 0
+      },
+      "porque": [
+        {
+          "texto": "Bayahíbe ofrece playas de aguas transparentes. El proyecto cuenta con transporte a la playa cercana y está rodeado de cafés, parque y servicios.",
+          "titulo": "Ubicación cercana al mar"
+        },
+        {
+          "texto": "La creciente demanda turística de la zona genera oportunidades de inversión en el sector de la hospitalidad.",
+          "titulo": "Destino turístico en crecimiento"
+        },
+        {
+          "texto": "Estructura de hormigón armado, ventanas P92, porcelanato importado e iluminación LED de bajo consumo, entre otras calidades.",
+          "titulo": "Calidad en cada detalle"
+        },
+        {
+          "texto": "Piscina, gimnasio, bar, firepit, área de asadores y portero las 24 horas completan una experiencia cómoda y segura.",
+          "titulo": "Vida de resort en casa"
+        }
+      ],
+      "precioRef": false,
+      "preciosAl": "2026-10-13T19:00:00.000Z",
+      "tipo": "Apartamento",
+      "tipologias": [
+        {
+          "banos": 1,
+          "desde": 81000,
+          "hab": 1,
+          "m2": 42.97
+        },
+        {
+          "banos": 2,
+          "desde": 187000,
+          "hab": 2,
+          "m2": 105.93
+        }
+      ],
+      "url": "",
+      "zona": "Bayahíbe, La Romana",
+      "id": "pmv715ydzkqixa",
+      "fotos_archivos": [
+        "4e4b02a4f502f90bcdca0da847027d53.jpg",
+        "1d94a72329033a5b3ddc39732bfa7a9d.jpg",
+        "b0ce072e51b87e9c655befd8b75e386c.jpg"
+      ]
+    },
+    {
+      "actualizado": "2026-10-13T18:45:35.063Z",
+      "amenidades": [
+        "Más de 1,000 m² de área social",
+        "Área lounge",
+        "Gimnasio",
+        "Piscina de adultos y niños",
+        "Juegos acuáticos y recreación infantil",
+        "6 plazoletas",
+        "5 parquecitos",
+        "Más de 1 km de sendero",
+        "Área de picnic y BBQ",
+        "Entrada vehicular doble vía y acceso peatonal",
+        "Pre instalación de jacuzzi",
+        "Aire acondicionado en habitaciones"
+      ],
+      "captador": "German Escarfullery",
+      "captadorId": "cmuoj7lj5qjre",
+      "captadorTel": "",
+      "cercanias": [],
+      "descripcion": "Parque de las Canas es un residencial de 100 townhouses en Vista Cana, Punta Cana. Ofrece modelos de 2 y 3 habitaciones, con patio propio y aire acondicionado en las habitaciones principales.\nEl residencial cuenta con más de 1,000 m² de área social. Usted encontrará piscina para adultos y niños, gimnasio, área lounge, plazoletas, parquecitos y más de un kilómetro de sendero.\nEl proyecto está frente al campo de golf y es Airbnb friendly, por lo que sirve para vivir o para invertir. Cuenta con Ley Confotur y está respaldado por un fideicomiso.",
+      "direccion": "",
+      "disp": "Disponible",
+      "entrega": "Diciembre 2026",
+      "estado": "En construcción",
+      "faq": [
+        {
+          "p": "¿Qué modelos están disponibles?",
+          "r": "Hay duplex de 2 habitaciones con 102 m² y villas de 3 habitaciones con 120 m². Ambos modelos tienen patio y dos parqueos."
+        },
+        {
+          "p": "¿Desde qué precio se vende?",
+          "r": "El modelo de 2 habitaciones parte desde US$204,000. El de 3 habitaciones parte desde US$220,500."
+        },
+        {
+          "p": "¿Cuándo se entregan las unidades?",
+          "r": "La entrega es por sectores: diciembre 2026, diciembre 2027 y julio 2028, según el sector que usted elija."
+        },
+        {
+          "p": "¿Qué beneficios fiscales tiene?",
+          "r": "Por la Ley Confotur, hay exoneración del impuesto a la propiedad inmobiliaria por 15 años y del impuesto de transferencia del 3%. El proyecto cuenta con fideicomiso."
+        }
+      ],
+      "fotos": [
+        "511fc58850d9bce6fa8b2b2852acb146",
+        "5007e55cafbca9affbad970177865ff5",
+        "f435b0a93f368f8a12315d99989c161a"
+      ],
+      "frase": "Viva o invierta frente al campo de golf",
+      "nombre": "Parque de las Canas",
+      "parqueos": 2,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 0,
+        "meses": 0,
+        "separacion": 0
+      },
+      "porque": [
+        {
+          "texto": "El proyecto está en Vista Cana, frente al campo de golf. Usted tendrá cerca playa artificial, lago, restaurantes y áreas deportivas.",
+          "titulo": "Ubicación en Vista Cana"
+        },
+        {
+          "texto": "El residencial es Airbnb friendly. Esto le permite disfrutar la propiedad o ponerla en renta.",
+          "titulo": "Ideal para invertir"
+        },
+        {
+          "texto": "Cuenta con Ley Confotur: exoneración del impuesto a la propiedad inmobiliaria por 15 años y del impuesto de transferencia del 3%.",
+          "titulo": "Beneficios fiscales"
+        },
+        {
+          "texto": "Cada casa tiene patio propio y dos parqueos. El residencial ofrece piscinas, parquecitos, plazoletas y senderos para toda la familia.",
+          "titulo": "Espacios para su familia"
+        }
+      ],
+      "precioRef": false,
+      "preciosAl": "2026-10-13T18:45:35.063Z",
+      "tipo": "Townhouse",
+      "tipologias": [
+        {
+          "banos": 0,
+          "desde": 204000,
+          "hab": 2,
+          "m2": 102
+        },
+        {
+          "banos": 0,
+          "desde": 220500,
+          "hab": 3,
+          "m2": 120
+        }
+      ],
+      "url": "",
+      "zona": "Vista Cana, Punta Cana",
+      "id": "pmv7172dz33l32",
+      "fotos_archivos": [
+        "511fc58850d9bce6fa8b2b2852acb146.jpg",
+        "5007e55cafbca9affbad970177865ff5.jpg",
+        "f435b0a93f368f8a12315d99989c161a.jpg"
+      ]
+    },
+    {
+      "actualizado": "2026-10-13T18:46:27.815Z",
+      "amenidades": [
+        "Piscina",
+        "Gimnasio al aire libre",
+        "Lounge",
+        "Cancha de fútbol",
+        "Pocket park",
+        "Área de juegos para niños",
+        "Proyecto Airbnb y pet friendly",
+        "10% de descuento en el restaurante El Morro, en Macao",
+        "Más de 13,500 m² de áreas verdes"
+      ],
+      "captador": "German Escarfullery",
+      "captadorId": "cmuoj7lj5qjre",
+      "captadorTel": "",
+      "cercanias": [],
+      "descripcion": "Sunset Gardens es un proyecto de casas con cinco tipologías y un concepto urbano. Se encuentra en Bávaro, Verón, Punta Cana, rodeado de áreas verdes.\nAquí usted vive con calma y comodidad, cerca de las aguas cristalinas de Punta Cana. El Club ofrece piscina, gimnasio al aire libre, lounge, cancha de fútbol y área de juegos para niños.\nEl proyecto está pensado para inversionistas, parejas y familias jóvenes. Es amigable con Airbnb y mascotas, y ofrece una plusvalía desde un 7%, según el desarrollador.",
+      "direccion": "",
+      "disp": "Disponible",
+      "entrega": "",
+      "estado": "En planos",
+      "faq": [
+        {
+          "p": "¿Qué tipos de casas ofrece Sunset Gardens?",
+          "r": "Ofrece cinco tipologías: Villa Dalia, Villa Acacia, Villa Palmera, Aurora TH y Sunset Villas. Los modelos con precio publicado van de 2 a 4 habitaciones."
+        },
+        {
+          "p": "¿Cuál es el precio inicial?",
+          "r": "La Villa Dalia, de 2 habitaciones y 66.34 m² de construcción, parte desde USD 109,543. Los diseños están sujetos a cambios."
+        },
+        {
+          "p": "¿Qué amenidades tiene el proyecto?",
+          "r": "La Casa Club tiene piscina, gimnasio al aire libre, lounge, cancha de fútbol y área de juegos infantiles. También hay pocket park y 10% de descuento en El Morro, Macao."
+        },
+        {
+          "p": "¿Se puede usar para Airbnb o tener mascotas?",
+          "r": "Sí. El brochure indica que Sunset Gardens es un proyecto amigable con Airbnb y con mascotas."
+        }
+      ],
+      "fotos": [
+        "2fd635498eab19edec46cf64b27cddcc",
+        "b3a56b077bc42c84e451252c054286d0",
+        "33eddb9cb3977360f4b02190e3e77227"
+      ],
+      "frase": "Su hogar en un paraíso natural del Caribe",
+      "nombre": "Sunset Gardens",
+      "parqueos": 2,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 0,
+        "meses": 0,
+        "separacion": 0
+      },
+      "porque": [
+        {
+          "texto": "Usted estará en Verón, Bávaro, a pocos minutos de las aguas cristalinas de Punta Cana.",
+          "titulo": "Ubicación en Punta Cana"
+        },
+        {
+          "texto": "Sánchez Business & Corp. tiene más de 46 años de trayectoria y ha construido 1,366 unidades habitacionales.",
+          "titulo": "Respaldo de experiencia"
+        },
+        {
+          "texto": "El brochure indica una plusvalía desde un 7%. Además, es un proyecto amigable con Airbnb, pensado para rentas de corta estancia.",
+          "titulo": "Inversión con plusvalía"
+        },
+        {
+          "texto": "Disfrutará de piscina, gimnasio al aire libre, cancha de fútbol y más de 13,500 m² de áreas verdes.",
+          "titulo": "Amenidades y áreas verdes"
+        }
+      ],
+      "precioRef": false,
+      "preciosAl": "2026-10-13T18:46:27.815Z",
+      "tipo": "Casa",
+      "tipologias": [
+        {
+          "banos": 1,
+          "desde": 109543,
+          "hab": 2,
+          "m2": 66.34
+        },
+        {
+          "banos": 2,
+          "desde": 153791.76,
+          "hab": 3,
+          "m2": 89.33
+        },
+        {
+          "banos": 3,
+          "desde": 224088,
+          "hab": 4,
+          "m2": 155.18
+        }
+      ],
+      "url": "",
+      "zona": "Verón, Bávaro - Punta Cana",
+      "id": "pmv71873c5sozm",
+      "fotos_archivos": [
+        "2fd635498eab19edec46cf64b27cddcc.jpg",
+        "b3a56b077bc42c84e451252c054286d0.jpg",
+        "33eddb9cb3977360f4b02190e3e77227.jpg"
+      ]
+    },
+    {
+      "actualizado": "2026-10-13T18:49:57.357Z",
+      "amenidades": [
+        "Balcón",
+        "Área de parqueo",
+        "Lavadero"
+      ],
+      "captador": "German Escarfullery",
+      "captadorId": "cmuoj7lj5qjre",
+      "captadorTel": "",
+      "cercanias": [],
+      "descripcion": "Ciudad del Sol es un residencial de viviendas de bajo costo en Verón, Punta Cana. La tipología Coral ofrece un apartamento de dos habitaciones y un baño, con sala, comedor y cocina.\nEl balcón se une a la sala y permite disfrutar del aire libre. La cocina cuenta con lavadero, y los dormitorios tienen espacio para descansar con calma. Cada apartamento incluye área de parqueo.\nEs una opción pensada para quien busca una vivienda accesible en una de las zonas de mayor crecimiento del país. Un proyecto respaldado por un fideicomiso inmobiliario, con diseño y supervisión de arquitectos.",
+      "direccion": "Avenida Punta Cana, km 5 1/2, Distrito Municipal Turístico Verón Punta Cana, La Altagracia",
+      "disp": "Disponible",
+      "entrega": "",
+      "estado": "En planos",
+      "faq": [
+        {
+          "p": "¿Cuántas habitaciones tiene la tipología Coral?",
+          "r": "Tiene dos habitaciones, una de ellas principal, y un baño. Además cuenta con sala, comedor, cocina, balcón y lavadero."
+        },
+        {
+          "p": "¿Cuál es el área del apartamento?",
+          "r": "El plano indica un área de 60 m² para la tipología Coral."
+        },
+        {
+          "p": "¿Incluye parqueo?",
+          "r": "Sí. La descripción de la vivienda incluye un área de parqueo."
+        },
+        {
+          "p": "¿Dónde se encuentra el proyecto?",
+          "r": "En la Avenida Punta Cana, km 5 1/2, en el Distrito Municipal Turístico Verón Punta Cana, La Altagracia."
+        }
+      ],
+      "fotos": [],
+      "frase": "Su hogar en Punta Cana, pensado para vivir",
+      "nombre": "Residencial Ciudad del Sol",
+      "parqueos": 1,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 0,
+        "meses": 0,
+        "separacion": 0
+      },
+      "porque": [
+        {
+          "texto": "El residencial está en Verón, sobre la Avenida Punta Cana, km 5 1/2, una zona turística y en crecimiento.",
+          "titulo": "Ubicación en Punta Cana"
+        },
+        {
+          "texto": "La tipología Coral reúne balcón, sala, comedor, cocina, dos habitaciones, un baño y lavadero en 60 m².",
+          "titulo": "Distribución práctica"
+        },
+        {
+          "texto": "El proyecto se desarrolla bajo un fideicomiso inmobiliario, administrado por Partners Fiduciarios, lo que aporta orden y confianza.",
+          "titulo": "Respaldo fiduciario"
+        },
+        {
+          "texto": "Ciudad del Sol está concebido como un residencial de viviendas de bajo costo, con parqueo incluido para cada unidad.",
+          "titulo": "Vivienda accesible"
+        }
+      ],
+      "precioRef": false,
+      "preciosAl": "2026-10-13T18:49:57.357Z",
+      "tipo": "Apartamento",
+      "tipologias": [
+        {
+          "banos": 1,
+          "desde": 0,
+          "hab": 2,
+          "m2": 60
+        }
+      ],
+      "url": "",
+      "zona": "Verón, Punta Cana",
+      "id": "pmv71corzbpc04",
+      "fotos_archivos": []
+    },
+    {
+      "actualizado": "2026-10-13T18:49:59.133Z",
+      "amenidades": [
+        "Balcón",
+        "Lavadero",
+        "Área de parqueo"
+      ],
+      "captador": "German Escarfullery",
+      "captadorId": "cmuoj7lj5qjre",
+      "captadorTel": "",
+      "cercanias": [],
+      "descripcion": "Este plano presenta la Tipología Mar, una vivienda de una habitación y un baño con 50 m². Forma parte del Fideicomiso Inmobiliario Ciudad del Sol, en Verón, Punta Cana.\nLa vivienda cuenta con balcón, sala, comedor y cocina. También tiene lavadero y área de parqueo. Cada espacio está organizado para que usted viva con comodidad y orden.\nSu ubicación en la avenida Punta Cana, km 5 1/2, la sitúa en una zona turística de la provincia La Altagracia. Es una opción práctica para vivir o para invertir.",
+      "direccion": "Avenida Punta Cana, km 5 1/2, Distrito Municipal Turístico Verón Punta Cana, La Altagracia",
+      "disp": "Disponible",
+      "entrega": "",
+      "estado": "En planos",
+      "faq": [
+        {
+          "p": "¿Cuántas habitaciones y baños tiene la Tipología Mar?",
+          "r": "Tiene una habitación y un baño, además de sala, comedor, cocina, lavadero y balcón."
+        },
+        {
+          "p": "¿Cuál es el tamaño de la vivienda?",
+          "r": "El plano indica un área de 50 m²."
+        },
+        {
+          "p": "¿Incluye parqueo?",
+          "r": "Sí, el plano contempla un área de parqueo para la vivienda."
+        },
+        {
+          "p": "¿Dónde está ubicado el proyecto?",
+          "r": "En la avenida Punta Cana, km 5 1/2, distrito municipal turístico Verón Punta Cana, provincia La Altagracia."
+        }
+      ],
+      "fotos": [],
+      "frase": "Un hogar cómodo y bien pensado en Punta Cana",
+      "nombre": "PLANO TIPOLOGIA MAR 1HAB 1B",
+      "parqueos": 1,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 0,
+        "meses": 0,
+        "separacion": 0
+      },
+      "porque": [
+        {
+          "texto": "El proyecto se encuentra en la avenida Punta Cana, km 5 1/2, dentro del distrito municipal turístico de Verón.",
+          "titulo": "Ubicación en Punta Cana"
+        },
+        {
+          "texto": "La vivienda reúne sala, comedor, cocina, dormitorio con clóset, baño y lavadero en 50 m² bien aprovechados.",
+          "titulo": "Distribución práctica"
+        },
+        {
+          "texto": "Cuenta con balcón y terraza, para que usted disfrute del ambiente exterior desde su propia vivienda.",
+          "titulo": "Espacios al aire libre"
+        },
+        {
+          "texto": "El proyecto pertenece al Fideicomiso Inmobiliario de viviendas de bajo costo residencial Ciudad del Sol, administrado por Partners Fiduciarios.",
+          "titulo": "Respaldo de un fideicomiso"
+        }
+      ],
+      "precioRef": false,
+      "preciosAl": "2026-10-13T18:49:59.133Z",
+      "tipo": "Apartamento",
+      "tipologias": [
+        {
+          "banos": 1,
+          "desde": 0,
+          "hab": 1,
+          "m2": 50
+        }
+      ],
+      "url": "",
+      "zona": "Verón, Punta Cana",
+      "id": "pmv71cq5a299xk",
+      "fotos_archivos": []
+    },
+    {
+      "actualizado": "2026-10-13T18:50:01.303Z",
+      "amenidades": [],
+      "captador": "German Escarfullery",
+      "captadorId": "cmuoj7lj5qjre",
+      "captadorTel": "",
+      "cercanias": [],
+      "descripcion": "Sun District es un proyecto residencial ubicado en Ciudad del Sol, en Verón-Punta Cana. Su edificio tiene varios niveles y apartamentos distribuidos con orden y buena circulación.\nLos apartamentos del Bloque A cuentan con sala, cocina, dormitorios, baños y área de lavado. Algunos modelos incluyen despensa y closets, para que cada espacio tenga su función.\nLa planta del edificio está diseñada por Pons Arquitectos. Si desea conocer precios, metrajes y formas de pago, nuestro equipo con gusto le dará la información completa.",
+      "direccion": "Ave. Boulevard del Sol, Ciudad del Sol, Verón-Punta Cana, Higüey, La Altagracia",
+      "disp": "Disponible",
+      "entrega": "",
+      "estado": "En planos",
+      "faq": [
+        {
+          "p": "¿Dónde se encuentra Sun District?",
+          "r": "En la Avenida Boulevard del Sol, Ciudad del Sol, Verón-Punta Cana, municipio de Higüey, provincia La Altagracia."
+        },
+        {
+          "p": "¿Qué espacios tienen los apartamentos?",
+          "r": "Según el plano, cuentan con sala, cocina, dormitorios, baños, closets y área de lavado. Algunos modelos incluyen despensa."
+        },
+        {
+          "p": "¿Cuántos niveles tiene el edificio?",
+          "r": "El plano indica cinco niveles de apartamentos, además de un nivel de azotea y un nivel de techo."
+        },
+        {
+          "p": "¿Quién diseñó el proyecto?",
+          "r": "El diseño arquitectónico está a cargo de Pons Arquitectos, con el arquitecto Daniel Pons como responsable del diseño."
+        }
+      ],
+      "fotos": [],
+      "frase": "Vivir en Punta Cana, con espacios bien pensados",
+      "nombre": "Sun District",
+      "parqueos": 0,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 0,
+        "meses": 0,
+        "separacion": 0
+      },
+      "porque": [
+        {
+          "texto": "El proyecto está en Ciudad del Sol, sobre la Avenida Boulevard del Sol, en Verón-Punta Cana, una zona conocida del este del país.",
+          "titulo": "Ubicación en Punta Cana"
+        },
+        {
+          "texto": "El diseño arquitectónico fue elaborado por Pons Arquitectos, un estudio con sede en Santo Domingo.",
+          "titulo": "Diseño de reconocido estudio"
+        },
+        {
+          "texto": "Los apartamentos incluyen sala, cocina, dormitorios, baños, closets y área de lavado. Algunos modelos tienen despensa.",
+          "titulo": "Distribución práctica"
+        },
+        {
+          "texto": "El plano muestra cinco niveles de apartamentos, además de azotea, con una circulación común ordenada.",
+          "titulo": "Edificio de varios niveles"
+        }
+      ],
+      "precioRef": false,
+      "preciosAl": "2026-10-13T19:00:00.000Z",
+      "tipo": "Apartamento",
+      "tipologias": [
+        {
+          "banos": 0,
+          "desde": 76354,
+          "hab": 1,
+          "m2": 0
+        }
+      ],
+      "url": "",
+      "zona": "Ciudad del Sol, Verón-Punta Cana, Higüey",
+      "id": "pmv71crtli3h20",
+      "fotos_archivos": []
+    },
+    {
+      "actualizado": "2026-10-13T18:50:06.308Z",
+      "amenidades": [
+        "Balcón",
+        "Lavadero",
+        "Área de parqueo"
+      ],
+      "captador": "German Escarfullery",
+      "captadorId": "cmuoj7lj5qjre",
+      "captadorTel": "",
+      "cercanias": [],
+      "descripcion": "La tipología Arena es una vivienda de una habitación y un baño, con unos 50 m² de área. Forma parte del fideicomiso de viviendas de bajo costo Residencial Ciudad del Sol, en Verón.\nLa vivienda cuenta con balcón, sala, comedor y cocina. También tiene un lavadero y un área de parqueo. Los espacios están bien distribuidos para el uso diario, con una circulación cómoda entre ellos.\nSe trata de una opción sencilla para quien busca vivir o invertir en Punta Cana. Está sobre la Avenida Punta Cana, en una zona de fácil acceso. Consulte con el equipo los precios y las condiciones.",
+      "direccion": "Avenida Punta Cana, km 5 1/2, Distrito Municipal Turístico Verón Punta Cana, La Altagracia",
+      "disp": "Disponible",
+      "entrega": "",
+      "estado": "En planos",
+      "faq": [
+        {
+          "p": "¿Cuántas habitaciones y baños tiene la tipología Arena?",
+          "r": "Tiene una habitación y un baño, además de sala, comedor, cocina, balcón y lavadero."
+        },
+        {
+          "p": "¿Cuál es el área de la vivienda?",
+          "r": "El plano indica un área de 50 m²."
+        },
+        {
+          "p": "¿Incluye parqueo?",
+          "r": "Sí. La descripción de la vivienda incluye un área de parqueo."
+        },
+        {
+          "p": "¿Dónde está ubicado el proyecto?",
+          "r": "Está en la Avenida Punta Cana, km 5 1/2, en el Distrito Municipal Turístico Verón Punta Cana, La Altagracia."
+        }
+      ],
+      "fotos": [],
+      "frase": "Un hogar práctico y luminoso en Punta Cana",
+      "nombre": "Tipología Arena",
+      "parqueos": 1,
+      "plan": {
+        "cuotasPct": 0,
+        "entregaPct": 0,
+        "firmaPct": 0,
+        "meses": 0,
+        "separacion": 0
+      },
+      "porque": [
+        {
+          "texto": "Se encuentra en la Avenida Punta Cana, km 5 1/2, en el distrito turístico de Verón, una zona conocida de la región.",
+          "titulo": "Ubicación"
+        },
+        {
+          "texto": "Sala, comedor, cocina, habitación y baño están bien organizados en unos 50 m², con balcón y lavadero.",
+          "titulo": "Distribución práctica"
+        },
+        {
+          "texto": "La vivienda contempla un área de parqueo, una comodidad importante para el día a día.",
+          "titulo": "Parqueo incluido"
+        },
+        {
+          "texto": "El proyecto está respaldado por un fideicomiso inmobiliario de viviendas de bajo costo, administrado por Partners Fiduciarios.",
+          "titulo": "Proyecto en fideicomiso"
+        }
+      ],
+      "precioRef": false,
+      "preciosAl": "2026-10-13T18:50:06.308Z",
+      "tipo": "Apartamento",
+      "tipologias": [
+        {
+          "banos": 1,
+          "desde": 0,
+          "hab": 1,
+          "m2": 50
+        }
+      ],
+      "url": "",
+      "zona": "Verón, Punta Cana",
+      "id": "pmv71cvolnp6r8",
+      "fotos_archivos": []
     }
   ],
   "asesores": [

@@ -82,6 +82,7 @@ textarea.ctl{resize:vertical;min-height:84px;line-height:1.5}
 .shelf-head h2 .n{font-family:var(--body);font-size:13px;font-weight:600;color:#fff;background:var(--red);border-radius:6px;padding:2px 8px;align-self:center}
 .shelf-head .from{color:var(--muted);font-size:14px}
 .shelf-head .from b{color:var(--fg);font-weight:600}
+.faltas{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.faltas span{font-size:11px;font-weight:600;color:#8A5A00;background:#FCE7B2;border-radius:999px;padding:2px 9px}
 .shelf.pend{margin-top:28px;background:#FFF8E6;border:1px dashed #E3B341;border-radius:var(--r);padding:24px 20px 20px}.shelf.pend .shelf-head{border-color:#EED8A0}.shelf.pend .shelf-head h2 .n{background:#B7791F}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;min-width:0}
@@ -1053,6 +1054,9 @@ function initLanding(root) {
     else if (safeUrl(p.url)) window.open(p.url, "_blank", "noopener");
   }
   const needsPrice = p => p.precioRef || minPrice(p) === Infinity;
+  const noFotos = p => !(p.fotos && p.fotos.length);
+  const incompleto = p => needsPrice(p) || noFotos(p);
+  const faltas = p => [minPrice(p) === Infinity ? "Sin precio" : p.precioRef ? "Precio de ejemplo" : "", noFotos(p) ? "Sin fotos" : ""].filter(Boolean);
   function card(p, t, pend) {
     const url = safeUrl(p.url);
     const opts = habsText(p);
@@ -1066,15 +1070,17 @@ function initLanding(root) {
         h("button", { class: "link-btn danger", type: "button", onclick: () => remove(p) }, "Sí"),
         h("button", { class: "link-btn", type: "button", onclick: () => { S.confirming = null; render(); } }, "No")));
       else actions.append(
-        pend ? h("button", { class: "btn btn-red btn-sm", type: "button", onclick: () => openForm(p) }, "Poner precio") : h("button", { class: "link-btn", type: "button", onclick: () => openForm(p) }, "Editar"),
+        pend ? h("button", { class: "btn btn-red btn-sm", type: "button", onclick: () => openForm(p) }, "Completar") : h("button", { class: "link-btn", type: "button", onclick: () => openForm(p) }, "Editar"),
         h("button", { class: "link-btn danger", type: "button", onclick: () => { S.confirming = p.id; render(); } }, "Eliminar"));
     }
     const cover = p.fotos && p.fotos[0] ? `background-image:url('${blobUrl(p.fotos[0])}')` : "";
+    const miss = pend ? faltas(p) : [];
     return h("article", { class: "card" + (p.disp === "Vendido" ? " sold" : "") },
       h("div", { class: "thumb", style: cover }, p.estado ? h("span", { class: "state" + (p.estado === "En planos" ? " planos" : "") }, p.estado) : null,
         p.disp && p.disp !== "Disponible" ? h("span", { class: "disp d-" + slugify(p.disp) }, p.disp) : p.precioRef ? h("span", { class: "disp", title: "Precio de ejemplo: cámbialo en Editar antes de enviarlo" }, "Precio de ejemplo") : null),
       h("div", { class: "card-body" },
-        h("div", {}, h("h3", {}, p.nombre), p.zona ? h("div", { class: "zone" }, p.zona) : null),
+        h("div", {}, h("h3", {}, p.nombre), p.zona ? h("div", { class: "zone" }, p.zona) : null,
+          miss.length ? h("div", { class: "faltas" }, miss.map(m => h("span", {}, m))) : null),
         h("div", { class: "price" }, h("div", { class: "k" }, "Desde"),
           t.desde > 0 ? h("div", { class: "v num" }, money(t.desde)) : h("div", { class: "v ask" }, "Precio a consultar")),
         opts ? h("div", { class: "others" }, tipoOf(p) + " · " + opts + (p.parqueos ? " · " + p.parqueos + " parqueo" + (p.parqueos > 1 ? "s" : "") : "")) : null,
@@ -1099,7 +1105,7 @@ function initLanding(root) {
         h("div", { class: "empty", style: "text-align:left;border-style:solid" }, h("strong", {}, "Hola, " + S.me.nombre),
           "Todas las propiedades y landings salen a tu nombre como asesor, con tu WhatsApp" + (S.me.tel ? " (" + S.me.tel + ")" : "") + ".")));
       const all = list.map(p => ({ p, t: tipoFor(p) })).filter(x => x.t).sort(byRooms);
-      const items = all.filter(x => !needsPrice(x.p)), pend = all.filter(x => needsPrice(x.p));
+      const items = all.filter(x => !incompleto(x.p)), pend = all.filter(x => incompleto(x.p));
       if (items.length) {
         shown++;
         const low = items.find(x => x.t.desde > 0);
@@ -1108,14 +1114,14 @@ function initLanding(root) {
         shelves.append(h("section", { class: "shelf", "aria-labelledby": "t-list" },
           h("div", { class: "shelf-head" }, h("h2", { id: "t-list" }, title, h("span", { class: "n num" }, items.length)),
             h("span", { class: "from" }, low ? ["Desde ", h("b", { class: "num" }, money(low.t.desde))] : null,
-              pend.length ? h("button", { type: "button", class: "link-btn", onclick: () => $("porCompletar")?.scrollIntoView({ behavior: "smooth" }), style: "margin-left:14px;color:#B7791F;font-weight:600" }, pend.length + " más por completar precio ↓") : null)),
+              pend.length ? h("button", { type: "button", class: "link-btn", onclick: () => $("porCompletar")?.scrollIntoView({ behavior: "smooth" }), style: "margin-left:14px;color:#B7791F;font-weight:600" }, pend.length + " más por completar ↓") : null)),
           h("div", { class: "grid" }, items.map(x => card(x.p, x.t)))));
       }
       if (pend.length) {
         shown++;
         shelves.append(h("section", { class: "shelf pend", id: "porCompletar", "aria-labelledby": "t-pend" },
-          h("div", { class: "shelf-head" }, h("h2", { id: "t-pend" }, "Por completar precio", h("span", { class: "n num" }, pend.length)),
-            h("span", { class: "from" }, "Sin precio o con precio de ejemplo. Ponles el precio real antes de enviarlos.")),
+          h("div", { class: "shelf-head" }, h("h2", { id: "t-pend" }, "Por completar", h("span", { class: "n num" }, pend.length)),
+            h("span", { class: "from" }, "Les falta el precio real o las fotos. Complétalos antes de enviarlos a clientes.")),
           h("div", { class: "grid" }, pend.map(x => card(x.p, x.t, true)))));
       }
       if (!shown) shelves.append(h("section", { class: "shelf" }, emptyBox("Sin resultados", "No hay proyectos con esos filtros. Prueba otro presupuesto o quita la búsqueda.", false)));
