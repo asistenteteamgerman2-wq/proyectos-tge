@@ -2,14 +2,14 @@
 
 Hub de landings y catálogo de proyectos del Team Germanescarfullery. La versión oficial (con base de datos compartida) vive como Artifact en Claude; este repositorio guarda el código, una copia de los datos y las instrucciones para conectar el CRM.
 
-Team Germanescarfullery · RE/MAX Metropolitana · actualizado el 13 de octubre de 2026 · 47 proyectos
+Team Germanescarfullery · RE/MAX Metropolitana · actualizado el 21 de octubre de 2026 · 128 proyectos · subidos por Robert Cavallo
 
 ## Qué hay en este repositorio
-- `Proyectos-TGE-completo.html`: la página entera en un solo archivo, con los 47 proyectos y sus fotos. Se abre con doble clic. Lo que se cambie ahí se guarda solo en ese navegador.
+- `Proyectos-TGE-completo.html`: copia vieja (13 de octubre) de la página en un solo archivo, con 47 proyectos y sus fotos. Se abre con doble clic. Lo que se cambie ahí se guarda solo en ese navegador.
 - `pagina/index.html`: el código completo de la página "Proyectos TGE" (hub de landings, catálogo para clientes, envío por WhatsApp, carruseles de Instagram, filtros por tipo, región y subregión, presupuesto, m²/ft², favoritos y bloqueo de proyectos duplicados).
-- `Proyectos-que-faltan.csv`: los 92 proyectos del CRM (de 129) que todavía no están en la página, con precios, entrega y contacto.
-- `datos.json`: los 47 proyectos (con tipologías, precios, amenidades, plan de pago, FAQ, etc.) y los asesores (sin contraseñas).
-- `fotos/`: las fotos de los proyectos (hasta 3 por proyecto; la primera es la portada), comprimidas para que el ZIP quepa en un correo. En `datos.json`, cada proyecto tiene `fotos_archivos` con el nombre de cada foto. Los que tienen `fotos_incompletas: true` tenían más fotos en la página original.
+- `Proyectos-que-faltan.csv`: lista vieja (13 de octubre) de proyectos del CRM que faltaban en la página. Hoy la página ya tiene 128.
+- `datos.json`: los 128 proyectos al 21 de octubre (con tipologías, precios, amenidades, plan de pago, FAQ, quién los subió, etc.) y los asesores (sin contraseñas).
+- `fotos/`: solo las fotos de la copia del 13 de octubre; las de los proyectos nuevos están en la página en Claude. Las fotos de los proyectos (hasta 3 por proyecto; la primera es la portada), comprimidas para que el ZIP quepa en un correo. En `datos.json`, cada proyecto tiene `fotos_archivos` con el nombre de cada foto. Los que tienen `fotos_incompletas: true` tenían más fotos en la página original.
 - Pendiente de revisar: 7 proyectos están "Por completar" (sin precio o sin fotos). Posibles repetidos por confirmar: Palmeras Resipal / Independent Villas; Residencias Meliá / La Vista by Meliá; los planos "Tipología Arena", "Tipología Mar" y "Residencial Ciudad del Sol" (Verón).
 
 ## Instrucciones para Claude (pegar esto en la otra cuenta)

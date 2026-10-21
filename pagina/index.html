@@ -98,6 +98,7 @@ textarea.ctl{resize:vertical;min-height:84px;line-height:1.5}
 .price .v.ask{font-size:18px}
 .others{font-size:12px;color:var(--muted)}
 .agent{display:flex;align-items:center;gap:10px;font-size:13px;border-top:1px solid var(--line);padding-top:12px;min-width:0;margin-top:auto}
+.uploader{font-size:12px;color:var(--muted,#6b7280);margin-top:-4px}
 .av{width:30px;height:30px;border-radius:50%;background:var(--navy-2);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600;flex:none}
 .agent span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .card-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
@@ -164,7 +165,8 @@ textarea.ctl{resize:vertical;min-height:84px;line-height:1.5}
 .gal-add{width:110px;height:76px;border:2px dashed var(--line);border-radius:8px;display:grid;place-items:center;font-size:12px;color:var(--muted);cursor:pointer;text-align:center}
 .gal-add:hover{border-color:var(--red)}
 .bulk-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;max-height:300px;overflow:auto}
-.bulk-list li{display:flex;justify-content:space-between;gap:12px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:14px}
+.bulk-list li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:14px}
+.bulk-list li .btarget{flex-basis:100%;font:inherit;font-size:13px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:#fff;color:inherit;max-width:100%}
 .bulk-list li span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .bulk-list .st{font-size:12px;font-weight:600;white-space:nowrap;color:var(--muted)}
 .bulk-list .st.ok{color:#1D6B3A}.bulk-list .st.err{color:var(--red-ink)}.bulk-list .st.run{color:var(--navy-2)}
@@ -419,7 +421,7 @@ footer{border-top:1px solid var(--line);padding-block:24px;color:var(--muted);fo
     <label class="drop" id="drop" for="f-pdf">
       <span class="ic">PDF</span>
       <span><strong id="dropTitle">Sube el brochure del proyecto</strong><small id="dropSub">Claude lo lee, llena los datos y arma la landing con las fotos del brochure, quitándoles las letras.</small></span>
-      <input id="f-pdf" type="file" accept="application/pdf,.pdf">
+      <input id="f-pdf" type="file" accept="application/pdf,.pdf,.zip,application/zip" multiple>
     </label>
     <button class="link-btn" type="button" id="toBulk" style="align-self:flex-start;color:var(--red-ink);font-weight:500">¿Tienes varios brochures? Súbelos todos a la vez →</button>
     <div class="status" id="status" hidden><span class="spin"></span><span id="statusText"></span></div>
@@ -1036,7 +1038,7 @@ function initLanding(root) {
     p.parqueos ? p.parqueos + " parqueos " + p.parqueos + " parqueo" : ""].join(" "));
   const matches = (p, q, extra) => { const words = fold(q).split(/\s+/).filter(Boolean); if (!words.length) return true; const t = hay(p, extra); return words.every(w => t.includes(w)); };
   const maxHab = p => Math.max(0, ...(p.tipologias || []).map(t => t.hab || 0));
-  const byRooms = (a, b) => ((a.p.disp === "Vendido") - (b.p.disp === "Vendido")) || (maxHab(b.p) - maxHab(a.p)) || ((a.t.desde || Infinity) - (b.t.desde || Infinity));
+  const byRooms = (a, b) => ((a.p.disp === "Vendido") - (b.p.disp === "Vendido")) || ((a.t.desde || Infinity) - (b.t.desde || Infinity)) || String(a.p.nombre).localeCompare(String(b.p.nombre), "es");
   function visible() { return S.projects.filter(p => (!S.tipos.size || S.tipos.has(tipoOf(p))) && matches(p, S.q, capName(p))); }
   const habKey = h => Math.min(4, Math.max(1, h || 1));
   function tipoFor(p) {
@@ -1055,7 +1057,12 @@ function initLanding(root) {
   }
   const needsPrice = p => p.precioRef || minPrice(p) === Infinity;
   const noFotos = p => !(p.fotos && p.fotos.length);
-  const incompleto = p => needsPrice(p) || noFotos(p);
+  // Completo = tiene fotos. Si no tiene precio, sale en la lista con "Precio a consultar".
+  const incompleto = p => noFotos(p);
+  const ORDEN_PC = new Map(["pmv76dodcmwod1", "pmv76dodd11rt1", "pmv76doevm8gk1", "pmv76dodf20eui", "pmv76dodhzw5fd", "pmv76dod0kkejl", "pmv76dod741h3j", "pmv76docus0qe7", "pmv76dodkzxm1a", "pmv76dodlkmdt5", "pmv76dodmxdz8k", "pmv76dodn8fe40", "pmv76dodpr3fiy", "pmv76dodq07fog", "pmv76dodrpy7ye", "pmv76dodsjl8gi", "pmv76dod1f0bra", "pmv76dodw9bqmq", "pmv76dod2ehi7s", "pmv76docwtew08", "pmv76dodyqiyvj", "pmv76doeyx23ua", "pmv76dodzb7c9p", "pmv76doe232nkp", "pmv76doettrj9p", "pmv76doe6advj6", "pmv76dod3seyfn", "pmv76docvlgdlw", "pmv76docytokp5", "pmv76dod5j3hco", "pmv76dod68e8z0", "pmv5qjjgbqc0sr", "pmv76doeusg171", "pmv76doee2d8bp", "pmv71crtli3h20", "pmv76doeicqj7b", "pmv76doejcpygz", "pmv76doemkfxi1", "pmv76doeno0d3v", "pmv76doeof30ur", "pmv76doep0o0q4", "pmv76doeqzcotj", "pmv76doeru0lq1", "pmv76doeskvpx3", "pmv76dodbq4axe", "pmv76dof2tg10i", "pmv76dodeo5a1f", "pmv76doexge8ky", "pmv76dodgre81q", "pmv76dodi29qfs", "pmv76dodjht1n8", "pmv76dodoz43g4", "pmv76dof33tikh", "pmv76dodt3ss5v", "pmv76dodunwfkn", "pmv76dodvrtgat", "pmv76dof4bay4u", "pmv76dodxv3uct", "pmv76dof5tqtpr", "pmv76dof6i6ub1", "pmv76dod4q9x8e", "pmv76doe0swhe8", "pmv76doe1i7pr1", "pmv76doezz6b6l", "pmv76docx3hecm", "pmv76doe3yzzoz", "pmv76doewf5onf", "pmv76doe4mdyu5", "pmv76dodaax1jp", "pmun6jehcx0y4k", "pmv76dof77ib76", "pmv76doe5ly4og", "pmv76dof88yzmz", "pmv76dof0zcy7w", "pmv76doe85ctjj", "pmv71cq5a299xk", "pmv76doe943r7m", "pmv76doea8mp5d", "pmv71corzbpc04", "pmv76doczpo3rp", "pmv76dod8rciyz", "pmv76doebeagua", "pmv76doec1nt6k", "pmv76doed28fwd", "pmv76dof9hqve6", "pmv76doefrzbx7", "pmv76doegqbqdr", "pmv76doehjl0sv", "pmv76dof1gn77w", "pmv76dod9bgrcb", "pmv76dofamhj7j", "pmv76doekxrs7y", "pmv71cvolnp6r8", "pmv76dofb691b5", "pmv76doelt658w", "pmv76dofcjm5k6", "pmv76dofd9d8sd"].map((id, i) => [id, i + 1]));
+  const ordPC = p => ORDEN_PC.get(p.id) || 9999;
+  // Proyectos que en el CRM no tienen carpeta ni brochure: van en su propio apartado.
+  const SIN_BRO = new Set(["pmv76dodbq4axe", "pmv76dof2tg10i", "pmv76dodeo5a1f", "pmv76doexge8ky", "pmv76dodgre81q", "pmv76dodoz43g4", "pmv76dof33tikh", "pmv76dof4bay4u", "pmv76dodxv3uct", "pmv76dof5tqtpr", "pmv76dof6i6ub1", "pmv76dod4q9x8e", "pmv76doe0swhe8", "pmv76doezz6b6l", "pmv76docx3hecm", "pmv76doewf5onf", "pmv76doe4mdyu5", "pmv76dodaax1jp", "pmun6jehcx0y4k", "pmv76dof77ib76", "pmv76dof88yzmz", "pmv76dof0zcy7w", "pmv76doe85ctjj", "pmv71cq5a299xk", "pmv76doe943r7m", "pmv76doea8mp5d", "pmv71corzbpc04", "pmv76dod8rciyz", "pmv76doebeagua", "pmv76doec1nt6k", "pmv76dof9hqve6", "pmv76doefrzbx7", "pmv76dod9bgrcb", "pmv76dofamhj7j", "pmv71cvolnp6r8", "pmv76dofb691b5", "pmv76dofcjm5k6", "pmv76dofd9d8sd"]);
   const faltas = p => [minPrice(p) === Infinity ? "Sin precio" : p.precioRef ? "Precio de ejemplo" : "", noFotos(p) ? "Sin fotos" : ""].filter(Boolean);
   function card(p, t, pend) {
     const url = safeUrl(p.url);
@@ -1070,7 +1077,8 @@ function initLanding(root) {
         h("button", { class: "link-btn danger", type: "button", onclick: () => remove(p) }, "Sí"),
         h("button", { class: "link-btn", type: "button", onclick: () => { S.confirming = null; render(); } }, "No")));
       else actions.append(
-        pend ? h("button", { class: "btn btn-red btn-sm", type: "button", onclick: () => openForm(p) }, "Completar") : h("button", { class: "link-btn", type: "button", onclick: () => openForm(p) }, "Editar"),
+        pend && safeUrl(p.brochureUrl) ? h("button", { class: "btn btn-red btn-sm", type: "button", title: "Trae el brochure de su Dropbox o Drive y llena el proyecto", onclick: () => traerBrochure(p) }, "Traer brochure") : null,
+        pend ? h("button", { class: safeUrl(p.brochureUrl) ? "link-btn" : "btn btn-red btn-sm", type: "button", onclick: () => openForm(p) }, "Completar") : h("button", { class: "link-btn", type: "button", onclick: () => openForm(p) }, "Editar"),
         h("button", { class: "link-btn danger", type: "button", onclick: () => { S.confirming = p.id; render(); } }, "Eliminar"));
     }
     const cover = p.fotos && p.fotos[0] ? `background-image:url('${blobUrl(p.fotos[0])}')` : "";
@@ -1079,12 +1087,13 @@ function initLanding(root) {
       h("div", { class: "thumb", style: cover }, p.estado ? h("span", { class: "state" + (p.estado === "En planos" ? " planos" : "") }, p.estado) : null,
         p.disp && p.disp !== "Disponible" ? h("span", { class: "disp d-" + slugify(p.disp) }, p.disp) : p.precioRef ? h("span", { class: "disp", title: "Precio de ejemplo: cámbialo en Editar antes de enviarlo" }, "Precio de ejemplo") : null),
       h("div", { class: "card-body" },
-        h("div", {}, h("h3", {}, p.nombre), p.zona ? h("div", { class: "zone" }, p.zona) : null,
+        h("div", {}, h("h3", {}, pend && ORDEN_PC.has(p.id) ? ORDEN_PC.get(p.id) + ". " : "", p.nombre), p.zona ? h("div", { class: "zone" }, p.zona) : null,
           miss.length ? h("div", { class: "faltas" }, miss.map(m => h("span", {}, m))) : null),
         h("div", { class: "price" }, h("div", { class: "k" }, "Desde"),
           t.desde > 0 ? h("div", { class: "v num" }, money(t.desde)) : h("div", { class: "v ask" }, "Precio a consultar")),
         opts ? h("div", { class: "others" }, tipoOf(p) + " · " + opts + (p.parqueos ? " · " + p.parqueos + " parqueo" + (p.parqueos > 1 ? "s" : "") : "")) : null,
         h("div", { class: "agent" }, avatar(agentFor(p).foto, capName(p)), h("span", {}, "Asesor: " + capName(p))),
+        p.subidoPor ? h("div", { class: "uploader" }, "Subido por " + p.subidoPor) : null,
         actions));
   }
   function emptyBox(title, text, withBtn) {
@@ -1105,10 +1114,10 @@ function initLanding(root) {
         h("div", { class: "empty", style: "text-align:left;border-style:solid" }, h("strong", {}, "Hola, " + S.me.nombre),
           "Todas las propiedades y landings salen a tu nombre como asesor, con tu WhatsApp" + (S.me.tel ? " (" + S.me.tel + ")" : "") + ".")));
       const all = list.map(p => ({ p, t: tipoFor(p) })).filter(x => x.t).sort(byRooms);
-      const items = all.filter(x => !incompleto(x.p)), pend = all.filter(x => incompleto(x.p));
+      const items = all.filter(x => !incompleto(x.p)), pend = all.filter(x => incompleto(x.p)).sort((a, b) => ordPC(a.p) - ordPC(b.p) || a.p.nombre.localeCompare(b.p.nombre));
       if (items.length) {
         shown++;
-        const low = items.find(x => x.t.desde > 0);
+        const low = items.filter(x => x.t.desde > 0).sort((a, b) => a.t.desde - b.t.desde)[0];
         const sel = [...S.habs].sort().map(x => x >= 4 ? "4+" : String(x));
         const title = !sel.length ? (pend.length ? "Con precio" : "Todos los proyectos") : "Con " + (sel.length > 1 ? sel.slice(0, -1).join(", ") + " o " + sel[sel.length - 1] : sel[0]) + (sel.length === 1 && sel[0] === "1" ? " habitación" : " habitaciones");
         shelves.append(h("section", { class: "shelf", "aria-labelledby": "t-list" },
@@ -1117,12 +1126,20 @@ function initLanding(root) {
               pend.length ? h("button", { type: "button", class: "link-btn", onclick: () => $("porCompletar")?.scrollIntoView({ behavior: "smooth" }), style: "margin-left:14px;color:#B7791F;font-weight:600" }, pend.length + " más por completar ↓") : null)),
           h("div", { class: "grid" }, items.map(x => card(x.p, x.t)))));
       }
-      if (pend.length) {
+      const pendCon = pend.filter(x => !SIN_BRO.has(x.p.id)), pendSin = pend.filter(x => SIN_BRO.has(x.p.id));
+      if (pendCon.length) {
         shown++;
         shelves.append(h("section", { class: "shelf pend", id: "porCompletar", "aria-labelledby": "t-pend" },
-          h("div", { class: "shelf-head" }, h("h2", { id: "t-pend" }, "Por completar", h("span", { class: "n num" }, pend.length)),
+          h("div", { class: "shelf-head" }, h("h2", { id: "t-pend" }, "Por completar", h("span", { class: "n num" }, pendCon.length)),
             h("span", { class: "from" }, "Les falta el precio real o las fotos. Complétalos antes de enviarlos a clientes.")),
-          h("div", { class: "grid" }, pend.map(x => card(x.p, x.t, true)))));
+          h("div", { class: "grid" }, pendCon.map(x => card(x.p, x.t, true)))));
+      }
+      if (pendSin.length) {
+        shown++;
+        shelves.append(h("section", { class: "shelf pend", id: pendCon.length ? "sinBrochure" : "porCompletar", "aria-labelledby": "t-sinbro" },
+          h("div", { class: "shelf-head" }, h("h2", { id: "t-sinbro" }, "Sin brochure en el CRM", h("span", { class: "n num" }, pendSin.length)),
+            h("span", { class: "from" }, "El CRM no tiene carpeta ni presentación de estos. Hay que pedir el brochure al contacto del proyecto.")),
+          h("div", { class: "grid" }, pendSin.map(x => card(x.p, x.t, true)))));
       }
       if (!shown) shelves.append(h("section", { class: "shelf" }, emptyBox("Sin resultados", "No hay proyectos con esos filtros. Prueba otro presupuesto o quita la búsqueda.", false)));
     }
@@ -1607,6 +1624,22 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
 
   /* ---------- bulk upload ---------- */
   const bulk = { files: [], running: false, stop: false };
+  // Busca a qué proyecto incompleto pertenece un brochure (por nombre del archivo o del proyecto leído).
+  const pnorm = s => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\bsold\s*out\b/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+  const pendList = () => S.projects.filter(incompleto).sort((a, b) => ordPC(a) - ordPC(b) || a.nombre.localeCompare(b.nombre));
+  function matchPend(...names) {
+    const exact = [], fwd = [], rev = new Set();
+    for (const p of pendList()) {
+      const k = pnorm(p.nombre); if (k.length < 3) continue;
+      for (const n of names) { const nn = pnorm(n); if (!nn) continue;
+        if (nn === k) exact.push(p);
+        else if ((" " + nn + " ").includes(" " + k + " ")) fwd.push([k.length, p]);
+        else if (nn.length >= 5 && (" " + k + " ").includes(" " + nn + " ")) rev.add(p); }
+    }
+    if (exact.length) return exact[0];
+    if (fwd.length) return fwd.sort((a, b) => b[0] - a[0])[0][1];
+    return rev.size === 1 ? [...rev][0] : null;
+  }
   function openBulk() {
     closeForm();
     const sel = $("b-capt");
@@ -1643,6 +1676,8 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
   }
   function renderBulk() {
     $("bList").replaceChildren(...bulk.files.map(f => h("li", f.hold ? { style: "flex-wrap:wrap" } : {}, h("span", {}, f.file.name), h("span", { class: "st " + (f.cls || "") }, f.st),
+      (f.st === "En espera" || f.skipped) && !bulk.running ? (() => { const sel = h("select", { class: "btarget", title: "A qué proyecto va este brochure", onchange: e => { f.target = e.target.value; if (f.skipped && f.target) { f.skipped = false; f.st = "En espera"; f.cls = ""; renderBulk(); } } },
+        h("option", { value: "" }, f.skipped ? "¿Es otro proyecto? Elige cuál completar…" : "Proyecto nuevo / buscar solo"), ...pendList().map(p => h("option", { value: p.id }, (ORDEN_PC.has(p.id) ? ORDEN_PC.get(p.id) + ". " : "") + "Completar: " + p.nombre))); sel.value = f.target || ""; return sel; })() : null,
       f.hold && !bulk.running ? h("div", { class: "bacts", style: "flex-basis:100%" }, h("button", { type: "button", class: "pri", onclick: () => holdToForm(f) }, "Agregar fotos"), h("button", { type: "button", onclick: () => holdSave(f) }, "Subir sin fotos")) : null,
       f.review && !bulk.running ? h("div", { class: "bacts", style: "flex-basis:100%" }, h("button", { type: "button", class: "pri", onclick: () => reviewToForm(f) }, "Revisar y subir"), h("button", { type: "button", onclick: () => { f.review = null; f.st = "No se subió"; f.cls = ""; renderBulk(); } }, "No subir")) : null)));
     $("bGo").disabled = bulk.running || !bulk.files.some(f => f.st === "En espera");
@@ -1667,7 +1702,8 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
     for (const file of flat) {
       if (!/pdf$/i.test(file.type) && !/\.pdf$/i.test(file.name)) continue;
       if (bulk.files.some(f => f.file.name === file.name && f.file.size === file.size)) continue;
-      bulk.files.push({ file, st: "En espera" });
+      const m = matchPend(file.name.replace(/\.pdf$/i, "").replace(/^\s*\d+[.)-]\s*/, ""));
+      bulk.files.push({ file, st: "En espera", target: m ? m.id : "" });
     }
     renderBulk();
   }
@@ -1692,8 +1728,31 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
       const say = t => { f.st = t; f.cls = "run"; renderBulk(); };
       try {
         const { c, blobs, partial } = await readBrochure(f.file, say);
-        const nm = c.nombre || cleanName(f.file.name.replace(/\.pdf$/i, "")), dp = findDup(nm, null, bulk.done, c);
-        if (dp) { f.st = "Ya está en la página: " + dp.nombre + " · no se subió otra vez"; f.cls = ""; skip++; renderBulk(); continue; }
+        const nm = c.nombre || cleanName(f.file.name.replace(/\.pdf$/i, ""));
+        const tgt = (f.target && S.projects.find(p => p.id === f.target)) || null;
+        const dp = tgt || matchPend(f.file.name.replace(/\.pdf$/i, ""), nm) || findDup(nm, null, bulk.done, c);
+        // Si el proyecto ya existe pero está incompleto (sin fotos o sin precio), el brochure lo completa en vez de saltarlo.
+        if (dp && dp.id && incompleto(dp)) {
+          const old = { ...dp }; delete old.id;
+          let fotos = old.fotos || [];
+          if (noFotos(dp) && blobs.length) { fotos = [];
+            for (let i = 0; i < blobs.length; i++) { say(`Subiendo fotos (${i + 1} de ${blobs.length})…`); fotos.push((await S.assets.upload(blobs[i], { contentType: "image/jpeg" })).id); } }
+          say("Completando " + dp.nombre + "…");
+          const nb = bulkBody(c, f, cap, fotos);
+          const oldP = new Map((old.tipologias || []).filter(t => t.desde > 0).map(t => [t.hab, t.desde]));
+          const tip = (nb.tipologias || []).map(t => ({ ...t, desde: t.desde > 0 ? t.desde : (oldP.get(t.hab) || 0) }));
+          const hasP = tip.some(t => t.desde > 0);
+          const merged = { ...old, ...nb, nombre: old.nombre, captador: old.captador, captadorTel: old.captadorTel, captadorId: old.captadorId, disp: old.disp || nb.disp, fotos,
+            zona: old.zona || nb.zona, descripcion: nb.descripcion || old.descripcion || "",
+            tipologias: hasP ? tip : (old.tipologias || tip), entrega: nb.entrega || old.entrega || "", amenidades: nb.amenidades.length ? nb.amenidades : (old.amenidades || []),
+            precioRef: hasP ? false : !!old.precioRef };
+          await S.db.collection("proyectos").doc(dp.id).set(merged);
+          bulk.done.push(nm);
+          const still = [!fotos.length ? "sin fotos" : "", !(hasP || (old.tipologias || []).some(t => t.desde > 0)) ? "sin precio" : ""].filter(Boolean);
+          f.st = "Completado ✓ " + dp.nombre + (fotos.length && noFotos(dp) ? ` (${fotos.length} fotos)` : "") + (still.length ? " · todavía " + still.join(" y ") : "");
+          f.cls = still.length ? "warn" : "ok"; ok++; renderBulk(); continue;
+        }
+        if (dp) { f.st = "Ya está en la página: " + dp.nombre + " · no se subió otra vez"; f.cls = ""; f.skipped = true; skip++; renderBulk(); continue; }
         if (badName(nm) || (partial && !c.descripcion && !priceSig(c))) { f.st = "Revisar antes de subir: no se encontró bien el nombre o los datos del proyecto"; f.cls = "warn"; f.review = { c, blobs }; held++; renderBulk(); continue; }
         if (!blobs.length) { f.st = "Sin fotos · no se subió todavía"; f.cls = "warn"; f.hold = c; held++; renderBulk(); continue; }
         const fotos = [];
@@ -1730,6 +1789,13 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
       const r = S.sample ? await askBrochure(text, renderPages, file.name) : { c: parseBrochureLocal(text, file.name), partial: true };
       const c = r.c;
       const keepCapt = { captador: $("f-capt").value, captadorTel: $("f-tel").value };
+      const ed = S.editing && S.projects.find(x => x.id === S.editing);
+      if (ed) { // Completando un proyecto que ya existe: se queda con su nombre y con sus precios si el brochure no trae.
+        c.nombre = ed.nombre; c.zona = c.zona || ed.zona;
+        const oldP = new Map((ed.tipologias || []).filter(t => t.desde > 0).map(t => [t.hab, t.desde]));
+        const tip = (c.tipologias || []).map(t => ({ ...t, desde: t.desde > 0 ? t.desde : (oldP.get(t.hab) || 0) }));
+        c.tipologias = tip.some(t => t.desde > 0) ? tip : (ed.tipologias || tip);
+      }
       fillForm({ ...c, ...keepCapt });
       { const dp = !S.editing && findDup($("f-nombre").value, null); if (dp) $("formErr").textContent = "Ojo: “" + dp.nombre + "” ya está en la página. Si lo guardas no se va a duplicar; mejor edita el existente."; }
       S.draft = { extra: pickExtra(c), blobs, fotos: [] };
@@ -1745,12 +1811,41 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
         : SAMPLE_ERR[x?.code] || "No se pudo leer el brochure. Intenta de nuevo o llena los datos a mano.";
     } finally { S.busy = false; $("save").disabled = false; }
   }
-  $("f-pdf").addEventListener("change", e => handlePdf(e.target.files[0]));
+  // Trae el brochure guardado del proyecto (Dropbox o Drive). Si el navegador no deja bajarlo desde aquí, abre la descarga en otra pestaña.
+  async function traerBrochure(p) {
+    openForm(p);
+    const url = safeUrl(p.brochureUrl), err = $("formErr");
+    const manual = () => { err.replaceChildren("No se pudo traer solo. ", h("a", { href: url, target: "_blank", rel: "noopener" }, "Toca aquí para bajar el brochure"),
+      " y después súbelo en “Subir brochure”. Se guarda en este mismo proyecto."); };
+    setStatus("Trayendo el brochure de " + p.nombre + "…");
+    try {
+      const ctl = new AbortController(), tm = setTimeout(() => ctl.abort(), 120000);
+      const r = await fetch(url, { signal: ctl.signal, redirect: "follow" }); clearTimeout(tm);
+      if (!r.ok) throw 0;
+      const blob = await r.blob(), head = new Uint8Array(await blob.slice(0, 4).arrayBuffer()), sig = String.fromCharCode(...head);
+      let pdf = null;
+      if (sig.startsWith("%PDF")) pdf = blob;
+      else if (sig.startsWith("PK")) {
+        setStatus("Abriendo la carpeta del brochure…");
+        const Z = await zipLib(), zip = await Z.loadAsync(blob);
+        const es = Object.values(zip.files).filter(e => !e.dir && /\.pdf$/i.test(e.name) && !/(^|\/)(__MACOSX|\.)/.test(e.name));
+        let best = null, bs = -1; for (const e of es) { const b = await e.async("blob"); if (b.size > bs) { best = b; bs = b.size; } }
+        pdf = best;
+      }
+      if (!pdf) throw 0;
+      setStatus("");
+      await handlePdf(new File([pdf], p.nombre + ".pdf", { type: "application/pdf" }));
+    } catch { setStatus(""); manual(); }
+  }
+  // Si eligen varios PDF (o un ZIP) en el formulario normal, pasan solos a la subida de varios a la vez.
+  const pickPdfs = files => { const fs = [...(files || [])]; if (!fs.length) return;
+    if (fs.length > 1 || /\.zip$/i.test(fs[0].name) || (!S.editing && matchPend(fs[0].name.replace(/\.pdf$/i, "")))) { openBulk(); addBulkFiles(fs); } else handlePdf(fs[0]); };
+  $("f-pdf").addEventListener("change", e => { pickPdfs(e.target.files); e.target.value = ""; });
   $("noPhotoGo").addEventListener("click", () => { S.noPhotoOk = true; $("noPhotoAsk").hidden = true; $("form").requestSubmit(); });
   const drop = $("drop");
   drop.addEventListener("dragover", e => { e.preventDefault(); drop.classList.add("over"); });
   drop.addEventListener("dragleave", () => drop.classList.remove("over"));
-  drop.addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("over"); handlePdf(e.dataTransfer.files[0]); });
+  drop.addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("over"); pickPdfs(e.dataTransfer.files); });
 
   /* ---------- duplicates ---------- */
   const DUP_STOP = new Set(["torre","tower","residencial","residences","residence","proyecto","project","the","de","del","la","el","los","las","y","by","at","en","in","condo","condos","apartamentos","apartments","suites",
@@ -1778,7 +1873,9 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
     if (!captador) { err.textContent = "Escribe el nombre del asesor."; $("f-capt").focus(); return; }
     if (url && !safeUrl(url)) { err.textContent = "El enlace debe empezar con https://"; $("f-url").focus(); return; }
     if (!S.editing && badName(nombre)) { err.textContent = "“" + nombre + "” no parece el nombre de un proyecto. Escribe el nombre comercial del proyecto."; $("f-nombre").focus(); return; }
-    const dup = findDup(nombre, S.editing);
+    let dup = S.editing ? null : findDup(nombre, null);
+    if (!S.editing && !dup) { const m = matchPend(nombre); if (m) dup = m; }
+    if (dup && dup.id && !S.editing && incompleto(dup)) { S.editing = dup.id; dup = null; }
     if (dup) { err.replaceChildren("Este proyecto ya está en la página como “" + dup.nombre + "”. No se sube dos veces. ",
       dup.id ? h("button", { class: "link-btn", type: "button", onclick: () => { const d = dup; S.busy = false; closeForm(); openForm(S.projects.find(x => x.id === d.id)); } }, "Abrir el existente para editarlo") : ""); $("f-nombre").focus(); return; }
     if (!S.gal.length && !S.noPhotoOk) { const a = $("noPhotoAsk"); a.hidden = false; a.scrollIntoView({ behavior: "smooth", block: "center" }); return; }
@@ -1802,7 +1899,11 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
       setStatus("Guardando…");
       const body = {
         ...(S.draft?.extra || {}), nombre, tipo: $("f-tipo").value, zona: $("f-zona").value.trim(), estado: $("f-estado").value, disp: $("f-disp").value, url, captador,
-        captadorTel: $("f-tel").value.trim(), captadorId: (S.caps.find(x => x.nombre.trim().toLowerCase() === captador.toLowerCase()) || {}).id || "", tipologias, descripcion: $("f-desc").value.trim(),
+        captadorTel: $("f-tel").value.trim(), captadorId: (S.caps.find(x => x.nombre.trim().toLowerCase() === captador.toLowerCase()) || {}).id || "",
+        tipologias: tipologias.map(t => ({ ...t, desde: t.desde > 0 ? t.desde : (((prev && prev.tipologias) || []).find(o => o.hab === t.hab && o.desde > 0) || {}).desde || 0 })),
+        ...(prev && prev.crm ? { crm: prev.crm, origen: prev.origen } : {}),
+        ...(prev && prev.brochureUrl ? { brochureUrl: prev.brochureUrl } : {}),
+        subidoPor: (prev && prev.subidoPor) || (S.me ? S.me.nombre : "Robert Cavallo"), descripcion: $("f-desc").value.trim(),
         amenidades: $("f-amen").value.split(",").map(s => s.trim()).filter(Boolean).slice(0, 16), fotos, actualizado: new Date().toISOString(),
         plan: readPlan(), preciosAl, precioRef: sameP ? !!(prev && prev.precioRef) : false,
       };
@@ -2384,7 +2485,7 @@ ${wa ? `<a class="ct-float" id="ct-float" href="${wa}" target="_blank" rel="noop
         p.parqueos ? p.parqueos + " parqueos " + p.parqueos + " parqueo" : ""].join(" "));
       const matches = (p, q, extra) => { const words = fold(q).split(/\s+/).filter(Boolean); if (!words.length) return true; const t = hay(p, extra); return words.every(w => t.includes(w)); };
       const maxHab = p => Math.max(0, ...(p.tipologias || []).map(t => t.hab || 0));
-      const byRooms = (a, b) => ((a.p.disp === "Vendido") - (b.p.disp === "Vendido")) || (maxHab(b.p) - maxHab(a.p)) || ((a.t.desde || Infinity) - (b.t.desde || Infinity));
+      const byRooms = (a, b) => ((a.p.disp === "Vendido") - (b.p.disp === "Vendido")) || ((a.t.desde || Infinity) - (b.t.desde || Infinity)) || String(a.p.nombre).localeCompare(String(b.p.nombre), "es");
       const vis = list.filter(p => projOk(p) && matches(p, st.q, ag.nombre));
       const items = vis.map(p => ({ p, t: pick(p) })).filter(x => x.t).sort(byRooms);
       const banosTxt = p => { const b = [...new Set((p.tipologias || []).map(t => t.banos).filter(Boolean))].sort(); return b.length ? " · " + b.join(" o ") + (b.length === 1 && b[0] === 1 ? " baño" : " baños") : ""; };
