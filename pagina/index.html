@@ -294,14 +294,14 @@ footer{border-top:1px solid var(--line);padding-block:24px;color:var(--muted);fo
     </section>
   <section class="crm" id="equipo" aria-labelledby="equipoTitle" hidden>
     <h2 id="equipoTitle">Agregar asesores</h2>
-    <p>Agrega a cada asesor con su foto, su WhatsApp, su usuario y la contraseña que tú elijas (por defecto 1234). Cuando entra con su usuario, todas las propiedades y landings salen a su nombre, con su foto y su WhatsApp.</p>
+    <p>Agrega a cada asesor con su nombre, su foto y su WhatsApp. No lleva contraseña: los asesores entran por el CRM. Solo los clientes reciben contraseña.</p>
     <div class="crm-row" style="align-items:center">
       <label class="photo-pick" for="c-foto" title="Subir foto"><img id="c-fotoPrev" alt="" hidden><span id="c-fotoTxt">+ Foto</span></label>
       <input id="c-foto" type="file" accept="image/*" hidden>
       <div class="field"><label for="c-nombre">Nombre del asesor</label><input class="ctl" id="c-nombre" maxlength="60" placeholder="Nombre y apellido"></div>
       <div class="field"><label for="c-tel">WhatsApp</label><input class="ctl num" id="c-tel" maxlength="30" placeholder="809 000 0000"></div>
-      <div class="field"><label for="c-user">Usuario</label><input class="ctl" id="c-user" maxlength="30" autocapitalize="none" spellcheck="false" placeholder="Se llena solo con el nombre"></div>
-      <div class="field"><label for="c-pass" id="c-passLab">Contraseña</label><input class="ctl num" id="c-pass" type="text" autocomplete="off" maxlength="64" value="1234"></div>
+      <div class="field" hidden><label for="c-user">Usuario</label><input class="ctl" id="c-user" maxlength="30" autocapitalize="none" spellcheck="false" placeholder="Se llena solo con el nombre"></div>
+      <div class="field" hidden><label for="c-pass" id="c-passLab">Contraseña</label><input class="ctl num" id="c-pass" type="text" autocomplete="off" maxlength="64" value=""></div>
     </div>
     <div class="crm-row">
       <button class="btn btn-red" type="button" id="capSave">Agregar asesor</button>
@@ -2896,12 +2896,12 @@ ${wa ? `<a class="ct-float" id="ct-float" href="${wa}" target="_blank" rel="noop
     $("c-pass").value = ""; $("c-pass").placeholder = "Vacío = no cambiar"; $("c-passLab").textContent = "Nueva contraseña";
     $("c-nombre").value = c.nombre; $("c-user").value = c.usuario; $("c-tel").value = c.tel || ""; $("c-user").dataset.touched = "1";
     setPhotoPreview(c.foto ? blobUrl(c.foto) : "");
-    $("capSave").textContent = "Guardar cambios"; $("capReset").hidden = true; $("capCancel").hidden = false; $("c-nombre").focus();
+    $("capSave").textContent = "Guardar cambios"; $("capReset").hidden = true; $("capCancel").hidden = false; $("c-pass").value = ""; $("c-nombre").focus();
     showView("admin");
   }
   function resetCapForm() {
     S.capEditing = null; capPhoto = null; $("c-nombre").value = ""; $("c-user").value = ""; $("c-tel").value = ""; delete $("c-user").dataset.touched; $("c-foto").value = "";
-    $("c-pass").value = "1234"; $("c-pass").placeholder = ""; $("c-passLab").textContent = "Contraseña";
+    $("c-pass").value = ""; $("c-pass").placeholder = ""; $("c-passLab").textContent = "Contraseña";
     setPhotoPreview(""); $("capSave").textContent = "Agregar asesor"; $("capReset").hidden = true; $("capCancel").hidden = true;
   }
   function showCreds(nombre, usuario, pass, tel, nuevo) {
@@ -2937,7 +2937,7 @@ ${wa ? `<a class="ct-float" id="ct-float" href="${wa}" target="_blank" rel="noop
       const body = { nombre, usuario, tel, foto: fotoId || (cur ? cur.foto : ""), salt: cur ? cur.salt : "", hash: cur ? cur.hash : "", actualizado: new Date().toISOString() };
       let pass = "";
       const typed = $("c-pass").value.trim();
-      if (!cur && !typed) throw { code: "no_pass" };
+      // Los asesores no llevan contraseña: entran por el CRM. Solo los clientes reciben contraseña.
       if (typed && typed.length < 4) throw { code: "short_pass" };
       if (typed) { pass = typed; body.salt = newSalt(); body.hash = await sha(body.salt, pass); }
       const id = S.capEditing || ("c" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6));
@@ -2947,7 +2947,7 @@ ${wa ? `<a class="ct-float" id="ct-float" href="${wa}" target="_blank" rel="noop
       if (pass) {
         showCreds(nombre, usuario, pass, tel, !cur);
         try { await S.db.collection("envios").doc("a" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6)).set({ tipo: "captador", captador: nombre, usuario, enviadoPor: whoSends(), accion: cur ? "Contraseña cambiada" : "Acceso creado", fecha: new Date().toISOString() }); } catch {}
-      } else { $("capResult").hidden = true; toast("Asesor actualizado"); }
+      } else { $("capResult").hidden = true; toast(cur ? "Asesor actualizado" : "Asesor agregado"); }
     } catch (x) { toast(x?.code === "no_pass" ? "Escribe una contraseña para el asesor" : x?.code === "short_pass" ? "La contraseña debe tener al menos 4 caracteres" : x?.code === "no_assets" ? "No tienes permiso para subir fotos" : "No se pudo guardar el asesor"); }
     finally { $("capSave").disabled = false; }
   });
