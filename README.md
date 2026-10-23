@@ -12,6 +12,13 @@ Team Germanescarfullery · RE/MAX Metropolitana · actualizado el 21 de octubre 
 - `fotos/`: solo las fotos de la copia del 13 de octubre; las de los proyectos nuevos están en la página en Claude. Las fotos de los proyectos (hasta 3 por proyecto; la primera es la portada), comprimidas para que el ZIP quepa en un correo. En `datos.json`, cada proyecto tiene `fotos_archivos` con el nombre de cada foto. Los que tienen `fotos_incompletas: true` tenían más fotos en la página original.
 - Pendiente de revisar: 7 proyectos están "Por completar" (sin precio o sin fotos). Posibles repetidos por confirmar: Palmeras Resipal / Independent Villas; Residencias Meliá / La Vista by Meliá; los planos "Tipología Arena", "Tipología Mar" y "Residencial Ciudad del Sol" (Verón).
 
+## Página de propiedades (se actualiza sola)
+- `propiedades/index.html`: catálogo público de las propiedades en venta y alquiler de los agentes del team (Germán Escarfullery, Milena Paulino, Larissa Paulino, Winston Genao, Rolfi Antonio Rodriguez, Ashley Arias y Roberto Paulino).
+- Cada vez que alguien abre la página, esta lee las propiedades en vivo del portal público de RE/MAX RD (remaxrd.com). Cuando se publica una propiedad nueva en el panel, aparece sola; no hay que subir nada.
+- Incluye buscador, filtros, galería con todas las fotos, descripción y botón de WhatsApp del agente de cada propiedad.
+- `propiedades/propiedades.json`: copia de respaldo que solo se usa si el portal no responde.
+- Para agregar o quitar agentes, o cambiar el contacto: editar `CONFIG` al inicio del `<script>` en `propiedades/index.html`.
+
 ## Instrucciones para Claude (pegar esto en la otra cuenta)
 1. Publica `pagina/index.html` como un Artifact con estas capacidades: `sample`, `assets`, `db`, `downloads`, `user`.
    - Base de datos: colecciones `proyectos`, `captadores` (asesores) y `envios`, más el documento `config/crm` con los campos `webhook` y `base`.

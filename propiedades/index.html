@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Propiedades | Germán Escarfullery – REMAX Metropolitana</title>
+<meta name="description" content="Apartamentos, casas, penthouses, locales y terrenos en venta y alquiler en República Dominicana. REMAX Metropolitana.">
+<link rel="preconnect" href="https://api-do.redremax.com">
+<link rel="preconnect" href="https://d2wmn85efv2gey.cloudfront.net">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<style>img{max-width:100%}[hidden]{display:none!important}body{margin:0}</style>
+<style>
+/* Layout: header band with filter bar, then responsive photo-led card grid; lightbox on tap. */
+:root{
+  --bg:#f3f6f6; --surface:#ffffff; --ink:#10262e; --muted:#5b7078; --line:#d9e2e4;
+  --accent:#0b6e75; --accent-ink:#ffffff; --sun:#e2a33b; --chip:#e6eff0;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Figtree",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0c181c; --surface:#13242a; --ink:#e4eef0; --muted:#94a9b0; --line:#25393f;
+  --accent:#4cc0c5; --accent-ink:#06282b; --sun:#f0b85a; --chip:#1b3036; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c181c; --surface:#13242a; --ink:#e4eef0; --muted:#94a9b0; --line:#25393f;
+  --accent:#4cc0c5; --accent-ink:#06282b; --sun:#f0b85a; --chip:#1b3036; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+html{scroll-behavior:smooth}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* Site nav */
+.nav{background:var(--surface);border-bottom:1px solid var(--line)}
+.nav .wrap{padding-block:12px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:8px}
+.brand i{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--accent);color:var(--accent-ink);font-style:normal;font-size:15px}
+.links{display:flex;gap:4px 18px;flex-wrap:wrap;font-weight:500;font-size:14.5px}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;color:#fff;background:#0d2a33 url(img/hero.webp) center/cover no-repeat;isolation:isolate}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgb(6 22 28 / .25) 0%,rgb(6 22 28 / .72) 100%)}
+.hero .wrap{padding-block:clamp(56px,10vw,120px) clamp(28px,5vw,48px);display:grid;gap:18px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;opacity:.9}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(32px,6vw,58px);line-height:1.02;margin:0;letter-spacing:-.025em;text-wrap:balance;max-width:16ch}
+.lead{margin:0;max-width:52ch;font-size:17px;opacity:.92}
+.hsearch{display:flex;flex-wrap:wrap;gap:8px;background:rgb(255 255 255 / .96);padding:8px;border-radius:14px;max-width:640px}
+.hsearch input{flex:1 1 200px;border:0;background:transparent;color:#10262e;font-size:16px}
+.hsearch input::placeholder{color:#5b7078}
+.hsearch button{border:0;border-radius:10px;padding:10px 18px;font:600 15px var(--body);cursor:pointer;background:#0b6e75;color:#fff}
+.zones{display:flex;flex-wrap:wrap;gap:8px}
+.zones button{border:1px solid rgb(255 255 255 / .5);background:rgb(255 255 255 / .1);color:#fff;border-radius:999px;padding:6px 12px;font:500 13.5px var(--body);cursor:pointer;backdrop-filter:blur(4px)}
+.zones button:hover{background:rgb(255 255 255 / .22)}
+.stats{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:8px;font-variant-numeric:tabular-nums}
+.stats b{display:block;font-family:var(--display);font-size:28px;line-height:1}
+.stats span{font-size:13px;opacity:.85}
+
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px;margin-bottom:18px}
+h2.sec{font-family:var(--display);font-size:clamp(24px,3.5vw,32px);margin:0;letter-spacing:-.02em}
+.count{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px}
+.count b{color:var(--ink)}
+
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.bar .wrap{padding-block:12px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.seg{display:inline-flex;background:var(--chip);border-radius:999px;padding:3px}
+.seg button{border:0;background:none;color:var(--ink);font:500 14px var(--body);padding:7px 14px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+input,select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;min-width:0}
+#q{flex:1 1 220px}
+button:focus-visible,input:focus-visible,select:focus-visible,.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+main .wrap{padding-block:22px 48px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgb(16 38 46 / .10)}
+.ph{position:relative;aspect-ratio:4/3;background:var(--chip);max-width:100%}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;top:10px;left:10px;font:600 11px var(--body);letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:6px;background:var(--surface);color:var(--ink)}
+.tag.alq{background:var(--sun);color:#2a1a00}
+.new{position:absolute;top:10px;right:10px;font:600 11px var(--body);letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:6px;background:var(--accent);color:var(--accent-ink)}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1;min-width:0}
+.price{font-family:var(--display);font-weight:700;font-size:24px;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.price small{font:500 13px var(--body);color:var(--muted)}
+.ttl{font-weight:600;margin:0}
+.addr{color:var(--muted);font-size:14px;margin:0}
+.specs{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:auto;padding-top:10px;border-top:1px solid var(--line);font-size:13.5px;font-variant-numeric:tabular-nums}
+.specs span b{font-weight:600}
+.ref{color:var(--muted);font-size:12px;letter-spacing:.02em}
+.empty{padding:48px 0;text-align:center;color:var(--muted)}
+
+dialog{border:0;padding:0;background:var(--surface);color:var(--ink);border-radius:16px;max-width:min(900px,calc(100vw - 32px));width:100%;max-height:calc(100dvh - 32px);overflow:auto}
+dialog::backdrop{background:rgb(5 15 18 / .7)}
+
+.dl{padding:18px 20px 22px;display:grid;gap:10px}
+.dl h2{font-family:var(--display);margin:0;font-size:26px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:6px 0 0}
+.facts div{background:var(--chip);border-radius:10px;padding:10px 12px}
+.facts dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}
+.x{position:sticky;top:10px;float:right;margin:10px 10px -46px 0;z-index:2;width:36px;height:36px;border-radius:50%;border:0;background:var(--surface);color:var(--ink);font-size:20px;cursor:pointer}
+.contact{background:var(--surface);border-block:1px solid var(--line)}
+.contact .wrap{padding-block:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:center}
+.contact p{margin:6px 0 0;color:var(--muted);max-width:48ch}
+.cbtns{display:flex;flex-wrap:wrap;gap:10px}
+.cbtns a{display:inline-flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:10px 16px;min-width:0}
+.cbtns a.wa{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.cbtns small{font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.cbtns strong{font-variant-numeric:tabular-nums;user-select:all}
+footer .wrap{padding-block:28px 36px;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+@media (max-width:640px){.bar{position:static}.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}}
+@media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+
+.more{display:flex;justify-content:center;margin-top:28px}
+.btn-more{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:10px 22px;font:600 15px var(--body);cursor:pointer}
+.btn-more:hover{border-color:var(--accent)}
+.new.neg{background:var(--sun);color:#2a1a00}
+.nfotos{position:absolute;bottom:10px;right:10px;font:600 11.5px var(--body);padding:3px 8px;border-radius:6px;background:rgb(0 0 0 / .55);color:#fff}
+.gal{position:relative;background:#000}
+.gal #d-img{width:100%;height:min(62dvh,560px);object-fit:contain;display:block}
+.nav-btn{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgb(255 255 255 / .9);color:#10262e;font-size:26px;line-height:1;cursor:pointer}
+.nav-btn.prev{left:10px}.nav-btn.next{right:10px}
+.pos{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);font:600 12px var(--body);color:#fff;background:rgb(0 0 0 / .55);padding:3px 9px;border-radius:999px}
+.thumbs{display:flex;gap:6px;overflow-x:auto;padding:8px 12px;background:var(--chip)}
+.thumbs button{flex:none;border:2px solid transparent;padding:0;border-radius:8px;overflow:hidden;cursor:pointer;background:none;width:64px;height:64px}
+.thumbs button[aria-current="true"]{border-color:var(--accent)}
+.thumbs img{width:64px;height:64px;max-height:none;object-fit:cover;display:block;background:var(--line)}
+.desc{white-space:pre-line;color:var(--ink);font-size:15px;max-width:70ch}
+.desc:empty{display:none}
+.agent{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;background:var(--chip);border-radius:12px;padding:12px 14px}
+.agent:empty{display:none}
+.agent small{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.agent .wa{background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;border-radius:10px;padding:8px 14px}
+.agent .mail{color:var(--muted);font-size:14px;user-select:all}
+.ref a{color:var(--accent)}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="#inicio"><i>⌂</i><span id="brand-name"></span></a>
+  <div class="links">
+    <a href="#propiedades" data-go="">Propiedades</a>
+    <a href="#propiedades" data-go="sale">Comprar</a>
+    <a href="#propiedades" data-go="rent">Alquilar</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="inicio"><div class="wrap">
+  <div class="eyebrow" id="office-name"></div>
+  <h1>Encuentra tu próximo hogar o inversión</h1>
+  <p class="lead">Apartamentos, casas, penthouses, locales, naves y terrenos en venta y alquiler en República Dominicana.</p>
+  <form class="hsearch" id="hform" role="search">
+    <input id="hq" type="search" placeholder="Zona, sector o referencia" aria-label="Buscar propiedades">
+    <button type="submit">Buscar</button>
+  </form>
+  <div class="zones" id="zones"></div>
+  <div class="stats" id="stats"></div>
+</div></header>
+
+<div class="bar"><div class="wrap">
+  <div class="seg" role="group" aria-label="Operación">
+    <button type="button" data-op="" aria-pressed="true">Todas</button>
+    <button type="button" data-op="sale" aria-pressed="false">Venta</button>
+    <button type="button" data-op="rent" aria-pressed="false">Alquiler</button>
+  </div>
+  <input id="q" type="search" placeholder="Buscar por zona, sector o referencia" aria-label="Buscar">
+  <select id="tipo" aria-label="Tipo de propiedad"><option value="">Todos los tipos</option></select>
+  <select id="hab" aria-label="Habitaciones">
+    <option value="0">Habitaciones</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option>
+  </select>
+  <select id="ord" aria-label="Ordenar">
+    <option value="nuevo">Más recientes</option>
+    <option value="asc">Precio: menor a mayor</option>
+    <option value="desc">Precio: mayor a menor</option>
+    <option value="m2">Mayor superficie</option>
+  </select>
+</div></div>
+
+<main id="propiedades"><div class="wrap">
+  <div class="head">
+    <h2 class="sec">Propiedades disponibles</h2>
+    <div class="count"><b id="n">…</b> resultados</div>
+  </div>
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="empty" hidden>Ninguna propiedad coincide con esos filtros. Prueba quitando alguno.</p>
+  <div class="more" id="more-wrap" hidden><button type="button" class="btn-more" id="more">Ver más propiedades</button></div>
+</div></main>
+
+<section class="contact" id="contacto"><div class="wrap">
+  <div>
+    <h2 class="sec">¿Te interesa alguna propiedad?</h2>
+    <p>Escríbenos con la referencia de la propiedad y te enviamos fotos, detalles y disponibilidad para visitarla.</p>
+  </div>
+  <div class="cbtns" id="cbtns"></div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© <span id="yr"></span> <span id="foot-name"></span>. Cada oficina REMAX es de propiedad y operación independiente.</span>
+  <span id="upd"></span>
+</div></footer>
+
+<dialog id="dlg" aria-label="Detalle de la propiedad">
+  <button class="x" type="button" aria-label="Cerrar" id="close">×</button>
+  <div class="gal">
+    <img id="d-img" alt="">
+    <button type="button" class="nav-btn prev" id="prev" aria-label="Foto anterior">‹</button>
+    <button type="button" class="nav-btn next" id="next" aria-label="Foto siguiente">›</button>
+    <span class="pos" id="pos"></span>
+  </div>
+  <div class="thumbs" id="thumbs"></div>
+  <div class="dl">
+    <div class="price" id="d-price"></div>
+    <h2 id="d-ttl"></h2>
+    <p class="addr" id="d-addr"></p>
+    <dl class="facts" id="d-facts"></dl>
+    <div class="desc" id="d-desc"></div>
+    <div class="agent" id="d-agent"></div>
+    <div class="ref" id="d-ref"></div>
+  </div>
+</dialog>
+
+<script>
+// ===== Configuración: cambia aquí nombre, contacto y agentes =====
+const CONFIG = {
+  marca: 'Germán Escarfullery',
+  oficina: 'REMAX Metropolitana',
+  whatsapp: '18093502370',
+  telefono: '+1 809-350-2370',
+  email: 'germane@remaxm.net',
+  // Agentes cuyas propiedades se muestran (id público del portal remaxrd.com)
+  agentes: [
+    ['Germán Escarfullery', '33e85bc5-955e-4421-85c0-7db67c5eb652'],
+    ['Milena Paulino', '40de68f5-73a9-4924-813b-57bb7a26a0f6'],
+    ['Larissa Paulino', 'be8d20ca-a953-4a45-9840-dd5155e8fa9b'],
+    ['Winston Genao', '5c4a06a4-18bb-4700-84c9-a0f8396991d9'],
+    ['Rolfi Antonio Rodriguez', 'e5a491dd-a18a-4860-b9bb-1db17b5936c5'],
+    ['Ashley Arias', 'e13fcad3-c3f5-4274-8316-d17c915e7290'],
+    ['Roberto Paulino', '389eade1-361d-4b67-8e3b-88b1e583b8f6']
+  ]
+};
+// =================================================================
+
+const API = 'https://api-do.redremax.com/remaxweb-do/api';
+const IMG = 'https://d2wmn85efv2gey.cloudfront.net/';
+const PORTAL = 'https://www.remaxrd.com/listings/';
+const PAGE = 24;
+const CACHE_KEY = 'props-cache-v1';
+
+const $ = s => document.querySelector(s);
+const fmt = n => Number(n).toLocaleString('en-US');
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const OPS = {sale: 'Venta', rent: 'Alquiler', temporal: 'Temporal'};
+const foto = (raw, size) => { const i = raw.lastIndexOf('/'); return IMG + raw.slice(0, i) + '/' + size + raw.slice(i) + '.jpg'; };
+const tidy = s => { s = (s || '').trim(); return s === s.toUpperCase() ? s.charAt(0) + s.slice(1).toLowerCase() : s; };
+const typeName = t => ({apartamento: 'Apartamento', casa: 'Casa', terreno: 'Terreno', local: 'Local', penthouse: 'Penthouse'})[(t || '').toLowerCase()] || t;
+const area = p => p.dimensionCovered || p.dimensionTotalBuilt || p.dimensionLand || null;
+
+function normalizar(x) {
+  return {
+    id: x.id, ref: x.internalId, slug: x.slug,
+    op: x.operation?.value, tipo: typeName(x.type?.value),
+    titulo: tidy(x.title), zona: x.geoLabel || '', dir: x.displayAddress || '',
+    hab: x.bedrooms || null, ban: x.bathrooms || null, m2: area(x),
+    mon: x.currency?.value, precio: x.priceExposure === false ? null : x.price,
+    neg: x.listingStatus?.value === 'negotiation',
+    fotos: (x.photos || []).map(f => f.rawValue),
+    agente: x.associate?.name
+  };
+}
+
+async function traerAgente(id) {
+  const out = [];
+  for (let page = 0; page < 20; page++) {
+    const r = await fetch(`${API}/listings/findAllWithEntrepreneurships?page=${page}&pageSize=50&eq=associateId:${id}&eq=entrepreneurship:false`);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = (await r.json()).data;
+    out.push(...d.data);
+    if (page + 1 >= d.totalPages) break;
+  }
+  return out;
+}
+
+async function cargar() {
+  const listas = await Promise.all(CONFIG.agentes.map(([, id]) => traerAgente(id)));
+  const map = new Map();
+  listas.flat().forEach(x => {
+    if (['active', 'negotiation'].includes(x.listingStatus?.value) && !map.has(x.internalId)) map.set(x.internalId, normalizar(x));
+  });
+  return [...map.values()];
+}
+
+let DATA = [], op = '', shown = PAGE;
+
+const money = p => p.precio == null ? 'Precio a consultar' : (p.mon === 'USD' ? 'US$ ' : 'RD$ ') + fmt(p.precio);
+const per = p => p.op === 'rent' && p.precio != null ? '<small> / mes</small>' : '';
+const specs = p => [
+  p.hab && `<span><b>${p.hab}</b> hab.</span>`,
+  p.ban && `<span><b>${p.ban}</b> ${p.ban === 1 ? 'baño' : 'baños'}</span>`,
+  p.m2 && `<span><b>${fmt(p.m2)}</b> m²</span>`,
+  `<span>${esc(p.tipo)}</span>`
+].filter(Boolean).join('');
+const limpia = s => s.replace(/\s*\(Cabecera\)/g, '').trim();
+const zonaCorta = z => limpia(z.split(',').slice(0, 2).join(','));
+
+function filtrados() {
+  const q = $('#q').value.trim().toLowerCase();
+  const t = $('#tipo').value, h = +$('#hab').value, o = $('#ord').value;
+  const cur = p => p.mon === 'USD' ? 0 : 1;
+  const list = DATA.filter(p =>
+    (!op || p.op === op) && (!t || p.tipo === t) && (!h || (p.hab || 0) >= h) &&
+    (!q || [p.titulo, p.zona, p.dir, p.ref, p.tipo].join(' ').toLowerCase().includes(q)));
+  const by = {
+    nuevo: (a, b) => b.id - a.id,
+    asc: (a, b) => (a.precio == null) - (b.precio == null) || cur(a) - cur(b) || a.precio - b.precio,
+    desc: (a, b) => (a.precio == null) - (b.precio == null) || cur(a) - cur(b) || b.precio - a.precio,
+    m2: (a, b) => (b.m2 || 0) - (a.m2 || 0)
+  }[o];
+  return list.sort(by);
+}
+
+function render(reset = true) {
+  if (reset) shown = PAGE;
+  const list = filtrados();
+  $('#n').textContent = list.length;
+  $('#empty').hidden = list.length > 0;
+  $('#more-wrap').hidden = list.length <= shown;
+  $('#grid').innerHTML = list.slice(0, shown).map(p => `
+    <article class="card" tabindex="0" data-ref="${esc(p.ref)}" aria-label="${esc(p.tipo)} en ${esc((OPS[p.op] || '').toLowerCase())}, ${esc(money(p))}">
+      <div class="ph">
+        ${p.fotos[0] ? `<img src="${foto(p.fotos[0], '556x376')}" onerror="this.onerror=null;this.src='${foto(p.fotos[0], '1080xAUTO')}'" alt="${esc(p.titulo)}" loading="lazy" decoding="async" width="556" height="376">` : ''}
+        <span class="tag ${p.op === 'rent' ? 'alq' : ''}">${OPS[p.op] || ''}</span>
+        ${p.neg ? '<span class="new neg">En negociación</span>' : ''}
+        ${p.fotos.length > 1 ? `<span class="nfotos">${p.fotos.length}+ fotos</span>` : ''}
+      </div>
+      <div class="body">
+        <div class="price">${money(p)}${per(p)}</div>
+        <p class="ttl">${esc(p.titulo)}</p>
+        <p class="addr">${esc(zonaCorta(p.zona) || p.dir)}</p>
+        <div class="specs">${specs(p)}</div>
+        <div class="ref">Ref. ${esc(p.ref)}</div>
+      </div>
+    </article>`).join('');
+}
+
+// ----- Detalle con galería -----
+let gal = [], gi = 0;
+function verFoto(i) {
+  if (!gal.length) return;
+  gi = (i + gal.length) % gal.length;
+  $('#d-img').src = foto(gal[gi], '1080xAUTO');
+  $('#pos').textContent = (gi + 1) + ' / ' + gal.length;
+  document.querySelectorAll('#thumbs button').forEach((b, k) => b.setAttribute('aria-current', k === gi));
+}
+function pintarGaleria(fotos) {
+  gal = fotos;
+  $('#thumbs').innerHTML = fotos.map((f, k) => `<button type="button" aria-label="Foto ${k + 1}"><img src="${foto(f, '180x180')}" alt="" loading="lazy"></button>`).join('');
+  [...$('#thumbs').children].forEach((b, k) => b.addEventListener('click', () => verFoto(k)));
+  $('#prev').hidden = $('#next').hidden = fotos.length < 2;
+  verFoto(0);
+}
+async function abrir(ref) {
+  const p = DATA.find(x => x.ref === ref);
+  $('#d-price').innerHTML = money(p) + per(p);
+  $('#d-ttl').textContent = p.titulo;
+  $('#d-addr').textContent = [p.dir, limpia(p.zona)].filter(Boolean).join(' · ');
+  const f = [['Operación', OPS[p.op]], ['Tipo', p.tipo], ['Habitaciones', p.hab ?? '—'], ['Baños', p.ban ?? '—'],
+             ['Superficie', p.m2 ? fmt(p.m2) + ' m²' : '—'], ['Estado', p.neg ? 'En negociación' : 'Disponible']];
+  $('#d-facts').innerHTML = f.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('');
+  $('#d-desc').textContent = '';
+  $('#d-agent').innerHTML = '';
+  $('#d-ref').innerHTML = `Referencia ${esc(p.ref)} · <a href="${PORTAL + encodeURIComponent(p.slug)}" target="_blank" rel="noopener">Ver en remaxrd.com</a>`;
+  pintarGaleria(p.fotos);
+  $('#dlg').showModal();
+  try {
+    const r = await fetch(`${API}/listings/findBySlug/${encodeURIComponent(p.slug)}`);
+    const x = (await r.json()).data;
+    if (!x || !$('#dlg').open || $('#d-ttl').textContent !== p.titulo) return;
+    if (x.photos?.length > gal.length) pintarGaleria(x.photos.map(f => f.rawValue));
+    if (x.description) $('#d-desc').textContent = x.description;
+    const a = x.associate || {}, tel = (a.phones || [])[0]?.value, mail = (a.emails || [])[0]?.value;
+    if (a.name) $('#d-agent').innerHTML = `<div><small>Agente</small><strong>${esc(a.name)}</strong></div>` +
+      (tel ? `<a class="wa" href="https://wa.me/${tel.replace(/\D/g, '')}?text=${encodeURIComponent('Hola, me interesa la propiedad ' + p.ref + ': ' + p.titulo)}" target="_blank" rel="noopener">WhatsApp ${esc(tel)}</a>` : '') +
+      (mail ? `<span class="mail">${esc(mail)}</span>` : '');
+  } catch (e) { /* el detalle extra es opcional */ }
+}
+
+// ----- Arranque -----
+function montar(data, fecha) {
+  DATA = data;
+  const tipos = [...new Set(DATA.map(p => p.tipo))].sort();
+  $('#tipo').innerHTML = '<option value="">Todos los tipos</option>' + tipos.map(t => `<option>${esc(t)}</option>`).join('');
+  const cnt = o => DATA.filter(p => p.op === o).length;
+  $('#stats').innerHTML = [[DATA.length, 'propiedades'], [cnt('sale'), 'en venta'], [cnt('rent'), 'en alquiler'], [tipos.length, 'tipos de inmueble']]
+    .map(([n, l]) => `<div><b>${n}</b><span>${l}</span></div>`).join('');
+  const ciudades = {};
+  DATA.forEach(p => { const c = limpia(p.zona.split(',')[1] || ''); if (c) ciudades[c] = (ciudades[c] || 0) + 1; });
+  $('#zones').innerHTML = Object.entries(ciudades).sort((a, b) => b[1] - a[1]).slice(0, 10)
+    .map(([c]) => `<button type="button">${esc(c)}</button>`).join('');
+  $('#upd').textContent = 'Actualizado ' + new Date(fecha).toLocaleString('es-DO', {day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit'});
+  render();
+}
+
+function setOp(v) {
+  op = v;
+  document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x.dataset.op === v));
+  render();
+}
+const toList = () => $('#propiedades').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+
+document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => setOp(b.dataset.op)));
+document.querySelectorAll('[data-go]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); setOp(a.dataset.go); toList(); }));
+['#q', '#tipo', '#hab', '#ord'].forEach(s => $(s).addEventListener('input', () => render()));
+$('#more').addEventListener('click', () => { shown += PAGE; render(false); });
+$('#zones').addEventListener('click', e => { const b = e.target.closest('button'); if (b) { $('#q').value = b.textContent; setOp(''); toList(); } });
+$('#hform').addEventListener('submit', e => { e.preventDefault(); $('#q').value = $('#hq').value; setOp(''); toList(); });
+$('#grid').addEventListener('click', e => { const c = e.target.closest('.card'); if (c) abrir(c.dataset.ref); });
+$('#grid').addEventListener('keydown', e => { const c = e.target.closest('.card'); if (c && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); abrir(c.dataset.ref); } });
+$('#close').addEventListener('click', () => $('#dlg').close());
+$('#dlg').addEventListener('click', e => { if (e.target === $('#dlg')) $('#dlg').close(); });
+$('#prev').addEventListener('click', () => verFoto(gi - 1));
+$('#next').addEventListener('click', () => verFoto(gi + 1));
+document.addEventListener('keydown', e => { if (!$('#dlg').open) return; if (e.key === 'ArrowLeft') verFoto(gi - 1); if (e.key === 'ArrowRight') verFoto(gi + 1); });
+
+// Marca y contacto
+document.querySelectorAll('#brand-name,#foot-name').forEach(el => el.textContent = CONFIG.marca + ' | ' + CONFIG.oficina);
+$('#office-name').textContent = CONFIG.oficina + ' · República Dominicana';
+$('#yr').textContent = new Date().getFullYear();
+$('#cbtns').innerHTML = [
+  CONFIG.whatsapp && `<a class="wa" href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener"><small>WhatsApp</small><strong>${esc(CONFIG.telefono || CONFIG.whatsapp)}</strong></a>`,
+  CONFIG.email && `<a href="mailto:${esc(CONFIG.email)}"><small>Correo</small><strong>${esc(CONFIG.email)}</strong></a>`
+].filter(Boolean).join('');
+
+// Muestra al instante lo último guardado en este navegador y luego trae lo más nuevo del portal.
+(async () => {
+  let cache = null;
+  try { cache = JSON.parse(localStorage.getItem(CACHE_KEY)); } catch (e) {}
+  if (cache?.data?.length) montar(cache.data, cache.fecha);
+  else $('#grid').innerHTML = '<p class="empty">Cargando propiedades…</p>';
+  try {
+    const data = await cargar();
+    const fecha = Date.now();
+    montar(data, fecha);
+    try { localStorage.setItem(CACHE_KEY, JSON.stringify({data, fecha})); } catch (e) {}
+  } catch (e) {
+    if (!cache?.data?.length) {
+      try {
+        const s = await (await fetch('propiedades.json', {cache: 'no-cache'})).json();
+        montar(s.data, s.fecha);
+      } catch (e2) {
+        $('#grid').innerHTML = '<p class="empty">No se pudieron cargar las propiedades. Revisa tu conexión y recarga la página.</p>';
+      }
+    }
+  }
+})();
+</script>
+
+</body>
+</html>
