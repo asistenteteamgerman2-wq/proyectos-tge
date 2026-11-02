@@ -1,8 +1,7 @@
 {
   "equipo": "Team Germanescarfullery",
-  "exportado": "2026-10-21",
+  "exportado": "2026-11-02",
   "total_proyectos": 128,
-  "nota": "Las fotos de cada proyecto son ids del almacén de la página en Claude; la carpeta fotos/ solo tiene las de la copia del 13 de octubre.",
   "proyectos": [
     {
       "actualizado": "2026-10-12T21:10:25.385Z",
@@ -93,26 +92,26 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-12T21:10:25.385Z",
+      "preciosAl": "2026-11-02T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Townhouse",
       "tipologias": [
         {
-          "banos": 2.5,
-          "desde": 155250,
+          "banos": 2,
+          "desde": 161500,
           "hab": 2,
           "m2": 76
         },
         {
-          "banos": 2.5,
-          "desde": 174900,
+          "banos": 2,
+          "desde": 179500,
           "hab": 3,
           "m2": 103
         }
       ],
       "url": "",
       "zona": "Complejo Residencial Bávaro Punta Cana, Punta Cana",
-      "id": "pmv5qxh7u6psai",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5qxh7u6psai"
     },
     {
       "actualizado": "2026-10-14T20:08:37.749Z",
@@ -226,6 +225,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:08:37.749Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -243,8 +243,7 @@
       ],
       "url": "",
       "zona": "Punta Cana",
-      "id": "pmv76dodcmwod1",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodcmwod1"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -305,6 +304,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Solar",
       "tipologias": [
         {
@@ -316,8 +316,7 @@
       ],
       "url": "",
       "zona": "Alta Vista, Punta cana",
-      "id": "pmv76dodbq4axe",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodbq4axe"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -370,6 +369,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -381,8 +381,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dof2tg10i",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dof2tg10i"
     },
     {
       "actualizado": "2026-10-13T19:02:23.390Z",
@@ -474,6 +473,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T20:56:45.861Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -485,8 +485,7 @@
       ],
       "url": "",
       "zona": "Arena Gorda, Bávaro",
-      "id": "pmv5qfwv9ff1ea",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5qfwv9ff1ea"
     },
     {
       "actualizado": "2026-10-12T21:14:58.613Z",
@@ -594,23 +593,23 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-12T21:50:00.000Z",
+      "preciosAl": "2026-11-02T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
-          "banos": 0,
-          "desde": 135000,
-          "hab": 1,
+          "banos": 2,
+          "desde": 158750,
+          "hab": 2,
           "m2": 0
         }
       ],
       "url": "",
       "zona": "Punta Cana, La Altagracia",
-      "id": "pmv5r3c1hamgfj",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5r3c1hamgfj"
     },
     {
-      "actualizado": "2026-10-14T20:10:22.995Z",
+      "actualizado": "2026-11-02T18:55:44.795Z",
       "amenidades": [
         "Playa artificial",
         "Bar de playa",
@@ -682,7 +681,6 @@
         }
       ],
       "fotos": [
-        "8bbbf4aa5dae593235aaa126a2c1a382",
         "816a5f0791481e3d61bd44b9852f52e8",
         "1f01fa95f81e741729285187762a56d9",
         "46be6d04b2531ca57f46c89005beebae",
@@ -720,6 +718,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:10:22.995Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -731,8 +730,7 @@
       ],
       "url": "",
       "zona": "Vistacana, Punta Cana",
-      "id": "pmv76dodd11rt1",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodd11rt1"
     },
     {
       "actualizado": "2026-10-15T21:45:00.000Z",
@@ -810,6 +808,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -822,8 +821,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/CbRHh1K8x629q2IF1Bneit",
       "zona": "Punta cana",
-      "id": "pmv76dodeo5a1f",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodeo5a1f"
     },
     {
       "actualizado": "2026-10-16T18:30:00.000Z",
@@ -901,6 +899,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -913,8 +912,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/F2X8Zo3sPny1BawSbqwaqe",
       "zona": "Las Americas, Santo domingo este",
-      "id": "pmv76doexge8ky",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doexge8ky"
     },
     {
       "actualizado": "2026-10-14T20:12:11.438Z",
@@ -1006,6 +1004,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:12:11.437Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -1017,8 +1016,7 @@
       ],
       "url": "",
       "zona": "",
-      "id": "pmv76doevm8gk1",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doevm8gk1"
     },
     {
       "actualizado": "2026-10-14T20:13:33.748Z",
@@ -1135,6 +1133,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:13:33.748Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -1146,8 +1145,7 @@
       ],
       "url": "",
       "zona": "Punta Cana, La Altagracia",
-      "id": "pmv76dodf20eui",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodf20eui"
     },
     {
       "actualizado": "2026-10-15T21:45:00.000Z",
@@ -1215,6 +1213,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -1233,8 +1232,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/I2C8xCCZqwSGrZyrGmqwGS",
       "zona": "Punta Cana",
-      "id": "pmv76dodgre81q",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodgre81q"
     },
     {
       "actualizado": "2026-10-14T20:19:22.219Z",
@@ -1337,6 +1335,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:19:22.219Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -1360,8 +1359,7 @@
       ],
       "url": "",
       "zona": "White Sands, Bávaro, Punta Cana",
-      "id": "pmv76dodhzw5fd",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodhzw5fd"
     },
     {
       "actualizado": "2026-10-14T21:10:00.000Z",
@@ -1439,32 +1437,26 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-13T21:30:00.000Z",
+      "preciosAl": "2026-11-02T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
-          "banos": 0,
-          "desde": 56000,
-          "hab": 1,
-          "m2": 0
-        },
-        {
-          "banos": 0,
-          "desde": 62500,
+          "banos": 1,
+          "desde": 61600,
           "hab": 2,
-          "m2": 0
+          "m2": 53.5
         },
         {
-          "banos": 0,
-          "desde": 84500,
+          "banos": 2,
+          "desde": 73150,
           "hab": 3,
-          "m2": 0
+          "m2": 67.55
         }
       ],
       "url": "",
       "zona": "Carretera Jubey, Boca Chica",
-      "id": "pmv76dod0kkejl",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dod0kkejl"
     },
     {
       "actualizado": "2026-10-13T18:58:59.152Z",
@@ -1549,6 +1541,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:50:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -1560,8 +1553,7 @@
       ],
       "url": "",
       "zona": "Av. Ecológica, Santo Domingo Este",
-      "id": "pmv1gqkbwsmpbr",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1gqkbwsmpbr"
     },
     {
       "actualizado": "2026-10-14T20:25:01.400Z",
@@ -1673,17 +1665,18 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-14T20:25:01.400Z",
+      "preciosAl": "2026-11-02T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 1,
-          "desde": 77950,
+          "desde": 72900,
           "hab": 1,
           "m2": 38
         },
         {
-          "banos": 2,
+          "banos": 1,
           "desde": 96000,
           "hab": 2,
           "m2": 65
@@ -1697,11 +1690,10 @@
       ],
       "url": "",
       "zona": "Pueblo Bávaro, Punta Cana",
-      "id": "pmv76dodkzxm1a",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodkzxm1a"
     },
     {
-      "actualizado": "2026-10-14T20:26:13.201Z",
+      "actualizado": "2026-11-02T18:58:05.746Z",
       "amenidades": [],
       "captador": "German Escarfullery",
       "captadorId": "cmuoj7lj5qjre",
@@ -1720,10 +1712,8 @@
       "faq": [],
       "fotos": [
         "2e0fa76f90446f562f002cd8b9f4c2d7",
-        "962d69639467ce6e476a565011973d51",
         "dc02f7d3a8dca6ee411d3be65004f117",
         "045a0e46929fc3a2cd6ed245d1173653",
-        "9067d9155ed58bb9b1995038a877b6b9",
         "2fb301bd8fcb7ff02349a42e7aa4c821"
       ],
       "frase": "",
@@ -1740,6 +1730,7 @@
       "porque": [],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:26:13.201Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -1751,8 +1742,7 @@
       ],
       "url": "",
       "zona": "",
-      "id": "pmv76dodlkmdt5",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodlkmdt5"
     },
     {
       "actualizado": "2026-10-14T20:27:26.614Z",
@@ -1854,6 +1844,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:27:26.614Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -1871,8 +1862,7 @@
       ],
       "url": "",
       "zona": "Punta Cana, República Dominicana",
-      "id": "pmv76dodmxdz8k",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodmxdz8k"
     },
     {
       "actualizado": "2026-10-15T21:45:00.000Z",
@@ -1950,6 +1940,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -1968,8 +1959,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/GYlX0RKk3xpIPWAtRM9lwD",
       "zona": "Punta cana",
-      "id": "pmv76dodoz43g4",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodoz43g4"
     },
     {
       "actualizado": "2026-10-14T20:29:25.000Z",
@@ -2060,20 +2050,20 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-14T20:29:25.000Z",
+      "preciosAl": "2026-11-02T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
-          "banos": 0,
-          "desde": 270000,
+          "banos": 2.5,
+          "desde": 269900,
           "hab": 3,
           "m2": 145
         }
       ],
       "url": "",
       "zona": "Vista Cana, Punta Cana",
-      "id": "pmv76dodpr3fiy",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodpr3fiy"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -2126,6 +2116,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -2137,8 +2128,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dof33tikh",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dof33tikh"
     },
     {
       "actualizado": "2026-10-14T20:30:23.941Z",
@@ -2218,6 +2208,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:30:23.941Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Casa",
       "tipologias": [
         {
@@ -2229,11 +2220,10 @@
       ],
       "url": "",
       "zona": "Punta Cana",
-      "id": "pmv76dodq07fog",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodq07fog"
     },
     {
-      "actualizado": "2026-10-14T20:31:46.373Z",
+      "actualizado": "2026-11-02T18:58:21.972Z",
       "amenidades": [
         "Piscina en la terraza",
         "Área social en la terraza",
@@ -2301,7 +2291,6 @@
         "e5eec86439d407db9d6a18075892562b",
         "a9da70d4edc48d0319e21215a0065417",
         "0fad16a16a94ebe7b2f664dced2cc30d",
-        "b2b47abe2e39a99894438505350ae86a",
         "97bd8300a236f064280cd02186c4709e",
         "d53c6736ff82b266969067e400984b66"
       ],
@@ -2336,6 +2325,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:31:46.373Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -2347,8 +2337,7 @@
       ],
       "url": "",
       "zona": "Centro de Punta Cana, Punta Cana",
-      "id": "pmv76dodrpy7ye",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodrpy7ye"
     },
     {
       "actualizado": "2026-10-13T19:02:40.891Z",
@@ -2413,6 +2402,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:50:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -2424,8 +2414,7 @@
       ],
       "url": "",
       "zona": "Bávaro, Punta Cana",
-      "id": "pmv1h0tsgr8601",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1h0tsgr8601"
     },
     {
       "actualizado": "2026-10-14T20:32:45.664Z",
@@ -2532,18 +2521,19 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-13T21:30:00.000Z",
+      "preciosAl": "2026-11-02T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
-          "banos": 2,
+          "banos": 1,
           "desde": 79999,
           "hab": 1,
           "m2": 63
         },
         {
-          "banos": 2.5,
-          "desde": 89999,
+          "banos": 2,
+          "desde": 105000,
           "hab": 2,
           "m2": 77
         },
@@ -2556,8 +2546,7 @@
       ],
       "url": "",
       "zona": "Punta Cana, La Altagracia",
-      "id": "pmv76dodsjl8gi",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodsjl8gi"
     },
     {
       "actualizado": "2026-10-14T21:35:00.000Z",
@@ -2635,6 +2624,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -2646,8 +2636,7 @@
       ],
       "url": "",
       "zona": "Bavaro, Punta Cana",
-      "id": "pmv76dodt3ss5v",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodt3ss5v"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -2718,6 +2707,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -2735,8 +2725,7 @@
       ],
       "url": "",
       "zona": "Detras Hosp. IMG, Punta Cana",
-      "id": "pmv76dodunwfkn",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodunwfkn"
     },
     {
       "actualizado": "2026-10-14T21:10:00.000Z",
@@ -2834,6 +2823,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:10:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Solar",
       "tipologias": [
         {
@@ -2845,8 +2835,7 @@
       ],
       "url": "",
       "zona": "Boca Chica, República Dominicana",
-      "id": "pmv76dod1f0bra",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dod1f0bra"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -2917,6 +2906,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -2940,8 +2930,7 @@
       ],
       "url": "",
       "zona": "Veron, Punta Cana",
-      "id": "pmv76dodvrtgat",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodvrtgat"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -2994,6 +2983,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -3005,8 +2995,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dof4bay4u",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dof4bay4u"
     },
     {
       "actualizado": "2026-10-13T19:01:51.504Z",
@@ -3115,6 +3104,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-09T21:23:05.369Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Townhouse",
       "tipologias": [
         {
@@ -3126,8 +3116,7 @@
       ],
       "url": "",
       "zona": "Residencial Bávaro, Punta Cana",
-      "id": "pmv1h27miupkuk",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1h27miupkuk"
     },
     {
       "actualizado": "2026-10-14T21:30:00.000Z",
@@ -3207,6 +3196,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Townhouse",
       "tipologias": [
         {
@@ -3224,8 +3214,7 @@
       ],
       "url": "",
       "zona": "Pueblo Bavaro / Av. Barcelo, Punta Cana",
-      "id": "pmv76dodw9bqmq",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodw9bqmq"
     },
     {
       "actualizado": "2026-10-13T19:02:05.774Z",
@@ -3321,6 +3310,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:50:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -3338,8 +3328,7 @@
       ],
       "url": "",
       "zona": "Dominicus, Bayahibe, La Altagracia",
-      "id": "pmupxzebbf36e2",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmupxzebbf36e2"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -3410,6 +3399,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -3421,8 +3411,7 @@
       ],
       "url": "",
       "zona": "Vista Cana, Punta Cana",
-      "id": "pmv76dodxv3uct",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodxv3uct"
     },
     {
       "actualizado": "2026-10-13T19:04:58.015Z",
@@ -3511,6 +3500,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-09T21:23:30.988Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -3528,8 +3518,7 @@
       ],
       "url": "",
       "zona": "Punta Cana, La Altagracia",
-      "id": "pmv1h2re4zb5u2",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1h2re4zb5u2"
     },
     {
       "actualizado": "2026-10-13T21:42:50.989Z",
@@ -3636,6 +3625,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:50:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -3653,8 +3643,7 @@
       ],
       "url": "",
       "zona": "Bávaro, Punta Cana",
-      "id": "pmv5r6py9yv51m",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5r6py9yv51m"
     },
     {
       "actualizado": "2026-10-09T21:24:01.752Z",
@@ -3733,6 +3722,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-09T21:24:01.752Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -3750,8 +3740,7 @@
       ],
       "url": "",
       "zona": "Licey al Medio, Santiago",
-      "id": "pmv1h3f4ogz5z9",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1h3f4ogz5z9"
     },
     {
       "actualizado": "2026-10-13T19:00:59.303Z",
@@ -3858,6 +3847,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-09T21:24:42.862Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -3869,8 +3859,7 @@
       ],
       "url": "",
       "zona": "Punta Cana",
-      "id": "pmv1h4aummok42",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1h4aummok42"
     },
     {
       "actualizado": "2026-10-14T20:38:03.157Z",
@@ -3963,6 +3952,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:38:03.157Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -3980,8 +3970,7 @@
       ],
       "url": "",
       "zona": "Downtown, Punta Cana",
-      "id": "pmv76dodyqiyvj",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodyqiyvj"
     },
     {
       "actualizado": "2026-10-13T19:01:19.790Z",
@@ -4091,6 +4080,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:50:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -4108,11 +4098,10 @@
       ],
       "url": "",
       "zona": "Vistacana, Bávaro, Punta Cana",
-      "id": "pmv1himc5xf0wg",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1himc5xf0wg"
     },
     {
-      "actualizado": "2026-10-14T20:45:46.480Z",
+      "actualizado": "2026-11-02T18:59:07.125Z",
       "amenidades": [
         "Casa club con área de juegos",
         "gimnasio y salones",
@@ -4163,7 +4152,6 @@
       ],
       "fotos": [
         "1bd1f5b96050b58093c26fbcd5e9aea9",
-        "076c3810be179f40b3dd43ace2ee6d8d",
         "c8e2cb6e3186b84587df319b28ab3585",
         "60b3f0b0ba732780386083ecb45c2118",
         "f084f9a5cd44add47c7a08a158a292bb",
@@ -4199,20 +4187,20 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-13T21:30:00.000Z",
+      "preciosAl": "2026-11-02T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
-          "banos": 0,
-          "desde": 148000,
-          "hab": 1,
-          "m2": 0
+          "banos": 2,
+          "desde": 138000,
+          "hab": 3,
+          "m2": 102
         }
       ],
       "url": "",
       "zona": "Santo Domingo Norte, Provincia Santo Domingo",
-      "id": "pmv76doeyx23ua",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doeyx23ua"
     },
     {
       "actualizado": "2026-10-09T21:41:35.620Z",
@@ -4311,6 +4299,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-09T21:41:35.620Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -4328,8 +4317,7 @@
       ],
       "url": "",
       "zona": "Residencial Palmeras, Punta Cana",
-      "id": "pmv1hq0asd1pj5",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1hq0asd1pj5"
     },
     {
       "actualizado": "2026-10-13T18:58:32.305Z",
@@ -4437,6 +4425,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:15:54.420Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -4460,8 +4449,7 @@
       ],
       "url": "",
       "zona": "Punta Cana, La Altagracia",
-      "id": "pmv5r4j3okq7jy",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5r4j3okq7jy"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -4514,6 +4502,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -4525,8 +4514,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dof5tqtpr",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dof5tqtpr"
     },
     {
       "actualizado": "2026-10-13T19:02:58.273Z",
@@ -4636,6 +4624,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:50:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -4647,11 +4636,10 @@
       ],
       "url": "",
       "zona": "City Place, entre Punta Cana y Bávaro",
-      "id": "pmv5r67lqz3rsm",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5r67lqz3rsm"
     },
     {
-      "actualizado": "2026-10-13T19:03:30.373Z",
+      "actualizado": "2026-11-02T18:59:33.566Z",
       "amenidades": [
         "Servicios de conserjería",
         "Piscinas de lujo",
@@ -4705,9 +4693,7 @@
         "e4cde04374b757a9ec75df4fd2bb1133",
         "4ddcd29ef3e1e56098547c578843b786",
         "c4da06b90f2ef834e451964c0d06974c",
-        "13405a1cbf721cdf217c55cfe97f76dd",
-        "bb9aca404da924ea479a4f12c8e76bc8",
-        "30c39892288c6158a576c1f10b769d7e"
+        "13405a1cbf721cdf217c55cfe97f76dd"
       ],
       "frase": "Residencias de marca Meliá en el centro de Punta Cana",
       "nombre": "La Vista by Meliá",
@@ -4739,6 +4725,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -4750,8 +4737,7 @@
       ],
       "url": "",
       "zona": "Centro de Punta Cana, La Altagracia",
-      "id": "pmv714fy9jfz90",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv714fy9jfz90"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -4804,6 +4790,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -4815,8 +4802,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dof6i6ub1",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dof6i6ub1"
     },
     {
       "actualizado": "2026-10-15T21:45:00.000Z",
@@ -4894,6 +4880,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -4906,8 +4893,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/KiBThiydOdT69DzCWCEvXo",
       "zona": "Cap Cana",
-      "id": "pmv76dod4q9x8e",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dod4q9x8e"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -4978,6 +4964,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -4995,8 +4982,7 @@
       ],
       "url": "",
       "zona": "Punta Cana",
-      "id": "pmv76doe0swhe8",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doe0swhe8"
     },
     {
       "actualizado": "2026-10-15T21:45:00.000Z",
@@ -5064,6 +5050,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-15T21:45:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -5076,8 +5063,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/IMclEKElasV2HdIaBALevK",
       "zona": "Santo Domingo norte",
-      "id": "pmv76doezz6b6l",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doezz6b6l"
     },
     {
       "actualizado": "2026-10-12T20:55:18.512Z",
@@ -5163,20 +5149,21 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-12T21:50:00.000Z",
+      "preciosAl": "2026-11-02T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
-          "banos": 0,
-          "desde": 130000,
+          "banos": 1,
+          "desde": 132000,
           "hab": 1,
-          "m2": 0
+          "m2": 52
         },
         {
-          "banos": 0,
+          "banos": 2,
           "desde": 184000,
           "hab": 2,
-          "m2": 0
+          "m2": 71
         },
         {
           "banos": 0,
@@ -5187,11 +5174,10 @@
       ],
       "url": "",
       "zona": "Vistacana",
-      "id": "pmv5qe1gwv6f7t",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5qe1gwv6f7t"
     },
     {
-      "actualizado": "2026-10-14T20:59:50.889Z",
+      "actualizado": "2026-11-02T18:59:57.459Z",
       "amenidades": [
         "Gimnasio",
         "Piscinas",
@@ -5265,7 +5251,6 @@
         "d6d0fd5bb54183b1ac1f433f48aeba83",
         "98be2a15e2082404009d19aeabc6add4",
         "acfaa0988d3c5c645a4cd4da6e721d00",
-        "eb9dbc2e30b45f324148bb2402d79e2a",
         "3cbfb3d4aac58ebaa85aec09ce2fca05",
         "addf5aad2dce33b00252f9e2f739bde7"
       ],
@@ -5300,6 +5285,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:59:50.888Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -5323,8 +5309,7 @@
       ],
       "url": "",
       "zona": "Punta Cana, Bávaro",
-      "id": "pmv76doe232nkp",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doe232nkp"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -5395,6 +5380,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -5412,8 +5398,7 @@
       ],
       "url": "",
       "zona": "Bayahibe",
-      "id": "pmv76docx3hecm",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76docx3hecm"
     },
     {
       "actualizado": "2026-10-15T21:45:00.000Z",
@@ -5491,6 +5476,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -5503,8 +5489,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/BQo85asCF1ODWfrzdkOgdl",
       "zona": "Santo Domingo",
-      "id": "pmv76doewf5onf",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doewf5onf"
     },
     {
       "actualizado": "2026-10-16T18:30:00.000Z",
@@ -5582,6 +5567,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -5594,8 +5580,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/JRhNq1PCZoj3dfX8rtjYrC",
       "zona": "Punta cana",
-      "id": "pmv76doe4mdyu5",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doe4mdyu5"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -5660,6 +5645,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -5689,8 +5675,7 @@
       ],
       "url": "",
       "zona": "Los cacicazgos",
-      "id": "pmv76dodaax1jp",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dodaax1jp"
     },
     {
       "actualizado": "2026-09-29T21:19:45.168Z",
@@ -5787,6 +5772,7 @@
         }
       ],
       "precioRef": true,
+      "subidoPor": "Robert Cavallo",
       "tipologias": [
         {
           "banos": 0,
@@ -5803,8 +5789,7 @@
       ],
       "url": "",
       "zona": "Downtown, Punta Cana",
-      "id": "pmun6jehcx0y4k",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmun6jehcx0y4k"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -5857,6 +5842,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -5868,8 +5854,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dof77ib76",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dof77ib76"
     },
     {
       "actualizado": "2026-09-29T21:14:13.111Z",
@@ -5949,6 +5934,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:50:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipologias": [
         {
           "banos": 0,
@@ -5959,8 +5945,7 @@
       ],
       "url": "",
       "zona": "Downtown, Punta Cana",
-      "id": "pmun6ca9jve15j",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmun6ca9jve15j"
     },
     {
       "actualizado": "2026-10-13T19:05:18.347Z",
@@ -6072,6 +6057,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -6089,8 +6075,7 @@
       ],
       "url": "",
       "zona": "Bayahíbe, La Romana",
-      "id": "pmv715ydzkqixa",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv715ydzkqixa"
     },
     {
       "actualizado": "2026-10-09T21:15:00.791Z",
@@ -6182,6 +6167,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-09T21:15:00.792Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -6199,8 +6185,7 @@
       ],
       "url": "",
       "zona": "Avenida España, Santo Domingo Este",
-      "id": "pmv1grtq076b2j",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1grtq076b2j"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -6253,6 +6238,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -6264,8 +6250,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dof88yzmz",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dof88yzmz"
     },
     {
       "actualizado": "2026-10-14T20:57:31.012Z",
@@ -6307,6 +6292,7 @@
       "porque": [],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -6324,8 +6310,7 @@
       ],
       "url": "",
       "zona": "San Isidro",
-      "id": "pmv76doettrj9p",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doettrj9p"
     },
     {
       "actualizado": "2026-10-13T21:52:48.370Z",
@@ -6429,6 +6414,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-09T21:36:47.803Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -6440,8 +6426,7 @@
       ],
       "url": "",
       "zona": "Punta Cana, República Dominicana",
-      "id": "pmv1hju7wi9n81",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1hju7wi9n81"
     },
     {
       "actualizado": "2026-10-14T21:01:56.702Z",
@@ -6552,6 +6537,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:01:56.701Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -6563,8 +6549,7 @@
       ],
       "url": "",
       "zona": "Residencial Pueblo Bávaro, Punta Cana",
-      "id": "pmv76doe6advj6",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doe6advj6"
     },
     {
       "actualizado": "2026-10-14T21:02:37.110Z",
@@ -6673,6 +6658,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:02:37.110Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Casa",
       "tipologias": [
         {
@@ -6690,8 +6676,7 @@
       ],
       "url": "",
       "zona": "Boca Chica, Santo Domingo Este",
-      "id": "pmv76dod3seyfn",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dod3seyfn"
     },
     {
       "actualizado": "2026-10-13T18:57:47.188Z",
@@ -6781,6 +6766,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-09T21:38:19.056Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -6798,8 +6784,7 @@
       ],
       "url": "",
       "zona": "La Caleta, La Romana",
-      "id": "pmv1hlsmo085pt",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1hlsmo085pt"
     },
     {
       "actualizado": "2026-10-13T18:57:14.003Z",
@@ -6904,6 +6889,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-09T21:37:35.536Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -6921,8 +6907,7 @@
       ],
       "url": "",
       "zona": "Santo Domingo Norte, Santo Domingo",
-      "id": "pmv1hkv1s7sznx",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1hkv1s7sznx"
     },
     {
       "actualizado": "2026-10-15T21:45:00.000Z",
@@ -6999,6 +6984,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -7011,8 +6997,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/Eo78KbAHm4mGBjEZ8fm3TS",
       "zona": "Vista cana",
-      "id": "pmv76dof0zcy7w",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dof0zcy7w"
     },
     {
       "actualizado": "2026-10-13T18:55:46.215Z",
@@ -7101,23 +7086,24 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-09T21:39:01.596Z",
+      "preciosAl": "2026-11-02T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
           "banos": 1,
-          "desde": 46500,
+          "desde": 60000,
           "hab": 1,
-          "m2": 35.5
-        },
-        {
-          "banos": 1,
-          "desde": 59900,
-          "hab": 2,
           "m2": 48
         },
         {
-          "banos": 0,
+          "banos": 1,
+          "desde": 95000,
+          "hab": 2,
+          "m2": 77.3
+        },
+        {
+          "banos": 2,
           "desde": 78000,
           "hab": 3,
           "m2": 68
@@ -7125,8 +7111,7 @@
       ],
       "url": "",
       "zona": "Punta Cana, La Altagracia",
-      "id": "pmv1hmpgcbdrzj",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1hmpgcbdrzj"
     },
     {
       "actualizado": "2026-10-12T20:52:55.482Z",
@@ -7220,6 +7205,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T20:52:55.482Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -7237,8 +7223,7 @@
       ],
       "url": "",
       "zona": "Punta Cana, La Altagracia",
-      "id": "pmv5qaz3vyz5hg",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5qaz3vyz5hg"
     },
     {
       "actualizado": "2026-10-13T18:45:35.063Z",
@@ -7321,6 +7306,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T18:45:35.063Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Townhouse",
       "tipologias": [
         {
@@ -7338,8 +7324,7 @@
       ],
       "url": "",
       "zona": "Vista Cana, Punta Cana",
-      "id": "pmv7172dz33l32",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv7172dz33l32"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -7410,6 +7395,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -7439,8 +7425,7 @@
       ],
       "url": "",
       "zona": "Domingo Maiz, Punta Cana",
-      "id": "pmv76doe85ctjj",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doe85ctjj"
     },
     {
       "actualizado": "2026-10-12T20:53:54.573Z",
@@ -7548,6 +7533,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T20:53:54.573Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Townhouse",
       "tipologias": [
         {
@@ -7565,8 +7551,7 @@
       ],
       "url": "",
       "zona": "Punta Cana",
-      "id": "pmv5qc8p9inszk",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5qc8p9inszk"
     },
     {
       "actualizado": "2026-10-14T21:03:46.131Z",
@@ -7667,6 +7652,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:03:46.131Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -7678,8 +7664,7 @@
       ],
       "url": "",
       "zona": "Bavaro",
-      "id": "pmv76docvlgdlw",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76docvlgdlw"
     },
     {
       "actualizado": "2026-10-13T18:49:59.133Z",
@@ -7746,6 +7731,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T18:49:59.133Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -7757,8 +7743,7 @@
       ],
       "url": "",
       "zona": "Verón, Punta Cana",
-      "id": "pmv71cq5a299xk",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv71cq5a299xk"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -7823,6 +7808,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -7840,8 +7826,7 @@
       ],
       "url": "",
       "zona": "Costa Cana, Punta Cana",
-      "id": "pmv76doe943r7m",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doe943r7m"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -7906,6 +7891,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -7929,8 +7915,7 @@
       ],
       "url": "",
       "zona": "Vista Cana, Punta Cana",
-      "id": "pmv76doea8mp5d",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doea8mp5d"
     },
     {
       "actualizado": "2026-10-14T21:05:59.954Z",
@@ -8022,6 +8007,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:05:59.954Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -8039,8 +8025,7 @@
       ],
       "url": "",
       "zona": "Bayahibe",
-      "id": "pmv76docytokp5",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76docytokp5"
     },
     {
       "actualizado": "2026-10-19T19:39:46.402Z",
@@ -8141,6 +8126,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-19T19:45:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -8158,8 +8144,7 @@
       ],
       "url": "",
       "zona": "Brisas de Punta Cana, Bávaro, Punta Cana",
-      "id": "pmvfnrv4z4j3ny",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmvfnrv4z4j3ny"
     },
     {
       "actualizado": "2026-10-13T18:57:29.331Z",
@@ -8243,6 +8228,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T20:58:04.531Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -8266,8 +8252,7 @@
       ],
       "url": "",
       "zona": "Verón, Punta Cana",
-      "id": "pmv5qhlkj8ogu6",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5qhlkj8ogu6"
     },
     {
       "actualizado": "2026-10-12T20:58:50.965Z",
@@ -8355,6 +8340,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T20:58:50.965Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -8372,8 +8358,7 @@
       ],
       "url": "",
       "zona": "Alta Vista, La Otra Banda, Punta Cana",
-      "id": "pmv5qiledv5o0i",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5qiledv5o0i"
     },
     {
       "actualizado": "2026-10-14T21:06:52.879Z",
@@ -8455,6 +8440,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -8472,8 +8458,7 @@
       ],
       "url": "",
       "zona": "Ciudad Juan Bosch, Santo Domingo Este",
-      "id": "pmv76dod5j3hco",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dod5j3hco"
     },
     {
       "actualizado": "2026-10-14T20:21:15.624Z",
@@ -8560,6 +8545,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T20:21:15.624Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -8577,8 +8563,7 @@
       ],
       "url": "",
       "zona": "Villa Hermosa, La Romana",
-      "id": "pmv76dod741h3j",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dod741h3j"
     },
     {
       "actualizado": "2026-10-13T18:58:05.249Z",
@@ -8669,6 +8654,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:50:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -8692,8 +8678,7 @@
       ],
       "url": "",
       "zona": "Ciudad Juan Bosch, Santo Domingo Este",
-      "id": "pmv1gpxbqumusi",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1gpxbqumusi"
     },
     {
       "actualizado": "2026-10-13T18:49:57.357Z",
@@ -8760,6 +8745,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T18:49:57.357Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -8771,8 +8757,7 @@
       ],
       "url": "",
       "zona": "Verón, Punta Cana",
-      "id": "pmv71corzbpc04",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv71corzbpc04"
     },
     {
       "actualizado": "2026-10-14T20:22:59.310Z",
@@ -8857,26 +8842,26 @@
         }
       ],
       "precioRef": false,
-      "preciosAl": "2026-10-14T20:22:59.309Z",
+      "preciosAl": "2026-11-02T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
-          "banos": 0,
-          "desde": 122180,
+          "banos": 2,
+          "desde": 138000,
           "hab": 2,
-          "m2": 0
+          "m2": 89
         },
         {
-          "banos": 0,
-          "desde": 144720,
+          "banos": 2,
+          "desde": 142500,
           "hab": 3,
-          "m2": 0
+          "m2": 108
         }
       ],
       "url": "",
       "zona": "Autopista San Isidro, Santo Domingo Este",
-      "id": "pmv76docus0qe7",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76docus0qe7"
     },
     {
       "actualizado": "2026-10-13T18:59:34.331Z",
@@ -8973,6 +8958,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-09-29T21:11:54.656Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -8990,8 +8976,7 @@
       ],
       "url": "",
       "zona": "Punta Cana, República Dominicana",
-      "id": "pmun69bfledw0x",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmun69bfledw0x"
     },
     {
       "actualizado": "2026-10-09T21:21:47.318Z",
@@ -9096,6 +9081,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-09T21:21:47.318Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -9107,11 +9093,10 @@
       ],
       "url": "",
       "zona": "Pueblo Bavaro, Punta Cana",
-      "id": "pmv1h0jef3hcsx",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1h0jef3hcsx"
     },
     {
-      "actualizado": "2026-10-16T18:45:00.000Z",
+      "actualizado": "2026-11-02T19:00:26.046Z",
       "amenidades": [
         "Piscina privada",
         "Terraza techada",
@@ -9151,7 +9136,6 @@
         }
       ],
       "fotos": [
-        "92c96bad04a8a124b4343f6562354565",
         "808bbc64fcf65ac051eebc23581469e9",
         "bf0c9485ab687790f1b85ef1a98d9592",
         "22fea88ea6f063b62d0694333fe5dc0c",
@@ -9189,6 +9173,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:50:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -9212,8 +9197,7 @@
       ],
       "url": "",
       "zona": "Bávaro, La Altagracia",
-      "id": "pmv1hoqqmnjk32",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv1hoqqmnjk32"
     },
     {
       "actualizado": "2026-10-14T21:10:00.000Z",
@@ -9292,6 +9276,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -9315,8 +9300,7 @@
       ],
       "url": "",
       "zona": "Jacobo Majluta",
-      "id": "pmv76dod68e8z0",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dod68e8z0"
     },
     {
       "actualizado": "2026-10-14T21:35:00.000Z",
@@ -9420,6 +9404,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:35:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -9437,8 +9422,7 @@
       ],
       "url": "",
       "zona": "Bayahíbe, San Rafael del Yuma, La Altagracia",
-      "id": "pmv5qjjgbqc0sr",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5qjjgbqc0sr"
     },
     {
       "actualizado": "2026-10-14T21:15:00.000Z",
@@ -9513,6 +9497,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:15:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -9536,8 +9521,7 @@
       ],
       "url": "",
       "zona": "San Pedro de Macorís",
-      "id": "pmv76doeusg171",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doeusg171"
     },
     {
       "actualizado": "2026-10-15T21:45:00.000Z",
@@ -9615,6 +9599,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -9627,8 +9612,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/EiBQ0BtDUo4JbegKZrxNG6",
       "zona": "La Romana",
-      "id": "pmv76dod8rciyz",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dod8rciyz"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -9693,6 +9677,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -9710,8 +9695,7 @@
       ],
       "url": "",
       "zona": "Vista Cana, Punta Cana",
-      "id": "pmv76doebeagua",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doebeagua"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -9782,6 +9766,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -9794,8 +9779,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/DiZHkL5L0TrJiHuBnQF6Az",
       "zona": "Punta cana",
-      "id": "pmv76doec1nt6k",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doec1nt6k"
     },
     {
       "actualizado": "2026-10-16T18:45:00.000Z",
@@ -9832,6 +9816,7 @@
       "porque": [],
       "precioRef": false,
       "preciosAl": "2026-10-16T18:45:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -9843,8 +9828,7 @@
       ],
       "url": "",
       "zona": "Ciudad Las Canas, Punta Cana",
-      "id": "pmvsandvillage1",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmvsandvillage1"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -9897,6 +9881,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -9908,8 +9893,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dof9hqve6",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dof9hqve6"
     },
     {
       "actualizado": "2026-10-14T21:11:28.006Z",
@@ -9994,6 +9978,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:11:28.005Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Casa",
       "tipologias": [
         {
@@ -10017,8 +10002,7 @@
       ],
       "url": "",
       "zona": "Verón, Bávaro - Punta Cana",
-      "id": "pmv76doee2d8bp",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doee2d8bp"
     },
     {
       "actualizado": "2026-10-15T21:45:00.000Z",
@@ -10096,6 +10080,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -10114,8 +10099,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/JpvVmvdAPIE1CYDCnnHAKN",
       "zona": "Punta cana",
-      "id": "pmv76doefrzbx7",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doefrzbx7"
     },
     {
       "actualizado": "2026-10-13T18:50:01.303Z",
@@ -10178,6 +10162,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T19:00:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -10189,8 +10174,7 @@
       ],
       "url": "",
       "zona": "Ciudad del Sol, Verón-Punta Cana, Higüey",
-      "id": "pmv71crtli3h20",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv71crtli3h20"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -10262,6 +10246,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -10280,8 +10265,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/KFjNwba28x03BHlyaqc2yR",
       "zona": "Vista Cana, Punta Cana",
-      "id": "pmv76doegqbqdr",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doegqbqdr"
     },
     {
       "actualizado": "2026-10-14T21:35:00.000Z",
@@ -10359,6 +10343,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -10370,8 +10355,7 @@
       ],
       "url": "",
       "zona": "Vista cana",
-      "id": "pmv76dof1gn77w",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dof1gn77w"
     },
     {
       "actualizado": "2026-10-13T18:46:27.815Z",
@@ -10451,6 +10435,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T18:46:27.815Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Casa",
       "tipologias": [
         {
@@ -10474,8 +10459,7 @@
       ],
       "url": "",
       "zona": "Verón, Bávaro - Punta Cana",
-      "id": "pmv71873c5sozm",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv71873c5sozm"
     },
     {
       "actualizado": "2026-10-12T21:14:05.202Z",
@@ -10568,6 +10552,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:14:05.202Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -10585,8 +10570,7 @@
       ],
       "url": "",
       "zona": "Boca Chica, Santo Domingo Este",
-      "id": "pmv5r26tuekb83",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5r26tuekb83"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -10657,6 +10641,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -10669,8 +10654,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/Dn8sGhWiSbOAGBPBiWGufL",
       "zona": "La Romana",
-      "id": "pmv76dod9bgrcb",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dod9bgrcb"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -10723,6 +10707,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -10734,8 +10719,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dofamhj7j",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dofamhj7j"
     },
     {
       "actualizado": "2026-10-14T21:08:35.222Z",
@@ -10832,6 +10816,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:08:35.222Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -10855,8 +10840,7 @@
       ],
       "url": "",
       "zona": "Cerca del boulevard, Punta Cana",
-      "id": "pmv76doeicqj7b",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doeicqj7b"
     },
     {
       "actualizado": "2026-10-14T21:15:00.000Z",
@@ -10934,6 +10918,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -10957,8 +10942,7 @@
       ],
       "url": "",
       "zona": "Downtown, Punta Cana",
-      "id": "pmv76doejcpygz",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doejcpygz"
     },
     {
       "actualizado": "2026-10-15T21:45:00.000Z",
@@ -11036,6 +11020,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -11048,8 +11033,7 @@
       "url": "",
       "whatsapp": "https://chat.whatsapp.com/CYRXlRxg1Z05HskxSIVBiC",
       "zona": "Punta cana",
-      "id": "pmv76doekxrs7y",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doekxrs7y"
     },
     {
       "actualizado": "2026-10-16T18:45:00.000Z",
@@ -11086,6 +11070,7 @@
       "porque": [],
       "precioRef": false,
       "preciosAl": "2026-10-16T18:45:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Local comercial",
       "tipologias": [
         {
@@ -11097,8 +11082,7 @@
       ],
       "url": "",
       "zona": "Punta Cana",
-      "id": "pmvtheplaza01",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmvtheplaza01"
     },
     {
       "actualizado": "2026-10-13T18:50:06.308Z",
@@ -11165,6 +11149,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T18:50:06.308Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -11176,8 +11161,7 @@
       ],
       "url": "",
       "zona": "Verón, Punta Cana",
-      "id": "pmv71cvolnp6r8",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv71cvolnp6r8"
     },
     {
       "actualizado": "2026-10-13T19:04:29.875Z",
@@ -11276,6 +11260,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:10:42.820Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -11287,8 +11272,7 @@
       ],
       "url": "",
       "zona": "Naco, Santo Domingo",
-      "id": "pmv5qxuo424a3p",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5qxuo424a3p"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -11341,6 +11325,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -11352,8 +11337,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dofb691b5",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dofb691b5"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -11425,6 +11409,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -11448,8 +11433,7 @@
       ],
       "url": "",
       "zona": "Vista Cana, Punta Cana",
-      "id": "pmv76doemkfxi1",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doemkfxi1"
     },
     {
       "actualizado": "2026-10-14T21:13:10.990Z",
@@ -11562,6 +11546,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:13:10.990Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -11573,8 +11558,7 @@
       ],
       "url": "",
       "zona": "Brisas de Punta Cana, Punta Cana",
-      "id": "pmv76doeno0d3v",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doeno0d3v"
     },
     {
       "actualizado": "2026-10-13T19:01:31.992Z",
@@ -11684,6 +11668,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:50:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -11701,8 +11686,7 @@
       ],
       "url": "",
       "zona": "Piantini, Santo Domingo",
-      "id": "pmurfkj9s6av9y",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmurfkj9s6av9y"
     },
     {
       "actualizado": "2026-10-14T21:15:44.252Z",
@@ -11813,6 +11797,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-14T21:15:44.252Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -11830,8 +11815,7 @@
       ],
       "url": "",
       "zona": "Autovia del Este cerca Aeropuerto, Punta Cana",
-      "id": "pmv76doeof30ur",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doeof30ur"
     },
     {
       "actualizado": "2026-10-13T21:52:35.661Z",
@@ -11912,6 +11896,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-06T18:48:03.819Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -11929,8 +11914,7 @@
       ],
       "url": "",
       "zona": "Macao, Punta Cana",
-      "id": "pmux17ai4mu85h",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmux17ai4mu85h"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -11983,6 +11967,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -11994,8 +11979,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dofcjm5k6",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dofcjm5k6"
     },
     {
       "actualizado": "2026-10-16T18:45:00.000Z",
@@ -12026,6 +12010,7 @@
       },
       "porque": [],
       "precioRef": false,
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -12037,8 +12022,7 @@
       ],
       "url": "",
       "zona": "",
-      "id": "pmvsantamaria1",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmvsantamaria1"
     },
     {
       "actualizado": "2026-10-14T21:30:00.000Z",
@@ -12117,6 +12101,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -12128,8 +12113,7 @@
       ],
       "url": "",
       "zona": "Residencial Bávaro Punta Cana",
-      "id": "pmv76doep0o0q4",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doep0o0q4"
     },
     {
       "actualizado": "2026-10-13T21:30:00.000Z",
@@ -12182,6 +12166,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -12193,8 +12178,7 @@
       ],
       "url": "",
       "zona": "—",
-      "id": "pmv76dofd9d8sd",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76dofd9d8sd"
     },
     {
       "actualizado": "2026-10-13T19:04:42.842Z",
@@ -12285,6 +12269,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-09-30T20:55:11.213Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -12296,8 +12281,7 @@
       ],
       "url": "",
       "zona": "Ciudad las Canas, Cap Cana, Punta Cana",
-      "id": "pmuol3nu56mh5e",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmuol3nu56mh5e"
     },
     {
       "actualizado": "2026-10-13T19:00:18.116Z",
@@ -12406,6 +12390,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-12T21:08:25.215Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Villa",
       "tipologias": [
         {
@@ -12423,8 +12408,7 @@
       ],
       "url": "",
       "zona": "Vista Cana, Punta Cana",
-      "id": "pmv5quwhr8szbq",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv5quwhr8szbq"
     },
     {
       "actualizado": "2026-10-14T21:10:00.000Z",
@@ -12501,6 +12485,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -12518,8 +12503,7 @@
       ],
       "url": "",
       "zona": "White Sands, Punta Cana",
-      "id": "pmv76doeqzcotj",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doeqzcotj"
     },
     {
       "actualizado": "2026-10-14T21:10:00.000Z",
@@ -12590,6 +12574,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -12613,8 +12598,7 @@
       ],
       "url": "",
       "zona": "White Sands, Punta Cana",
-      "id": "pmv76doeru0lq1",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doeru0lq1"
     },
     {
       "actualizado": "2026-10-14T21:15:00.000Z",
@@ -12691,6 +12675,7 @@
       ],
       "precioRef": false,
       "preciosAl": "2026-10-13T21:30:00.000Z",
+      "subidoPor": "Robert Cavallo",
       "tipo": "Apartamento",
       "tipologias": [
         {
@@ -12708,22 +12693,24 @@
       ],
       "url": "",
       "zona": "Vista Cana, Punta Cana",
-      "id": "pmv76doeskvpx3",
-      "subidoPor": "Robert Cavallo"
+      "id": "pmv76doeskvpx3"
     }
   ],
   "asesores": [
     {
-      "id": "cmun75ocyj10s",
-      "nombre": "Robert Cavallo",
-      "tel": "849 459 9221",
-      "usuario": "robertcavallo"
+      "nombre": "Robert Cavallo"
     },
     {
-      "id": "cmuoj7lj5qjre",
-      "nombre": "German Escarfullery",
-      "tel": "",
-      "usuario": "german"
+      "nombre": "German Escarfullery"
+    },
+    {
+      "nombre": "Milena Paulino"
+    },
+    {
+      "nombre": "Larissa Paulino"
+    },
+    {
+      "nombre": "Diandra Cedeño"
     }
   ]
 }

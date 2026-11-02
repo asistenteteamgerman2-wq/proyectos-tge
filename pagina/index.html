@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Proyectos TGE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,6 +100,7 @@ textarea.ctl{resize:vertical;min-height:84px;line-height:1.5}
 .others{font-size:12px;color:var(--muted)}
 .agent{display:flex;align-items:center;gap:10px;font-size:13px;border-top:1px solid var(--line);padding-top:12px;min-width:0;margin-top:auto}
 .uploader{font-size:12px;color:var(--muted,#6b7280);margin-top:-4px}
+.faltas span.pedido{background:#DCEBFF;color:#123E7A}
 .wa-btn{color:#128c4b;font-weight:600}
 .av{width:30px;height:30px;border-radius:50%;background:var(--navy-2);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600;flex:none}
 .agent span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -829,7 +831,8 @@ function landingHTML(p, img, opts) {
   const near = (p.cercanias || []).filter(x => x && x.lugar).slice(0, 6);
   const faq = (p.faq || []).filter(x => x && x.p).slice(0, 6);
   const ag = (opts && opts.agent && opts.agent.nombre) ? opts.agent : { nombre: p.captador || "", tel: p.captadorTel || "", foto: "" };
-  const tel = String(ag.tel || "").replace(/\D/g, "");
+  // Si el asesor no tiene WhatsApp, los clientes escriben al WhatsApp del equipo.
+  const tel = String(ag.tel || "849 459 9221").replace(/\D/g, "");
   const waNum = tel.length === 10 && /^(809|829|849)/.test(tel) ? "1" + tel : tel;
   const waMsg = `Hola ${ag.nombre ? ag.nombre.split(" ")[0] : ""}, me interesa el proyecto ${p.nombre}. Me gustaría recibir más información.`;
   const waHref = waNum ? `https://wa.me/${waNum}?text=${encodeURIComponent(waMsg)}` : "";
@@ -1038,7 +1041,10 @@ function initLanding(root) {
     p.parqueos ? p.parqueos + " parqueos " + p.parqueos + " parqueo" : ""].join(" "));
   const matches = (p, q, extra) => { const words = fold(q).split(/\s+/).filter(Boolean); if (!words.length) return true; const t = hay(p, extra); return words.every(w => t.includes(w)); };
   const maxHab = p => Math.max(0, ...(p.tipologias || []).map(t => t.hab || 0));
-  const byRooms = (a, b) => ((a.p.disp === "Vendido") - (b.p.disp === "Vendido")) || ((a.t.desde || Infinity) - (b.t.desde || Infinity)) || String(a.p.nombre).localeCompare(String(b.p.nombre), "es");
+  // Orden de la lista de precios del CRM (28 oct). Los que no están en la lista van al final, por nombre.
+  const ORDEN_LISTA = new Map(["pmv5qxh7u6psai", "pmv76dodbq4axe", "pmv76dodcmwod1", "pmv5r3c1hamgfj", "pmv76dodd11rt1", "pmv76dodeo5a1f", "pmv76doexge8ky", "pmv76doevm8gk1", "pmv76dodf20eui", "pmv76dodgre81q", "pmv76dodhzw5fd", "pmv76dodkzxm1a", "pmv76dod0kkejl", "pmv76dod741h3j", "pmv76docus0qe7", "pmv1gqkbwsmpbr", "pmv76dodlkmdt5", "pmv76dodmxdz8k", "pmv76dodoz43g4", "pmv76dodpr3fiy", "pmv76dodq07fog", "pmv76dodrpy7ye", "pmv1h0tsgr8601", "pmv76dodsjl8gi", "pmv76dodt3ss5v", "pmv76dodunwfkn", "pmv76dod1f0bra", "pmv76dodvrtgat", "pmv1h27miupkuk", "pmv76dodw9bqmq", "pmupxzebbf36e2", "pmv76dodxv3uct", "pmv1h2re4zb5u2", "pmv5r6py9yv51m", "pmv1h3f4ogz5z9", "pmv1h4aummok42", "pmv76dodyqiyvj", "pmv1himc5xf0wg", "pmv76doeyx23ua", "pmv5r4j3okq7jy", "pmv5r67lqz3rsm", "pmv714fy9jfz90", "pmv76dod4q9x8e", "pmv76doe0swhe8", "pmv76doezz6b6l", "pmv76doe232nkp", "pmv76docx3hecm", "pmv76doewf5onf", "pmv76doe4mdyu5", "pmv76dodaax1jp", "pmun6ca9jve15j", "pmv1grtq076b2j", "pmv715ydzkqixa", "pmv76doettrj9p", "pmv1hju7wi9n81", "pmv76doe6advj6", "pmv76dod3seyfn", "pmv1hlsmo085pt", "pmv1hkv1s7sznx", "pmv76dof0zcy7w", "pmv1hmpgcbdrzj", "pmun69bfledw0x", "pmv1hoqqmnjk32", "pmv5qe1gwv6f7t", "pmv5qaz3vyz5hg", "pmv7172dz33l32", "pmv76doe85ctjj", "pmv5qc8p9inszk", "pmv76docvlgdlw", "pmv76doe943r7m", "pmv76doea8mp5d", "pmv76docytokp5", "pmvfnrv4z4j3ny", "pmv5qhlkj8ogu6", "pmv5qiledv5o0i", "pmv76dod5j3hco", "pmv1gpxbqumusi", "pmv76dod68e8z0", "pmv76doeusg171", "pmv76dod8rciyz", "pmv76doebeagua", "pmv76doec1nt6k", "pmv76doee2d8bp", "pmv76doefrzbx7", "pmv71crtli3h20", "pmv76dof1gn77w", "pmv71873c5sozm", "pmv76doegqbqdr", "pmv5r26tuekb83", "pmv76dod9bgrcb", "pmv76doeicqj7b", "pmv76doejcpygz", "pmv76doekxrs7y", "pmv5qxuo424a3p", "pmv76doemkfxi1", "pmv76doeno0d3v", "pmurfkj9s6av9y", "pmv76doeof30ur", "pmux17ai4mu85h", "pmv76doep0o0q4", "pmv76doeqzcotj", "pmv76doeru0lq1", "pmv76doeskvpx3", "pmv76dof2tg10i", "pmv5qfwv9ff1ea", "pmv76dof33tikh", "pmv76dof4bay4u", "pmv1hq0asd1pj5", "pmv76dof5tqtpr", "pmv76dof6i6ub1", "pmun6jehcx0y4k", "pmv76dof77ib76", "pmv76dof88yzmz", "pmv71cq5a299xk", "pmv71corzbpc04", "pmv1h0jef3hcsx", "pmv5qjjgbqc0sr", "pmvsandvillage1", "pmv76dof9hqve6", "pmv76dofamhj7j", "pmvtheplaza01", "pmv71cvolnp6r8", "pmv76dofb691b5", "pmv76dofcjm5k6", "pmvsantamaria1", "pmv76dofd9d8sd", "pmv5quwhr8szbq", "pmuol3nu56mh5e"].map((id, i) => [id, i + 1]));
+  const ordL = p => ORDEN_LISTA.get(p.id) || 9999;
+  const byRooms = (a, b) => ((a.p.disp === "Vendido") - (b.p.disp === "Vendido")) || (ordL(a.p) - ordL(b.p)) || String(a.p.nombre).localeCompare(String(b.p.nombre), "es");
   function visible() { return S.projects.filter(p => (!S.tipos.size || S.tipos.has(tipoOf(p))) && matches(p, S.q, capName(p))); }
   const habKey = h => Math.min(4, Math.max(1, h || 1));
   function tipoFor(p) {
@@ -1087,8 +1093,8 @@ function initLanding(root) {
       h("div", { class: "thumb", style: cover }, p.estado ? h("span", { class: "state" + (p.estado === "En planos" ? " planos" : "") }, p.estado) : null,
         p.disp && p.disp !== "Disponible" ? h("span", { class: "disp d-" + slugify(p.disp) }, p.disp) : p.precioRef ? h("span", { class: "disp", title: "Precio de ejemplo: cámbialo en Editar antes de enviarlo" }, "Precio de ejemplo") : null),
       h("div", { class: "card-body" },
-        h("div", {}, h("h3", {}, pend && ORDEN_PC.has(p.id) ? ORDEN_PC.get(p.id) + ". " : "", p.nombre), p.zona ? h("div", { class: "zone" }, p.zona) : null,
-          miss.length ? h("div", { class: "faltas" }, miss.map(m => h("span", {}, m))) : null),
+        h("div", {}, h("h3", {}, p.nombre), p.zona ? h("div", { class: "zone" }, p.zona) : null,
+          miss.length ? h("div", { class: "faltas" }, miss.map(m => h("span", {}, m)), noFotos(p) ? h("span", { class: "pedido" }, "📩 Brochure solicitado") : null) : null),
         h("div", { class: "price" }, h("div", { class: "k" }, "Desde"),
           t.desde > 0 ? h("div", { class: "v num" }, money(t.desde)) : h("div", { class: "v ask" }, "Precio a consultar")),
         opts ? h("div", { class: "others" }, tipoOf(p) + " · " + opts + (p.parqueos ? " · " + p.parqueos + " parqueo" + (p.parqueos > 1 ? "s" : "") : "")) : null,
@@ -1114,7 +1120,7 @@ function initLanding(root) {
         h("div", { class: "empty", style: "text-align:left;border-style:solid" }, h("strong", {}, "Hola, " + S.me.nombre),
           "Todas las propiedades y landings salen a tu nombre como asesor, con tu WhatsApp" + (S.me.tel ? " (" + S.me.tel + ")" : "") + ".")));
       const all = list.map(p => ({ p, t: tipoFor(p) })).filter(x => x.t).sort(byRooms);
-      const items = all.filter(x => !incompleto(x.p)), pend = all.filter(x => incompleto(x.p)).sort((a, b) => ordPC(a.p) - ordPC(b.p) || a.p.nombre.localeCompare(b.p.nombre));
+      const items = all.filter(x => !incompleto(x.p)), pend = all.filter(x => incompleto(x.p)).sort((a, b) => ordL(a.p) - ordL(b.p) || a.p.nombre.localeCompare(b.p.nombre));
       if (items.length) {
         shown++;
         const low = items.filter(x => x.t.desde > 0).sort((a, b) => a.t.desde - b.t.desde)[0];
@@ -1626,7 +1632,7 @@ Estilo de todos los textos: español sencillo, claro y fácil de leer, con un to
   const bulk = { files: [], running: false, stop: false };
   // Busca a qué proyecto incompleto pertenece un brochure (por nombre del archivo o del proyecto leído).
   const pnorm = s => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\bsold\s*out\b/g, "").replace(/[^a-z0-9]+/g, " ").trim();
-  const pendList = () => S.projects.filter(incompleto).sort((a, b) => ordPC(a) - ordPC(b) || a.nombre.localeCompare(b.nombre));
+  const pendList = () => S.projects.filter(incompleto).sort((a, b) => ordL(a) - ordL(b) || a.nombre.localeCompare(b.nombre));
   function matchPend(...names) {
     const exact = [], fwd = [], rev = new Set();
     for (const p of pendList()) {
@@ -3091,3 +3097,5 @@ ${wa ? `<a class="ct-float" id="ct-float" href="${wa}" target="_blank" rel="noop
   })();
 })();
 </script>
+
+</body></html>
