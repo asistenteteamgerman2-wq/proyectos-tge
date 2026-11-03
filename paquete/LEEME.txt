@@ -1,0 +1,21 @@
+PROYECTOS TGE — PAQUETE COMPLETO PARA ARMAR LA PÁGINA
+Hecho por Robert Cavallo · 3 nov 2026
+
+QUÉ HAY
+1. codigo/  -> el código de la página partido en 6 partes (codigo-parte-01.txt ...).
+   Únelas EN ORDEN, sin agregar ni quitar nada, y guarda el resultado como proyectos-tge.html.
+   Ejemplo:  cat codigo/codigo-parte-*.txt > proyectos-tge.html
+2. datos/   -> las 128 propiedades en 8 archivos (proyectos-parte-1.json ... 8) y los 6 asesores (asesores.json).
+   Cada proyecto trae su "id": úsalo como id del documento en la colección "proyectos".
+   Los asesores van en la colección "captadores" (con su "id").
+3. fotos/   -> 118 fotos (nombre = código de la foto). En los datos esas fotos aparecen
+   como direcciones https de GitHub. Si las subes como imágenes de la página, cambia la dirección
+   por la nueva. Las fotos que aparecen como un código de 32 letras están en la página original
+   https://claude.ai/artifact/5w4nF6qVDU568zpT3DwNsh (se copian con from_url si hay permiso).
+
+REGLAS
+- No cambies precios, nombres, "Subido por" ni borres valores de "fotos".
+- La página ya sabe qué proyectos estaban completos: aunque falten fotos, deben salir
+  97 proyectos con precio y 31 por completar.
+- Publica la página con las capacidades: db, user, assets, downloads.
+- Agrega en el menú del CRM un botón "🏢 Proyectos TGE" que abra la página.

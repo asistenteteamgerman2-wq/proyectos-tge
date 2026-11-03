@@ -1,0 +1,490 @@
+        ctx.font = "600 36px Poppins"; ctx.fillStyle = r.desde > 0 ? "#FF6B77" : "rgba(255,255,255,.8)"; ctx.textAlign = "right"; ctx.fillText(r.desde > 0 ? money(r.desde) : "Consultar", X + W - 34, cy); ctx.textAlign = "left";
+      });
+      chrome(ctx, i, n, true);
+    } else if (s.k === "amenidades") {
+      coverImg(ctx, ph, 0, 0, CW, CH); ctx.fillStyle = "rgba(10,26,63,.82)"; ctx.fillRect(0, 0, CW, CH);
+      kicker(ctx, "Amenidades", X, 150, "#FF6B77");
+      textBox(ctx, "Todo lo que necesita", X, 200, W, 180, { font: "Lora", weight: 600, size: 76, min: 52, maxLines: 2 });
+      const am = d.amen.slice(0, 8), col = am.length > 4 ? 2 : 1, cw = (W - (col - 1) * 40) / col;
+      am.forEach((a, k) => {
+        const cx = X + (k % col) * (cw + 40), y = 420 + Math.floor(k / col) * 150;
+        ctx.fillStyle = RED; ctx.beginPath(); ctx.arc(cx + 14, y + 26, 10, 0, 7); ctx.fill();
+        textBox(ctx, a, cx + 44, y, cw - 44, 110, { weight: 500, size: 38, min: 26, lh: 1.2, maxLines: 2 });
+      });
+      chrome(ctx, i, n, true);
+    } else if (s.k === "plan") {
+      ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, CW, CH); ctx.fillStyle = RED; ctx.fillRect(0, 0, CW, 14);
+      kicker(ctx, "Plan de pago", X, 150);
+      textBox(ctx, "Así puede pagarlo", X, 200, W, 100, { font: "Lora", weight: 600, size: 76, min: 52, color: NAVY, maxLines: 1 });
+      const pl = d.pl, items = [];
+      if (pl.separacion > 0) items.push([money(pl.separacion), "para separar su unidad"]);
+      if (pl.firmaPct > 0) items.push([pl.firmaPct + "%", "a la firma del contrato"]);
+      if (pl.cuotasPct > 0) items.push([pl.cuotasPct + "%", "durante la construcción" + (pl.meses > 0 ? `, en ${pl.meses} cuotas` : "")]);
+      if (pl.entregaPct > 0) items.push([pl.entregaPct + "%", "contra entrega"]);
+      const rh = Math.min(190, 760 / items.length);
+      items.forEach(([big, small], k) => {
+        const y = 360 + k * rh;
+        ctx.fillStyle = PALE; ctx.beginPath(); ctx.roundRect(X, y, W, rh - 24, 22); ctx.fill();
+        ctx.textBaseline = "middle"; const cy = y + (rh - 24) / 2;
+        ctx.font = "600 64px Poppins"; ctx.fillStyle = RED; ctx.fillText(big, X + 40, cy);
+        const bw = Math.max(260, ctx.measureText(big).width + 70);
+        const sh = textBox(ctx, small, 0, 0, W - bw - 80, 84, { weight: 500, size: 34, min: 24, lh: 1.2, maxLines: 2, dry: true });
+        textBox(ctx, small, X + 40 + bw, cy - sh / 2, W - bw - 80, 84, { weight: 500, size: 34, min: 24, lh: 1.2, color: NAVY, maxLines: 2 });
+      });
+      chrome(ctx, i, n, false);
+    } else if (s.k === "detalles") {
+      coverImg(ctx, ph, 0, 0, CW, CH); shade(ctx, CH * .25, CH * .55, 0, .75); ctx.fillStyle = "rgba(10,26,63,.75)"; ctx.fillRect(0, CH * .55, CW, CH * .45); shade(ctx, CH * .55, CH, 0, .25);
+      kicker(ctx, "Ubicación y entrega", X, 760, "#FF6B77");
+      let y = textBox(ctx, p.zona || "República Dominicana", X, 810, W, 190, { font: "Lora", weight: 600, size: 72, min: 48, lh: 1.1, maxLines: 2 }) + 30;
+      let x = X; const chips = [p.entrega && "Entrega " + p.entrega, p.estado, p.parqueos && p.parqueos + (p.parqueos > 1 ? " parqueos" : " parqueo")].filter(Boolean);
+      for (const c of chips) { const w = pill(ctx, c, x, y, { bg: "rgba(255,255,255,.16)", size: 28, weight: 500, track: 0 }); x += w + 14; if (x > CW - 300) { x = X; y += 70; } }
+      chrome(ctx, i, n, true);
+    } else if (s.k === "cta") {
+      ctx.fillStyle = NAVY; ctx.fillRect(0, 0, CW, CH);
+      const g = ctx.createRadialGradient(CW, 0, 0, CW, 0, 900); g.addColorStop(0, "rgba(220,28,46,.35)"); g.addColorStop(1, "rgba(220,28,46,0)"); ctx.fillStyle = g; ctx.fillRect(0, 0, CW, CH);
+      const cx = CW / 2, cy = 400, r = 130;
+      ctx.save(); ctx.beginPath(); ctx.arc(cx, cy, r, 0, 7); ctx.closePath(); ctx.clip();
+      if (CAR.agImg) coverImg(ctx, CAR.agImg, cx - r, cy - r, r * 2, r * 2); else { ctx.fillStyle = RED; ctx.fillRect(cx - r, cy - r, r * 2, r * 2); ctx.fillStyle = "#fff"; ctx.font = "600 96px Poppins"; ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText(initials(ag.nombre || "TGE"), cx, cy + 4); ctx.textAlign = "left"; }
+      ctx.restore(); ctx.strokeStyle = "#fff"; ctx.lineWidth = 8; ctx.beginPath(); ctx.arc(cx, cy, r, 0, 7); ctx.stroke();
+      ctx.textAlign = "center";
+      const tb = (txt, y, o) => { ctx.font = `${o.italic ? "italic " : ""}${o.weight} ${o.size}px ${o.font || "Poppins"}`; const ls = lines(ctx, txt, W); ctx.fillStyle = o.color || "#fff"; ctx.textBaseline = "top"; ls.slice(0, o.max || 3).forEach((l, k) => ctx.fillText(l, cx, y + k * o.size * 1.2)); return y + Math.min(ls.length, o.max || 3) * o.size * 1.2; };
+      let y = tb(t.cta, 590, { font: "Lora", weight: 600, size: 66, max: 2 }) + 24;
+      y = tb(ag.nombre ? `Escríbale a ${ag.nombre}` : "Escríbanos por WhatsApp", y, { weight: 500, size: 36, color: "rgba(255,255,255,.85)" }) + 40;
+      if (ag.tel) { ctx.font = "600 44px Poppins"; const w = ctx.measureText("WhatsApp " + ag.tel).width + 90, hh = 104; ctx.fillStyle = "#25D366"; ctx.beginPath(); ctx.roundRect(cx - w / 2, y, w, hh, hh / 2); ctx.fill(); ctx.fillStyle = "#fff"; ctx.textBaseline = "middle"; ctx.fillText("WhatsApp " + ag.tel, cx, y + hh / 2 + 2); y += hh + 40; }
+      tb("Precios en dólares, sujetos a cambio y disponibilidad.", y, { weight: 400, size: 24, color: "rgba(255,255,255,.55)" });
+      ctx.textAlign = "left"; chrome(ctx, i, n, true);
+    }
+  }
+  function carRender() {
+    const n = CAR.slides.length, grid = $("carGrid");
+    grid.replaceChildren(...CAR.slides.map((s, i) => {
+      const cv = h("canvas", { width: CW, height: CH, "aria-label": "Lámina " + (i + 1) });
+      drawSlide(cv, s, i, n); s.cv = cv;
+      return h("div", { class: "car-it" }, cv, h("div", { class: "car-acts" },
+        s.ph != null && CAR.imgs.length > 1 ? h("button", { type: "button", class: "link-btn", onclick: () => { s.shift = (s.shift || 0) + 1; drawSlide(cv, s, i, n); } }, "↻ Otra foto") : h("span"),
+        S.downloads ? h("button", { type: "button", class: "link-btn", onclick: () => carSave([i]) }, "Descargar") : null));
+    }));
+  }
+  const carBlob = cv => new Promise(r => cv.toBlob(r, "image/jpeg", 0.92));
+  async function carSave(idx) {
+    if (!S.downloads) { toast("Abre la página dentro de Claude para descargar"); return; }
+    const base = (slugify(CAR.p.nombre) || "proyecto") + "-carrusel";
+    try {
+      if (idx.length === 1) { const i = idx[0]; await S.downloads.save({ filename: `${base}-${String(i + 1).padStart(2, "0")}.jpg`, data: await carBlob(CAR.slides[i].cv) }); return; }
+      const Z = await zipLib(), zip = new Z();
+      for (const i of idx) zip.file(`${base}-${String(i + 1).padStart(2, "0")}.jpg`, await carBlob(CAR.slides[i].cv));
+      zip.file(`${base}-texto.txt`, $("carCap").value);
+      await S.downloads.save({ filename: base + ".zip", data: await zip.generateAsync({ type: "blob" }) });
+    } catch (x) { if (x?.code !== "cancelled" && x?.code !== "declined") toast("No se pudo descargar"); }
+  }
+  async function openCarousel(p) {
+    if (!p) return;
+    CAR.p = p; const m = carSlides(p); CAR.meta = m; CAR.slides = m.list.map(s => ({ ...s }));
+    const words = String(p.descripcion || "").split(/(?<=[.!?])\s+/)[0].split(/\s+/).filter(Boolean), firstSentence = words.slice(0, 28).join(" ") + (words.length > 28 ? "…" : "");
+    const cap1 = v => String(v || "").replace(/^\s*\S/, c => c.toUpperCase());
+    CAR.txt = { gancho: cap1(p.frase) || "Su nuevo hogar le espera", intro: firstSentence || `${p.nombre}, en ${p.zona || "República Dominicana"}.`, cta: "¿Quiere recibir precios y planos?" };
+    $("carTitle").textContent = "Carrusel · " + p.nombre;
+    $("carGancho").value = CAR.txt.gancho; $("carIntro").value = CAR.txt.intro; $("carCta").value = CAR.txt.cta;
+    $("carCap").value = `${p.nombre} · ${p.zona || ""}\n${m.from ? "Desde " + m.from + "\n" : ""}\nEscríbenos por WhatsApp para recibir precios, planos y plan de pago.\n\n#RemaxRD #BienesRaices #RepublicaDominicana #ProyectosEnPlanos`;
+    $("carSheet").hidden = false; document.body.classList.add("locked");
+    $("carGrid").replaceChildren(h("p", { class: "hint" }, "Preparando las láminas…"));
+    await Promise.all([document.fonts.load("600 60px Lora"), document.fonts.load("italic 500 60px Lora"), document.fonts.load("500 40px Poppins"), document.fonts.load("600 40px Poppins"), document.fonts.load("400 40px Poppins")].map(x => x.catch(() => {})));
+    const ag = agentFor(p);
+    [CAR.imgs, CAR.agImg] = await Promise.all([Promise.all((p.fotos || []).slice(0, 8).map(id => loadImg(blobUrl(id)))).then(a => a.filter(Boolean)), loadImg(ag.foto)]);
+    if (CAR.p !== p) return;
+    carRender();
+    if (!S.sample) { $("carStatus").textContent = ""; return; }
+    $("carStatus").textContent = "Claude está escribiendo los textos…";
+    try {
+      const data = { nombre: p.nombre, tipo: p.tipo, zona: p.zona, estado: p.estado, entrega: p.entrega, desde: m.from, unidades: m.tipos.map(t => ({ hab: t.hab, m2: t.m2, desde: t.desde })), amenidades: m.amen.slice(0, 10), descripcion: p.descripcion, frase: p.frase, plan: p.plan, captador: ag.nombre, whatsapp: ag.tel };
+      const r = await S.sample.json(`Eres el community manager del Team Germanescarfullery (RE/MAX Metropolitana, República Dominicana). Con los datos del proyecto, escribe los textos de un carrusel de Instagram. Responde SOLO con JSON: {"gancho":"frase corta y atractiva para la portada, máximo 7 palabras, sin repetir el nombre del proyecto","intro":"una o dos frases que presenten el proyecto y den ganas de verlo, máximo 26 palabras","cta":"llamado a la acción corto, máximo 7 palabras, en forma de pregunta o invitación","caption":"texto para la publicación, 60 a 100 palabras, español dominicano neutro, cálido y profesional, con 2 a 4 emojis, menciona zona, precio desde si existe y lo que lo hace especial, y termina invitando a escribir por WhatsApp${ag.tel ? " al " + ag.tel : ""}","hashtags":["10 hashtags relevantes sin espacios"]}. Usa solo datos reales; no inventes cifras ni fechas. Trata al lector de usted en gancho, intro y cta.\n\nDATOS:\n${JSON.stringify(data)}`, { modelTier: "default" });
+      if (CAR.p !== p) return;
+      const cut = (v, n) => String(v || "").trim().slice(0, n);
+      if (r?.gancho) $("carGancho").value = CAR.txt.gancho = cut(r.gancho, 70).replace(/^\S/, c => c.toUpperCase());
+      if (r?.intro) $("carIntro").value = CAR.txt.intro = cut(r.intro, 220);
+      if (r?.cta) $("carCta").value = CAR.txt.cta = cut(r.cta, 60);
+      if (r?.caption) $("carCap").value = cut(r.caption, 1800) + (Array.isArray(r.hashtags) && r.hashtags.length ? "\n\n" + r.hashtags.slice(0, 15).map(x => "#" + String(x).replace(/^#/, "").replace(/\s+/g, "")).join(" ") : "");
+      carRender(); $("carStatus").textContent = "";
+    } catch (x) { $("carStatus").textContent = x?.code === "not_granted" ? "" : "Claude no pudo escribir los textos ahora; puedes editarlos tú."; }
+  }
+  for (const [id, k] of [["carGancho", "gancho"], ["carIntro", "intro"], ["carCta", "cta"]])
+    $(id).addEventListener("input", e => { CAR.txt[k] = e.target.value; clearTimeout(CAR.t); CAR.t = setTimeout(carRender, 250); });
+  $("carClose").addEventListener("click", () => { $("carSheet").hidden = true; CAR.p = null; if ($("layer").hidden && $("sheet").hidden) document.body.classList.remove("locked"); });
+  $("carZip").addEventListener("click", () => carSave(CAR.slides.map((_, i) => i)));
+  $("carCopy").addEventListener("click", async () => { try { await navigator.clipboard.writeText($("carCap").value); toast("Texto copiado"); } catch { $("carCap").select(); toast("Selecciona y copia el texto"); } });
+  $("carBtn").addEventListener("click", () => openCarousel(S.projects.find(x => x.id === S.openId)));
+  function route() {
+    const m = /^#p-([A-Za-z0-9_.~-]+)$/.exec(location.hash);
+    if (m) showLanding(m[1]); else if (!$("layer").hidden) closeLanding(true);
+  }
+  window.addEventListener("hashchange", route);
+
+  async function toDataUrl(id) {
+    const r = await fetch(blobUrl(id)); if (!r.ok) throw new Error("foto"); const b = await r.blob(); if (!/^image\//.test(b.type)) throw new Error("foto");
+    return await new Promise(ok => { const fr = new FileReader(); fr.onload = () => ok(fr.result); fr.readAsDataURL(b); });
+  }
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const slugify = v => String(v || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^A-Za-z0-9]+/g, "-").replace(/^-|-$/g, "").toLowerCase();
+  const FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Poppins:wght@400;500;600&display=swap">';
+  async function landingParts(p, extra) {
+    const imgs = [];
+    for (const id of p.fotos || []) { try { imgs.push(await toDataUrl(id)); } catch {} }
+    if (!imgs.length && !incompleto(p)) imgs.push(PH_IMG);
+    const ac = extra && extra.agentCap;
+    const ag = ac ? { nombre: ac.nombre || "", tel: ac.tel || "", foto: "", fotoId: ac.foto || "" } : agentFor(p);
+    if (ag.fotoId) { try { ag.foto = await toDataUrl(ag.fotoId); } catch { ag.foto = ""; } }
+    const ex = Object.assign({}, extra || {}); delete ex.agentCap;
+    return landingHTML(p, imgs, Object.assign({ hook: S.hook, agent: ag }, ex));
+  }
+  $("dlBtn").addEventListener("click", async () => {
+    const p = S.projects.find(x => x.id === S.openId); if (!p || !S.downloads) return;
+    const btn = $("dlBtn"); btn.disabled = true; btn.textContent = "Preparando…";
+    try {
+      const body = await landingParts(p);
+      const doc = `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>${esc(p.nombre)} · Team Germanescarfullery</title><meta name="description" content="${esc(p.frase || p.nombre)}">${FONTS}<style>body{margin:0}html{scroll-behavior:smooth}${LANDING_CSS}</style></head><body>${body}<script>${initLanding.toString()};initLanding(document);<\/script></body></html>`;
+      const who = S.me ? "-" + slugify(S.me.nombre) : "";
+      await S.downloads.save({ filename: (slugify(p.nombre) || "landing") + who + ".html", data: new Blob([doc], { type: "text/html" }) });
+    } catch (x) { if (x?.code && x.code !== "cancelled" && x.code !== "declined") toast("No se pudo descargar la landing"); }
+    finally { btn.disabled = false; btn.textContent = "Descargar HTML"; }
+  });
+
+  /* ---------- send to a client: encrypted landing + credentials ---------- */
+  const b64 = buf => { const u = new Uint8Array(buf); let out = ""; for (let i = 0; i < u.length; i += 0x8000) out += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000)); return btoa(out); };
+  const randPass = n => { const a = "abcdefghjkmnpqrstuvwxyz23456789"; const r = crypto.getRandomValues(new Uint8Array(n)); return [...r].map(x => a[x % a.length]).join(""); };
+  async function encrypt(text, usuario, pass, exp) {
+    const salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12));
+    const km = await crypto.subtle.importKey("raw", new TextEncoder().encode(usuario.toLowerCase() + ":" + pass), "PBKDF2", false, ["deriveKey"]);
+    const key = await crypto.subtle.deriveKey({ name: "PBKDF2", salt, iterations: 150000, hash: "SHA-256" }, km, { name: "AES-GCM", length: 256 }, false, ["encrypt"]);
+    const ct = await crypto.subtle.encrypt({ name: "AES-GCM", iv, additionalData: new TextEncoder().encode(String(exp)) }, key, new TextEncoder().encode(text));
+    return { s: b64(salt), iv: b64(iv), ct: b64(ct), exp };
+  }
+  function unlockScript() {
+    const b = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+    const f = document.getElementById("acc"), out = document.getElementById("accErr");
+    const expired = () => Date.now() > Number(DATA.exp);
+    const showExpired = () => {
+      document.getElementById("fields").remove();
+      const box = document.getElementById("expBox"); box.hidden = false;
+    };
+    const eye = document.querySelector("[data-eye]");
+    if (eye) eye.addEventListener("click", () => { const on = eye.getAttribute("aria-pressed") !== "true"; f.p.type = on ? "text" : "password"; eye.setAttribute("aria-pressed", String(on)); eye.setAttribute("aria-label", on ? "Ocultar contraseña" : "Mostrar contraseña"); f.p.focus(); });
+    const until = document.getElementById("until");
+    if (until) until.textContent = new Date(Number(DATA.exp)).toLocaleString("es-DO", { dateStyle: "long", timeStyle: "short" });
+    if (expired()) { showExpired(); return; }
+    f.addEventListener("submit", async ev => {
+      ev.preventDefault();
+      if (expired()) { showExpired(); return; }
+      const u = f.u.value.trim().toLowerCase(), p = f.p.value;
+      out.textContent = "Verificando…";
+      try {
+        const km = await crypto.subtle.importKey("raw", new TextEncoder().encode(u + ":" + p), "PBKDF2", false, ["deriveKey"]);
+        const key = await crypto.subtle.deriveKey({ name: "PBKDF2", salt: b(DATA.s), iterations: 150000, hash: "SHA-256" }, km, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+        const html = new TextDecoder().decode(await crypto.subtle.decrypt({ name: "AES-GCM", iv: b(DATA.iv), additionalData: new TextEncoder().encode(String(DATA.exp)) }, key, b(DATA.ct)));
+        document.getElementById("gate").remove();
+        if (DATA.kind === "cat") catalogRuntime(JSON.parse(html));
+        else { document.getElementById("c").innerHTML = html; initLanding(document); }
+        window.scrollTo(0, 0);
+      } catch (e) { out.textContent = "Usuario o contraseña incorrectos. Si no los tiene, hable con quien le envió el enlace."; }
+    });
+  }
+  const GATE_CSS = `#gate{min-height:100vh;min-height:100dvh;color:#0B1638;display:flex;align-items:center;justify-content:center;padding:32px 16px;font-family:Poppins,system-ui,sans-serif;position:relative;overflow:hidden;
+background:radial-gradient(1100px 600px at 85% -10%,rgba(220,28,46,.28),transparent 60%),radial-gradient(900px 700px at -10% 110%,rgba(46,84,170,.45),transparent 60%),linear-gradient(160deg,#0A1A3F 0%,#0D2150 55%,#081433 100%)}
+#gate::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse at center,#000 30%,transparent 75%);pointer-events:none}
+#gate::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid rgba(255,255,255,.08);right:-180px;bottom:-220px;box-shadow:0 0 0 70px rgba(255,255,255,.02),0 0 0 140px rgba(255,255,255,.015);pointer-events:none}
+#gate form{position:relative;z-index:1;width:100%;max-width:420px;display:flex;flex-direction:column;gap:14px;background:#fff;border-radius:20px;padding:34px 30px 28px;box-shadow:0 30px 80px rgba(3,8,25,.45),0 2px 0 #DC1C2E inset}
+#gate .b{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.18em;font-weight:600;color:#0A1A3F}
+#gate .b i{width:38px;height:38px;border-radius:50%;background:#DC1C2E;color:#fff;display:grid;place-items:center;font-style:normal;font-family:Lora,Georgia,serif;font-size:13px;letter-spacing:.02em;flex:none}
+#gate .b small{display:block;letter-spacing:.06em;font-weight:400;color:#6A7390;margin-top:2px}
+#gate .b .lg{display:block;height:64px;width:auto}
+#gate .kick{margin-top:14px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#DC1C2E;font-weight:600}
+#gate h1{font-family:Lora,Georgia,serif;font-weight:600;font-size:clamp(26px,6vw,32px);line-height:1.15;margin:0;text-wrap:balance}
+#gate .rule{height:3px;width:44px;background:#DC1C2E;border-radius:2px;margin:2px 0 4px}
+#gate p{margin:0;color:#4A5370;font-size:14.5px;line-height:1.6}
+#gate p.who{color:#1d2440}
+#gate .until{display:flex;align-items:center;gap:8px;background:#F4F6FA;border-radius:10px;padding:10px 12px;font-size:13px;color:#4A5370}
+#gate .until svg{width:16px;height:16px;flex:none;stroke:#DC1C2E;fill:none;stroke-width:2;stroke-linecap:round}
+#gate .until b{color:#0B1638;font-weight:600}
+#gate label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#4A5370}
+#gate input{border:1px solid #D7DCE6;background:#FAFBFD;color:#0B1638;border-radius:12px;padding:13px 14px;font-size:16px;font-family:inherit;text-transform:none;letter-spacing:0;width:100%;box-sizing:border-box;transition:border-color .15s,box-shadow .15s,background .15s}
+#gate input:focus{outline:0;border-color:#0A1A3F;background:#fff;box-shadow:0 0 0 4px rgba(10,26,63,.08)}
+#gate .pw{position:relative;display:block}
+#gate .pw input{padding-right:50px}
+#gate .eye{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:40px;height:40px;border:0;background:none;border-radius:10px;cursor:pointer;display:grid;place-items:center;color:#6A7390;padding:0;margin:0}
+#gate .eye:hover{background:#EEF1F7;color:#0A1A3F}
+#gate .eye svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#gate .eye .off{display:none}#gate .eye[aria-pressed="true"] .on{display:none}#gate .eye[aria-pressed="true"] .off{display:block}
+#gate button[type=submit]{margin-top:4px;border:0;border-radius:999px;background:#DC1C2E;color:#fff;font-weight:600;padding:14px 18px;font-size:15px;cursor:pointer;font-family:inherit;box-shadow:0 8px 20px rgba(220,28,46,.28);transition:transform .15s,box-shadow .15s}
+#gate button[type=submit]:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(220,28,46,.34)}
+#gate .help{margin-top:6px;padding-top:16px;border-top:1px solid #E9ECF2;font-size:13.5px;color:#4A5370;line-height:1.6}
+#gate .help b{color:#0B1638}
+#gate a.w{display:inline-flex;margin-top:10px;background:#25D366;color:#fff;border-radius:999px;padding:10px 16px;font-weight:600;text-decoration:none;font-size:14px}
+#gate .exp{background:#FFF4F4;border:1px solid #F3C5C9;border-radius:12px;padding:16px;color:#7A1320;font-size:15px;line-height:1.55}
+#gate #accErr{min-height:1.2em;color:#B5121F;font-size:13.5px}
+@media (max-width:420px){#gate form{padding:28px 20px 22px;border-radius:16px}}`;
+  const EYE = '<button type="button" class="eye" data-eye aria-label="Mostrar contraseña" aria-pressed="false"><svg class="on" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><svg class="off" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c6.4 0 10 7 10 7a17 17 0 0 1-3.2 4.1M6.5 6.6A17 17 0 0 0 2 12s3.6 7 10 7a9.7 9.7 0 0 0 4.4-1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></button>';
+  const CLOCK = '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+  const HOURS = 48;
+  async function buildClientFile(p, cliente, usuario, pass, agentCap) {
+    const body = await landingParts(p, { viewOnly: true, hook: "", agentCap });
+    const exp = Date.now() + HOURS * 3600 * 1000;
+    const data = await encrypt(body, usuario, pass, exp);
+    const ag = agentCap || S.me || { nombre: p.captador || "", tel: p.captadorTel || "" };
+    const first = (ag.nombre || "su asesor").split(" ")[0];
+    const d = String(ag.tel || "").replace(/\D/g, ""), wn = d.length === 10 && /^(809|829|849)/.test(d) ? "1" + d : d;
+    const waMsg = encodeURIComponent(`Hola ${first}, soy ${cliente}. El enlace de ${p.nombre} que me envió ya no está disponible. ¿Me lo puede enviar de nuevo?`);
+    const waBtn = wn ? `<a class="w" href="https://wa.me/${wn}?text=${waMsg}" target="_blank" rel="noopener">Escribir a ${esc(first)} por WhatsApp</a>` : "";
+    const contact = `<b>${esc(ag.nombre || "Su asesor")}</b>${ag.tel ? " · " + esc(ag.tel) : ""}`;
+    return `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex"><title>${esc(p.nombre)} · Acceso privado</title>${FONTS}<style>body{margin:0;background:#fff}html{scroll-behavior:smooth}[hidden]{display:none!important}${LANDING_CSS}${GATE_CSS}</style></head><body>
+<div id="gate"><form id="acc" autocomplete="on"><div class="b"><img class="lg" src="${LOGO_SRC}" alt="Team Germán Escarfullery · RE/MAX"></div><div class="kick">Acceso privado</div>
+<h1>${esc(p.nombre)}</h1><div class="rule"></div>
+<div id="fields" style="display:flex;flex-direction:column;gap:12px">
+<p class="who">Preparado para <b>${esc(cliente)}</b>. Ingrese el usuario y la contraseña que recibió para ver la propuesta.</p>
+<div class="until">${CLOCK}<span>Disponible hasta el <b id="until"></b></span></div>
+<label>Usuario<input name="u" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
+<label>Contraseña<span class="pw"><input name="p" type="password" autocomplete="current-password" required>${EYE}</span></label>
+<div id="accErr" role="alert"></div><button type="submit">Ver la propuesta</button></div>
+<div class="exp" id="expBox" hidden><b>Este enlace expiró.</b><br>Los enlaces privados están disponibles por ${HOURS} horas. Hable con ${esc(ag.nombre || "el asesor")}, quien le envió este enlace, para recibir uno nuevo.<br>${waBtn}</div>
+<div class="help">¿Tiene preguntas sobre este proyecto? Hable con quien le envió el enlace:<br>${contact}</div>
+</form></div>
+<div id="c"></div>
+<script>(function(){const no=e=>{e.preventDefault();};document.addEventListener("contextmenu",no);document.addEventListener("dragstart",no);document.addEventListener("copy",e=>{if(document.querySelector(".lp.vo"))no(e);});document.addEventListener("keydown",e=>{const k=(e.key||"").toLowerCase();if((e.ctrlKey||e.metaKey)&&["s","p","u","c"].includes(k))no(e);});})();const DATA=${JSON.stringify(data)};${initLanding.toString()};(${unlockScript.toString()})();<\/script></body></html>`;
+  }
+  /* ---------- client catalog: every landing, filters, view only ---------- */
+  const CAT_CSS = `.cat{font-family:Poppins,system-ui,sans-serif;color:#0E1733;background:#fff;min-height:100vh}
+.ct-in{max-width:1120px;margin:0 auto;padding-inline:20px}
+.ct-bar{background:#0A1A3F;color:#fff;border-bottom:3px solid #DC1C2E;position:sticky;top:0;z-index:5}
+.ct-bar .ct-in{display:flex;align-items:center;gap:14px;padding-block:12px}
+.ct-brand{display:flex;align-items:center;gap:12px;min-width:0}.ct-brand .lg{display:block;height:48px;width:auto}
+.ct-brand b{width:40px;height:40px;border-radius:50%;background:#DC1C2E;display:grid;place-items:center;font-family:Lora,serif;flex:none}
+.ct-brand span{display:flex;flex-direction:column;line-height:1.2;min-width:0}.ct-brand strong{font-size:13px;letter-spacing:.14em}.ct-brand small{font-size:12px;opacity:.75}
+.ct-wa{margin-left:auto;background:#25D366;color:#fff;text-decoration:none;border-radius:999px;padding:9px 16px;font-weight:600;font-size:14px;white-space:nowrap}
+.ct-eye{margin:32px 0 0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#DC1C2E;font-weight:600}
+.cat h1{font-family:Lora,serif;font-weight:600;font-size:clamp(30px,5vw,44px);margin:8px 0 0}.cat h1 i{font-weight:500}
+.ct-f{margin:24px 0 8px;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:flex-end;padding:16px 18px;background:#F6F7FA;border:1px solid #DDE2EE;border-radius:10px}
+.ct-f label,.ct-f .l{display:flex;flex-direction:column;gap:6px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#56607A;font-weight:600}
+.ct-f .ct-more[hidden]{display:none}.ct-f .ct-amw{flex-basis:100%;order:50}.ct-f .ct-amw .ct-ch{margin-top:2px}.ct-f .ct-amw button{text-transform:none;letter-spacing:0;font-size:13px}#ct-mf{color:#132A5E}
+.ct-f select,.ct-f input{font:inherit;font-size:14px;text-transform:none;letter-spacing:0;border:1px solid #DDE2EE;background:#fff;border-radius:8px;padding:8px 12px;color:#0E1733}
+.ct-f .grow{flex:1 1 200px}.ct-f .grow input{width:100%}
+.ct-ch{display:flex;gap:6px;flex-wrap:wrap}.ct-ch button{font:inherit;font-size:14px;border:1px solid #DDE2EE;background:#fff;border-radius:999px;padding:7px 14px;cursor:pointer;color:#0E1733}
+.ct-ch button[aria-pressed="true"]{background:#132A5E;border-color:#132A5E;color:#fff}
+.ct-sh{padding-top:30px}.ct-sh h2{font-family:Lora,serif;font-weight:600;font-size:26px;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid #DDE2EE}
+.ct-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.ct-c{border:1px solid #DDE2EE;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.ct-c .ph{aspect-ratio:16/10;background:#0A1A3F center/cover no-repeat}
+.ct-c .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.ct-c h3{font-family:Lora,serif;font-size:19px;margin:0}.ct-c .z{color:#56607A;font-size:13px}
+.ct-c .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#56607A;font-weight:600}.ct-c .v{font-size:24px;font-weight:600}
+.ct-c button{margin-top:0;font:inherit;border:0;border-radius:999px;background:#DC1C2E;color:#fff;padding:10px;font-weight:500;cursor:pointer}
+.ct-c .ph{position:relative}.ct-c .dp{position:absolute;top:10px;left:10px;background:#FFF4D6;color:#7A5200;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;border-radius:999px;padding:4px 10px}
+.ct-c .sp{font-size:13px;color:#3A4460}
+.ct-c .ag{display:flex;align-items:center;gap:8px;font-size:13px;color:#3A4460;border-top:1px solid #E4E8F0;padding-top:10px;margin-top:auto}
+.ct-me{display:flex;align-items:center;gap:10px;color:#fff;margin-left:auto;text-align:left}.ct-me img,.ct-me i{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.85);flex:none}.ct-me i{display:grid;place-items:center;background:#DC1C2E;font-style:normal;font-weight:600;font-size:14px}
+.ct-me span{display:flex;flex-direction:column;line-height:1.2}.ct-me small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.75}.ct-me b{font-size:15px;font-weight:600}
+.ct-c .ag img{width:26px;height:26px;border-radius:50%;object-fit:cover}
+.ct-clear{font:inherit;font-size:13px;background:none;border:0;color:#B5121F;text-decoration:underline;cursor:pointer;padding:8px 4px}
+.ct-empty{border:1px dashed #DDE2EE;border-radius:10px;padding:28px;text-align:center;color:#56607A;margin-top:24px}
+.ct-foot{border-top:1px solid #DDE2EE;margin-top:48px;padding-block:22px;color:#56607A;font-size:13px}
+.ct-wq{display:flex;width:100%;box-sizing:border-box;white-space:nowrap;align-items:center;justify-content:center;gap:7px;font-size:13px;font-weight:600;color:#14843F;background:#EEF9F2;border:1px solid #CBEBD6;border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .15s,color .15s,border-color .15s}
+.ct-wq:hover{background:#25D366;border-color:#25D366;color:#fff}
+.ct-float{font-family:Poppins,system-ui,sans-serif;position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:5;display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;border-radius:999px;padding:12px 20px;font-weight:600;font-size:15px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25);animation:ctPulse 2.4s ease-out infinite}
+@keyframes ctPulse{0%{box-shadow:0 8px 24px rgba(0,0,0,.25),0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 8px 24px rgba(0,0,0,.25),0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 8px 24px rgba(0,0,0,.25),0 0 0 0 rgba(37,211,102,0)}}
+.ct-cmp{display:flex;align-items:center;gap:8px;font-size:13px;color:#3A4460;cursor:pointer}.ct-cmp input{width:18px;height:18px;accent-color:#DC1C2E}
+.ct-tray{font-family:Poppins,system-ui,sans-serif;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:7;background:#0A1A3F;color:#fff;border-radius:999px;padding:8px 8px 8px 18px;display:flex;align-items:center;gap:12px;box-shadow:0 10px 30px rgba(0,0,0,.3);font-size:14px;max-width:calc(100% - 32px)}
+.ct-tray button{font:inherit;font-size:14px;border:0;border-radius:999px;padding:9px 16px;cursor:pointer}.ct-tray .go{background:#DC1C2E;color:#fff;font-weight:600}.ct-tray .x{background:transparent;color:#fff;text-decoration:underline;padding:9px 6px}
+.ct-hint{margin:10px 0 22px;font-size:14px;color:#56607A}.ct-hint b{color:#0A1A3F}
+.ct-c .ct-add{margin-top:0;font:inherit;font-size:13px;font-weight:600;border:1px solid #F3C4C9;background:#fff;color:#B5121F;border-radius:999px;padding:8px 14px;cursor:pointer;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.ct-c .ct-add:hover{background:#FDF0F1}.ct-c .ct-add[aria-pressed="true"]{background:#FDECEE;border-color:#F3C4C9;color:#B5121F}.ct-c .ct-add[aria-pressed="true"] svg{fill:currentColor}
+.ct-help{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:26px 0 0;padding:16px 20px;border-radius:18px;background:linear-gradient(120deg,#0A1A3F,#132A5E);color:#fff;box-shadow:0 12px 30px rgba(10,26,63,.18)}
+.ct-help img,.ct-help>i{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:none;border:3px solid rgba(255,255,255,.85)}.ct-help>i{display:grid;place-items:center;background:#DC1C2E;font-style:normal;font-weight:600}
+.ct-help div{flex:1 1 260px;min-width:0}.ct-help b{display:block;font-family:Lora,serif;font-size:18px;font-weight:600}.ct-help span{font-size:14px;opacity:.85}
+.ct-help a{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:999px;padding:11px 18px;box-shadow:0 8px 18px rgba(37,211,102,.3)}
+@media (max-width:560px){.ct-help a{width:100%;justify-content:center}}
+.ct-range{display:inline-block;margin:6px 0 0;font-size:13px;color:#132A5E;background:#EEF1F7;border-radius:999px;padding:6px 14px}.ct-range b{color:#0A1A3F}
+.ct-send{font-family:Poppins,system-ui,sans-serif;display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:600;border:0;border-radius:999px;background:#25D366;color:#fff;padding:12px 20px;cursor:pointer;box-shadow:0 8px 20px rgba(37,211,102,.3)}.ct-send svg{fill:currentColor}
+.ct-cw{overflow-x:auto;margin:24px 0 40px;border:1px solid #E4E8F0;border-radius:16px;box-shadow:0 10px 30px rgba(10,26,63,.06)}.ct-ct{border-collapse:collapse;width:100%;min-width:620px;background:#fff;table-layout:fixed}
+.ct-ct tbody tr:nth-child(even) td,.ct-ct tbody tr:nth-child(even) th{background:#F8F9FC}
+@media (max-width:560px){.ct-ct{min-width:520px}.ct-ct th{width:96px!important;padding:12px 10px!important;font-size:10px!important}}
+.ct-ct th:first-child{position:sticky;left:0;z-index:1;background:#fff;box-shadow:1px 0 0 #E4E8F0}
+.ct-ct td.best{background:#EEF9F2!important;font-weight:600;color:#0A1A3F}
+.ct-ct .bt{display:block;width:max-content;max-width:100%;box-sizing:border-box;margin-top:6px;font-size:11px;font-weight:600;letter-spacing:.04em;color:#14843F;background:#fff;border:1px solid #BFE6CC;border-radius:999px;padding:2px 9px}
+.ct-ct thead .tz{display:block;font-size:13px;color:#56607A;margin-top:2px}
+.ct-ct .ha{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}.ct-ct .ha .see{margin-top:0}
+.ct-ct .rm{font:inherit;font-size:13px;background:none;border:0;color:#56607A;text-decoration:underline;cursor:pointer;padding:4px}
+.ct-ct th,.ct-ct td{padding:12px 14px;border-bottom:1px solid #E4E8F0;text-align:left;vertical-align:top;font-size:14px}
+.ct-ct th{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#56607A;font-weight:600;width:150px}
+.ct-ct thead td{border-bottom:2px solid #0A1A3F}.ct-ct thead .ph{aspect-ratio:16/10;border-radius:8px;background:#0A1A3F center/cover no-repeat;margin-bottom:8px}
+.ct-ct thead b{font-family:Lora,serif;font-size:18px}.ct-ct .see{margin-top:8px;font:inherit;font-size:13px;border:0;border-radius:999px;background:#DC1C2E;color:#fff;padding:8px 14px;cursor:pointer}
+.ct-lbar{font-family:Poppins,system-ui,sans-serif;position:sticky;top:0;z-index:6;background:#0A1A3F;padding:10px 16px}.ct-lbar button{font:inherit;font-size:14px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:7px 14px;cursor:pointer}`;
+  function catalogRuntime(data) {
+    const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const money = v => "US$" + Math.round(v).toLocaleString("en-US");
+    const ag = data.agent || {}, list = data.projects || [];
+    const st = { habs: new Set(), budget: 0, q: "", reg: "", zona: "", banos: 0, parq: 0, estado: "", tipo: "", amen: new Set() };
+    const TP = { "Apartamento": "Apartamentos", "Penthouse": "Penthouses", "Casa": "Casas", "Villa": "Villas", "Townhouse": "Townhouses", "Solar": "Terrenos", "Local comercial": "Locales comerciales", "Oficina": "Oficinas" };
+    const tipoOf = p => TP[p.tipo] ? p.tipo : "Apartamento";
+    const afold = v => String(v || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+    const amenCount = new Map(); for (const p of list) for (const a of new Set((p.amenidades || []).map(x => String(x).trim()).filter(Boolean))) { const k = afold(a); const c = amenCount.get(k) || { n: 0, label: a.charAt(0).toUpperCase() + a.slice(1) }; c.n++; amenCount.set(k, c); }
+    const amenAll = [...amenCount.entries()].sort((a, b) => b[1].n - a[1].n || a[1].label.localeCompare(b[1].label, "es")).slice(0, 18);
+    const tiposAll = Object.keys(TP).filter(k => ["Apartamento", "Casa", "Villa"].includes(k) || list.some(p => tipoOf(p) === k));
+    const parts = p => { const a = String(p.zona || "").split(",").map(x => x.trim()).filter(Boolean); return { zona: a[0] || "", reg: a.length > 1 ? a[a.length - 1] : "" }; };
+    const uniq = arr => [...new Set(arr.filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+    const regions = uniq(list.map(p => parts(p).reg)), zones = uniq(list.map(p => parts(p).zona));
+    const d = String(ag.tel || "").replace(/\D/g, ""), wn = d.length === 10 && /^(809|829|849)/.test(d) ? "1" + d : d;
+    const wa = wn ? `https://wa.me/${wn}?text=${encodeURIComponent("Hola " + String(ag.nombre || "").split(" ")[0] + ", me interesan los proyectos del catálogo. Me gustaría recibir más información.")}` : "";
+    const root = document.getElementById("c");
+    root.innerHTML = `<div class="cat" id="ct-main"><header class="ct-bar"><div class="ct-in"><div class="ct-brand"><img class="lg" src="${LOGO_WHITE}" alt="Team Germán Escarfullery · RE/MAX"></div>${ag.nombre ? `<div class="ct-me">${ag.foto ? `<img src="${ag.foto}" alt="">` : `<i>${esc((ag.nombre || "").trim().split(/\s+/).slice(0, 2).map(w => w[0] || "").join("").toUpperCase())}</i>`}<span><small>Su asesor</small><b>${esc(ag.nombre)}</b></span></div>` : ""}</div></header>
+<main class="ct-in"><p class="ct-eye">Catálogo privado para ${esc(data.cliente)}</p><h1>Proyectos <i>disponibles</i></h1>${data.rango ? `<p class="ct-range">Seleccionados según su presupuesto: <b>${data.rango.min ? money(data.rango.min) : "US$0"}${data.rango.max ? " – " + money(data.rango.max) : " en adelante"}</b></p>` : ""}<p class="ct-hint">Toque <b>♡ Añadir a favoritos</b> en los proyectos que le gusten. Luego véalos juntos, lado a lado, y envíeselos a su asesor.</p>
+<div class="ct-f"><div class="l">Habitaciones (una o varias)<div class="ct-ch" id="ct-hab"><button type="button" data-h="all" aria-pressed="true">Todas</button><button type="button" data-h="1" aria-pressed="false">1</button><button type="button" data-h="2" aria-pressed="false">2</button><button type="button" data-h="3" aria-pressed="false">3</button><button type="button" data-h="4" aria-pressed="false">4+</button></div></div>
+<label>Tipo de propiedad<select id="ct-tp"><option value="">Todos los tipos</option>${Object.keys(TP).map(k => `<option value="${esc(k)}">${esc(TP[k])}</option>`).join("")}</select></label>
+<label>Región<select id="ct-r"><option value="">Todas</option>${regions.map(r => `<option>${esc(r)}</option>`).join("")}</select></label>
+<label>Subregión<select id="ct-z"><option value="">Todas</option>${zones.map(z => `<option>${esc(z)}</option>`).join("")}</select></label>
+<label class="ct-more" hidden>Baños<select id="ct-ba"><option value="">Cualquiera</option><option value="1">1 o más</option><option value="2">2 o más</option><option value="3">3 o más</option></select></label>
+<label class="ct-more" hidden>Parqueos<select id="ct-pa"><option value="">Cualquiera</option><option value="1">1 o más</option><option value="2">2 o más</option><option value="3">3 o más</option></select></label>
+<label>Estado<select id="ct-e"><option value="">Todos</option><option>En planos</option><option>En construcción</option><option>Terminado</option></select></label>
+<label>Presupuesto hasta<select id="ct-b"><option value="">Cualquiera</option><option value="150000">US$150,000</option><option value="200000">US$200,000</option><option value="300000">US$300,000</option><option value="500000">US$500,000</option><option value="1000000">US$1,000,000</option></select></label>
+<label class="grow">Buscar<input id="ct-q" type="search" placeholder="Ej. piscina, Bávaro, 3 habitaciones"></label>
+${amenAll.length ? `<div class="l ct-more ct-amw" hidden>Amenidades (elija las que desea)<div class="ct-ch" id="ct-am">${amenAll.map(([k, v]) => `<button type="button" data-am="${esc(k)}" aria-pressed="false">${esc(v.label)}</button>`).join("")}</div></div>` : ""}<button type="button" id="ct-mf" class="ct-clear" aria-expanded="false">+ Amenidades</button><button type="button" id="ct-clear" class="ct-clear">Limpiar filtros</button></div>
+<div id="ct-list"></div>
+${wa ? `<a class="ct-float" id="ct-float" href="${wa}" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg>WhatsApp</a>` : ""}<div class="ct-foot">${ag.nombre ? "Su asesor: <b>" + esc(ag.nombre) + "</b>" + (ag.tel ? " · WhatsApp " + esc(ag.tel) : "") + " · " : ""}Team Germanescarfullery · RE/MAX Metropolitana. Precios en dólares, sujetos a cambio.</div></main></div>
+<div class="ct-tray" id="ct-tray" hidden><span id="ct-tn"></span>${wn ? `<button type="button" class="x" id="ct-tx">Enviar a mi asesor</button>` : ""}<button type="button" class="go" id="ct-tgo">Ver mis favoritos</button></div>
+<div id="ct-cmpv" class="cat" hidden><div class="ct-lbar"><button type="button" id="ct-cback">← Volver al catálogo</button></div><div class="ct-in"><p class="ct-eye">Mis favoritos</p><h1>Sus proyectos <i>favoritos</i></h1><p class="ct-hint">Compárelos lado a lado. Lo que más destaca en cada punto está marcado en verde.</p>${wn ? `<button type="button" class="ct-send" id="ct-fsend"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>Enviar mis favoritos a ${esc(String(ag.nombre || "mi asesor").split(" ")[0])}</button>` : ""}<div class="ct-cw" id="ct-ctab"></div></div></div>
+<div id="ct-land" hidden><div class="ct-lbar"><button type="button" id="ct-back">← Volver al catálogo</button></div><div id="ct-lhost"></div></div>`;
+    const label = n => n >= 4 ? "4+ habitaciones" : n === 1 ? "1 habitación" : n + " habitaciones";
+    const hk = x => Math.min(4, Math.max(1, x || 1));
+    const habsTxt = p => { const hs = [...new Set((p.tipologias || []).map(t => t.hab >= 5 ? "5+" : String(t.hab)))].sort(); if (!hs.length) return ""; const l = hs.pop(); return (hs.length ? hs.join(", ") + " y " + l : l) + (hs.length || l !== "1" ? " habitaciones" : " habitación"); };
+    const pick = p => (p.tipologias || []).filter(t => (!st.habs.size || st.habs.has(hk(t.hab))) && (!st.budget || (t.desde > 0 && t.desde <= st.budget)) && (!st.banos || (t.banos || 0) >= st.banos)).sort((a, b) => (a.desde || Infinity) - (b.desde || Infinity))[0];
+    const projOk = p => { const z = parts(p); return (!st.reg || z.reg === st.reg) && (!st.zona || z.zona === st.zona) && (!st.parq || (Number(p.parqueos) || 0) >= st.parq) && (!st.estado || p.estado === st.estado) && (!st.tipo || tipoOf(p) === st.tipo) && [...st.amen].every(a => (p.amenidades || []).some(x => afold(x) === a)); };
+    const FK = "tge-fav-" + (data.usuario || data.cliente || "");
+    let saved = []; try { saved = JSON.parse(localStorage.getItem(FK) || "[]"); } catch (x) {}
+    const cmp = new Set(saved.filter(id => list.some(p => p.id === id)));
+    const favNames = () => [...cmp].map(id => list.find(p => p.id === id)).filter(Boolean);
+    function favChanged() {
+      try { localStorage.setItem(FK, JSON.stringify([...cmp])); } catch (x) {}
+      if (data.hook) { try { fetch(data.hook, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" }, body: JSON.stringify({ origen: "catalogo", evento: "favoritos", cliente: data.cliente, usuario: data.usuario || "", asesor: ag.nombre || "", favoritos: favNames().map(p => ({ id: p.id, nombre: p.nombre })), fecha: new Date().toISOString() }) }).catch(() => {}); } catch (x) {} }
+    }
+    const favMsg = () => { const ps = favNames(); return `Hola ${String(ag.nombre || "").split(" ")[0]}, soy ${data.cliente}. Estos son mis proyectos favoritos del catálogo:\n\n${ps.map((p, i) => { const pr = (p.tipologias || []).filter(t => t.desde > 0).map(t => t.desde); return `${i + 1}. ${p.nombre}${p.zona ? " (" + p.zona + ")" : ""}${pr.length ? " · desde " + money(Math.min(...pr)) : ""}`; }).join("\n")}\n\nMe gustaría recibir más información.`; };
+    const sendFav = () => { if (!wn || !cmp.size) return; window.open(`https://wa.me/${wn}?text=${encodeURIComponent(favMsg())}`, "_blank", "noopener"); };
+    function tray() {
+      const t = document.getElementById("ct-tray"); t.hidden = !cmp.size || !document.getElementById("ct-main") || document.getElementById("ct-main").hidden; const fl = document.getElementById("ct-float"); if (fl) fl.style.bottom = cmp.size ? "calc(76px + env(safe-area-inset-bottom,0px))" : "";
+      document.getElementById("ct-tn").textContent = `♥ ${cmp.size} ${cmp.size === 1 ? "favorito" : "favoritos"}`;
+    }
+    function compare() {
+      const ps = [...cmp].map(id => list.find(x => x.id === id)).filter(Boolean);
+      const rng = (arr, f) => { const v = arr.filter(x => x > 0); if (!v.length) return "—"; const a = Math.min(...v), b = Math.max(...v); return a === b ? f(a) : f(a) + " – " + f(b); };
+      const pl = p => { const x = p.plan || {}, a = []; if (x.separacion > 0) a.push("Separación " + money(x.separacion)); if (x.firmaPct > 0) a.push(x.firmaPct + "% a la firma"); if (x.cuotasPct > 0) a.push(x.cuotasPct + "% en construcción" + (x.meses > 0 ? " (" + x.meses + " cuotas)" : "")); if (x.entregaPct > 0) a.push(x.entregaPct + "% contra entrega"); return a.length ? a.join("<br>") : "Consultar"; };
+      const T = p => p.tipologias || [];
+      const minOf = arr => { const v = arr.filter(x => x > 0); return v.length ? Math.min(...v) : 0; };
+      const maxOf = arr => { const v = arr.filter(x => x > 0); return v.length ? Math.max(...v) : 0; };
+      const ppm = p => minOf(T(p).filter(t => t.desde > 0 && t.m2 > 0).map(t => t.desde / t.m2));
+      const habsN = p => maxOf(T(p).map(t => t.hab));
+      // [label, render, score (number), "min"|"max", best label]
+      const rows = [
+        ["Precio desde", p => rng(T(p).map(t => t.desde), money), p => minOf(T(p).map(t => t.desde)), "min", "Mejor precio"],
+        ["Metraje", p => { const r = rng(T(p).map(t => t.m2), v => v + " m²"); if (r === "—") return r; return r + `<small style="display:block;color:#56607A;font-weight:400">${rng(T(p).map(t => t.m2), v => Math.round(v * 10.7639).toLocaleString("en-US") + " ft²")}</small>`; }, p => maxOf(T(p).map(t => t.m2)), "max", "Más amplio"],
+        ["Precio por m²", p => { const v = ppm(p); return v ? money(v) + " / m²" : "—"; }, ppm, "min", "Mejor valor"],
+        ["Habitaciones", p => habsTxt(p) || "—", habsN, "max", "Más habitaciones"],
+        ["Baños", p => rng(T(p).map(t => t.banos), String), p => maxOf(T(p).map(t => t.banos)), "max", "Más baños"],
+        ["Parqueos", p => p.parqueos ? String(p.parqueos) : "—", p => Number(p.parqueos) || 0, "max", "Más parqueos"],
+        ["Tipo", p => esc(tipoOf(p))],
+        ["Zona", p => esc(p.zona || "—")],
+        ["Estado", p => esc(p.estado || "—")],
+        ["Entrega", p => esc(p.entrega || "—")],
+        ["Plan de pago", pl],
+        ["Amenidades", p => (p.amenidades || []).length ? (p.amenidades || []).slice(0, 8).map(esc).join(", ") : "—"],
+      ];
+      const bestIds = ([, , sc, dir]) => {
+        if (!sc) return new Set();
+        const v = ps.map(p => [p.id, sc(p)]).filter(x => x[1] > 0); if (v.length < 2) return new Set();
+        const tgt = dir === "min" ? Math.min(...v.map(x => x[1])) : Math.max(...v.map(x => x[1]));
+        const win = v.filter(x => x[1] === tgt); return win.length === v.length ? new Set() : new Set(win.map(x => x[0]));
+      };
+      document.getElementById("ct-ctab").innerHTML = `<table class="ct-ct" style="min-width:${Math.max(560, 150 + ps.length * 220)}px"><thead><tr><th></th>${ps.map(p => `<td><div class="ph" style="${p.imgs && p.imgs[0] ? `background-image:url('${p.imgs[0]}')` : ""}"></div><b>${esc(p.nombre)}</b><span class="tz">${esc(p.zona || "")}</span><div class="ha"><button type="button" class="see" data-open="${esc(p.id)}">Ver proyecto</button><button type="button" class="rm" data-rm="${esc(p.id)}">Quitar</button></div></td>`).join("")}</tr></thead><tbody>${rows.map(r => { const best = bestIds(r); return `<tr><th>${r[0]}</th>${ps.map(p => `<td${best.has(p.id) ? ' class="best"' : ""}>${r[1](p)}${best.has(p.id) ? `<span class="bt">${r[4]}</span>` : ""}</td>`).join("")}</tr>`; }).join("")}</tbody></table>`;
+      document.getElementById("ct-main").hidden = true; document.getElementById("ct-tray").hidden = true; document.getElementById("ct-cmpv").hidden = false; window.scrollTo(0, 0);
+    }
+    function render() {
+      const q = st.q.trim().toLowerCase();
+      const fold = v => String(v || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+      const hay = (p, extra) => fold([p.nombre, p.zona, p.direccion, p.estado, p.entrega, p.frase, p.descripcion, extra, tipoOf(p), TP[tipoOf(p)],
+        (p.amenidades || []).join(" "), (p.tipologias || []).map(t => `${t.hab} hab ${t.hab} habitacion ${t.hab} habitaciones ${t.banos ? t.banos + " banos " + t.banos + " bano" : ""} ${t.m2 ? t.m2 + " m2" : ""}`).join(" "),
+        p.parqueos ? p.parqueos + " parqueos " + p.parqueos + " parqueo" : ""].join(" "));
+      const matches = (p, q, extra) => { const words = fold(q).split(/\s+/).filter(Boolean); if (!words.length) return true; const t = hay(p, extra); return words.every(w => t.includes(w)); };
+      const maxHab = p => Math.max(0, ...(p.tipologias || []).map(t => t.hab || 0));
+      const byRooms = (a, b) => ((a.p.disp === "Vendido") - (b.p.disp === "Vendido")) || ((a.t.desde || Infinity) - (b.t.desde || Infinity)) || String(a.p.nombre).localeCompare(String(b.p.nombre), "es");
+      const vis = list.filter(p => projOk(p) && matches(p, st.q, ag.nombre));
+      const items = vis.map(p => ({ p, t: pick(p) })).filter(x => x.t).sort(byRooms);
+      const banosTxt = p => { const b = [...new Set((p.tipologias || []).map(t => t.banos).filter(Boolean))].sort(); return b.length ? " · " + b.join(" o ") + (b.length === 1 && b[0] === 1 ? " baño" : " baños") : ""; };
+      let html = items.length ? `<section class="ct-sh"><h2>${items.length} ${items.length === 1 ? "proyecto" : "proyectos"}</h2><div class="ct-g">${items.map(({ p, t }) => `<article class="ct-c"><div class="ph" style="${p.imgs && p.imgs[0] ? `background-image:url('${p.imgs[0]}')` : ""}">${p.disp && p.disp !== "Disponible" ? `<span class="dp">${esc(p.disp)}</span>` : ""}</div><div class="bd"><h3>${esc(p.nombre)}</h3><div class="z">${esc(p.zona || "")}</div><div class="sp">${esc(tipoOf(p))} · ${habsTxt(p)}${banosTxt(p)}${p.parqueos ? " · " + p.parqueos + " parqueo" + (p.parqueos > 1 ? "s" : "") : ""}${p.estado ? " · " + esc(p.estado) : ""}</div><div class="k">Desde</div><div class="v">${t.desde > 0 ? money(t.desde) : "A consultar"}</div>${ag.nombre ? `<div class="ag">${ag.foto ? `<img src="${ag.foto}" alt="">` : ""}Asesor: <b>${esc(ag.nombre)}</b></div>` : ""}<button type="button" class="ct-add" data-cmp="${esc(p.id)}" aria-pressed="${cmp.has(p.id)}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>${cmp.has(p.id) ? "En favoritos" : "Añadir a favoritos"}</span></button><button type="button" data-open="${esc(p.id)}">Ver proyecto</button></div></article>`).join("")}</div></section>` : "";
+      document.getElementById("ct-list").innerHTML = html || `<div class="ct-empty">No hay proyectos con esos filtros. Pruebe otro presupuesto o quite la búsqueda.</div>`;
+    }
+    document.getElementById("ct-hab").addEventListener("click", e => {
+      const b = e.target.closest("[data-h]"); if (!b) return;
+      if (b.dataset.h === "all") st.habs.clear(); else { const n = Number(b.dataset.h); st.habs.has(n) ? st.habs.delete(n) : st.habs.add(n); }
+      for (const x of b.parentNode.children) x.setAttribute("aria-pressed", String(x.dataset.h === "all" ? !st.habs.size : st.habs.has(Number(x.dataset.h))));
+      render();
+    });
+    document.getElementById("ct-b").addEventListener("change", e => { st.budget = Number(e.target.value) || 0; render(); });
+    const sel = (id, k, num) => document.getElementById(id).addEventListener("change", e => { st[k] = num ? (Number(e.target.value) || 0) : e.target.value; render(); });
+    sel("ct-r", "reg"); sel("ct-z", "zona"); sel("ct-ba", "banos", 1); sel("ct-pa", "parq", 1); sel("ct-e", "estado");
+    document.getElementById("ct-tp").addEventListener("change", e => { st.tipo = e.target.value; render(); });
+    document.getElementById("ct-mf").addEventListener("click", e => { const open = e.currentTarget.getAttribute("aria-expanded") !== "true"; e.currentTarget.setAttribute("aria-expanded", String(open)); e.currentTarget.textContent = open ? "− Ocultar amenidades" : "+ Amenidades"; document.querySelectorAll(".ct-more").forEach(x => x.hidden = !open); });
+    const amBox = document.getElementById("ct-am");
+    if (amBox) amBox.addEventListener("click", e => { const b = e.target.closest("[data-am]"); if (!b) return; const k = b.dataset.am; st.amen.has(k) ? st.amen.delete(k) : st.amen.add(k); b.setAttribute("aria-pressed", String(st.amen.has(k))); render(); });
+    document.getElementById("ct-clear").addEventListener("click", () => {
+      st.habs.clear(); Object.assign(st, { budget: 0, q: "", reg: "", zona: "", banos: 0, parq: 0, estado: "", tipo: "" }); st.amen.clear(); document.querySelectorAll("#ct-am [data-am]").forEach(x => x.setAttribute("aria-pressed", "false"));
+      for (const id of ["ct-r", "ct-z", "ct-ba", "ct-pa", "ct-e", "ct-b", "ct-q", "ct-t"]) { const el = document.getElementById(id); if (el) el.value = ""; }
+      for (const x of document.getElementById("ct-hab").children) x.setAttribute("aria-pressed", String(x.dataset.h === "all"));
+      document.getElementById("ct-tp").value = "";
+      render();
+    });
+    document.getElementById("ct-q").addEventListener("input", e => { st.q = e.target.value; render(); });
+    let from = "ct-main";
+    const openP = e => {
+      const b = e.target.closest("[data-open]"); if (!b) return;
+      const p = list.find(x => x.id === b.dataset.open); if (!p) return;
+      const host = document.getElementById("ct-lhost");
+      host.innerHTML = landingHTML(p, p.imgs || [], { viewOnly: true, agent: ag });
+      initLanding(host);
+      from = document.getElementById("ct-cmpv").hidden ? "ct-main" : "ct-cmpv";
+      document.getElementById("ct-main").hidden = true; document.getElementById("ct-cmpv").hidden = true; document.getElementById("ct-tray").hidden = true;
+      document.getElementById("ct-land").hidden = false; window.scrollTo(0, 0);
+    };
+    document.getElementById("ct-list").addEventListener("click", openP);
+    document.getElementById("ct-ctab").addEventListener("click", openP);
+    document.getElementById("ct-list").addEventListener("click", e => {
+      const c = e.target.closest("[data-cmp]"); if (!c) return;
+      const id = c.dataset.cmp;
+      if (cmp.has(id)) cmp.delete(id); else cmp.add(id);
+      c.setAttribute("aria-pressed", String(cmp.has(id))); c.querySelector("span").textContent = cmp.has(id) ? "En favoritos" : "Añadir a favoritos";
+      favChanged();
+      tray();
+    });
+    document.getElementById("ct-ctab").addEventListener("click", e => {
+      const r = e.target.closest("[data-rm]"); if (!r) return;
+      cmp.delete(r.dataset.rm); favChanged();
+      if (cmp.size >= 1) compare(); else { document.getElementById("ct-cmpv").hidden = true; document.getElementById("ct-main").hidden = false; render(); tray(); window.scrollTo(0, 0); }
+    });
+    document.getElementById("ct-tgo").addEventListener("click", () => { if (cmp.size) compare(); });
+    if (document.getElementById("ct-tx")) document.getElementById("ct-tx").addEventListener("click", sendFav);
+    if (document.getElementById("ct-fsend")) document.getElementById("ct-fsend").addEventListener("click", sendFav);
+    document.getElementById("ct-cback").addEventListener("click", () => { document.getElementById("ct-cmpv").hidden = true; document.getElementById("ct-main").hidden = false; tray(); window.scrollTo(0, 0); });
+    document.getElementById("ct-back").addEventListener("click", () => { document.getElementById("ct-land").hidden = true; document.getElementById(from).hidden = false; if (from === "ct-main") tray(); window.scrollTo(0, 0); });
+    render(); tray();
+  }
+  async function buildCatalogFile(cliente, usuario, pass, agent, picked, range) {
+    const projects = [], avail = picked || S.projects.filter(p => p.disp !== "Vendido");
+    for (let i = 0; i < avail.length; i++) {
+      const p = avail[i];
+      $("catStatusText").textContent = `Preparando proyectos (${i + 1} de ${avail.length})…`;
+      const imgs = [];
+      for (const id of (p.fotos || []).slice(0, 6)) { try { imgs.push(await toDataUrl(id)); } catch {} }
+      const { id, nombre, tipo, zona, direccion, estado, disp, entrega, frase, descripcion, parqueos, amenidades, porque, cercanias, faq, plan, preciosAl, actualizado, precioRef } = p;
+      const tipologias = (p.tipologias || []).filter(t => tipoInRange(t, range));
+      projects.push({ id, nombre, tipo, zona, direccion, estado, disp, entrega, frase, descripcion, tipologias, parqueos, amenidades, porque, cercanias, faq, plan, preciosAl, actualizado, precioRef, imgs });
+    }
+    const ag = { nombre: agent.nombre || "", tel: agent.tel || "", foto: "" };
+    if (agent.fotoId) { try { ag.foto = await toDataUrl(agent.fotoId); } catch {} }
+    const exp = Date.now() + HOURS * 3600 * 1000;
+    $("catStatusText").textContent = "Protegiendo el catálogo…";
+    const data = Object.assign(await encrypt(JSON.stringify({ cliente, usuario, agent: ag, projects, rango: range || null, hook: S.hook || "" }), usuario, pass, exp), { kind: "cat" });
+    const first = (ag.nombre || "su asesor").split(" ")[0];
+    const d = String(ag.tel || "").replace(/\D/g, ""), wn = d.length === 10 && /^(809|829|849)/.test(d) ? "1" + d : d;

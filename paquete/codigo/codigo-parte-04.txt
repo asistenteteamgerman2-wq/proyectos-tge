@@ -1,0 +1,681 @@
+  // Photos with text get edited: Claude marks where the text is, then we crop it out
+  // (or, for small marks, paint over them with the surrounding colors). A second pass drops anything still showing text.
+  const clampBox = b => {
+    const n = v => Math.max(0, Math.min(100, Number(v) || 0)) / 100;
+    const x = n(b?.x), y = n(b?.y), w = n(b?.w), hh = n(b?.h);
+    return w > 0 && hh > 0 ? { x0: x, y0: y, x1: Math.min(1, x + w), y1: Math.min(1, y + hh) } : null;
+  };
+  function bestCrop(boxes, W, H) {
+    const pad = 0.025, bx = boxes.slice(0, 4).map(b => ({ x0: b.x0 - pad, y0: b.y0 - pad, x1: b.x1 + pad, y1: b.y1 + pad }));
+    let best = null;
+    const walk = (i, r) => {
+      if (r.x1 - r.x0 <= 0 || r.y1 - r.y0 <= 0) return;
+      if (i === bx.length) { const a = (r.x1 - r.x0) * (r.y1 - r.y0); if (!best || a > best.a) best = { ...r, a }; return; }
+      const b = bx[i];
+      if (b.x1 <= r.x0 || b.x0 >= r.x1 || b.y1 <= r.y0 || b.y0 >= r.y1) return walk(i + 1, r);
+      walk(i + 1, { ...r, y1: Math.min(r.y1, b.y0) }); walk(i + 1, { ...r, y0: Math.max(r.y0, b.y1) });
+      walk(i + 1, { ...r, x1: Math.min(r.x1, b.x0) }); walk(i + 1, { ...r, x0: Math.max(r.x0, b.x1) });
+    };
+    walk(0, { x0: 0, y0: 0, x1: 1, y1: 1 });
+    if (!best) return null;
+    let w = (best.x1 - best.x0) * W, hh = (best.y1 - best.y0) * H, cx = (best.x0 + best.x1) / 2 * W, cy = (best.y0 + best.y1) / 2 * H;
+    if (w / hh > 2) w = hh * 2; if (hh / w > 1.4) hh = w * 1.4; // keep a usable photo shape
+    if (w * hh < W * H * 0.5 || Math.min(w, hh) < 320) return null;
+    return { x: Math.round(cx - w / 2), y: Math.round(cy - hh / 2), w: Math.round(w), h: Math.round(hh) };
+  }
+  // Fill each box from its edges (blend of left/right and top/bottom border colors), then soften it.
+  function paintOver(src, boxes) {
+    const W = src.width, H = src.height, c = document.createElement("canvas"); c.width = W; c.height = H;
+    const ctx = c.getContext("2d"); ctx.drawImage(src, 0, 0);
+    for (const b of boxes) {
+      const x0 = Math.max(1, Math.floor((b.x0 - 0.012) * W)), y0 = Math.max(1, Math.floor((b.y0 - 0.012) * H));
+      const x1 = Math.min(W - 2, Math.ceil((b.x1 + 0.012) * W)), y1 = Math.min(H - 2, Math.ceil((b.y1 + 0.012) * H));
+      const w = x1 - x0, hh = y1 - y0; if (w < 2 || hh < 2) continue;
+      const big = ctx.getImageData(x0 - 1, y0 - 1, w + 2, hh + 2), p = big.data, bw = w + 2;
+      const at = (x, y, k) => p[(y * bw + x) * 4 + k];
+      const out = ctx.createImageData(w, hh), o = out.data;
+      for (let y = 0; y < hh; y++) for (let x = 0; x < w; x++) {
+        const fx = (x + 1) / (w + 1), fy = (y + 1) / (hh + 1), i = (y * w + x) * 4;
+        for (let k = 0; k < 3; k++) {
+          const hz = at(0, y + 1, k) * (1 - fx) + at(bw - 1, y + 1, k) * fx;
+          const vt = at(x + 1, 0, k) * (1 - fy) + at(x + 1, hh + 1, k) * fy;
+          o[i + k] = (hz + vt) / 2;
+        }
+        o[i + 3] = 255;
+      }
+      ctx.putImageData(out, x0, y0);
+      const r = Math.max(4, Math.round(Math.min(w, hh) / 6));
+      ctx.save(); ctx.beginPath(); ctx.rect(x0, y0, w, hh); ctx.clip(); ctx.filter = `blur(${r}px)`;
+      ctx.drawImage(c, x0 - r * 2, y0 - r * 2, w + r * 4, hh + r * 4, x0 - r * 2, y0 - r * 2, w + r * 4, hh + r * 4); ctx.restore();
+    }
+    return c;
+  }
+  function cropCanvas(src, r) {
+    const c = document.createElement("canvas"); c.width = r.w; c.height = r.h;
+    c.getContext("2d").drawImage(src, r.x, r.y, r.w, r.h, 0, 0, r.w, r.h); return c;
+  }
+  // Orders photos from most to least attractive; the first one is the best cover shot.
+  async function rankPhotos(cs, say = setStatus) {
+    if (cs.length < 2 || !S.sample) return cs;
+    const lim = await S.sample.limits().catch(() => null);
+    if (!lim?.images) return cs;
+    const max = Math.max(1, lim.images.maxCount || 4), sc = cs.map(() => ({ a: 5, p: 5 }));
+    for (let i = 0; i < cs.length; i += max) {
+      const batch = cs.slice(i, i + max);
+      say(`Eligiendo las fotos más atractivas y la portada (${Math.min(i + max, cs.length)} de ${cs.length})…`);
+      try {
+        const small = await Promise.all(batch.map(c => toJpeg(shrink(c, 640), 0.72)));
+        const r = await S.sample.json(`Eres director de arte de una inmobiliaria de lujo. Te envío ${batch.length} fotos de un proyecto, numeradas del 0 al ${batch.length - 1}. Califica cada una del 1 al 10 en dos cosas: "atractivo" (qué tan impactante, luminosa, nítida y bien compuesta es para vender) y "portada" (qué tan buena es como foto principal: idealmente la fachada o vista general del proyecto, o la amenidad más espectacular; un baño, un pasillo o un detalle de cocina puntúan bajo). Responde SOLO JSON: {"fotos":[{"i":0,"atractivo":8,"portada":9}]}`, { modelTier: "quick", images: small });
+        for (const x of Array.isArray(r?.fotos) ? r.fotos : []) { const k = Number(x.i); if (Number.isInteger(k) && k >= 0 && k < batch.length) sc[i + k] = { a: Number(x.atractivo) || 5, p: Number(x.portada) || 5 }; }
+      } catch (x) { if (x?.code === "not_granted") return cs; }
+    }
+    const idx = cs.map((_, k) => k), cover = idx.slice().sort((a, b) => (sc[b].p + sc[b].a * .3) - (sc[a].p + sc[a].a * .3))[0];
+    const rest = idx.filter(k => k !== cover).sort((a, b) => sc[b].a - sc[a].a);
+    return [cover, ...rest].map(k => cs[k]);
+  }
+  async function keepTextFree(photos, say = setStatus) {
+    if (!photos.length) return [];
+    if (!S.sample) return localPhotos(photos);
+    const lim = await S.sample.limits().catch(() => null);
+    if (!lim?.images) return photos.slice(0, 6);
+    const max = Math.max(1, lim.images.maxCount || 4), keep = [], edited = [];
+    for (let i = 0; i < photos.length && keep.length + edited.length < 10; i += max) {
+      const batch = photos.slice(i, i + max);
+      say(`Revisando las fotos y quitando letras (${Math.min(i + max, photos.length)} de ${photos.length})…`);
+      const small = await Promise.all(batch.map(c => toJpeg(shrink(c, 900), 0.75)));
+      try {
+        const r = await S.sample.json(`Te envío ${batch.length} imágenes de un brochure inmobiliario, numeradas del 0 al ${batch.length - 1} en el orden en que llegan. Para cada una decide:
+- "foto": foto o render del proyecto (fachada, interiores, áreas comunes, vistas) aunque tenga letras encima.
+- "descartar": planos, mapas, tablas de precios, logotipos solos, gráficos o páginas que son casi todo texto.
+Para cada "foto", marca TODAS las zonas con texto visible (títulos, frases, precios, logotipos, marcas de agua, números) como rectángulos en porcentaje de la imagen: x e y desde la esquina superior izquierda, w ancho, h alto (0 a 100). Rectángulos amplios que cubran el texto completo. Si no tiene texto, "texto": [].
+Responde SOLO con JSON: {"imagenes":[{"n":0,"tipo":"foto","texto":[{"x":0,"y":0,"w":0,"h":0}]}]}`, { modelTier: "default", images: small });
+        for (const it of Array.isArray(r?.imagenes) ? r.imagenes : []) {
+          const n = Number(it?.n); if (!Number.isInteger(n) || n < 0 || n >= batch.length || it.tipo !== "foto") continue;
+          const src = batch[n], boxes = (Array.isArray(it.texto) ? it.texto : []).map(clampBox).filter(Boolean);
+          if (!boxes.length) { keep.push(src); continue; }
+          const area = boxes.reduce((s, b) => s + (b.x1 - b.x0) * (b.y1 - b.y0), 0);
+          const crop = bestCrop(boxes, src.width, src.height);
+          if (crop) edited.push(cropCanvas(src, crop));
+          else if (area < 0.12) edited.push(paintOver(src, boxes));
+        }
+      } catch (x) { if (x?.code === "not_granted") throw x; }
+    }
+    // Check the edited photos once more and keep only the ones that came out clean.
+    for (let i = 0; i < edited.length; i += max) {
+      const batch = edited.slice(i, i + max);
+      say("Comprobando que las fotos editadas ya no tengan letras…");
+      const small = await Promise.all(batch.map(c => toJpeg(shrink(c, 640), 0.7)));
+      try {
+        const r = await S.sample.json(`Te envío ${batch.length} fotos, numeradas del 0 al ${batch.length - 1}. Responde SOLO con JSON {"limpias":[números]} con las que NO muestran ningún texto legible (sin títulos, letras, precios ni logotipos superpuestos) y se ven bien como foto, sin manchas evidentes. Un letrero pequeño y lejano del edificio sí cuenta como limpia.`, { modelTier: "quick", images: small });
+        const ok = Array.isArray(r?.limpias) ? r.limpias.map(Number).filter(x => Number.isInteger(x) && x >= 0 && x < batch.length) : [];
+        for (const x of [...new Set(ok)]) keep.push(batch[x]);
+      } catch (x) { if (x?.code === "not_granted") throw x; }
+    }
+    return rankPhotos(keep.slice(0, 8), say);
+  }
+  /* ---------- lectura de brochures sin Claude (reglas simples) ---------- */
+  const LUGARES = ["Cap Cana", "Bávaro", "Bavaro", "Punta Cana", "Uvero Alto", "Macao", "Vista Cana", "Downtown", "Verón", "Piantini", "Naco", "Serrallés", "Evaristo Morales", "Bella Vista", "La Esperilla", "Arroyo Hondo", "Los Cacicazgos", "Mirador Sur", "Gazcue", "Santo Domingo Este", "Santo Domingo", "Santiago", "Puerto Plata", "Sosúa", "Cabarete", "Las Terrenas", "Samaná", "Juan Dolio", "Guavaberry", "La Romana", "Bayahibe", "Dominicus", "Jarabacoa", "Constanza", "Boca Chica", "Las Galeras"];
+  const CIUDAD = { "Cap Cana": "Punta Cana", "Bávaro": "Punta Cana", "Bavaro": "Punta Cana", "Uvero Alto": "Punta Cana", "Macao": "Punta Cana", "Vista Cana": "Punta Cana", "Downtown": "Punta Cana", "Verón": "Punta Cana", "Piantini": "Santo Domingo", "Naco": "Santo Domingo", "Serrallés": "Santo Domingo", "Evaristo Morales": "Santo Domingo", "Bella Vista": "Santo Domingo", "La Esperilla": "Santo Domingo", "Arroyo Hondo": "Santo Domingo", "Los Cacicazgos": "Santo Domingo", "Mirador Sur": "Santo Domingo", "Gazcue": "Santo Domingo", "Dominicus": "La Romana", "Bayahibe": "La Romana", "Guavaberry": "Juan Dolio", "Las Galeras": "Samaná", "Sosúa": "Puerto Plata", "Cabarete": "Puerto Plata" };
+  const AMEN = [["piscina", "Piscina"], ["infinity", "Piscina infinita"], ["gimnasio", "Gimnasio"], ["gym", "Gimnasio"], ["lobby", "Lobby"], ["rooftop", "Rooftop"], ["terraza", "Terraza"], ["jacuzzi", "Jacuzzi"], ["bbq", "Área de BBQ"], ["barbacoa", "Área de BBQ"], ["infantil", "Área infantil"], ["niños", "Área infantil"], ["seguridad", "Seguridad 24/7"], ["planta eléctrica", "Planta eléctrica"], ["planta electrica", "Planta eléctrica"], ["ascensor", "Ascensor"], ["elevador", "Ascensor"], ["coworking", "Coworking"], ["spa", "Spa"], ["club de playa", "Club de playa"], ["beach club", "Club de playa"], ["cancha", "Cancha deportiva"], ["pádel", "Cancha de pádel"], ["padel", "Cancha de pádel"], ["sauna", "Sauna"], ["cine", "Cine"], ["lounge", "Lounge"], ["salón de eventos", "Salón de eventos"], ["salon de eventos", "Salón de eventos"], ["jardín", "Jardines"], ["jardin", "Jardines"], ["sendero", "Senderos"], ["gazebo", "Gazebo"], ["golf", "Cerca de golf"], ["yoga", "Área de yoga"], ["lavandería", "Lavandería"], ["parqueo de visita", "Parqueo de visitas"], ["control de acceso", "Control de acceso"], ["área social", "Área social"], ["area social", "Área social"]];
+  const MESES = "enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|setiembre|octubre|noviembre|diciembre";
+  const numOf = s => { let t = String(s).replace(/\s/g, ""); if (/^\d{1,3}(\.\d{3})+(,\d+)?$/.test(t)) t = t.replace(/\./g, "").replace(",", "."); else t = t.replace(/,/g, ""); return Number(t) || 0; };
+  function parseBrochureLocal(text, fileName) {
+    const raw = String(text || "").replace(/--- Página \d+ ---/g, "\n"), T = raw.replace(/\s+/g, " ").trim(), L = T.toLowerCase();
+    const nombre = String(fileName || "").replace(/\.pdf$/i, "").replace(/[_-]+/g, " ").replace(/\b(brochure|brochur|presentaci[oó]n|final|web|digital|v\d+|\d{4,})\b/gi, "").replace(/\s+/g, " ").trim().replace(/\b\w/g, c => c.toUpperCase()).slice(0, 80);
+    let zona = "";
+    const hit = LUGARES.map(z => [z, L.indexOf(z.toLowerCase())]).filter(x => x[1] >= 0).sort((a, b) => a[1] - b[1])[0];
+    if (hit) { const z = hit[0] === "Bavaro" ? "Bávaro" : hit[0], c = CIUDAD[hit[0]]; zona = c && c !== z ? z + ", " + c : z; }
+    const estado = /en construcci[oó]n/.test(L) ? "En construcción" : /(entrega inmediata|listo para (vivir|entregar)|terminado)/.test(L) ? "Terminado" : "En planos";
+    let entrega = ""; const me = T.match(new RegExp(`entrega[^.]{0,40}?((${MESES})\\s+(?:de\\s+|del\\s+)?20\\d\\d|(?:Q|T)[1-4]\\s*20\\d\\d|20\\d\\d)`, "i"));
+    if (me) entrega = me[1].replace(/\s+/g, " ").replace(/^\w/, c => c.toUpperCase());
+    // tipologías: busca "N habitaciones" y, cerca, metros y precio
+    const tip = new Map();
+    const reH = /(\d)\s*(?:hab\b|habs\b|habitaci[oó]n(?:es)?|dormitorios?|rec[aá]maras?|bedrooms?|br\b)|\b(estudio|studio)\b/gi;
+    const hits = [...T.matchAll(reH)];
+    hits.forEach((m, i) => {
+      const hab = m[2] ? 1 : Number(m[1]); if (!hab || hab > 6) return;
+      const end = i + 1 < hits.length ? Math.min(hits[i + 1].index, m.index + 220) : m.index + 220;
+      const win = T.slice(m.index, end);
+      const mm = win.match(/(\d{2,4}(?:[.,]\d{1,2})?)\s*(?:m2|m²|mts2|mt2|mts|metros)/i);
+      const pm = win.match(/(?:US\$|USD|U\$S|\$)\s*([\d.,]{5,12})/i) || win.match(/([\d.,]{6,12})\s*(?:USD|dólares|dolares)/i);
+      const bm = win.match(/(\d(?:[.,]5)?)\s*(?:baños?|banos?|bathrooms?)/i);
+      const m2 = mm ? numOf(mm[1]) : 0, desde = pm ? numOf(pm[1]) : 0, banos = bm ? Number(bm[1].replace(",", ".")) : 0;
+      const t = tip.get(hab) || { hab, banos: 0, m2: 0, desde: 0 };
+      if (m2 >= 20 && m2 <= 2000 && (!t.m2 || m2 < t.m2)) t.m2 = m2;
+      if (desde >= 30000 && desde <= 20000000 && (!t.desde || desde < t.desde)) t.desde = desde;
+      if (banos && banos <= 8 && !t.banos) t.banos = banos;
+      tip.set(hab, t);
+    });
+    const tipologias = [...tip.values()].sort((a, b) => a.hab - b.hab).slice(0, 6);
+    let parqueos = 0; for (const x of T.matchAll(/(\d)\s*(?:parqueos?|estacionamientos?|parking)/gi)) parqueos = Math.max(parqueos, Number(x[1]) || 0);
+    const amenidades = [...new Set(AMEN.filter(([k]) => L.includes(k)).map(([, v]) => v))].slice(0, 14);
+    const sentences = raw.split(/\n+/).map(l => l.trim()).filter(l => !(l.length < 60 && (l === l.toUpperCase() || !/[.!?]$/.test(l)))).join(" ").replace(/\s+/g, " ").split(/(?<=[.!?])\s+/).map(x => x.replace(/^([A-ZÁÉÍÓÚÑ0-9]{2,}\s+)+(?=[A-ZÁÉÍÓÚÑ][a-záéíóúñ])/, "").trim()).filter(x => x.length >= 50 && x.length <= 320 && !/\b[A-ZÁÉÍÓÚÑ]{5,}\b/.test(x) && !/:\s/.test(x) && (x.match(/\d/g) || []).length < 12 && /[a-záéíóúñ]{4,}/i.test(x));
+    const paras = []; for (let i = 0; i < Math.min(sentences.length, 6); i += 2) paras.push(sentences.slice(i, i + 2).join(" "));
+    const descripcion = paras.slice(0, 3).join("\n").slice(0, 1800);
+    const plan = { separacion: 0, firmaPct: 0, cuotasPct: 0, meses: 0, entregaPct: 0 };
+    const sep = T.match(/(?:separaci[oó]n|reserva)[^.]{0,30}?(?:US\$|USD|\$)\s*([\d.,]{3,9})/i) || T.match(/(?:US\$|USD|\$)\s*([\d.,]{3,9})\s*(?:de\s+)?(?:separaci[oó]n|reserva)/i);
+    if (sep) plan.separacion = numOf(sep[1]);
+    for (const x of T.matchAll(/(\d{1,2})\s*%\s*([^%\d]{0,45})/g)) {
+      const pct = Number(x[1]), ctx = x[2].toLowerCase(); if (!pct || pct > 100) continue;
+      if (/(firma|contrato|inicial|inicio)/.test(ctx) && !plan.firmaPct) plan.firmaPct = pct;
+      else if (/(construcci|cuota|durante)/.test(ctx) && !plan.cuotasPct) plan.cuotasPct = pct;
+      else if (/(entrega|final)/.test(ctx) && !plan.entregaPct) plan.entregaPct = pct;
+    }
+    const mc = T.match(/(\d{1,2})\s*(?:cuotas|meses)/i); if (mc && plan.cuotasPct) plan.meses = Number(mc[1]);
+    const cnt = re => (L.match(re) || []).length;
+    const tipoC = [["Villa", cnt(/villas?\b/g)], ["Penthouse", cnt(/penthouses?/g)], ["Townhouse", cnt(/townhouses?/g)], ["Casa", cnt(/\bcasas?\b/g)], ["Solar", cnt(/\b(solares|lotes?)\b/g)], ["Apartamento", cnt(/apartamentos?|aptos?\b|apartments?|condos?/g) + 1]].sort((a, b) => b[1] - a[1]);
+    return clean({ nombre: cleanName(nombre), tipo: tipoC[0][0], zona, direccion: "", estado, entrega, frase: "", descripcion, tipologias, parqueos, amenidades, porque: [], cercanias: [], faq: [], plan });
+  }
+  // Sin Claude no se pueden quitar letras: se quedan las fotos más grandes y la más ancha va de portada.
+  function localPhotos(photos) {
+    const ps = photos.filter(c => photoStats(c).ok).sort((a, b) => (b._score || 0) - (a._score || 0)).slice(0, 8);
+    const ci = ps.findIndex(c => c.width / c.height >= 1.2);
+    if (ci > 0) ps.unshift(ps.splice(ci, 1)[0]);
+    return ps;
+  }
+  const PROMPT = `Eres asistente del Team Germanescarfullery (RE/MAX Metropolitana, República Dominicana). Lee el brochure inmobiliario de abajo y responde SOLO con un objeto JSON con esta forma exacta:
+{"nombre":"","tipo":"Apartamento|Penthouse|Casa|Villa|Townhouse|Solar|Local comercial|Oficina","zona":"barrio y ciudad","direccion":"","estado":"En planos|En construcción|Terminado","entrega":"mes y año o vacío","frase":"frase comercial de máximo 9 palabras","descripcion":"3 párrafos cortos separados por \\n","tipologias":[{"hab":2,"banos":2,"m2":95,"desde":185000}],"parqueos":0,"amenidades":["..."],"porque":[{"titulo":"","texto":""}],"cercanias":[{"lugar":"","tiempo":"5 min"}],"faq":[{"p":"","r":""}],"plan":{"separacion":0,"firmaPct":0,"cuotasPct":0,"meses":0,"entregaPct":0}}
+Reglas: "tipo" es el tipo principal de propiedad que vende el proyecto (si son apartamentos con algunos penthouses, pon "Apartamento"). Usa solo datos del brochure; no inventes cifras, precios, áreas, fechas ni distancias (deja 0, "" o [] si no aparecen). "desde" es el precio mínimo en dólares de ese tipo de unidad; si el precio está en pesos dominicanos pon 0. Una entrada en "tipologias" por cantidad de habitaciones (estudios = 1); nunca repitas la misma cantidad de habitaciones: si hay varios modelos con las mismas habitaciones, usa el precio y el metraje más bajos. "nombre" es el nombre comercial del proyecto tal como lo anuncia el brochure (nunca el nombre del archivo, de la constructora ni palabras como "Brochure" o "Presentación"); si el brochure no dice el nombre del proyecto, deja "". "porque": 4 argumentos de venta basados en lo que dice el brochure (ubicación, calidad, rentabilidad, amenidades). "faq": 4 preguntas útiles con respuestas tomadas del brochure. "plan": forma de pago del brochure: "separacion" monto de reserva en US$; "firmaPct" porcentaje total a pagar hasta la firma del contrato (incluye la separación); "cuotasPct" porcentaje en cuotas durante la construcción y "meses" cuántas cuotas; "entregaPct" porcentaje contra entrega. Deja 0 lo que no aparezca.
+Estilo de todos los textos: español sencillo, claro y fácil de leer, con un tono elegante y cálido, tratando al lector de usted. Frases cortas (máximo 20 palabras), sin palabras rebuscadas, sin exageraciones ni signos de exclamación, sin mayúsculas innecesarias. Redacta con tus propias palabras y hazlo más bonito que el brochure, pero sin cambiar ningún dato. "descripcion": 3 párrafos de 35 a 60 palabras cada uno (qué es el proyecto, cómo se vive allí, por qué conviene). "porque.texto": una o dos frases, máximo 30 palabras. "faq.r": máximo 40 palabras.`;
+  const cleanName = n => String(n || "").replace(/_+/g, " ").replace(/\((ingl[eé]s|english|espa[nñ]ol|spanish)\)/gi, "").replace(/\s[-–]\s*tipolog[ií]as?\b.*$/i, "")
+    .replace(/^\s*\d+[.)-]\s*/, "").replace(/\bbrochure\b/gi, "").replace(/\s+/g, " ").trim();
+  const oneHab = ts => { const m = new Map(); for (const t of ts) { const o = m.get(t.hab); if (!o) { m.set(t.hab, { ...t }); continue; }
+      if (t.desde > 0 && (!o.desde || t.desde < o.desde)) o.desde = t.desde; if (t.m2 > 0 && (!o.m2 || t.m2 < o.m2)) o.m2 = t.m2; o.banos = Math.max(o.banos || 0, t.banos || 0); }
+    return [...m.values()].sort((a, b) => a.hab - b.hab); };
+  const badName = n => !n || n.length < 3 || /^(presentaci[oó]n|promotora|combinar|copia|scan|escaneo|documento|untitled|sin t[ií]tulo|img|whatsapp)/i.test(n) || /\b\d{1,2} de [a-z]+ de \d{4}\b/i.test(n) || /^\d+$/.test(n);
+  const clean = d => ({
+    nombre: cleanName(d.nombre).slice(0, 80), tipo: TIPOS_P[d.tipo] ? d.tipo : "Apartamento", zona: String(d.zona || "").slice(0, 80), direccion: String(d.direccion || "").slice(0, 160),
+    estado: ["En planos", "En construcción", "Terminado"].includes(d.estado) ? d.estado : "En planos",
+    entrega: String(d.entrega || "").slice(0, 40), frase: String(d.frase || "").slice(0, 90), descripcion: String(d.descripcion || "").slice(0, 1800),
+    tipologias: oneHab((Array.isArray(d.tipologias) ? d.tipologias : []).map(t => ({ hab: Math.max(1, Math.min(5, Math.round(Number(t.hab) || 1))), banos: Number(t.banos) || 0, m2: Number(t.m2) || 0, desde: Math.max(0, Number(t.desde) || 0) }))).slice(0, 8),
+    parqueos: Number(d.parqueos) || 0,
+    amenidades: (Array.isArray(d.amenidades) ? d.amenidades : []).map(String).filter(Boolean).slice(0, 16),
+    porque: (Array.isArray(d.porque) ? d.porque : []).filter(x => x && x.titulo).map(x => ({ titulo: String(x.titulo).slice(0, 60), texto: String(x.texto || "").slice(0, 240) })).slice(0, 4),
+    cercanias: (Array.isArray(d.cercanias) ? d.cercanias : []).filter(x => x && x.lugar).map(x => ({ lugar: String(x.lugar).slice(0, 60), tiempo: String(x.tiempo || "").slice(0, 20) })).slice(0, 6),
+    faq: (Array.isArray(d.faq) ? d.faq : []).filter(x => x && x.p).map(x => ({ p: String(x.p).slice(0, 160), r: String(x.r || "").slice(0, 500) })).slice(0, 6),
+    plan: Object.fromEntries(["separacion", "firmaPct", "cuotasPct", "meses", "entregaPct"].map(k => { const v = Math.max(0, Number(d.plan?.[k]) || 0); return [k, k.endsWith("Pct") ? Math.min(100, v) : v]; })),
+  });
+  const SAMPLE_ERR = { not_granted: "Para leer el brochure, permite que la página use Claude.", rate_limited: "Claude está ocupado. Espera un minuto e intenta de nuevo.", prompt_too_large: "El brochure es demasiado largo. Prueba con una versión más corta.", invalid_json: "Claude no pudo leer bien este brochure. Intenta de nuevo o llena los datos a mano." };
+
+  // Lee el brochure con Claude; si el PDF es solo imágenes y esta vista no puede mandar imágenes, no falla: usa el poco texto que haya o el nombre del archivo.
+  async function askBrochure(text, renderPages, fileName) {
+    const plain = text.replace(/--- Página \d+ ---/g, "").replace(/\s+/g, "");
+    const hint = "\nNombre del archivo: " + fileName;
+    const hard = x => x?.code === "not_granted" || x?.code === "rate_limited";
+    if (plain.length > 300) return { c: clean(await S.sample.json(PROMPT + hint + "\n\nBROCHURE:\n" + text, { modelTier: "default" }) || {}) };
+    const lim = await S.sample.limits().catch(() => null);
+    if (lim?.images) {
+      try { const pgs = await renderPages(); return { c: clean(await S.sample.json(PROMPT + hint + "\n\nEl brochure viene en las imágenes adjuntas.", { modelTier: "default", images: pgs.slice(0, lim.images.maxCount || 4) }) || {}) }; }
+      catch (x) { if (hard(x)) throw x; }
+    }
+    if (plain.length > 40) {
+      try { return { c: clean(await S.sample.json(PROMPT + hint + "\n\nEste brochure casi no trae texto (es mayormente imágenes). Usa lo poco que hay y el nombre del archivo; deja vacío lo que no aparezca.\n\nBROCHURE:\n" + text, { modelTier: "default" }) || {}), partial: true }; }
+      catch (x) { if (hard(x)) throw x; }
+    }
+    return { c: parseBrochureLocal(text, fileName), partial: true };
+  }
+  async function readBrochure(file, say) {
+    say("Abriendo el brochure…");
+    const { text, photos, renderPages } = await readPdf(file);
+    say(S.sample ? "Quitando las letras de las fotos…" : "Eligiendo las fotos…");
+    const clean_ = await keepTextFree(photos, say);
+    const blobs = await Promise.all(clean_.map(c => toJpeg(c, 0.85)));
+    if (!S.sample) return { c: parseBrochureLocal(text, file.name), blobs, local: true };
+    say("Claude está leyendo el brochure…");
+    const r = await askBrochure(text, renderPages, file.name);
+    return { c: r.c, blobs, partial: r.partial };
+  }
+
+  /* ---------- bulk upload ---------- */
+  const bulk = { files: [], running: false, stop: false };
+  // Busca a qué proyecto incompleto pertenece un brochure (por nombre del archivo o del proyecto leído).
+  const pnorm = s => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\bsold\s*out\b/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+  const pendList = () => S.projects.filter(incompleto).sort((a, b) => ordL(a) - ordL(b) || a.nombre.localeCompare(b.nombre));
+  function matchPend(...names) {
+    const exact = [], fwd = [], rev = new Set();
+    for (const p of pendList()) {
+      const k = pnorm(p.nombre); if (k.length < 3) continue;
+      for (const n of names) { const nn = pnorm(n); if (!nn) continue;
+        if (nn === k) exact.push(p);
+        else if ((" " + nn + " ").includes(" " + k + " ")) fwd.push([k.length, p]);
+        else if (nn.length >= 5 && (" " + k + " ").includes(" " + nn + " ")) rev.add(p); }
+    }
+    if (exact.length) return exact[0];
+    if (fwd.length) return fwd.sort((a, b) => b[0] - a[0])[0][1];
+    return rev.size === 1 ? [...rev][0] : null;
+  }
+  function openBulk() {
+    closeForm();
+    const sel = $("b-capt");
+    sel.replaceChildren(...S.caps.slice().sort((a, b) => a.nombre.localeCompare(b.nombre, "es")).map(c => h("option", { value: c.id }, c.nombre)));
+    if (S.me) { sel.value = S.me.id; sel.disabled = true; } else sel.disabled = false;
+    bulk.files = []; renderBulk(); $("bSum").textContent = "";
+    $("bulkSheet").hidden = false; document.body.classList.add("locked");
+  }
+  const bulkBody = (c, f, cap, fotos) => ({ ...pickExtra(c), nombre: c.nombre || f.file.name.replace(/\.pdf$/i, ""), tipo: c.tipo, zona: c.zona, estado: c.estado, disp: $("b-disp").value, url: "",
+    captador: cap.nombre, captadorTel: cap.tel || "", captadorId: cap.id, tipologias: c.tipologias.length ? c.tipologias : [{ hab: 1, desde: 0, banos: 0, m2: 0 }],
+    descripcion: c.descripcion, amenidades: c.amenidades, fotos, actualizado: new Date().toISOString(), preciosAl: new Date().toISOString() });
+  async function holdSave(f) {
+    try { const b = bulkBody(f.hold, f, bulk.cap, []); const dp = findDup(b.nombre, null);
+      if (dp) { f.hold = null; f.st = "Ya está en la página: " + dp.nombre + " · no se subió otra vez"; f.cls = ""; renderBulk(); return; }
+      f.st = "Guardando…"; f.cls = "run"; renderBulk();
+      await S.db.collection("proyectos").doc("p" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7)).set(b);
+      f.hold = null; f.st = "Lista ✓ " + b.nombre + " (sin fotos)"; f.cls = "ok"; toast("Landing creada sin fotos"); }
+    catch { f.st = "Sin fotos · no se pudo guardar, intenta de nuevo"; f.cls = "warn"; }
+    renderBulk();
+  }
+  function holdToForm(f) {
+    const c = f.hold, cap = bulk.cap; f.hold = null; f.st = "Pasado al formulario para agregar fotos"; f.cls = ""; renderBulk();
+    $("bulkSheet").hidden = true; openForm();
+    fillForm({ ...c, captador: cap.nombre, captadorTel: cap.tel || "" }); $("f-capt").value = cap.nombre; $("f-tel").value = cap.tel || "";
+    S.draft = { extra: pickExtra(c), blobs: [], fotos: [] }; renderGal();
+    $("galField").scrollIntoView({ block: "center" });
+  }
+  function reviewToForm(f) {
+    const { c, blobs } = f.review, cap = bulk.cap; f.review = null; f.st = "Pasado al formulario para revisar"; f.cls = ""; renderBulk();
+    $("bulkSheet").hidden = true; openForm();
+    fillForm({ ...c, nombre: badName(c.nombre) ? "" : c.nombre, captador: cap.nombre, captadorTel: cap.tel || "" }); $("f-capt").value = cap.nombre; $("f-tel").value = cap.tel || "";
+    S.gal = blobs.map(b => ({ blob: b, url: URL.createObjectURL(b) })); S.draft = { extra: pickExtra(c), blobs, fotos: [] }; renderGal();
+    $("formErr").textContent = "Este brochure no se leyó completo: escribe el nombre del proyecto y revisa precios y metros antes de guardar."; $("f-nombre").focus();
+  }
+  function renderBulk() {
+    $("bList").replaceChildren(...bulk.files.map(f => h("li", f.hold ? { style: "flex-wrap:wrap" } : {}, h("span", {}, f.file.name), h("span", { class: "st " + (f.cls || "") }, f.st),
+      (f.st === "En espera" || f.skipped) && !bulk.running ? (() => { const sel = h("select", { class: "btarget", title: "A qué proyecto va este brochure", onchange: e => { f.target = e.target.value; if (f.skipped && f.target) { f.skipped = false; f.st = "En espera"; f.cls = ""; renderBulk(); } } },
+        h("option", { value: "" }, f.skipped ? "¿Es otro proyecto? Elige cuál completar…" : "Proyecto nuevo / buscar solo"), ...pendList().map(p => h("option", { value: p.id }, (ORDEN_PC.has(p.id) ? ORDEN_PC.get(p.id) + ". " : "") + "Completar: " + p.nombre))); sel.value = f.target || ""; return sel; })() : null,
+      f.hold && !bulk.running ? h("div", { class: "bacts", style: "flex-basis:100%" }, h("button", { type: "button", class: "pri", onclick: () => holdToForm(f) }, "Agregar fotos"), h("button", { type: "button", onclick: () => holdSave(f) }, "Subir sin fotos")) : null,
+      f.review && !bulk.running ? h("div", { class: "bacts", style: "flex-basis:100%" }, h("button", { type: "button", class: "pri", onclick: () => reviewToForm(f) }, "Revisar y subir"), h("button", { type: "button", onclick: () => { f.review = null; f.st = "No se subió"; f.cls = ""; renderBulk(); } }, "No subir")) : null)));
+    $("bGo").disabled = bulk.running || !bulk.files.some(f => f.st === "En espera");
+  }
+  let zipReady;
+  const zipLib = () => (zipReady ||= loadScript("https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js").then(() => window.JSZip));
+  async function addBulkFiles(list) {
+    const flat = [];
+    for (const file of list) {
+      if (/\.zip$/i.test(file.name) || /zip/i.test(file.type)) {
+        $("bSum").textContent = "Abriendo el ZIP…";
+        try {
+          const Z = await zipLib(), zip = await Z.loadAsync(await file.arrayBuffer());
+          for (const e of Object.values(zip.files)) {
+            if (e.dir || !/\.pdf$/i.test(e.name) || /(^|\/)(__MACOSX|\.)/.test(e.name)) continue;
+            flat.push(new File([await e.async("blob")], e.name.split("/").pop(), { type: "application/pdf" }));
+          }
+          $("bSum").textContent = "";
+        } catch { $("bSum").textContent = "No se pudo abrir el ZIP " + file.name + "."; }
+      } else flat.push(file);
+    }
+    for (const file of flat) {
+      if (!/pdf$/i.test(file.type) && !/\.pdf$/i.test(file.name)) continue;
+      if (bulk.files.some(f => f.file.name === file.name && f.file.size === file.size)) continue;
+      const m = matchPend(file.name.replace(/\.pdf$/i, "").replace(/^\s*\d+[.)-]\s*/, ""));
+      bulk.files.push({ file, st: "En espera", target: m ? m.id : "" });
+    }
+    renderBulk();
+  }
+  $("b-files").addEventListener("change", e => { addBulkFiles(e.target.files); e.target.value = ""; });
+  const bDrop = $("bDrop");
+  bDrop.addEventListener("dragover", e => { e.preventDefault(); bDrop.classList.add("over"); });
+  bDrop.addEventListener("dragleave", () => bDrop.classList.remove("over"));
+  bDrop.addEventListener("drop", e => { e.preventDefault(); bDrop.classList.remove("over"); addBulkFiles(e.dataTransfer.files); });
+  $("bClose").addEventListener("click", () => { if (bulk.running) { toast("Espera a que termine o pulsa Detener"); return; } $("bulkSheet").hidden = true; document.body.classList.remove("locked"); });
+  $("bStop").addEventListener("click", () => { bulk.stop = true; $("bStop").textContent = "Deteniendo…"; });
+  $("toBulk").addEventListener("click", openBulk);
+  $("bGo").addEventListener("click", async () => {
+
+    if (!S.assets) { toast("Necesitas permiso de edición en la página para subir fotos"); return; }
+    const cap = S.me ? S.caps.find(x => x.id === S.me.id) : S.caps.find(x => x.id === $("b-capt").value);
+    if (!cap) { toast("Elige el asesor"); return; }
+    bulk.running = true; bulk.stop = false; $("bStop").hidden = false; $("bStop").textContent = "Detener"; renderBulk();
+    let ok = 0, fail = 0, skip = 0, held = 0; bulk.cap = cap; bulk.done = [];
+    for (const f of bulk.files) {
+      if (f.st !== "En espera") continue;
+      if (bulk.stop) break;
+      const say = t => { f.st = t; f.cls = "run"; renderBulk(); };
+      try {
+        const { c, blobs, partial } = await readBrochure(f.file, say);
+        const nm = c.nombre || cleanName(f.file.name.replace(/\.pdf$/i, ""));
+        const tgt = (f.target && S.projects.find(p => p.id === f.target)) || null;
+        const dp = tgt || matchPend(f.file.name.replace(/\.pdf$/i, ""), nm) || findDup(nm, null, bulk.done, c);
+        // Si el proyecto ya existe pero está incompleto (sin fotos o sin precio), el brochure lo completa en vez de saltarlo.
+        if (dp && dp.id && incompleto(dp)) {
+          const old = { ...dp }; delete old.id;
+          let fotos = old.fotos || [];
+          if (noFotos(dp) && blobs.length) { fotos = [];
+            for (let i = 0; i < blobs.length; i++) { say(`Subiendo fotos (${i + 1} de ${blobs.length})…`); fotos.push((await S.assets.upload(blobs[i], { contentType: "image/jpeg" })).id); } }
+          say("Completando " + dp.nombre + "…");
+          const nb = bulkBody(c, f, cap, fotos);
+          const oldP = new Map((old.tipologias || []).filter(t => t.desde > 0).map(t => [t.hab, t.desde]));
+          const tip = (nb.tipologias || []).map(t => ({ ...t, desde: t.desde > 0 ? t.desde : (oldP.get(t.hab) || 0) }));
+          const hasP = tip.some(t => t.desde > 0);
+          const merged = { ...old, ...nb, nombre: old.nombre, captador: old.captador, captadorTel: old.captadorTel, captadorId: old.captadorId, disp: old.disp || nb.disp, fotos,
+            zona: old.zona || nb.zona, descripcion: nb.descripcion || old.descripcion || "",
+            tipologias: hasP ? tip : (old.tipologias || tip), entrega: nb.entrega || old.entrega || "", amenidades: nb.amenidades.length ? nb.amenidades : (old.amenidades || []),
+            precioRef: hasP ? false : !!old.precioRef };
+          await S.db.collection("proyectos").doc(dp.id).set(merged);
+          bulk.done.push(nm);
+          const still = [!fotos.length ? "sin fotos" : "", !(hasP || (old.tipologias || []).some(t => t.desde > 0)) ? "sin precio" : ""].filter(Boolean);
+          f.st = "Completado ✓ " + dp.nombre + (fotos.length && noFotos(dp) ? ` (${fotos.length} fotos)` : "") + (still.length ? " · todavía " + still.join(" y ") : "");
+          f.cls = still.length ? "warn" : "ok"; ok++; renderBulk(); continue;
+        }
+        if (dp) { f.st = "Ya está en la página: " + dp.nombre + " · no se subió otra vez"; f.cls = ""; f.skipped = true; skip++; renderBulk(); continue; }
+        if (badName(nm) || (partial && !c.descripcion && !priceSig(c))) { f.st = "Revisar antes de subir: no se encontró bien el nombre o los datos del proyecto"; f.cls = "warn"; f.review = { c, blobs }; held++; renderBulk(); continue; }
+        if (!blobs.length) { f.st = "Sin fotos · no se subió todavía"; f.cls = "warn"; f.hold = c; held++; renderBulk(); continue; }
+        const fotos = [];
+        for (let i = 0; i < blobs.length; i++) { say(`Subiendo fotos (${i + 1} de ${blobs.length})…`); fotos.push((await S.assets.upload(blobs[i], { contentType: "image/jpeg" })).id); }
+        say("Guardando…");
+        const body = bulkBody(c, f, cap, fotos);
+        await S.db.collection("proyectos").doc("p" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7)).set(body);
+        bulk.done.push(nm);
+        f.st = "Lista ✓ " + body.nombre + (fotos.length ? ` (${fotos.length} fotos)` : " (sin fotos)") + (partial ? " · PDF de imágenes: revisa nombre y precio" : ""); f.cls = partial ? "warn" : "ok"; ok++;
+      } catch (x) {
+        f.st = x?.code === "no_text" ? "No se pudo leer (PDF escaneado)" : SAMPLE_ERR[x?.code] ? SAMPLE_ERR[x.code] : "Error, intenta de nuevo"; f.cls = "err"; fail++;
+        if (x?.code === "not_granted") break;
+      }
+      renderBulk();
+    }
+    bulk.running = false; $("bStop").hidden = true;
+    for (const f of bulk.files) if (f.cls === "err") f.st = "En espera · " + f.st;
+    renderBulk();
+    $("bSum").textContent = `Terminado: ${ok} ${ok === 1 ? "landing creada" : "landings creadas"}${skip ? `, ${skip} ya existían` : ""}${fail ? `, ${fail} con error (puedes reintentar con Crear landings)` : ""}${held ? `. ${held} ${held === 1 ? "no tiene" : "no tienen"} fotos: decide abajo si subirlos así o agregarles fotos` : ""}.`;
+    if (ok) toast(`${ok} ${ok === 1 ? "landing creada" : "landings creadas"}`);
+  });
+
+  async function handlePdf(file) {
+    if (!file) return;
+    if (!/pdf$/i.test(file.type) && !/\.pdf$/i.test(file.name)) { $("formErr").textContent = "El brochure debe ser un archivo PDF."; return; }
+    S.busy = true; $("save").disabled = true; $("formErr").textContent = "";
+    try {
+      setStatus("Abriendo el brochure…");
+      const { text, photos, renderPages } = await readPdf(file);
+      const clean_ = await keepTextFree(photos);
+      const blobs = await Promise.all(clean_.map(c => toJpeg(c, 0.85)));
+      S.gal = blobs.map(b => ({ blob: b, url: URL.createObjectURL(b) })); renderGal();
+      setStatus(S.sample ? "Claude está leyendo el brochure y armando la landing… (puede tardar hasta un minuto)" : "Leyendo el texto del brochure…");
+      const r = S.sample ? await askBrochure(text, renderPages, file.name) : { c: parseBrochureLocal(text, file.name), partial: true };
+      const c = r.c;
+      const keepCapt = { captador: $("f-capt").value, captadorTel: $("f-tel").value };
+      const ed = S.editing && S.projects.find(x => x.id === S.editing);
+      if (ed) { // Completando un proyecto que ya existe: se queda con su nombre y con sus precios si el brochure no trae.
+        c.nombre = ed.nombre; c.zona = c.zona || ed.zona;
+        const oldP = new Map((ed.tipologias || []).filter(t => t.desde > 0).map(t => [t.hab, t.desde]));
+        const tip = (c.tipologias || []).map(t => ({ ...t, desde: t.desde > 0 ? t.desde : (oldP.get(t.hab) || 0) }));
+        c.tipologias = tip.some(t => t.desde > 0) ? tip : (ed.tipologias || tip);
+      }
+      fillForm({ ...c, ...keepCapt });
+      { const dp = !S.editing && findDup($("f-nombre").value, null); if (dp) $("formErr").textContent = "Ojo: “" + dp.nombre + "” ya está en la página. Si lo guardas no se va a duplicar; mejor edita el existente."; }
+      S.draft = { extra: pickExtra(c), blobs, fotos: [] };
+      setStatus(""); S.busy = false; renderGal();
+      $("formErr").textContent = "";
+      if (!S.sample) toast("Datos sacados del brochure sin Claude: revisa nombre, precios, metros y textos antes de guardar.");
+      else if (r.partial) toast("Este PDF es casi todo imágenes: se tomaron las fotos y lo que se pudo leer. Completa nombre, precios y metros antes de guardar.");
+      else toast(blobs.length ? `Datos listos con ${blobs.length} ${blobs.length === 1 ? "foto" : "fotos"} sin texto. Revisa y guarda.` : "Ojo: el brochure no trae fotos que se puedan usar. Agrega fotos antes de guardar.");
+      $("f-capt").focus();
+    } catch (x) {
+      setStatus("");
+      $("formErr").textContent = x?.code === "no_text" ? "Este PDF es solo imágenes y no se pudo leer. Llena los datos a mano."
+        : SAMPLE_ERR[x?.code] || "No se pudo leer el brochure. Intenta de nuevo o llena los datos a mano.";
+    } finally { S.busy = false; $("save").disabled = false; }
+  }
+  // Trae el brochure guardado del proyecto (Dropbox o Drive). Si el navegador no deja bajarlo desde aquí, abre la descarga en otra pestaña.
+  async function traerBrochure(p) {
+    openForm(p);
+    const url = safeUrl(p.brochureUrl), err = $("formErr");
+    const manual = () => { err.replaceChildren("No se pudo traer solo. ", h("a", { href: url, target: "_blank", rel: "noopener" }, "Toca aquí para bajar el brochure"),
+      " y después súbelo en “Subir brochure”. Se guarda en este mismo proyecto."); };
+    setStatus("Trayendo el brochure de " + p.nombre + "…");
+    try {
+      const ctl = new AbortController(), tm = setTimeout(() => ctl.abort(), 120000);
+      const r = await fetch(url, { signal: ctl.signal, redirect: "follow" }); clearTimeout(tm);
+      if (!r.ok) throw 0;
+      const blob = await r.blob(), head = new Uint8Array(await blob.slice(0, 4).arrayBuffer()), sig = String.fromCharCode(...head);
+      let pdf = null;
+      if (sig.startsWith("%PDF")) pdf = blob;
+      else if (sig.startsWith("PK")) {
+        setStatus("Abriendo la carpeta del brochure…");
+        const Z = await zipLib(), zip = await Z.loadAsync(blob);
+        const es = Object.values(zip.files).filter(e => !e.dir && /\.pdf$/i.test(e.name) && !/(^|\/)(__MACOSX|\.)/.test(e.name));
+        let best = null, bs = -1; for (const e of es) { const b = await e.async("blob"); if (b.size > bs) { best = b; bs = b.size; } }
+        pdf = best;
+      }
+      if (!pdf) throw 0;
+      setStatus("");
+      await handlePdf(new File([pdf], p.nombre + ".pdf", { type: "application/pdf" }));
+    } catch { setStatus(""); manual(); }
+  }
+  // Si eligen varios PDF (o un ZIP) en el formulario normal, pasan solos a la subida de varios a la vez.
+  const pickPdfs = files => { const fs = [...(files || [])]; if (!fs.length) return;
+    if (fs.length > 1 || /\.zip$/i.test(fs[0].name) || (!S.editing && matchPend(fs[0].name.replace(/\.pdf$/i, "")))) { openBulk(); addBulkFiles(fs); } else handlePdf(fs[0]); };
+  $("f-pdf").addEventListener("change", e => { pickPdfs(e.target.files); e.target.value = ""; });
+  $("noPhotoGo").addEventListener("click", () => { S.noPhotoOk = true; $("noPhotoAsk").hidden = true; $("form").requestSubmit(); });
+  const drop = $("drop");
+  drop.addEventListener("dragover", e => { e.preventDefault(); drop.classList.add("over"); });
+  drop.addEventListener("dragleave", () => drop.classList.remove("over"));
+  drop.addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("over"); pickPdfs(e.dataTransfer.files); });
+
+  /* ---------- duplicates ---------- */
+  const DUP_STOP = new Set(["torre","tower","residencial","residences","residence","proyecto","project","the","de","del","la","el","los","las","y","by","at","en","in","condo","condos","apartamentos","apartments","suites",
+    "villas","villa","duplex","brochure","ingles","english","espanol","tipologias","tipologia","punta","cana","vistacana","vista","bavaro","santo","domingo","rd","tipo","modelo","etapa"]);
+  const priceSig = p => { const ts = (p.tipologias || []).filter(t => t.desde > 0).map(t => (t.hab || 1) + ":" + Math.round(t.desde / 1000)).sort(); return ts.length ? ts.join(",") : ""; };
+  const dupKey = n => { const w = String(n || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().split(" ").filter(Boolean);
+    const k = w.filter(x => !DUP_STOP.has(x) && x.length > 1); return (k.length ? k : w).sort().join(" "); };
+  // Repetido = mismo nombre (sin palabras de relleno ni de lugar) o mismos precios por habitación en la misma zona.
+  const findDup = (nombre, exceptId, extra = [], cand = null) => { const k = dupKey(nombre); if (!k) return null;
+    const zoneW = z => new Set(fold(z).split(/[^a-z0-9]+/).filter(w => w.length > 3));
+    const sameZone = (a, b) => { const A = zoneW(a), B = zoneW(b); return [...A].some(w => B.has(w)); };
+    const sig = cand ? priceSig(cand) : "";
+    return S.projects.find(p => p.id !== exceptId && dupKey(p.nombre) === k)
+      || (sig && S.projects.find(p => p.id !== exceptId && priceSig(p) === sig && sameZone(p.zona, cand.zona)))
+      || extra.find(x => dupKey(x) === k) && { nombre: extra.find(x => dupKey(x) === k) } || null; };
+
+  /* ---------- save ---------- */
+  $("form").addEventListener("submit", async e => {
+    e.preventDefault();
+    if (S.busy) return;
+    const err = $("formErr");
+    const nombre = $("f-nombre").value.trim(), captador = $("f-capt").value.trim(), url = $("f-url").value.trim();
+    const tipologias = [...$("tipos").children].map(r => ({ hab: Number(r.querySelector("select").value), desde: Math.max(0, Number(r.querySelector("input").value) || 0), banos: r._extra.banos, m2: r._extra.m2 }));
+    if (!nombre) { err.textContent = "Escribe el nombre del proyecto o sube el brochure."; $("f-nombre").focus(); return; }
+    if (!captador) { err.textContent = "Escribe el nombre del asesor."; $("f-capt").focus(); return; }
+    if (url && !safeUrl(url)) { err.textContent = "El enlace debe empezar con https://"; $("f-url").focus(); return; }
+    if (!S.editing && badName(nombre)) { err.textContent = "“" + nombre + "” no parece el nombre de un proyecto. Escribe el nombre comercial del proyecto."; $("f-nombre").focus(); return; }
+    let dup = S.editing ? null : findDup(nombre, null);
+    if (!S.editing && !dup) { const m = matchPend(nombre); if (m) dup = m; }
+    if (dup && dup.id && !S.editing && incompleto(dup)) { S.editing = dup.id; dup = null; }
+    if (dup) { err.replaceChildren("Este proyecto ya está en la página como “" + dup.nombre + "”. No se sube dos veces. ",
+      dup.id ? h("button", { class: "link-btn", type: "button", onclick: () => { const d = dup; S.busy = false; closeForm(); openForm(S.projects.find(x => x.id === d.id)); } }, "Abrir el existente para editarlo") : ""); $("f-nombre").focus(); return; }
+    if (!S.gal.length && !S.noPhotoOk) { const a = $("noPhotoAsk"); a.hidden = false; a.scrollIntoView({ behavior: "smooth", block: "center" }); return; }
+    $("noPhotoAsk").hidden = true;
+    S.busy = true; $("save").disabled = true; err.textContent = "";
+    try {
+      const fotos = [];
+      const nuevas = S.gal.filter(g => g.blob).length;
+      if (nuevas && !S.assets) throw { code: "no_assets" };
+      let k = 0;
+      for (const g of S.gal) {
+        if (g.id) { fotos.push(g.id); continue; }
+        setStatus(`Subiendo fotos (${++k} de ${nuevas})…`);
+        const r = await S.assets.upload(g.blob, { contentType: "image/jpeg" });
+        g.id = r.id; fotos.push(r.id);
+      }
+      const prev = S.projects.find(x => x.id === S.editing);
+      const sameP = prev && JSON.stringify((prev.tipologias || []).map(t => [t.hab, t.desde])) === JSON.stringify(tipologias.map(t => [t.hab, t.desde]));
+      const preciosAl = sameP ? (prev.preciosAl || prev.actualizado || new Date().toISOString()) : new Date().toISOString();
+      const quitadas = (prev?.fotos || []).filter(id => !fotos.includes(id));
+      setStatus("Guardando…");
+      const body = {
+        ...(S.draft?.extra || {}), nombre, tipo: $("f-tipo").value, zona: $("f-zona").value.trim(), estado: $("f-estado").value, disp: $("f-disp").value, url, captador,
+        captadorTel: $("f-tel").value.trim(), captadorId: (S.caps.find(x => x.nombre.trim().toLowerCase() === captador.toLowerCase()) || {}).id || "",
+        tipologias: tipologias.map(t => ({ ...t, desde: t.desde > 0 ? t.desde : (((prev && prev.tipologias) || []).find(o => o.hab === t.hab && o.desde > 0) || {}).desde || 0 })),
+        ...(prev && prev.crm ? { crm: prev.crm, origen: prev.origen } : {}),
+        ...(prev && prev.brochureUrl ? { brochureUrl: prev.brochureUrl } : {}),
+        subidoPor: (prev && prev.subidoPor) || (S.me ? S.me.nombre : "Robert Cavallo"), descripcion: $("f-desc").value.trim(),
+        amenidades: $("f-amen").value.split(",").map(s => s.trim()).filter(Boolean).slice(0, 16), fotos, actualizado: new Date().toISOString(),
+        plan: readPlan(), preciosAl, precioRef: sameP ? !!(prev && prev.precioRef) : false,
+      };
+      const id = S.editing || ("p" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7));
+      await S.db.collection("proyectos").doc(id).set(body);
+      const was = S.editing;
+      if (S.assets) for (const fid of quitadas) S.assets.delete(fid).catch(() => {});
+      S.busy = false; setStatus(""); closeForm();
+      toast(was ? "Proyecto actualizado" : "Proyecto agregado");
+      if (hasLanding(body)) location.hash = "p-" + id;
+    } catch (x) {
+      setStatus("");
+      if (x?.code === "invalid_argument") { S.canWrite = false; $("addBtn").hidden = true; S.busy = false; closeForm(); render(); toast("Tu acceso es solo de lectura"); return; }
+      err.textContent = x?.code === "quota_exceeded" ? "Se llenó el espacio de la página. Elimina proyectos viejos e intenta de nuevo."
+        : x?.code === "no_assets" ? "No tienes permiso para subir imágenes en esta página. Pide acceso de edición al dueño."
+        : "No se pudo guardar. Revisa tu conexión e intenta de nuevo.";
+    } finally { S.busy = false; $("save").disabled = false; }
+  });
+
+  async function remove(p) {
+    S.confirming = null;
+    try {
+      await S.db.collection("proyectos").doc(p.id).delete();
+      toast("Proyecto eliminado");
+      if (S.assets) for (const id of p.fotos || []) S.assets.delete(id).catch(() => {});
+    } catch { toast("No se pudo eliminar"); render(); }
+  }
+
+  let tt;
+  function toast(msg) { const t = $("toast"); t.textContent = msg; t.hidden = false; clearTimeout(tt); tt = setTimeout(() => t.hidden = true, 3000); }
+
+  /* ---------- landing layer ---------- */
+  const host = $("landingHost");
+  const shadow = host.attachShadow({ mode: "open" });
+  function showLanding(id) {
+    if (!S.unlocked) return;
+    const p = S.projects.find(x => x.id === id);
+    if (!p) { if (S.loaded) closeLanding(true); return; }
+    S.openId = id;
+    shadow.innerHTML = `<style>${LANDING_CSS}.lp .float{position:sticky;float:right;margin:0 18px 18px 0}</style>` + landingHTML(p, (p.fotos || []).map(blobUrl), { agent: agentFor(p) });
+    initLanding(shadow);
+    $("layerTitle").textContent = "Landing · " + p.nombre;
+    const url = safeUrl(p.url);
+    $("extLink").hidden = !url; if (url) $("extLink").href = url;
+    $("dlBtn").hidden = !S.downloads;
+    $("sendBtn").hidden = !S.downloads; $("carBtn").hidden = !(p.fotos && p.fotos.length);
+    $("layer").hidden = false; document.body.classList.add("locked");
+    $("layerScroll").scrollTop = 0;
+  }
+  function showPreview() {
+    const tipologias = [...$("tipos").children].map(r => ({ hab: Number(r.querySelector("select").value), desde: Math.max(0, Number(r.querySelector("input").value) || 0), banos: r._extra.banos, m2: r._extra.m2 }));
+    const p = { ...(S.draft?.extra || {}), nombre: $("f-nombre").value.trim() || "Proyecto sin nombre", tipo: $("f-tipo").value, zona: $("f-zona").value.trim(), estado: $("f-estado").value, disp: $("f-disp").value,
+      captador: $("f-capt").value.trim(), captadorTel: $("f-tel").value.trim(), tipologias, descripcion: $("f-desc").value.trim(),
+      amenidades: $("f-amen").value.split(",").map(x => x.trim()).filter(Boolean) };
+    const c = capByName(p.captador);
+    const ag = S.me ? agentFor(p) : { nombre: p.captador, tel: p.captadorTel, foto: c && c.foto ? blobUrl(c.foto) : "" };
+    S.preview = true;
+    shadow.innerHTML = `<style>${LANDING_CSS}.lp .float{position:sticky;float:right;margin:0 18px 18px 0}</style>` + landingHTML(p, S.gal.map(g => g.url), { agent: ag });
+    initLanding(shadow);
+    $("layerTitle").textContent = "Vista previa (todavía sin guardar) · " + p.nombre;
+    $("extLink").hidden = true; $("dlBtn").hidden = true; $("sendBtn").hidden = true; $("carBtn").hidden = true;
+    $("back").textContent = "← Volver al formulario";
+    $("layer").hidden = false; $("layerScroll").scrollTop = 0;
+  }
+  $("previewBtn").addEventListener("click", showPreview);
+  function closeLanding(fromHash) {
+    $("back").textContent = "← Volver";
+    if (S.preview) { S.preview = false; $("layer").hidden = true; shadow.innerHTML = ""; return; }
+    $("layer").hidden = true; S.openId = null; shadow.innerHTML = "";
+    if ($("sheet").hidden) document.body.classList.remove("locked");
+    if (!fromHash && location.hash.startsWith("#p-")) history.replaceState(null, "", location.pathname + location.search + "#habitaciones");
+  }
+  $("back").addEventListener("click", () => closeLanding());
+  shadow.addEventListener("click", ev => {
+    const a = ev.composedPath().find(n => n.tagName === "A" && n.getAttribute && (n.getAttribute("href") || "").startsWith("#lp-"));
+    if (a) { ev.preventDefault(); const t = shadow.querySelector(a.getAttribute("href")); if (t) t.scrollIntoView({ behavior: "smooth" }); }
+  }, true);
+  /* ---------- carrusel de Instagram ---------- */
+  const CAR = { p: null, slides: [], txt: {}, imgs: [], agImg: null, busy: false };
+  const CW = 1080, CH = 1350, NAVY = "#0A1A3F", NAVY2 = "#132A5E", RED = "#DC1C2E", PALE = "#EEF1F7";
+  const loadImg = src => new Promise(res => { if (!src) return res(null); const im = new Image(); im.onload = () => res(im); im.onerror = () => res(null); im.src = src; });
+  function coverImg(ctx, im, x, y, w, hh) {
+    if (!im) { ctx.fillStyle = NAVY2; ctx.fillRect(x, y, w, hh); return; }
+    const k = Math.max(w / im.width, hh / im.height), sw = w / k, sh = hh / k;
+    ctx.drawImage(im, (im.width - sw) / 2, (im.height - sh) / 2, sw, sh, x, y, w, hh);
+  }
+  function lines(ctx, text, maxW) {
+    const out = []; let cur = "";
+    for (const w of String(text || "").split(/\s+/).filter(Boolean)) { const t = cur ? cur + " " + w : w; if (ctx.measureText(t).width > maxW && cur) { out.push(cur); cur = w; } else cur = t; }
+    if (cur) out.push(cur); return out;
+  }
+  // Fits text into a box, shrinking the font until it fits; returns the bottom y.
+  function textBox(ctx, text, x, y, maxW, maxH, { font = "Poppins", weight = 400, size = 40, min = 24, lh = 1.3, color = "#fff", italic = false, maxLines = 99, dry = false } = {}) {
+    let s = size, ls;
+    for (; s >= min; s -= 2) { ctx.font = `${italic ? "italic " : ""}${weight} ${s}px ${font}`; ls = lines(ctx, text, maxW); if (ls.length * s * lh <= maxH && ls.length <= maxLines) break; }
+    ctx.font = `${italic ? "italic " : ""}${weight} ${Math.max(s, min)}px ${font}`; ls = lines(ctx, text, maxW).slice(0, maxLines);
+    ctx.fillStyle = color; ctx.textBaseline = "top";
+    if (!dry) ls.forEach((l, i) => ctx.fillText(l, x, y + i * s * lh));
+    return y + ls.length * s * lh;
+  }
+  function pill(ctx, text, x, y, { bg = RED, color = "#fff", size = 26, weight = 600, pad = 22, track = 0.12 } = {}) {
+    ctx.font = `${weight} ${size}px Poppins`; ctx.letterSpacing = track * size + "px";
+    const w = ctx.measureText(text).width + pad * 2, hh = size + pad * 1.1;
+    ctx.fillStyle = bg; ctx.beginPath(); ctx.roundRect(x, y, w, hh, hh / 2); ctx.fill();
+    ctx.fillStyle = color; ctx.textBaseline = "middle"; ctx.fillText(text, x + pad, y + hh / 2 + 1); ctx.letterSpacing = "0px";
+    return w;
+  }
+  function chrome(ctx, i, n, dark) {
+    ctx.font = "600 22px Poppins"; ctx.letterSpacing = "3px"; ctx.textBaseline = "alphabetic";
+    ctx.fillStyle = dark ? "rgba(255,255,255,.85)" : NAVY;
+    ctx.fillText("TEAM GERMANESCARFULLERY · RE/MAX METROPOLITANA", 80, CH - 64);
+    ctx.letterSpacing = "0px"; ctx.font = "500 24px Poppins"; ctx.textAlign = "right";
+    ctx.fillText(`${i + 1}/${n}`, CW - 80, CH - 64); ctx.textAlign = "left";
+    ctx.fillStyle = RED; ctx.fillRect(80, CH - 110, 64, 5);
+  }
+  const kicker = (ctx, t, x, y, color = RED) => { ctx.font = "600 26px Poppins"; ctx.letterSpacing = "6px"; ctx.fillStyle = color; ctx.textBaseline = "top"; ctx.fillText(t.toUpperCase(), x, y); ctx.letterSpacing = "0px"; };
+  const shade = (ctx, y0, y1, a0, a1) => { const g = ctx.createLinearGradient(0, y0, 0, y1); g.addColorStop(0, `rgba(10,26,63,${a0})`); g.addColorStop(1, `rgba(10,26,63,${a1})`); ctx.fillStyle = g; ctx.fillRect(0, y0, CW, y1 - y0); };
+  function title2(ctx, name, x, y, maxW, size, dry) {
+    const w = String(name || "").trim().split(/\s+/), ital = w.length > 1 && w[w.length - 1].length > 3, a = ital ? w.slice(0, -1).join(" ") : w.join(" "), b = ital ? w[w.length - 1] : "";
+    let yy = textBox(ctx, a, x, y, maxW, size * 2.3, { font: "Lora", weight: 600, size, min: 54, lh: 1.08, maxLines: 2, dry });
+    if (b) yy = textBox(ctx, b, x, yy, maxW, size * 1.2, { font: "Lora", weight: 500, size, min: 54, lh: 1.08, italic: true, maxLines: 1, dry });
+    return yy;
+  }
+  function carSlides(p) {
+    const tipos = (p.tipologias || []).slice().sort((a, b) => a.hab - b.hab), priced = tipos.filter(t => t.desde > 0);
+    const from = priced.length ? money(Math.min(...priced.map(t => t.desde))) : "";
+    const pl = p.plan || {}, hasPlan = [pl.separacion, pl.firmaPct, pl.cuotasPct, pl.entregaPct].some(v => Number(v) > 0);
+    const amen = (p.amenidades || []).filter(Boolean);
+    const S2 = [{ k: "portada", ph: 0 }, { k: "intro", ph: 1 }];
+    if (tipos.length) S2.push({ k: "unidades", ph: 2 });
+    if (amen.length) S2.push({ k: "amenidades", ph: 3 });
+    if (hasPlan) S2.push({ k: "plan" });
+    if (p.entrega || p.estado || p.parqueos) S2.push({ k: "detalles", ph: 4 });
+    S2.push({ k: "cta" });
+    return { list: S2, tipos, from, pl, amen };
+  }
+  function drawSlide(cv, s, i, n) {
+    const ctx = cv.getContext("2d"), p = CAR.p, t = CAR.txt, d = CAR.meta, ag = agentFor(p);
+    const ph = s.ph == null ? null : CAR.imgs.length ? CAR.imgs[(s.ph + (s.shift || 0)) % CAR.imgs.length] : null;
+    ctx.clearRect(0, 0, CW, CH); ctx.textAlign = "left";
+    const X = 80, W = CW - 160;
+    if (s.k === "portada") {
+      coverImg(ctx, ph, 0, 0, CW, CH); shade(ctx, 0, 260, .55, 0); shade(ctx, CH * .38, CH, 0, .94);
+      pill(ctx, `${(p.estado || "Proyecto").toUpperCase()} · ${(p.zona || "").split(",")[0].toUpperCase()}`.replace(/ · $/, ""), X, 80, { size: 24 });
+      const priceTop = d.from ? CH - 300 : CH - 170;
+      const gH = textBox(ctx, t.gancho, X, 0, W, 120, { weight: 500, size: 40, min: 30, maxLines: 2, dry: true }) + 18;
+      const tH = title2(ctx, p.nombre, X, 0, W, 104, true) + 26;
+      let y = Math.max(300, priceTop - tH - gH);
+      y = textBox(ctx, t.gancho, X, y, W, 120, { weight: 500, size: 40, min: 30, color: "#fff", maxLines: 2 }) + 18;
+      y = title2(ctx, p.nombre, X, y, W, 104) + 26; y = Math.max(y, priceTop);
+      if (d.from) { ctx.font = "500 26px Poppins"; ctx.letterSpacing = "5px"; ctx.fillStyle = "rgba(255,255,255,.8)"; ctx.textBaseline = "top"; ctx.fillText("PRECIO DESDE", X, y); ctx.letterSpacing = "0px"; ctx.font = "600 70px Poppins"; ctx.fillStyle = "#fff"; ctx.fillText(d.from, X, y + 38); }
+      ctx.font = "600 28px Poppins"; ctx.fillStyle = "#fff"; ctx.textAlign = "right"; ctx.textBaseline = "alphabetic"; ctx.fillText("Desliza  →", CW - X, 132); ctx.textAlign = "left";
+      chrome(ctx, i, n, true);
+    } else if (s.k === "intro") {
+      coverImg(ctx, ph, 0, 0, CW, 760);
+      ctx.fillStyle = "#fff"; ctx.fillRect(0, 760, CW, CH - 760); ctx.fillStyle = RED; ctx.fillRect(0, 754, CW, 8);
+      kicker(ctx, "El proyecto", X, 830);
+      textBox(ctx, t.intro, X, 890, W, 300, { font: "Lora", weight: 500, size: 50, min: 34, lh: 1.25, color: NAVY });
+      chrome(ctx, i, n, false);
+    } else if (s.k === "unidades") {
+      ctx.fillStyle = NAVY; ctx.fillRect(0, 0, CW, CH);
+      coverImg(ctx, ph, 0, 0, CW, 420); shade(ctx, 0, 420, .25, 1);
+      kicker(ctx, "Unidades disponibles", X, 470, "#FF6B77");
+      textBox(ctx, "Elija su espacio", X, 520, W, 90, { font: "Lora", weight: 600, size: 72, min: 50 });
+      const rows = d.tipos.slice(0, 5), rh = Math.min(140, 470 / Math.max(rows.length, 1)), top = 660 + Math.max(0, (470 - rows.length * rh) / 2) * .5;
+      rows.forEach((r, k) => {
+        const y = top + k * rh;
+        ctx.fillStyle = "rgba(255,255,255,.07)"; ctx.beginPath(); ctx.roundRect(X, y, W, rh - 16, 18); ctx.fill();
+        ctx.textBaseline = "middle"; const cy = y + (rh - 16) / 2;
+        ctx.font = "600 40px Poppins"; ctx.fillStyle = "#fff"; ctx.fillText(`${r.hab >= 5 ? "5+" : r.hab} ${r.hab === 1 ? "habitación" : "habitaciones"}`, X + 34, cy);
+        ctx.font = "400 30px Poppins"; ctx.fillStyle = "rgba(255,255,255,.7)"; if (r.m2) { ctx.fillText(`${r.m2} m²`, X + 420, cy - 17); ctx.font = "400 24px Poppins"; ctx.fillStyle = "rgba(255,255,255,.55)"; ctx.fillText(`${Math.round(r.m2 * 10.7639).toLocaleString("en-US")} ft²`, X + 420, cy + 19); }

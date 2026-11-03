@@ -1,0 +1,1691 @@
+[
+ {
+  "actualizado": "2026-10-12T21:10:25.385Z",
+  "amenidades": [
+   "1,000 m² de áreas comunes sociales",
+   "Villar y mesa de tenis",
+   "Piscina para adultos y niños",
+   "Pool lounge",
+   "Terraza techada",
+   "Terraza solárium",
+   "Gimnasio climatizado",
+   "Área de bar",
+   "Área de BBQ",
+   "Área de juegos de niños",
+   "Área de yoga, fitness y wellness al aire libre",
+   "Camino privado para caminatas internas",
+   "Pets Park",
+   "Control de acceso en tres entradas",
+   "Colegio y minimarket en el complejo",
+   "Cancha de fútbol y de baloncesto"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "15 min"
+   }
+  ],
+  "descripcion": "Allegra Park es un proyecto cerrado de 96 villas tipo townhouse, de 2 y 3 habitaciones. Todas cuentan con patio. Se encuentra dentro del Complejo Residencial Bávaro Punta Cana.\nUsted disfrutará de 1,000 m² de áreas sociales, con piscina, gimnasio climatizado, terraza solárium, área de bar y de BBQ. También hay espacios para yoga, juegos de niños y caminatas dentro del proyecto.\nLa primera etapa ya está lista para entrega y otras etapas siguen en construcción. El proyecto está avalado por fideicomiso. Puede visitar la villa modelo y conocer en persona lo que será su nueva casa.",
+  "direccion": "Complejo Residencial Bávaro Punta Cana, Punta Cana",
+  "disp": "Disponible",
+  "entrega": "Julio 2027",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuántas villas tiene el proyecto y de qué tamaño son?",
+    "r": "Son 96 villas tipo townhouse. Las de 2 habitaciones tienen 76 m² de construcción y las de 3 habitaciones tienen 103 m², todas con patio."
+   },
+   {
+    "p": "¿Cuánto cuesta reservar una unidad?",
+    "r": "La reserva es de US$1,000. Es una separación no reembolsable. Los costos de transferencia son responsabilidad del cliente."
+   },
+   {
+    "p": "¿Cuándo se entregan las villas?",
+    "r": "Las etapas 1 y 2 están listas para entrega. La etapa 3 se entrega en enero y marzo de 2027, la 4 en julio y septiembre de 2027, y la 5 en febrero de 2028."
+   },
+   {
+    "p": "¿Qué incluye el mantenimiento y qué otros costos hay?",
+    "r": "El mantenimiento estimado es de US$150. El jacuzzi con pérgola de madera sintética no está incluido y cuesta US$18,000 adicionales."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/058cbf8b31fa4910227699d9865f809b.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/5daaa595b5aa77287d97b1584fcdf025.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/f6e74ec6809ad45b29aa49027ea41446.jpg",
+   "e5a909b346758981ef93d495e0813fca",
+   "3f321567ea11b3565d772ec722527b84",
+   "0beccf38838e43272cdc736d4e3bd4e3"
+  ],
+  "frase": "Villas dúplex con patio en el corazón de Punta Cana",
+  "nombre": "Allegra Park",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 25,
+   "entregaPct": 65,
+   "firmaPct": 10,
+   "meses": 0,
+   "separacion": 1000
+  },
+  "porque": [
+   {
+    "texto": "Está en el corazón de Punta Cana, dentro de un complejo residencial con tres entradas con control de acceso.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "El proyecto está avalado por fideicomiso. Además, la primera etapa ya está lista para entrega, y usted puede visitarla.",
+    "titulo": "Respaldo y seguridad"
+   },
+   {
+    "texto": "Piscina, gimnasio climatizado, solárium, área de bar y espacios para yoga y caminatas. Todo pensado para su descanso y bienestar.",
+    "titulo": "Amenidades completas"
+   },
+   {
+    "texto": "Si lo desea, administramos su alquiler con un programa de gestión 70% 30%. También ofrecemos el servicio llave en mano, con la propiedad amueblada.",
+    "titulo": "Apoyo para generar renta"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-11-02T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Townhouse",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 161500,
+    "hab": 2,
+    "m2": 76
+   },
+   {
+    "banos": 2,
+    "desde": 179500,
+    "hab": 3,
+    "m2": 103
+   }
+  ],
+  "url": "",
+  "zona": "Complejo Residencial Bávaro Punta Cana, Punta Cana",
+  "id": "pmv5qxh7u6psai"
+ },
+ {
+  "actualizado": "2026-10-14T20:08:37.749Z",
+  "amenidades": [
+   "Pórtico de entrada con seguridad",
+   "Calles asfaltadas y complejo cerrado",
+   "Parques recreativos",
+   "Piscinas comunes",
+   "Casa club con piscina",
+   "Cancha de fútbol",
+   "Cancha de tenis",
+   "Cancha de baloncesto",
+   "Área de niños",
+   "Gimnasio al aire libre",
+   "Pozo",
+   "Plaza comercial futura"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto de Punta Cana",
+    "tiempo": "35 min"
+   },
+   {
+    "lugar": "Circunvalación de Bávaro",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "El Cortecito",
+    "tiempo": "25 min"
+   },
+   {
+    "lugar": "Downtown Mall",
+    "tiempo": "23 min"
+   },
+   {
+    "lugar": "Coco Bongo",
+    "tiempo": "23 min"
+   },
+   {
+    "lugar": "Cabeza de Toro y Pearl Beach",
+    "tiempo": "29 min"
+   }
+  ],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Ariel Grasso",
+   "observaciones": ""
+  },
+  "descripcion": "Alta Vista es un proyecto de villas independientes de un solo nivel, de 2 y 3 habitaciones. Se construye en solares amplios, con patio, dentro de un complejo cerrado en Punta Cana. La primera etapa ya fue entregada.\nEl complejo cuenta con pórtico de entrada con seguridad, calles asfaltadas y parques recreativos. Usted disfrutará de piscinas comunes, canchas de fútbol, tenis y baloncesto, área de niños y gimnasio al aire libre.\nLas villas tienen terminaciones de calidad, como porcelanato, cocina modular con tope de granito y puertas en madera preciosa. Además, se construirá una plaza comercial cuando el proyecto esté entregado.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Junio 2029 a Junio 2030",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuánto cuestan las villas?",
+    "r": "La villa de 2 habitaciones parte desde US$79,000 y la de 3 habitaciones desde US$108,500. La piscina no está incluida en la oferta."
+   },
+   {
+    "p": "¿Qué tamaño tienen las villas?",
+    "r": "La villa de 2 habitaciones tiene 65 m² de construcción en solares desde 216 m². La de 3 habitaciones tiene 133 m² en solares de 299 a 482 m²."
+   },
+   {
+    "p": "¿Cuándo se entregan?",
+    "r": "La entrega está prevista entre junio de 2029 y junio de 2030. La primera etapa del proyecto ya fue entregada."
+   },
+   {
+    "p": "¿Qué terminaciones incluyen?",
+    "r": "Incluyen porcelanato, ventanas de vidrio y aluminio, cocina modular con tope de granito, baños con cerámicas importadas y puertas en madera preciosa. También traen pre instalación de aires y calentador eléctrico."
+   }
+  ],
+  "fotos": [
+   "048ab5b98272063b1f29eceebc86e753",
+   "44ac985c48b982d8c4ba321fb7e6fe2c",
+   "2db61ef5bf9b3b3edc6d11203903f0c7",
+   "06c7d272273f322601e8a427465b4759",
+   "94d25c8dabc69bcb755b8f51970e2403",
+   "61252d8620a7d76f39a21bea05fca37c"
+  ],
+  "frase": "Villas de un nivel con patio en Punta Cana",
+  "nombre": "Alta Vista",
+  "origen": "crm",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Cada villa es de un solo nivel y se ubica en un solar propio. Usted disfruta de más espacio y privacidad.",
+    "titulo": "Villas independientes con patio"
+   },
+   {
+    "texto": "El proyecto ya tiene una etapa terminada y entregada. Eso le permite ver el resultado real antes de decidir.",
+    "titulo": "Primera etapa ya entregada"
+   },
+   {
+    "texto": "El complejo ofrece piscinas, canchas deportivas, área de niños y gimnasio al aire libre, todo dentro del residencial cerrado.",
+    "titulo": "Amenidades para toda la familia"
+   },
+   {
+    "texto": "Ya inició la construcción de una carretera hacia la Autovía del Coral. Dejará el proyecto a solo 14 minutos del aeropuerto.",
+    "titulo": "Buena conexión con Punta Cana"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:08:37.749Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 79000,
+    "hab": 2,
+    "m2": 65
+   },
+   {
+    "banos": 2,
+    "desde": 108500,
+    "hab": 3,
+    "m2": 133
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana",
+  "id": "pmv76dodcmwod1"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "7.00%",
+   "contacto": "Ariel Grasso",
+   "observaciones": ""
+  },
+  "descripcion": "Alta Vista Solares Punta cana es un proyecto de solares en Alta Vista, Punta cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad. La entrega está prevista para Etapa lll diciembre 2025 Etapa Vll Septi.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Etapa lll Diciembre 2025 Etapa Vll Septi",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Alta Vista Solares Punta cana está en Alta Vista, Punta cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para Etapa lll diciembre 2025 Etapa Vll Septi."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Solares en Alta Vista",
+  "nombre": "Alta Vista Solares Punta cana",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Alta Vista, Punta cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "La entrega está prevista para Etapa lll diciembre 2025 Etapa Vll Septi, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Solar",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Alta Vista, Punta cana",
+  "id": "pmv76dodbq4axe"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Angie I es un proyecto de apartamentos en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Angie I está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en —",
+  "nombre": "Angie I",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dof2tg10i"
+ },
+ {
+  "actualizado": "2026-10-13T19:02:23.390Z",
+  "amenidades": [
+   "Piscina",
+   "Gazebo",
+   "Caminos y entornos tropicales",
+   "Control de acceso",
+   "Parqueos para visitantes",
+   "Acceso privado a la playa"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa Arena Gorda",
+    "tiempo": "3 min"
+   },
+   {
+    "lugar": "Downtown Mall",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Centro médico",
+    "tiempo": "7 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "18 min"
+   }
+  ],
+  "descripcion": "Bávaro es un residencial exclusivo de edificios con apartamentos de 2 habitaciones. Cada unidad tiene vistas a la piscina y acceso privado a la playa. Los apartamentos ya están listos para entrega.\nUsted disfrutará de piscina, gazebo y caminos con entornos tropicales. El residencial cuenta con control de acceso y parqueos para visitantes. Los pisos interiores son de mármol crema y las puertas de madera jequitibá.\nCada apartamento incluye línea blanca, aires acondicionados en las habitaciones y preinstalación de aires en el resto. Con áreas desde 142 hasta 175 m², es una opción cómoda. El mantenimiento va de US$110 a US$140.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "Terminado",
+  "faq": [
+   {
+    "p": "¿Cuál es el precio de partida?",
+    "r": "Los apartamentos de 2 habitaciones, 2.5 baños y 1 parqueo parten desde US$191,850."
+   },
+   {
+    "p": "¿Qué incluye el apartamento?",
+    "r": "Incluye línea blanca, estufa empotrada, extractor, aires acondicionados en las habitaciones y preinstalación de aires acondicionados en el resto."
+   },
+   {
+    "p": "¿Cuánto cuesta el mantenimiento?",
+    "r": "El mantenimiento mensual está entre US$110 y US$140."
+   },
+   {
+    "p": "¿Cómo se reserva y qué debo tener en cuenta?",
+    "r": "La reserva es de US$3,000 y no es reembolsable. La diferencia depende del financiamiento del cliente. Los costos de transferencia corren por cuenta del cliente."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/f7fd2414f22e58f16f2468671469f8b3.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/a1491bab9025225efd6d3c36f76c11ca.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/47e62125be9f769e530738db5de9a983.jpg",
+   "b376527c12849d80ecdad1a65711da06"
+  ],
+  "frase": "Apartamentos listos para entrega cerca de la playa",
+  "nombre": "Apartamentos Bávaro",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 3000
+  },
+  "porque": [
+   {
+    "texto": "Usted estará a solo 3 minutos de la playa de Arena Gorda. Además, el residencial ofrece acceso privado a la playa.",
+    "titulo": "Cerca de la playa"
+   },
+   {
+    "texto": "Los apartamentos están terminados. Usted puede recibir su propiedad sin esperar el tiempo de una construcción.",
+    "titulo": "Listo para entregar"
+   },
+   {
+    "texto": "Pisos de mármol crema, puertas de madera jequitibá, grifería de acero inoxidable y ventanas con perfiles de aluminio.",
+    "titulo": "Acabados de calidad"
+   },
+   {
+    "texto": "Cada unidad incluye línea blanca, aires acondicionados en las habitaciones y preinstalación de aires en el resto del apartamento.",
+    "titulo": "Todo incluido"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T20:56:45.861Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2.5,
+    "desde": 191850,
+    "hab": 2,
+    "m2": 142
+   }
+  ],
+  "url": "",
+  "zona": "Arena Gorda, Bávaro",
+  "id": "pmv5qfwv9ff1ea"
+ },
+ {
+  "actualizado": "2026-10-12T21:14:58.613Z",
+  "amenidades": [
+   "Control de acceso",
+   "Lounge de piscina",
+   "Piscina recreativa",
+   "Piscina deportiva",
+   "Salón social",
+   "Owners Club",
+   "Parque infantil",
+   "Parque de mascotas",
+   "Parque a cielo abierto",
+   "Gimnasio",
+   "Cancha múltiple",
+   "Zona comercial",
+   "Paneles solares"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Bávaro Innovation School",
+    "tiempo": "4 min"
+   },
+   {
+    "lugar": "Hospital IMG Punta Cana",
+    "tiempo": "4 min"
+   },
+   {
+    "lugar": "Cocotal Golf & Country Club",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Downtown Punta Cana",
+    "tiempo": "7 min"
+   },
+   {
+    "lugar": "Playa Los Corales",
+    "tiempo": "12 min"
+   },
+   {
+    "lugar": "Playa Cabeza de Toro",
+    "tiempo": "15 min"
+   }
+  ],
+  "descripcion": "Araya Punta Cana es un proyecto residencial de 462 apartamentos en su primera etapa, repartidos en 77 edificios de tres niveles. Cada nivel tiene dos apartamentos de 86 metros cuadrados.\nUsted encontrará un entorno que une diseño moderno y naturaleza. Hay piscinas, gimnasio, cancha deportiva, parque infantil, parque de mascotas y zona comercial. Todo está dentro del complejo, con acceso controlado.\nAraya cuenta con certificación EDGE y GBCI, con menor consumo de electricidad, agua y materiales. Además, los principales servicios, el aeropuerto y las playas están a 15 minutos o menos.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántos apartamentos tiene la primera etapa?",
+    "r": "La primera etapa tiene 462 unidades, en 77 edificios de tres niveles, con dos apartamentos por nivel."
+   },
+   {
+    "p": "¿Qué tamaño tienen los apartamentos?",
+    "r": "Cada apartamento mide 86 metros cuadrados. El modelo Garden suma 40 m² de patio y el Sunset suma 48 m² de terraza privada. El metraje puede variar según la ubicación."
+   },
+   {
+    "p": "¿Qué amenidades ofrece el proyecto?",
+    "r": "Ofrece control de acceso, piscinas, lounge, gimnasio, cancha múltiple, parque infantil, parque de mascotas, salón social, Owners Club, parque a cielo abierto y zona comercial."
+   },
+   {
+    "p": "¿Qué tan cerca está el aeropuerto?",
+    "r": "El Aeropuerto Internacional Punta Cana queda a unos 15 minutos de trayecto, según el brochure."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/f0be7e3edb00cf1999136f37b7d4cd62.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/0b7a90ff4c24597475361c015d4b8230.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/93f8584e6beb8f31341131765b6e7d44.jpg",
+   "d4d58cbdb5d1f7c6cb252b964e7d3a82",
+   "693d928852ec01f7e8e1b4bbde2c9923",
+   "3ab67af0696200425804c2a4948d496c"
+  ],
+  "frase": "Naturaleza, bienestar y modernidad en Punta Cana",
+  "nombre": "Araya Punta Cana",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Los principales atractivos de ocio, transporte y servicios están a menos de 15 minutos. El aeropuerto internacional queda a unos 15 minutos.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "Araya cuenta con auditoría EDGE y certificación GBCI. Reduce 26 % la electricidad, 37 % el agua y 46 % la energía incorporada en materiales.",
+    "titulo": "Sostenibilidad certificada"
+   },
+   {
+    "texto": "Lo desarrollan AFI Universal y Bricket. Bricket tiene 56 proyectos residenciales desde 1976 y AFI Universal pertenece al Grupo Universal, con 60 años de trayectoria.",
+    "titulo": "Respaldo de experiencia"
+   },
+   {
+    "texto": "Piscinas, gimnasio, cancha, parques, salón social y zona comercial están dentro del complejo. Usted tendrá todo a su alcance.",
+    "titulo": "Amenidades completas"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-11-02T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 158750,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, La Altagracia",
+  "id": "pmv5r3c1hamgfj"
+ },
+ {
+  "actualizado": "2026-11-02T18:55:44.795Z",
+  "amenidades": [
+   "Playa artificial",
+   "Bar de playa",
+   "Piscina",
+   "Casa club",
+   "Campo de golf iluminado 24/7",
+   "Lago de agua dulce",
+   "Club de pesca deportiva",
+   "Ciudad ecuestre",
+   "Business center",
+   "Colegios Vistacana",
+   "Piscina privada opcional"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa artificial Vistacana",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Supermercados",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Cocobongo",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Downtown Mall",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Hospital IMG",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Playa Cortecito",
+    "tiempo": "15 min"
+   }
+  ],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Max Onorio",
+   "observaciones": ""
+  },
+  "descripcion": "Arberella es un proyecto de 42 villas independientes de tres habitaciones, dentro de Vistacana, en Punta Cana. Las villas están agrupadas en bloques de seis unidades y colindan con el Paseo del Sendero.\nCada villa se integra con el entorno tropical. Su diseño favorece la ventilación natural, para que usted disfrute de espacios frescos y tranquilos. Tiene dos niveles, terraza y, si lo desea, piscina propia.\nEs una opción pensada para vivir o para invertir. Incluye línea blanca y terminaciones de calidad, y se encuentra en un desarrollo con playa artificial, golf, casa club y colegios.",
+  "direccion": "Colindante con el Paseo del Sendero de Vistacana, Punta Cana",
+  "disp": "Disponible",
+  "entrega": "Octubre 2026",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuál es el precio y el tamaño de la villa?",
+    "r": "El precio parte desde US$288,000. La villa tiene 190 m² de construcción, 35 m² de terraza y un terreno de 250 a 400 m²."
+   },
+   {
+    "p": "¿Cuántas habitaciones y parqueos tiene?",
+    "r": "Tiene tres habitaciones, tres baños y medio, dos niveles y espacio para tres parqueos."
+   },
+   {
+    "p": "¿Qué incluye la villa?",
+    "r": "Incluye línea blanca: lavadora, secadora, refrigerador con freezer y aires acondicionados. La piscina es opcional, desde US$12,500."
+   },
+   {
+    "p": "¿Cuándo se entrega y cómo se paga?",
+    "r": "La entrega está prevista para octubre 2026. La reserva es de US$3,000. En el plan Estándar 1 se paga 20% al contrato, 20% en 24 cuotas y 60% a la entrega."
+   }
+  ],
+  "fotos": [
+   "816a5f0791481e3d61bd44b9852f52e8",
+   "1f01fa95f81e741729285187762a56d9",
+   "46be6d04b2531ca57f46c89005beebae",
+   "8f44a980f21ba9c3fd368defa5b71ba5",
+   "c56a6733398b6e2afd361f4d9d98cf9d"
+  ],
+  "frase": "Villas en Punta Cana, en armonía con la naturaleza",
+  "nombre": "Arberella",
+  "origen": "crm",
+  "parqueos": 3,
+  "plan": {
+   "cuotasPct": 20,
+   "entregaPct": 60,
+   "firmaPct": 20,
+   "meses": 24,
+   "separacion": 3000
+  },
+  "porque": [
+   {
+    "texto": "Su villa estará dentro de un macroproyecto urbanístico, cerca de la playa artificial, supermercados, centros comerciales y el aeropuerto internacional.",
+    "titulo": "Ubicación en Vistacana"
+   },
+   {
+    "texto": "Cada villa se integra al entorno tropical y favorece el flujo de aire natural, para una vida serena y cómoda.",
+    "titulo": "Diseño con la naturaleza"
+   },
+   {
+    "texto": "Pisos en porcelanato, cocinas modulares, ventanas de aluminio y vidrio, y puertas y clósets en madera preciosa. Incluye línea blanca.",
+    "titulo": "Terminaciones de calidad"
+   },
+   {
+    "texto": "Con más de once años de experiencia de la desarrolladora y buenas perspectivas de valorización, es una opción atractiva para su patrimonio.",
+    "titulo": "Para vivir o invertir"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:10:22.995Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 3.5,
+    "desde": 288000,
+    "hab": 3,
+    "m2": 190
+   }
+  ],
+  "url": "",
+  "zona": "Vistacana, Punta Cana",
+  "id": "pmv76dodd11rt1"
+ },
+ {
+  "actualizado": "2026-10-15T21:45:00.000Z",
+  "amenidades": [
+   "Piscina"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Arenca Parks es un proyecto de apartamentos en Punta cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$230,000. La entrega está prevista para Entrega 6,12 o 18 meses.\nEntre sus áreas y facilidades se encuentran: piscina. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Entrega 6,12 o 18 meses",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Arenca Parks está en Punta cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$230,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para Entrega 6,12 o 18 meses."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "ba5b6ccc78ece303640f164f807ecd49",
+   "180bb482f9bf8cc479ba2e8e8225140e",
+   "9e7df331ac7516ed4d03f0b7b0b0bba7",
+   "3040327ca3b1086aedd42dfc82523eea",
+   "29015486de7e6d9014f045e849300f64",
+   "49220eff8c4112fd0c2cce40ef05a2dd"
+  ],
+  "frase": "Apartamentos en Punta cana",
+  "nombre": "Arenca Parks",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Punta cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$230,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para Entrega 6,12 o 18 meses, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye piscina, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 230000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/CbRHh1K8x629q2IF1Bneit",
+  "zona": "Punta cana",
+  "id": "pmv76dodeo5a1f"
+ },
+ {
+  "actualizado": "2026-10-16T18:30:00.000Z",
+  "amenidades": [
+   "Bono Vivienda"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Arrecifes Del sol es un proyecto de apartamentos en Las Americas, Santo domingo este. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$63,000. La entrega está prevista para 2028-2029.\nEntre sus áreas y facilidades se encuentran: bono vivienda. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "2028-2029",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Arrecifes Del sol está en Las Americas, Santo domingo este."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$63,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 2028-2029."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "2e7ecd62a77a814d630fde13fcfe97ec",
+   "6b83562c3eb665f6483a62c4541baf9b",
+   "19bfe784bb49aa661e487abb89378bf2",
+   "2d0bfddce44fe60754f81605948761b9",
+   "b2ef1d59f41a457d1d2dd7a1796a24f7",
+   "098269cca704bd80e59192d3b231544a"
+  ],
+  "frase": "Apartamentos en Las Americas",
+  "nombre": "Arrecifes Del sol",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Las Americas, Santo domingo este, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$63,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 2028-2029, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye bono vivienda, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 63000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/F2X8Zo3sPny1BawSbqwaqe",
+  "zona": "Las Americas, Santo domingo este",
+  "id": "pmv76doexge8ky"
+ },
+ {
+  "actualizado": "2026-10-14T20:12:11.438Z",
+  "amenidades": [
+   "Piscina",
+   "Gimnasio",
+   "Salón de juegos",
+   "Sport bar",
+   "Área de BBQ",
+   "Terraza en casa club",
+   "Playground",
+   "Cancha de baloncesto",
+   "Cancha de pádel",
+   "Pista de jogging",
+   "Parque infantil",
+   "Parque lineal",
+   "Mirador",
+   "Paseos verdes",
+   "Zona comercial",
+   "Seguridad 24/7"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "3.00%",
+   "contacto": "Melido Eduardo",
+   "observaciones": ""
+  },
+  "descripcion": "Es un residencial de apartamentos de tres habitaciones, pensado para quienes buscan espacio y tranquilidad. Hay dos modelos, de 101 y 115 metros cuadrados. Cada uno cuenta con balcón, terraza privada, cocina modular, área de lavado y parqueo.\nLa casa club reúne piscina, gimnasio, salón de juegos, sport bar y zona de BBQ. También encontrará cancha de baloncesto, cancha de pádel y pista de jogging. Hay parque infantil, mirador y paseos verdes para disfrutar en familia.\nEl proyecto ofrece seguridad las 24 horas y acceso controlado. Los pisos superiores incluyen terrazas amplias, con opción de techar el cuarto nivel. La forma de pago es sencilla: 10% a la firma, 15% durante la construcción y 75% a la entrega.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2026",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Qué modelos de apartamento hay disponibles?",
+    "r": "Hay dos modelos de tres habitaciones: el Tipo A, de 115 m², y el Tipo B, de 101 m². Ambos incluyen terraza privada, área de lavado, cocina modular y parqueo."
+   },
+   {
+    "p": "¿Cuáles son los precios?",
+    "r": "El Tipo A va desde US$178,710 hasta US$193,500 en los niveles 2 al 4, y cuesta US$195,600 en el nivel 1. El Tipo B va desde US$160,600 hasta US$175,200, y cuesta US$178,300 en el nivel 1."
+   },
+   {
+    "p": "¿Cómo es la forma de pago?",
+    "r": "Se reserva con US$2,000. Luego se completa el 10% a la firma, se paga el 15% durante la construcción y el 75% restante a la entrega del proyecto."
+   },
+   {
+    "p": "¿Puedo techar la terraza del cuarto nivel?",
+    "r": "Sí, el techado del cuarto nivel es opcional y puede servir de estudio o habitación. La Terraza Ready cuesta US$30,000 adicionales en el Tipo A y US$20,000 en el Tipo B. En el tercer nivel no se permite techar."
+   }
+  ],
+  "fotos": [
+   "618a90bdb9afc5c2f19620366b7ea56f",
+   "2f8c3b9ff753a9fb3010a29df25b279a",
+   "a158e39e78ed704d492ff744832fd812",
+   "5e10940eb1530d73576173aa239c5621",
+   "31ed07002d9df070f9885a7f1aa29227"
+  ],
+  "frase": "Espacio, naturaleza y comodidad para su familia",
+  "nombre": "Arroyo Hondo Gardens",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 15,
+   "entregaPct": 75,
+   "firmaPct": 10,
+   "meses": 0,
+   "separacion": 2000
+  },
+  "porque": [
+   {
+    "texto": "Piscina, gimnasio, canchas deportivas y parques están dentro del proyecto. Usted y su familia tendrán todo cerca, sin salir de casa.",
+    "titulo": "Amenidades completas"
+   },
+   {
+    "texto": "El residencial cuenta con vigilancia las 24 horas y acceso controlado en la entrada. Esto aporta tranquilidad a su rutina diaria.",
+    "titulo": "Seguridad todos los días"
+   },
+   {
+    "texto": "Según el nivel, su apartamento incluye terraza, patio o un espacio exclusivo en el último piso. Es un lugar ideal para descansar o recibir visitas.",
+    "titulo": "Terrazas con espacio propio"
+   },
+   {
+    "texto": "Reserve con US$2,000 y complete el pago en tres momentos: firma, construcción y entrega. La primera etapa se entrega en diciembre de 2026.",
+    "titulo": "Pago cómodo y por etapas"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:12:11.437Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 160600,
+    "hab": 3,
+    "m2": 101
+   }
+  ],
+  "url": "",
+  "zona": "",
+  "id": "pmv76doevm8gk1"
+ },
+ {
+  "actualizado": "2026-10-14T20:13:33.748Z",
+  "amenidades": [
+   "Plaza comercial",
+   "Hotel ejecutivo de 114 habitaciones",
+   "Centro de convenciones",
+   "Oficinas",
+   "Cine",
+   "2 parques acuáticos",
+   "Piscinas",
+   "Piscina infantil",
+   "2 ríos lentos",
+   "Jacuzzi climatizado",
+   "Gimnasio techado",
+   "Área de coworking",
+   "Cancha de pádel",
+   "Mini golf",
+   "Cancha de voleibol de playa",
+   "Pool bar y BBQ"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Downtown",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Pearl Beach Club",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Blue Mall Punta Cana",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Puntacana Village",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Punta Cana Design District",
+    "tiempo": "2 min"
+   }
+  ],
+  "crm": {
+   "comision": "6.00%",
+   "contacto": "Ronal Mendez Externo- 849-460-0778",
+   "observaciones": ""
+  },
+  "descripcion": "Aura Boulevard es un proyecto en Punta Cana pensado para vivir y para invertir. Reúne plaza comercial, hotel ejecutivo, oficinas y numerosas amenidades en un mismo lugar.\nAquí encontrará piscinas, jacuzzi climatizado, parques acuáticos, ríos lentos y gimnasio techado. También hay zona infantil, área de mascotas, coworking, mini golf y cancha de pádel para todas las edades.\nSu ubicación, cerca del aeropuerto y de zonas de alto valor turístico, lo hace atractivo para renta vacacional y de largo plazo. Además, cuenta con respaldo legal y beneficios fiscales bajo CONFOTUR, que está en proceso.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué rentabilidad se estima por alquiler?",
+    "r": "El brochure estima una rentabilidad de 8% a 12% anual en ingresos por renta, para alquiler vacacional o de largo plazo."
+   },
+   {
+    "p": "¿Qué beneficios fiscales ofrece CONFOTUR?",
+    "r": "Exoneración del impuesto de transferencia (3%), del IPI (1%) por 15 años y del impuesto a la ganancia de capital si vende con CONFOTUR activo."
+   },
+   {
+    "p": "¿Cómo está la permisología del proyecto?",
+    "r": "Están aprobados el uso de suelos, el Ministerio de Turismo y el de Medio Ambiente. Mivhed está aprobado bajo supervisión, a la espera de INAPA. CONFOTUR sigue en proceso."
+   },
+   {
+    "p": "¿Qué tan cerca está del aeropuerto?",
+    "r": "El Aeropuerto Internacional de Punta Cana queda a unos 5 minutos del proyecto, lo que facilita el acceso a residentes y visitantes."
+   }
+  ],
+  "fotos": [
+   "b1bb801d39c213a7831a80d5532f5013",
+   "8e51f587e67911f918b1838d023f6d64",
+   "3fb41a366da68e4d458fe1d29efc22e2",
+   "f7ea786fea731e00e57eadcf7165d881",
+   "77e75ec4c9f1ffe178550169b085451a"
+  ],
+  "frase": "Viva e invierta en el corazón de Punta Cana",
+  "nombre": "Aura Boulevard",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El brochure estima una rentabilidad de 8% a 12% anual por renta. Es ideal para plataformas como Airbnb, Booking o rentas corporativas.",
+    "titulo": "Alta demanda de alquiler"
+   },
+   {
+    "texto": "Está en el centro del desarrollo de Punta Cana, cerca del aeropuerto, Downtown, las playas y zonas de alto valor turístico.",
+    "titulo": "Ubicación privilegiada"
+   },
+   {
+    "texto": "Con el crecimiento urbano y turístico de la zona, se proyecta una revalorización de más del 15% en los próximos 24 meses.",
+    "titulo": "Plusvalía proyectada"
+   },
+   {
+    "texto": "Incluye exoneración del impuesto de transferencia (3%) y del IPI (1%) por 15 años. El trámite de CONFOTUR sigue en proceso.",
+    "titulo": "Beneficios fiscales CONFOTUR"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:13:33.748Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 113220,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, La Altagracia",
+  "id": "pmv76dodf20eui"
+ },
+ {
+  "actualizado": "2026-10-15T21:45:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Axel Park es un proyecto de apartamentos en Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$1,420, con unidades de hasta US$5,288. La entrega está prevista para junio 2026.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Junio 2026",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Axel Park está en Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$1,420. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para junio 2026."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "b21d4811a6e1cfb6f8042dbbc747a0ad",
+   "10bc8d8bdaa4c98c4d106619b7196e6d"
+  ],
+  "frase": "Apartamentos en Punta Cana",
+  "nombre": "Axel Park",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$1,420, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para junio 2026, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 1420,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 5288,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/I2C8xCCZqwSGrZyrGmqwGS",
+  "zona": "Punta Cana",
+  "id": "pmv76dodgre81q"
+ },
+ {
+  "actualizado": "2026-10-14T20:19:22.219Z",
+  "amenidades": [
+   "4 piscinas",
+   "Casa club",
+   "Canchas de tenis y pádel",
+   "Canchas de baloncesto",
+   "Área infantil",
+   "Campo de golf de 9 hoyos",
+   "Acceso directo a la playa",
+   "Gimnasio",
+   "Seguridad privada"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa Arena Gorda (acceso directo)",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Aeropuerto",
+    "tiempo": "20 min"
+   },
+   {
+    "lugar": "Centros de salud",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Campo de golf",
+    "tiempo": "3 min"
+   }
+  ],
+  "crm": {
+   "comision": "—",
+   "contacto": "Bethzaida Sosa",
+   "observaciones": ""
+  },
+  "descripcion": "Baliza Residences es un proyecto dentro de White Sands Golf & Beach Resorts, en Bávaro. Ofrece apartamentos, penthouses y villas, con terrazas amplias, jardines y acabados de alta gama.\nAquí se vive con calma y comodidad. Cuenta con casa club, piscinas, canchas deportivas, gimnasio y área infantil. Además, tendrá acceso directo a la playa Arena Gorda y un campo de golf de 9 hoyos.\nPunta Cana es un destino turístico de gran demanda. Por eso, Baliza resulta una opción atractiva para quien desea disfrutar de la propiedad o generar ingresos con rentas fijas o de corto plazo.",
+  "direccion": "White Sands Golf & Beach Resorts, Bávaro, Punta Cana, municipio La Altagracia",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde se encuentra el proyecto?",
+    "r": "Baliza Residences está en White Sands Golf & Beach Resorts, en Bávaro, Punta Cana, municipio La Altagracia, provincia La Altagracia."
+   },
+   {
+    "p": "¿Qué tipos de unidades ofrece?",
+    "r": "Ofrece 60 apartamentos de 1 habitación, 144 de 2 habitaciones, 48 penthouses de 3 habitaciones y 8 villas de 3 y 4 habitaciones, para 262 unidades."
+   },
+   {
+    "p": "¿Qué incluyen las unidades?",
+    "r": "La cocina incluye estufa, horno y extractor. Los dormitorios incluyen aire acondicionado, luminarias y calentador eléctrico. La sala incluye aire acondicionado y luminarias."
+   },
+   {
+    "p": "¿Desde qué precio se ofrecen?",
+    "r": "Los apartamentos parten desde 106 m² y US$137,762.56. Las villas parten desde 163.76 m² y US$302,956.00."
+   }
+  ],
+  "fotos": [
+   "aaa5764d1a1e357780c45f55ccfebf69",
+   "2c715d0a11cb870701fa85443adec790",
+   "c6f8deab63492d07f89bd5ff507d436e",
+   "30448e5dca98024a7ff76d58809d48be",
+   "5d5d5d3e69fa2d56e27727b592a3c464",
+   "ba0a6784deaf2bbcaeb6f580cf4ee6f0"
+  ],
+  "frase": "Elegancia serena junto al golf y la playa",
+  "nombre": "Baliza Residences",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está en White Sands, Bávaro, junto a la playa Arena Gorda. El campo de golf queda a 3 minutos y el aeropuerto a 20.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "Punta Cana es un destino turístico de gran demanda. El proyecto permite pensar en rentas fijas o de corto plazo.",
+    "titulo": "Potencial de rentabilidad"
+   },
+   {
+    "texto": "Combina diseño inteligente, acabados de alta gama y espacios abiertos. Las unidades incluyen aire acondicionado, luminarias y calentador eléctrico en los dormitorios.",
+    "titulo": "Construcción de calidad"
+   },
+   {
+    "texto": "Reúne piscinas, casa club, canchas, gimnasio, área infantil y seguridad privada. Todo pensado para disfrutar en familia.",
+    "titulo": "Vida de resort"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:19:22.219Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 112253,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 137762,
+    "hab": 2,
+    "m2": 106
+   },
+   {
+    "banos": 0,
+    "desde": 277016,
+    "hab": 3,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "White Sands, Bávaro, Punta Cana",
+  "id": "pmv76dodhzw5fd"
+ },
+ {
+  "actualizado": "2026-10-14T21:10:00.000Z",
+  "amenidades": [
+   "Fideicomiso"
+  ],
+  "brochureUrl": "https://drive.usercontent.google.com/download?id=13Sp-nArFUGIW8rIb8-8W7cEMxYhc-t-r&export=download&confirm=t",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "Wilmer Collado",
+   "observaciones": ""
+  },
+  "descripcion": "Boca Residence es un proyecto de apartamentos en Carretera Jubey, Boca Chica. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$56,000, con unidades de hasta US$84,500. La entrega está prevista para abril y agosto 2029.\nEntre sus áreas y facilidades se encuentran: fideicomiso. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Abril y Agosto 2029",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Boca Residence está en Carretera Jubey, Boca Chica."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$56,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para abril y agosto 2029."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "6f22082bbf06e0a8a75ec6bd03c796fb",
+   "57376a3cabc0c2dbdd6ba4d22a32b19d",
+   "aefd090a0f3e459190c2b38738d76aa1",
+   "27968f005bb1506e6c4b93b14f91245f",
+   "d12f43e13dc28d1da8cc35e23cbd8e64",
+   "eaf1a7cad8a47c227d1eb9328daacf3d"
+  ],
+  "frase": "Apartamentos en Carretera Jubey",
+  "nombre": "Boca Residence",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Carretera Jubey, Boca Chica, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$56,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para abril y agosto 2029, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye fideicomiso, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-11-02T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 61600,
+    "hab": 2,
+    "m2": 53.5
+   },
+   {
+    "banos": 2,
+    "desde": 73150,
+    "hab": 3,
+    "m2": 67.55
+   }
+  ],
+  "url": "",
+  "zona": "Carretera Jubey, Boca Chica",
+  "id": "pmv76dod0kkejl"
+ },
+ {
+  "actualizado": "2026-10-13T18:58:59.152Z",
+  "amenidades": [
+   "Casa club de dos niveles",
+   "Salón para eventos con terraza en segundo nivel",
+   "Cancha de baloncesto",
+   "Área infantil",
+   "Áreas verdes y recreativas",
+   "Acceso controlado y vigilancia",
+   "Patio privado en primer nivel",
+   "Amplios balcones en niveles intermedios",
+   "Penthouses con terraza"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto",
+    "tiempo": "15 min"
+   }
+  ],
+  "descripcion": "Brisas del Prado es un complejo residencial desarrollado por Grupo BP, en la Av. Ecológica. Cada espacio ha sido pensado para ofrecer tranquilidad, comodidad y bienestar a toda la familia.\nAquí encontrará áreas verdes, una cancha de baloncesto, un área infantil y una casa club de dos niveles. Son lugares hechos para compartir, con acceso controlado y vigilancia en el entorno.\nSus apartamentos tienen buena distribución y acabados cuidados. El proyecto tendrá cuatro etapas y ofrece una vivienda cómoda hoy, con valor a futuro. Hoy está disponible la Etapa III.",
+  "direccion": "Av. Ecológica",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Qué tipo de apartamento ofrece el proyecto?",
+    "r": "El modelo tiene tres habitaciones y dos baños, sala y comedor, cocina y área de lavado. La habitación principal incluye walk in closet y baño integrado."
+   },
+   {
+    "p": "¿Cuántos parqueos tiene cada unidad?",
+    "r": "Según el modelo, las unidades cuentan con uno o dos parqueos."
+   },
+   {
+    "p": "¿Qué etapa está disponible?",
+    "r": "El proyecto tendrá cuatro etapas. Las etapas I y II están agotadas, y hoy está disponible la Etapa III."
+   },
+   {
+    "p": "¿Qué áreas sociales tiene el proyecto?",
+    "r": "Tendrá una casa club de dos niveles, un salón para eventos con terraza, una cancha de baloncesto y un área infantil."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/27307748abf33111800d00dfe1cfcaae.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/273234767ba14218d54cf966aa106b4e.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/aa69108002966905bac7a6953af208fc.jpg",
+   "9fba38ecba5fd33f0fb2c28e0d74ab0b",
+   "44b24eb7cfdbe79f7902055d8ae991b1",
+   "35b0aba27bd7705de4d04b40e236f7c0"
+  ],
+  "frase": "Un lugar para construir su próximo capítulo",
+  "nombre": "Brisas del Prado",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está en la Av. Ecológica, a 15 minutos del aeropuerto y con acceso a las autopistas de San Isidro y Nordeste.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "Sus apartamentos de tres habitaciones y dos baños tienen buena distribución, porcelanato de formato grande y cocina modular con tope de granito.",
+    "titulo": "Espacios bien pensados"
+   },
+   {
+    "texto": "Contará con casa club, cancha, área infantil y áreas verdes, en un entorno organizado, con acceso controlado y vigilancia.",
+    "titulo": "Vida en comunidad"
+   },
+   {
+    "texto": "Es un proyecto de alta proyección y valorización. Las etapas I y II ya están agotadas, y hoy está disponible la Etapa III.",
+    "titulo": "Inversión con valor a futuro"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:50:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 86500,
+    "hab": 3,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Av. Ecológica, Santo Domingo Este",
+  "id": "pmv1gqkbwsmpbr"
+ },
+ {
+  "actualizado": "2026-10-14T20:25:01.400Z",
+  "amenidades": [
+   "Residencial cerrado con garita de seguridad 24/7",
+   "Piscina para adultos y para niños",
+   "Cancha de pádel",
+   "Restaurante con bar",
+   "Gazebos tipo lounge",
+   "Salón de juegos de ping pong",
+   "Salón multiusos",
+   "Áreas de juegos para niños",
+   "Gimnasio en la casa club",
+   "Parqueos para visitas",
+   "Edificios de 5 niveles con ascensor"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Zona comercial",
+    "tiempo": "2 min"
+   },
+   {
+    "lugar": "Cocobongo",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Downtown Mall",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Adventure Park",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Pearl Beach Club",
+    "tiempo": "16 min"
+   },
+   {
+    "lugar": "Playas",
+    "tiempo": "18 min"
+   }
+  ],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Ariel Grasso",
+   "observaciones": ""
+  },
+  "descripcion": "Bávaro Island II es un residencial cerrado de apartamentos en Punta Cana. Ofrece unidades de 1, 2 y 3 habitaciones en edificios de cinco niveles, todos con ascensor.\nUsted encontrará piscinas para adultos y niños, cancha de pádel, casa club con restaurante y bar, y áreas de juego. Cada apartamento incluye sistema Alexa, cerradura inteligente y línea blanca.\nLa primera etapa ya fue entregada y cuenta con apartamento modelo para visitar. Además, el proyecto es Airbnb friendly, una opción interesante si desea generar ingresos con su inversión.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Enero 2029",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuándo se entregan los apartamentos?",
+    "r": "Las fechas de entrega previstas son enero de 2029, julio de 2029 y diciembre de 2029."
+   },
+   {
+    "p": "¿Cuánto cuesta el mantenimiento mensual?",
+    "r": "Es de US$1.50 por cada metro cuadrado del apartamento. Incluye agua, limpieza y mantenimiento de áreas comunes, recogida de basura y seguridad 24/7."
+   },
+   {
+    "p": "¿Qué incluye cada apartamento?",
+    "r": "Incluye cocina modular con tope de granito, línea blanca (nevera, estufa, horno y extractor), sistema Alexa y cerradura inteligente."
+   },
+   {
+    "p": "¿Puedo visitar un apartamento modelo?",
+    "r": "Sí. La primera etapa ya fue entregada y cuenta con un apartamento modelo disponible para visitar."
+   }
+  ],
+  "fotos": [
+   "2b3ce4ef2c9dcce3812ac5cb83abeeb2",
+   "fb7c6610941aa3444b3c180c97f4abd3",
+   "81997a12b7424891d57fa9dfb41df886",
+   "f1951da8dc22aa6cf3f4d2771d901278",
+   "3ac4ecee7bed51f8edb080b14c54fcd2",
+   "18a9dedbf133d46fdcccf6e7655acea2"
+  ],
+  "frase": "Vida tipo resort a minutos de las playas",
+  "nombre": "Bávaro Island II",
+  "origen": "crm",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está a 2 minutos de una zona comercial y a 20 minutos del Aeropuerto Internacional de Punta Cana. Las playas quedan a 18 minutos.",
+    "titulo": "Ubicación práctica"
+   },
+   {
+    "texto": "Cada apartamento incluye cocina modular con tope de granito, porcelanato, línea blanca, sistema Alexa y cerradura inteligente.",
+    "titulo": "Listo para estrenar"
+   },
+   {
+    "texto": "El proyecto es Airbnb friendly, lo que le permite considerar el alquiler turístico como parte de su inversión.",
+    "titulo": "Pensado para rentar"
+   },
+   {
+    "texto": "Grupo Luma cuenta con más de 1,500 unidades terminadas y entregadas, y más de 30 años de experiencia.",
+    "titulo": "Desarrolladora con trayectoria"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-11-02T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 72900,
+    "hab": 1,
+    "m2": 38
+   },
+   {
+    "banos": 1,
+    "desde": 96000,
+    "hab": 2,
+    "m2": 65
+   },
+   {
+    "banos": 2,
+    "desde": 124950,
+    "hab": 3,
+    "m2": 75
+   }
+  ],
+  "url": "",
+  "zona": "Pueblo Bávaro, Punta Cana",
+  "id": "pmv76dodkzxm1a"
+ }
+]

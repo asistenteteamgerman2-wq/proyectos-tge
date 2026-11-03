@@ -1,0 +1,1534 @@
+[
+ {
+  "actualizado": "2026-10-13T19:04:29.875Z",
+  "amenidades": [
+   "Gimnasio",
+   "Bar",
+   "Lobby de doble altura",
+   "climatizado y amueblado",
+   "Área de niños",
+   "Seguridad 24/7",
+   "Cerco eléctrico",
+   "Acceso vehicular y peatonal",
+   "Ascensores",
+   "Recepción"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Supermercado Nacional",
+    "tiempo": "6 min"
+   },
+   {
+    "lugar": "Acropolis Business Center",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Supermercado Bravo",
+    "tiempo": "9 min"
+   },
+   {
+    "lugar": "Blue Mall",
+    "tiempo": "12 min"
+   },
+   {
+    "lugar": "Aeropuerto Aila",
+    "tiempo": "35 min"
+   }
+  ],
+  "descripcion": "Torre Contempo Naco es un proyecto residencial de líneas modernas en aluminio y vidrio. Ofrece apartamentos de 3 habitaciones, con opciones que incluyen estudio, en un concepto abierto y luminoso.\nSu fachada de cristal permite disfrutar de vistas panorámicas. Los espacios están pensados para vivir con comodidad, con lobby de doble altura, gimnasio, área de niños y seguridad las 24 horas.\nLas cocinas modulares italianas, los pisos en mármol y porcelanato importado, y las puertas de madera italiana dan un acabado cuidado. Todo ello en una zona con supermercados y centros comerciales cercanos.",
+  "direccion": "Calle Rafael Hernández, Naco, Santo Domingo",
+  "disp": "Disponible",
+  "entrega": "Julio 2026",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para julio de 2026."
+   },
+   {
+    "p": "¿Cuál es el precio de partida y los tamaños disponibles?",
+    "r": "Los apartamentos parten desde US$470,000. Hay unidades desde 165 m² hasta 178 m², con 3 habitaciones, 3.5 baños y 2 parqueos."
+   },
+   {
+    "p": "¿Cuánto cuesta el mantenimiento?",
+    "r": "El mantenimiento es de aproximadamente US$2 por metro cuadrado."
+   },
+   {
+    "p": "¿Cómo es la forma de pago?",
+    "r": "Se reserva con US$2,000. Luego se paga 10% y 20% a la firma del contrato, 70% contra entrega. La separación no es reembolsable."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/201d04e11702311d2e5e0a9aae81e76c.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/36b05bfd014884b3e609a9c701d61100.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/ea9d7fcd5f6bc49a5ac78fce8411881f.jpg"
+  ],
+  "frase": "Vistas amplias y diseño moderno en el corazón de Naco",
+  "nombre": "Torre Contempo Naco",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 20,
+   "entregaPct": 70,
+   "firmaPct": 10,
+   "meses": 1,
+   "separacion": 2000
+  },
+  "porque": [
+   {
+    "texto": "Usted estará a 6 minutos del Supermercado Nacional y a 8 minutos de Acropolis Business Center.",
+    "titulo": "Ubicación en Naco"
+   },
+   {
+    "texto": "Cocinas modulares italianas con topes importados, pisos en mármol y porcelanato importado, y puertas de madera italiana.",
+    "titulo": "Acabados de calidad"
+   },
+   {
+    "texto": "Su fachada de aluminio y vidrio ofrece vistas panorámicas y ambientes abiertos, luminosos y llenos de claridad.",
+    "titulo": "Diseño moderno"
+   },
+   {
+    "texto": "El edificio cuenta con seguridad 24/7, cerco eléctrico, ascensores, gimnasio y 2 parqueos por apartamento.",
+    "titulo": "Comodidad y seguridad"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:10:42.820Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 3.5,
+    "desde": 470000,
+    "hab": 3,
+    "m2": 165
+   }
+  ],
+  "url": "",
+  "zona": "Naco, Santo Domingo",
+  "id": "pmv5qxuo424a3p"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Torre TBC es un proyecto de apartamentos en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Torre TBC está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en —",
+  "nombre": "Torre TBC",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dofb691b5"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [
+   "Línea blanca"
+  ],
+  "brochureUrl": "https://drive.usercontent.google.com/download?id=1qbD8MYaVsc-Yxpx6apC2a8eKjQcH_D0o&export=download&confirm=t",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Vigny Ceballos",
+   "observaciones": ""
+  },
+  "descripcion": "Tropicale es un proyecto de apartamentos en Vista Cana, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$111,500, con unidades de hasta US$202,000. La entrega está prevista para 30/09/2028.\nEntre sus áreas y facilidades se encuentran: línea blanca. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "30/09/2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Tropicale está en Vista Cana, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$111,500. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 30/09/2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Vista Cana",
+  "nombre": "Tropicale",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Vista Cana, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$111,500, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 30/09/2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye línea blanca, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 111500,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 158250,
+    "hab": 2,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 202000,
+    "hab": 3,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Vista Cana, Punta Cana",
+  "id": "pmv76doemkfxi1"
+ },
+ {
+  "actualizado": "2026-10-14T21:13:10.990Z",
+  "amenidades": [
+   "Piscina tipo resort",
+   "Jacuzzi hidromasajeador en la piscina",
+   "Área infantil de baja profundidad",
+   "Camas balinesas",
+   "Columpio",
+   "Terraza social con área BBQ moderna",
+   "Gimnasio totalmente equipado",
+   "Sauna",
+   "Salón multiuso",
+   "Cancha de pádel",
+   "Parqueos privados y de visita",
+   "Estación de carga para vehículos eléctricos",
+   "Ascensor",
+   "Garita de seguridad y portón eléctrico con intercomunicador"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Coco Bongo",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Zonas gastronómicas",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Supermercado Jumbo",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Las mejores playas",
+    "tiempo": "13 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "13 min"
+   }
+  ],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "UVE Residence es un proyecto de 21 apartamentos en Brisas de Punta Cana. Su arquitectura moderna tiene líneas limpias y espacios amplios, con acabados elegidos con cuidado.\nCada apartamento tiene 2 habitaciones y 2 baños. La planta baja cuenta con patio privado, el segundo nivel con vistas y los penthouses con roof top privado. Hay piscina tipo resort, gimnasio, sauna y cancha de pádel para su descanso.\nLa zona está en plena expansión y combina diseño, confort y proyección inmobiliaria. Los apartamentos miden entre 96 y 115 m² de construcción y vienen con línea blanca incluida. Es una opción pensada para vivir o para invertir.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "abril 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántos apartamentos tiene el proyecto?",
+    "r": "UVE Residence cuenta con 21 apartamentos de 2 habitaciones y 2 baños, con áreas de construcción desde 96 hasta 115 m²."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para abril de 2028."
+   },
+   {
+    "p": "¿Qué incluye el apartamento?",
+    "r": "Incluye línea blanca con horno, estufa eléctrica, extractor, nevera de dos puertas y 3 aires acondicionados. También trae preinstalación de aire, gas, Wi-Fi con fibra óptica y jacuzzi."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento?",
+    "r": "El mantenimiento es de US$200 para los apartamentos del primer y segundo nivel, y de US$230 para los penthouses."
+   }
+  ],
+  "fotos": [
+   "f733a82a883a3c471c1ada5444148529",
+   "969975764c0b8bb6ece4f4bcf0cd0bf6",
+   "0d418dac3c533fedbd4a65232524b624",
+   "b4271f7eaaf18a8df7f87fc4f130b7ca",
+   "90dec6e77ed875d17e1a93087adfa170",
+   "d4a199b45f76d8128cf71d9789ebeed7",
+   "6887b7c49489cc8427d22427984f4822"
+  ],
+  "frase": "Diseño moderno y confort en Brisas de Punta Cana",
+  "nombre": "Uve residence",
+  "origen": "crm",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Brisas de Punta Cana es una zona en pleno crecimiento. Usted queda a 5 minutos de Coco Bongo y del supermercado Jumbo.",
+    "titulo": "Ubicación en expansión"
+   },
+   {
+    "texto": "Pisos en porcelanato, cocina con topes de cuarzo, grifería negra anticorrosiva y puerta principal en madera de cedro o roble.",
+    "titulo": "Acabados de calidad"
+   },
+   {
+    "texto": "Su apartamento incluye horno, estufa eléctrica, extractor, nevera de dos puertas y 3 aires acondicionados. Así usted ahorra en equipar su hogar.",
+    "titulo": "Línea blanca incluida"
+   },
+   {
+    "texto": "Piscina tipo resort, gimnasio, sauna, cancha de pádel y terraza social con BBQ. Todo dentro del proyecto, con seguridad y portón eléctrico.",
+    "titulo": "Amenidades para disfrutar"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:13:10.990Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 144400,
+    "hab": 2,
+    "m2": 96
+   }
+  ],
+  "url": "",
+  "zona": "Brisas de Punta Cana, Punta Cana",
+  "id": "pmv76doeno0d3v"
+ },
+ {
+  "actualizado": "2026-10-13T19:01:31.992Z",
+  "amenidades": [
+   "Área social en rooftop",
+   "Piscina",
+   "2 jacuzzis",
+   "Gimnasio equipado",
+   "Sports bar lounge",
+   "Espacio de coworking",
+   "Cancha de pickleball",
+   "Terrazas amplias",
+   "Sala de juegos para niños",
+   "Lobby con aire acondicionado",
+   "Área de valet y drop-off",
+   "Early check-in y late check-out",
+   "Recepción y manejo de paquetes",
+   "Área de lavandería compartida",
+   "2 elevadores de última generación"
+  ],
+  "captador": "Robert Cavallo",
+  "captadorId": "cmun75ocyj10s",
+  "captadorTel": "849 459 9221",
+  "cercanias": [
+   {
+    "lugar": "World Trade Center",
+    "tiempo": "500 m"
+   },
+   {
+    "lugar": "BlueMall Santo Domingo",
+    "tiempo": "500 m"
+   },
+   {
+    "lugar": "Sirena Churchill",
+    "tiempo": "400 m"
+   },
+   {
+    "lugar": "Distrito Piantini",
+    "tiempo": "600 m"
+   },
+   {
+    "lugar": "Hotel Intercontinental",
+    "tiempo": "900 m"
+   },
+   {
+    "lugar": "Acrópolis Center",
+    "tiempo": "800 m"
+   }
+  ],
+  "descripcion": "Valenza Tower es un proyecto de apartamentos de 1 habitación con den y de 2 habitaciones, ubicado en Av. Gustavo Mejía Ricart, a solo dos cuadras de BlueMall Santo Domingo.\nAquí usted vive rodeado de restaurantes, tiendas, oficinas corporativas y las principales avenidas de la ciudad. Un lugar pensado para quienes buscan comodidad urbana y vida moderna todos los días.\nPor su cercanía al distrito financiero y hotelero de la capital, Valenza es ideal para alquiler corporativo y estadías cortas, lo que lo convierte en una inversión con alta demanda garantizada.",
+  "direccion": "Av. Gustavo Mejía Ricart",
+  "disp": "Disponible",
+  "entrega": "diciembre 2030",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuándo se entrega Valenza Tower?",
+    "r": "La entrega está programada para diciembre de 2030."
+   },
+   {
+    "p": "¿Cuál es el precio inicial de los apartamentos?",
+    "r": "Los apartamentos de 1 habitación con den y 2 habitaciones inician en US$149,000."
+   },
+   {
+    "p": "¿Cuántos parqueos tiene cada unidad?",
+    "r": "Cada apartamento incluye un espacio de parqueo."
+   },
+   {
+    "p": "¿Qué amenidades ofrece el proyecto?",
+    "r": "Rooftop, piscina, jacuzzis, gimnasio, coworking, pickleball y más espacios para residentes."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/9a4052a91fbbddc7a72070503373dc37.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/d1e6075dd848148f0f08cd4c0355a40f.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/cf2e06ed3e2c493518db7882606186c7.jpg",
+   "9cff4593683f006d7bec0a9358b89373",
+   "cc74884ed762a4cff5be9c2e51a25ef3"
+  ],
+  "frase": "donde la ubicación se convierte en rentabilidad",
+  "nombre": "Valenza Tower",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 40,
+   "entregaPct": 50,
+   "firmaPct": 10,
+   "meses": 0,
+   "separacion": 3000
+  },
+  "porque": [
+   {
+    "texto": "A solo 500 metros de BlueMall y del distrito financiero y hotelero de Santo Domingo.",
+    "titulo": "Ubicación privilegiada"
+   },
+   {
+    "texto": "Pensado para renta corporativa y estadías cortas en una de las zonas de mayor plusvalía de la ciudad.",
+    "titulo": "Alta demanda de alquiler"
+   },
+   {
+    "texto": "Rooftop, piscina, gimnasio, coworking y cancha de pickleball, entre otros espacios exclusivos.",
+    "titulo": "Amenidades de alto nivel"
+   },
+   {
+    "texto": "Apartamentos de 1 habitación con den y de 2 habitaciones, pensados para invertir mejor.",
+    "titulo": "Diseño inteligente"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:50:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 149000,
+    "hab": 1,
+    "m2": 50
+   },
+   {
+    "banos": 2,
+    "desde": 165078,
+    "hab": 2,
+    "m2": 59.1
+   }
+  ],
+  "url": "",
+  "zona": "Piantini, Santo Domingo",
+  "id": "pmurfkj9s6av9y"
+ },
+ {
+  "actualizado": "2026-10-14T21:15:44.252Z",
+  "amenidades": [
+   "Control de acceso",
+   "Lobby",
+   "Áreas sociales",
+   "Casa club",
+   "Parque temático",
+   "Anfiteatro",
+   "Parque acuático",
+   "Área deportiva",
+   "Área comercial",
+   "Piscina",
+   "Restaurante",
+   "Cigar lounge",
+   "Cancha de baloncesto",
+   "Cancha de pádel",
+   "Zona de golf",
+   "Spa"
+  ],
+  "brochureUrl": "https://www.dropbox.com/scl/fo/sle2x6veolg3tsubkdur5/h/1.%20PRESENTACIONES%20PARA%20CLIENTES?rlkey=andotvvgozqf3z1jsfoxtiszu&dl=1",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto de Punta Cana",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Almances Unidos",
+    "tiempo": "7 min"
+   },
+   {
+    "lugar": "Downtown",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Las mejores playas de Punta Cana",
+    "tiempo": "15 min"
+   }
+  ],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Velero II es un proyecto de apartamentos de estilo caribeño contemporáneo. Está en el Boulevard Turístico del Este, dentro de un parque temático y resort. Son 15 edificios y 420 apartamentos, organizados alrededor de una casa club propia.\nCada manzana cuenta con piscina, gazebo y jardines propios, además de un parque central para todos los propietarios. También encontrará anfiteatro, gimnasio, cancha de pádel, restaurante y spa. Es un lugar pensado para el descanso y el bienestar.\nLos apartamentos son de 1 y 3 habitaciones, con áreas desde 47.78 hasta 104.65 m². Tienen cocina modular, pisos en porcelanato y closets en madera preciosa. Con precios desde US$95,000, es una buena opción para quien desea su lugar en Punta Cana.",
+  "direccion": "Boulevard Turístico del Este, Punta Cana",
+  "disp": "Disponible",
+  "entrega": "Octubre 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuándo se entregan los apartamentos?",
+    "r": "El brochure indica entregas en 2028 y 2029. La tabla de precios señala el 30 de octubre de 2028 como fecha de entrega."
+   },
+   {
+    "p": "¿Cómo es la forma de pago?",
+    "r": "Se separa con US$1,000. Luego se paga el 10% a la firma del contrato, el 30% en 23 cuotas durante la construcción y el 60% contra entrega."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento?",
+    "r": "El mantenimiento aproximado es de US$200 para los apartamentos del primer y segundo nivel, y de US$230 para los penthouses."
+   },
+   {
+    "p": "¿Qué debo saber sobre la separación y los gastos?",
+    "r": "La separación no es reembolsable. Los costos de transferencia son responsabilidad del cliente. El recibo se emite por el monto reflejado en la cuenta de la constructora."
+   }
+  ],
+  "fotos": [
+   "9429c62fa662a2f5e6d69d4eec6dc1ef",
+   "0fcf56010bd0a815e477c9dea294ca7a",
+   "5362b6a5617622d4d9d55fb4067ae2bc",
+   "adf644006083597969c842e781aca17e",
+   "0409a62eff281e86c689cfdda385834f",
+   "5ca8b5a92ce4530eb10e60b0227ecedc"
+  ],
+  "frase": "Su apartamento en el corazón turístico de Punta Cana",
+  "nombre": "Velero",
+  "origen": "crm",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 30,
+   "entregaPct": 60,
+   "firmaPct": 10,
+   "meses": 23,
+   "separacion": 1000
+  },
+  "porque": [
+   {
+    "texto": "Está en el Boulevard Turístico del Este, en el corazón turístico de Punta Cana. El aeropuerto queda a solo 5 minutos.",
+    "titulo": "Ubicación privilegiada"
+   },
+   {
+    "texto": "El proyecto está dentro de un parque temático y resort, con casa club, parque acuático, restaurante, spa y áreas deportivas.",
+    "titulo": "Un resort para vivir"
+   },
+   {
+    "texto": "Los apartamentos incluyen pisos en porcelanato, cocina modular, closets en madera preciosa y fachada con piedra natural importada.",
+    "titulo": "Acabados de calidad"
+   },
+   {
+    "texto": "Con una reserva de US$1,000, puede pagar el 30% en cuotas durante la construcción y el 60% contra entrega.",
+    "titulo": "Pago a su ritmo"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:15:44.252Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 95000,
+    "hab": 1,
+    "m2": 47.78
+   },
+   {
+    "banos": 3,
+    "desde": 187100,
+    "hab": 3,
+    "m2": 104.65
+   }
+  ],
+  "url": "",
+  "zona": "Autovia del Este cerca Aeropuerto, Punta Cana",
+  "id": "pmv76doeof30ur"
+ },
+ {
+  "actualizado": "2026-10-13T21:52:35.661Z",
+  "amenidades": [
+   "Área de club",
+   "Área de BBQ",
+   "Piscina para residentes",
+   "Plaza comercial con dos alas",
+   "Opción de amenidades privadas",
+   "Patio posterior"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa",
+    "tiempo": "3 min"
+   }
+  ],
+  "descripcion": "View Macao III es una comunidad exclusiva de 47 villas de estilo contemporáneo y minimalista. Hay modelos de dos y tres habitaciones, de uno y dos niveles, con espacios abiertos y patio.\nLa comunidad cuenta con área de club, área de BBQ y piscina para los residentes. También ofrece una plaza comercial con dos alas y la opción de adquirir amenidades privadas.\nSe encuentra a 3 minutos de la playa y cerca de la vía principal que va al aeropuerto. Por su ubicación y su fácil mantenimiento, es una opción práctica para vivir o para invertir en alquiler turístico.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántas villas tiene el proyecto?",
+    "r": "View Macao III es una comunidad exclusiva de 47 villas contemporáneas y minimalistas, de 2 y 3 habitaciones."
+   },
+   {
+    "p": "¿Cuál es el precio inicial?",
+    "r": "Las villas de 2 habitaciones y 76 m² parten desde US$129,900. Las de 3 habitaciones parten desde US$174,900."
+   },
+   {
+    "p": "¿Qué amenidades incluye?",
+    "r": "Los residentes cuentan con área de club, área de BBQ y piscina. También pueden adquirir amenidades privadas."
+   },
+   {
+    "p": "¿Es una buena opción para alquilar?",
+    "r": "Sí. El proyecto señala que sus propiedades son ideales como inversión Airbnb, por ser prácticas, bien ubicadas y de fácil mantenimiento."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/4a737f1838c86fd012c054acf17f0717.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/503dab3d9d135113d7df46d1d9f623f7.jpg",
+   "8d9bf6d0b88babb978e74dacd331dbd4",
+   "24c72d21d4c26c9900db0c9d50e4d97d",
+   "bd852d1eb462c16aa2329d1d1a52f731"
+  ],
+  "frase": "Su villa en Punta Cana, a minutos de la playa",
+  "nombre": "View Macao III",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "La playa queda a solo 3 minutos. Usted disfruta del mar y del clima tropical sin recorridos largos.",
+    "titulo": "Cerca de la playa"
+   },
+   {
+    "texto": "Está cerca de la vía principal que va directo al aeropuerto. Llegar a cualquier punto de la ciudad es sencillo.",
+    "titulo": "Buena conexión"
+   },
+   {
+    "texto": "Sus villas son ideales como inversión para Airbnb. Son prácticas, están bien ubicadas y su mantenimiento es fácil.",
+    "titulo": "Pensada para invertir"
+   },
+   {
+    "texto": "Cuenta con área de club, zona de BBQ y piscina. Además, usted puede adquirir amenidades privadas.",
+    "titulo": "Vida en comunidad"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-06T18:48:03.819Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 129900,
+    "hab": 2,
+    "m2": 76
+   },
+   {
+    "banos": 2,
+    "desde": 174900,
+    "hab": 3,
+    "m2": 105
+   }
+  ],
+  "url": "",
+  "zona": "Macao, Punta Cana",
+  "id": "pmux17ai4mu85h"
+ },
+ {
+  "actualizado": "2026-10-16T18:45:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Lista",
+  "estado": "Terminado",
+  "faq": [],
+  "fotos": [
+   "5c9646e3c19918b8cb0b1ce3b008cc98"
+  ],
+  "frase": "Villa lista para entrega",
+  "nombre": "Villa Santa María",
+  "origen": "dropbox",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [],
+  "precioRef": false,
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "",
+  "id": "pmvsantamaria1"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Villa palmera XVIII es un proyecto de villas en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Villa palmera XVIII está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Villas en —",
+  "nombre": "Villa palmera XVIII",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dofcjm5k6"
+ },
+ {
+  "actualizado": "2026-10-14T21:30:00.000Z",
+  "amenidades": [
+   "Patio"
+  ],
+  "brochureUrl": "https://www.dropbox.com/scl/fo/kfr6w18k1du4wohy8yu6w/AExGTyPq55rW7TEQvpBIHaY/1.%20Brochure?rlkey=t521w0n2jkifyk9hzkrn0kuhp&dl=1",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Ariel grasso",
+   "observaciones": ""
+  },
+  "descripcion": "Villas Coral II es un proyecto de villas en Residencial Bávaro Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$153,000. La entrega está prevista para 30/04/2028.\nEntre sus áreas y facilidades se encuentran: patio. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "30/04/2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Villas Coral II está en Residencial Bávaro Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$153,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 30/04/2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "975e114b67a21d46c2d095f5455d4876",
+   "1d0272b422ae430917d77bf313be69c0",
+   "f30519cdab14d333eb3e237c35ddd79b",
+   "abb123ccadc4b055b41909b82e73d2e6",
+   "50143ce2f3883808b919d4c50314b31b",
+   "85bc012e00452f0f4d26536a0296546a"
+  ],
+  "frase": "Villas en Residencial Bávaro Punta Cana",
+  "nombre": "Villas Coral II",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Residencial Bávaro Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$153,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 30/04/2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye patio, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 153000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Residencial Bávaro Punta Cana",
+  "id": "pmv76doep0o0q4"
+ },
+ {
+  "actualizado": "2026-10-13T19:04:42.842Z",
+  "amenidades": [
+   "comunidad cerrada con control de acceso",
+   "seguridad 24/7",
+   "piscina y pergolado",
+   "terraza",
+   "gazebo",
+   "marquesina",
+   "balcones"
+  ],
+  "captador": "Robert Cavallo",
+  "captadorId": "cmun75ocyj10s",
+  "captadorTel": "849 459 9221",
+  "cercanias": [
+   {
+    "lugar": "plazas, supermercados, bancos, restaurantes y universidades",
+    "tiempo": "12 min"
+   },
+   {
+    "lugar": "playa Juanillo y Api Beach",
+    "tiempo": "12 min"
+   },
+   {
+    "lugar": "aeropuerto internacional de Punta Cana",
+    "tiempo": "10 min"
+   }
+  ],
+  "descripcion": "Villas duplex ubicadas en Ciudad las Canas, Cap Cana, con entrega en 2025. Cuentan con 3 habitaciones, 3.5 baños, 2 parqueos y áreas desde 365 hasta 374 metros cuadrados.\nSe vive en una comunidad cerrada con control de acceso y seguridad las 24 horas. Sus acabados incluyen cocina modular con tope de cuarzo y porcelanato importado en todos los ambientes.\nConviene por su ubicación estratégica a pocos minutos del aeropuerto, el downtown y las principales playas, con facilidades de pago de hasta 24 meses.",
+  "direccion": "Ciudad las Canas, Cap Cana",
+  "disp": "Disponible",
+  "entrega": "2025",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿de cuántas habitaciones son las villas?",
+    "r": "todas las villas duplex tienen 3 habitaciones, con master room y baño privado."
+   },
+   {
+    "p": "¿qué incluye el mantenimiento?",
+    "r": "el mantenimiento incluye piscina y pergolado, con un costo aproximado de usd$102."
+   },
+   {
+    "p": "¿cómo es la forma de pago?",
+    "r": "reserva de usd$5,000, 20% a la firma, 40% durante la construcción en 24 cuotas y 40% contra entrega."
+   },
+   {
+    "p": "¿cuándo se entrega el proyecto?",
+    "r": "la entrega está prevista para el año 2025."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/fac2b7ef3ed9eb6129dcaaeb3f182140.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/1641fef0b1fbd3c0febfa9de956b13cc.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/08b516119a632209417b7c0e19e086a2.jpg",
+   "18676e3ebfa97f5f736b821b9a773ae5",
+   "fb2d2f89043a1b98c5168878af00a7b1",
+   "b4827bc4c281e08fb368c1842237f96d"
+  ],
+  "frase": "su villa de lujo cerca de todo en Cap Cana",
+  "nombre": "Villas Duplex Punta Cana",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "está a minutos del aeropuerto, el downtown y las principales playas de Punta Cana.",
+    "titulo": "ubicación privilegiada"
+   },
+   {
+    "texto": "cocina modular con tope de cuarzo, porcelanato importado y puertas en madera preciosa.",
+    "titulo": "acabados de calidad"
+   },
+   {
+    "texto": "comunidad cerrada con control de acceso y seguridad las 24 horas.",
+    "titulo": "seguridad y privacidad"
+   },
+   {
+    "texto": "puede financiar hasta en 24 cuotas mientras se construye su villa.",
+    "titulo": "facilidades de pago"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-09-30T20:55:11.213Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 4,
+    "desde": 475000,
+    "hab": 3,
+    "m2": 365
+   }
+  ],
+  "url": "",
+  "zona": "Ciudad las Canas, Cap Cana, Punta Cana",
+  "id": "pmuol3nu56mh5e"
+ },
+ {
+  "actualizado": "2026-10-13T19:00:18.116Z",
+  "amenidades": [
+   "Piscina privada en cada villa",
+   "Terraza techada con pergolado",
+   "Comunidad cerrada con seguridad 24/7",
+   "Campo de golf iluminado de 9 hoyos",
+   "Lago de agua dulce y salada",
+   "Zonas verdes y circuito ecológico",
+   "Senderos para running",
+   "Circuitos de ciclismo",
+   "Pesca deportiva",
+   "Zona para yoga",
+   "Colegios bilingües",
+   "Espacios de co-working y co-office",
+   "Restaurantes de clase mundial"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playas",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Centros comerciales",
+    "tiempo": "7 min"
+   },
+   {
+    "lugar": "Downtown Mall",
+    "tiempo": "7 min"
+   },
+   {
+    "lugar": "Hard Rock Café",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Blue Mall",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional",
+    "tiempo": "20 min"
+   }
+  ],
+  "descripcion": "Este proyecto reúne 16 villas dúplex en Vista Cana, en Punta Cana. Cada villa tiene 166.5 m² de construcción, con terraza de 22 m² y balcones de 12 m². Hay modelos de 2 y 3 habitaciones.\nUsted vivirá en una comunidad cerrada, con control de acceso y seguridad las 24 horas. Cada villa cuenta con piscina privada, terraza techada y marquesina para dos vehículos. Cerca encontrará campo de golf, lago, senderos y restaurantes.\nEl precio incluye línea blanca, pergolado de parqueo, piscina y pergolado de terraza. Vista Cana es un proyecto ideal para vivir o invertir. La entrega está prevista para 2026.",
+  "direccion": "Vista Cana, Punta Cana",
+  "disp": "Disponible",
+  "entrega": "2026",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuál es el precio de las villas?",
+    "r": "Las villas de 2 y 3 habitaciones tienen un precio de venta de USD $290,000. Los costos de transferencia son responsabilidad del cliente."
+   },
+   {
+    "p": "¿Qué incluye el precio?",
+    "r": "Incluye línea blanca (estufa, extractor y lavadora tipo torre), pergolado de parqueo, piscina y pergolado de terraza."
+   },
+   {
+    "p": "¿Cómo es la forma de pago?",
+    "r": "Se separa con USD $2,000, no reembolsables. Hasta la firma del contrato se paga el 15 %, luego 25 % en 21 cuotas durante la construcción y 60 % contra entrega."
+   },
+   {
+    "p": "¿Cuándo se entrega el proyecto?",
+    "r": "La entrega está prevista para 2026."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/65d3728ed385af18abeb4477b4631b09.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/0ca286f2fa6987d93dcbffb5d5bcd214.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/a138f84c9610b5028b27bfba6c0bd7d8.jpg",
+   "7f9a81a6df3bc397ba73593c7255325b",
+   "a754e64e80ce9a450e2b74e3bb334c71",
+   "f1261480c419b287907c8deb0e50e963"
+  ],
+  "frase": "Villas dúplex con piscina en comunidad cerrada",
+  "nombre": "Villas Dúplex at Vista Cana",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 25,
+   "entregaPct": 60,
+   "firmaPct": 15,
+   "meses": 21,
+   "separacion": 2000
+  },
+  "porque": [
+   {
+    "texto": "Vista Cana está en una de las zonas más apreciadas de Punta Cana. Las playas quedan a 15 minutos y el aeropuerto a 20 minutos.",
+    "titulo": "Ubicación privilegiada"
+   },
+   {
+    "texto": "Las villas tienen porcelanato importado, cocina con tope de granito natural, puertas de madera preciosa y grifería de alta calidad.",
+    "titulo": "Terminaciones de calidad"
+   },
+   {
+    "texto": "El precio incluye línea blanca, piscina, pergolado de terraza y pergolado de parqueo para dos vehículos.",
+    "titulo": "Todo incluido para estrenar"
+   },
+   {
+    "texto": "Vista Cana es una comunidad pensada para residir o invertir. Además, puede contar con una administración profesional para el alquiler de su villa.",
+    "titulo": "Para vivir o invertir"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:08:25.215Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 2.5,
+    "desde": 290000,
+    "hab": 2,
+    "m2": 166.5
+   },
+   {
+    "banos": 2.5,
+    "desde": 290000,
+    "hab": 3,
+    "m2": 166.5
+   }
+  ],
+  "url": "",
+  "zona": "Vista Cana, Punta Cana",
+  "id": "pmv5quwhr8szbq"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Villas del Sol es un proyecto de villas en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Villas del Sol está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Villas en —",
+  "nombre": "Villas del Sol",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dofd9d8sd"
+ },
+ {
+  "actualizado": "2026-10-14T21:10:00.000Z",
+  "amenidades": [
+   "Línea blanca"
+  ],
+  "brochureUrl": "https://drive.usercontent.google.com/download?id=1oZo-fmSWOSnAV8xG3FLXdqqxgxZjIdvo&export=download&confirm=t",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Yolanda",
+   "observaciones": ""
+  },
+  "descripcion": "White Palms es un proyecto de apartamentos en White Sands, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$324,650, con unidades de hasta US$394,000. La entrega está prevista para 31/10/2026 30/04/2027.\nEntre sus áreas y facilidades se encuentran: línea blanca. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "31/10/2026 30/04/2027",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "White Palms está en White Sands, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$324,650. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 31/10/2026 30/04/2027."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "ce3d413491f21b2ccf2d6e2599a9f007",
+   "bea847bf494c4263f87c015a30d90116",
+   "5a0d79c5f31cab51d3ce231cc139cece",
+   "af811aeea032eba0a5c6742299f5590f"
+  ],
+  "frase": "Apartamentos en White Sands",
+  "nombre": "White Palms",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en White Sands, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$324,650, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 31/10/2026 30/04/2027, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye línea blanca, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 324650,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 394000,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "White Sands, Punta Cana",
+  "id": "pmv76doeqzcotj"
+ },
+ {
+  "actualizado": "2026-10-14T21:10:00.000Z",
+  "amenidades": [],
+  "brochureUrl": "https://drive.usercontent.google.com/download?id=1DBryETQ09ithPGkGT0Y-fYjL9qIrTzs3&export=download&confirm=t",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Yolanda",
+   "observaciones": ""
+  },
+  "descripcion": "White Palms Condos es un proyecto de apartamentos en White Sands, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$184,900, con unidades de hasta US$238,900. La entrega está prevista para 30/04/2028.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "30/04/2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "White Palms Condos está en White Sands, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$184,900. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 30/04/2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "a95eba4c37787ba35f15f4d3d858a940",
+   "17fa87cb4ad4de4372e68298133254d6",
+   "72a85592c4b8ea352adcce00aea90630",
+   "6b1e8eb8ebf7f37fd3718a0189947b56"
+  ],
+  "frase": "Apartamentos en White Sands",
+  "nombre": "White Palms Condos",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en White Sands, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$184,900, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 30/04/2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 184900,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 228900,
+    "hab": 2,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 238900,
+    "hab": 3,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "White Sands, Punta Cana",
+  "id": "pmv76doeru0lq1"
+ },
+ {
+  "actualizado": "2026-10-14T21:15:00.000Z",
+  "amenidades": [
+   "Línea blanca"
+  ],
+  "brochureUrl": "https://drive.usercontent.google.com/download?id=1oTLlA7uLEaV4WewGRtSq-E5cQgA258NA&export=download&confirm=t",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "6.00%",
+   "contacto": "Esteban González (Ing)",
+   "observaciones": ""
+  },
+  "descripcion": "Zayes es un proyecto de apartamentos en Vista Cana, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$256,985, con unidades de hasta US$287,370. La entrega está prevista para 31/12/2027.\nEntre sus áreas y facilidades se encuentran: línea blanca. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "31/12/2027",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Zayes está en Vista Cana, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$256,985. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 31/12/2027."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "6ed6f0254de26107f893c09b897f109a",
+   "1966401f7e61e2b05aac5f75bd6e3f1b",
+   "424ca0c5172b5b19967a785df7d8387e",
+   "7d7513a43a70911dbc769ea93cf240de"
+  ],
+  "frase": "Apartamentos en Vista Cana",
+  "nombre": "Zayes",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Vista Cana, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$256,985, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 31/12/2027, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye línea blanca, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 256985,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 287370,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Vista Cana, Punta Cana",
+  "id": "pmv76doeskvpx3"
+ }
+]

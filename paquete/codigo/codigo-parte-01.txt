@@ -1,0 +1,721 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Proyectos TGE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Poppins:wght@400;500;600&display=swap">
+<style>
+/* Layout: sticky brand bar → filter strip → one shelf per bedroom count → captadores directory; landing opens as a full-screen layer. */
+:root{
+  --navy:#0A1A3F; --navy-2:#132A5E; --red:#DC1C2E; --red-ink:#B5121F;
+  --bg:#FFFFFF; --surface:#FFFFFF; --fg:#0E1733; --muted:#56607A; --line:#DDE2EE; --chip:#E7EBF5;
+  --on-navy:#FFFFFF; --focus:#DC1C2E;
+  --display:"Lora", Georgia, "Times New Roman", serif;
+  --body:"Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r:10px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+.num{font-variant-numeric:tabular-nums}
+body.locked{overflow:hidden}
+
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:var(--on-navy);border-bottom:3px solid var(--red)}
+.bar .wrap{display:flex;align-items:center;gap:16px;padding-block:12px;flex-wrap:wrap}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.mark .logo{display:block;height:52px;width:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}.gate .mark .logo{height:72px}
+.mark b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--red);font-family:var(--display);font-weight:600;font-size:15px;flex:none}
+.mark span{display:flex;flex-direction:column;line-height:1.2;min-width:0}
+.mark strong{font-size:13px;letter-spacing:.14em;font-weight:600}
+.mark small{font-size:12px;opacity:.75}
+.bar nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.bar nav a{font-size:13px;text-decoration:none;padding:8px 12px;border-radius:999px;opacity:.9}
+.bar nav a:hover{background:rgba(255,255,255,.1);opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:10px 18px;font-weight:500;font-size:14px;cursor:pointer;text-decoration:none;white-space:nowrap}
+.btn:disabled{opacity:.55;cursor:default}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover:not(:disabled){filter:brightness(1.08)}
+.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--fg)}
+.btn-ghost:hover{border-color:var(--muted)}
+.btn-sm{padding:6px 12px;font-size:13px}
+
+.intro{padding-block:40px 8px}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:600;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--red)}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(30px,5vw,46px);line-height:1.1;margin:12px 0 10px;text-wrap:balance}
+h1 i{font-weight:500}
+.lede{color:var(--muted);max-width:62ch;margin:0}
+
+.filters{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:flex-end;padding:18px 20px;background:#F6F7FA;border:1px solid var(--line);border-radius:var(--r)}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field>label,.field>.lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:transparent;border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--navy-2);border-color:var(--navy-2);color:#fff}
+.tp-wrap{position:relative}
+.tp-btn{display:inline-flex;align-items:center;gap:8px;cursor:pointer;font:inherit;font-size:14px;color:inherit;white-space:nowrap}
+.tp-btn svg{transition:transform .15s}.tp-btn[aria-expanded="true"] svg{transform:rotate(180deg)}
+.tp-pop{position:absolute;top:calc(100% + 6px);left:0;z-index:30;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 32px rgba(10,26,63,.16);padding:12px;width:min(300px,calc(100vw - 48px));display:flex;flex-wrap:wrap;gap:6px}
+.tp-pop[hidden]{display:none}
+.ctl{border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 12px;min-width:0}
+textarea.ctl{resize:vertical;min-height:84px;line-height:1.5}
+.grow{flex:1 1 220px}
+.grow .ctl{width:100%}
+
+.shelf{padding-block:36px 4px;scroll-margin-top:80px}
+.btn-white{background:#fff;color:var(--navy);font-weight:600}
+.bar .btn{padding:8px 14px;font-size:13px}
+.bar .wrap{gap:10px;max-width:1400px}
+.bar nav{display:none}
+.bar .who{margin-left:auto}
+.bar .mark{margin-right:auto}
+.btn-white:hover{background:#EEF1F7}
+.tabs button{border:0;background:transparent;color:#fff;border-radius:999px;padding:8px 16px;font-size:14px;font-weight:500;cursor:pointer;opacity:.85}
+.tabs button[aria-selected="true"]{background:#fff;color:var(--navy);opacity:1}
+.admin-view{padding-block:32px 56px;display:flex;flex-direction:column;gap:24px}
+.admin-view .crm{margin-bottom:0}
+#equipo,#crm,#histCard{scroll-margin-top:90px}
+.shelf-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:18px}
+.shelf-head h2{font-family:var(--display);font-weight:600;font-size:clamp(22px,3.2vw,28px);margin:0;display:flex;align-items:baseline;gap:12px}
+.shelf-head h2 .n{font-family:var(--body);font-size:13px;font-weight:600;color:#fff;background:var(--red);border-radius:6px;padding:2px 8px;align-self:center}
+.shelf-head .from{color:var(--muted);font-size:14px}
+.shelf-head .from b{color:var(--fg);font-weight:600}
+.faltas{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.faltas span{font-size:11px;font-weight:600;color:#8A5A00;background:#FCE7B2;border-radius:999px;padding:2px 9px}
+.shelf.pend{margin-top:28px;background:#FFF8E6;border:1px dashed #E3B341;border-radius:var(--r);padding:24px 20px 20px}.shelf.pend .shelf-head{border-color:#EED8A0}.shelf.pend .shelf-head h2 .n{background:#B7791F}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.thumb{aspect-ratio:16/10;max-width:100%;background:var(--navy) center/cover no-repeat;position:relative}
+.thumb .state{position:absolute;top:12px;left:12px}
+.card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:12px;flex:1}
+.card h3{font-family:var(--display);font-size:20px;font-weight:600;margin:0;line-height:1.2;overflow-wrap:anywhere}
+.zone{color:var(--muted);font-size:13px;margin-top:2px}
+.state{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:4px 10px;white-space:nowrap;background:#fff;color:#0A1A3F}
+.state.planos{background:var(--red);color:#fff}
+.price .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.price .v{font-size:26px;font-weight:600;line-height:1.1}
+.price .v.ask{font-size:18px}
+.others{font-size:12px;color:var(--muted)}
+.agent{display:flex;align-items:center;gap:10px;font-size:13px;border-top:1px solid var(--line);padding-top:12px;min-width:0;margin-top:auto}
+.uploader{font-size:12px;color:var(--muted,#6b7280);margin-top:-4px}
+.faltas span.pedido{background:#DCEBFF;color:#123E7A}
+.wa-btn{color:#128c4b;font-weight:600}
+.av{width:30px;height:30px;border-radius:50%;background:var(--navy-2);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600;flex:none}
+.agent span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.card-actions .btn-red{flex:1}
+.link-btn{background:none;border:0;padding:4px 6px;font-size:13px;color:var(--muted);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.link-btn:hover{color:var(--fg)}
+.link-btn.danger{color:var(--red-ink)}
+.confirm{display:flex;gap:6px;align-items:center;font-size:13px}
+
+.empty{border:1px dashed var(--line);border-radius:var(--r);padding:28px;text-align:center;color:var(--muted)}
+.empty strong{display:block;color:var(--fg);font-family:var(--display);font-size:20px;font-weight:600;margin-bottom:6px}
+.empty .btn{margin-top:14px}
+.steps{display:flex;justify-content:center;gap:10px 28px;flex-wrap:wrap;margin-top:16px;font-size:13px}
+.steps span b{color:var(--red);margin-right:6px}
+
+.agents{padding-block:48px 64px;scroll-margin-top:80px}
+.agents-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.acard{background:var(--navy);color:#fff;border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.acard-head{display:flex;gap:14px;align-items:center;min-width:0}
+.acard .av{width:48px;height:48px;font-size:16px;background:var(--red)}
+.acard h3{font-family:var(--display);font-size:20px;font-weight:600;margin:0;overflow-wrap:anywhere}
+.acard .tel{font-size:13px;opacity:.8;user-select:all}
+.acard ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,.15)}
+.acard li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:14px;min-width:0}
+.acard li button{background:none;border:0;color:#fff;padding:0;text-align:left;cursor:pointer;min-width:0;overflow-wrap:anywhere}
+.acard li button:hover{text-decoration:underline}
+.acard li .num{opacity:.8;white-space:nowrap;font-size:13px}
+.acount{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+
+.crm{margin-bottom:56px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:14px}
+.crm h2{font-family:var(--display);font-size:22px;font-weight:600;margin:0}
+.crm p{margin:0;color:var(--muted);max-width:70ch;font-size:14px}
+.crm-row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.crm-row .field{flex:1 1 320px}
+.crm-row .ctl{width:100%}
+.crm code{font-size:12px;background:var(--chip);padding:2px 6px;border-radius:4px;overflow-wrap:anywhere}
+.gate{position:fixed;inset:0;z-index:90;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;padding:24px 16px;padding-top:calc(24px + env(safe-area-inset-top,0px))}
+.gate form{width:100%;max-width:380px;display:flex;flex-direction:column;gap:14px;text-align:left}
+.gate .mark{margin-bottom:10px}
+.gate h2{font-family:var(--display);font-size:30px;font-weight:600;margin:0}
+.gate p{margin:0;opacity:.75;font-size:14px}
+.gate input{border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;border-radius:10px;padding:12px 14px;font-size:16px}
+.gate input::placeholder{color:rgba(255,255,255,.5)}
+.gate .err{color:#FF8A93}
+.who{display:flex;flex-direction:column;line-height:1.2;font-size:12px;text-align:right;margin-left:auto}
+.who b{font-size:14px;font-weight:600}
+.who span{opacity:.75}
+@media (max-width:560px){.who{text-align:left;margin-left:0}}
+.disp{position:absolute;top:12px;right:12px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:4px 10px;background:#FFF4D6;color:#7A5200}
+.disp.d-reservado{background:#FFE7C2;color:#8A4B00}.disp.d-vendido{background:#0E1733;color:#fff}
+.card.sold{opacity:.6}
+.gal-ed{display:flex;gap:10px;flex-wrap:wrap}
+.nophoto{display:flex;gap:12px;align-items:flex-start;background:#FFF7E6;border:1px solid #F2D59B;border-left:4px solid #E0A021;border-radius:10px;padding:12px 14px;font-size:14px;color:#5A4210;line-height:1.45}
+.nophoto[hidden]{display:none}.nophoto svg{flex:none;margin-top:1px;color:#C98A0C}.nophoto b{display:block;color:#3F2E06}
+.nophoto .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.nophoto .acts button,.nophoto .acts label{font:inherit;font-size:13px;font-weight:600;border-radius:999px;padding:7px 14px;cursor:pointer;border:1px solid #C98A0C;background:#fff;color:#5A4210}
+.nophoto .acts .pri{background:#C98A0C;color:#fff}
+.bulk-list .st.warn{color:#9A6A07}.bulk-list li .bacts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.bulk-list li .bacts button{font:inherit;font-size:12px;font-weight:600;border-radius:999px;padding:5px 12px;cursor:pointer;border:1px solid #C98A0C;background:#fff;color:#5A4210}.bulk-list li .bacts .pri{background:#C98A0C;color:#fff}
+.gal-it{position:relative;width:110px;flex:none}
+.gal-it img{width:110px;height:76px;object-fit:cover;border-radius:8px;border:1px solid var(--line);display:block}
+.gal-it .ctr{display:flex;justify-content:space-between;margin-top:4px}
+.gal-it button{border:1px solid var(--line);background:#fff;border-radius:6px;font-size:12px;padding:2px 7px;cursor:pointer}
+.gal-it .cover{position:absolute;top:4px;left:4px;background:var(--red);color:#fff;font-size:10px;font-weight:600;border-radius:999px;padding:2px 7px}
+.gal-add{width:110px;height:76px;border:2px dashed var(--line);border-radius:8px;display:grid;place-items:center;font-size:12px;color:var(--muted);cursor:pointer;text-align:center}
+.gal-add:hover{border-color:var(--red)}
+.bulk-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;max-height:300px;overflow:auto}
+.bulk-list li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:14px}
+.bulk-list li .btarget{flex-basis:100%;font:inherit;font-size:13px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:#fff;color:inherit;max-width:100%}
+.bulk-list li span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bulk-list .st{font-size:12px;font-weight:600;white-space:nowrap;color:var(--muted)}
+.bulk-list .st.ok{color:#1D6B3A}.bulk-list .st.err{color:var(--red-ink)}.bulk-list .st.run{color:var(--navy-2)}
+.choose{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:520px){.choose{grid-template-columns:1fr}}
+.choose button{text-align:left;border:1px solid var(--line);background:#fff;border-radius:12px;padding:16px;cursor:pointer;display:flex;flex-direction:column;gap:6px}
+.choose button:hover{border-color:var(--red)}
+.choose i{font-style:normal;width:34px;height:34px;border-radius:10px;background:#FDECEE;color:var(--red);display:grid;place-items:center;font-weight:700;font-size:16px;margin-bottom:4px}
+.choose b{font-size:16px}.choose span{font-size:13px;color:var(--muted)}
+.mine{background:var(--red);color:#fff;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:4px 10px;position:absolute;top:12px;right:12px}
+.caplist{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.tw{overflow-x:auto}
+.hist{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.hist th{text-align:left;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+.hist td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top}
+.hist td small{display:block;color:var(--muted);font-size:12px}
+.tag{display:inline-block;font-size:11px;font-weight:600;border-radius:999px;padding:3px 9px;white-space:nowrap}
+.tag.land{background:#E7EBF5;color:#132A5E}.tag.cat{background:#132A5E;color:#fff}.tag.cap{background:#FDE8EA;color:#B5121F}
+.tag.ok{background:#E3F4EA;color:#1D6B3A}.tag.off{background:#F1F2F5;color:#6B7280}
+.photo-pick{width:84px;height:84px;border-radius:50%;border:2px dashed var(--line);display:grid;place-items:center;cursor:pointer;overflow:hidden;flex:none;color:var(--muted);font-size:13px;background:#fff}
+.photo-pick:hover{border-color:var(--red)}
+.photo-pick img{width:100%;height:100%;object-fit:cover}
+.cred{border:1px solid var(--line);border-left:4px solid var(--red);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px;background:#F6F7FA}
+img.av{object-fit:cover}
+.caprow{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.caprow .grow2{flex:1 1 200px;min-width:0}
+.caprow .key{font-size:12px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding-block:24px;color:var(--muted);font-size:13px}
+
+.sheet{position:fixed;inset:0;z-index:50;background:rgba(6,12,28,.55);display:flex;justify-content:center;align-items:flex-start;overflow-y:auto;padding:max(24px,env(safe-area-inset-top,0px)) 16px 24px}
+.panel{background:var(--surface);color:var(--fg);width:100%;max-width:600px;border-radius:14px;border-top:5px solid var(--red);padding:24px;display:flex;flex-direction:column;gap:16px}
+.panel h2{font-family:var(--display);font-size:24px;font-weight:600;margin:0}
+.drop{border:2px dashed var(--line);border-radius:12px;padding:18px;display:flex;gap:14px;align-items:center;cursor:pointer;background:var(--bg)}
+.drop:hover,.drop.over{border-color:var(--red)}
+.drop .ic{width:44px;height:44px;border-radius:10px;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:600;font-size:12px;flex:none}
+.drop strong{display:block;font-size:15px}
+.drop small{color:var(--muted);font-size:13px}
+.drop input{position:absolute;width:1px;height:1px;opacity:0}
+.status{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--fg)}
+.status .spin{width:16px;height:16px;border:2px solid var(--line);border-top-color:var(--red);border-radius:50%;flex:none}
+@media (prefers-reduced-motion:no-preference){.status .spin{animation:spin .8s linear infinite}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.thumbs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+.thumbs img{height:64px;border-radius:6px;border:1px solid var(--line);flex:none}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.plan-ed{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.plan-ed label{display:flex;flex-direction:column;justify-content:flex-end;gap:4px;font-size:12px;color:var(--muted)}
+@media (max-width:620px){.plan-ed{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.row2{grid-template-columns:1fr}}
+.panel .ctl{width:100%}
+.tipos{display:flex;flex-direction:column;gap:8px}
+.tipo{display:grid;grid-template-columns:110px 1fr auto;gap:8px;align-items:center}
+.hint{font-size:12px;color:var(--muted)}
+.err{color:var(--red-ink);font-size:13px;min-height:1em}
+.car-panel{max-width:1000px}
+.car-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.car-it{display:flex;flex-direction:column;gap:6px;min-width:0}.car-it canvas{width:100%;height:auto;aspect-ratio:4/5;border-radius:10px;box-shadow:0 2px 10px rgba(10,26,63,.15);background:var(--chip)}
+.car-acts{display:flex;justify-content:space-between;gap:6px;font-size:13px}
+@media (max-width:520px){.car-grid{grid-template-columns:repeat(2,1fr)}}
+.k-filt{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media (max-width:560px){.k-filt{grid-template-columns:1fr}}
+.k-chk{display:flex;gap:10px;align-items:center;font-size:14px;cursor:pointer}.k-chk input{width:18px;height:18px;accent-color:var(--red)}
+.k-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;font-size:13px}
+.k-list{max-height:280px;overflow:auto;border:1px solid var(--line);border-radius:12px}
+.k-it{display:flex;gap:12px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer;font-size:14px}.k-it:last-child{border-bottom:0}
+.k-it input{width:18px;height:18px;accent-color:var(--red);flex:none}.k-it .kn{flex:1;min-width:0}.k-it .kn b{display:block;font-weight:600}.k-it .kn small{color:var(--muted)}
+.k-it .kp{font-size:13px;color:var(--navy-2);font-weight:600;white-space:nowrap}.k-it.off{opacity:.45;cursor:not-allowed}.k-it.off .kp{color:var(--muted);font-weight:400}
+.panel-actions{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;z-index:80;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+
+.layer{position:fixed;inset:0;z-index:70;background:#FFFFFF;display:flex;flex-direction:column}
+.layer-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top,0px));background:var(--navy);color:#fff}
+.layer-bar .t{font-size:13px;opacity:.8;margin-right:auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.layer-bar .btn-ghost{color:#fff;border-color:rgba(255,255,255,.35)}
+.layer-scroll{flex:1;overflow-y:auto;overflow-x:hidden}
+
+@media (max-width:560px){.bar nav{margin-left:0;order:3;width:100%}.bar .btn{margin-left:auto}}
+@media (prefers-reduced-motion:no-preference){.card{transition:transform .15s ease}.card:hover{transform:translateY(-2px)}}
+</style>
+
+<div class="gate" id="gate" hidden>
+  <form id="gateForm" novalidate>
+    <div class="mark"><img class="logo" id="logoGate" alt="Team Germán Escarfullery · RE/MAX"></div>
+    <h2>Acceso del equipo</h2>
+    <p>Entra con tu usuario y contraseña.</p>
+    <label for="gateUser" class="hint" style="color:rgba(255,255,255,.7)">Usuario</label>
+    <input id="gateUser" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Tu usuario">
+    <label for="gatePass" class="hint" style="color:rgba(255,255,255,.7)">Contraseña</label>
+    <input id="gatePass" type="password" autocomplete="current-password" placeholder="Tu contraseña">
+    <div class="err" id="gateErr" role="alert"></div>
+    <button class="btn btn-red" type="submit">Entrar</button>
+  </form>
+</div>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="#top"><img class="logo" id="logoBar" alt="Team Germán Escarfullery · RE/MAX"></a>
+    <nav aria-label="Secciones">
+      <a href="#habitaciones">Por habitaciones</a>
+      <a href="#captadores">Asesores</a>
+    </nav>
+    <div class="who" id="who" hidden><b id="whoName"></b><span id="whoTel" class="num"></span></div>
+    <button class="btn btn-ghost btn-sm" id="lockBtn" type="button" hidden style="color:#fff;border-color:rgba(255,255,255,.35)">Bloquear</button>
+    <span id="tabs" hidden style="display:contents">
+      <button class="btn btn-ghost" type="button" id="tabProj" style="color:#fff;border-color:rgba(255,255,255,.4)">← Volver a proyectos</button>
+      <button class="btn btn-white" type="button" id="tabEq">+ Agregar asesor</button>
+      <button class="btn btn-white" type="button" id="catBtn" title="Enviar a un cliente un acceso de 48 horas">Enviar a cliente</button>
+      <button class="btn btn-ghost" type="button" id="histBtn" style="color:#fff;border-color:rgba(255,255,255,.4)">Historial de envíos</button>
+    </span>
+    <button class="btn btn-red" id="addBtn" type="button" hidden>+ Subir brochure</button>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="admin-view" id="adminView" hidden>
+    <div><div class="eyebrow">Administración</div><h1 style="margin-bottom:0" id="admTitle">Asesores <i>y configuración</i></h1></div>
+    <section class="crm" id="histCard">
+      <h2 id="histTitle">Historial de envíos</h2>
+      <p>Lo que se ha enviado y cuándo vence. Usa <b>Reenviar</b> para darle un acceso nuevo a un cliente cuyo enlace venció.</p>
+      <div class="chips" id="histChips"><button class="chip" type="button" data-t="all" aria-pressed="true">Todos</button><button class="chip" type="button" data-t="cliente" aria-pressed="false">A clientes</button><button class="chip" type="button" data-t="captador" aria-pressed="false">A asesores</button></div>
+      <div class="tw" id="histBody"></div>
+    </section>
+    <section class="crm" id="catCard">
+      <h2>Usuarios temporales para clientes</h2>
+      <p>Envía a un cliente un enlace con todos los proyectos, filtros por habitaciones y presupuesto, y contacto por WhatsApp. Solo puede ver; el acceso vence a las 48 horas.</p>
+      <div><button class="btn btn-red" type="button" id="catOpen2">+ Crear usuario temporal para un cliente</button></div>
+    </section>
+  <section class="crm" id="equipo" aria-labelledby="equipoTitle" hidden>
+    <h2 id="equipoTitle">Agregar asesores</h2>
+    <p>Agrega a cada asesor con su nombre, su foto y su WhatsApp. No lleva contraseña: los asesores entran por el CRM. Solo los clientes reciben contraseña.</p>
+    <div class="crm-row" style="align-items:center">
+      <label class="photo-pick" for="c-foto" title="Subir foto"><img id="c-fotoPrev" alt="" hidden><span id="c-fotoTxt">+ Foto</span></label>
+      <input id="c-foto" type="file" accept="image/*" hidden>
+      <div class="field"><label for="c-nombre">Nombre del asesor</label><input class="ctl" id="c-nombre" maxlength="60" placeholder="Nombre y apellido"></div>
+      <div class="field"><label for="c-tel">WhatsApp</label><input class="ctl num" id="c-tel" maxlength="30" placeholder="809 000 0000"></div>
+      <div class="field" hidden><label for="c-user">Usuario</label><input class="ctl" id="c-user" maxlength="30" autocapitalize="none" spellcheck="false" placeholder="Se llena solo con el nombre"></div>
+      <div class="field" hidden><label for="c-pass" id="c-passLab">Contraseña</label><input class="ctl num" id="c-pass" type="text" autocomplete="off" maxlength="64" value=""></div>
+    </div>
+    <div class="crm-row">
+      <button class="btn btn-red" type="button" id="capSave">Agregar asesor</button>
+      <button class="btn btn-ghost" type="button" id="capReset" hidden>Generar nueva contraseña</button>
+      <button class="btn btn-ghost" type="button" id="capCancel" hidden>Cancelar edición</button>
+    </div>
+    <div class="cred" id="capResult" hidden>
+      <b id="capResTitle"></b>
+      <div class="row2"><div class="field"><span class="lab">Usuario</span><input class="ctl num" id="r-user" readonly></div><div class="field"><span class="lab">Contraseña</span><input class="ctl num" id="r-pass" readonly></div></div>
+      <span class="hint">Envíasela ahora. Si la olvida, pulsa Editar en su fila y escribe una nueva.</span>
+      <div class="crm-row"><a class="btn btn-red" id="r-wa" target="_blank" rel="noopener" style="background:#25D366">Enviar acceso por WhatsApp</a><button class="btn btn-ghost" type="button" id="r-copy">Copiar acceso</button></div>
+    </div>
+    <div class="caplist" id="capList"></div>
+  </section>
+
+  <section class="crm" id="crm" aria-labelledby="crmTitle" hidden>
+    <h2 id="crmTitle">Configuración</h2>
+    <p><b>Contraseña del administrador.</b> Se entra con el usuario <b>admin</b>. Escribe la nueva contraseña y guárdala.</p>
+    <div class="crm-row">
+      <div class="field"><label for="f-pass">Nueva contraseña de admin</label><input class="ctl" id="f-pass" type="text" autocomplete="off" maxlength="64" placeholder="Ej. 1234"></div>
+      <button class="btn btn-red" type="button" id="passSave">Guardar contraseña</button>
+    </div>
+    <p id="passState" class="hint"></p>
+    <div id="apiRow" hidden>
+      <p style="margin-top:6px"><b>Leer brochures fuera de Claude.</b></p>
+      <p>Si usas esta página fuera de claude.ai, puedes pegar una clave de API de Claude (se crea en console.anthropic.com y se paga por uso) para que lea los brochures igual que dentro de Claude. La clave se guarda solo en este navegador.</p>
+      <div class="crm-row">
+        <div class="field"><label for="f-api">Clave de API de Claude</label><input class="ctl" id="f-api" type="password" autocomplete="off" maxlength="300" placeholder="sk-ant-..."></div>
+        <button class="btn btn-red" type="button" id="apiSave">Guardar clave</button>
+      </div>
+      <p id="apiState" class="hint"></p>
+    </div>
+    <p style="margin-top:6px"><b>Integración con el CRM.</b></p>
+    <p>Pega el enlace de entrada (webhook) de tu CRM. Cada landing que descargues enviará ahí los datos de quien llene el formulario: proyecto, asesor, nombre, correo, WhatsApp y mensaje, en formato JSON.</p>
+    <div class="crm-row">
+      <div class="field"><label for="f-hook">Webhook del CRM</label><input class="ctl" id="f-hook" type="url" maxlength="500" placeholder="https://crm.equipogerman.com/api/leads"></div>
+      <button class="btn btn-red" type="button" id="hookSave">Guardar enlace</button>
+    </div>
+    <div class="crm-row">
+      <div class="field"><label for="f-base">Dirección donde publicas las landings de clientes</label><input class="ctl" id="f-base" type="url" maxlength="300" placeholder="https://equipogerman.com/landings/"></div>
+      <button class="btn btn-red" type="button" id="baseSave">Guardar dirección</button>
+    </div>
+    <p class="hint">Con esta dirección, el mensaje de WhatsApp al cliente ya lleva el enlace completo. Sube cada archivo de cliente a esa carpeta con el mismo nombre con que se descarga.</p>
+    <div class="crm-row">
+      <button class="btn btn-ghost" type="button" id="exportBtn">Descargar proyectos (JSON)</button>
+      <span class="hint">Para importar todos los proyectos y sus asesores al CRM.</span>
+    </div>
+  </section>
+  </div>
+  <div id="projView">
+  <section class="intro">
+    <div class="eyebrow">Proyectos disponibles</div>
+    <h1>Elige por habitaciones <i>y por presupuesto</i></h1>
+    <p class="lede" id="lede" hidden></p>
+    <div class="filters" role="search">
+      <div class="field">
+        <span class="lab" id="habLab">Habitaciones (puedes elegir varias)</span>
+        <div class="chips" role="group" aria-labelledby="habLab" id="habChips">
+          <button class="chip" type="button" data-hab="all" aria-pressed="true">Todas</button>
+          <button class="chip" type="button" data-hab="1" aria-pressed="false">1</button>
+          <button class="chip" type="button" data-hab="2" aria-pressed="false">2</button>
+          <button class="chip" type="button" data-hab="3" aria-pressed="false">3</button>
+          <button class="chip" type="button" data-hab="4" aria-pressed="false">4+</button>
+        </div>
+      </div>
+      <div class="field tp-wrap">
+        <span class="lab" id="tipoLab">Tipo</span>
+        <button class="ctl tp-btn" type="button" id="tipoBtn" aria-haspopup="true" aria-expanded="false" aria-controls="tipoChips"><span id="tipoTxt">Todos</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="chips tp-pop" role="group" aria-labelledby="tipoLab" id="tipoChips" hidden>
+          <button class="chip" type="button" data-tp="all" aria-pressed="true">Todos</button>
+          <button class="chip" type="button" data-tp="Apartamento" aria-pressed="false">Apartamentos</button>
+          <button class="chip" type="button" data-tp="Penthouse" aria-pressed="false">Penthouses</button>
+          <button class="chip" type="button" data-tp="Casa" aria-pressed="false">Casas</button>
+          <button class="chip" type="button" data-tp="Villa" aria-pressed="false">Villas</button>
+          <button class="chip" type="button" data-tp="Townhouse" aria-pressed="false">Townhouses</button>
+          <button class="chip" type="button" data-tp="Solar" aria-pressed="false">Terrenos</button>
+          <button class="chip" type="button" data-tp="Local comercial" aria-pressed="false">Locales</button>
+          <button class="chip" type="button" data-tp="Oficina" aria-pressed="false">Oficinas</button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="budget">Presupuesto hasta</label>
+        <select class="ctl" id="budget">
+          <option value="">Cualquiera</option>
+          <option value="100000">US$100,000</option>
+          <option value="150000">US$150,000</option>
+          <option value="200000">US$200,000</option>
+          <option value="300000">US$300,000</option>
+          <option value="500000">US$500,000</option>
+          <option value="1000000">US$1,000,000</option>
+        </select>
+      </div>
+      <div class="field grow">
+        <label for="q">Buscar</label>
+        <input class="ctl" id="q" type="search" placeholder="Ej. piscina, Bávaro, 3 habitaciones, asesor">
+      </div>
+    </div>
+  </section>
+
+  <div id="habitaciones"></div>
+  <div id="shelves"></div>
+
+  <section class="agents" id="captadores" aria-labelledby="agentsTitle">
+    <div class="shelf-head"><h2 id="agentsTitle">Asesores</h2><span class="from"><span id="agentsCount"></span> <button class="btn btn-red btn-sm" type="button" id="goEquipo" hidden style="margin-left:10px">+ Agregar o editar asesores</button></span></div>
+    <div id="agentsBody"></div>
+  </section>
+
+
+  </div>
+</main>
+
+<footer><div class="wrap">Team Germanescarfullery · RE/MAX Metropolitana · Precios en dólares estadounidenses, sujetos a cambio.</div></footer>
+
+<div class="sheet" id="sheet" hidden>
+  <form class="panel" id="form" novalidate>
+    <h2 id="formTitle">Nuevo proyecto</h2>
+    <label class="drop" id="drop" for="f-pdf">
+      <span class="ic">PDF</span>
+      <span><strong id="dropTitle">Sube el brochure del proyecto</strong><small id="dropSub">Claude lo lee, llena los datos y arma la landing con las fotos del brochure, quitándoles las letras.</small></span>
+      <input id="f-pdf" type="file" accept="application/pdf,.pdf,.zip,application/zip" multiple>
+    </label>
+    <button class="link-btn" type="button" id="toBulk" style="align-self:flex-start;color:var(--red-ink);font-weight:500">¿Tienes varios brochures? Súbelos todos a la vez →</button>
+    <div class="status" id="status" hidden><span class="spin"></span><span id="statusText"></span></div>
+    <div class="field" id="galField">
+      <div class="k-head"><span class="lab">Fotos de la landing <span style="text-transform:none;letter-spacing:0;font-weight:400">(la primera es la portada)</span></span><button class="link-btn" type="button" id="galRank" hidden>✨ Elegir las mejores y la portada</button></div>
+      <div class="gal-ed" id="galEd"></div>
+      <div class="nophoto" id="noPhotoNote" role="status" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18v.01"/></svg><div><b>Recordatorio: este proyecto no tiene fotos</b>La landing saldrá sin portada ni galería. Agrega fotos del proyecto antes de guardarlo.</div></div>
+      <input id="galAdd" type="file" accept="image/*" multiple hidden>
+    </div>
+    <div id="thumbs" hidden></div>
+    <div class="row2">
+      <div class="field"><label for="f-nombre">Nombre del proyecto</label><input class="ctl" id="f-nombre" maxlength="80" placeholder="Ej. Torre Arena 12"></div>
+      <div class="field"><label for="f-tipo">Tipo de propiedad</label>
+        <select class="ctl" id="f-tipo"><option>Apartamento</option><option>Penthouse</option><option>Casa</option><option>Villa</option><option>Townhouse</option><option value="Solar">Terreno / Solar</option><option>Local comercial</option><option>Oficina</option></select></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="f-zona">Zona</label><input class="ctl" id="f-zona" maxlength="80" placeholder="Ej. Piantini, Santo Domingo"></div>
+      <div class="field"><label for="f-estado">Estado</label>
+        <select class="ctl" id="f-estado"><option>En planos</option><option>En construcción</option><option>Terminado</option></select></div>
+      <div class="field"><label for="f-disp">Disponibilidad</label>
+        <select class="ctl" id="f-disp"><option>Disponible</option><option>Pocas unidades</option><option>Reservado</option><option>Vendido</option></select></div>
+    </div>
+    <div class="field">
+      <span class="lab">Tipos de unidad</span>
+      <div class="tipos" id="tipos"></div>
+      <div><button class="link-btn" type="button" id="addTipo">+ Agregar otro tipo</button></div>
+      <span class="hint">Precio desde en US$. Déjalo vacío si el brochure no lo trae: se mostrará "Precio a consultar".</span>
+    </div>
+    <div class="field">
+      <span class="lab">Plan de pago <span style="text-transform:none;letter-spacing:0;font-weight:400">(opcional; Claude lo llena si viene en el brochure)</span></span>
+      <div class="plan-ed">
+        <label>Separación US$<input class="ctl num" id="pl-sep" inputmode="numeric" placeholder="0"></label>
+        <label>% a la firma<input class="ctl num" id="pl-firma" inputmode="decimal" placeholder="0"></label>
+        <label>% en construcción<input class="ctl num" id="pl-cuotas" inputmode="decimal" placeholder="0"></label>
+        <label>N.º de cuotas<input class="ctl num" id="pl-meses" inputmode="numeric" placeholder="0"></label>
+        <label>% contra entrega<input class="ctl num" id="pl-entrega" inputmode="decimal" placeholder="0"></label>
+      </div>
+      <span class="hint" id="pl-hint">Los porcentajes deben sumar 100%. La landing muestra una calculadora con estos datos.</span>
+    </div>
+    <div class="field"><label for="f-desc">Descripción para la landing</label><textarea class="ctl" id="f-desc" maxlength="1800"></textarea></div>
+    <div class="field"><label for="f-amen">Amenidades (separadas por coma)</label><input class="ctl" id="f-amen" maxlength="600" placeholder="Piscina, gimnasio, lobby, planta eléctrica"></div>
+    <div class="row2">
+      <div class="field"><label for="f-capt">Asesor</label><input class="ctl" id="f-capt" maxlength="60" placeholder="Nombre y apellido" list="capNames"><datalist id="capNames"></datalist></div>
+      <div class="field"><label for="f-tel">WhatsApp del asesor</label><input class="ctl num" id="f-tel" maxlength="30" placeholder="+1 809 000 0000"></div>
+    </div>
+    <div class="field"><label for="f-url">Enlace externo de la landing (opcional)</label><input class="ctl" id="f-url" type="url" maxlength="400" placeholder="https://… si ya está publicada en otro sitio"></div>
+    <div class="err" id="formErr" role="alert"></div>
+    <div class="nophoto" id="noPhotoAsk" role="alert" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18v.01"/></svg><div><b>¿Guardar sin fotos?</b>Este proyecto no tiene ninguna foto, así que la landing se verá vacía arriba y sin galería.<div class="acts"><label class="pri" for="galAdd">+ Agregar fotos</label><button type="button" id="noPhotoGo">Guardar sin fotos</button></div></div></div>
+    <div class="panel-actions">
+      <button class="btn btn-ghost" type="button" id="cancel">Cancelar</button>
+      <button class="btn btn-ghost" type="button" id="previewBtn">Vista previa</button>
+      <button class="btn btn-red" type="submit" id="save">Guardar y generar landing</button>
+    </div>
+  </form>
+</div>
+
+<div class="layer" id="layer" hidden>
+  <div class="layer-bar">
+    <button class="btn btn-ghost btn-sm" type="button" id="back">← Volver</button>
+    <span class="t" id="layerTitle"></span>
+    <a class="btn btn-ghost btn-sm" id="extLink" target="_blank" rel="noopener" hidden>Abrir enlace externo</a>
+    <button class="btn btn-ghost btn-sm" type="button" id="carBtn">Crear carrusel</button>
+    <button class="btn btn-ghost btn-sm" type="button" id="dlBtn" hidden>Descargar HTML</button>
+    <button class="btn btn-red btn-sm" type="button" id="sendBtn" hidden>Enviar a cliente</button>
+  </div>
+  <div class="layer-scroll" id="layerScroll"><div id="landingHost"></div></div>
+</div>
+<div class="sheet" id="sendSheet" hidden style="z-index:75">
+  <form class="panel" id="sendForm" novalidate>
+    <h2>Enviar a un cliente</h2>
+    <p class="hint" id="sendIntro" style="font-size:14px;margin:0"></p>
+    <div id="sendStep1">
+      <div class="row2">
+        <div class="field"><label for="s-nombre">Nombre del cliente</label><input class="ctl" id="s-nombre" maxlength="60" placeholder="Ej. María Rodríguez"></div>
+        <div class="field"><label for="s-clave">Contraseña para el cliente</label><input class="ctl num" id="s-clave" maxlength="40" autocomplete="off" value="1234"></div>
+      </div>
+      <div class="field" style="margin-top:12px"><label for="s-agent">Asesor que lo envía</label><select class="ctl" id="s-agent"></select>
+        <span class="hint">El cliente verá a este asesor como su contacto: su nombre, su foto y su WhatsApp en toda la landing.</span></div>
+    </div>
+    <div id="sendStep2" hidden>
+      <div class="row2">
+        <div class="field"><span class="lab">Usuario</span><input class="ctl num" id="s-user" readonly></div>
+        <div class="field"><span class="lab">Contraseña</span><input class="ctl num" id="s-pass" readonly></div>
+      </div>
+      <div class="field"><label for="s-msg">Mensaje para el cliente</label><textarea class="ctl" id="s-msg" rows="7"></textarea>
+        <span class="hint" id="s-hint"></span></div>
+      <div class="panel-actions" style="justify-content:flex-start">
+        <a class="btn btn-red" id="s-wa" target="_blank" rel="noopener" style="background:#25D366">Enviar por WhatsApp</a>
+        <span class="hint">Se abre tu WhatsApp con el mensaje escrito: eliges el chat del cliente y pulsas enviar.</span>
+      </div>
+      <div class="panel-actions" style="justify-content:flex-start">
+        <button class="btn btn-ghost btn-sm" type="button" id="s-copy">Copiar mensaje</button>
+        <button class="btn btn-ghost btn-sm" type="button" id="s-again">Descargar el archivo otra vez</button>
+      </div>
+    </div>
+    <div class="status" id="sendStatus" hidden><span class="spin"></span><span id="sendStatusText"></span></div>
+    <div class="err" id="sendErr" role="alert"></div>
+    <div class="panel-actions">
+      <button class="btn btn-ghost" type="button" id="sendClose">Cerrar</button>
+      <button class="btn btn-red" type="submit" id="sendGo">Generar acceso y descargar</button>
+    </div>
+  </form>
+</div>
+<div class="sheet" id="carSheet" hidden style="z-index:90">
+  <div class="panel car-panel">
+    <h2 id="carTitle">Carrusel</h2>
+    <p class="hint" style="margin:0">Láminas de 1080 × 1350 listas para Instagram, con las fotos y los datos del proyecto en los colores de RE/MAX. Cambia los textos y la foto de cada lámina si quieres, y descárgalas.</p>
+    <p class="hint" id="carStatus" style="margin:0;color:var(--navy-2);font-weight:500"></p>
+    <div class="row2">
+      <div class="field"><label for="carGancho">Frase de portada</label><input class="ctl" id="carGancho" maxlength="70"></div>
+      <div class="field"><label for="carCta">Llamado final</label><input class="ctl" id="carCta" maxlength="60"></div>
+    </div>
+    <div class="field"><label for="carIntro">Texto de presentación</label><input class="ctl" id="carIntro" maxlength="220"></div>
+    <div class="car-grid" id="carGrid"></div>
+    <div class="field"><label for="carCap">Texto para la publicación</label><textarea class="ctl" id="carCap" rows="6"></textarea></div>
+    <div class="panel-actions">
+      <button class="btn btn-ghost" type="button" id="carClose">Cerrar</button>
+      <button class="btn btn-ghost" type="button" id="carCopy">Copiar texto</button>
+      <button class="btn btn-red" type="button" id="carZip">Descargar todas</button>
+    </div>
+  </div>
+</div>
+<div class="sheet" id="bulkSheet" hidden style="z-index:60">
+  <div class="panel">
+    <h2>Subir varios brochures</h2>
+    <p class="hint" style="font-size:14px;margin:0"><b>Desde Dropbox:</b> abre el enlace de la carpeta, pulsa <b>Descargar</b> y arrastra aquí el ZIP. <br>Elige todos los PDF de una vez. Claude los lee uno por uno, les quita las letras a las fotos y crea cada landing sola. Después puedes revisar cualquiera con <b>Editar</b>.</p>
+    <div class="row2">
+      <div class="field"><label for="b-capt">Asesor de estos proyectos</label><select class="ctl" id="b-capt"></select></div>
+      <div class="field"><label for="b-disp">Disponibilidad</label><select class="ctl" id="b-disp"><option>Disponible</option><option>Pocas unidades</option><option>Reservado</option></select></div>
+    </div>
+    <label class="drop" id="bDrop" for="b-files"><span class="ic">PDF</span><span><strong>Elige o arrastra los brochures, o el ZIP de Dropbox</strong><small>Varios PDF a la vez, o la carpeta de Dropbox descargada como ZIP.</small></span><input id="b-files" type="file" accept="application/pdf,.pdf,.zip,application/zip" multiple></label>
+    <ul class="bulk-list" id="bList"></ul>
+    <p class="hint" id="bSum" style="margin:0"></p>
+    <div class="panel-actions">
+      <button class="btn btn-ghost" type="button" id="bClose">Cerrar</button>
+      <button class="btn btn-ghost" type="button" id="bStop" hidden>Detener</button>
+      <button class="btn btn-red" type="button" id="bGo" disabled>Crear landings</button>
+    </div>
+  </div>
+</div>
+<div class="sheet" id="chooseSheet" hidden style="z-index:76">
+  <div class="panel">
+    <h2>¿Qué le quieres enviar al cliente?</h2>
+    <div class="choose">
+      <button type="button" id="chPickP"><i aria-hidden="true">☑</i><b>Elegir proyectos</b><span>Marca uno por uno los proyectos que quieres enviarle.</span></button>
+      <button type="button" id="chRange"><i aria-hidden="true">$</i><b>Por rango de precio</b><span>Pon un presupuesto desde y hasta; se envían los proyectos que entran.</span></button>
+      <button type="button" id="chAll"><i aria-hidden="true">▦</i><b>Todo el catálogo</b><span>Todos los proyectos disponibles, con filtros para el cliente.</span></button>
+      <button type="button" id="chOne"><i aria-hidden="true">◉</i><b>Un solo proyecto</b><span>Solo la landing del proyecto que elijas.</span></button>
+    </div>
+    <div class="field" id="chPick" hidden><label for="chProj">Proyecto</label><select class="ctl" id="chProj"></select>
+      <div style="margin-top:10px"><button class="btn btn-red" type="button" id="chGo">Continuar</button></div></div>
+    <p class="hint" style="margin:0">En todos los casos el cliente recibe un usuario y una contraseña que vencen a las 48 horas, y solo puede ver y escribirte por WhatsApp.</p>
+    <div class="panel-actions"><button class="btn btn-ghost" type="button" id="chClose">Cerrar</button></div>
+  </div>
+</div>
+<div class="sheet" id="catSheet" hidden style="z-index:76">
+  <form class="panel" id="catForm" novalidate>
+    <h2 id="catTitle">Enviar el catálogo</h2>
+    <p class="hint" id="catIntro" style="font-size:14px;margin:0"></p>
+    <div id="catStep1" style="display:flex;flex-direction:column;gap:12px">
+      <div class="field"><label for="k-nombre">Nombre del cliente</label><input class="ctl" id="k-nombre" maxlength="60" placeholder="Ej. María Rodríguez"></div>
+      <div class="row2">
+        <div class="field"><label for="k-agent">Asesor que lo envía (el cliente lo verá como su contacto en todos los proyectos)</label><select class="ctl" id="k-agent"></select></div>
+        <div class="field"><label for="k-clave">Contraseña del cliente</label><div style="display:flex;gap:8px"><input class="ctl num" id="k-clave" maxlength="40" autocomplete="off"><button class="btn btn-ghost btn-sm" type="button" id="k-new">Otra</button></div></div>
+      </div>
+      <div class="field">
+        <span class="lab">Presupuesto que verá el cliente</span>
+        <label class="k-chk"><input type="checkbox" id="k-all" checked> Todos los presupuestos (sin restricción)</label>
+        <div class="row2" id="k-range" hidden>
+          <div class="field"><label for="k-min">Desde (US$)</label><input class="ctl num" id="k-min" inputmode="numeric" placeholder="Ej. 150,000"></div>
+          <div class="field"><label for="k-max">Hasta (US$)</label><input class="ctl num" id="k-max" inputmode="numeric" placeholder="Ej. 300,000"></div>
+        </div>
+        <span class="hint" id="k-rhint"></span>
+      </div>
+      <div class="k-filt">
+        <div class="field"><label for="k-tipo">Tipo de propiedad</label><select class="ctl" id="k-tipo"></select></div>
+        <div class="field"><label for="k-reg">Región</label><select class="ctl" id="k-reg"></select></div>
+        <div class="field"><label for="k-sub">Subregión</label><select class="ctl" id="k-sub"></select></div>
+      </div>
+      <div class="field">
+        <div class="k-head"><span class="lab">Proyectos que verá el cliente <span id="k-count" style="text-transform:none;letter-spacing:0"></span></span><span><button class="link-btn" type="button" id="k-selall">Marcar todos</button> · <button class="link-btn" type="button" id="k-selnone">Ninguno</button></span></div>
+        <div class="k-list" id="k-list"></div>
+      </div>
+    </div>
+    <div id="catStep2" hidden style="display:flex;flex-direction:column;gap:12px">
+      <div class="row2">
+        <div class="field"><span class="lab">Usuario</span><input class="ctl num" id="kr-user" readonly></div>
+        <div class="field"><span class="lab">Contraseña</span><input class="ctl num" id="kr-pass" readonly></div>
+      </div>
+      <div class="field"><label for="k-msg">Mensaje para el cliente</label><textarea class="ctl" id="k-msg" rows="8"></textarea><span class="hint" id="k-hint"></span></div>
+      <div class="panel-actions" style="justify-content:flex-start">
+        <a class="btn btn-red" id="k-wa" target="_blank" rel="noopener" style="background:#25D366">Enviar por WhatsApp</a>
+        <button class="btn btn-ghost btn-sm" type="button" id="k-copy">Copiar mensaje</button>
+        <button class="btn btn-ghost btn-sm" type="button" id="k-again">Descargar otra vez</button>
+      </div>
+    </div>
+    <div class="status" id="catStatus" hidden><span class="spin"></span><span id="catStatusText"></span></div>
+    <div class="err" id="catErr" role="alert"></div>
+    <div class="panel-actions">
+      <button class="btn btn-ghost" type="button" id="catClose">Cerrar</button>
+      <button class="btn btn-red" type="submit" id="catGo">Generar acceso y descargar</button>
+    </div>
+  </form>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script type="application/json" id="seedData">{"proyectos":[],"captadores":[]}</script>
+<script>
+/* ============ Landing template (same format as the Punta Cana penthouse page) ============ */
+const LANDING_CSS = `
+:host,.lp{--sand:#FFFFFF;--sand-deep:#E4E8F0;--navy:#0A1A3F;--navy-soft:#132A5E;--pale:#E7EBF5;--gold:#DC1C2E;--gold-deep:#B5121F;--on-navy-accent:#FF6B77;--ink:#0E1733;--paper:#F4F6FA;--wa:#25D366}
+.lp{background:var(--sand);color:var(--ink);font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.7}
+.lp .desc p{text-align:justify;text-justify:inter-word;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:700px){.lp .desc p{text-align:left}.lp .desc{font-size:17px}}
+.lp .why p,.lp details p,.lp .note{text-align:left;text-wrap:pretty}
+.lp *{box-sizing:border-box}
+.lp a{color:inherit}
+.lp h1,.lp h2,.lp h3{font-family:Lora,Georgia,serif;font-weight:600;line-height:1.12;margin:0;text-wrap:balance}
+.lp .in{max-width:1120px;margin:0 auto;padding-inline:20px}
+.lp .top{background:var(--navy);color:#fff;border-bottom:3px solid var(--gold)}
+.lp .top .in{display:flex;align-items:center;gap:16px;padding-block:12px;flex-wrap:wrap}
+.lp .brand{font-size:12px;letter-spacing:.16em;font-weight:600;display:flex;align-items:center;gap:12px}.lp .brand .lg{display:block;height:48px;width:auto}.lp .brand small{border-left:1px solid rgba(255,255,255,.25);padding-left:12px}
+.lp .brand small{display:block;letter-spacing:.04em;font-weight:400;opacity:.7}
+.lp .top nav{display:flex;gap:18px;margin-left:auto;font-size:14px;flex-wrap:wrap}
+.lp .top nav a{text-decoration:none;opacity:.85}
+.lp .wa{display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;border-radius:999px;padding:9px 16px;font-weight:600;font-size:14px;text-decoration:none;border:0;cursor:pointer}
+.lp .hero{position:relative;min-height:560px;display:flex;align-items:flex-end;color:#fff;background:var(--navy) center/cover no-repeat}
+.lp .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,22,56,.25),rgba(11,22,56,.88))}
+.lp .hero .in{position:relative;padding-block:64px 56px;width:100%}
+.lp .badge{display:inline-block;background:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:6px 14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.lp .hero h1{font-size:clamp(38px,6vw,68px);margin:18px 0 8px;max-width:16ch}
+.lp .hero h1 em{color:#fff;font-style:italic;font-weight:500}
+.lp .addr{opacity:.85;margin:0}
+.lp .pricebox{margin-top:26px;display:flex;flex-wrap:wrap;align-items:flex-end;gap:18px 32px}
+.lp .pricebox .k{font-size:12px;letter-spacing:.18em;opacity:.8}
+.lp .pricebox .v{font-family:Poppins,system-ui,sans-serif;font-weight:600;font-size:clamp(32px,4.6vw,46px);color:#fff;font-variant-numeric:tabular-nums}
+.lp .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.lp .ghost{display:inline-flex;align-items:center;border:1px solid rgba(255,255,255,.6);color:#fff;border-radius:999px;padding:9px 16px;font-weight:500;font-size:14px;text-decoration:none}
+.lp .specs{background:var(--paper);border-bottom:1px solid var(--sand-deep)}
+.lp .specs .in{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--sand-deep);padding:0}
+.lp .spec{background:var(--paper);padding:20px;display:flex;gap:12px;align-items:flex-start}
+.lp .spec i{width:22px;height:22px;color:var(--gold);flex:none;display:block;margin-top:2px}
+.lp .spec i svg{width:22px;height:22px;display:block;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.lp .spec.m2 b{font-size:16px;letter-spacing:.02em}.lp .spec b .u{font-size:inherit;color:inherit;white-space:nowrap}
+.lp .units td.mi{text-align:right;width:1%;white-space:nowrap}.lp .units td.mi a{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#14843F;background:#EEF9F2;border:1px solid #CBEBD6;border-radius:999px;padding:6px 12px;text-decoration:none;transition:all .15s}.lp .units td.mi a:hover{background:#25D366;border-color:#25D366;color:#fff}.lp .units td.mi svg{width:15px;height:15px}
+@media (max-width:640px){.lp .units td.mi span{display:none}.lp .units td.mi a{padding:7px}}
+.lp .trust{display:flex;gap:8px 18px;flex-wrap:wrap;margin:14px 0 0;font-size:13px;color:rgba(255,255,255,.85)}
+.lp .visit{display:flex;align-items:center;gap:22px;flex-wrap:wrap;background:linear-gradient(120deg,#fff 0%,#F4F6FA 100%);border:1px solid #E4E8F0;border-radius:22px;padding:24px 28px;box-shadow:0 14px 40px rgba(10,26,63,.08);position:relative;overflow:hidden}
+.lp .visit:after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(220,28,46,.12),transparent 70%)}
+.lp .visit img,.lp .visit>i{width:84px;height:84px;border-radius:50%;object-fit:cover;flex:none;border:4px solid #fff;box-shadow:0 6px 18px rgba(10,26,63,.18)}
+.lp .visit>i{display:grid;place-items:center;background:var(--navy);color:#fff;font-style:normal;font-weight:600;font-size:26px}
+.lp .visit .vt{flex:1 1 300px;min-width:0}.lp .visit .kick{margin-bottom:4px}.lp .visit h3{font-family:Lora,serif;font-size:24px;margin:0 0 6px;color:var(--navy)}.lp .visit p{margin:0;color:#4A5370;font-size:15px;line-height:1.55}
+.lp .visit .wa{padding:13px 22px;font-size:15px;box-shadow:0 8px 20px rgba(37,211,102,.3);position:relative;z-index:1}
+@media (max-width:560px){.lp .visit{padding:20px}.lp .visit .wa{width:100%;justify-content:center}}
+.lp .units small.ft{color:#7A8299;font-size:.85em;white-space:nowrap}
+.lp .spec b span{font-size:inherit;color:inherit}.lp .spec .pc{white-space:nowrap}.lp .spec .sep{margin:0 .4em}.lp .spec .sep.off{display:none}.lp .spec .sep.off+.pc{display:block}
+.lp .spec b{display:block;font-size:19px;line-height:1.25;font-family:Lora,Georgia,serif;font-variant-numeric:tabular-nums}
+.lp .spec span{font-size:13px;color:#5a6178}
+.lp section.s{padding-block:72px}
+.lp .kick{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-bottom:10px}
+.lp .s h2{font-size:clamp(28px,4vw,40px);margin-bottom:22px}
+.lp .desc{max-width:64ch;color:#1d2440;font-size:18px;line-height:1.75}
+.lp .desc p{margin:0 0 18px}
+.lp .gal{display:grid;gap:10px;aspect-ratio:16/9}
+.lp .gal button{position:relative;padding:0;border:0;background:var(--navy);border-radius:10px;overflow:hidden;cursor:zoom-in;min-height:0;min-width:0}
+.lp .gal button[hidden]{display:none}
+.lp .gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.lp .gal button:hover img{transform:scale(1.03)}
+.lp .gal .more{position:absolute;inset:0;background:rgba(10,26,63,.62);color:#fff;display:grid;place-items:center;font-size:clamp(18px,2.4vw,28px);font-weight:600;font-family:Lora,Georgia,serif;letter-spacing:.02em}
+.lp .gal.g2{grid-template-columns:1fr 1fr;aspect-ratio:2/1}
+.lp .gal.g3,.lp .gal.g5{grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr}
+.lp .gal.g3 button:first-child,.lp .gal.g4 button:first-child,.lp .gal.g5 button:first-child{grid-row:span 2}
+.lp .gal.g3{grid-template-columns:2fr 1fr}
+.lp .gal.g4{grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr}
+.lp .gal.g4 button:nth-child(2){grid-column:span 2}
+@media (max-width:640px){
+.lp .gal.g3,.lp .gal.g4,.lp .gal.g5{aspect-ratio:auto;grid-template-columns:1fr 1fr;grid-template-rows:none}
+.lp .gal.g3 button,.lp .gal.g4 button,.lp .gal.g5 button{aspect-ratio:1/1;grid-row:auto!important;grid-column:auto!important}
+.lp .gal.g3 button:first-child,.lp .gal.g4 button:first-child,.lp .gal.g5 button:first-child{grid-column:1/-1!important;aspect-ratio:4/3}
+.lp .gal.g4 button:nth-child(4){grid-column:1/-1!important;aspect-ratio:2/1}
+.lp .gal.g1{aspect-ratio:4/3}.lp .gal.g2{aspect-ratio:auto;grid-template-columns:1fr}.lp .gal.g2 button{aspect-ratio:4/3}}
+.lp .units{width:100%;border-collapse:collapse;background:var(--paper);border-radius:12px;overflow:hidden;font-variant-numeric:tabular-nums}
+.lp .units th,.lp .units td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--sand-deep)}
+.lp .units th{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#5a6178;font-weight:600}
+.lp .units td.p{color:var(--gold-deep);font-weight:600}
+.lp .tw{overflow-x:auto}
+.lp .why{background:var(--navy);color:#fff}
+.lp .why .kick{color:var(--on-navy-accent)}
+.lp .why .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.lp .why .n{font-family:Lora,Georgia,serif;color:var(--on-navy-accent);font-size:28px}
+.lp .why h3{font-size:20px;margin:8px 0}
+.lp .why p{opacity:.9;margin:0;font-size:16px;line-height:1.65}
+.lp .amen{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.lp .am{background:#fff;border:1px solid #E6EAF2;border-radius:14px;padding:16px 18px;display:flex;gap:14px;align-items:center;font-weight:500;box-shadow:0 4px 14px rgba(10,26,63,.04);transition:transform .2s,box-shadow .2s}

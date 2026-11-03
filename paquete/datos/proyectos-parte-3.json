@@ -1,0 +1,1681 @@
+[
+ {
+  "actualizado": "2026-10-13T19:02:05.774Z",
+  "amenidades": [
+   "Piscina infinita",
+   "Jacuzzi",
+   "Solarium",
+   "Lobby bar",
+   "Terraza",
+   "Camas balinesas",
+   "Elevadores",
+   "Restaurante",
+   "Área de pizza y grill",
+   "Bar de playa",
+   "Playa",
+   "Sala de eventos",
+   "Seguridad privada las 24 horas"
+  ],
+  "captador": "Robert Cavallo",
+  "captadorId": "cmun75ocyj10s",
+  "captadorTel": "849 459 9221",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto Internacional de La Romana (LRM)",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana (PUJ)",
+    "tiempo": "40 min"
+   },
+   {
+    "lugar": "Aeropuerto de Santo Domingo (SDQ)",
+    "tiempo": "80 min"
+   }
+  ],
+  "descripcion": "Emerald Suites es un proyecto residencial ubicado en Dominicus, Bayahibe, pensado para quienes buscan calma, privacidad y un diseño contemporáneo que se integra con su entorno natural.\nAquí la vida transcurre entre piscina infinita, playa, restaurante y áreas verdes, en un ambiente sereno pero bien conectado con los principales aeropuertos del Caribe.\nInvertir en Emerald Suites conviene porque ofrece gestión de renta profesional, alta ocupación hotelera y una ubicación estratégica que combina tranquilidad con conectividad internacional.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "diciembre 2028",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuándo se entrega el proyecto?",
+    "r": "La fecha de entrega estimada es diciembre de 2028."
+   },
+   {
+    "p": "¿Cómo funciona el plan de pago?",
+    "r": "Se paga 20 por ciento de reserva con 5,000 dólares, 20 por ciento en separación, 60 por ciento durante la construcción y el resto a la entrega."
+   },
+   {
+    "p": "¿Quién administra la renta del apartamento?",
+    "r": "El equipo del proyecto se encarga de rentar y administrar su unidad, cobrando una tarifa del 20 por ciento de los ingresos."
+   },
+   {
+    "p": "¿Cuánto es el costo de mantenimiento?",
+    "r": "El mantenimiento tiene un costo de 3.10 dólares e incluye jardines, piscinas, limpieza y seguridad las 24 horas."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/2239ea88c69c26f93b5c6625d38e4a00.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/2b21a2043dd03c773ebeccedad84437f.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/826cbc18d64e34ee272b0d650f2bb40c.jpg",
+   "afb7d5ad4ab6584d9b078ca98d16a128",
+   "a6b16244c9b56e24481fa712aa41f64d"
+  ],
+  "frase": "Viva la calma frente al mar caribeño",
+  "nombre": "Emerald Suites",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está en Dominicus, a 15 minutos del aeropuerto de La Romana, con vuelos directos desde Europa y América.",
+    "titulo": "Ubicación privilegiada"
+   },
+   {
+    "texto": "La arquitectura contemporánea se integra con el entorno natural para ofrecer bienestar y privacidad.",
+    "titulo": "Diseño que inspira calma"
+   },
+   {
+    "texto": "El equipo administra y renta su apartamento por una tarifa del 20 por ciento, con alta ocupación todo el año.",
+    "titulo": "Inversión sin esfuerzo"
+   },
+   {
+    "texto": "Cuenta con piscina infinita, restaurante, bar de playa y acceso directo a la playa de Bayahibe.",
+    "titulo": "Amenidades frente al mar"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:50:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 260000,
+    "hab": 1,
+    "m2": 75.8
+   },
+   {
+    "banos": 2,
+    "desde": 360000,
+    "hab": 2,
+    "m2": 101.2
+   }
+  ],
+  "url": "",
+  "zona": "Dominicus, Bayahibe, La Altagracia",
+  "id": "pmupxzebbf36e2"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [
+   "Patio"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Hugo Pagan",
+   "observaciones": ""
+  },
+  "descripcion": "Eos es un proyecto de apartamentos en Vista Cana, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$245,000. La entrega está prevista para julio 2028.\nEntre sus áreas y facilidades se encuentran: patio. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Julio 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Eos está en Vista Cana, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$245,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para julio 2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Vista Cana",
+  "nombre": "Eos",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Vista Cana, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$245,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para julio 2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye patio, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 245000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Vista Cana, Punta Cana",
+  "id": "pmv76dodxv3uct"
+ },
+ {
+  "actualizado": "2026-10-13T19:04:58.015Z",
+  "amenidades": [
+   "Piscina tipo playa",
+   "Piscina infinita",
+   "Tres piscinas",
+   "Gimnasio climatizado",
+   "Terraza techada y destechada tipo lounge bar",
+   "Área infantil",
+   "Cancha deportiva múltiple",
+   "Dos canchas de pádel",
+   "Cancha de baloncesto",
+   "Ciclovía",
+   "Parques y áreas verdes",
+   "Casa club por manzana",
+   "Desarrollo comercial con supermercados y tiendas de conveniencia"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa",
+    "tiempo": "18 min"
+   }
+  ],
+  "descripcion": "Evergarden Life Residences es un desarrollo de apartamentos de 1 y 2 habitaciones en Punta Cana. Cada manzana cuenta con su propia área social, y el proyecto incluye fideicomiso y Bono Vivienda.\nAquí usted disfruta de áreas verdes, tres piscinas, gimnasio climatizado, terrazas tipo lounge y ciclovía. Dentro del desarrollo hay también espacios comerciales, con supermercados y tiendas de conveniencia, a pocos pasos de casa.\nEs una opción pensada para vivir o para invertir, ya que los apartamentos son aptos para alquiler tipo Airbnb. La playa queda a 18 minutos, y el entorno ofrece fácil acceso a Downtown, restaurantes y aeropuerto.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2029",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuándo se entrega el proyecto?",
+    "r": "La entrega está prevista para diciembre de 2029."
+   },
+   {
+    "p": "¿Qué tamaños de apartamento hay?",
+    "r": "Hay apartamentos de 1 habitación y 1 baño con 38 m², y de 2 habitaciones y 2 baños con 55 m²."
+   },
+   {
+    "p": "¿Cuánto cuesta el mantenimiento?",
+    "r": "El mantenimiento aproximado es de US$80 a US$100. Incluye limpieza y mantenimiento de áreas comunes, recogida de basura y seguridad."
+   },
+   {
+    "p": "¿Puedo usar el apartamento para alquiler turístico?",
+    "r": "Sí. El proyecto es Airbnb friendly, por lo que resulta adecuado para vivir o para invertir."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/b2914c5a6fa28d2312dfb87ae9e4a25d.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/df8b66b89ab1e84e76273149e39f6029.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/5aa4d889f92d856acfb451c1fb469ca0.jpg",
+   "6a8e30eac56c3cb8fb1d43994a47322e",
+   "bbf299018d9ae1b89b9c6cb47551d626",
+   "0e0a761d9aa1852678652819d0ea5d4a"
+  ],
+  "frase": "Viva e invierta en un entorno verde en Punta Cana",
+  "nombre": "Evergarden Life Residences",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está en un entorno de Punta Cana con fácil acceso a Downtown, playas, restaurantes, zonas de entretenimiento y al aeropuerto.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "El proyecto cuenta con fideicomiso y Bono Vivienda, lo que le brinda mayor tranquilidad al adquirir su unidad.",
+    "titulo": "Respaldo fiduciario"
+   },
+   {
+    "texto": "Sus apartamentos son aptos para alquiler tipo Airbnb, una buena opción si desea que su inversión genere ingresos.",
+    "titulo": "Ideal para invertir"
+   },
+   {
+    "texto": "Dentro del desarrollo encontrará áreas deportivas, recreativas y comerciales, además de zonas verdes para el descanso de su familia.",
+    "titulo": "Vida completa en un solo lugar"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-09T21:23:30.988Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 59999,
+    "hab": 1,
+    "m2": 38
+   },
+   {
+    "banos": 2,
+    "desde": 76999,
+    "hab": 2,
+    "m2": 55
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, La Altagracia",
+  "id": "pmv1h2re4zb5u2"
+ },
+ {
+  "actualizado": "2026-10-13T21:42:50.989Z",
+  "amenidades": [
+   "3 piscinas para niños y adultos",
+   "Cancha de pádel",
+   "Gimnasio equipado",
+   "Espacio de coworking",
+   "Estudio de YouTube",
+   "Parque infantil",
+   "Área de BBQ",
+   "Parque para mascotas",
+   "Área de yoga",
+   "Circuito para correr",
+   "Casa Club",
+   "Lobby",
+   "2 cargadores para vehículos eléctricos",
+   "Parqueo de visitantes",
+   "Áreas verdes de 18",
+   "137.48 m²"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Centros comerciales",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Coco Bongo",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Colegios bilingües",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Hard Rock Cafe",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Hospital",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Parque temático",
+    "tiempo": "8 min"
+   }
+  ],
+  "descripcion": "Garden City es un proyecto de 22 edificios con cuatro modelos de apartamentos. Está ubicado en la Avenida Boulevard Turístico, en Bávaro, sobre un terreno de 55,988.32 m² con amplias áreas verdes.\nAquí puede disfrutar de tres piscinas, cancha de pádel, gimnasio equipado y espacios de coworking. También hay un parque para mascotas, área de yoga, zona de BBQ y un circuito para correr.\nLa inversión cuenta con el respaldo de Fiduciaria Popular, del Grupo Popular. El proyecto está en proceso de aprobación de CONFOTUR, y la entrega está prevista para abril de 2027.",
+  "direccion": "Avenida Boulevard Turístico, Bávaro",
+  "disp": "Disponible",
+  "entrega": "Abril 2027",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuándo se entrega el proyecto?",
+    "r": "El brochure indica abril de 2027 como fecha de entrega."
+   },
+   {
+    "p": "¿Qué modelos de apartamento hay?",
+    "r": "Hay cuatro modelos: Azul de 63 m², Marina de 82 m², Coral de 88 m² y Palmare de 118 m²."
+   },
+   {
+    "p": "¿Cuál es el costo de mantenimiento?",
+    "r": "El costo mensual estimado es de US$2 por metro cuadrado, correspondiente a la cuota de mantenimiento (HOA)."
+   },
+   {
+    "p": "¿Cómo está protegida mi inversión?",
+    "r": "El proyecto opera bajo fideicomiso con Fiduciaria Popular, del Grupo Popular. Los fondos y activos se mantienen independientes y supervisados por la Superintendencia de Bancos."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/36a31c94795730c7483ccfd317733f9d.jpg"
+  ],
+  "frase": "Viva donde sus vacaciones nunca terminan",
+  "nombre": "Garden City",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 60,
+   "entregaPct": 20,
+   "firmaPct": 20,
+   "meses": 0,
+   "separacion": 3000
+  },
+  "porque": [
+   {
+    "texto": "Está a 15 minutos del aeropuerto de Punta Cana. También tiene cerca centros comerciales, colegios bilingües, hospital y playas.",
+    "titulo": "Ubicación práctica"
+   },
+   {
+    "texto": "Su inversión está protegida por Fiduciaria Popular, del Grupo Popular. Los fondos del proyecto se mantienen separados y supervisados por la Superintendencia de Bancos.",
+    "titulo": "Inversión respaldada"
+   },
+   {
+    "texto": "Incluye pisos de porcelanato, gabinetes resistentes al agua, grifería de acero inoxidable SUS304, aire acondicionado en la habitación principal y electrodomésticos eléctricos.",
+    "titulo": "Acabados de calidad"
+   },
+   {
+    "texto": "Tendrá piscinas, pádel, gimnasio, coworking y áreas verdes. Un entorno pensado para descansar, trabajar y compartir en familia.",
+    "titulo": "Vida de vacaciones"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:50:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 132100,
+    "hab": 1,
+    "m2": 63
+   },
+   {
+    "banos": 3,
+    "desde": 146539,
+    "hab": 2,
+    "m2": 118
+   }
+  ],
+  "url": "",
+  "zona": "Bávaro, Punta Cana",
+  "id": "pmv5r6py9yv51m"
+ },
+ {
+  "actualizado": "2026-10-09T21:24:01.752Z",
+  "amenidades": [
+   "Piscina en cada bloque de edificios",
+   "Terraza techada con área lounge en cada bloque",
+   "Garita de seguridad",
+   "Sistema de cámaras de seguridad",
+   "Plaza comercial con tiendas, supermercados y restaurantes",
+   "Patio privado en primeros niveles",
+   "Terraza privada en penthouses",
+   "Apto para Airbnb"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Garden Life Residences es un desarrollo residencial en Licey al Medio, Santiago. Ofrece apartamentos de 2 y 3 habitaciones en edificios de 4 niveles, con opciones con patio y penthouses con terraza privada.\nAquí encontrará un entorno tranquilo, de baja densidad y rodeado de vegetación. Cada bloque cuenta con piscina y terraza techada con área lounge. El proyecto también contempla una plaza comercial con tiendas, supermercados y restaurantes.\nEs una buena opción para vivir o invertir. Las unidades cuentan con Fideicomiso y Bono Vivienda, y el proyecto es apto para alquiler tipo Airbnb. Además, tiene el respaldo de un desarrollador con varios proyectos entregados.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué tipos de apartamentos hay?",
+    "r": "Hay apartamentos de 2 y 3 habitaciones, unidades de primer nivel con patio y penthouses con terraza privada en el cuarto nivel."
+   },
+   {
+    "p": "¿Desde qué precio se ofrecen?",
+    "r": "Los apartamentos de 2 habitaciones parten desde US$79,950 y los de 3 habitaciones desde US$93,490. Los penthouses parten desde US$118,530."
+   },
+   {
+    "p": "¿Cuántos parqueos incluye cada unidad?",
+    "r": "Los apartamentos incluyen 1 parqueo. Los penthouses incluyen 2 parqueos."
+   },
+   {
+    "p": "¿Qué incluye el mantenimiento?",
+    "r": "El mantenimiento aproximado es de US$1.0 por metro cuadrado. Incluye limpieza y mantenimiento de áreas comunes, recogida de basura y seguridad."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/180e529d29bbafa81b8d0465f500101b.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/74915597219f07f429b2f2e5d8917b2f.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/eeff3b6900f785b1a26a786557cab7fd.jpg",
+   "2abd8159bfe908e0f2e3109c2e17f2a9",
+   "ce412746e98747c23a9b11c35c867b5c",
+   "36d25a84981fca3ac6ddaacaab8b8580"
+  ],
+  "frase": "Vida tranquila entre áreas verdes, cerca de la ciudad",
+  "nombre": "Garden Life Residences",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Licey al Medio ofrece baja densidad y abundante vegetación. Disfrutará de un ambiente abierto, sin quedar aislado de la ciudad.",
+    "titulo": "Entorno tranquilo"
+   },
+   {
+    "texto": "Los apartamentos de 2 y 3 habitaciones cuentan con Fideicomiso y Bono Vivienda, con respaldo fiduciario.",
+    "titulo": "Apoyo para su compra"
+   },
+   {
+    "texto": "El proyecto es Airbnb friendly, ideal para quien desea vivir en él o generar ingresos por alquiler.",
+    "titulo": "Pensado para invertir"
+   },
+   {
+    "texto": "Piscina y terraza lounge en cada bloque, además de patios en primeros pisos y terrazas en penthouses.",
+    "titulo": "Espacios para la familia"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-09T21:24:01.752Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 79950,
+    "hab": 2,
+    "m2": 69
+   },
+   {
+    "banos": 2,
+    "desde": 93490,
+    "hab": 3,
+    "m2": 80
+   }
+  ],
+  "url": "",
+  "zona": "Licey al Medio, Santiago",
+  "id": "pmv1h3f4ogz5z9"
+ },
+ {
+  "actualizado": "2026-10-13T19:00:59.303Z",
+  "amenidades": [
+   "Residencial cerrado con verja perimetral",
+   "Seguridad 24/7 con acceso controlado a cada bloque",
+   "Piscina para adultos y niños",
+   "Área lounge",
+   "Área de bar",
+   "Gimnasio al aire libre",
+   "Sendero para caminar",
+   "Cancha de padel",
+   "Local comercial",
+   "Ascensor hasta el último nivel",
+   "Jacuzzi incluido en patios y penthouses"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto Punta Cana",
+    "tiempo": "7 min"
+   },
+   {
+    "lugar": "Pearl Beach Club",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Coco Bongo",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "El Cortecito",
+    "tiempo": "3 min"
+   },
+   {
+    "lugar": "Downtown",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Bibijagua Beach",
+    "tiempo": "12 min"
+   }
+  ],
+  "descripcion": "Gayacana es un residencial cerrado en Punta Cana. Reúne 32 apartamentos de 2 habitaciones, en edificios de cinco niveles con ascensor hasta el último piso.\nAquí puede disfrutar de piscina para adultos y niños, área lounge con bar, gimnasio al aire libre, sendero para caminar y cancha de padel. El acceso está controlado en cada bloque.\nHay opciones para cada gusto: apartamentos con balcón, unidades de primer nivel con patio y penthouses con terraza. Los patios y penthouses incluyen jacuzzi. Además, cuenta con 36 meses para pagar.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Mayo 2029",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuándo se entrega el proyecto?",
+    "r": "La entrega está prevista para mayo de 2029."
+   },
+   {
+    "p": "¿Cuántos apartamentos tiene Gayacana?",
+    "r": "El proyecto tiene 32 apartamentos de 2 habitaciones, en edificios de cinco niveles con ascensor hasta el último nivel."
+   },
+   {
+    "p": "¿Cuál es el precio de partida?",
+    "r": "Los apartamentos de segundo y tercer nivel con balcón parten desde US$119,000. Los de primer nivel con patio, desde US$137,700, y los penthouses, desde US$179,590."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento estimado?",
+    "r": "El mantenimiento estimado es de US$150."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/7dd1c2a6d16e26ebc0827a6ea4257038.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/ec8e3492145dff40f25f2bb5584017b9.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/903bcdc419bdaf6441f55d20718b1190.jpg",
+   "756197c81902f5d8837316581c10351e",
+   "46a5306fb9a0cffb127a72e84b52b557",
+   "1c6fe4c6724ad1602fbfd91d6184cec8"
+  ],
+  "frase": "Su apartamento en Punta Cana, cerca de todo",
+  "nombre": "Gayacana",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 36,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está a 7 minutos del Aeropuerto de Punta Cana y a pocos minutos de El Cortecito, Downtown y Pearl Beach Club.",
+    "titulo": "Ubicación práctica"
+   },
+   {
+    "texto": "Puede elegir un apartamento con balcón, uno con patio en primer nivel o un penthouse con terraza.",
+    "titulo": "Opciones para cada estilo"
+   },
+   {
+    "texto": "Los apartamentos con patio y los penthouses incluyen jacuzzi, un detalle que suma comodidad y valor a su hogar.",
+    "titulo": "Jacuzzi incluido"
+   },
+   {
+    "texto": "El proyecto ofrece 36 meses para pagar, con entrega prevista para mayo de 2029.",
+    "titulo": "Tiempo para pagar"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-09T21:24:42.862Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 119000,
+    "hab": 2,
+    "m2": 70
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana",
+  "id": "pmv1h4aummok42"
+ },
+ {
+  "actualizado": "2026-10-14T20:38:03.157Z",
+  "amenidades": [
+   "Piscina",
+   "Club area",
+   "Área de BBQ",
+   "Terraza",
+   "Patio privado",
+   "Jardín delantero",
+   "Pérgola opcional",
+   "Jacuzzi privado opcional"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Bancos, supermercados y servicios",
+    "tiempo": "5 min"
+   }
+  ],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "German Escarfullery",
+   "observaciones": ""
+  },
+  "descripcion": "Golden Breeze es una comunidad exclusiva y de baja densidad en Punta Cana. Cuenta con solo 15 villas contemporáneas de dos niveles, con 2 y 3 habitaciones, distribuidas alrededor de una piscina y un área social.\nCada villa tiene sala y comedor amplios, cocina con isla, patio y dos parqueos. Arriba se encuentran las habitaciones, y la principal incluye balcón. Usted dispone de club, área de BBQ y piscina.\nSon propiedades prácticas, de fácil mantenimiento y bien ubicadas. Por eso resultan ideales como inversión para alquiler tipo Airbnb. También puede añadir una pérgola o un jacuzzi privado a su villa.",
+  "direccion": "Punta Cana 23000, entrada a Brisas de Punta Cana, Blvd. Turístico del Este",
+  "disp": "Disponible",
+  "entrega": "diciembre 2027",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuántas villas tiene el proyecto?",
+    "r": "Golden Breeze tiene solo 15 villas de dos niveles, con 2 y 3 habitaciones, en una comunidad de baja densidad."
+   },
+   {
+    "p": "¿Cuál es el precio de las villas?",
+    "r": "La villa de 2 habitaciones y 85 m² parte de US$134,900. La de 3 habitaciones y 110 m² parte de US$159,900. El tipo B de 120 m² cuesta US$174,900."
+   },
+   {
+    "p": "¿Cuándo se entrega y cómo se paga?",
+    "r": "La entrega está prevista para diciembre de 2027. El plan 1 pide 20% a la firma, 35% en construcción y 45% a la entrega. El plan 2 pide 15%, 40% y 45%. La reserva es de US$2,000 y no es reembolsable."
+   },
+   {
+    "p": "¿Puedo añadir extras a mi villa?",
+    "r": "Sí. Puede añadir una pérgola en el parqueo por US$12,000 o un jacuzzi de 1.70 x 1.70 m en el patio por US$14,000."
+   }
+  ],
+  "fotos": [
+   "6ece069a744c0ebb22913d0022d4f910",
+   "f499c1faa68edff10f0c4aa65e8d55e0",
+   "3d4120070fea36ecc84b94d5c0e5c8da",
+   "1052d8575b0da78918db8d76c223fdb4",
+   "70efcaa5896d247949465f662638dff6"
+  ],
+  "frase": "Villas modernas en el corazón de Punta Cana",
+  "nombre": "Golden Breeze",
+  "origen": "crm",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 35,
+   "entregaPct": 45,
+   "firmaPct": 20,
+   "meses": 0,
+   "separacion": 2000
+  },
+  "porque": [
+   {
+    "texto": "Está en pleno downtown de Punta Cana, con buenas conexiones a las vías principales. Llegará fácilmente a cualquier punto de la ciudad.",
+    "titulo": "Ubicación céntrica"
+   },
+   {
+    "texto": "El Aeropuerto Internacional queda a 10 minutos. Los servicios de uso diario están a solo 5 minutos.",
+    "titulo": "Cerca del aeropuerto"
+   },
+   {
+    "texto": "Sus villas son prácticas, de fácil mantenimiento y están bien ubicadas. Son ideales para alquiler turístico tipo Airbnb.",
+    "titulo": "Inversión para Airbnb"
+   },
+   {
+    "texto": "Solo 15 villas de estilo contemporáneo, con piscina, club y área de BBQ. Un entorno tranquilo y privado para vivir o descansar.",
+    "titulo": "Comunidad exclusiva"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:38:03.157Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 134900,
+    "hab": 2,
+    "m2": 85
+   },
+   {
+    "banos": 2,
+    "desde": 159900,
+    "hab": 3,
+    "m2": 110
+   }
+  ],
+  "url": "",
+  "zona": "Downtown, Punta Cana",
+  "id": "pmv76dodyqiyvj"
+ },
+ {
+  "actualizado": "2026-10-13T19:01:19.790Z",
+  "amenidades": [
+   "Lobby y salón de eventos",
+   "Piscina",
+   "Gimnasio",
+   "Terrazas comunes",
+   "Área de BBQ",
+   "Juegos infantiles",
+   "Parque para mascotas",
+   "Ascensor en los bloques de apartamentos",
+   "Playas artificiales",
+   "Casa club",
+   "Golf",
+   "Centro deportivo",
+   "Restaurantes",
+   "Colegio",
+   "Supermercados"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Supermercados",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Cocobongo",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Downtown Mall",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Hospiten Bávaro",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Pearl Beach Club",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Playa Cabeza de Toro",
+    "tiempo": "10 min"
+   }
+  ],
+  "descripcion": "Green Garden Residences IV es un proyecto pensado para quienes desean vivir cerca de la naturaleza, sin perder comodidad. Ofrece 128 apartamentos de 1, 1 más estudio y 2 habitaciones, en bloques de cuatro niveles con ascensor.\nAdemás de los apartamentos, el proyecto cuenta con 12 villas dúplex y 8 villas individuales. Cuenta con lobby y salón de eventos, gimnasio, piscina, terrazas comunes, área de BBQ, juegos infantiles y parque para mascotas.\nEstá a pocos minutos a pie de la segunda playa artificial de Vistacana y de su zona deportiva. Todas las unidades incluyen nevera, estufa y extractor de grasa. Las villas parten desde US$ 278,900.",
+  "direccion": "Vistacana, Bávaro, Punta Cana, República Dominicana",
+  "disp": "Disponible",
+  "entrega": "2029-2030",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué tipos de unidades tiene el proyecto?",
+    "r": "Tiene 128 apartamentos de 1, 1 más estudio y 2 habitaciones, además de 12 villas dúplex y 8 villas individuales."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega general está prevista entre 2029 y 2030. Las villas se entregan en 2030."
+   },
+   {
+    "p": "¿Cuál es el precio de las villas?",
+    "r": "Las villas parten desde US$ 278,900. La reservación es de US$ 2,000 y no es reembolsable."
+   },
+   {
+    "p": "¿Cuál es la forma de pago?",
+    "r": "Se paga 15% a la firma del contrato, 35% durante la construcción y 50% contra entrega."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/f60df649841c1bdd489a23d48578fede.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/c85e6cd474061ac1ac2be757ed125b21.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/d6eeb4f655bfb19c3faf57d25819b2fa.jpg",
+   "ff002c2e69daafe37440353b20c9ebdc",
+   "695e543dc433fb8048a82dc9c9bfd1be"
+  ],
+  "frase": "Viva entre jardines, cerca de la playa y el golf",
+  "nombre": "Green Garden Residences IV",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 35,
+   "entregaPct": 50,
+   "firmaPct": 15,
+   "meses": 0,
+   "separacion": 2000
+  },
+  "porque": [
+   {
+    "texto": "Se encuentra en Bávaro, Punta Cana, dentro de un proyecto urbano que une innovación, sostenibilidad y una fuerte conexión con la naturaleza.",
+    "titulo": "Ubicación en Vistacana"
+   },
+   {
+    "texto": "La segunda playa artificial de Vistacana queda a pocos minutos caminando. También hay otras playas y un club de playa a poca distancia.",
+    "titulo": "Cerca de la playa"
+   },
+   {
+    "texto": "La zona deportiva de Vistacana contará con canchas de pádel, fútbol y tenis. El entorno también ofrece golf, centro deportivo y gimnasio.",
+    "titulo": "Vida activa"
+   },
+   {
+    "texto": "Puede elegir entre apartamentos, villas dúplex de 134.93 m² o villas individuales de 188.53 m². Todas las unidades incluyen nevera, estufa y extractor de grasa.",
+    "titulo": "Variedad de opciones"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:50:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 139900,
+    "hab": 1,
+    "m2": 56
+   },
+   {
+    "banos": 3,
+    "desde": 159900,
+    "hab": 2,
+    "m2": 80
+   }
+  ],
+  "url": "",
+  "zona": "Vistacana, Bávaro, Punta Cana",
+  "id": "pmv1himc5xf0wg"
+ },
+ {
+  "actualizado": "2026-11-02T18:59:07.125Z",
+  "amenidades": [
+   "Casa club con área de juegos",
+   "gimnasio y salones",
+   "Canchas de soccer",
+   "padel tennis",
+   "pickleball y baloncesto",
+   "Parque ecológico con lago y juegos para niños",
+   "Estaciones de parrilla al aire libre",
+   "Seguridad privada",
+   "Área comercial",
+   "Capilla",
+   "Sendero ecológico y reserva forestal de unos 2 km",
+   "Unos 46",
+   "000 m² de área verde"
+  ],
+  "brochureUrl": "https://drive.usercontent.google.com/download?id=1LF7IQlmtGQZHOTKHT59lllfboZcx_zS8&export=download&confirm=t",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "3.00%",
+   "contacto": "Melido Eduardo",
+   "observaciones": ""
+  },
+  "descripcion": "Green Park es un proyecto residencial de 480 apartamentos, repartidos en 15 torres de 9 niveles con ascensor. Está en Santo Domingo Norte, en la avenida Jacobo Majluta con la avenida Presidente Antonio Guzmán.\nAquí usted encontrará casa club con gimnasio y salones, canchas deportivas y un parque ecológico con lago. También tendrá estaciones de parrilla al aire libre, área comercial, capilla y seguridad privada.\nEl proyecto reserva cerca de 46,000 m² de área verde, alrededor del 30% del terreno. Además, cuenta con un sendero ecológico y una reserva forestal de unos 2 km, ideales para el descanso en familia.",
+  "direccion": "Av. Jacobo Majluta con Av. Pte. Antonio Guzmán, Santo Domingo Norte",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántos apartamentos tiene el proyecto?",
+    "r": "El proyecto tiene 480 apartamentos, distribuidos en 15 torres de 9 niveles cada una, con ascensor."
+   },
+   {
+    "p": "¿Qué tamaños de apartamento hay?",
+    "r": "Los apartamentos miden 102 m² (tipo B), 124 m² (tipo A) y 148 m² (tipo A Plus). También hay penthouses de 175 m², 211 m² y 247 m²."
+   },
+   {
+    "p": "¿Cuántas habitaciones y baños tienen las unidades?",
+    "r": "Los apartamentos tienen 3 habitaciones, o 2 habitaciones más estudio, y 2.5 baños. Incluyen balcón, sala-comedor, cocina, área de lavado y locker."
+   },
+   {
+    "p": "¿Qué amenidades ofrece el proyecto?",
+    "r": "Ofrece casa club con gimnasio y salones, canchas deportivas, parque ecológico con lago, parrillas al aire libre, seguridad privada, área comercial y capilla."
+   }
+  ],
+  "fotos": [
+   "1bd1f5b96050b58093c26fbcd5e9aea9",
+   "c8e2cb6e3186b84587df319b28ab3585",
+   "60b3f0b0ba732780386083ecb45c2118",
+   "f084f9a5cd44add47c7a08a158a292bb",
+   "4bdf68123e455f01e8c8c54a3cc173db"
+  ],
+  "frase": "Vida en comunidad rodeada de naturaleza y deporte",
+  "nombre": "Green Park",
+  "origen": "crm",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto se encuentra en la avenida Jacobo Majluta con la avenida Presidente Antonio Guzmán, en Santo Domingo Norte.",
+    "titulo": "Ubicación accesible"
+   },
+   {
+    "texto": "Cerca del 30% del terreno es área verde, con parque ecológico, lago, sendero y reserva forestal de unos 2 km.",
+    "titulo": "Contacto con la naturaleza"
+   },
+   {
+    "texto": "Cuenta con canchas de soccer, padel tennis, pickleball y baloncesto, además de gimnasio y casa club con salones.",
+    "titulo": "Deporte y recreo"
+   },
+   {
+    "texto": "Hay apartamentos de 102, 124 y 148 m², y penthouses de 175, 211 y 247 m², con locker y parqueos.",
+    "titulo": "Variedad de modelos"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-11-02T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 138000,
+    "hab": 3,
+    "m2": 102
+   }
+  ],
+  "url": "",
+  "zona": "Santo Domingo Norte, Provincia Santo Domingo",
+  "id": "pmv76doeyx23ua"
+ },
+ {
+  "actualizado": "2026-10-09T21:41:35.620Z",
+  "amenidades": [
+   "Spa",
+   "Restaurante",
+   "Farmacia",
+   "Minimarket",
+   "Lavandería",
+   "Oficina administrativa",
+   "Jardín y galería en cada villa"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Plaza comercial",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Supermercados",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Cocobongo",
+    "tiempo": "12 min"
+   },
+   {
+    "lugar": "Las mejores playas de Punta Cana",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "10 min"
+   }
+  ],
+  "descripcion": "Independent Villas es un proyecto de villas independientes en Punta Cana, dentro del Residencial Palmeras de Resipal. Ofrece modelos de 2 y 3 habitaciones, con dos parqueos y garaje. Es un concepto fresco y moderno, pensado para el respeto y la seguridad de las familias.\nAquí encontrará palmeras, brisa fresca y la calma del mar. La residencial cuenta con spa, restaurante, farmacia, minimarket, lavandería y oficina administrativa. Cada villa tiene jardín y galería, para disfrutar el día con tranquilidad y comodidad.\nLas villas incluyen closet y gabinetes de melamina y cubierta de granito. Los baños llevan porcelanato de 60x60 y las puertas principales son de madera sólida. Puede reservar con US$3,000 y elegir entre pagar durante la construcción o contra entrega.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Septiembre 2027",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuándo se entregan las villas?",
+    "r": "El brochure indica entregas inmediatas, otras en terminación y otras para septiembre de 2027, según la unidad."
+   },
+   {
+    "p": "¿Cuánto cuesta separar una villa?",
+    "r": "La separación es de US$3,000. No es reembolsable. Los costos de transferencia corren por cuenta del cliente."
+   },
+   {
+    "p": "¿Cómo se paga una villa?",
+    "r": "En construcción: reserva de US$3,000, 20% en total hasta la firma, 20% en cuotas y 60% contra entrega. En unidades listas: 20% de inicial y 80% contra entrega."
+   },
+   {
+    "p": "¿Cuál es el costo de mantenimiento?",
+    "r": "El brochure indica un mantenimiento de US$1.50 por pie cuadrado de construcción."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/2e5bb5ecff142a80e9c7ccdf1f072647.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/91d55da30815d875388a89c52db3b35a.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/e28775921b00dd244a39a62d9a47a35a.jpg",
+   "e5fabc0792afccd9ca217c9e9ebdb1d1",
+   "e44f076f0806249fecc62057cd8b17d6",
+   "8cb8b3f967cd180b0feb65070e4e0757"
+  ],
+  "frase": "Villas independientes en Punta Cana, pensadas para su familia",
+  "nombre": "Independent Villas Punta Cana",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 20,
+   "entregaPct": 60,
+   "firmaPct": 20,
+   "meses": 14,
+   "separacion": 3000
+  },
+  "porque": [
+   {
+    "texto": "El aeropuerto internacional y los supermercados están a solo 10 minutos. Las mejores playas de Punta Cana quedan a 15 minutos.",
+    "titulo": "Ubicación práctica"
+   },
+   {
+    "texto": "Cada villa tiene jardín, galería y dos parqueos. Es un espacio propio, pensado para la vida en familia.",
+    "titulo": "Villas independientes"
+   },
+   {
+    "texto": "Dispone de spa, restaurante, farmacia, minimarket y lavandería. Todo lo necesario queda cerca de su hogar.",
+    "titulo": "Servicios dentro de la residencial"
+   },
+   {
+    "texto": "Incluye closet y gabinetes de melamina, cubierta de granito y porcelanato de 60x60 en los baños. Las puertas principales son de madera sólida.",
+    "titulo": "Acabados incluidos"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-09T21:41:35.620Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 178000,
+    "hab": 2,
+    "m2": 110
+   },
+   {
+    "banos": 0,
+    "desde": 285000,
+    "hab": 3,
+    "m2": 160
+   }
+  ],
+  "url": "",
+  "zona": "Residencial Palmeras, Punta Cana",
+  "id": "pmv1hq0asd1pj5"
+ },
+ {
+  "actualizado": "2026-10-13T18:58:32.305Z",
+  "amenidades": [
+   "Piscina",
+   "Casa club",
+   "Parque infantil",
+   "Gimnasio",
+   "Parque de mascotas",
+   "Parque ecológico",
+   "Área lounge",
+   "Gazebo",
+   "Bar-restaurante",
+   "Salón de reuniones",
+   "Salón de eventos",
+   "Boulevard peatonal"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Parque Residencial Jardines III",
+    "tiempo": "0 min"
+   },
+   {
+    "lugar": "Colegio bilingüe",
+    "tiempo": "2 min"
+   },
+   {
+    "lugar": "Supermercado Olé",
+    "tiempo": "3 min"
+   },
+   {
+    "lugar": "Downtown",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "San Juan Shopping Center",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Hospital IMG",
+    "tiempo": "10 min"
+   }
+  ],
+  "descripcion": "Jardines IV es un proyecto de apartamentos de 1, 2 y 3 habitaciones en Punta Cana. Forma parte de una serie de residenciales de una constructora con más de 40 años de experiencia.\nAquí encontrará espacios modernos y una amplia zona social. Cuenta con piscina, casa club, gimnasio, parque infantil, parque de mascotas, parque ecológico y bar-restaurante.\nSu ubicación es privilegiada, con supermercado, colegio bilingüe y aeropuerto a pocos minutos. Ofrece una buena relación entre precio y calidad, con planes de pago flexibles y garantía de fideicomiso.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué tipos de apartamentos ofrece Jardines IV?",
+    "r": "Ofrece apartamentos de 1, 2 y 3 habitaciones. Los de 1 habitación tienen 41.35 m², los de 2 habitaciones desde 63.86 m² y los de 3 habitaciones 88.2 m²."
+   },
+   {
+    "p": "¿Desde qué precio puedo comprar?",
+    "r": "Los apartamentos de 1 habitación parten desde US$77,250. Los de 2 habitaciones, desde US$102,930, y los de 3 habitaciones, desde US$125,000."
+   },
+   {
+    "p": "¿Los muebles y la línea blanca están incluidos?",
+    "r": "No. Según el brochure, los elementos decorativos, la línea blanca y los muebles no están incluidos en el precio de venta. El proyecto ofrece financiamiento del paquete de muebles."
+   },
+   {
+    "p": "¿Qué respaldo tiene la compra?",
+    "r": "El proyecto cuenta con garantía de fidecomiso y asesoría profesional de financiamiento. La constructora tiene más de 40 años de experiencia y 10,000 viviendas entregadas."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/f123109b6e585644e0aaf7f478c84f82.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/0bbbb23080ee24b95ce9a37cfc3993f9.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/760492cea13372ba3765342b46f4886f.jpg",
+   "5cea0e103bd01e36c1cc3bdd7d5ed3a0",
+   "cea41c17e454a9771e2418240e07a76c",
+   "f6b3dfafe9d3df5050bf43cbc0f94051"
+  ],
+  "frase": "Su hogar en Punta Cana, cerca de todo",
+  "nombre": "Jardines IV",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Tendrá a pocos minutos supermercado, colegio bilingüe, hospital, centros comerciales y el aeropuerto. Todo queda cerca de su hogar.",
+    "titulo": "Ubicación privilegiada"
+   },
+   {
+    "texto": "Respalda el proyecto una constructora con más de 40 años de trayectoria y 10,000 viviendas entregadas.",
+    "titulo": "Constructora con experiencia"
+   },
+   {
+    "texto": "El proyecto ofrece administración de propiedades, financiamiento del paquete de muebles y casa inteligente. Punta Cana presenta rentabilidad comprobada.",
+    "titulo": "Inversión inteligente"
+   },
+   {
+    "texto": "Cuenta con garantía de fidecomiso, asesoría profesional de financiamiento y planes de pago flexibles para facilitar su compra.",
+    "titulo": "Respaldo y flexibilidad"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:15:54.420Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 77250,
+    "hab": 1,
+    "m2": 41.35
+   },
+   {
+    "banos": 2,
+    "desde": 102930,
+    "hab": 2,
+    "m2": 63.86
+   },
+   {
+    "banos": 2,
+    "desde": 125000,
+    "hab": 3,
+    "m2": 88.2
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, La Altagracia",
+  "id": "pmv5r4j3okq7jy"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Jocaire II es un proyecto de apartamentos en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Jocaire II está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en —",
+  "nombre": "Jocaire II",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dof5tqtpr"
+ },
+ {
+  "actualizado": "2026-10-13T19:02:58.273Z",
+  "amenidades": [
+   "Casa Club",
+   "Laguna central",
+   "Central Park",
+   "Distrito comercial",
+   "Mirador",
+   "Centro de visitantes",
+   "Centro de eventos Lagoon",
+   "Piscina",
+   "Gimnasio",
+   "Spa",
+   "Club de raqueta",
+   "Club infantil",
+   "Restaurantes y cafeterías",
+   "Carriles para bicicletas y buggy"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Catalonia Caribe Golf Club",
+    "tiempo": "2 min"
+   },
+   {
+    "lugar": "Downtown Punta Cana",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "San Juan Shopping Center",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Playa Cabeza de Toro",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Aeropuerto de Punta Cana",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Blue Mall",
+    "tiempo": "10 min"
+   }
+  ],
+  "descripcion": "La Reserva es una comunidad residencial privada de Logayra, dentro del plan maestro de City Place. Está entre Punta Cana y Bávaro y ofrece villas, parcelas y apartamentos.\nSe concibe como una ciudad jardín, con amplias zonas verdes y poca construcción en altura. Usted contará con una casa club, una laguna central, un distrito comercial y bulevares para caminar, pasear en bicicleta o en buggy.\nSu ubicación frente a la Reserva Natural de la Laguna de Bávaro le da intimidad y contacto con la naturaleza. Además, el proyecto queda cerca de campos de golf, playas, centros comerciales y el aeropuerto.",
+  "direccion": "City Place, entre Punta Cana y Bávaro, frente a la Reserva Natural de la Laguna de Bávaro",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Quién desarrolla La Reserva?",
+    "r": "La Reserva es un proyecto de Logayra, ubicado dentro del plan maestro de City Place, entre Punta Cana y Bávaro."
+   },
+   {
+    "p": "¿Qué tipos de propiedades habrá?",
+    "r": "El proyecto ofrecerá mayoritariamente villas y lotes, con una menor densidad de edificación en altura. También incluye apartamentos."
+   },
+   {
+    "p": "¿Qué tan cerca está el aeropuerto?",
+    "r": "El Aeropuerto de Punta Cana queda a unos 10 minutos del proyecto, según el brochure."
+   },
+   {
+    "p": "¿Qué ofrecerá la Casa Club?",
+    "r": "Contará con piscina, gimnasio, spa, yoga, club de raqueta, club infantil, restaurantes, cafeterías, terrazas, salas multiuso y vestuarios."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/b6d07f9d35c38f56ba667eb35a2b20d0.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/614847a66abc6b6af2867d38ec842671.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/ad0424287ef086d3c5369009efebc145.jpg",
+   "9da19a6eb11522a4ecd913c46c004931",
+   "e534dc43f1efc1436e8d1532326d4d1e",
+   "422c673311dbc755151a091205b9226c"
+  ],
+  "frase": "Ciudad jardín frente a la Laguna de Bávaro",
+  "nombre": "La Reserva",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "La Reserva forma parte de City Place, punto central entre Bávaro, Punta Cana y Cap Cana. Desde allí llegará con facilidad a playas, golf y comercios.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "El proyecto mira a la Reserva Natural de la Laguna de Bávaro y guardará una zona de amortiguación que aporta protección e intimidad.",
+    "titulo": "Frente a la naturaleza"
+   },
+   {
+    "texto": "Habrá casa club, laguna interior, centro de eventos, distrito comercial y un amplio bulevar verde, todo dentro de la misma comunidad.",
+    "titulo": "Amenidades completas"
+   },
+   {
+    "texto": "Su diseño vial incluye carriles para bicicletas y buggy, además de zonas peatonales, con el fin de reducir el impacto ambiental.",
+    "titulo": "Vida activa y sostenible"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:50:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 92500,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "City Place, entre Punta Cana y Bávaro",
+  "id": "pmv5r67lqz3rsm"
+ },
+ {
+  "actualizado": "2026-11-02T18:59:33.566Z",
+  "amenidades": [
+   "Servicios de conserjería",
+   "Piscinas de lujo",
+   "Gimnasio",
+   "Casa club",
+   "Acceso privado a la playa",
+   "Restaurantes de alta cocina",
+   "Jardineras",
+   "Terraza privada en algunas unidades",
+   "Piscina privada en algunas unidades",
+   "Estacionamiento"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto de Punta Cana",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Meliá Hotels & Resorts",
+    "tiempo": "12 min"
+   }
+  ],
+  "descripcion": "La Vista by Meliá reúne 230 residencias de lujo con marca, entregadas completamente amuebladas. Se encuentra en el centro de Punta Cana y es operada por Meliá Hotels International.\nAquí usted disfruta de servicios de conserjería, piscinas, gimnasio y casa club. También cuenta con acceso privado a la playa y restaurantes de alta cocina, todo pensado para su comodidad.\nEs una oportunidad para invertir en un destino turístico muy visitado. La marca Meliá aporta respaldo y gestión profesional, y los planes de pago permiten comenzar desde un 20 % de inicial.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántas residencias tiene el proyecto?",
+    "r": "El proyecto cuenta con 230 residencias de lujo de marca, todas completamente amuebladas."
+   },
+   {
+    "p": "¿Quién opera La Vista by Meliá?",
+    "r": "Las residencias son operadas por Meliá Hotels International."
+   },
+   {
+    "p": "¿Qué tan cerca está del aeropuerto?",
+    "r": "Se encuentra a 10 minutos del aeropuerto de Punta Cana y a 12 minutos de Meliá Hotels & Resorts."
+   },
+   {
+    "p": "¿Qué opciones de pago existen?",
+    "r": "Hay múltiples planes de pago, con opciones disponibles desde un 20 % de inicial."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/b07e08822a64a1f0b4c41c0494f0de47.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/e4cde04374b757a9ec75df4fd2bb1133.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/4ddcd29ef3e1e56098547c578843b786.jpg",
+   "c4da06b90f2ef834e451964c0d06974c",
+   "13405a1cbf721cdf217c55cfe97f76dd"
+  ],
+  "frase": "Residencias de marca Meliá en el centro de Punta Cana",
+  "nombre": "La Vista by Meliá",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 20,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está en el centro de Punta Cana, a 10 minutos del aeropuerto y a 12 minutos de Meliá Hotels & Resorts.",
+    "titulo": "Ubicación central"
+   },
+   {
+    "texto": "Meliá Hotels International opera las residencias, con gestión y servicio de nivel mundial que aportan valor y demanda a la propiedad.",
+    "titulo": "Marca de prestigio"
+   },
+   {
+    "texto": "Las 230 residencias se entregan completamente amuebladas, con servicios de conserjería y espacios de bienestar y recreo.",
+    "titulo": "Listas para disfrutar"
+   },
+   {
+    "texto": "Punta Cana es parte del destino turístico más visitado del Caribe, con alta demanda de alquileres de alojamientos de lujo.",
+    "titulo": "Destino con demanda"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 255000,
+    "hab": 1,
+    "m2": 50
+   }
+  ],
+  "url": "",
+  "zona": "Centro de Punta Cana, La Altagracia",
+  "id": "pmv714fy9jfz90"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Las Margaritas es un proyecto de apartamentos en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Las Margaritas está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en —",
+  "nombre": "Las Margaritas",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dof6i6ub1"
+ },
+ {
+  "actualizado": "2026-10-15T21:45:00.000Z",
+  "amenidades": [
+   "Área de niños"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Liv at Punta Cap cana es un proyecto de apartamentos en Cap Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$408,000. La entrega está prevista para diciembre 2026.\nEntre sus áreas y facilidades se encuentran: área de niños. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2026",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Liv at Punta Cap cana está en Cap Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$408,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para diciembre 2026."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "bbcd3d73264af0834b65e5cd5f2a3e2f",
+   "ddd28e742ede6e1f736547317dcf277a",
+   "94c72625aabf5e1b4c76d09f853c8f46",
+   "c282d902d44a8bbb563afc176f1c1374",
+   "894724e9d6a07d3c3c24a40bc5463934",
+   "5008a2bba2d17a98b7b369b8866aa686"
+  ],
+  "frase": "Apartamentos en Cap Cana",
+  "nombre": "Liv at Punta Cap cana",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Cap Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$408,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para diciembre 2026, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye área de niños, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 408000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/KiBThiydOdT69DzCWCEvXo",
+  "zona": "Cap Cana",
+  "id": "pmv76dod4q9x8e"
+ }
+]

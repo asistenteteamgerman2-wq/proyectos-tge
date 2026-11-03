@@ -1,0 +1,1384 @@
+[
+ {
+  "actualizado": "2026-10-16T18:45:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Villas dúplex en solares de 365 m² hasta 374 m². Todas tienen 3 habitaciones, la principal con baño privado, 3.5 baños y 2 parqueos.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "2025",
+  "estado": "En construcción",
+  "faq": [],
+  "fotos": [
+   "996064aefd71a8039965eabe9542e9ca",
+   "0ee1e85a790716fc7270e428c8c7ab40",
+   "68a78edc988444bbc94ca5f2b68e9bff",
+   "f7d80a3be9a2cc30995d6604d5a46ccf",
+   "35101e61650c302f621e2c76a4d08064",
+   "7c3147c2ed5348c686ae0672d98d4376"
+  ],
+  "frase": "Villas dúplex de 3 habitaciones en Punta Cana",
+  "nombre": "Sand Village at Las Canas",
+  "origen": "dropbox",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 40,
+   "entregaPct": 40,
+   "firmaPct": 20,
+   "meses": 0,
+   "separacion": 5000
+  },
+  "porque": [],
+  "precioRef": false,
+  "preciosAl": "2026-10-16T18:45:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 3,
+    "desde": 475000,
+    "hab": 3,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Ciudad Las Canas, Punta Cana",
+  "id": "pmvsandvillage1"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Shalom Imperial es un proyecto de apartamentos en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Shalom Imperial está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en —",
+  "nombre": "Shalom Imperial",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dof9hqve6"
+ },
+ {
+  "actualizado": "2026-10-14T21:11:28.006Z",
+  "amenidades": [
+   "Piscina",
+   "Gimnasio al aire libre",
+   "Lounge",
+   "Cancha de fútbol",
+   "Área de juegos para niños",
+   "Pocket park",
+   "Más de 13",
+   "500 m² de áreas verdes",
+   "Proyecto amigable con Airbnb",
+   "Proyecto amigable con mascotas",
+   "10% de descuento en el restaurante El Morro",
+   "Macao"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Wilton Mueses",
+   "observaciones": ""
+  },
+  "descripcion": "Sunset Gardens es un proyecto de casas con un concepto urbano, ubicado en Verón, Bávaro, Punta Cana. Ofrece cinco tipologías distintas, pensadas para que cada persona encuentre el hogar que busca.\nAquí se vive rodeado de áreas verdes, con más de 13,500 m² de parques y espacios abiertos. El Casa Club cuenta con piscina, gimnasio al aire libre, lounge, cancha de fútbol y área de juegos para niños.\nEs una buena opción para quienes desean invertir con seguridad, así como para parejas y jóvenes familias. El proyecto admite alquiler tipo Airbnb y mascotas, y ofrece 10% de descuento en el restaurante El Morro, en Macao.",
+  "direccion": "Bávaro, Verón - Punta Cana",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Sunset Gardens está en la ciudad de Bávaro, Verón, en Punta Cana, República Dominicana."
+   },
+   {
+    "p": "¿Qué amenidades incluye el Casa Club?",
+    "r": "Incluye piscina, gimnasio al aire libre, lounge, cancha de fútbol, pocket park y área de juegos para niños."
+   },
+   {
+    "p": "¿Se permiten mascotas y alquileres tipo Airbnb?",
+    "r": "Sí. El proyecto es amigable con Airbnb y con mascotas."
+   },
+   {
+    "p": "¿Cuál es el precio de las casas?",
+    "r": "Villa Dalia desde US$109,543, Aurora TH desde US$112,044, Villa Acacia desde US$122,634 y Villa Palmera desde US$153,791. Dos Auroras unidas parten de US$224,088."
+   }
+  ],
+  "fotos": [
+   "c565626003faef7f0cd825ef75ab0c5e",
+   "e71439f59652ba7e8e1e078d920e5d42"
+  ],
+  "frase": "Su hogar en un paraíso natural del Caribe",
+  "nombre": "Solara",
+  "origen": "crm",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está en Verón, Bávaro, en una zona de paisaje natural y cerca de las aguas cristalinas de Punta Cana.",
+    "titulo": "Ubicación en Punta Cana"
+   },
+   {
+    "texto": "Hay cinco tipologías de casas, entre ellas Villa Dalia, Villa Acacia, Villa Palmera y Aurora Townhouse, para distintas necesidades y presupuestos.",
+    "titulo": "Variedad de modelos"
+   },
+   {
+    "texto": "El proyecto admite alquiler tipo Airbnb. La opción de dos Auroras TownHouses ofrece más de 10% de plusvalía al agregar amenidades.",
+    "titulo": "Pensado para invertir"
+   },
+   {
+    "texto": "Sánchez Business & Corp. tiene más de 46 años de experiencia. El proyecto cuenta con más de 13,500 m² de áreas verdes.",
+    "titulo": "Respaldo y áreas verdes"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:11:28.005Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Casa",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 109543,
+    "hab": 2,
+    "m2": 66
+   },
+   {
+    "banos": 2,
+    "desde": 153791,
+    "hab": 3,
+    "m2": 89
+   },
+   {
+    "banos": 2,
+    "desde": 224088,
+    "hab": 4,
+    "m2": 155
+   }
+  ],
+  "url": "",
+  "zona": "Verón, Bávaro - Punta Cana",
+  "id": "pmv76doee2d8bp"
+ },
+ {
+  "actualizado": "2026-10-15T21:45:00.000Z",
+  "amenidades": [
+   "Piscina"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Solemare es un proyecto de apartamentos en Punta cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$149,900, con unidades de hasta US$200,000. La entrega está prevista para 2026 2027 2028.\nEntre sus áreas y facilidades se encuentran: piscina. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "2026 2027 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Solemare está en Punta cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$149,900. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 2026 2027 2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "013bc675a2237d5d8a0f4ce94740558d",
+   "2f868ccef14d5557a034f830731140c9",
+   "2efed8cf8570975148dcf5e74e34538f",
+   "3cf9c95b1d103b3a877118034575483e",
+   "1da81f8c78c640ab9b5dd41f37afb4b2",
+   "d077263f5c61ebc93027efded9e7b468"
+  ],
+  "frase": "Apartamentos en Punta cana",
+  "nombre": "Solemare",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Punta cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$149,900, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 2026 2027 2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye piscina, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 149900,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 200000,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/JpvVmvdAPIE1CYDCnnHAKN",
+  "zona": "Punta cana",
+  "id": "pmv76doefrzbx7"
+ },
+ {
+  "actualizado": "2026-10-13T18:50:01.303Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Sun District es un proyecto residencial ubicado en Ciudad del Sol, en Verón-Punta Cana. Su edificio tiene varios niveles y apartamentos distribuidos con orden y buena circulación.\nLos apartamentos del Bloque A cuentan con sala, cocina, dormitorios, baños y área de lavado. Algunos modelos incluyen despensa y closets, para que cada espacio tenga su función.\nLa planta del edificio está diseñada por Pons Arquitectos. Si desea conocer precios, metrajes y formas de pago, nuestro equipo con gusto le dará la información completa.",
+  "direccion": "Ave. Boulevard del Sol, Ciudad del Sol, Verón-Punta Cana, Higüey, La Altagracia",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde se encuentra Sun District?",
+    "r": "En la Avenida Boulevard del Sol, Ciudad del Sol, Verón-Punta Cana, municipio de Higüey, provincia La Altagracia."
+   },
+   {
+    "p": "¿Qué espacios tienen los apartamentos?",
+    "r": "Según el plano, cuentan con sala, cocina, dormitorios, baños, closets y área de lavado. Algunos modelos incluyen despensa."
+   },
+   {
+    "p": "¿Cuántos niveles tiene el edificio?",
+    "r": "El plano indica cinco niveles de apartamentos, además de un nivel de azotea y un nivel de techo."
+   },
+   {
+    "p": "¿Quién diseñó el proyecto?",
+    "r": "El diseño arquitectónico está a cargo de Pons Arquitectos, con el arquitecto Daniel Pons como responsable del diseño."
+   }
+  ],
+  "fotos": [],
+  "frase": "Vivir en Punta Cana, con espacios bien pensados",
+  "nombre": "Sun District",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Ciudad del Sol, sobre la Avenida Boulevard del Sol, en Verón-Punta Cana, una zona conocida del este del país.",
+    "titulo": "Ubicación en Punta Cana"
+   },
+   {
+    "texto": "El diseño arquitectónico fue elaborado por Pons Arquitectos, un estudio con sede en Santo Domingo.",
+    "titulo": "Diseño de reconocido estudio"
+   },
+   {
+    "texto": "Los apartamentos incluyen sala, cocina, dormitorios, baños, closets y área de lavado. Algunos modelos tienen despensa.",
+    "titulo": "Distribución práctica"
+   },
+   {
+    "texto": "El plano muestra cinco niveles de apartamentos, además de azotea, con una circulación común ordenada.",
+    "titulo": "Edificio de varios niveles"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 76354,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Ciudad del Sol, Verón-Punta Cana, Higüey",
+  "id": "pmv71crtli3h20"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [
+   "Piscina"
+  ],
+  "brochureUrl": "https://www.dropbox.com/scl/fo/33sdt4u310wevxsvlxsnr/AMT8dN0DjqdXeefO8Nv0obs/1.%20PRESENTACIONES%20PARA%20CLIENTES%20%7C%20Team%20YV%2C%20Remax%20%26%20Subbrokers?rlkey=aqfp9i0sx4r0qi0icyx8jyolk&dl=1",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "Jenny Mueses",
+   "observaciones": ""
+  },
+  "descripcion": "Sun View es un proyecto de apartamentos en Vista Cana, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$310,000, con unidades de hasta US$314,700. La entrega está prevista para julio 2027.\nEntre sus áreas y facilidades se encuentran: piscina. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Julio 2027",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Sun View está en Vista Cana, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$310,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para julio 2027."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Vista Cana",
+  "nombre": "Sun View",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Vista Cana, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$310,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para julio 2027, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye piscina, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 310000,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 314700,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/KFjNwba28x03BHlyaqc2yR",
+  "zona": "Vista Cana, Punta Cana",
+  "id": "pmv76doegqbqdr"
+ },
+ {
+  "actualizado": "2026-10-14T21:35:00.000Z",
+  "amenidades": [
+   "Área social"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Sunlax Vista Cana es un proyecto de apartamentos en Vista cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$277,000. La entrega está prevista para 12 meses post contratos.\nEntre sus áreas y facilidades se encuentran: área social. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "12 meses post contratos",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Sunlax Vista Cana está en Vista cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$277,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 12 meses post contratos."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "24595a85b20d192925ca34016b4335df",
+   "e18bc304b7dbd785ac45731f75d9a30e",
+   "d1086ef91597bf1306da4a3d60c9cc48",
+   "3d6f1fc1e5def52e6b64cb9f32900678",
+   "129d8352d671c2ec84018d0c6d601f49",
+   "78890a3e36b6f6514a3d188ec5821f82"
+  ],
+  "frase": "Apartamentos en Vista cana",
+  "nombre": "Sunlax Vista Cana",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Vista cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$277,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 12 meses post contratos, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye área social, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 277000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Vista cana",
+  "id": "pmv76dof1gn77w"
+ },
+ {
+  "actualizado": "2026-10-13T18:46:27.815Z",
+  "amenidades": [
+   "Piscina",
+   "Gimnasio al aire libre",
+   "Lounge",
+   "Cancha de fútbol",
+   "Pocket park",
+   "Área de juegos para niños",
+   "Proyecto Airbnb y pet friendly",
+   "10% de descuento en el restaurante El Morro, en Macao",
+   "Más de 13,500 m² de áreas verdes"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Sunset Gardens es un proyecto de casas con cinco tipologías y un concepto urbano. Se encuentra en Bávaro, Verón, Punta Cana, rodeado de áreas verdes.\nAquí usted vive con calma y comodidad, cerca de las aguas cristalinas de Punta Cana. El Club ofrece piscina, gimnasio al aire libre, lounge, cancha de fútbol y área de juegos para niños.\nEl proyecto está pensado para inversionistas, parejas y familias jóvenes. Es amigable con Airbnb y mascotas, y ofrece una plusvalía desde un 7%, según el desarrollador.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué tipos de casas ofrece Sunset Gardens?",
+    "r": "Ofrece cinco tipologías: Villa Dalia, Villa Acacia, Villa Palmera, Aurora TH y Sunset Villas. Los modelos con precio publicado van de 2 a 4 habitaciones."
+   },
+   {
+    "p": "¿Cuál es el precio inicial?",
+    "r": "La Villa Dalia, de 2 habitaciones y 66.34 m² de construcción, parte desde USD 109,543. Los diseños están sujetos a cambios."
+   },
+   {
+    "p": "¿Qué amenidades tiene el proyecto?",
+    "r": "La Casa Club tiene piscina, gimnasio al aire libre, lounge, cancha de fútbol y área de juegos infantiles. También hay pocket park y 10% de descuento en El Morro, Macao."
+   },
+   {
+    "p": "¿Se puede usar para Airbnb o tener mascotas?",
+    "r": "Sí. El brochure indica que Sunset Gardens es un proyecto amigable con Airbnb y con mascotas."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/2fd635498eab19edec46cf64b27cddcc.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/b3a56b077bc42c84e451252c054286d0.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/33eddb9cb3977360f4b02190e3e77227.jpg",
+   "85b19ebd6930869713c0b93562de0a14",
+   "cb2506f574c3950ec6f42119f18f8296",
+   "c7baeb793f70223fe0a5bf118ff96a0d"
+  ],
+  "frase": "Su hogar en un paraíso natural del Caribe",
+  "nombre": "Sunset Gardens",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Usted estará en Verón, Bávaro, a pocos minutos de las aguas cristalinas de Punta Cana.",
+    "titulo": "Ubicación en Punta Cana"
+   },
+   {
+    "texto": "Sánchez Business & Corp. tiene más de 46 años de trayectoria y ha construido 1,366 unidades habitacionales.",
+    "titulo": "Respaldo de experiencia"
+   },
+   {
+    "texto": "El brochure indica una plusvalía desde un 7%. Además, es un proyecto amigable con Airbnb, pensado para rentas de corta estancia.",
+    "titulo": "Inversión con plusvalía"
+   },
+   {
+    "texto": "Disfrutará de piscina, gimnasio al aire libre, cancha de fútbol y más de 13,500 m² de áreas verdes.",
+    "titulo": "Amenidades y áreas verdes"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T18:46:27.815Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Casa",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 109543,
+    "hab": 2,
+    "m2": 66.34
+   },
+   {
+    "banos": 2,
+    "desde": 153791.76,
+    "hab": 3,
+    "m2": 89.33
+   },
+   {
+    "banos": 3,
+    "desde": 224088,
+    "hab": 4,
+    "m2": 155.18
+   }
+  ],
+  "url": "",
+  "zona": "Verón, Bávaro - Punta Cana",
+  "id": "pmv71873c5sozm"
+ },
+ {
+  "actualizado": "2026-10-14T21:08:35.222Z",
+  "amenidades": [
+   "Casa club",
+   "Salón de eventos",
+   "Área de juegos infantiles",
+   "Cancha deportiva",
+   "Piscina",
+   "Gimnasio",
+   "Plaza comercial"
+  ],
+  "brochureUrl": "https://www.dropbox.com/scl/fo/2zj58plp6q8i4e9662dvq/AFR4Bb8eanSaEY-4o9aGxUY/Brochure?rlkey=rh237hqv6ix87jqkmsihwor9d&dl=1",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "20 min"
+   },
+   {
+    "lugar": "Playa más cercana",
+    "tiempo": "7 min"
+   },
+   {
+    "lugar": "Supermercado principal de la zona",
+    "tiempo": "3 min"
+   }
+  ],
+  "crm": {
+   "comision": "—",
+   "contacto": "Claudia Reyes",
+   "observaciones": ""
+  },
+  "descripcion": "TH Arenas es un proyecto residencial en pleno centro de Bávaro. Lo forman 20 bloques con 224 apartamentos de 1, 2 y 3 habitaciones, pensados para vivir con comodidad.\nEl proyecto cuenta con casa club, piscina, gimnasio, cancha deportiva, área infantil y salón de eventos. También tendrá una plaza comercial, para tener a mano lo que usted necesita.\nEstá a 7 minutos en vehículo de la playa más cercana y a 3 minutos de un supermercado. Es una buena opción para vivir o para invertir en Punta Cana.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Listos",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántos apartamentos tiene el proyecto?",
+    "r": "Son 224 apartamentos en 20 bloques, de 1, 2 y 3 habitaciones, con 230 parqueos en total."
+   },
+   {
+    "p": "¿Qué tamaños de apartamento hay?",
+    "r": "El tipo B tiene 49 m2 con 1 habitación y 1 baño. El tipo A tiene 69 m2 con 2 habitaciones y 2 baños. El tipo C tiene 105 m2 con 3 habitaciones y 2 baños."
+   },
+   {
+    "p": "¿Qué amenidades incluye?",
+    "r": "Incluye casa club, salón de eventos, área infantil, cancha deportiva, piscina, gimnasio y una plaza comercial, entre otras."
+   },
+   {
+    "p": "¿A qué distancia queda el aeropuerto y la playa?",
+    "r": "El Aeropuerto Internacional de Punta Cana está a unos 20 minutos en vehículo. La playa más cercana está a 7 minutos."
+   }
+  ],
+  "fotos": [
+   "79d06d5c614b113b318ca6e58b5dfb12",
+   "1074b6d0a22a1902d1c50d819b31f71f",
+   "e371856172579ba59896aa0a6ee3a0a6",
+   "2ce8f69a94c717a9131edf9380e66230",
+   "486048f773d7d86cc4b2fe5b5d787aaf"
+  ],
+  "frase": "Donde la comodidad y el placer se unen",
+  "nombre": "TH Arenas",
+  "origen": "crm",
+  "parqueos": 230,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está en el centro de Bávaro, a 7 minutos de la playa más cercana y a 3 minutos de un supermercado.",
+    "titulo": "Ubicación central"
+   },
+   {
+    "texto": "El Aeropuerto Internacional de Punta Cana queda a unos 20 minutos en vehículo, una ventaja para quien viaja o alquila.",
+    "titulo": "Cerca del aeropuerto"
+   },
+   {
+    "texto": "Casa club, piscina, gimnasio, cancha deportiva, área infantil y salón de eventos le ofrecen ocio y descanso sin salir del proyecto.",
+    "titulo": "Amenidades completas"
+   },
+   {
+    "texto": "El brochure destaca precios competitivos, terminaciones de calidad y un producto atractivo con un alto porcentaje de rentabilidad.",
+    "titulo": "Pensado para invertir"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:08:35.222Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 88075,
+    "hab": 1,
+    "m2": 49
+   },
+   {
+    "banos": 2,
+    "desde": 119265,
+    "hab": 2,
+    "m2": 69
+   },
+   {
+    "banos": 2,
+    "desde": 148810,
+    "hab": 3,
+    "m2": 105
+   }
+  ],
+  "url": "",
+  "zona": "Cerca del boulevard, Punta Cana",
+  "id": "pmv76doeicqj7b"
+ },
+ {
+  "actualizado": "2026-10-12T21:14:05.202Z",
+  "amenidades": [
+   "Piscina por bloque",
+   "Gimnasio al aire libre",
+   "Casa club",
+   "Cancha de pádel",
+   "Cancha de fútbol",
+   "Plaza comercial",
+   "Seguridad perimetral y vigilancia privada 24/7",
+   "Ascensor en todos los edificios",
+   "Club de Playa St. Tropez para propietarios"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa de Boca Chica",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional Las Américas",
+    "tiempo": "20 min"
+   },
+   {
+    "lugar": "Distrito Nacional de Santo Domingo",
+    "tiempo": "45 min"
+   }
+  ],
+  "descripcion": "Terrazas de Boca Chica es un residencial con aspecto de resort privado. Ofrece apartamentos de una y dos habitaciones, en 40 edificios de 5 niveles, con 280 unidades en total.\nEl proyecto cuenta con piscina por bloque, casa club, gimnasio al aire libre, cancha de pádel y cancha de fútbol. Tiene vigilancia privada las 24 horas y una plaza comercial en la entrada. La playa queda a 5 minutos.\nCada apartamento puede destinarse al alquiler vacacional desde la entrega. Usted puede optar por una administración hotelera y recibir el 75% de los ingresos. También tendrá acceso al Club de Playa St. Tropez.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2027",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuánto cuesta separar un apartamento?",
+    "r": "La reserva es de US$1,000. Con ella usted congela su precio antes de que comience la próxima etapa."
+   },
+   {
+    "p": "¿Cuándo se entregan los apartamentos?",
+    "r": "Las entregas están previstas para diciembre de 2027, junio de 2028 y diciembre de 2028."
+   },
+   {
+    "p": "¿Puedo alquilar mi apartamento por plataformas como Airbnb?",
+    "r": "Sí. El proyecto es Airbnb friendly desde el primer día de entrega. La administración hotelera es opcional y usted recibe el 75% de los ingresos."
+   },
+   {
+    "p": "¿Se puede financiar el mobiliario?",
+    "r": "Sí. El mobiliario completo es opcional y se puede financiar dentro del préstamo hipotecario. Cuesta US$10,000 en 1 habitación y US$12,000 en 2 habitaciones."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/3abdb221044d9c43b7108089b585e3ea.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/d42eb30058b0c0e4777ca4b0807813e9.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/982cf43a3d0598bb5ff9342b3c6414a6.jpg",
+   "8ad90fbd5bbd718b583eb4591f25e1e9",
+   "ca075c1d1ab92b67141b0ae07ef76cf5",
+   "c41fd22b0dd5c51ad1568aa16047e06b"
+  ],
+  "frase": "Viva en la playa y gane mientras no está",
+  "nombre": "Terrazas de Boca Chica",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 30,
+   "entregaPct": 55,
+   "firmaPct": 15,
+   "meses": 0,
+   "separacion": 1000
+  },
+  "porque": [
+   {
+    "texto": "La playa de Boca Chica queda a 5 minutos y el aeropuerto Las Américas a 20. El Distrito Nacional está a 45 minutos.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "Junto a las academias de béisbol de los Yankees, los Mets y los Marlins, hay visitantes que buscan hospedaje durante todo el año.",
+    "titulo": "Demanda todo el año"
+   },
+   {
+    "texto": "Según datos del mercado local, un apartamento de 1 habitación proyecta entre US$700 y US$900 al mes. Uno de 2 habitaciones, entre US$1,000 y US$1,300.",
+    "titulo": "Ingresos por alquiler"
+   },
+   {
+    "texto": "Los contratos son notarizados y el desarrollo tiene cuentas bancarias exclusivas. Además, los propietarios disfrutan del Club de Playa St. Tropez sin costo de acceso.",
+    "titulo": "Respaldo y beneficios"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:14:05.202Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 73000,
+    "hab": 1,
+    "m2": 54
+   },
+   {
+    "banos": 0,
+    "desde": 120000,
+    "hab": 2,
+    "m2": 72
+   }
+  ],
+  "url": "",
+  "zona": "Boca Chica, Santo Domingo Este",
+  "id": "pmv5r26tuekb83"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [
+   "Piscina familiar"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Terrazas del este ll es un proyecto de apartamentos en La Romana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$77,000. La entrega está prevista para diciembre 2026 marzo 2028.\nEntre sus áreas y facilidades se encuentran: piscina familiar. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2026 Marzo 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Terrazas del este ll está en La Romana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$77,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para diciembre 2026 marzo 2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en La Romana",
+  "nombre": "Terrazas del este ll",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en La Romana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$77,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para diciembre 2026 marzo 2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye piscina familiar, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 77000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/Dn8sGhWiSbOAGBPBiWGufL",
+  "zona": "La Romana",
+  "id": "pmv76dod9bgrcb"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Terreno de Pedro Rossi es un proyecto de apartamentos en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Terreno de Pedro Rossi está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en —",
+  "nombre": "Terreno de Pedro Rossi",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dofamhj7j"
+ },
+ {
+  "actualizado": "2026-10-14T21:15:00.000Z",
+  "amenidades": [
+   "Confotur"
+  ],
+  "brochureUrl": "https://drive.usercontent.google.com/download?id=1pb82j1xCZ0kd3jQSGtIbH2Dc5Df2tphE&export=download&confirm=t",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Geuris Ceballos",
+   "observaciones": "Listas"
+  },
+  "descripcion": "The Beach es un proyecto de apartamentos en Downtown, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$170,500, con unidades de hasta US$295,250. La entrega está prevista para abril 2027 febrero 2028.\nEntre sus áreas y facilidades se encuentran: confotur. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Abril 2027 Febrero 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "The Beach está en Downtown, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$170,500. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para abril 2027 febrero 2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "ec9c8aefb2772f4a39da169e5e9342c9",
+   "be41a3f1b68af92e40d0e730c48604bc",
+   "83f219e488d002946f5377ac3b786a7d",
+   "fa04edc241f03fe759cd6c77a7a06f91",
+   "d29eedb7d8d1c1751880be2ddc93a7ad"
+  ],
+  "frase": "Apartamentos en Downtown",
+  "nombre": "The Beach",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Downtown, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$170,500, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para abril 2027 febrero 2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye confotur, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 170500,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 224000,
+    "hab": 2,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 295250,
+    "hab": 3,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Downtown, Punta Cana",
+  "id": "pmv76doejcpygz"
+ },
+ {
+  "actualizado": "2026-10-15T21:45:00.000Z",
+  "amenidades": [
+   "Seguridad 24/7"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "The Breeze Villas es un proyecto de villas en Punta cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$189,000. La entrega está prevista para 6 meses post reserva 18 meses post reser.\nEntre sus áreas y facilidades se encuentran: seguridad 24/7. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "6 meses post reserva 18 meses post reser",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "The Breeze Villas está en Punta cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$189,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 6 meses post reserva 18 meses post reser."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "8a594a4aa9e7cb3b34a6946af61094b1",
+   "e0e76707f3130f9600d5592793c41279",
+   "dbf3a89986a5a1bebcee7302105aaeca",
+   "6755f198ed7cac165f5d76de68d287f6",
+   "a05af2f0e2519a802901b5cfc8cc5b61",
+   "69f573dc9b4e591a788ff899df105b0e"
+  ],
+  "frase": "Villas en Punta cana",
+  "nombre": "The Breeze Villas",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Punta cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$189,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 6 meses post reserva 18 meses post reser, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye seguridad 24/7, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 189000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/CYRXlRxg1Z05HskxSIVBiC",
+  "zona": "Punta cana",
+  "id": "pmv76doekxrs7y"
+ },
+ {
+  "actualizado": "2026-10-16T18:45:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Locales comerciales de 92.80 m² hasta 631.22 m² y edificios corporativos, en una zona de fácil acceso desde las principales vías de Punta Cana. Entrega prevista en abril de 2027.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Abril 2027",
+  "estado": "En planos",
+  "faq": [],
+  "fotos": [
+   "f02765450126e8f132eb11a33d394c60",
+   "b1008d82bc5a0ad640bf304b3fbd7277",
+   "18d59dc6f1fd32ef1b020de06fe71bf6",
+   "e5f871ce7a363076b27e3464762632c2",
+   "450ed9108ef19d6e4b73300018ac08ae",
+   "b5ebe32362a11adbd982426700f78461"
+  ],
+  "frase": "Locales comerciales y oficinas en Punta Cana",
+  "nombre": "The Plaza Punta Cana",
+  "origen": "dropbox",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [],
+  "precioRef": false,
+  "preciosAl": "2026-10-16T18:45:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Local comercial",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 192100,
+    "hab": 1,
+    "m2": 92.8
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana",
+  "id": "pmvtheplaza01"
+ },
+ {
+  "actualizado": "2026-10-13T18:50:06.308Z",
+  "amenidades": [
+   "Balcón",
+   "Lavadero",
+   "Área de parqueo"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "La tipología Arena es una vivienda de una habitación y un baño, con unos 50 m² de área. Forma parte del fideicomiso de viviendas de bajo costo Residencial Ciudad del Sol, en Verón.\nLa vivienda cuenta con balcón, sala, comedor y cocina. También tiene un lavadero y un área de parqueo. Los espacios están bien distribuidos para el uso diario, con una circulación cómoda entre ellos.\nSe trata de una opción sencilla para quien busca vivir o invertir en Punta Cana. Está sobre la Avenida Punta Cana, en una zona de fácil acceso. Consulte con el equipo los precios y las condiciones.",
+  "direccion": "Avenida Punta Cana, km 5 1/2, Distrito Municipal Turístico Verón Punta Cana, La Altagracia",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántas habitaciones y baños tiene la tipología Arena?",
+    "r": "Tiene una habitación y un baño, además de sala, comedor, cocina, balcón y lavadero."
+   },
+   {
+    "p": "¿Cuál es el área de la vivienda?",
+    "r": "El plano indica un área de 50 m²."
+   },
+   {
+    "p": "¿Incluye parqueo?",
+    "r": "Sí. La descripción de la vivienda incluye un área de parqueo."
+   },
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Está en la Avenida Punta Cana, km 5 1/2, en el Distrito Municipal Turístico Verón Punta Cana, La Altagracia."
+   }
+  ],
+  "fotos": [],
+  "frase": "Un hogar práctico y luminoso en Punta Cana",
+  "nombre": "Tipología Arena",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Se encuentra en la Avenida Punta Cana, km 5 1/2, en el distrito turístico de Verón, una zona conocida de la región.",
+    "titulo": "Ubicación"
+   },
+   {
+    "texto": "Sala, comedor, cocina, habitación y baño están bien organizados en unos 50 m², con balcón y lavadero.",
+    "titulo": "Distribución práctica"
+   },
+   {
+    "texto": "La vivienda contempla un área de parqueo, una comodidad importante para el día a día.",
+    "titulo": "Parqueo incluido"
+   },
+   {
+    "texto": "El proyecto está respaldado por un fideicomiso inmobiliario de viviendas de bajo costo, administrado por Partners Fiduciarios.",
+    "titulo": "Proyecto en fideicomiso"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T18:50:06.308Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 0,
+    "hab": 1,
+    "m2": 50
+   }
+  ],
+  "url": "",
+  "zona": "Verón, Punta Cana",
+  "id": "pmv71cvolnp6r8"
+ }
+]

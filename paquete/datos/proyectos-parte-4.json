@@ -1,0 +1,1498 @@
+[
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [
+   "Piscina"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Miguel Vasquez Remax Capital",
+   "observaciones": ""
+  },
+  "descripcion": "Lotus Residences es un proyecto de apartamentos en Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$129,900, con unidades de hasta US$149,000. La entrega está prevista para 18 meses.\nEntre sus áreas y facilidades se encuentran: piscina. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "18 meses",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Lotus Residences está en Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$129,900. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 18 meses."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Punta Cana",
+  "nombre": "Lotus Residences",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$129,900, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 18 meses, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye piscina, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 129900,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 149000,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana",
+  "id": "pmv76doe0swhe8"
+ },
+ {
+  "actualizado": "2026-10-15T21:45:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Maria lucia l y ll es un proyecto de apartamentos en Santo Domingo norte. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad. La entrega está prevista para octubre 2026 la 1 abril 2026 La 2.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Octubre 2026 la 1 Abril 2026 La 2",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Maria lucia l y ll está en Santo Domingo norte."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para octubre 2026 la 1 abril 2026 La 2."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "7e765566882dc2fe571ee2e32dd9b5c1",
+   "af96783436f42aed522f8862239e83e7",
+   "83715b12183525d4b44bfee93015db2e",
+   "6f2f3a41b90d877ba1977e8596c75472",
+   "571834e8843041f628eede0e5d08c4bf",
+   "42062f8cead530df6536e1499daf64b9"
+  ],
+  "frase": "Apartamentos en Santo Domingo norte",
+  "nombre": "Maria lucia l y ll",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Santo Domingo norte, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "La entrega está prevista para octubre 2026 la 1 abril 2026 La 2, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-15T21:45:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 92105,
+    "hab": 3,
+    "m2": 82
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/IMclEKElasV2HdIaBALevK",
+  "zona": "Santo Domingo norte",
+  "id": "pmv76doezz6b6l"
+ },
+ {
+  "actualizado": "2026-10-12T20:55:18.512Z",
+  "amenidades": [
+   "Summer Gardens con río artificial",
+   "The Sunset - Restaurante",
+   "The Tropics - Bar & Lounge",
+   "The Oasis - Pool lounge y jacuzzi",
+   "Piscina",
+   "Arcade Zone",
+   "Rainbow Playground",
+   "Jungle Beats - Discoteca",
+   "Carga para vehículos eléctricos",
+   "Coworking Space",
+   "Lobby hotelero a doble altura",
+   "Blossom - Centro de belleza",
+   "Sunflower - Spa y bienestar",
+   "Gimnasio",
+   "Serenity - Espacio de yoga",
+   "Paradise - Owners Club"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Melcon Paradise es un proyecto condo-hotelero dentro del complejo Vistacana. Ofrece apartamentos de 1, 2 y 3 habitaciones en edificios de cuatro niveles con ascensores de última generación y un lobby hotelero.\nUsted vivirá rodeado de más de 20,000 m² de áreas verdes privadas. Todas las unidades miran al Summer Gardens, que incluye un río artificial. Hay restaurante, bar, spa, gimnasio y cancha de padel.\nEl proyecto cuenta con servicios de administración hotelera, conserjería y check-in las 24 horas. Las amenidades son de uso exclusivo para propietarios, y el entorno aporta un valor atractivo en el mercado inmobiliario.",
+  "direccion": "Vistacana",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Qué tipos de apartamentos ofrece el proyecto?",
+    "r": "Melcon Paradise ofrece apartamentos de 1, 2 y 3 habitaciones, en edificios de cuatro niveles con ascensores de última generación."
+   },
+   {
+    "p": "¿Qué significa condo-hotelero?",
+    "r": "Es un modelo que combina apartamentos con servicios de hotel: check-in y conserjería 24/7, administración hotelera, asistencia de alquiler, lavandería y transporte al aeropuerto."
+   },
+   {
+    "p": "¿Quién puede usar las amenidades?",
+    "r": "Las amenidades son de uso exclusivo para los propietarios. Incluyen restaurante, bar, spa, gimnasio, cancha de padel, coworking, área infantil y Owners Club."
+   },
+   {
+    "p": "¿Qué terminaciones tienen las unidades?",
+    "r": "Paredes lisas, porcelanato en los pisos, cerámica importada en baños, techos y cornisas en yeso, y cocina modular con tope y backsplash en granito natural."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/a1e9559fce747c7be64d64a24f5110c6.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/e2326f22df5026f07a75aa90ada27fa6.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/f26d946ea7fa6780586873d66302038a.jpg",
+   "5d534a930d401b2fa5855ed592bd6fe7",
+   "1b28dd1cbc2dd3796bf2bf05beb86c9e",
+   "4fceac5d622fc1da4baca3b8d3ba1752"
+  ],
+  "frase": "Vida de resort entre jardines y río artificial",
+  "nombre": "Melcon Paradise",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Usted estará dentro de un complejo exclusivo del Caribe, con un entorno vibrante y una arquitectura moderna que aporta valor al proyecto.",
+    "titulo": "Ubicación en Vistacana"
+   },
+   {
+    "texto": "Más de 20,000 m² de áreas verdes privadas y vistas al Summer Gardens, con su río artificial, crean un ambiente sereno y sostenible.",
+    "titulo": "Naturaleza para sus propietarios"
+   },
+   {
+    "texto": "Check-in y conserjería 24/7, administración hotelera, asistencia de alquiler, lavandería y transporte al aeropuerto hacen su vida más cómoda.",
+    "titulo": "Servicios de tipo hotelero"
+   },
+   {
+    "texto": "Restaurante, spa, gimnasio, padel, coworking y área infantil, todo de uso exclusivo para propietarios, para disfrutar en familia, en pareja o con amigos.",
+    "titulo": "Amenidades para todos"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-11-02T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 132000,
+    "hab": 1,
+    "m2": 52
+   },
+   {
+    "banos": 2,
+    "desde": 184000,
+    "hab": 2,
+    "m2": 71
+   },
+   {
+    "banos": 0,
+    "desde": 206000,
+    "hab": 3,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Vistacana",
+  "id": "pmv5qe1gwv6f7t"
+ },
+ {
+  "actualizado": "2026-11-02T18:59:57.459Z",
+  "amenidades": [
+   "Gimnasio",
+   "Piscinas",
+   "Casa club",
+   "Ciclovía",
+   "Canchas deportivas",
+   "Parques infantiles",
+   "Parque para mascotas",
+   "Áreas sociales",
+   "Seguridad 24/7",
+   "Lobby"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Supermercado",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Restaurantes",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Plazas comerciales",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Playa",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Cocobongo",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Imagine Cave Nightclub",
+    "tiempo": ""
+   }
+  ],
+  "crm": {
+   "comision": "3.00%",
+   "contacto": "Hugo Pagan",
+   "observaciones": ""
+  },
+  "descripcion": "Midtown Blvd II es un proyecto de inspiración hotelera moderna, con raíces en el Miami de los años 80. Ofrece unidades tipo suite y apartamentos de 1, 2 y 3 habitaciones.\nCada espacio está pensado para su comodidad y buen gusto. Los apartamentos son funcionales y llenos de luz. Usted contará con casa club, ciclovía, canchas deportivas, parques infantiles y áreas sociales.\nEs una opción para vivir o para invertir. La zona crece y la demanda aumenta. Sus amenidades y su seguridad las 24 horas buscan atraer inquilinos y cuidar el valor de su propiedad.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Qué tipos de unidades ofrece el proyecto?",
+    "r": "Ofrece unidades tipo suite hotelera y apartamentos de 1, 2 y 3 habitaciones. Sus áreas totales van de 33.15 a 91.80 metros cuadrados."
+   },
+   {
+    "p": "¿Cuánto cuesta la reserva?",
+    "r": "La reserva es de US$2,000."
+   },
+   {
+    "p": "¿Cómo es la forma de pago?",
+    "r": "Se paga 15% con la firma del contrato, 25% durante la construcción y 60% contra entrega."
+   },
+   {
+    "p": "¿Qué amenidades tiene?",
+    "r": "Cuenta con gimnasio, piscinas, casa club, ciclovía, canchas deportivas, parques infantiles, parque para mascotas, áreas sociales y seguridad las 24 horas."
+   }
+  ],
+  "fotos": [
+   "d6d0fd5bb54183b1ac1f433f48aeba83",
+   "98be2a15e2082404009d19aeabc6add4",
+   "acfaa0988d3c5c645a4cd4da6e721d00",
+   "3cbfb3d4aac58ebaa85aec09ce2fca05",
+   "addf5aad2dce33b00252f9e2f739bde7"
+  ],
+  "frase": "Un hogar moderno en el corazón de Punta Cana",
+  "nombre": "Midtown II",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 25,
+   "entregaPct": 60,
+   "firmaPct": 15,
+   "meses": 0,
+   "separacion": 2000
+  },
+  "porque": [
+   {
+    "texto": "Está en una zona de Punta Cana con alta plusvalía, cerca de supermercados, restaurantes, plazas comerciales, la playa y el aeropuerto.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "Sus espacios son luminosos y funcionales. Combinan comodidad, estética y vida contemporánea, con un aire inspirado en el Miami de los 80.",
+    "titulo": "Diseño con estilo hotelero"
+   },
+   {
+    "texto": "Sus amenidades buscan atraer más inquilinos y reducir el tiempo sin ocupar. Así se apunta a una rentabilidad sostenida a largo plazo.",
+    "titulo": "Pensado para rentar"
+   },
+   {
+    "texto": "Hay suites hoteleras y apartamentos de 1, 2 y 3 habitaciones. Se adaptan tanto a inversionistas como a familias.",
+    "titulo": "Variedad de unidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:59:50.888Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 150870,
+    "hab": 1,
+    "m2": 33
+   },
+   {
+    "banos": 0,
+    "desde": 200090,
+    "hab": 2,
+    "m2": 68
+   },
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 3,
+    "m2": 92
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, Bávaro",
+  "id": "pmv76doe232nkp"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [
+   "Seguridad 24/7"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Karla Calderon",
+   "observaciones": ""
+  },
+  "descripcion": "Myrtos Bay Residences es un proyecto de apartamentos en Bayahibe. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$100,900, con unidades de hasta US$215,000. La entrega está prevista para 2028.\nEntre sus áreas y facilidades se encuentran: seguridad 24/7. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Myrtos Bay Residences está en Bayahibe."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$100,900. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Bayahibe",
+  "nombre": "Myrtos Bay Residences",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Bayahibe, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$100,900, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye seguridad 24/7, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 100900,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 215000,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Bayahibe",
+  "id": "pmv76docx3hecm"
+ },
+ {
+  "actualizado": "2026-10-15T21:45:00.000Z",
+  "amenidades": [
+   "Piscina"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Mystiq Cuesta hermosa ll es un proyecto de apartamentos en Santo Domingo. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$490,000. La entrega está prevista para noviembre 2026.\nEntre sus áreas y facilidades se encuentran: piscina. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Noviembre 2026",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Mystiq Cuesta hermosa ll está en Santo Domingo."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$490,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para noviembre 2026."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "21e4e209b1c41abf2bc84f8fff70767f",
+   "094357ff7686d817642f9a54779240b9",
+   "473e7f417ad30d0ba035b4bb8fb5aaf1",
+   "c580afbf674fde0fa62687787ffa82c8",
+   "2792a2be216e66b6c0c76e0cafadeec0",
+   "7d4ee1ad2dd8aa0bb6cfa2edef02bd99"
+  ],
+  "frase": "Apartamentos en Santo Domingo",
+  "nombre": "Mystiq Cuesta hermosa ll",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Santo Domingo, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$490,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para noviembre 2026, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye piscina, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 490000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/BQo85asCF1ODWfrzdkOgdl",
+  "zona": "Santo Domingo",
+  "id": "pmv76doewf5onf"
+ },
+ {
+  "actualizado": "2026-10-16T18:30:00.000Z",
+  "amenidades": [
+   "Terraza"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Mystiq Wave es un proyecto de apartamentos en Punta cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$140,000. La entrega está prevista para marzo 2027.\nEntre sus áreas y facilidades se encuentran: terraza. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Marzo 2027",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Mystiq Wave está en Punta cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$140,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para marzo 2027."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "8cce3b0f80a7f118dae0be1a4b6ec038",
+   "c1e3df6faab116c243bc6c536215f4f2",
+   "b7cde72de45f3b538e59dce94e72042d",
+   "87f8ffced576d5d7f797343004315304",
+   "5803b2b1facc892e6f37f17b62c6a2e3",
+   "eed3db5890faf914e2288bdd6e8338d6"
+  ],
+  "frase": "Apartamentos en Punta cana",
+  "nombre": "Mystiq Wave",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Punta cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$140,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para marzo 2027, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye terraza, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 140000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/JRhNq1PCZoj3dfX8rtjYrC",
+  "zona": "Punta cana",
+  "id": "pmv76doe4mdyu5"
+ },
+ {
+  "actualizado": "2026-09-29T21:19:45.168Z",
+  "amenidades": [
+   "Piscina",
+   "Área de Bar",
+   "Área Lounge",
+   "Lobby Elegante",
+   "Área Wellness",
+   "Gimnasio Equipado",
+   "Spa",
+   "Piscina infinity en el Rooftop",
+   "Kids Lounge",
+   "Co-working",
+   "Swim Up en Nivel 1",
+   "Rooftop privado en Nivel PH"
+  ],
+  "captador": "Larissa",
+  "captadorTel": "123456789",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto",
+    "tiempo": "14 min"
+   },
+   {
+    "lugar": "Coco Bongo",
+    "tiempo": "12 min"
+   },
+   {
+    "lugar": "Caribean Lake Park",
+    "tiempo": "3 min"
+   },
+   {
+    "lugar": "Dolphin Discovery",
+    "tiempo": "1 min"
+   },
+   {
+    "lugar": "Playa",
+    "tiempo": "2 min"
+   },
+   {
+    "lugar": "Hard Rock Café",
+    "tiempo": "10 min"
+   }
+  ],
+  "descripcion": "NAVIVA nace de un diseño biofílico que integra la naturaleza con la vida moderna, sin sacrificar el lujo ni el confort. Cada ambiente ha sido concebido para ofrecer una experiencia inmersiva, inspiradora y transformadora, potenciando la conexión de sus residentes con el entorno natural que los rodea.\nUbicado en un enclave estratégico de Downtown, Punta Cana, el proyecto permite disfrutar lo mejor de la playa y la vibrante vida nocturna, con acceso privilegiado a centros comerciales, entretenimiento y las atracciones más reconocidas de la zona, todo a solo minutos de distancia.\nCon 5 niveles, 89 unidades distribuidas en 4 tipologías de apartamentos de 1 y 2 habitaciones, además de penthouses con rooftop privado, NAVIVA ofrece un santuario de confort y bienestar diseñado para quienes buscan un estilo de vida en armonía con la naturaleza.",
+  "direccion": "",
+  "entrega": "diciembre 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuándo se entrega NAVIVA?",
+    "r": "La entrega está prevista para diciembre 2028."
+   },
+   {
+    "p": "¿Cuántas unidades y tipologías tiene el proyecto?",
+    "r": "NAVIVA cuenta con 89 unidades distribuidas en 4 tipologías de apartamentos de 1 y 2 habitaciones."
+   },
+   {
+    "p": "¿Cuál es el plan de pagos disponible?",
+    "r": "Existen tres opciones: reserva de US$3.000 con 20% downpayment, 40% durante construcción y 40% contra entrega; o 50% downpayment y 50% contra entrega; o 80% durante construcción y 20% contra entrega, con descuentos disponibles."
+   },
+   {
+    "p": "¿Qué amenidades ofrece NAVIVA?",
+    "r": "El proyecto incluye piscina, área de bar, área lounge, lobby elegante, área wellness, gimnasio equipado, spa, piscina infinity en el rooftop, kids lounge y co-working."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/45645110ad786afb423ad372eae7068b.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/3bfeb7bc0892f300e7186a7fa0d57386.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/b4c36662b1abe14f57b9a994877d453c.jpg",
+   "d04021b92bf246296d6679b71a06f5bf",
+   "7c4862a61b5611337cad7d8295559234"
+  ],
+  "frase": "Naturaleza y estilo se fusionan frente al Caribe",
+  "nombre": "NAVIVA",
+  "parqueos": 0,
+  "porque": [
+   {
+    "texto": "NAVIVA se sitúa en un enclave estratégico de Downtown, a minutos de las playas más hermosas y de innumerables atracciones.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "Un enfoque arquitectónico que integra la naturaleza con la vida moderna, sin sacrificar las comodidades y el lujo.",
+    "titulo": "Diseño biofílico"
+   },
+   {
+    "texto": "El proyecto clasifica para obtener los beneficios conferidos por la ley de Confotur, con descuentos disponibles en el plan de pagos.",
+    "titulo": "Beneficios fiscales"
+   },
+   {
+    "texto": "Un santuario de confort y bienestar con piscina infinity en el rooftop, spa, gimnasio, co-working y kids lounge, entre otras.",
+    "titulo": "Amplias amenidades"
+   }
+  ],
+  "precioRef": true,
+  "subidoPor": "Robert Cavallo",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 95000,
+    "hab": 1,
+    "m2": 36
+   },
+   {
+    "banos": 0,
+    "desde": 215000,
+    "hab": 2,
+    "m2": 100
+   }
+  ],
+  "url": "",
+  "zona": "Downtown, Punta Cana",
+  "id": "pmun6jehcx0y4k"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "Asilde Mariñez",
+   "observaciones": ""
+  },
+  "descripcion": "Nathalie Nicole IX es un proyecto de apartamentos en Los cacicazgos. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$310,750, con unidades de hasta US$890,300. La entrega está prevista para 36 meses para entrega.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "36 meses para entrega",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Nathalie Nicole IX está en Los cacicazgos."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$310,750. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 36 meses para entrega."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Los cacicazgos",
+  "nombre": "Nathalie Nicole IX",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Los cacicazgos, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$310,750, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 36 meses para entrega, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 310750,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 430750,
+    "hab": 2,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 467500,
+    "hab": 3,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 890300,
+    "hab": 4,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Los cacicazgos",
+  "id": "pmv76dodaax1jp"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Nueva terraza es un proyecto de apartamentos en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Nueva terraza está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en —",
+  "nombre": "Nueva terraza",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dof77ib76"
+ },
+ {
+  "actualizado": "2026-09-29T21:14:13.111Z",
+  "amenidades": [
+   "Club privado de piscina",
+   "Deportes acuáticos",
+   "Club de playa privado",
+   "Centro de convenciones (+1",
+   "500 m2)",
+   "Restaurante",
+   "Gimnasio",
+   "Rooftop",
+   "Open Living Lounge",
+   "Salón de eventos para más de 900 personas"
+  ],
+  "captador": "Robert Cavallo",
+  "captadorTel": "123456789",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Coco Bongo Bávaro Beach",
+    "tiempo": "10 min"
+   }
+  ],
+  "descripcion": "Oasis Lake II es un desarrollo de Vivantia Homes compuesto por 210 exclusivas suites de hotel eco-chic, ubicadas estratégicamente frente al lago más grande de Caribbean Lake Park, en pleno corazón del Downtown de Punta Cana. El proyecto será operado bajo la prestigiosa marca INNSiDE by Meliá Punta Cana Downtown, garantizando una gestión hotelera profesional de clase mundial.\nEl complejo contará con más de 15,000 m2 de zonas comunes y servicios, incluyendo el mayor centro de convenciones de la zona, con más de 1,500 m2 diseñados para congresos, exposiciones y eventos corporativos y culturales. Oasis Lake es el primer y único complejo residencial en Bávaro con estilo eco-chic, fusionando arquitectura, naturaleza y diseño moderno.\nUna oportunidad única para inversionistas y compradores de segunda vivienda, respaldada por más de 20 años de experiencia de Vivantia Homes y la trayectoria global de Meliá Hotels International, con acceso a beneficios como la membresía Meliá Rewards categoría Golden.",
+  "direccion": "",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Quién operará el desarrollo?",
+    "r": "Será operado como INNSiDE by Meliá - Punta Cana Downtown, por la reconocida marca hotelera de lujo española Meliá."
+   },
+   {
+    "p": "¿Cuántas unidades tiene el proyecto?",
+    "r": "El desarrollo cuenta con 210 exclusivas suites de hotel eco-chic, en tipología de estudios y de 1 habitación."
+   },
+   {
+    "p": "¿Qué beneficios fiscales ofrece la inversión?",
+    "r": "Cuenta con exención Confotur del 3% de impuesto a la transferencia y del 1% de IPI anual durante 15 años."
+   },
+   {
+    "p": "¿Qué ventajas tiene invertir en una propiedad hotelera como esta?",
+    "r": "Permite disfrutar de una experiencia hotelera de alta gama y obtener una renta pasiva con alto potencial de rendimiento, respaldada por una gestión hotelera profesional de marca AAA."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/4391f13820fd144d2d444bb56c8fbf25.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/94d11db27687f444edf4e81665281988.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/3f46c863678ed922602928944fdfc0df.jpg",
+   "198976d47b1d2e2e3225a4b7ce00ee80",
+   "4cbfa96e3b1b8e29eb2e8d7956735840"
+  ],
+  "frase": "Viva frente al lago más grande de Punta Cana",
+  "nombre": "Oasis Lake II",
+  "parqueos": 0,
+  "porque": [
+   {
+    "texto": "Situado en el corazón del Downtown de Punta Cana, a minutos de playas, restaurantes, comercios y el aeropuerto internacional.",
+    "titulo": "Ubicación privilegiada"
+   },
+   {
+    "texto": "Operado por INNSiDE by Meliá, cadena hotelera AAA con más de 60 años de experiencia y presencia en más de 40 países.",
+    "titulo": "Gestión hotelera de lujo"
+   },
+   {
+    "texto": "Rendimiento anual histórico promedio del 11% y exención fiscal Confotur del 3% de impuesto a la transferencia y 1% de IPI anual durante 15 años.",
+    "titulo": "Alta rentabilidad"
+   },
+   {
+    "texto": "Acceso a Caribbean Lake Park, el parque de deportes acuáticos más grande del Caribe Oriental, y al mayor centro de convenciones de la zona.",
+    "titulo": "Amenidades excepcionales"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:50:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 178000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Downtown, Punta Cana",
+  "id": "pmun6ca9jve15j"
+ },
+ {
+  "actualizado": "2026-10-13T19:05:18.347Z",
+  "amenidades": [
+   "Zona comercial",
+   "Fitness center",
+   "Lobby",
+   "Área de niños",
+   "Bar y lounge",
+   "Portero las 24 horas",
+   "Estacionamiento soterrado",
+   "Cerradura inteligente",
+   "Área de asadores",
+   "Espacios de co-working",
+   "Ascensores",
+   "Transporte a la playa",
+   "Lockers (consultar disponibilidad)",
+   "Firepit",
+   "Línea blanca incluida",
+   "Piscina"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa Pública Bayahíbe",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Destacamento Bayahíbe Armada de RD",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Playa Bayahíbe",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Estro Art Cafe & Bistro",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Dominican Attitude Excursions",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Parque de Bayahíbe",
+    "tiempo": ""
+   }
+  ],
+  "descripcion": "Ocean Residences Bayahíbe es un proyecto residencial que une arquitectura moderna y naturaleza tropical. Su fachada ondulada imita el movimiento del océano y se integra con las palmeras y la vegetación.\nUsted disfrutará de balcones con jardines suspendidos y vistas panorámicas. Las áreas comunes invitan al descanso, entre espejos de agua, piscina, firepit y paisajismo tropical. Es un estilo de vida sereno, junto al mar.\nBayahíbe es un destino turístico conocido, con playas vírgenes y una demanda creciente. Por eso, este proyecto puede ser una buena opción tanto para vivir como para invertir, con servicios y comodidades pensados para usted.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué tipos de apartamentos ofrece el proyecto?",
+    "r": "Ofrece apartamentos de 1 y 2 habitaciones, y algunos modelos de 2 habitaciones con mayor metraje. Las áreas totales incluyen terraza."
+   },
+   {
+    "p": "¿Los apartamentos incluyen electrodomésticos?",
+    "r": "Sí. El brochure indica que la línea blanca está incluida para mayor comodidad de los residentes."
+   },
+   {
+    "p": "¿Hay estacionamiento y seguridad?",
+    "r": "Sí. Hay estacionamiento soterrado, cerraduras inteligentes, porteros electrónicos, vigilancia y portero las 24 horas."
+   },
+   {
+    "p": "¿Las áreas y planos son definitivos?",
+    "r": "No. Los planos son de referencia y pueden variar. Consulte el plano específico de su apartamento en el contrato."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/4e4b02a4f502f90bcdca0da847027d53.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/1d94a72329033a5b3ddc39732bfa7a9d.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/b0ce072e51b87e9c655befd8b75e386c.jpg",
+   "492d26df242f76ea5c764f86dfdf2400",
+   "a1780a0a9ac5a6e986006b107a2216ec",
+   "e4dd2dfcc06207cdfb7c02bb106c1b0d"
+  ],
+  "frase": "Un rincón junto al mar, rodeado de naturaleza",
+  "nombre": "Ocean Residences Bayahíbe",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Bayahíbe ofrece playas de aguas transparentes. El proyecto cuenta con transporte a la playa cercana y está rodeado de cafés, parque y servicios.",
+    "titulo": "Ubicación cercana al mar"
+   },
+   {
+    "texto": "La creciente demanda turística de la zona genera oportunidades de inversión en el sector de la hospitalidad.",
+    "titulo": "Destino turístico en crecimiento"
+   },
+   {
+    "texto": "Estructura de hormigón armado, ventanas P92, porcelanato importado e iluminación LED de bajo consumo, entre otras calidades.",
+    "titulo": "Calidad en cada detalle"
+   },
+   {
+    "texto": "Piscina, gimnasio, bar, firepit, área de asadores y portero las 24 horas completan una experiencia cómoda y segura.",
+    "titulo": "Vida de resort en casa"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 81000,
+    "hab": 1,
+    "m2": 42.97
+   },
+   {
+    "banos": 2,
+    "desde": 187000,
+    "hab": 2,
+    "m2": 105.93
+   }
+  ],
+  "url": "",
+  "zona": "Bayahíbe, La Romana",
+  "id": "pmv715ydzkqixa"
+ },
+ {
+  "actualizado": "2026-10-09T21:15:00.791Z",
+  "amenidades": [
+   "Piscina",
+   "Parque infantil (primer piso)",
+   "Área de BBQ",
+   "Gimnasio",
+   "Salón multiusos",
+   "Terraza bar",
+   "Rooftop con vista al mar",
+   "Lobby"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Centro de la ciudad",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Aeropuerto",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "City Center by Lady Lee",
+    "tiempo": "8 min"
+   }
+  ],
+  "descripcion": "Oceance V Towers es un desarrollo residencial y de inversión frente al mar. Lo forman cinco torres de 19 pisos, pensadas para quienes buscan exclusividad y confort, con un estilo de vida inspirado en el Caribe.\nCada torre cuenta con amenidades en el rooftop y vistas hermosas al mar. Usted puede disfrutar de la piscina, el área de BBQ, el gimnasio y la terraza bar. Los apartamentos de primer piso tienen patio.\nEl proyecto atiende dos perfiles: quien busca calidad de vida y quien busca rentabilidad. Está en una zona en pleno desarrollo y lo construye Civiltec, con más de 16 años de experiencia y calidad certificada ISO 9001.",
+  "direccion": "Avenida España, junto a Civil Tower Oceance, Santo Domingo Este",
+  "disp": "Disponible",
+  "entrega": "Julio 2030",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuándo se entrega el proyecto?",
+    "r": "La entrega de la Etapa I está prevista para julio de 2030."
+   },
+   {
+    "p": "¿Qué tamaños de apartamento hay en la Fase I?",
+    "r": "Hay apartamentos de 3 habitaciones, de unos 106 m², y de 2 habitaciones, de unos 81 m². Ambos incluyen 2 baños y 2 parqueos."
+   },
+   {
+    "p": "¿Cuál es la forma de pago?",
+    "r": "Se reserva con US$5,000 y se completa el 10% en la separación y firma de contrato. Luego se pagan cuotas hasta completar el 30%, y el 60% restante se financia con un banco al entregar."
+   },
+   {
+    "p": "¿Qué amenidades tiene cada torre?",
+    "r": "Cada torre tiene en el rooftop piscina, área de BBQ, gimnasio, salón multiusos y terraza bar. El parque infantil está en el primer piso."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/51b9bbe63b34c942edb9046138cd13b8.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/1dcf9b417f7398fe1166b5091f064d74.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/97b5f0ddbbf273d28c51d59ca4cd6bb4.jpg",
+   "94ece3e3e633cbfcebb7e54227b6b1a5",
+   "b01204fc1479924611bbeef88d894d30",
+   "de52e966432f8df882545bbca13b47b9"
+  ],
+  "frase": "Viva frente al mar, en Costa del Faro",
+  "nombre": "Oceance V Towers",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 30,
+   "entregaPct": 60,
+   "firmaPct": 10,
+   "meses": 0,
+   "separacion": 5000
+  },
+  "porque": [
+   {
+    "texto": "Está en Avenida España, en la zona de Costa del Faro. Se encuentra a 5 minutos del centro de la ciudad y a 15 minutos del aeropuerto.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "Civiltec tiene más de 16 años en el país y calidad certificada ISO 9001 desde 2015. Ha entregado 9 proyectos residenciales.",
+    "titulo": "Constructora con experiencia"
+   },
+   {
+    "texto": "La zona está en pleno desarrollo, con inversión extranjera, empresarial local y gubernamental. Esto favorece la plusvalía y la rentabilidad de su inversión.",
+    "titulo": "Plusvalía y rentabilidad"
+   },
+   {
+    "texto": "Cada torre ofrece amenidades en el rooftop con vistas al mar. Usted puede elegir entre vivir en el proyecto o invertir.",
+    "titulo": "Vida frente al mar"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-09T21:15:00.792Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 176000,
+    "hab": 2,
+    "m2": 81
+   },
+   {
+    "banos": 2,
+    "desde": 250000,
+    "hab": 3,
+    "m2": 106
+   }
+  ],
+  "url": "",
+  "zona": "Avenida España, Santo Domingo Este",
+  "id": "pmv1grtq076b2j"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Ona Residence es un proyecto de apartamentos en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Ona Residence está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en —",
+  "nombre": "Ona Residence",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dof88yzmz"
+ },
+ {
+  "actualizado": "2026-10-14T20:57:31.012Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "3.00%",
+   "contacto": "Benjamin Urbaez",
+   "observaciones": ""
+  },
+  "descripcion": "",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [],
+  "fotos": [
+   "c6b8447c137f5d9a76d861c20c981203",
+   "88fb87241c24ba563f3caeea0a697824",
+   "9c88ff2ea503638d82dcc93711fbf22f",
+   "38b6aca95a5f85295f11c93a65fcbc8f",
+   "a1e011f7d40841bb105c24a0c72d4085",
+   "d6487ae1523f9af455596bd0ee77d5de"
+  ],
+  "frase": "",
+  "nombre": "Opus",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 83000,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 93500,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "San Isidro",
+  "id": "pmv76doettrj9p"
+ },
+ {
+  "actualizado": "2026-10-13T18:49:59.133Z",
+  "amenidades": [
+   "Balcón",
+   "Lavadero",
+   "Área de parqueo"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Este plano presenta la Tipología Mar, una vivienda de una habitación y un baño con 50 m². Forma parte del Fideicomiso Inmobiliario Ciudad del Sol, en Verón, Punta Cana.\nLa vivienda cuenta con balcón, sala, comedor y cocina. También tiene lavadero y área de parqueo. Cada espacio está organizado para que usted viva con comodidad y orden.\nSu ubicación en la avenida Punta Cana, km 5 1/2, la sitúa en una zona turística de la provincia La Altagracia. Es una opción práctica para vivir o para invertir.",
+  "direccion": "Avenida Punta Cana, km 5 1/2, Distrito Municipal Turístico Verón Punta Cana, La Altagracia",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántas habitaciones y baños tiene la Tipología Mar?",
+    "r": "Tiene una habitación y un baño, además de sala, comedor, cocina, lavadero y balcón."
+   },
+   {
+    "p": "¿Cuál es el tamaño de la vivienda?",
+    "r": "El plano indica un área de 50 m²."
+   },
+   {
+    "p": "¿Incluye parqueo?",
+    "r": "Sí, el plano contempla un área de parqueo para la vivienda."
+   },
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "En la avenida Punta Cana, km 5 1/2, distrito municipal turístico Verón Punta Cana, provincia La Altagracia."
+   }
+  ],
+  "fotos": [],
+  "frase": "Un hogar cómodo y bien pensado en Punta Cana",
+  "nombre": "PLANO TIPOLOGIA MAR 1HAB 1B",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto se encuentra en la avenida Punta Cana, km 5 1/2, dentro del distrito municipal turístico de Verón.",
+    "titulo": "Ubicación en Punta Cana"
+   },
+   {
+    "texto": "La vivienda reúne sala, comedor, cocina, dormitorio con clóset, baño y lavadero en 50 m² bien aprovechados.",
+    "titulo": "Distribución práctica"
+   },
+   {
+    "texto": "Cuenta con balcón y terraza, para que usted disfrute del ambiente exterior desde su propia vivienda.",
+    "titulo": "Espacios al aire libre"
+   },
+   {
+    "texto": "El proyecto pertenece al Fideicomiso Inmobiliario de viviendas de bajo costo residencial Ciudad del Sol, administrado por Partners Fiduciarios.",
+    "titulo": "Respaldo de un fideicomiso"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T18:49:59.133Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 0,
+    "hab": 1,
+    "m2": 50
+   }
+  ],
+  "url": "",
+  "zona": "Verón, Punta Cana",
+  "id": "pmv71cq5a299xk"
+ }
+]

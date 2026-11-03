@@ -1,0 +1,1526 @@
+[
+ {
+  "actualizado": "2026-11-02T18:58:05.746Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "Gregory De La Cruz",
+   "observaciones": ""
+  },
+  "descripcion": "",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [],
+  "fotos": [
+   "2e0fa76f90446f562f002cd8b9f4c2d7",
+   "dc02f7d3a8dca6ee411d3be65004f117",
+   "045a0e46929fc3a2cd6ed245d1173653",
+   "2fb301bd8fcb7ff02349a42e7aa4c821"
+  ],
+  "frase": "",
+  "nombre": "Canarena Bruchure REMAX",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:26:13.201Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 132500,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "",
+  "id": "pmv76dodlkmdt5"
+ },
+ {
+  "actualizado": "2026-10-14T20:27:26.614Z",
+  "amenidades": [
+   "Grandes piscinas",
+   "Áreas verdes con paisajismo",
+   "Espacios recreativos para toda la familia",
+   "Servicios hoteleros",
+   "Acceso controlado",
+   "Vigilancia 24 horas",
+   "Amplios balcones y áreas sociales",
+   "50 amenidades"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Downtown Punta Cana",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Cocobongo",
+    "tiempo": "13 min"
+   },
+   {
+    "lugar": "Playa Cabeza de Toro",
+    "tiempo": "17 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "17 min"
+   }
+  ],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Canas del Este es un proyecto de apartamentos en Punta Cana. Ofrece unidades de 1 y 2 habitaciones, con diseño moderno y funcional, amplios balcones y áreas sociales.\nAquí podrá disfrutar de grandes piscinas, áreas verdes con paisajismo y espacios recreativos para toda la familia. Cuenta con servicios hoteleros, acceso controlado y vigilancia las 24 horas.\nEl proyecto reúne 50 amenidades y está cerca de Downtown Punta Cana, Cocobongo y la playa Cabeza de Toro. Además, ofrece bono de primera vivienda y libre de impuesto a la transferencia.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuál es el precio de partida?",
+    "r": "Los apartamentos de 1 habitación parten desde US$71,000 y los de 2 habitaciones desde US$93,000."
+   },
+   {
+    "p": "¿Qué tamaños tienen los apartamentos?",
+    "r": "Las unidades van desde 47.20 m² hasta 67.90 m² de construcción, según el modelo."
+   },
+   {
+    "p": "¿Cuándo se entregan las unidades?",
+    "r": "Hay unidades listas para entrega. Otros edificios se entregan entre junio de 2026 y diciembre de 2027, según el edificio."
+   },
+   {
+    "p": "¿Cuánto cuesta el mantenimiento?",
+    "r": "El mantenimiento es de aproximadamente US$100 a US$150."
+   }
+  ],
+  "fotos": [
+   "24cde59b4afcb4449fe876b5070ed43f",
+   "ca33b558d6645d073a855d5bc7b7e575",
+   "f82aaeb25c1f4cfa6ad4428f691bd864",
+   "e65151ad37ac2ca1d7d7837868122ce5",
+   "006f9b5ab5bb5333cf734137e75070c1",
+   "0f90a79ce1a964982f631f72e3a9341c"
+  ],
+  "frase": "Vida moderna y cómoda en el corazón de Punta Cana",
+  "nombre": "Canas del Este",
+  "origen": "crm",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 90,
+   "firmaPct": 10,
+   "meses": 0,
+   "separacion": 1000
+  },
+  "porque": [
+   {
+    "texto": "Está a 10 minutos de Downtown Punta Cana y a 17 minutos del Aeropuerto Internacional de Punta Cana. La playa Cabeza de Toro queda a 17 minutos.",
+    "titulo": "Ubicación privilegiada"
+   },
+   {
+    "texto": "Sus apartamentos tienen amplios balcones, cocina abierta estilo europeo y pisos en cerámica importada. Son espacios pensados para vivir con comodidad.",
+    "titulo": "Diseño moderno y funcional"
+   },
+   {
+    "texto": "El proyecto cuenta con 50 amenidades, entre ellas grandes piscinas, áreas verdes y espacios recreativos. También ofrece servicios hoteleros.",
+    "titulo": "Amenidades para toda la familia"
+   },
+   {
+    "texto": "Incluye bono de primera vivienda y está libre de impuesto a la transferencia. También está libre del impuesto a la propiedad inmobiliaria IPI.",
+    "titulo": "Beneficios para el comprador"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:27:26.614Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 71000,
+    "hab": 1,
+    "m2": 47.2
+   },
+   {
+    "banos": 2,
+    "desde": 93000,
+    "hab": 2,
+    "m2": 67.9
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, República Dominicana",
+  "id": "pmv76dodmxdz8k"
+ },
+ {
+  "actualizado": "2026-10-15T21:45:00.000Z",
+  "amenidades": [
+   "Seguridad 24/7"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Caribbean Gardens es un proyecto de apartamentos en Punta cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$91,750, con unidades de hasta US$132,750. La entrega está prevista para diciembre 2026.\nEntre sus áreas y facilidades se encuentran: seguridad 24/7. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2026",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Caribbean Gardens está en Punta cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$91,750. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para diciembre 2026."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "587dceac921f290d71ab24696cd49f01",
+   "3cd697bebb2942875caf8a69d74ff4ad",
+   "f901acf61b58596148264f3ed201472e",
+   "1ae5000100a61cd9ee7938e0cc8824d1",
+   "662b7e7913444fb1cf94ac268e607716",
+   "52c83d82ea6d18eaccd5df5c004ee096"
+  ],
+  "frase": "Apartamentos en Punta cana",
+  "nombre": "Caribbean Gardens",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Punta cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$91,750, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para diciembre 2026, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye seguridad 24/7, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 91750,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 132750,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/GYlX0RKk3xpIPWAtRM9lwD",
+  "zona": "Punta cana",
+  "id": "pmv76dodoz43g4"
+ },
+ {
+  "actualizado": "2026-10-14T20:29:25.000Z",
+  "amenidades": [
+   "Picuzzi para 6 personas en cada villa",
+   "Patio de 50 m²",
+   "Cocina modular importada",
+   "Estufa empotrada",
+   "extractor y nevera",
+   "Pre-instalación de A/C y calentador",
+   "Playa artificial de 24",
+   "000 m²",
+   "Lago de agua dulce",
+   "Senderos ecológicos",
+   "Campo de golf iluminado",
+   "Casa Club y centro deportivo",
+   "Área de juegos para niños",
+   "Business center",
+   "Restaurantes de clase mundial"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Ariel Grasso",
+   "observaciones": ""
+  },
+  "descripcion": "Cassamare Residences es un proyecto de 18 villas distribuidas en 9 bloques tipo dúplex. Está dentro de Vista Cana, cerca de la entrada y de la playa artificial. Fue pensado para un estilo de vida relajado y práctico.\nCada villa tiene 3 habitaciones, habitación de servicio, patio y picuzzi para 6 personas. La cocina es modular e importada y viene con estufa empotrada, extractor y nevera. Las terminaciones incluyen porcelanato, granito y grifería importada.\nEl valor por metro cuadrado es de US$1,700, más bajo que el promedio de Vista Cana, que ronda los US$2,000. Con Confotur aprobado y fideicomiso constituido, es una opción práctica para vivir o para invertir.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2026",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuál es el precio de las villas?",
+    "r": "Las villas de 3 habitaciones se ofrecen desde US$270,000. Tienen 145 m² de construcción y 50 m² de patio."
+   },
+   {
+    "p": "¿Cuándo se entrega el proyecto?",
+    "r": "La entrega está prevista para diciembre 2026. El proyecto ya avanza en obra gris."
+   },
+   {
+    "p": "¿Qué incluye cada villa?",
+    "r": "Incluye picuzzi para 6 personas, cocina modular importada con estufa empotrada, extractor y nevera, pre-instalación de A/C y calentador, y dos parqueos."
+   },
+   {
+    "p": "¿Hay costos adicionales opcionales?",
+    "r": "Sí. La línea blanca complementaria cuesta US$4,000, cuatro aires acondicionados US$3,500 y el pergolado en terraza US$8,500."
+   }
+  ],
+  "fotos": [
+   "5a9fee2b56343fb0bd0ae45987c39ad4",
+   "2c02cb102adaa4f2c441367561ee7c9c",
+   "6cdfe76b667ec5c5171012d750e4d5d7",
+   "04452f3ebb2f93e51221be4a37ae621c",
+   "efac31796c57309ad4dd508f444c81cb",
+   "68471bb01581a6bd2a36e5df26852d32"
+  ],
+  "frase": "Villas con patio y picuzzi dentro de Vista Cana",
+  "nombre": "Cassamare Residences",
+  "origen": "crm",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está dentro de Vista Cana, cerca de la entrada y de la playa artificial. Usted disfruta de todas las amenidades de la comunidad.",
+    "titulo": "Ubicación privilegiada"
+   },
+   {
+    "texto": "El metro cuadrado se ofrece a US$1,700, frente a un promedio cercano a US$2,000 en Vista Cana. Una buena oportunidad para quien desea invertir.",
+    "titulo": "Precio por metro cuadrado más bajo"
+   },
+   {
+    "texto": "El proyecto cuenta con permisos aprobados, fideicomiso constituido y Confotur aprobado, que exonera impuestos por 15 años.",
+    "titulo": "Respaldo legal y fiscal"
+   },
+   {
+    "texto": "La obra gris ya está en desarrollo y la entrega es en un año. Cada villa ofrece 145 m² de construcción y 50 m² de patio.",
+    "titulo": "Entrega cercana y buen espacio"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-11-02T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 2.5,
+    "desde": 269900,
+    "hab": 3,
+    "m2": 145
+   }
+  ],
+  "url": "",
+  "zona": "Vista Cana, Punta Cana",
+  "id": "pmv76dodpr3fiy"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Central Park es un proyecto de apartamentos en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Central Park está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en —",
+  "nombre": "Central Park",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dof33tikh"
+ },
+ {
+  "actualizado": "2026-10-14T20:30:23.941Z",
+  "amenidades": [
+   "Cancha",
+   "Casa club",
+   "Área de juego para niños"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Rolfi Rodriguez",
+   "observaciones": ""
+  },
+  "descripcion": "Ciprés Residences es un proyecto de viviendas en una zona estratégica de Punta Cana. Cuenta con acceso directo a la Av. Circunvalación y ofrece dos modelos de casa con terraza-patio y dos estacionamientos.\nAquí su familia disfrutará de espacios para compartir y descansar. El proyecto incluye cancha, casa club y área de juego para niños, pensados para la vida diaria en comunidad.\nComprar aquí es dar un paso hacia la estabilidad. Con una reserva de US$500 y un plan de pago flexible, usted puede asegurar su vivienda y ver crecer su patrimonio.",
+  "direccion": "Acceso directo a la Av. Circunvalación, Punta Cana",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuál es el precio de las viviendas?",
+    "r": "El modelo Esmeralda parte desde US$93,000 y el modelo Perla desde US$99,000."
+   },
+   {
+    "p": "¿Qué tamaño tienen las casas?",
+    "r": "Esmeralda tiene 61 metros de construcción y Perla 65 metros. Ambas se ofrecen desde 204 metros de terreno."
+   },
+   {
+    "p": "¿Cuánto cuesta separar una unidad?",
+    "r": "Se separa con una reserva de US$500. Luego se completa el 10% al firmar el contrato."
+   },
+   {
+    "p": "¿Cómo es el plan de pago?",
+    "r": "Reserva de US$500, 10% a la firma, 20% en 12 o 24 cuotas y 70% restante contra entrega."
+   }
+  ],
+  "fotos": [
+   "88bbfc81e93573d907961c764997f700",
+   "d95a1b8060447e736fcc03e5f6add05a",
+   "c77b13750b0e52736acc51bf9be5ebee",
+   "6637a73ddf439b48793d427967ae9746",
+   "2230f9c58268286914f9d189e088e953",
+   "2ddeeea64a6e3f2ca6abaabd9279e033"
+  ],
+  "frase": "Su nuevo hogar en una zona de crecimiento",
+  "nombre": "Ciprés Residences",
+  "origen": "crm",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 20,
+   "entregaPct": 70,
+   "firmaPct": 10,
+   "meses": 24,
+   "separacion": 500
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en una zona estratégica de Punta Cana, con acceso directo a la Av. Circunvalación.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "Es una zona donde se unen el crecimiento, la plusvalía y la tranquilidad, pensada para quien busca estabilidad.",
+    "titulo": "Crecimiento y plusvalía"
+   },
+   {
+    "texto": "Kyser Construction ha construido más de 1,000 viviendas y tiene varios proyectos realizados en San Pedro de Macorís, Bávaro y Verón.",
+    "titulo": "Constructora con experiencia"
+   },
+   {
+    "texto": "Puede separar su unidad con US$500 y pagar en 12 o 24 cuotas durante la construcción, con el 70% a la entrega.",
+    "titulo": "Plan de pago flexible"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:30:23.941Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Casa",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 93000,
+    "hab": 2,
+    "m2": 61
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana",
+  "id": "pmv76dodq07fog"
+ },
+ {
+  "actualizado": "2026-11-02T18:58:21.972Z",
+  "amenidades": [
+   "Piscina en la terraza",
+   "Área social en la terraza",
+   "Parque infantil",
+   "Parque para mascotas",
+   "Fuente interactiva",
+   "Plataforma musical",
+   "Zona de bicicletas",
+   "Parqueadero de bicicletas",
+   "Estacionamiento techado y subterráneo",
+   "Espacios comerciales de 54 m²",
+   "Restaurantes",
+   "Cafés",
+   "Supermercados",
+   "Farmacias",
+   "Lavanderías",
+   "Panadería"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Centro de Punta Cana",
+    "tiempo": "1 min"
+   },
+   {
+    "lugar": "Playas de Punta Cana",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "12 min"
+   }
+  ],
+  "crm": {
+   "comision": "5.93% 7.00% ITBIS incluido",
+   "contacto": "Externo",
+   "observaciones": ""
+  },
+  "descripcion": "City Place es un proyecto de apartamentos en el corazón de Punta Cana. Reúne la exclusividad del trópico y la sofisticación de la ciudad en un solo lugar.\nAquí podrá disfrutar de un parque con juegos infantiles, zona para mascotas y fuente interactiva. También cuenta con piscina en la terraza, área social y espacios comerciales a pocos pasos de su hogar.\nPunta Cana es el destino más visitado del Caribe, con más de 10 millones de turistas internacionales en 2023. Es un entorno atractivo para vivir o para invertir.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "City Place está en el propio corazón de Punta Cana, a 1 minuto del centro de la ciudad."
+   },
+   {
+    "p": "¿Qué tamaños de apartamento hay?",
+    "r": "Hay estudios de 50 m² y apartamentos de 1 habitación de 70 m². Las dimensiones pueden variar según la ubicación de la unidad."
+   },
+   {
+    "p": "¿Qué tan lejos está el aeropuerto y la playa?",
+    "r": "El Aeropuerto Internacional de Punta Cana queda a 12 minutos y las playas de Punta Cana a 10 minutos."
+   },
+   {
+    "p": "¿Tiene estacionamiento?",
+    "r": "Sí, cuenta con estacionamiento techado. Se accede a las torres desde el elevador del estacionamiento subterráneo."
+   }
+  ],
+  "fotos": [
+   "e5eec86439d407db9d6a18075892562b",
+   "a9da70d4edc48d0319e21215a0065417",
+   "0fad16a16a94ebe7b2f664dced2cc30d",
+   "97bd8300a236f064280cd02186c4709e",
+   "d53c6736ff82b266969067e400984b66"
+  ],
+  "frase": "Exclusividad tropical y sofisticación urbana en Punta Cana",
+  "nombre": "City Place",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está en el corazón de Punta Cana, a 1 minuto del centro. Todo lo que necesita queda muy cerca.",
+    "titulo": "Ubicación central"
+   },
+   {
+    "texto": "Punta Cana recibió más de 10 millones de turistas internacionales en 2023. Con temperaturas de 25 a 35 grados durante todo el año.",
+    "titulo": "Destino de gran demanda"
+   },
+   {
+    "texto": "El proyecto incluye espacios comerciales con restaurantes, cafés, supermercados, farmacias, lavanderías y panadería.",
+    "titulo": "Servicios a su alcance"
+   },
+   {
+    "texto": "Cuenta con piscina y área social en la terraza, además de un parque con zona para mascotas y bicicletas.",
+    "titulo": "Espacios para disfrutar"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:31:46.373Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 131000,
+    "hab": 1,
+    "m2": 50
+   }
+  ],
+  "url": "",
+  "zona": "Centro de Punta Cana, Punta Cana",
+  "id": "pmv76dodrpy7ye"
+ },
+ {
+  "actualizado": "2026-10-13T19:02:40.891Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Colinas de Punta Cana es un proyecto ubicado en Vavaro, Punta Cana. Fue preparado por Fredsign + Construction, que detalla con cuidado los materiales y acabados que se utilizarán en cada inmueble.\nEl proyecto contempla pisos de porcelanato antideslizante color beige, paredes revestidas en cerámica española y topes de granito gris en la cocina. Los baños llevan topes de mármol, para un ambiente cómodo y agradable.\nLa madera jequitibá en puertas y gabinetes, junto con ventanas de cristal grueso y una instalación eléctrica con accesorios Bticino, ofrece una propuesta pensada para que usted viva con confianza y comodidad.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué tipo de piso tendrá la propiedad?",
+    "r": "Los pisos son de porcelanato de 60 x 60 cm, pulido brillante o mate, antideslizante y de color beige."
+   },
+   {
+    "p": "¿De qué material son los topes de cocina y baños?",
+    "r": "Los topes de la cocina son de granito gris, y los de los baños son de mármol."
+   },
+   {
+    "p": "¿Qué madera se usa en puertas y gabinetes?",
+    "r": "Se usa jequitibá en la puerta principal, las puertas interiores y los gabinetes con despensa de la cocina."
+   },
+   {
+    "p": "¿Las ventanas y el aire acondicionado están incluidos?",
+    "r": "Las ventanas son de perfilería P-92 con cristal de 3/8. Para el aire acondicionado se dejan las salidas previstas, pero sin alambrar."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/fa1f14da0bc4dea61f34b531e7422b3d.jpg"
+  ],
+  "frase": "Acabados de calidad en el corazón de Vavaro",
+  "nombre": "Colinas de Punta Cana",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto se encuentra en Vavaro, Punta Cana, una zona turística de la República Dominicana que usted puede disfrutar a diario.",
+    "titulo": "Ubicación en Vavaro"
+   },
+   {
+    "texto": "Los pisos son de porcelanato pulido antideslizante de 60 x 60 cm, y las paredes llevan cerámica española. Son materiales prácticos y duraderos.",
+    "titulo": "Pisos y revestimientos de calidad"
+   },
+   {
+    "texto": "Las puertas principales, las puertas interiores y los gabinetes de cocina se elaboran en jequitibá. La puerta principal es maciza, de 2 pulgadas.",
+    "titulo": "Madera jequitibá"
+   },
+   {
+    "texto": "Incluye alambrado americano, caja de breakers europea de 12 a 16 circuitos y accesorios Bticino Modus. Además, hay salidas previstas para aire acondicionado.",
+    "titulo": "Instalación eléctrica segura"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:50:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 83500,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Bávaro, Punta Cana",
+  "id": "pmv1h0tsgr8601"
+ },
+ {
+  "actualizado": "2026-10-14T20:32:45.664Z",
+  "amenidades": [
+   "Piscina",
+   "Cancha de pádel",
+   "Terraza techada",
+   "Tres golf putting green",
+   "Área infantil",
+   "Gimnasio climatizado",
+   "Ascensor en todos los edificios",
+   "Pórtico de entrada",
+   "Áreas sociales",
+   "Seguridad"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Downtown",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Restaurante Jellyfish",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Playa Blanca",
+    "tiempo": "20 min"
+   },
+   {
+    "lugar": "Playa Cortecito",
+    "tiempo": "20 min"
+   }
+  ],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Ariel Grasso",
+   "observaciones": ""
+  },
+  "descripcion": "Corales de Palmaré es un proyecto residencial en Punta Cana. Ofrece apartamentos de 1, 2 y 3 habitaciones con patio y terraza privada, en edificios de tres niveles con ascensor. También cuenta con villas independientes.\nAquí encontrará áreas sociales pensadas para toda la familia. Hay piscina, cancha de pádel, gimnasio, área infantil y terraza techada. Todo en un entorno tranquilo, rodeado de naturaleza y bien conectado.\nEl proyecto se desarrolla bajo administración fiduciaria de Fiduciaria Popular, con respaldo legal bajo la Ley 189-11. Está en una de las zonas de mayor crecimiento de Punta Cana, con la playa a pocos minutos.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué tipos de unidades se ofrecen?",
+    "r": "Apartamentos de 1, 2 y 3 habitaciones con patio y terraza, penthouses en el tercer nivel y villas independientes de 160 m² con 3 habitaciones."
+   },
+   {
+    "p": "¿Cuál es el precio de partida?",
+    "r": "Los apartamentos de 1 habitación parten desde US$79,999, los de 2 desde US$89,999 y los de 3 desde US$114,999. Los penthouses de 2 habitaciones, desde US$209,999."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento?",
+    "r": "El mantenimiento es aproximadamente US$1.5 por metro cuadrado. Incluye limpieza y mantenimiento de áreas comunes, recogida de basura y seguridad."
+   },
+   {
+    "p": "¿Qué terminaciones incluyen los apartamentos?",
+    "r": "Cocina modular hidrófuga con tope de granito, pisos en porcelanato, puertas y closets en MDF, gas común y cerámicas importadas en los baños."
+   }
+  ],
+  "fotos": [
+   "acecca23d4675f1f643c8a8f1432aedb",
+   "7b05ff2105133601774e1253c8cfcf4e",
+   "4dc3428d5129d87336c6a841c8e494dc",
+   "d502db9bd2a322d9e6af863c1140c4d8",
+   "603ce8b19b2475db1347a6c4b8a080d7",
+   "52910effa19f54e47bdb3f42a7e0251f"
+  ],
+  "frase": "Vida tranquila entre naturaleza y playa en Punta Cana",
+  "nombre": "Corales de Palmaré",
+  "origen": "crm",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está en una de las zonas de mayor crecimiento de Punta Cana, con buena conectividad y un entorno tranquilo y natural.",
+    "titulo": "Ubicación en crecimiento"
+   },
+   {
+    "texto": "El proyecto se desarrolla con Fiduciaria Popular, filial del Grupo Popular, lo que aporta seguridad jurídica bajo la Ley 189-11.",
+    "titulo": "Respaldo fiduciario"
+   },
+   {
+    "texto": "Cada apartamento tiene patio o terraza privada. Las áreas comunes incluyen piscina, pádel, gimnasio y área infantil.",
+    "titulo": "Espacios para toda la familia"
+   },
+   {
+    "texto": "Cocina modular con tope de granito, pisos en porcelanato y cerámicas importadas en los baños, para vivir con comodidad.",
+    "titulo": "Terminaciones de calidad"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-11-02T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 79999,
+    "hab": 1,
+    "m2": 63
+   },
+   {
+    "banos": 2,
+    "desde": 105000,
+    "hab": 2,
+    "m2": 77
+   },
+   {
+    "banos": 2,
+    "desde": 114999,
+    "hab": 3,
+    "m2": 95
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, La Altagracia",
+  "id": "pmv76dodsjl8gi"
+ },
+ {
+  "actualizado": "2026-10-14T21:35:00.000Z",
+  "amenidades": [
+   "Confotur"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Punta Cana Solutions",
+   "observaciones": "Contacto: Germari 809-990-0803"
+  },
+  "descripcion": "Coralina Residences es un proyecto de apartamentos en Bavaro, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$168,500. La entrega está prevista para agosto 2028.\nEntre sus áreas y facilidades se encuentran: confotur. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Agosto 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Coralina Residences está en Bavaro, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$168,500. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para agosto 2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "f9d7d31d8d1f6ecb930b140ea9873b78",
+   "1281c04cbd128a8804fe2790f1dd1053",
+   "0e806c14dff00463e228a33da49a99b5",
+   "7c11d12fbcb817deb9901b45bc3cb061",
+   "22634b9d7ac01119d86d3e09762f89fc",
+   "4e3e885357ca4d0a2c676147a0988fa0"
+  ],
+  "frase": "Apartamentos en Bavaro",
+  "nombre": "Coralina Residences",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Bavaro, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$168,500, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para agosto 2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye confotur, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 168500,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Bavaro, Punta Cana",
+  "id": "pmv76dodt3ss5v"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [
+   "Confotur"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "5.00%",
+   "contacto": "Remax paradise",
+   "observaciones": ""
+  },
+  "descripcion": "Costa Bavaro Garden es un proyecto de apartamentos en Detras Hosp. IMG, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$154,600, con unidades de hasta US$199,900. La entrega está prevista para Listos junio 2029.\nEntre sus áreas y facilidades se encuentran: confotur. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Listos Junio 2029",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Costa Bavaro Garden está en Detras Hosp. IMG, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$154,600. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para Listos junio 2029."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Detras Hosp. IMG",
+  "nombre": "Costa Bavaro Garden",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Detras Hosp. IMG, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$154,600, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para Listos junio 2029, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye confotur, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 154600,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 199900,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Detras Hosp. IMG, Punta Cana",
+  "id": "pmv76dodunwfkn"
+ },
+ {
+  "actualizado": "2026-10-14T21:10:00.000Z",
+  "amenidades": [
+   "Lobby de lujo",
+   "Piscina con casa club",
+   "Salón multiusos",
+   "Amplias áreas verdes",
+   "Gimnasio",
+   "Ciclovía",
+   "Cancha de fútbol",
+   "Cancha de pádel",
+   "Cancha de baloncesto",
+   "Área de juegos para niños",
+   "Proyecto cerrado",
+   "Calles asfaltadas",
+   "Aceras y contenes",
+   "Agua",
+   "Energía eléctrica"
+  ],
+  "brochureUrl": "https://drive.usercontent.google.com/download?id=1Jcqc21hryls0zI_GE5iZeMV7h7D5tykU&export=download&confirm=t",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa de Boca Chica",
+    "tiempo": "7 min"
+   }
+  ],
+  "crm": {
+   "comision": "7.00%",
+   "contacto": "Wilmer Collado",
+   "observaciones": ""
+  },
+  "descripcion": "Costa Palma es una comunidad residencial planificada en Boca Chica. Ofrece solares de 170 a 300 m², pensados para quien desea construir su hogar, tener una segunda vivienda o invertir.\nLa comunidad es cerrada y cuenta con calles asfaltadas, aceras, contenes, agua y energía eléctrica. Tendrá piscina con casa club, gimnasio, ciclovía, canchas deportivas, área de juegos para niños y amplias áreas verdes.\nBoca Chica recibe inversión pública y privada, y está cerca de la playa, del aeropuerto y de Santo Domingo. Con el precio desde US$140 por m² y reserva de US$500, usted puede comenzar con calma.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué tamaño tienen los solares?",
+    "r": "Los solares van desde 170 m² hasta 300 m². El precio parte de US$140 por m²."
+   },
+   {
+    "p": "¿Cuánto cuesta reservar?",
+    "r": "La reserva es de solo US$500. Luego se completa el 10% en un máximo de 30 días."
+   },
+   {
+    "p": "¿Cómo se paga el solar?",
+    "r": "Se completa el 30% inicial en 10 meses, sin intereses. El 70% restante puede pagarse de contado, con banco o con financiamiento de la constructora."
+   },
+   {
+    "p": "¿Cómo es el financiamiento con la constructora?",
+    "r": "Es a tasa fija de 1.5% mensual sobre saldo insoluto, hasta 5 años. No hay penalidad por pago anticipado y se permiten abonos extraordinarios al capital."
+   }
+  ],
+  "fotos": [
+   "997e2ef0baa03f41c26d3d81e827df9c",
+   "5392213b8f55cb61bcbc7ebddffdc0a2",
+   "5b69b3ac62edf6dff09ab832e780e26e",
+   "841c0143e2df9ae4e730ee7648687934",
+   "2950d7734810b210ad5dc74a6f49fbaf",
+   "56f8f362f4541e6b6a884a7fc5b603bc"
+  ],
+  "frase": "Su solar cerca del mar, en Boca Chica",
+  "nombre": "Costa Palma",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 20,
+   "entregaPct": 0,
+   "firmaPct": 10,
+   "meses": 10,
+   "separacion": 500
+  },
+  "porque": [
+   {
+    "texto": "Costa Palma está cerca de la playa, del aeropuerto y de Santo Domingo. Es una zona pensada para vivir, descansar o invertir.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "Boca Chica recibe inversión pública y privada, con obras como el malecón, la playa, calles y parques. Es una zona que entra en una nueva etapa.",
+    "titulo": "Zona en desarrollo"
+   },
+   {
+    "texto": "El precio parte de US$140 por m² y la entrada estimada desde US$23,800. Puede reservar su solar con solo US$500.",
+    "titulo": "Entrada accesible"
+   },
+   {
+    "texto": "Es un proyecto cerrado, con servicios básicos desde el inicio. Además ofrece piscina, gimnasio, canchas y áreas verdes para toda la familia.",
+    "titulo": "Comunidad con amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:10:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Solar",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 23800,
+    "hab": 1,
+    "m2": 170
+   }
+  ],
+  "url": "",
+  "zona": "Boca Chica, República Dominicana",
+  "id": "pmv76dod1f0bra"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [
+   "Fideicomiso"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "Dago Hernandez",
+   "observaciones": ""
+  },
+  "descripcion": "Crisfer es un proyecto de apartamentos en Veron, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$67,708, con unidades de hasta US$112,165. La entrega está prevista para listo 2027 2028.\nEntre sus áreas y facilidades se encuentran: fideicomiso. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "listo 2027 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Crisfer está en Veron, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$67,708. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para listo 2027 2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Veron",
+  "nombre": "Crisfer",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Veron, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$67,708, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para listo 2027 2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye fideicomiso, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 67708,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 89392,
+    "hab": 2,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 112165,
+    "hab": 3,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Veron, Punta Cana",
+  "id": "pmv76dodvrtgat"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Distrito Playa es un proyecto de apartamentos en —. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "—",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Distrito Playa está en —."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en —",
+  "nombre": "Distrito Playa",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en —, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 0,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "—",
+  "id": "pmv76dof4bay4u"
+ },
+ {
+  "actualizado": "2026-10-13T19:01:51.504Z",
+  "amenidades": [
+   "Patio privado desde 48 m²",
+   "Jacuzzi opcional en el patio",
+   "Seguridad 24/7 con tres entradas",
+   "Club con piscina",
+   "Parque infantil",
+   "Canchas deportivas",
+   "Salón de actividades",
+   "Cafetería",
+   "Escuela Montessori",
+   "Minimercado con entrega a domicilio",
+   "Ventanas y puertas corredizas",
+   "Mamparas de vidrio en los baños",
+   "Aire acondicionado en las habitaciones"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto Punta Cana",
+    "tiempo": "7 min"
+   },
+   {
+    "lugar": "Pearl Beach Club",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Coco Bongo",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "El Cortecito",
+    "tiempo": "3 min"
+   },
+   {
+    "lugar": "Downtown",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Playa Bibijagua",
+    "tiempo": "12 min"
+   }
+  ],
+  "descripcion": "Duo Terra es un proyecto de seis villas elegantes estilo townhouse. Se encuentra dentro del Residencial Bávaro Punta Cana. Cada villa tiene dos habitaciones, 109 m² de construcción y un patio privado.\nLa casa se vive en dos niveles. Abajo están la sala, el comedor y la cocina, abiertos hacia el patio. Arriba, las dos habitaciones tienen baño propio, y la principal tiene un balcón con vista al patio.\nEl residencial ofrece seguridad las 24 horas, club con piscina, canchas y cafetería. Además, está a pocos minutos de las principales atracciones turísticas de la zona. Es una opción cómoda para vivir o para invertir.",
+  "direccion": "Residencial Bávaro Punta Cana, con entrada principal en el Boulevard Turístico del Este",
+  "disp": "Disponible",
+  "entrega": "Marzo 2027",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuándo se entrega el proyecto?",
+    "r": "La entrega está prevista para marzo de 2027."
+   },
+   {
+    "p": "¿Cuánto cuesta y qué incluye el precio?",
+    "r": "Los precios inician desde US$157,000 por una villa de 2 habitaciones y 2.5 baños. El jacuzzi se añade desde US$9,000 y el paquete de electrodomésticos cuesta US$3,300."
+   },
+   {
+    "p": "¿Cuál es la forma de pago?",
+    "r": "Se reserva con US$1,000. Se completa el 10% al firmar el contrato, 15 días después de la reserva, y otro 10% durante la construcción. El 80% restante se paga a la entrega."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento mensual?",
+    "r": "El mantenimiento estimado es de US$100 al mes. Los gastos de traspaso corren por cuenta del cliente y la separación no es reembolsable."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/5435f01830bf729ab88392d61dc235a0.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/fe07c3f34713a2ee3bf033c2ead89b78.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/2958936b128ef9ef5060eb9a8b0f7d8b.jpg",
+   "6c0a1ac395a9c61717fc5ba79cee7ad5",
+   "f4e680ed332895f99eb0a20427e4f111",
+   "9d20056fdc452c8aad93ecfff392011f"
+  ],
+  "frase": "Villas dúplex con patio y jacuzzi cerca de todo",
+  "nombre": "Duo Terra Dúplex",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 10,
+   "entregaPct": 80,
+   "firmaPct": 10,
+   "meses": 0,
+   "separacion": 1000
+  },
+  "porque": [
+   {
+    "texto": "Está dentro del Residencial Bávaro Punta Cana, con entrada en el Boulevard Turístico del Este y a pocos minutos de las principales atracciones.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "Su estilo mediterráneo tropical incluye paredes estucadas, porcelanato importado y acabados en madera clara. Todo pensado para un ambiente luminoso y cálido.",
+    "titulo": "Diseño y terminaciones"
+   },
+   {
+    "texto": "Cada villa tiene patio privado, con la posibilidad de añadir un jacuzzi. La sala y la cocina se abren hacia ese espacio.",
+    "titulo": "Espacios para disfrutar"
+   },
+   {
+    "texto": "Usted contará con seguridad las 24 horas, club con piscina, canchas, cafetería, escuela Montessori y minimercado con entrega a domicilio.",
+    "titulo": "Vida de residencial"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-09T21:23:05.369Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Townhouse",
+  "tipologias": [
+   {
+    "banos": 2.5,
+    "desde": 157000,
+    "hab": 2,
+    "m2": 109
+   }
+  ],
+  "url": "",
+  "zona": "Residencial Bávaro, Punta Cana",
+  "id": "pmv1h27miupkuk"
+ },
+ {
+  "actualizado": "2026-10-14T21:30:00.000Z",
+  "amenidades": [
+   "Fideicomiso"
+  ],
+  "brochureUrl": "https://www.dropbox.com/scl/fo/ep7yv5v7q8hfinddewzkr/AGP5WG3yPVVZ38mNP1kEAXI/PRESENTACION?rlkey=zbc5mpvyczb875jljilfrea22&dl=1",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "New City",
+   "observaciones": ""
+  },
+  "descripcion": "East Town es un proyecto de townhouses en Pueblo Bavaro / Av. Barcelo, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$78,000, con unidades de hasta US$96,000. La entrega está prevista para 30/04/2026 31/10/2026 31/12/2026.\nEntre sus áreas y facilidades se encuentran: fideicomiso. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "30/04/2026 31/10/2026 31/12/2026",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "East Town está en Pueblo Bavaro / Av. Barcelo, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$78,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 30/04/2026 31/10/2026 31/12/2026."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "7572ff1bf27fd236b4a5ccfaab53ad94",
+   "391bcfd5608eaf9903f3cd35485e5ae8",
+   "613760468c02848cec45172618405282",
+   "834ac5a04232ef3a95e92e151783e64d",
+   "30ddb89257b346474eae6a85987834ae",
+   "c50c79f92e82221b9d995bb264017e9a",
+   "be71231d82eb7819a0e949ff785224a5"
+  ],
+  "frase": "Townhouses en Pueblo Bavaro / Av. Barcelo",
+  "nombre": "East Town",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Pueblo Bavaro / Av. Barcelo, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$78,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 30/04/2026 31/10/2026 31/12/2026, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye fideicomiso, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Townhouse",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 78000,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 96000,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Pueblo Bavaro / Av. Barcelo, Punta Cana",
+  "id": "pmv76dodw9bqmq"
+ }
+]

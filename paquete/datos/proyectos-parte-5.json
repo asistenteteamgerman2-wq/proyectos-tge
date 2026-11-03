@@ -1,0 +1,1757 @@
+[
+ {
+  "actualizado": "2026-10-13T21:52:48.370Z",
+  "amenidades": [
+   "Casa club",
+   "Piscina",
+   "Gazebo",
+   "Solarium",
+   "Jacuzzi en cada apartamento",
+   "Terraza privada",
+   "Patio en primer nivel",
+   "Seguridad",
+   "Closet de lavado"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Almacenes Unidos",
+    "tiempo": "3 min"
+   },
+   {
+    "lugar": "Coco Bongo",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Playa Blanca",
+    "tiempo": "13 min"
+   },
+   {
+    "lugar": "Playa Cabeza de Toro",
+    "tiempo": "12 min"
+   },
+   {
+    "lugar": "Playa Bibijagua",
+    "tiempo": "12 min"
+   }
+  ],
+  "descripcion": "Palma Alta es un residencial de 18 apartamentos de dos habitaciones en Punta Cana. Se distribuyen en dos niveles, con nueve unidades en cada uno. Todos incluyen jacuzzi.\nUsted contará con casa club y áreas comunes, con piscina, gazebo y solarium. Los apartamentos del primer nivel tienen terraza y patio. Los del segundo nivel, tipo penthouse, tienen terraza privada.\nLas terminaciones incluyen porcelanato, cuarzo blanco en la cocina y puerta principal en roble. Además, las playas están a pocos minutos. Es una opción cómoda para vivir o para generar ingresos por alquiler.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2028",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuándo se entrega el proyecto?",
+    "r": "La entrega está prevista para diciembre de 2028."
+   },
+   {
+    "p": "¿Con cuánto puedo reservar mi unidad?",
+    "r": "Puede reservar con US$1,000. La separación no es reembolsable. Los costos de transferencia son responsabilidad del cliente."
+   },
+   {
+    "p": "¿Cuál es la forma de pago?",
+    "r": "Se completa el 10% con la firma del contrato, 15 días después de la reserva. Luego se abona un 20% durante la construcción y el 70% restante contra entrega."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento?",
+    "r": "El mantenimiento aproximado es de US$1.50 por mt2. Incluye limpieza y mantenimiento de áreas comunes, recogida de basura y seguridad."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/1605d9570d5bf2292302a0da913ef343.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/a4b16a0d94d3da007eda27c55f9aed06.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/f92e1e67cca3d91ea39c1d48b9c47404.jpg",
+   "a83202ee0504e97468ac52f90c3aea29",
+   "058cc786e5b645ccac5aea35398b369a"
+  ],
+  "frase": "Apartamentos con jacuzzi cerca de las playas de Punta Cana",
+  "nombre": "Palma Alta",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 20,
+   "entregaPct": 70,
+   "firmaPct": 10,
+   "meses": 0,
+   "separacion": 1000
+  },
+  "porque": [
+   {
+    "texto": "Las playas de Cabeza de Toro, Bibijagua y El Cortecito están a unos 12 minutos. El aeropuerto queda a 10 minutos.",
+    "titulo": "Cerca de la playa"
+   },
+   {
+    "texto": "Cada apartamento incluye jacuzzi, ya sea en el patio del primer nivel o en la terraza del penthouse.",
+    "titulo": "Jacuzzi en cada unidad"
+   },
+   {
+    "texto": "Verá porcelanato 60 x 60, tope de cocina en cuarzo blanco y puerta principal en roble.",
+    "titulo": "Terminaciones de calidad"
+   },
+   {
+    "texto": "Existe un programa de gestión de renta 70% 30%. Incluye publicaciones, limpieza, lavandería, check in y check out.",
+    "titulo": "Alquiler administrado"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-09T21:36:47.803Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 129000,
+    "hab": 2,
+    "m2": 80
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, República Dominicana",
+  "id": "pmv1hju7wi9n81"
+ },
+ {
+  "actualizado": "2026-10-14T21:02:37.110Z",
+  "amenidades": [
+   "Áreas verdes con caminos y bancos",
+   "Canchas multiusos",
+   "Piscina para adultos y niños",
+   "Senderos para correr",
+   "Área de juegos para niños",
+   "Salón multiuso",
+   "Gazebo"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa Boca Chica",
+    "tiempo": "4 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de las Américas",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Hipermercados Olé",
+    "tiempo": "6 min"
+   },
+   {
+    "lugar": "Autovía del Este",
+    "tiempo": "2 min"
+   },
+   {
+    "lugar": "Restaurantes Boca Marina, Neptuno y Hotel Hamaca",
+    "tiempo": "2 min"
+   },
+   {
+    "lugar": "Brunei Hotel Boutique",
+    "tiempo": "2 min"
+   }
+  ],
+  "crm": {
+   "comision": "—",
+   "contacto": "Wilmer Collado",
+   "observaciones": ""
+  },
+  "descripcion": "Palma Park Residences es una urbanización residencial pensada para crear comunidad. Ofrece seis diseños de casas, ubicadas entre la playa y los campos de béisbol.\nSu entrada está diseñada para aprovechar una avenida iluminada y segura. Tendrá áreas verdes, piscina, senderos para correr y espacios para compartir en familia.\nEl proyecto está junto a la academia de los Yankees de Nueva York y frente a la de los Rockies de Colorado. Además, ofrece varias rutas de acceso a avenidas, comercios y transporte público.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántos modelos de casas hay?",
+    "r": "El proyecto ofrece seis diseños de casas. El brochure describe los tipos A, B, C, D y E, con solares desde 135 hasta 280 metros cuadrados."
+   },
+   {
+    "p": "¿Qué tamaño tienen las casas?",
+    "r": "Van desde 58 hasta 157 metros cuadrados de construcción. El tipo E tiene 58, el tipo B 115, el tipo C 120 y el tipo D 157."
+   },
+   {
+    "p": "¿Qué amenidades tiene el proyecto?",
+    "r": "Cuenta con áreas verdes, canchas multiusos, piscina para adultos y niños, senderos para correr, área de juegos, salón multiuso y gazebo."
+   },
+   {
+    "p": "¿Se pueden agregar mejoras a la vivienda?",
+    "r": "Sí, de forma opcional y con costo adicional. El brochure menciona jacuzzi, piso, área de barbacoa, terraza y pergolado, según el modelo."
+   }
+  ],
+  "fotos": [
+   "a7bf79b27b1cd73084cf8cc7ffffb4d5",
+   "b28af3fdf9ddd40ef84d1909c860e9e4",
+   "c59098c98f0cf4e6760c4c4ca246d802",
+   "32a05ad751681c2faa0b84a0583dbd90",
+   "52a74945d1fad9920375dfc58bae2453",
+   "aef72dae51ddfe3e93023b5bba15db1f"
+  ],
+  "frase": "Viva cerca del mar y del béisbol",
+  "nombre": "Palma Park",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto cuenta con varias rutas hacia avenidas, comercios y transporte público. La Autovía del Este queda a solo 2 minutos.",
+    "titulo": "Ubicación con variedad de accesos"
+   },
+   {
+    "texto": "La playa de Boca Chica está a 4 minutos. Usted disfruta de la vida costera sin alejarse de la ciudad.",
+    "titulo": "Cerca de la playa"
+   },
+   {
+    "texto": "Está junto a la academia de los Yankees y frente a la de los Rockies. Cerca hay otras academias reconocidas.",
+    "titulo": "Entorno de béisbol"
+   },
+   {
+    "texto": "Piscina, canchas, senderos, área de juegos y salón multiuso. Todo pensado para convivir en un ambiente seguro.",
+    "titulo": "Amenidades para toda la familia"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:02:37.110Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Casa",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 136000,
+    "hab": 2,
+    "m2": 58
+   },
+   {
+    "banos": 2,
+    "desde": 144500,
+    "hab": 3,
+    "m2": 115
+   }
+  ],
+  "url": "",
+  "zona": "Boca Chica, Santo Domingo Este",
+  "id": "pmv76dod3seyfn"
+ },
+ {
+  "actualizado": "2026-10-14T21:01:56.702Z",
+  "amenidades": [
+   "Piscina de adultos",
+   "Piscina de niños",
+   "Gimnasio",
+   "Dos áreas de niños",
+   "Media cancha de baloncesto",
+   "Pista de caminatas",
+   "Parqueo de visitas",
+   "Garita de seguridad con control de acceso",
+   "Portón eléctrico",
+   "Plaza comercial en la entrada"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Área comercial Residencial Pueblo Bávaro",
+    "tiempo": "2 min"
+   },
+   {
+    "lugar": "Cocobongo",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Adventure Park",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Downtown Mall",
+    "tiempo": "11 min"
+   },
+   {
+    "lugar": "Pearl Beach Club",
+    "tiempo": "16 min"
+   },
+   {
+    "lugar": "Playa Bibijagua",
+    "tiempo": "19 min"
+   }
+  ],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Ariel Grasso",
+   "observaciones": ""
+  },
+  "descripcion": "Palma del Este IV es un conjunto de apartamentos de 2 habitaciones, ya terminados y con título disponible. Los edificios son de 3 niveles y están dentro del Residencial Pueblo Bávaro, en Punta Cana.\nLa comunidad cuenta con seguridad, portón eléctrico y plaza comercial en la entrada. Usted podrá disfrutar de piscinas para adultos y niños, gimnasio, dos áreas infantiles, media cancha de baloncesto y pista de caminatas.\nLa entrega es inmediata y el proyecto es apto para alquileres tipo Airbnb. Además, el servicio llave en mano le permite recibir su apartamento amueblado y listo para disfrutar o rentar.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "Terminado",
+  "faq": [
+   {
+    "p": "¿Los apartamentos están listos para entrega?",
+    "r": "Sí. Son apartamentos de 2 habitaciones, terminados, con título disponible y entrega inmediata."
+   },
+   {
+    "p": "¿Con cuánto se reserva una unidad?",
+    "r": "La reserva es de US$1,000. La separación no es reembolsable y los costos de transferencia son responsabilidad del cliente."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento estimado?",
+    "r": "El mantenimiento estimado es de US$100."
+   },
+   {
+    "p": "¿Qué diferencia hay entre los niveles?",
+    "r": "El primer piso tiene patio privado. El segundo tiene balcón. El tercero tiene balcón y una terraza privada con baño en el cuarto nivel."
+   }
+  ],
+  "fotos": [
+   "93ad246fbf677bc14f9fa1de3f32e969",
+   "020d57e592020c08d36fb5a33e171bf1",
+   "d28d0e9874b23aadc7f064932fc6b74a",
+   "431e309931e723658ce61bad25be8f5f",
+   "61cbfca237c7ae33c7da01e7bac8498d"
+  ],
+  "frase": "Apartamentos listos para vivir o rentar en Punta Cana",
+  "nombre": "Palma del Este",
+  "origen": "crm",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 1000
+  },
+  "porque": [
+   {
+    "texto": "Los apartamentos están terminados y cuentan con título disponible. Usted puede recibir su unidad sin esperar construcción.",
+    "titulo": "Entrega inmediata"
+   },
+   {
+    "texto": "El residencial está a 2 minutos del área comercial de Pueblo Bávaro. La playa y el aeropuerto quedan a pocos minutos.",
+    "titulo": "Ubicación práctica"
+   },
+   {
+    "texto": "Los edificios son aptos para Airbnb. Con el servicio llave en mano, su apartamento llega amueblado y listo para rentar.",
+    "titulo": "Pensado para renta"
+   },
+   {
+    "texto": "Incluye pisos de porcelanato, cocina modular con tope de granito y closets y puertas en madera preciosa.",
+    "titulo": "Buenas terminaciones"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:01:56.701Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 96750,
+    "hab": 2,
+    "m2": 72
+   }
+  ],
+  "url": "",
+  "zona": "Residencial Pueblo Bávaro, Punta Cana",
+  "id": "pmv76doe6advj6"
+ },
+ {
+  "actualizado": "2026-10-15T21:45:00.000Z",
+  "amenidades": [
+   "Picuzzi"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Palmas III es un proyecto de apartamentos en Vista cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$280,500. La entrega está prevista para 3 Meses.\nEntre sus áreas y facilidades se encuentran: picuzzi. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "3 Meses",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Palmas III está en Vista cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$280,500. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 3 Meses."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "3290bcfdd407d51d06aaaeacc1673c4b",
+   "850732d4b0db5b26bc9caf8b1b99ab6d",
+   "79c692a1cb745e938c6fb2b54f765b1f",
+   "c8dfa43ed44bb32fe08c3dacd754af2c",
+   "2f71acbbc9d6ea0477cbf01fd6a09baa"
+  ],
+  "frase": "Apartamentos en Vista cana",
+  "nombre": "Palmas III",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Vista cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$280,500, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 3 Meses, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye picuzzi, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 280500,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/Eo78KbAHm4mGBjEZ8fm3TS",
+  "zona": "Vista cana",
+  "id": "pmv76dof0zcy7w"
+ },
+ {
+  "actualizado": "2026-10-13T18:57:14.003Z",
+  "amenidades": [
+   "Piscina semiolímpica",
+   "Gimnasio al aire libre",
+   "Pista para caminar",
+   "Área para mascotas",
+   "2 canchas multiuso",
+   "Salón multiuso",
+   "Parque infantil",
+   "Área de zumba",
+   "Acceso controlado con portón",
+   "Residencial cerrado"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Supermercado Bravo",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Estación Total",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Colina Centro y Supermercado La Sirena",
+    "tiempo": "7 min"
+   },
+   {
+    "lugar": "Circunvalación de Santo Domingo",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Estación de metro Mama Tingó",
+    "tiempo": "11 min"
+   },
+   {
+    "lugar": "Aeropuerto La Isabela",
+    "tiempo": "13 min"
+   }
+  ],
+  "descripcion": "Palmas de Santo Domingo Norte es un residencial de apartamentos de dos y tres habitaciones, en edificios de cuatro niveles. Cada unidad incluye un parqueo. Las del primer piso tienen patio y las del cuarto nivel, terraza privada.\nEl complejo es completamente cerrado, con entrada con portón y control de acceso. Usted dispondrá de piscina semiolímpica, gimnasio al aire libre, pista para caminar, área para mascotas, canchas, salón multiuso, parque infantil y área de zumba.\nEs una buena opción para quien busca un hogar con precio accesible. El proyecto cuenta con fideicomiso que respalda su inversión y con un grupo desarrollador reconocido. Además, puede aplicar al bono de vivienda y a la exoneración del 3% de traspaso.",
+  "direccion": "Junto a la Av. Jacobo Majluta, con conexión por la calle Penetración Norte",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Qué tipos de apartamentos hay?",
+    "r": "Hay apartamentos de 2 habitaciones desde US$62,900 y de 3 habitaciones desde US$75,500. Todos incluyen un parqueo."
+   },
+   {
+    "p": "¿Cuándo se entregan las unidades?",
+    "r": "La fase 1 se entrega por etapas, entre junio de 2026 y diciembre de 2027. La fase 2 se entrega en septiembre de 2028."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento mensual?",
+    "r": "El mantenimiento del residencial es de aproximadamente RD$2,500 al mes."
+   },
+   {
+    "p": "¿Qué diferencia hay entre los pisos?",
+    "r": "Los apartamentos del primer piso tienen patio. Los del cuarto nivel tienen terraza privada, con cerámica y pérgola incluidas. Los de 2 habitaciones no tienen terraza."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/c8731932125ec1a8b0dc8fbe6be1cc39.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/0503ca8d466079c5d41c5f3c9aadd53f.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/182e902c2a64848c99693ca232c3d369.jpg",
+   "e29346facb0145ded6563522d3082a97",
+   "b596dc0f9039c3c369adb35dac2255cc"
+  ],
+  "frase": "Su hogar en un residencial cerrado y seguro",
+  "nombre": "Palmas de Santo Domingo Norte",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está junto a la Av. Jacobo Majluta, con varias rutas hacia avenidas principales, comercios, transporte público y el Metro de Santo Domingo.",
+    "titulo": "Ubicación conectada"
+   },
+   {
+    "texto": "El proyecto cuenta con fideicomiso, que garantiza su inversión, y es desarrollado por un grupo reconocido.",
+    "titulo": "Inversión respaldada"
+   },
+   {
+    "texto": "Si aplica al bono de vivienda, puede obtener la exoneración del 3% en impuestos de traspaso.",
+    "titulo": "Beneficios al comprar"
+   },
+   {
+    "texto": "Piscina, canchas, parque infantil, área para mascotas y pista para caminar, dentro de un residencial cerrado y con control de acceso.",
+    "titulo": "Espacios para toda la familia"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-09T21:37:35.536Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 62900,
+    "hab": 2,
+    "m2": 55
+   },
+   {
+    "banos": 1,
+    "desde": 75500,
+    "hab": 3,
+    "m2": 65
+   }
+  ],
+  "url": "",
+  "zona": "Santo Domingo Norte, Santo Domingo",
+  "id": "pmv1hkv1s7sznx"
+ },
+ {
+  "actualizado": "2026-10-13T18:57:47.188Z",
+  "amenidades": [
+   "Casa club de diseño contemporáneo",
+   "Piscina con área de solárium",
+   "Área de juegos infantiles segura",
+   "Cancha multiusos deportiva"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Universidad Dominicana O&M",
+    "tiempo": "4 min"
+   },
+   {
+    "lugar": "Multiplaza La Romana",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Estadio Francisco A. Micheli",
+    "tiempo": "8 min"
+   },
+   {
+    "lugar": "Playa Caleta",
+    "tiempo": "10 min"
+   }
+  ],
+  "descripcion": "Este proyecto residencial reúne 752 unidades en cuatro etapas de desarrollo. Sus apartamentos de 55 a 77 m² tienen un diseño eficiente, pensado para quienes buscan buena ubicación, fácil acceso y calidad de vida.\nSe encuentra en la Av. Miguel Saviñón, en La Caleta, La Romana. Usted podrá disfrutar de una casa club de diseño contemporáneo, piscina con solárium, área de juegos infantiles segura y cancha multiusos deportiva.\nLa compra cuenta con respaldo fiduciario de Trust & Partners. Además, el proyecto permite acceder al Bono de Primera Vivienda y a la exención del 3% del impuesto de transferencia inmobiliaria para compradores de primera vivienda.",
+  "direccion": "Av. Miguel Saviñón, Sector La Caleta, La Romana, República Dominicana",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántas unidades tiene el proyecto?",
+    "r": "El proyecto tiene 752 unidades en total, repartidas en cuatro etapas de desarrollo: 1A, 1B, 2A y 2B."
+   },
+   {
+    "p": "¿Cuál es el precio de partida?",
+    "r": "El apartamento Tipo D, de 55 m² y 2 habitaciones, parte desde US$68,500. El Tipo B, de 77 m² y 3 habitaciones, desde US$85,100. Las tarifas pueden cambiar sin previo aviso."
+   },
+   {
+    "p": "¿Cuál es el plan de pago?",
+    "r": "La reserva es de US$500 y no es reembolsable. Se paga 10% a la firma del contrato, 10% en 36 cuotas durante la construcción y 80% contra entrega mediante financiamiento."
+   },
+   {
+    "p": "¿Qué beneficios del Estado aplican?",
+    "r": "Los compradores de primera vivienda pueden optar al Bono de Primera Vivienda, con límite de RD$5,450,851.12, y a la exención del 3% del impuesto de transferencia inmobiliaria."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/906afbc3e7cfa1d9e12c3e5f01071092.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/098805e6d856056a02cbcea9b9a1aefa.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/4eeff9139fc6e058584eeb79ac7e3ed7.jpg",
+   "7875752e379ff7aaba080ea5fbcb3dd3"
+  ],
+  "frase": "Su próxima inversión en una zona en crecimiento",
+  "nombre": "Palmas de la Romana",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 10,
+   "entregaPct": 80,
+   "firmaPct": 10,
+   "meses": 36,
+   "separacion": 500
+  },
+  "porque": [
+   {
+    "texto": "Está en la Av. Miguel Saviñón, con conexión directa a la Carretera Caleta, en una de las zonas de mayor crecimiento del país.",
+    "titulo": "Ubicación con conexión directa"
+   },
+   {
+    "texto": "Multiplaza La Romana y el Estadio Francisco A. Micheli quedan a 8 minutos. La Universidad Dominicana O&M está a 4 minutos.",
+    "titulo": "Cerca de lo que usted necesita"
+   },
+   {
+    "texto": "La inversión cuenta con la gestión de Fiduciaria Trust & Partners, que ofrece garantía y transparencia en el manejo de su dinero.",
+    "titulo": "Respaldo fiduciario"
+   },
+   {
+    "texto": "Los compradores de primera vivienda pueden acceder al Bono de Primera Vivienda y a la exención del 3% del impuesto de transferencia.",
+    "titulo": "Beneficios del Estado"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-09T21:38:19.056Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 68500,
+    "hab": 2,
+    "m2": 55
+   },
+   {
+    "banos": 2,
+    "desde": 85100,
+    "hab": 3,
+    "m2": 77
+   }
+  ],
+  "url": "",
+  "zona": "La Caleta, La Romana",
+  "id": "pmv1hlsmo085pt"
+ },
+ {
+  "actualizado": "2026-10-13T18:55:46.215Z",
+  "amenidades": [
+   "Piscina para adultos y niños",
+   "Piscina con juego acuático infantil",
+   "Terraza techada tipo lounge bar",
+   "Terraza destechada tipo lounge bar",
+   "Gazebo con vista a la piscina",
+   "Área infantil",
+   "Boulevard interno",
+   "Ciclovía",
+   "Parques y áreas verdes",
+   "Proyecto cerrado"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Downtown",
+    "tiempo": "20 min"
+   },
+   {
+    "lugar": "Restaurante Jellyfish",
+    "tiempo": "25 min"
+   }
+  ],
+  "descripcion": "Palmera 8 Residences es un proyecto cerrado de apartamentos de cuatro niveles en Punta Cana. Ofrece unidades de 1, 2 y 3 habitaciones, pensadas para vivir o para invertir.\nSus áreas sociales son completas para toda la familia. Usted encontrará piscina para adultos y niños, juego acuático infantil, terrazas tipo lounge bar, boulevard interno, ciclovía, parques y áreas verdes.\nEl proyecto cuenta con fideicomiso y bono vivienda, y la fiduciaria del Banco Popular respalda su inversión. Además, es apto para Airbnb, lo que le da una opción adicional de uso.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué tipos de apartamentos ofrece el proyecto?",
+    "r": "Ofrece apartamentos de 1 habitación con 35.5 m², de 2 habitaciones con 48 m² y de 3 habitaciones con 68 m²."
+   },
+   {
+    "p": "¿Cuál es el precio de entrada?",
+    "r": "El apartamento de 1 habitación parte desde US$46,500. El de 2 habitaciones, desde US$59,900, y el de 3 habitaciones, desde US$78,000."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento?",
+    "r": "El mantenimiento aproximado es de US$80 a US$100. Incluye limpieza y mantenimiento de áreas comunes, recogida de basura y seguridad."
+   },
+   {
+    "p": "¿Puedo acceder al bono vivienda?",
+    "r": "Sí, si es dominicano y no tiene propiedades a su nombre. El descuento promedio es de 6% y se exoneran los impuestos de transferencia (3%)."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/1c8a3ec0c72c7f40c0b9e3b021ee6d49.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/eeea531877a6a4ca26a17cc3aba7f66a.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/098c4c5f493c1cb640b564fd60bafed4.jpg",
+   "46243773fc0435c44bbe7d0f02984480",
+   "7e8155381ba8b345841fc283ae8c7ed8",
+   "c4bf74b00632a6bc2c031aa9cdb4e8eb"
+  ],
+  "frase": "Viva e invierta en Punta Cana con respaldo",
+  "nombre": "Palmera 8 Residences",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está amparado por la Fiduciaria Popular, filial del Grupo Popular. Esto brinda seguridad jurídica a su inversión bajo la Ley 189-11.",
+    "titulo": "Respaldo fiduciario"
+   },
+   {
+    "texto": "Si adquiere su primera vivienda y es dominicano, puede recibir un descuento promedio de 6% sobre el precio de lista, aplicado al préstamo hipotecario.",
+    "titulo": "Bono vivienda"
+   },
+   {
+    "texto": "Los apartamentos son Airbnb friendly, con precios desde US$46,500. Una buena opción para habitar o generar ingresos.",
+    "titulo": "Para vivir o invertir"
+   },
+   {
+    "texto": "El grupo constructor ha entregado varios proyectos y vendió más de 5,000 unidades en los últimos 3 años.",
+    "titulo": "Constructor con experiencia"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-11-02T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 60000,
+    "hab": 1,
+    "m2": 48
+   },
+   {
+    "banos": 1,
+    "desde": 95000,
+    "hab": 2,
+    "m2": 77.3
+   },
+   {
+    "banos": 2,
+    "desde": 78000,
+    "hab": 3,
+    "m2": 68
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, La Altagracia",
+  "id": "pmv1hmpgcbdrzj"
+ },
+ {
+  "actualizado": "2026-10-12T20:52:55.482Z",
+  "amenidades": [
+   "Piscina recreativa",
+   "Casa Club",
+   "Zona comercial",
+   "Áreas de niños",
+   "Áreas deportivas",
+   "Áreas verdes",
+   "Garita con control de acceso 24 h",
+   "Doble entrada vehicular",
+   "Red de agua potable",
+   "Energía eléctrica"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Playas",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Downtown Punta Cana",
+    "tiempo": "8 min"
+   }
+  ],
+  "descripcion": "Paraíso del Rey es un residencial de villas independientes en Punta Cana. Ofrece modelos de 2 y 3 habitaciones, en uno o dos niveles, con solares propios y terminaciones de buena calidad.\nEl residencial cuenta con piscina recreativa, Casa Club, zona comercial, áreas deportivas, áreas verdes y espacios para niños. La garita con control de acceso las 24 horas le brinda tranquilidad cada día.\nLa ubicación une comodidad y cercanía: aeropuerto, playas y Downtown Punta Cana a pocos minutos. Con precios desde 98,500 USD y entregas escalonadas hasta 2028, usted puede elegir el modelo que mejor se adapte a su plan.",
+  "direccion": "Con accesos desde la Avenida Barceló, la carretera Aeropuerto-Higüey y la Circunvalación",
+  "disp": "Disponible",
+  "entrega": "Noviembre 2026",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Qué modelos de villa hay disponibles?",
+    "r": "Hay cinco modelos. Los tipos A, C, D y E tienen 2 habitaciones, y el tipo B tiene 3 habitaciones. Los hay de uno y de dos niveles."
+   },
+   {
+    "p": "¿Cuál es el precio de entrada?",
+    "r": "El tipo E, de 2 habitaciones y 65 m² construidos, parte desde 98,500 USD. El tipo B, de 3 habitaciones, parte desde 198,500 USD."
+   },
+   {
+    "p": "¿Cuándo son las entregas?",
+    "r": "Las entregas son en 2026, 2027 y 2028. El tipo A se entrega en noviembre de 2026 y el tipo B en noviembre de 2027."
+   },
+   {
+    "p": "¿Puedo añadir una piscina privada?",
+    "r": "Sí, como opción. La piscina mide 3.94 m x 2.22 m x 1.20 m y cuesta 18,000 USD. No está incluida en el precio de la villa."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/89f35f87f3b64b891ccc6793cedccf9d.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/d3365c53beba720007c60dcaa3a33594.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/8029edc56e7b898be51d30abb701bd1b.jpg",
+   "1d307624fd3a769c990f6089d68cdf45",
+   "e826ecdc63be5e6614ac3995b8af6349",
+   "cd4aeac4aeb84053eca39f49bc9c2c12"
+  ],
+  "frase": "Su hogar en el paraíso de Punta Cana",
+  "nombre": "Paraíso del Rey Villas",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está a 10 minutos del aeropuerto y de las playas, y a 8 minutos de Downtown Punta Cana.",
+    "titulo": "Ubicación práctica"
+   },
+   {
+    "texto": "Cada villa tiene su propio solar. Puede elegir entre modelos de 2 y 3 habitaciones, en uno o dos niveles.",
+    "titulo": "Villas independientes"
+   },
+   {
+    "texto": "Incluyen porcelanato importado, puertas en madera de alta calidad, cocina modular, tope de granito importado y preinstalación de aire acondicionado.",
+    "titulo": "Terminaciones de calidad"
+   },
+   {
+    "texto": "Disfrutará de piscina, Casa Club, zona comercial, áreas deportivas y juegos para niños, con acceso controlado las 24 horas.",
+    "titulo": "Vida en comunidad"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T20:52:55.482Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 98500,
+    "hab": 2,
+    "m2": 65
+   },
+   {
+    "banos": 0,
+    "desde": 198500,
+    "hab": 3,
+    "m2": 170
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, La Altagracia",
+  "id": "pmv5qaz3vyz5hg"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [
+   "Parqueo"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Miguel Cabrera",
+   "observaciones": ""
+  },
+  "descripcion": "Parque Industrial Domingo Maiz es un proyecto de apartamentos en Domingo Maiz, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$112,500, con unidades de hasta US$180,000. La entrega está prevista para 2027.\nEntre sus áreas y facilidades se encuentran: parqueo. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "2027",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Parque Industrial Domingo Maiz está en Domingo Maiz, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$112,500. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 2027."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Domingo Maiz",
+  "nombre": "Parque Industrial Domingo Maiz",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Domingo Maiz, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$112,500, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 2027, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye parqueo, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 112500,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 120000,
+    "hab": 2,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 155250,
+    "hab": 3,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 180000,
+    "hab": 4,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Domingo Maiz, Punta Cana",
+  "id": "pmv76doe85ctjj"
+ },
+ {
+  "actualizado": "2026-10-13T18:45:35.063Z",
+  "amenidades": [
+   "Más de 1,000 m² de área social",
+   "Área lounge",
+   "Gimnasio",
+   "Piscina de adultos y niños",
+   "Juegos acuáticos y recreación infantil",
+   "6 plazoletas",
+   "5 parquecitos",
+   "Más de 1 km de sendero",
+   "Área de picnic y BBQ",
+   "Entrada vehicular doble vía y acceso peatonal",
+   "Pre instalación de jacuzzi",
+   "Aire acondicionado en habitaciones"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Parque de las Canas es un residencial de 100 townhouses en Vista Cana, Punta Cana. Ofrece modelos de 2 y 3 habitaciones, con patio propio y aire acondicionado en las habitaciones principales.\nEl residencial cuenta con más de 1,000 m² de área social. Usted encontrará piscina para adultos y niños, gimnasio, área lounge, plazoletas, parquecitos y más de un kilómetro de sendero.\nEl proyecto está frente al campo de golf y es Airbnb friendly, por lo que sirve para vivir o para invertir. Cuenta con Ley Confotur y está respaldado por un fideicomiso.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2026",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Qué modelos están disponibles?",
+    "r": "Hay duplex de 2 habitaciones con 102 m² y villas de 3 habitaciones con 120 m². Ambos modelos tienen patio y dos parqueos."
+   },
+   {
+    "p": "¿Desde qué precio se vende?",
+    "r": "El modelo de 2 habitaciones parte desde US$204,000. El de 3 habitaciones parte desde US$220,500."
+   },
+   {
+    "p": "¿Cuándo se entregan las unidades?",
+    "r": "La entrega es por sectores: diciembre 2026, diciembre 2027 y julio 2028, según el sector que usted elija."
+   },
+   {
+    "p": "¿Qué beneficios fiscales tiene?",
+    "r": "Por la Ley Confotur, hay exoneración del impuesto a la propiedad inmobiliaria por 15 años y del impuesto de transferencia del 3%. El proyecto cuenta con fideicomiso."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/511fc58850d9bce6fa8b2b2852acb146.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/5007e55cafbca9affbad970177865ff5.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/f435b0a93f368f8a12315d99989c161a.jpg",
+   "103c54d4eb5c4ce94c072ef54bc34f11",
+   "ec1b37148ac7c0a6f096e9140c239f06",
+   "ae7b8950adc74cab60c89236e29f6b95"
+  ],
+  "frase": "Viva o invierta frente al campo de golf",
+  "nombre": "Parque de las Canas",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Vista Cana, frente al campo de golf. Usted tendrá cerca playa artificial, lago, restaurantes y áreas deportivas.",
+    "titulo": "Ubicación en Vista Cana"
+   },
+   {
+    "texto": "El residencial es Airbnb friendly. Esto le permite disfrutar la propiedad o ponerla en renta.",
+    "titulo": "Ideal para invertir"
+   },
+   {
+    "texto": "Cuenta con Ley Confotur: exoneración del impuesto a la propiedad inmobiliaria por 15 años y del impuesto de transferencia del 3%.",
+    "titulo": "Beneficios fiscales"
+   },
+   {
+    "texto": "Cada casa tiene patio propio y dos parqueos. El residencial ofrece piscinas, parquecitos, plazoletas y senderos para toda la familia.",
+    "titulo": "Espacios para su familia"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T18:45:35.063Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Townhouse",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 204000,
+    "hab": 2,
+    "m2": 102
+   },
+   {
+    "banos": 0,
+    "desde": 220500,
+    "hab": 3,
+    "m2": 120
+   }
+  ],
+  "url": "",
+  "zona": "Vista Cana, Punta Cana",
+  "id": "pmv7172dz33l32"
+ },
+ {
+  "actualizado": "2026-10-12T20:53:54.573Z",
+  "amenidades": [
+   "Pórtico de entrada con seguridad",
+   "Oficinas administrativas",
+   "Parqueo de visitas",
+   "Cancha de baloncesto",
+   "2 canchas de pádel",
+   "Piscina para adultos",
+   "Piscina para niños",
+   "Jacuzzi en el área social",
+   "Máquinas de ejercicio al aire libre",
+   "Parque para mascotas",
+   "Bar",
+   "Sendero y área de niños"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Pearl Beach Club",
+    "tiempo": "3 min"
+   },
+   {
+    "lugar": "El Cortecito",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Coco Bongo",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Downtown",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Aeropuerto de Punta Cana",
+    "tiempo": "7 min"
+   },
+   {
+    "lugar": "Bibijagua Beach",
+    "tiempo": "12 min"
+   }
+  ],
+  "descripcion": "Paseo de Punta Cana es un residencial de 378 villas en Punta Cana. Incluye townhouses de 2 habitaciones y dúplex de 3 habitaciones, con patio, terraza y 2 parqueos por unidad.\nEl residencial tiene pórtico de entrada con seguridad, piscinas para adultos y niños, jacuzzi, canchas de pádel y baloncesto. También cuenta con parque para mascotas y máquinas de ejercicio al aire libre.\nLas unidades se entregan con porcelanato, cocina modular y tope de granito. Incluyen nevera, lavadora-secadora, estufa y aire acondicionado en las habitaciones. Los precios inician en US$148,907 para el townhouse de 2 habitaciones.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Febrero 2029",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuántas villas tiene el proyecto?",
+    "r": "El proyecto está compuesto por 378 villas: townhouses de 2 habitaciones y dúplex de 3 habitaciones."
+   },
+   {
+    "p": "¿Cuántos parqueos incluye cada unidad?",
+    "r": "Cada unidad de 2 y 3 habitaciones incluye 2 parqueos. El residencial también tiene parqueo de visitas."
+   },
+   {
+    "p": "¿Qué equipos incluye la vivienda?",
+    "r": "Incluye nevera, lavadora-secadora, estufa y aire acondicionado en las habitaciones. Los modelos y marcas pueden variar, y la línea blanca se entrega hasta agotar existencia."
+   },
+   {
+    "p": "¿Cuál es el mantenimiento estimado?",
+    "r": "El mantenimiento estimado es de US$150."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/b08b5e751d7f8527a775859805209071.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/1ec6dc0762920c382d28bb9bd6dad66c.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/1bb91c5aad6a2b47a97feedc851eec08.jpg",
+   "a5771868c6b4f8774da7ce6a49e640b5",
+   "75066a2ad08cbc7ca69ee88ae4526691",
+   "35acfbd107d545487b201a08e530cb9f"
+  ],
+  "frase": "Villas familiares a pocos minutos del mar",
+  "nombre": "Paseo de Punta Cana",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El aeropuerto de Punta Cana está a 7 minutos y Downtown a 5 minutos. El Cortecito y Pearl Beach Club también quedan cerca.",
+    "titulo": "Cerca de todo"
+   },
+   {
+    "texto": "Cada villa cuenta con patio y terraza. Usted podrá disfrutar del aire libre en su propia casa.",
+    "titulo": "Espacios para disfrutar"
+   },
+   {
+    "texto": "Porcelanato, puerta principal en madera preciosa, cocina modular y tope de granito. Además, se incluyen equipos como nevera, estufa y lavadora-secadora.",
+    "titulo": "Terminaciones de calidad"
+   },
+   {
+    "texto": "Piscinas, jacuzzi, canchas de pádel y baloncesto, y parque para mascotas. Todo dentro del residencial y con acceso controlado.",
+    "titulo": "Vida social y deportiva"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T20:53:54.573Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Townhouse",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 148907,
+    "hab": 2,
+    "m2": 87
+   },
+   {
+    "banos": 2,
+    "desde": 187856,
+    "hab": 3,
+    "m2": 117
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana",
+  "id": "pmv5qc8p9inszk"
+ },
+ {
+  "actualizado": "2026-10-14T21:03:46.131Z",
+  "amenidades": [
+   "Piscina",
+   "Gazebo",
+   "Caminos y entornos tropicales",
+   "Control de acceso",
+   "Parqueos para visitantes",
+   "Acceso privado a la playa"
+  ],
+  "brochureUrl": "https://www.dropbox.com/scl/fo/cuvvapxi0bt7g9xfwouph/AMSqwAD6Or1bS4sUs8EaO9k/1.%20PRESENTACIONES%20PARA%20CLIENTES%20%7C%20Team%20YV%2C%20Remax%20%26%20Subbrokers?rlkey=dklkrsnte5zfqvyhsh9cxcjut&dl=1",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Downtown Mall",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Playa Arena Gorda",
+    "tiempo": "3 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "18 min"
+   },
+   {
+    "lugar": "Centro médico",
+    "tiempo": "7 min"
+   }
+  ],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Bávaro es un residencial de edificios con apartamentos de 2 habitaciones. Están listos para entrega y ofrecen vistas a la piscina y acceso privado a la playa.\nEn este lugar puede disfrutar de piscina, gazebo y caminos con entorno tropical. El control de acceso y los parqueos para visitantes le dan comodidad y tranquilidad en el día a día.\nCada apartamento incluye línea blanca, aires acondicionados en las habitaciones y preinstalación de aires en el resto. Con acabados en mármol crema y madera jequitibá, es una opción cómoda para vivir o invertir.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Listo",
+  "estado": "Terminado",
+  "faq": [
+   {
+    "p": "¿Cuál es el precio de los apartamentos?",
+    "r": "Los apartamentos de 2 habitaciones, 2 ½ baños y 1 parqueo parten desde US$191,850."
+   },
+   {
+    "p": "¿Qué tamaño tienen los apartamentos?",
+    "r": "Las unidades van desde 142 m² hasta 175 m²."
+   },
+   {
+    "p": "¿Cuánto cuesta el mantenimiento?",
+    "r": "El mantenimiento mensual está entre US$110 y US$140."
+   },
+   {
+    "p": "¿Cómo se separa un apartamento?",
+    "r": "Con una reserva de US$3,000. La diferencia depende del financiamiento que obtenga el cliente. La separación no es reembolsable y los costos de transferencia corren por cuenta del cliente."
+   }
+  ],
+  "fotos": [
+   "34d6c361c0a3911e371073daed8b0cf4",
+   "7a5b8fbfab4677ddb3a782fca16c3c4e",
+   "60c5f825149a081a7176f243d5889088",
+   "b42fdea3269dfa3117482f17f0f27173",
+   "0f8a25bd9eb79cca73fe061aec40e9fc",
+   "d9b663f801d229a80298a6e15cf69e78"
+  ],
+  "frase": "Apartamentos listos para entrega cerca de la playa",
+  "nombre": "Perla del Este",
+  "origen": "crm",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 3000
+  },
+  "porque": [
+   {
+    "texto": "Está a 3 minutos de la playa Arena Gorda y ofrece acceso privado a la playa desde el residencial.",
+    "titulo": "Cerca de la playa"
+   },
+   {
+    "texto": "Los apartamentos ya están terminados. Usted puede mudarse sin esperar a que termine la construcción.",
+    "titulo": "Listo para entrega"
+   },
+   {
+    "texto": "Incluye pisos de mármol crema, puertas de madera jequitibá, grifería de acero inoxidable y ventanas con perfiles de aluminio.",
+    "titulo": "Buenos acabados"
+   },
+   {
+    "texto": "Incluye línea blanca, estufa empotrada, extractor y aires acondicionados en las habitaciones, además de preinstalación de aires en el resto.",
+    "titulo": "Equipado para usted"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:03:46.131Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2.5,
+    "desde": 191850,
+    "hab": 2,
+    "m2": 142
+   }
+  ],
+  "url": "",
+  "zona": "Bavaro",
+  "id": "pmv76docvlgdlw"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "Reynaldo",
+   "observaciones": ""
+  },
+  "descripcion": "Pleamar III es un proyecto de apartamentos en Costa Cana, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$219,000, con unidades de hasta US$239,000. La entrega está prevista para 31/12/2027.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "31/12/2027",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Pleamar III está en Costa Cana, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$219,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 31/12/2027."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Costa Cana",
+  "nombre": "Pleamar III",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Costa Cana, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$219,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 31/12/2027, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 219000,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 239000,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Costa Cana, Punta Cana",
+  "id": "pmv76doe943r7m"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "Max Onorio",
+   "observaciones": ""
+  },
+  "descripcion": "Por do Sol es un proyecto de apartamentos en Vista Cana, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$139,000, con unidades de hasta US$160,100. La entrega está prevista para 31/10/2026 31/05/2027.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "31/10/2026 31/05/2027",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Por do Sol está en Vista Cana, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$139,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 31/10/2026 31/05/2027."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Vista Cana",
+  "nombre": "Por do Sol",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Vista Cana, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$139,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 31/10/2026 31/05/2027, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 139000,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 153000,
+    "hab": 2,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 160100,
+    "hab": 3,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Vista Cana, Punta Cana",
+  "id": "pmv76doea8mp5d"
+ },
+ {
+  "actualizado": "2026-10-14T21:05:59.954Z",
+  "amenidades": [
+   "Ascensor",
+   "Área social con piscina en el segundo nivel",
+   "Cámaras de seguridad",
+   "Control de acceso",
+   "Aires acondicionados split inverter en habitaciones y sala",
+   "Estufa y horno empotrados",
+   "Nevera, microondas y lavadora",
+   "Cocinas modulares",
+   "Pisos en porcelanato importado"
+  ],
+  "brochureUrl": "https://www.dropbox.com/scl/fo/pr4fffg4sqcto9u2a9ahz/AI2_Oip0JR9DjZUzY51ayR8/1-BROCHURE?rlkey=02btse5g4g6fsa6vzgjwt1xdf&dl=1",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa",
+    "tiempo": "5 min"
+   }
+  ],
+  "crm": {
+   "comision": "—",
+   "contacto": "Karla Calderon/ 829 281 3511",
+   "observaciones": ""
+  },
+  "descripcion": "Bayahíbe Suites es un proyecto de 32 unidades de 1, 1.5 y 2 habitaciones, con áreas desde 54 m². Está a solo 5 minutos de la playa y ofrece apartamentos pensados para disfrutar con comodidad.\nAquí podrá relajarse en el área social con piscina, ubicada en el segundo nivel. Cada apartamento incluye línea blanca, aires acondicionados y cocina modular, para que se sienta en casa desde el primer día.\nEl proyecto cuenta con ascensor, cámaras de seguridad y control de acceso. Sus pisos en porcelanato importado y sus acabados completos lo hacen una opción práctica para vivir o para invertir.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Febrero 2028",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuántas unidades tiene el proyecto?",
+    "r": "El proyecto tiene 32 unidades de 1, 1.5 y 2 habitaciones, con áreas desde 54 m²."
+   },
+   {
+    "p": "¿A qué distancia está la playa?",
+    "r": "La playa queda a solo 5 minutos de distancia del proyecto."
+   },
+   {
+    "p": "¿Qué incluye la línea blanca?",
+    "r": "Incluye aires acondicionados split inverter en habitaciones y sala, estufa y horno empotrados, nevera, microondas y lavadora."
+   },
+   {
+    "p": "¿Qué amenidades ofrece el proyecto?",
+    "r": "Ofrece ascensor, área social con piscina en el segundo nivel, cámaras de seguridad y control de acceso."
+   }
+  ],
+  "fotos": [
+   "e81b4afe8090fc7805ecc15fbfdb3947",
+   "68b408f2cac5a6d7940ed524a801b23e",
+   "b279a9aa69243af3efe9b7747dff566a",
+   "06c33cec5fb9921e9690e9466c45672d",
+   "ed18e78e492a034bcb5926def36de457",
+   "5240dd529623bbb5365899111baf92ff"
+  ],
+  "frase": "Su refugio a solo cinco minutos de la playa",
+  "nombre": "Portofino Suites",
+  "origen": "crm",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Estará a solo 5 minutos de la playa, ideal para quien busca descanso o una segunda vivienda cerca del mar.",
+    "titulo": "Cerca de la playa"
+   },
+   {
+    "texto": "Incluye línea blanca completa: aires acondicionados, estufa, horno, nevera, microondas y lavadora. Usted solo tiene que mudarse.",
+    "titulo": "Listo para habitar"
+   },
+   {
+    "texto": "Cuenta con ascensor, cámaras de seguridad y control de acceso, para que viva con tranquilidad.",
+    "titulo": "Seguridad y comodidad"
+   },
+   {
+    "texto": "Su área social con piscina en el segundo nivel es un lugar agradable para descansar y recibir a su familia.",
+    "titulo": "Espacios para compartir"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:05:59.954Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 96372,
+    "hab": 1,
+    "m2": 54
+   },
+   {
+    "banos": 0,
+    "desde": 123849,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Bayahibe",
+  "id": "pmv76docytokp5"
+ },
+ {
+  "actualizado": "2026-10-19T19:39:46.402Z",
+  "amenidades": [
+   "Piscina",
+   "Lobby",
+   "Terraza común con BBQ",
+   "Área social amueblada y decorada",
+   "Gas común",
+   "Pozo",
+   "Cisterna",
+   "Seguridad 24/7",
+   "Acceso controlado"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Supermercados",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Plaza San Juan / Downtown Punta Cana",
+    "tiempo": "5 min"
+   },
+   {
+    "lugar": "Hospital Internacional IMG",
+    "tiempo": "3 min"
+   },
+   {
+    "lugar": "Aeropuerto de Punta Cana",
+    "tiempo": "12 min"
+   },
+   {
+    "lugar": "Playas de la zona",
+    "tiempo": "10 min"
+   }
+  ],
+  "descripcion": "Posav Residence es un proyecto de solo 18 apartamentos de una y dos habitaciones. Se encuentra dentro del complejo Brisas de Punta Cana, en Bávaro.\nUsted contará con un área social amueblada y decorada, con piscina, lobby y terraza común con BBQ. Hay unidades en primer nivel con patio y en tercer nivel con terraza.\nLa ubicación es muy conveniente. Downtown Punta Cana queda a 5 minutos y las playas de la zona a 10 minutos. Además, el complejo ofrece seguridad las 24 horas y acceso controlado.",
+  "direccion": "Complejo Brisas de Punta Cana, Bávaro, Punta Cana",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántos apartamentos tiene el proyecto?",
+    "r": "El proyecto cuenta con solo 18 apartamentos de una y dos habitaciones, con áreas desde 48 m² hasta 65 m²."
+   },
+   {
+    "p": "¿Qué amenidades incluye?",
+    "r": "Incluye piscina, lobby, terraza común con BBQ, gas común, pozo y cisterna. El área social se entrega amueblada y decorada."
+   },
+   {
+    "p": "¿Qué tan lejos está del aeropuerto y de las playas?",
+    "r": "El Aeropuerto de Punta Cana queda a 12 minutos y las playas de la zona a unos 10 minutos."
+   },
+   {
+    "p": "¿Hay unidades con patio o terraza?",
+    "r": "Sí. Las unidades del primer nivel tienen patio y las del tercer nivel tienen terraza."
+   }
+  ],
+  "fotos": [
+   "ba6477a27d2c0e67a37a911b7a097e23",
+   "afd16f1ca4a7eb5fb298a1695f3b6233",
+   "97e09d72a3f09bae225ff9a866466839",
+   "6778bd64be0b9c4f27beffd11ffd6423",
+   "924b38d3ceafbb58b203ceefe9b1ecbd",
+   "6cdf63476cd8c19fef2af19fb23c0a34"
+  ],
+  "frase": "Vivir en Punta Cana, cerca de todo lo importante",
+  "nombre": "Posav Residence",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está a 5 minutos de Downtown Punta Cana y a 10 minutos de las playas de la zona.",
+    "titulo": "Ubicación práctica"
+   },
+   {
+    "texto": "Solo son 18 apartamentos de una y dos habitaciones, lo que favorece un ambiente tranquilo y familiar.",
+    "titulo": "Proyecto pequeño y exclusivo"
+   },
+   {
+    "texto": "Los apartamentos incluyen cocina modular, pisos en porcelanato, grifería importada y área de lavado.",
+    "titulo": "Buenas terminaciones"
+   },
+   {
+    "texto": "El complejo cuenta con seguridad 24/7 y acceso controlado. También hay piscina y terraza común con BBQ.",
+    "titulo": "Seguridad y comodidad"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-19T19:45:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 86454.59,
+    "hab": 1,
+    "m2": 48
+   },
+   {
+    "banos": 2,
+    "desde": 101142.69,
+    "hab": 2,
+    "m2": 65
+   }
+  ],
+  "url": "",
+  "zona": "Brisas de Punta Cana, Bávaro, Punta Cana",
+  "id": "pmvfnrv4z4j3ny"
+ }
+]

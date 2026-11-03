@@ -1,0 +1,562 @@
+    BA: '<path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2zM6 12V6a2 2 0 0 1 4 0M7 19l-1 2M17 19l1 2"/>',
+    "M²": '<path d="M4 4h16v16H4zM8 8h8v8H8"/><path d="M4 4l4 4M20 4l-4 4M4 20l4-4M20 20l-4-4"/>',
+    P: '<rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M10 17V7h3a3 3 0 0 1 0 6h-3"/>',
+    ENT: '<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/>',
+    EST: '<path d="M4 21V9l6-4v16M10 21h10V11l-10-3M14 14h2M14 17h2M7 12v.01M7 15v.01"/>',
+  };
+  // A range like "110 – 160": the dash sits in its own span so it can be hidden if the two numbers end up on different lines.
+  const rangeHTML = v => { const m = String(v).match(/^(.+?)\s*[–-]\s*(.+)$/); return m && /\d/.test(m[1]) ? `<span class="pc">${e(m[1])}</span><span class="sep">–</span><span class="pc">${e(m[2])}</span>` : e(v); };
+  const vo = !!(opts && opts.viewOnly);
+  const pl = p.plan || {}, hasPlan = [pl.separacion, pl.firmaPct, pl.cuotasPct, pl.entregaPct].some(v => Number(v) > 0);
+  const priceAt = p.preciosAl || p.actualizado;
+  const dateTxt = priceAt ? new Date(priceAt).toLocaleDateString("es-DO", { day: "numeric", month: "long", year: "numeric" }) : "";
+  const planSec = hasPlan ? `<section class="s" id="lp-plan" style="padding-top:0" data-plan="${e(JSON.stringify(pl))}"><div class="in"><div class="kick">Plan de pago</div><h2>Así puede pagarlo</h2>${priced.length ? `<label class="plan-sel">Calcule según la unidad<select data-plan-price>${tipos.filter(t => t.desde > 0).map(t => `<option value="${t.desde}">${t.hab >= 5 ? "5+" : t.hab} ${t.hab === 1 ? "habitación" : "habitaciones"}${t.m2 ? " · " + t.m2 + " m² / " + FT(t.m2) + " ft²" : ""} · desde ${money(t.desde)}</option>`).join("")}</select></label>` : ""}<div class="plan" data-plan-out></div><p class="note">Montos aproximados calculados sobre el precio desde. El plan final lo confirma ${e(ag.nombre || "su asesor")}.</p>${wcta("Reciba su plan exacto", "Le enviamos el plan de pago de la unidad que elija, sin compromiso.", "Contactar por WhatsApp", `me interesa el proyecto ${p.nombre}. Me gustaría recibir más información.`, " data-wa-plan")}</div></section>` : "";
+  return `<div lang="es" class="lp${vo ? " vo" : ""}" data-hook="${e((opts && opts.hook) || "")}" data-wa="${e(waNum)}" data-id="${e(p.id || "")}" data-name="${e(p.nombre)}" data-agent="${e(ag.nombre)}" data-agfoto="${e(ag.foto || "")}" data-nudge="${e(waTo(`me interesa el proyecto ${p.nombre}. Me gustaría recibir más información.`))}">
+<header class="top"><div class="in"><div class="brand">${typeof LOGO_WHITE === "string" && LOGO_WHITE ? `<img class="lg" src="${LOGO_WHITE}" alt="Team Germán Escarfullery · RE/MAX">` : "TEAM GERMANESCARFULLERY"}${ag.nombre ? `<small>Asesor: ${e(ag.nombre)}</small>` : ""}</div>
+<nav><a href="#lp-galeria">Galería</a><a href="#lp-unidades">Unidades</a>${amen.length ? '<a href="#lp-amenidades">Amenidades</a>' : ""}<a href="#lp-contacto">Contacto</a></nav>
+${waHref ? `<a class="wa" href="${waHref}" target="_blank" rel="noopener">WhatsApp</a>` : ""}</div></header>
+<section class="hero" style="${fotos ? `background-image:url('${img[0]}')` : ""}"><div class="in">
+<span class="badge">${e(({ "Apartamento": "Apartamentos", "Penthouse": "Penthouses", "Casa": "Casas", "Villa": "Villas", "Townhouse": "Townhouses", "Solar": "Terrenos", "Local comercial": "Locales comerciales", "Oficina": "Oficinas" })[p.tipo] || "Apartamentos")} · ${e(p.zona || "República Dominicana")}</span>
+<h1>${e(titleA)}${titleB ? ` <em>${e(titleB)}</em>` : ""}</h1>
+${p.frase ? `<p class="addr">${e(p.frase)}</p>` : ""}${p.direccion ? `<p class="addr">${e(p.direccion)}</p>` : ""}
+<div class="pricebox"><div><div class="k">PRECIO DESDE</div><div class="v">${from}</div></div>
+<div class="ctas">${waHref ? `<a class="wa" href="${waHref}" target="_blank" rel="noopener">${CHAT}Contactar por WhatsApp</a>` : ""}<a class="ghost" href="#lp-contacto">Solicitar información</a></div>${waHref ? `<p class="trust"><span>✓ Respuesta en minutos</span><span>✓ Sin compromiso</span><span>✓ Planos y precios al día</span></p>` : ""}</div>
+</div></section>
+${specs.length ? `<div class="specs"><div class="in">${specs.map(s => `<div class="spec${s[0] === "M²" ? " m2" : ""}"><i aria-hidden="true"><svg viewBox="0 0 24 24">${ICO[s[0]] || ""}</svg></i><div><b>${rangeHTML(s[1])}</b><span>${s[2]}</span></div></div>`).join("")}</div></div>` : ""}
+${paras.length ? `<section class="s"><div class="in${fotos > 2 ? " intro2" : ""}"><div><div class="kick">El proyecto</div><h2>${e(p.nombre)}</h2><div class="desc">${paras.map(x => `<p>${e(x)}</p>`).join("")}</div></div>${fotos > 2 ? `<figure class="ifig" style="background-image:url('${img[fotos - 1]}')" role="img" aria-label="${e(p.nombre)}"></figure>` : ""}</div></section>` : ""}
+${fotos > 1 ? (() => { const g = img.slice(1), n = Math.min(5, g.length), extra = g.length - n; return `<section class="s" id="lp-galeria" style="padding-top:0"><div class="in"><div class="kick">Galería</div><h2>Conozca el proyecto</h2><div class="gal g${n}">${g.map((u, i) => `<button type="button" data-zoom="${i}" aria-label="Ampliar imagen ${i + 1}"${i >= n ? " hidden" : ""}><img src="${u}" alt="${e(p.nombre)}, imagen ${i + 1}" loading="lazy">${i === n - 1 && extra > 0 ? `<span class="more">+${extra} fotos</span>` : ""}</button>`).join("")}</div>${wcta("¿Quiere verlo más de cerca?", `Pídale a ${e(agFirst || "su asesor")} más fotos, video o una visita.`, "Contactar por WhatsApp", `me interesa el proyecto ${p.nombre}. Me gustaría recibir más información.`)}</div></section>`; })() : ""}
+${tipos.length ? `<section class="s" id="lp-unidades" style="padding-top:0"><div class="in"><div class="kick">Unidades disponibles</div><h2>Elija su espacio</h2><div class="tw"><table class="units"><thead><tr><th>Tipo</th><th>Baños</th><th>Metraje</th><th>Precio desde</th>${waNum ? "<th></th>" : ""}</tr></thead><tbody>${tipos.map(t => `<tr><td>${t.hab >= 5 ? "5+" : t.hab} ${t.hab === 1 ? "habitación" : "habitaciones"}</td><td>${t.banos || "—"}</td><td>${t.m2 ? `${t.m2} m² <small class="ft">/ ${FT(t.m2)} ft²</small>` : "—"}</td><td class="p">${t.desde > 0 ? money(t.desde) : "A consultar"}</td>${waNum ? `<td class="mi"><a href="${waTo(`me interesa el proyecto ${p.nombre}, la unidad de ${t.hab >= 5 ? "5+" : t.hab} ${t.hab === 1 ? "habitación" : "habitaciones"}${t.m2 ? " (" + t.m2 + " m²)" : ""}. Me gustaría recibir más información.`)}" target="_blank" rel="noopener" aria-label="Me interesa esta unidad">${CHAT}<span>Me interesa</span></a></td>` : ""}</tr>`).join("")}</tbody></table></div><p class="note">Precios en dólares estadounidenses, sujetos a cambio y disponibilidad.${p.precioRef ? ` Algunos precios son de referencia; confírmelos con ${e(ag.nombre || "su asesor")}.` : ""}${dateTxt ? " Precios actualizados al " + dateTxt + "." : ""}</p>${wcta("Las unidades se venden rápido", "Pregunte cuáles quedan y separe la suya antes de que suban los precios.", "Contactar por WhatsApp", `me interesa el proyecto ${p.nombre}. Me gustaría recibir más información.`)}</div></section>` : ""}
+${planSec}
+${why.length ? `<section class="s why"><div class="in"><div class="kick">Por qué vale lo que cuesta</div><h2>Una inversión con fundamento</h2><div class="cols">${why.map((w, i) => `<div><div class="n">0${i + 1}</div><h3>${e(w.titulo)}</h3><p>${e(w.texto)}</p></div>`).join("")}</div></div></section>` : ""}
+${waHref ? `<section class="s" style="padding-block:28px 0"><div class="in"><div class="visit">${ag.foto ? `<img src="${ag.foto}" alt="${e(ag.nombre)}">` : `<i>${e((ag.nombre || "TGE").trim().split(/\s+/).slice(0, 2).map(w => w[0] || "").join("").toUpperCase())}</i>`}<div class="vt"><div class="kick">Atención personalizada</div><h3>¿Le interesa ${e(p.nombre)}?</h3><p>${e(agFirst || "Su asesor")} le envía toda la información del proyecto por WhatsApp: precios, disponibilidad y plan de pago. Sin compromiso.</p></div><a class="wa" href="${waTo(`me interesa el proyecto ${p.nombre}. Me gustaría recibir más información.`)}" target="_blank" rel="noopener">${CHAT}Más información por WhatsApp</a></div></div></section>` : ""}
+${amen.length ? `<section class="s" id="lp-amenidades"><div class="in"><div class="kick">Amenidades</div><h2>Todo lo que necesita</h2><div class="amen">${amen.map(a => `<div class="am"><i></i>${e(a)}</div>`).join("")}</div></div></section>` : ""}
+${(p.zona || p.direccion) ? `<section class="s" style="padding-top:0"><div class="in"><div class="kick">Ubicación</div><h2>${e(p.zona || p.direccion)}</h2>${p.direccion ? `<p class="desc">${e(p.direccion)}</p>` : ""}${near.length ? `<div class="near">${near.map(n => `<div class="nr"><b>${e(n.tiempo || "")}</b>${e(n.lugar)}</div>`).join("")}</div>` : ""}<p class="note" style="margin-top:18px">Para la ubicación exacta, consulte con ${e(ag.nombre || "su asesor")}${ag.tel ? " al " + e(ag.tel) : ""}.</p></div></section>` : ""}
+${faq.length ? `<section class="s" style="padding-top:0"><div class="in"><div class="kick">Preguntas frecuentes</div><h2>Lo que suelen preguntarnos</h2>${faq.map(f => `<details><summary>${e(f.p)}</summary><p>${e(f.r)}</p></details>`).join("")}${wcta("¿Tiene otra pregunta?", `${e(agFirst || "Su asesor")} le responde por WhatsApp en minutos.`, "Contactar por WhatsApp", `me interesa el proyecto ${p.nombre}. Me gustaría recibir más información.`)}</div></section>` : ""}
+${vo ? `<section class="s contact" id="lp-contacto"><div class="in"><div class="kick">Contacto</div><h2>Su asesor</h2><div class="agentcard">${ag.foto ? `<img src="${ag.foto}" alt="${e(ag.nombre)}">` : ""}<div><b>${e(ag.nombre || "Team Germanescarfullery")}</b>${ag.tel ? `<span>WhatsApp ${e(ag.tel)}</span>` : ""}</div></div>${waHref ? `<div class="go"><a class="wa" href="${waHref}" target="_blank" rel="noopener">${CHAT}Contactar por WhatsApp</a></div>` : ""}</div></section>` : `<section class="s contact" id="lp-contacto"><div class="in"><div class="kick">Contacto</div><h2>Solicite información</h2>${ag.nombre ? `<div class="agentcard">${ag.foto ? `<img src="${ag.foto}" alt="${e(ag.nombre)}">` : ""}<div><b>${e(ag.nombre)}</b><span>Su asesor${ag.tel ? " · WhatsApp " + e(ag.tel) : ""}</span></div></div>` : ""}
+<form data-lead><label>Nombre<input name="nombre" autocomplete="name"></label><label>Correo<input name="correo" type="email" required autocomplete="email"></label>
+<label class="full">WhatsApp<input name="tel" required inputmode="tel" autocomplete="tel"></label><label class="full">Mensaje<textarea name="msg" rows="3"></textarea></label>
+<div class="go full"><button class="wa" type="submit">Preparar mensaje de WhatsApp</button><span data-out></span></div></form>
+${ag.tel ? `<p class="note">También puede escribir a ${e(ag.nombre || "nuestro asesor")} al <b>${e(ag.tel)}</b>.</p>` : ""}</div></section>`}
+<footer class="foot"><div class="in"><span>Team Germanescarfullery · RE/MAX Metropolitana</span><span>${ag.nombre ? "Asesor: " + e(ag.nombre) + (ag.tel ? " · " + e(ag.tel) : "") : ""}</span></div></footer>
+${waHref ? `<a class="wa float" href="${waHref}" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">${CHAT}WhatsApp</a>` : ""}
+</div>`;
+}
+
+function initLanding(root) {
+  const lp = root.querySelector(".lp");
+  if (!lp) return;
+  lp.addEventListener("click", ev => {
+    const b = ev.target.closest("[data-zoom]");
+    const z = lp.querySelector(".zoom");
+    if (z && ev.target.closest(".zoom")) {
+      const nav = ev.target.closest("[data-nav]");
+      if (nav) { z._go(Number(nav.dataset.nav)); return; }
+      if (ev.target.tagName !== "IMG") z.remove();
+      return;
+    }
+    if (!b) {
+      const a = ev.target.closest('a[href^="#lp-"]');
+      if (a) { ev.preventDefault(); const t = lp.querySelector(a.getAttribute("href")); if (t) t.scrollIntoView({ behavior: "smooth" }); }
+      return;
+    }
+    const all = [...lp.querySelectorAll(".gal img")].map(x => x.src);
+    let at = Number(b.dataset.zoom) || 0;
+    const d = document.createElement("div"); d.className = "zoom"; d.setAttribute("role", "dialog");
+    const im = document.createElement("img"); im.alt = "";
+    const cnt = document.createElement("div"); cnt.className = "zc";
+    const mk = (cls, txt, nav, label) => { const x = document.createElement("button"); x.type = "button"; x.className = cls; x.textContent = txt; x.setAttribute("aria-label", label); if (nav) x.dataset.nav = nav; return x; };
+    d._go = k => { at = (at + k + all.length) % all.length; im.src = all[at]; cnt.textContent = (at + 1) + " de " + all.length; };
+    d.append(im, cnt, mk("zq", "×", "", "Cerrar"));
+    if (all.length > 1) d.append(mk("zn zp", "‹", "-1", "Anterior"), mk("zn zx", "›", "1", "Siguiente"));
+    d._go(0); lp.append(d);
+    const key = e => { if (!d.isConnected) { removeEventListener("keydown", key); return; } if (e.key === "Escape") d.remove(); else if (e.key === "ArrowLeft") d._go(-1); else if (e.key === "ArrowRight") d._go(1); };
+    addEventListener("keydown", key);
+  });
+  if (typeof IntersectionObserver === "function" && !(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) {
+    const els = [...lp.querySelectorAll("section.s .in, .specs .spec")];
+    const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add("on"); io.unobserve(x.target); } }), { threshold: 0.08 });
+    els.forEach((el, i) => { el.classList.add("rv"); if (el.classList.contains("spec")) el.style.transitionDelay = (i % 6) * 70 + "ms"; io.observe(el); });
+    setTimeout(() => els.forEach(el => { const r = el.getBoundingClientRect(); if (r.top < innerHeight) el.classList.add("on"); }), 60);
+  }
+  const fitRanges = () => lp.querySelectorAll(".spec b").forEach(b => {
+    const sep = b.querySelector(".sep"); if (!sep) return;
+    sep.classList.remove("off");
+    const pcs = b.querySelectorAll(".pc");
+    if (pcs.length === 2 && pcs[1].offsetTop > pcs[0].offsetTop + 2) sep.classList.add("off");
+  });
+  fitRanges();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitRanges);
+  if (typeof ResizeObserver === "function") new ResizeObserver(fitRanges).observe(lp); else addEventListener("resize", fitRanges);
+  const ps = lp.querySelector("[data-plan]");
+  if (ps) {
+    let pl = {}; try { pl = JSON.parse(ps.dataset.plan || "{}"); } catch (x) {}
+    const n = k => Math.max(0, Number(pl[k]) || 0);
+    const usd = v => "US$" + Math.round(v).toLocaleString("en-US");
+    const sel = ps.querySelector("[data-plan-price]"), out = ps.querySelector("[data-plan-out]");
+    const draw = () => {
+      const price = sel ? Number(sel.value) || 0 : 0, sep = n("separacion"), rows = [];
+      const amt = pct => price ? usd(price * pct / 100) : pct + "%";
+      if (sep) rows.push(["Separación", usd(sep), "Para reservar su unidad"]);
+      if (n("firmaPct")) rows.push(["A la firma", price ? usd(Math.max(0, price * n("firmaPct") / 100 - sep)) : n("firmaPct") + "%", sep ? `Completivo hasta el ${n("firmaPct")}%` : `${n("firmaPct")}% del precio`]);
+      if (n("cuotasPct")) rows.push(["Durante la construcción", amt(n("cuotasPct")), n("meses") && price ? `${n("cuotasPct")}% en ${n("meses")} cuotas de ${usd(price * n("cuotasPct") / 100 / n("meses"))}` : `${n("cuotasPct")}% del precio${n("meses") ? " en " + n("meses") + " cuotas" : ""}`]);
+      if (n("entregaPct")) rows.push(["Contra entrega", amt(n("entregaPct")), `${n("entregaPct")}% al recibir su unidad`]);
+      out.innerHTML = "";
+      for (const r of rows) { const d = document.createElement("div"), a = document.createElement("span"), b = document.createElement("b"), c = document.createElement("small"); a.textContent = r[0]; b.textContent = r[1]; c.textContent = r[2]; d.append(a, b, c); out.append(d); }
+    };
+    const wp = ps.querySelector("[data-wa-plan]");
+    const drawWa = () => { if (!wp || !lp.dataset.wa) return; const ag = (lp.dataset.agent || "").split(" ")[0], u = sel && sel.selectedOptions[0] ? sel.selectedOptions[0].textContent : ""; wp.href = `https://wa.me/${lp.dataset.wa}?text=${encodeURIComponent(`Hola${ag ? " " + ag : ""}, me interesa el proyecto ${lp.dataset.name}${u ? ", la unidad de " + u : ""}. Me gustaría recibir más información.`)}`; };
+    if (sel) sel.addEventListener("change", () => { draw(); drawWa(); });
+    draw(); drawWa();
+  }
+  if (lp.dataset.nudge && !(lp.getRootNode() instanceof ShadowRoot)) {
+    let shown = false;
+    const show = () => {
+      if (shown || !lp.isConnected) return; shown = true;
+      const ag = lp.dataset.agent || "", first = ag.split(" ")[0];
+      const n = document.createElement("div"); n.className = "nudge"; n.setAttribute("role", "dialog"); n.setAttribute("aria-label", "Mensaje de su asesor");
+      const hd = document.createElement("div"); hd.className = "nh";
+      if (lp.dataset.agfoto) { const im = document.createElement("img"); im.src = lp.dataset.agfoto; im.alt = ""; hd.append(im); }
+      else { const i = document.createElement("i"); i.textContent = (ag.trim().split(/\s+/).slice(0, 2).map(w => w[0] || "").join("") || "TGE").toUpperCase(); hd.append(i); }
+      const t = document.createElement("div"), b = document.createElement("b"), on = document.createElement("span");
+      b.textContent = ag || "Team Germanescarfullery"; on.textContent = "En línea · responde rápido"; t.append(b, on); hd.append(t);
+      const p = document.createElement("p"); p.textContent = `Hola, soy ${first || "su asesor"}. ¿Le envío por WhatsApp los precios, la disponibilidad y el plan de pago de ${lp.dataset.name}?`;
+      const a = document.createElement("a"); a.className = "wa"; a.target = "_blank"; a.rel = "noopener"; a.href = lp.dataset.nudge; a.textContent = "Sí, contactar por WhatsApp";
+      const x = document.createElement("button"); x.type = "button"; x.className = "nx"; x.setAttribute("aria-label", "Cerrar"); x.textContent = "×";
+      x.addEventListener("click", () => n.remove()); a.addEventListener("click", () => setTimeout(() => n.remove(), 300));
+      n.append(hd, p, a, x); lp.append(n);
+    };
+    const timer = setTimeout(show, 15000);
+    const onScroll = () => { const h = document.documentElement; if ((h.scrollTop + innerHeight) / h.scrollHeight > 0.55) { removeEventListener("scroll", onScroll); clearTimeout(timer); show(); } };
+    addEventListener("scroll", onScroll, { passive: true });
+  }
+  const f = lp.querySelector("form[data-lead]");
+  if (f) f.addEventListener("submit", ev => {
+    ev.preventDefault();
+    const out = f.querySelector("[data-out]");
+    const d = Object.fromEntries(new FormData(f));
+    if (!d.correo || !d.tel) { out.textContent = "Indique su correo y su WhatsApp."; return; }
+    const agent = (lp.dataset.agent || "").split(" ")[0];
+    if (lp.dataset.hook) {
+      try { fetch(lp.dataset.hook, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify({ origen: "landing", evento: "lead", proyecto: lp.dataset.name, proyectoId: lp.dataset.id || "", asesor: lp.dataset.agent || "", asesorWhatsApp: lp.dataset.wa || "", captador: lp.dataset.agent || "", nombre: d.nombre || "", correo: d.correo, whatsapp: d.tel, mensaje: d.msg || "", fecha: new Date().toISOString(), pagina: location.href }) }).catch(() => {}); } catch (e) {}
+    }
+    const msg = `Hola ${agent}, me interesa el proyecto ${lp.dataset.name}. Me gustaría recibir más información.${d.nombre ? " Mi nombre es " + d.nombre + "." : ""} Correo: ${d.correo}. WhatsApp: ${d.tel}.${d.msg ? " " + d.msg : ""}`;
+    out.textContent = "";
+    if (!lp.dataset.wa) { out.textContent = "Gracias. Su asesor se comunicará con usted."; return; }
+    const a = document.createElement("a"); a.className = "wa"; a.target = "_blank"; a.rel = "noopener";
+    a.href = `https://wa.me/${lp.dataset.wa}?text=${encodeURIComponent(msg)}`; a.textContent = "Abrir WhatsApp y enviar";
+    out.append(a);
+  });
+}
+
+/* ============ Hub ============ */
+(() => {
+  const HABS = [1, 2, 3, 4];
+  const habLabel = n => n >= 4 ? "4+ habitaciones" : n === 1 ? "1 habitación" : n + " habitaciones";
+  const money = v => "US$" + Math.round(v).toLocaleString("en-US");
+  const initials = s => (s || "?").trim().split(/\s+/).slice(0, 2).map(w => w[0] || "").join("").toUpperCase() || "?";
+  const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "";
+  const PH_IMG = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA4MDAgNTAwJz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J2cnIHgxPScwJyB5MT0nMCcgeDI9JzEnIHkyPScxJz48c3RvcCBvZmZzZXQ9JzAnIHN0b3AtY29sb3I9JyMwQjFBM0YnLz48c3RvcCBvZmZzZXQ9JzEnIHN0b3AtY29sb3I9JyMxMjNFN0EnLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0nODAwJyBoZWlnaHQ9JzUwMCcgZmlsbD0ndXJsKCNnKScvPjxyZWN0IHk9JzQ3MCcgd2lkdGg9JzgwMCcgaGVpZ2h0PSczMCcgZmlsbD0nI0RDMUMyRScvPjx0ZXh0IHg9JzQwMCcgeT0nMjQwJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LWZhbWlseT0nR2VvcmdpYSxzZXJpZicgZm9udC1zaXplPSc1NCcgZmlsbD0nd2hpdGUnPlRlYW0gR2VybWFuPC90ZXh0Pjx0ZXh0IHg9JzQwMCcgeT0nMzAwJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LWZhbWlseT0nQXJpYWwnIGZvbnQtc2l6ZT0nMjInIGxldHRlci1zcGFjaW5nPSc2JyBmaWxsPScjQzlENkVFJz5SRS9NQVggwrcgUFJPWUVDVE9TPC90ZXh0Pjwvc3ZnPg==";
+  const blobUrl = id => /^(https?:|data:)/.test(String(id)) ? id : "/_blob/" + id;
+  document.addEventListener("error", e => { const t = e.target; if (t && t.tagName === "IMG" && !t.dataset.ph) { t.dataset.ph = "1"; t.src = PH_IMG; } }, true);
+  const $ = id => document.getElementById(id);
+  function h(tag, attrs, ...kids) {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (v == null || v === false) continue;
+      if (k === "class") el.className = v;
+      else if (k === "style") el.setAttribute("style", v);
+      else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+      else el.setAttribute(k, v);
+    }
+    for (const c of kids.flat()) if (c != null && c !== false) el.append(c.nodeType ? c : document.createTextNode(String(c)));
+    return el;
+  }
+
+  const S = { db: null, sample: null, assets: null, downloads: null, loaded: false, canWrite: false, projects: [],
+    hook: "", base: "", access: null, accessReady: false, caps: [], capsReady: false, me: null, role: "open", capEditing: null, unlocked: false, canAdmin: false, hab: "all", budget: 0, q: "", confirming: null, editing: null, draft: null, busy: false, openId: null };
+
+  const normU = v => String(v || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9._-]/g, "");
+  const capName = p => S.me ? S.me.nombre : (p.captador || "—");
+  const capByName = n => S.caps.find(c => c.nombre.trim().toLowerCase() === String(n || "").trim().toLowerCase());
+  const agentFor = p => {
+    if (S.me) { const c = S.caps.find(x => x.id === S.me.id); return { nombre: S.me.nombre, tel: S.me.tel, foto: c && c.foto ? blobUrl(c.foto) : "", fotoId: c && c.foto || "" }; }
+    const c = (p.captadorId && S.caps.find(x => x.id === p.captadorId)) || capByName(p.captador);
+    return { nombre: p.captador || (c && c.nombre) || "", tel: p.captadorTel || (c && c.tel) || "", foto: c && c.foto ? blobUrl(c.foto) : "", fotoId: c && c.foto || "" };
+  };
+  const isMine = p => !!S.me && ((p.captadorId && p.captadorId === S.me.id) || (p.captador || "").trim().toLowerCase() === S.me.nombre.trim().toLowerCase());
+  const avatar = (url, name) => url ? h("img", { class: "av", src: url, alt: "", style: "object-fit:cover" }) : h("span", { class: "av" }, initials(name));
+  const hasLanding = p => !!(p.descripcion || (p.fotos && p.fotos.length));
+  const minPrice = p => Math.min(...(p.tipologias || []).filter(t => t.desde > 0).map(t => t.desde), Infinity);
+
+  /* ---------- hub render ---------- */
+  const TIPOS_P = { "Apartamento": "Apartamentos", "Penthouse": "Penthouses", "Casa": "Casas", "Villa": "Villas", "Townhouse": "Townhouses", "Solar": "Terrenos", "Local comercial": "Locales comerciales", "Oficina": "Oficinas" };
+  const tipoOf = p => TIPOS_P[p.tipo] ? p.tipo : "Apartamento";
+  const fold = v => String(v || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const hay = (p, extra) => fold([p.nombre, p.zona, p.direccion, p.estado, p.entrega, p.frase, p.descripcion, extra, tipoOf(p), TIPOS_P[tipoOf(p)],
+    (p.amenidades || []).join(" "), (p.tipologias || []).map(t => `${t.hab} hab ${t.hab} habitacion ${t.hab} habitaciones ${t.banos ? t.banos + " banos " + t.banos + " bano" : ""} ${t.m2 ? t.m2 + " m2" : ""}`).join(" "),
+    p.parqueos ? p.parqueos + " parqueos " + p.parqueos + " parqueo" : ""].join(" "));
+  const matches = (p, q, extra) => { const words = fold(q).split(/\s+/).filter(Boolean); if (!words.length) return true; const t = hay(p, extra); return words.every(w => t.includes(w)); };
+  const maxHab = p => Math.max(0, ...(p.tipologias || []).map(t => t.hab || 0));
+  // Orden de la lista de precios del CRM (28 oct). Los que no están en la lista van al final, por nombre.
+  const ORDEN_LISTA = new Map(["pmv5qxh7u6psai", "pmv76dodbq4axe", "pmv76dodcmwod1", "pmv5r3c1hamgfj", "pmv76dodd11rt1", "pmv76dodeo5a1f", "pmv76doexge8ky", "pmv76doevm8gk1", "pmv76dodf20eui", "pmv76dodgre81q", "pmv76dodhzw5fd", "pmv76dodkzxm1a", "pmv76dod0kkejl", "pmv76dod741h3j", "pmv76docus0qe7", "pmv1gqkbwsmpbr", "pmv76dodlkmdt5", "pmv76dodmxdz8k", "pmv76dodoz43g4", "pmv76dodpr3fiy", "pmv76dodq07fog", "pmv76dodrpy7ye", "pmv1h0tsgr8601", "pmv76dodsjl8gi", "pmv76dodt3ss5v", "pmv76dodunwfkn", "pmv76dod1f0bra", "pmv76dodvrtgat", "pmv1h27miupkuk", "pmv76dodw9bqmq", "pmupxzebbf36e2", "pmv76dodxv3uct", "pmv1h2re4zb5u2", "pmv5r6py9yv51m", "pmv1h3f4ogz5z9", "pmv1h4aummok42", "pmv76dodyqiyvj", "pmv1himc5xf0wg", "pmv76doeyx23ua", "pmv5r4j3okq7jy", "pmv5r67lqz3rsm", "pmv714fy9jfz90", "pmv76dod4q9x8e", "pmv76doe0swhe8", "pmv76doezz6b6l", "pmv76doe232nkp", "pmv76docx3hecm", "pmv76doewf5onf", "pmv76doe4mdyu5", "pmv76dodaax1jp", "pmun6ca9jve15j", "pmv1grtq076b2j", "pmv715ydzkqixa", "pmv76doettrj9p", "pmv1hju7wi9n81", "pmv76doe6advj6", "pmv76dod3seyfn", "pmv1hlsmo085pt", "pmv1hkv1s7sznx", "pmv76dof0zcy7w", "pmv1hmpgcbdrzj", "pmun69bfledw0x", "pmv1hoqqmnjk32", "pmv5qe1gwv6f7t", "pmv5qaz3vyz5hg", "pmv7172dz33l32", "pmv76doe85ctjj", "pmv5qc8p9inszk", "pmv76docvlgdlw", "pmv76doe943r7m", "pmv76doea8mp5d", "pmv76docytokp5", "pmvfnrv4z4j3ny", "pmv5qhlkj8ogu6", "pmv5qiledv5o0i", "pmv76dod5j3hco", "pmv1gpxbqumusi", "pmv76dod68e8z0", "pmv76doeusg171", "pmv76dod8rciyz", "pmv76doebeagua", "pmv76doec1nt6k", "pmv76doee2d8bp", "pmv76doefrzbx7", "pmv71crtli3h20", "pmv76dof1gn77w", "pmv71873c5sozm", "pmv76doegqbqdr", "pmv5r26tuekb83", "pmv76dod9bgrcb", "pmv76doeicqj7b", "pmv76doejcpygz", "pmv76doekxrs7y", "pmv5qxuo424a3p", "pmv76doemkfxi1", "pmv76doeno0d3v", "pmurfkj9s6av9y", "pmv76doeof30ur", "pmux17ai4mu85h", "pmv76doep0o0q4", "pmv76doeqzcotj", "pmv76doeru0lq1", "pmv76doeskvpx3", "pmv76dof2tg10i", "pmv5qfwv9ff1ea", "pmv76dof33tikh", "pmv76dof4bay4u", "pmv1hq0asd1pj5", "pmv76dof5tqtpr", "pmv76dof6i6ub1", "pmun6jehcx0y4k", "pmv76dof77ib76", "pmv76dof88yzmz", "pmv71cq5a299xk", "pmv71corzbpc04", "pmv1h0jef3hcsx", "pmv5qjjgbqc0sr", "pmvsandvillage1", "pmv76dof9hqve6", "pmv76dofamhj7j", "pmvtheplaza01", "pmv71cvolnp6r8", "pmv76dofb691b5", "pmv76dofcjm5k6", "pmvsantamaria1", "pmv76dofd9d8sd", "pmv5quwhr8szbq", "pmuol3nu56mh5e"].map((id, i) => [id, i + 1]));
+  const ordL = p => ORDEN_LISTA.get(p.id) || 9999;
+  const byRooms = (a, b) => ((a.p.disp === "Vendido") - (b.p.disp === "Vendido")) || (ordL(a.p) - ordL(b.p)) || String(a.p.nombre).localeCompare(String(b.p.nombre), "es");
+  function visible() { return S.projects.filter(p => (!S.tipos.size || S.tipos.has(tipoOf(p))) && matches(p, S.q, capName(p))); }
+  const habKey = h => Math.min(4, Math.max(1, h || 1));
+  function tipoFor(p) {
+    const ts = (p.tipologias || []).filter(t => (!S.habs.size || S.habs.has(habKey(t.hab))) && (!S.budget || (t.desde > 0 && t.desde <= S.budget)));
+    return ts.sort((a, b) => (a.desde || Infinity) - (b.desde || Infinity))[0];
+  }
+  function habsText(p) {
+    const hs = [...new Set((p.tipologias || []).map(t => t.hab >= 5 ? "5+" : String(t.hab)))].sort();
+    if (!hs.length) return "";
+    const last = hs.pop();
+    return (hs.length ? hs.join(", ") + " y " + last : last) + (hs.length || last !== "1" ? " habitaciones" : " habitación");
+  }
+  function openProject(p) {
+    if (hasLanding(p)) location.hash = "p-" + p.id;
+    else if (safeUrl(p.url)) window.open(p.url, "_blank", "noopener");
+  }
+  const needsPrice = p => p.precioRef || minPrice(p) === Infinity;
+  const noFotos = p => !(p.fotos && p.fotos.length);
+  // Completo = tiene fotos. Si no tiene precio, sale en la lista con "Precio a consultar".
+  const COMPLETOS = new Set(["allegrapark", "altavista", "apartamentosbavaro", "arayapuntacana", "arberella", "arencaparks", "arrecifesdelsol", "arroyohondogardens", "auraboulevard", "axelpark", "balizaresidences", "bavaroislandii", "bocaresidence", "brisasdelprado", "canarenabruchureremax", "canasdeleste", "caribbeangardens", "cassamareresidences", "cipresresidences", "cityplace", "colinasdepuntacana", "coralesdepalmare", "coralinaresidences", "costapalma", "duoterraduplex", "easttown", "emeraldsuites", "evergardenliferesidences", "gardencity", "gardenliferesidences", "gayacana", "goldenbreeze", "greengardenresidencesiv", "greenpark", "independentvillaspuntacana", "jardinesiv", "lareserva", "lavistabymelia", "livatpuntacapcana", "marialucialyll", "melconparadise", "midtownii", "mystiqcuestahermosall", "mystiqwave", "naviva", "oasislakeii", "oceancevtowers", "oceanresidencesbayahibe", "opus", "palmaalta", "palmadeleste", "palmapark", "palmasdelaromana", "palmasdesantodomingonorte", "palmasiii", "palmera8residences", "paraisodelreyvillas", "parquedelascanas", "paseodepuntacana", "perladeleste", "pmun69bfledw0x", "pmun6ca9jve15j", "pmun6jehcx0y4k", "pmuol3nu56mh5e", "pmupxzebbf36e2", "pmurfkj9s6av9y", "pmux17ai4mu85h", "pmv1gpxbqumusi", "pmv1gqkbwsmpbr", "pmv1grtq076b2j", "pmv1h0jef3hcsx", "pmv1h0tsgr8601", "pmv1h27miupkuk", "pmv1h2re4zb5u2", "pmv1h3f4ogz5z9", "pmv1h4aummok42", "pmv1himc5xf0wg", "pmv1hju7wi9n81", "pmv1hkv1s7sznx", "pmv1hlsmo085pt", "pmv1hmpgcbdrzj", "pmv1hoqqmnjk32", "pmv1hq0asd1pj5", "pmv5qaz3vyz5hg", "pmv5qc8p9inszk", "pmv5qe1gwv6f7t", "pmv5qfwv9ff1ea", "pmv5qhlkj8ogu6", "pmv5qiledv5o0i", "pmv5qjjgbqc0sr", "pmv5quwhr8szbq", "pmv5qxh7u6psai", "pmv5qxuo424a3p", "pmv5r26tuekb83", "pmv5r3c1hamgfj", "pmv5r4j3okq7jy", "pmv5r67lqz3rsm", "pmv5r6py9yv51m", "pmv714fy9jfz90", "pmv715ydzkqixa", "pmv7172dz33l32", "pmv71873c5sozm", "pmv76docus0qe7", "pmv76docvlgdlw", "pmv76docytokp5", "pmv76dod0kkejl", "pmv76dod1f0bra", "pmv76dod3seyfn", "pmv76dod4q9x8e", "pmv76dod5j3hco", "pmv76dod68e8z0", "pmv76dod741h3j", "pmv76dod8rciyz", "pmv76dodcmwod1", "pmv76dodd11rt1", "pmv76dodeo5a1f", "pmv76dodf20eui", "pmv76dodgre81q", "pmv76dodhzw5fd", "pmv76dodkzxm1a", "pmv76dodlkmdt5", "pmv76dodmxdz8k", "pmv76dodoz43g4", "pmv76dodpr3fiy", "pmv76dodq07fog", "pmv76dodrpy7ye", "pmv76dodsjl8gi", "pmv76dodt3ss5v", "pmv76dodw9bqmq", "pmv76dodyqiyvj", "pmv76doe232nkp", "pmv76doe4mdyu5", "pmv76doe6advj6", "pmv76doee2d8bp", "pmv76doefrzbx7", "pmv76doeicqj7b", "pmv76doejcpygz", "pmv76doekxrs7y", "pmv76doeno0d3v", "pmv76doeof30ur", "pmv76doep0o0q4", "pmv76doeqzcotj", "pmv76doeru0lq1", "pmv76doeskvpx3", "pmv76doettrj9p", "pmv76doeusg171", "pmv76doevm8gk1", "pmv76doewf5onf", "pmv76doexge8ky", "pmv76doeyx23ua", "pmv76doezz6b6l", "pmv76dof0zcy7w", "pmv76dof1gn77w", "pmvfnrv4z4j3ny", "pmvsandvillage1", "pmvsantamaria1", "pmvtheplaza01", "portofinosuites", "posavresidence", "praderaalta", "praderasdelfarallon", "qr2ciudadjuanbosch", "residencialbrisasderomanagreen", "residencialcaneyoriental", "residencialcolinasdelasbrisas06", "residencialpalmerasresipal", "residencialpueblobavarounidadeslistas", "resipaletapaii", "riverside", "rivierabayahibe", "rivieradelesteresidences", "romanasouthbeachii", "sandvillageatlascanas", "solara", "solemare", "sunlaxvistacana", "sunsetgardens", "terrazasdebocachica", "tharenas", "thebeach", "thebreezevillas", "theplazapuntacana", "torrecontemponaco", "uveresidence", "valenzatower", "velero", "viewmacaoiii", "villasantamaria", "villascoralii", "villasduplexatvistacana", "villasduplexpuntacana", "whitepalms", "whitepalmscondos", "zayes"]);
+  const normNom = t => String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  // Completo = tiene fotos, o ya estaba completo en la página original (aunque sus fotos no se hayan copiado).
+  const incompleto = p => noFotos(p) && !COMPLETOS.has(p.id) && !COMPLETOS.has(normNom(p.nombre));
+  const ORDEN_PC = new Map(["pmv76dodcmwod1", "pmv76dodd11rt1", "pmv76doevm8gk1", "pmv76dodf20eui", "pmv76dodhzw5fd", "pmv76dod0kkejl", "pmv76dod741h3j", "pmv76docus0qe7", "pmv76dodkzxm1a", "pmv76dodlkmdt5", "pmv76dodmxdz8k", "pmv76dodn8fe40", "pmv76dodpr3fiy", "pmv76dodq07fog", "pmv76dodrpy7ye", "pmv76dodsjl8gi", "pmv76dod1f0bra", "pmv76dodw9bqmq", "pmv76dod2ehi7s", "pmv76docwtew08", "pmv76dodyqiyvj", "pmv76doeyx23ua", "pmv76dodzb7c9p", "pmv76doe232nkp", "pmv76doettrj9p", "pmv76doe6advj6", "pmv76dod3seyfn", "pmv76docvlgdlw", "pmv76docytokp5", "pmv76dod5j3hco", "pmv76dod68e8z0", "pmv5qjjgbqc0sr", "pmv76doeusg171", "pmv76doee2d8bp", "pmv71crtli3h20", "pmv76doeicqj7b", "pmv76doejcpygz", "pmv76doemkfxi1", "pmv76doeno0d3v", "pmv76doeof30ur", "pmv76doep0o0q4", "pmv76doeqzcotj", "pmv76doeru0lq1", "pmv76doeskvpx3", "pmv76dodbq4axe", "pmv76dof2tg10i", "pmv76dodeo5a1f", "pmv76doexge8ky", "pmv76dodgre81q", "pmv76dodi29qfs", "pmv76dodjht1n8", "pmv76dodoz43g4", "pmv76dof33tikh", "pmv76dodt3ss5v", "pmv76dodunwfkn", "pmv76dodvrtgat", "pmv76dof4bay4u", "pmv76dodxv3uct", "pmv76dof5tqtpr", "pmv76dof6i6ub1", "pmv76dod4q9x8e", "pmv76doe0swhe8", "pmv76doe1i7pr1", "pmv76doezz6b6l", "pmv76docx3hecm", "pmv76doe3yzzoz", "pmv76doewf5onf", "pmv76doe4mdyu5", "pmv76dodaax1jp", "pmun6jehcx0y4k", "pmv76dof77ib76", "pmv76doe5ly4og", "pmv76dof88yzmz", "pmv76dof0zcy7w", "pmv76doe85ctjj", "pmv71cq5a299xk", "pmv76doe943r7m", "pmv76doea8mp5d", "pmv71corzbpc04", "pmv76doczpo3rp", "pmv76dod8rciyz", "pmv76doebeagua", "pmv76doec1nt6k", "pmv76doed28fwd", "pmv76dof9hqve6", "pmv76doefrzbx7", "pmv76doegqbqdr", "pmv76doehjl0sv", "pmv76dof1gn77w", "pmv76dod9bgrcb", "pmv76dofamhj7j", "pmv76doekxrs7y", "pmv71cvolnp6r8", "pmv76dofb691b5", "pmv76doelt658w", "pmv76dofcjm5k6", "pmv76dofd9d8sd"].map((id, i) => [id, i + 1]));
+  const ordPC = p => ORDEN_PC.get(p.id) || 9999;
+  // Proyectos que en el CRM no tienen carpeta ni brochure: van en su propio apartado.
+  const SIN_BRO = new Set(["pmv76dodbq4axe", "pmv76dof2tg10i", "pmv76dodeo5a1f", "pmv76doexge8ky", "pmv76dodgre81q", "pmv76dodoz43g4", "pmv76dof33tikh", "pmv76dof4bay4u", "pmv76dodxv3uct", "pmv76dof5tqtpr", "pmv76dof6i6ub1", "pmv76dod4q9x8e", "pmv76doe0swhe8", "pmv76doezz6b6l", "pmv76docx3hecm", "pmv76doewf5onf", "pmv76doe4mdyu5", "pmv76dodaax1jp", "pmun6jehcx0y4k", "pmv76dof77ib76", "pmv76dof88yzmz", "pmv76dof0zcy7w", "pmv76doe85ctjj", "pmv71cq5a299xk", "pmv76doe943r7m", "pmv76doea8mp5d", "pmv71corzbpc04", "pmv76dod8rciyz", "pmv76doebeagua", "pmv76doec1nt6k", "pmv76dof9hqve6", "pmv76doefrzbx7", "pmv76dod9bgrcb", "pmv76dofamhj7j", "pmv71cvolnp6r8", "pmv76dofb691b5", "pmv76dofcjm5k6", "pmv76dofd9d8sd"]);
+  const faltas = p => [minPrice(p) === Infinity ? "Sin precio" : p.precioRef ? "Precio de ejemplo" : "", noFotos(p) ? "Sin fotos" : ""].filter(Boolean);
+  function card(p, t, pend) {
+    const url = safeUrl(p.url);
+    const opts = habsText(p);
+    const actions = h("div", { class: "card-actions" },
+      hasLanding(p) ? h("a", { class: "btn btn-red btn-sm", href: "#p-" + p.id }, "Ver landing →")
+        : url ? h("a", { class: "btn btn-red btn-sm", href: url, target: "_blank", rel: "noopener" }, "Ver landing →")
+        : h("span", { class: "hint" }, "Sin landing todavía"));
+    if (p.fotos && p.fotos.length) actions.append(h("button", { class: "link-btn", type: "button", onclick: () => openCarousel(p) }, "Carrusel"));
+    if (S.canWrite) {
+      if (S.confirming === p.id) actions.append(h("span", { class: "confirm" }, "¿Eliminar?",
+        h("button", { class: "link-btn danger", type: "button", onclick: () => remove(p) }, "Sí"),
+        h("button", { class: "link-btn", type: "button", onclick: () => { S.confirming = null; render(); } }, "No")));
+      else actions.append(
+        pend && safeUrl(p.brochureUrl) ? h("button", { class: "btn btn-red btn-sm", type: "button", title: "Trae el brochure de su Dropbox o Drive y llena el proyecto", onclick: () => traerBrochure(p) }, "Traer brochure") :"",
+        pend ? h("button", { class: safeUrl(p.brochureUrl) ? "link-btn" : "btn btn-red btn-sm", type: "button", onclick: () => openForm(p) }, "Completar") : h("button", { class: "link-btn", type: "button", onclick: () => openForm(p) }, "Editar"),
+        h("button", { class: "link-btn danger", type: "button", onclick: () => { S.confirming = p.id; render(); } }, "Eliminar"));
+    }
+    const cover = p.fotos && p.fotos[0] ? `background-image:url('${blobUrl(p.fotos[0])}'),url('${PH_IMG}')` : (incompleto(p) ? "" : `background-image:url('${PH_IMG}')`);
+    const miss = pend ? faltas(p) : [];
+    return h("article", { class: "card" + (p.disp === "Vendido" ? " sold" : "") },
+      h("div", { class: "thumb", style: cover }, p.estado ? h("span", { class: "state" + (p.estado === "En planos" ? " planos" : "") }, p.estado) : null,
+        p.disp && p.disp !== "Disponible" ? h("span", { class: "disp d-" + slugify(p.disp) }, p.disp) : p.precioRef ? h("span", { class: "disp", title: "Precio de ejemplo: cámbialo en Editar antes de enviarlo" }, "Precio de ejemplo") : null),
+      h("div", { class: "card-body" },
+        h("div", {}, h("h3", {}, p.nombre), p.zona ? h("div", { class: "zone" }, p.zona) : null,
+          miss.length ? h("div", { class: "faltas" }, miss.map(m => h("span", {}, m)), noFotos(p) ? h("span", { class: "pedido" }, "📩 Brochure solicitado") : null) : null),
+        h("div", { class: "price" }, h("div", { class: "k" }, "Desde"),
+          t.desde > 0 ? h("div", { class: "v num" }, money(t.desde)) : h("div", { class: "v ask" }, "Precio a consultar")),
+        opts ? h("div", { class: "others" }, tipoOf(p) + " · " + opts + (p.parqueos ? " · " + p.parqueos + " parqueo" + (p.parqueos > 1 ? "s" : "") : "")) : null,
+        h("div", { class: "agent" }, avatar(agentFor(p).foto, capName(p)), h("span", {}, "Asesor: " + capName(p))),
+        p.subidoPor ? h("div", { class: "uploader" }, "Subido por " + p.subidoPor) : null,
+        actions));
+  }
+  function emptyBox(title, text, withBtn) {
+    return h("div", { class: "empty" }, h("strong", {}, title), text,
+      withBtn ? h("div", { class: "steps" }, h("span", {}, h("b", {}, "1"), "Sube el brochure en PDF"), h("span", {}, h("b", {}, "2"), "Revisa los datos"), h("span", {}, h("b", {}, "3"), "Guarda: la landing queda lista")) : null,
+      withBtn && S.canWrite ? h("div", {}, h("button", { class: "btn btn-red", type: "button", onclick: () => openForm() }, "+ Subir brochure")) : null);
+  }
+  function render() {
+    const shelves = $("shelves");
+    shelves.replaceChildren();
+    const list = visible();
+    if (!S.loaded || !S.accessReady || !S.unlocked) { shelves.append(h("section", { class: "shelf" }, emptyBox("Cargando proyectos", "Un momento…", false))); $("agentsBody").replaceChildren(); $("agentsCount").textContent = ""; return; }
+    else if (!S.projects.length) shelves.append(h("section", { class: "shelf" }, emptyBox("Todavía no hay proyectos",
+      S.canWrite ? "Sube el brochure de un proyecto y Claude arma su landing y lo coloca aquí según sus habitaciones." : "Aquí aparecerán las landing pages del equipo, agrupadas por habitaciones.", true)));
+    else {
+      let shown = 0;
+      if (S.me) shelves.append(h("section", { class: "shelf", style: "padding-bottom:0" },
+        h("div", { class: "empty", style: "text-align:left;border-style:solid" }, h("strong", {}, "Hola, " + S.me.nombre),
+          "Todas las propiedades y landings salen a tu nombre como asesor, con tu WhatsApp" + (S.me.tel ? " (" + S.me.tel + ")" : "") + ".")));
+      const all = list.map(p => ({ p, t: tipoFor(p) })).filter(x => x.t).sort(byRooms);
+      const items = all.filter(x => !incompleto(x.p)), pend = all.filter(x => incompleto(x.p)).sort((a, b) => ordL(a.p) - ordL(b.p) || a.p.nombre.localeCompare(b.p.nombre));
+      if (items.length) {
+        shown++;
+        const low = items.filter(x => x.t.desde > 0).sort((a, b) => a.t.desde - b.t.desde)[0];
+        const sel = [...S.habs].sort().map(x => x >= 4 ? "4+" : String(x));
+        const title = !sel.length ? (pend.length ? "Con precio" : "Todos los proyectos") : "Con " + (sel.length > 1 ? sel.slice(0, -1).join(", ") + " o " + sel[sel.length - 1] : sel[0]) + (sel.length === 1 && sel[0] === "1" ? " habitación" : " habitaciones");
+        shelves.append(h("section", { class: "shelf", "aria-labelledby": "t-list" },
+          h("div", { class: "shelf-head" }, h("h2", { id: "t-list" }, title, h("span", { class: "n num" }, items.length)),
+            h("span", { class: "from" }, low ? ["Desde ", h("b", { class: "num" }, money(low.t.desde))] : null,
+              pend.length ? h("button", { type: "button", class: "link-btn", onclick: () => $("porCompletar")?.scrollIntoView({ behavior: "smooth" }), style: "margin-left:14px;color:#B7791F;font-weight:600" }, pend.length + " más por completar ↓") : null)),
+          h("div", { class: "grid" }, items.map(x => card(x.p, x.t)))));
+      }
+      const pendCon = pend.filter(x => !SIN_BRO.has(x.p.id)), pendSin = pend.filter(x => SIN_BRO.has(x.p.id));
+      if (pendCon.length) {
+        shown++;
+        shelves.append(h("section", { class: "shelf pend", id: "porCompletar", "aria-labelledby": "t-pend" },
+          h("div", { class: "shelf-head" }, h("h2", { id: "t-pend" }, "Por completar", h("span", { class: "n num" }, pendCon.length)),
+            h("span", { class: "from" }, "Les falta el precio real o las fotos. Complétalos antes de enviarlos a clientes.")),
+          h("div", { class: "grid" }, pendCon.map(x => card(x.p, x.t, true)))));
+      }
+      if (pendSin.length) {
+        shown++;
+        shelves.append(h("section", { class: "shelf pend", id: pendCon.length ? "sinBrochure" : "porCompletar", "aria-labelledby": "t-sinbro" },
+          h("div", { class: "shelf-head" }, h("h2", { id: "t-sinbro" }, "Sin brochure en el CRM", h("span", { class: "n num" }, pendSin.length)),
+            h("span", { class: "from" }, "El CRM no tiene carpeta ni presentación de estos. Hay que pedir el brochure al contacto del proyecto.")),
+          h("div", { class: "grid" }, pendSin.map(x => card(x.p, x.t, true)))));
+      }
+      if (!shown) shelves.append(h("section", { class: "shelf" }, emptyBox("Sin resultados", "No hay proyectos con esos filtros. Prueba otro presupuesto o quita la búsqueda.", false)));
+    }
+    renderAgents();
+  }
+  function renderAgents() {
+    const body = $("agentsBody");
+    body.replaceChildren();
+    $("captadores").hidden = !!S.me;
+    document.querySelector('.bar nav a[href="#captadores"]').hidden = !!S.me;
+    const by = new Map();
+    for (const c of S.caps) by.set(c.nombre.trim().toLowerCase(), { name: c.nombre.trim(), tel: c.tel || "", items: [] });
+    for (const p of S.projects) {
+      const name = (p.captador || "Sin asesor").trim(), k = name.toLowerCase();
+      if (!by.has(k)) by.set(k, { name, tel: "", items: [] });
+      const g = by.get(k); if (!g.tel && p.captadorTel) g.tel = p.captadorTel; g.items.push(p);
+    }
+    const groups = [...by.values()].sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name, "es"));
+    $("agentsCount").textContent = groups.length ? `${groups.length} ${groups.length === 1 ? "asesor" : "asesores"}` : "";
+    if (!S.loaded) return;
+    if (!groups.length) { body.append(emptyBox("Sin asesores todavía", "Cada proyecto que se agregue aparecerá aquí bajo el nombre de su asesor.", false)); return; }
+    body.append(h("div", { class: "agents-grid" }, groups.map(g => h("article", { class: "acard" },
+      h("div", { class: "acard-head" }, avatar((capByName(g.name) || {}).foto ? blobUrl(capByName(g.name).foto) : "", g.name),
+        h("div", { style: "min-width:0" }, h("h3", {}, g.name), g.tel ? h("div", { class: "tel num" }, "WhatsApp " + g.tel) : null)),
+      h("div", { class: "acount" }, g.items.length + (g.items.length === 1 ? " proyecto" : " proyectos")),
+      h("ul", {}, g.items.slice().sort((a, b) => minPrice(a) - minPrice(b)).map(p =>
+        h("li", {}, h("button", { type: "button", onclick: () => openProject(p) }, p.nombre),
+          minPrice(p) < Infinity ? h("span", { class: "num" }, "desde " + money(minPrice(p))) : h("span", { class: "num" }, "a consultar"))))))));
+  }
+
+  S.habs = new Set(); S.tipos = new Set();
+  $("tipoChips").addEventListener("click", e => {
+    const b = e.target.closest("[data-tp]"); if (!b) return;
+    if (b.dataset.tp === "all") S.tipos.clear();
+    else S.tipos.has(b.dataset.tp) ? S.tipos.delete(b.dataset.tp) : S.tipos.add(b.dataset.tp);
+    for (const c of $("tipoChips").children) c.setAttribute("aria-pressed", String(c.dataset.tp === "all" ? !S.tipos.size : S.tipos.has(c.dataset.tp)));
+    const names = [...$("tipoChips").children].filter(c => c.dataset.tp !== "all" && S.tipos.has(c.dataset.tp)).map(c => c.textContent);
+    $("tipoTxt").textContent = !names.length ? "Todos" : names.length <= 2 ? names.join(", ") : names.length + " tipos";
+    if (b.dataset.tp === "all") tipoPop(false);
+    render();
+  });
+  const tipoPop = open => { $("tipoChips").hidden = !open; $("tipoBtn").setAttribute("aria-expanded", String(open)); };
+  $("tipoBtn").addEventListener("click", () => tipoPop($("tipoChips").hidden));
+  document.addEventListener("click", e => { if (!$("tipoChips").hidden && !e.target.closest(".tp-wrap")) tipoPop(false); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("tipoChips").hidden) { tipoPop(false); $("tipoBtn").focus(); } });
+  $("habChips").addEventListener("click", e => {
+    const b = e.target.closest("[data-hab]"); if (!b) return;
+    if (b.dataset.hab === "all") S.habs.clear();
+    else { const n = Number(b.dataset.hab); S.habs.has(n) ? S.habs.delete(n) : S.habs.add(n); }
+    for (const c of $("habChips").children) c.setAttribute("aria-pressed", String(c.dataset.hab === "all" ? !S.habs.size : S.habs.has(Number(c.dataset.hab))));
+    render();
+  });
+  $("budget").addEventListener("change", e => { S.budget = Number(e.target.value) || 0; render(); });
+  $("q").addEventListener("input", e => { S.q = e.target.value; render(); });
+
+  /* ---------- form ---------- */
+  function tipoRow(t) {
+    const sel = h("select", { class: "ctl", "aria-label": "Habitaciones" }, [1, 2, 3, 4, 5].map(n => h("option", { value: n }, n >= 5 ? "5+ hab." : n + " hab.")));
+    sel.value = String(Math.min(5, Math.max(1, t?.hab || 1)));
+    const price = h("input", { class: "ctl num", type: "number", min: "0", step: "1000", inputmode: "numeric", placeholder: "Precio desde (US$)", "aria-label": "Precio desde en dólares" });
+    if (t?.desde) price.value = t.desde;
+    const row = h("div", { class: "tipo" }, sel, price,
+      h("button", { class: "link-btn", type: "button", "aria-label": "Quitar este tipo", onclick: () => { if ($("tipos").children.length > 1) row.remove(); } }, "Quitar"));
+    row._extra = { banos: t?.banos || 0, m2: t?.m2 || 0 };
+    return row;
+  }
+  function fillForm(p) {
+    $("f-nombre").value = p?.nombre || "";
+    $("f-tipo").value = TIPOS_P[p?.tipo] ? p.tipo : "Apartamento";
+    $("f-zona").value = p?.zona || "";
+    $("f-estado").value = ["En planos", "En construcción", "Terminado"].includes(p?.estado) ? p.estado : "En planos";
+    $("f-disp").value = ["Disponible", "Pocas unidades", "Reservado", "Vendido"].includes(p?.disp) ? p.disp : "Disponible";
+    $("f-desc").value = p?.descripcion || "";
+    $("f-amen").value = (p?.amenidades || []).join(", ");
+    if (p?.captador !== undefined) $("f-capt").value = p.captador || "";
+    if (p?.captadorTel !== undefined) $("f-tel").value = p.captadorTel || "";
+    $("f-url").value = p?.url || $("f-url").value || "";
+    $("tipos").replaceChildren(...((p?.tipologias?.length ? p.tipologias : [null]).map(tipoRow)));
+    for (const [id, k] of PL_IDS) { const v = Number(p?.plan?.[k]) || 0; $(id).value = v ? String(v) : ""; }
+    planHint();
+  }
+  const PL_IDS = [["pl-sep","separacion"],["pl-firma","firmaPct"],["pl-cuotas","cuotasPct"],["pl-meses","meses"],["pl-entrega","entregaPct"]];
+  const readPlan = () => Object.fromEntries(PL_IDS.map(([id, k]) => [k, Math.max(0, Number(String($(id).value).replace(/[^\d.]/g, "")) || 0)]));
+  function planHint() {
+    const pl = readPlan(), sum = pl.firmaPct + pl.cuotasPct + pl.entregaPct;
+    $("pl-hint").textContent = !sum ? "Los porcentajes deben sumar 100%. La landing muestra una calculadora con estos datos."
+      : Math.abs(sum - 100) < 0.01 ? "Suma 100%. La landing mostrará la calculadora de pagos." : `Los porcentajes suman ${sum}%; revisa que lleguen a 100%.`;
+  }
+  for (const [id] of PL_IDS) $(id).addEventListener("input", planHint);
+  function setStatus(txt) { $("status").hidden = !txt; $("statusText").textContent = txt || ""; }
+  function openForm(p) {
+    S.editing = p ? p.id : null;
+    S.draft = p ? { extra: pickExtra(p), fotos: p.fotos || [], blobs: [] } : null;
+    $("formTitle").textContent = p ? "Editar proyecto" : "Nuevo proyecto";
+    $("dropTitle").textContent = p ? "Reemplazar con otro brochure" : "Sube el brochure del proyecto";
+    $("f-capt").value = S.me ? S.me.nombre : ""; $("f-tel").value = S.me ? (S.me.tel || "") : ""; $("f-url").value = "";
+    fillForm(p || null);
+    if (p) { $("f-capt").value = p.captador || ""; $("f-tel").value = p.captadorTel || ""; $("f-url").value = p.url || ""; }
+    $("thumbs").hidden = true; $("thumbs").replaceChildren();
+    S.gal = (p?.fotos || []).map(id => ({ id, url: blobUrl(id) })); renderGal();
+    $("formErr").textContent = ""; setStatus(""); S.noPhotoOk = false; $("noPhotoAsk").hidden = true;
+    $("drop").hidden = false;
+    $("sheet").hidden = false; document.body.classList.add("locked");
+    (p ? $("f-nombre") : $("drop")).focus();
+  }
+  /* photo editor: S.gal = [{id, url} | {blob, url}] */
+  S.gal = [];
+  function renderGal() {
+    const ed = $("galEd"); if (!ed) return;
+    ed.replaceChildren(...S.gal.map((g, i) => h("div", { class: "gal-it" },
+      h("img", { src: g.url, alt: "" }), i === 0 ? h("span", { class: "cover" }, "Portada") : null,
+      h("div", { class: "ctr" },
+        h("button", { type: "button", title: "Mover a la izquierda", disabled: i === 0, onclick: () => { [S.gal[i - 1], S.gal[i]] = [S.gal[i], S.gal[i - 1]]; renderGal(); } }, "←"),
+        h("button", { type: "button", title: "Quitar foto", onclick: () => { S.gal.splice(i, 1); renderGal(); } }, "✕"),
+        h("button", { type: "button", title: "Mover a la derecha", disabled: i === S.gal.length - 1, onclick: () => { [S.gal[i + 1], S.gal[i]] = [S.gal[i], S.gal[i + 1]]; renderGal(); } }, "→")))),
+      ...(S.assets ? [h("label", { class: "gal-add", for: "galAdd" }, "+ Agregar fotos")] : []));
+    $("noPhotoNote").hidden = S.gal.length > 0 || S.busy || !(S.editing || S.draft);
+    $("galRank").hidden = !S.gal.length;
+    if (S.gal.length) $("noPhotoAsk").hidden = true;
+  }
+  $("galRank").addEventListener("click", async () => {
+    if (S.busy || !S.gal.length) return;
+    S.busy = true; $("save").disabled = true; $("galRank").disabled = true;
+    try {
+      const cvs = [];
+      for (const g of S.gal) { const im = await new Promise(res => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = g.url; }); const c = document.createElement("canvas"); c.width = im ? im.naturalWidth : 2; c.height = im ? im.naturalHeight : 2; if (im) c.getContext("2d").drawImage(im, 0, 0); c._g = g; cvs.push(c); }
+      const good = cvs.filter(c => { const st = photoStats(c); c._score = st.score; return st.ok; }), quit = cvs.length - good.length;
+      const out = !good.length ? [] : S.sample ? await rankPhotos(good) : good.slice().sort((a, b) => b._score - a._score);
+      S.gal = out.map(c => c._g); setStatus(""); renderGal();
+      toast((quit ? `Quité ${quit} ${quit === 1 ? "imagen vacía u oscura" : "imágenes vacías u oscuras"}. ` : "") + (S.gal.length ? "La mejor quedó de portada." : ""));
+    } catch { setStatus(""); toast("No se pudieron ordenar las fotos ahora"); }
+    finally { S.busy = false; $("save").disabled = false; $("galRank").disabled = false; renderGal(); }
+  });
+  $("galAdd").addEventListener("change", async e => {
+    for (const f of [...e.target.files].slice(0, 12)) {
+      try {
+        const bmp = await createImageBitmap(f), k = Math.min(1, 1800 / Math.max(bmp.width, bmp.height));
+        const c = document.createElement("canvas"); c.width = Math.round(bmp.width * k); c.height = Math.round(bmp.height * k);
+        c.getContext("2d").drawImage(bmp, 0, 0, c.width, c.height);
+        const blob = await new Promise(r => c.toBlob(r, "image/jpeg", 0.86));
+        S.gal.push({ blob, url: URL.createObjectURL(blob) });
+      } catch { toast("No se pudo leer una de las imágenes"); }
+    }
+    e.target.value = ""; renderGal();
+  });
+  function closeForm() { if (S.busy) return; $("sheet").hidden = true; document.body.classList.remove("locked"); S.editing = null; S.draft = null; $("f-pdf").value = ""; }
+  const pickExtra = p => ({ precioRef: !!p.precioRef, direccion: p.direccion || "", frase: p.frase || "", entrega: p.entrega || "", parqueos: p.parqueos || 0, plan: p.plan || {},
+    porque: p.porque || [], cercanias: p.cercanias || [], faq: p.faq || [] });
+
+  $("addBtn").addEventListener("click", () => openForm());
+  $("f-capt").addEventListener("change", () => { const c = S.caps.find(x => x.nombre.trim().toLowerCase() === $("f-capt").value.trim().toLowerCase()); if (c && c.tel) $("f-tel").value = c.tel; });
+  $("addTipo").addEventListener("click", () => $("tipos").append(tipoRow()));
+  $("cancel").addEventListener("click", closeForm);
+  $("sheet").addEventListener("click", e => { if (e.target === $("sheet")) closeForm(); });
+  document.addEventListener("keydown", e => { if (e.key !== "Escape") return; if (!$("sendSheet").hidden) closeSend(); else if (!$("sheet").hidden) closeForm(); else if (!$("layer").hidden) closeLanding(); });
+
+  /* ---------- brochure → data ---------- */
+  function loadScript(src) { return new Promise((ok, bad) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = bad; document.head.append(s); }); }
+  let pdfReady;
+  function pdfLib() {
+    pdfReady ||= (async () => {
+      await loadScript("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js");
+      await loadScript("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js");
+      return window.pdfjsLib;
+    })();
+    return pdfReady;
+  }
+  // Photos embedded in the PDF (not whole pages, which carry the brochure's text).
+  async function imgToCanvas(img) {
+    const c = document.createElement("canvas");
+    if (img.bitmap) { c.width = img.bitmap.width; c.height = img.bitmap.height; c.getContext("2d").drawImage(img.bitmap, 0, 0); c._raw = true; return c; }
+    const { width: w, height: hh, data, kind } = img;
+    if (!w || !hh || !data) return null;
+    c.width = w; c.height = hh;
+    const ctx = c.getContext("2d"), id = ctx.createImageData(w, hh), px = id.data;
+    if (kind === 3) px.set(data.subarray ? data.subarray(0, px.length) : data);
+    else if (kind === 2) { for (let i = 0, j = 0; j < w * hh * 3; i += 4, j += 3) { px[i] = data[j]; px[i + 1] = data[j + 1]; px[i + 2] = data[j + 2]; px[i + 3] = 255; } }
+    else return null;
+    ctx.putImageData(id, 0, 0);
+    return c;
+  }
+  // Mide si una imagen sirve como foto: descarta negras, blancas, planas o recortes con fondo transparente.
+  function photoStats(c) {
+    const S2 = 64, t = document.createElement("canvas"); t.width = S2; t.height = S2;
+    const x = t.getContext("2d", { willReadFrequently: true }); x.drawImage(c, 0, 0, S2, S2);
+    const d = x.getImageData(0, 0, S2, S2).data, n = S2 * S2;
+    let sum = 0, sum2 = 0, transp = 0, rg = 0, yb = 0; const L = new Float32Array(n);
+    for (let i = 0, k = 0; k < n; i += 4, k++) {
+      if (d[i + 3] < 200) transp++;
+      const l = 0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2]; L[k] = l; sum += l; sum2 += l * l;
+      rg += Math.abs(d[i] - d[i + 1]); yb += Math.abs((d[i] + d[i + 1]) / 2 - d[i + 2]);
+    }
+    const mean = sum / n, std = Math.sqrt(Math.max(0, sum2 / n - mean * mean));
+    let flat = 0; for (let k = 0; k < n; k++) if (Math.abs(L[k] - mean) < 10) flat++;
+    const color = (rg + yb) / n;
+    const ok = transp / n < 0.25 && mean > 28 && mean < 238 && std > 16 && flat / n < 0.7;
+    return { ok, score: std + color * 0.6 + (c.width / c.height >= 1.2 ? 10 : 0), mean, std };
+  }
+  function shrink(src, max) {
+    const k = Math.min(1, max / Math.max(src.width, src.height));
+    if (k === 1) return src;
+    const c = document.createElement("canvas"); c.width = Math.round(src.width * k); c.height = Math.round(src.height * k);
+    c.getContext("2d").drawImage(src, 0, 0, c.width, c.height); return c;
+  }
+  const toJpeg = (c, q) => new Promise(r => c.toBlob(r, "image/jpeg", q));
+  async function readPdf(file) {
+    const lib = await pdfLib();
+    const doc = await lib.getDocument({ data: new Uint8Array(await file.arrayBuffer()) }).promise;
+    let text = "";
+    const n = Math.min(doc.numPages, 30);
+    for (let i = 1; i <= n; i++) {
+      const pg = await doc.getPage(i);
+      const tc = await pg.getTextContent();
+      text += `\n--- Página ${i} ---\n` + tc.items.map(it => it.str).join(" ");
+      if (text.length > 60000) break;
+    }
+    const photos = [], seen = new Set();
+    const OPS = lib.OPS;
+    for (let i = 1; i <= Math.min(doc.numPages, 24) && photos.length < 16; i++) {
+      setStatus(`Buscando fotos en el brochure (página ${i} de ${Math.min(doc.numPages, 24)})…`);
+      const pg = await doc.getPage(i);
+      let ops; try { ops = await pg.getOperatorList(); } catch { continue; }
+      for (let k = 0; k < ops.fnArray.length && photos.length < 16; k++) {
+        if (ops.fnArray[k] !== OPS.paintImageXObject) continue;
+        const id = ops.argsArray[k][0];
+        if (seen.has(id)) continue; seen.add(id);
+        const store = String(id).startsWith("g_") ? pg.commonObjs : pg.objs;
+        const img = await new Promise(r => { try { store.get(id, r); } catch { r(null); } setTimeout(() => r(null), 4000); });
+        if (!img) continue;
+        const w = img.width || img.bitmap?.width || 0, hh = img.height || img.bitmap?.height || 0;
+        const ratio = w / Math.max(1, hh);
+        if (Math.min(w, hh) < 350 || w * hh < 250000 || ratio > 3 || ratio < 0.33) continue;
+        const c = await imgToCanvas(img); if (!c) continue;
+        const st = photoStats(c); if (!st.ok) continue;
+        const fl = document.createElement("canvas"); fl.width = c.width; fl.height = c.height;
+        const fx = fl.getContext("2d"); fx.fillStyle = "#fff"; fx.fillRect(0, 0, fl.width, fl.height); fx.drawImage(c, 0, 0);
+        const out = shrink(fl, 1800); out._score = st.score; photos.push(out);
+      }
+    }
+    let pages = null;
+    const renderPages = async () => {
+      if (pages) return pages;
+      pages = [];
+      for (let i = 1; i <= Math.min(doc.numPages, 6); i++) {
+        const pg = await doc.getPage(i), v1 = pg.getViewport({ scale: 1 });
+        const vp = pg.getViewport({ scale: Math.min(2, 1400 / Math.max(v1.width, v1.height)) });
+        const c = document.createElement("canvas"); c.width = Math.round(vp.width); c.height = Math.round(vp.height);
+        await pg.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
+        pages.push(await toJpeg(c, 0.8));
+      }
+      return pages;
+    };
+    return { text: text.slice(0, 60000), photos, renderPages };
+  }

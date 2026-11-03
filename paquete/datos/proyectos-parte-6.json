@@ -1,0 +1,1637 @@
+[
+ {
+  "actualizado": "2026-10-13T18:57:29.331Z",
+  "amenidades": [
+   "Piscina de adultos",
+   "Piscina infantil",
+   "Sport bar",
+   "Área de BBQ",
+   "Parques de juegos infantiles",
+   "Gimnasio climatizado",
+   "Salón multiuso",
+   "Área de co-working",
+   "Control de acceso",
+   "Ascensor en todos los edificios",
+   "Lobby principal"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa",
+    "tiempo": "25 min"
+   }
+  ],
+  "descripcion": "Pradera Alta es un proyecto de apartamentos de 1, 2 y 3 habitaciones en Verón, Punta Cana. Son edificios de 4 niveles, todos con ascensor, pensados para que toda la familia disfrute sus áreas sociales.\nAquí encontrará un ambiente residencial tranquilo, rodeado de naturaleza. Cuenta con piscinas para adultos y niños, sport bar, área de BBQ, parques infantiles, gimnasio climatizado, salón multiuso, área de co-working y control de acceso.\nEs una opción pensada para vivir o invertir. Se ubica en una de las zonas con más movimiento comercial de Punta Cana, cerca de importantes vías y del aeropuerto. Además, cuenta con fideicomiso y Bono Vivienda.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Enero 2029",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuánto cuesta un apartamento en Pradera Alta?",
+    "r": "Los apartamentos de 1 habitación parten desde US$66,950, los de 2 habitaciones desde US$89,950 y los de 3 habitaciones desde US$103,950."
+   },
+   {
+    "p": "¿Cuándo comienza la entrega?",
+    "r": "La primera etapa está prevista a partir de enero de 2029."
+   },
+   {
+    "p": "¿Qué incluye el mantenimiento?",
+    "r": "Es de unos US$1.5 por metro cuadrado, aproximadamente. Incluye limpieza y mantenimiento de áreas comunes, recogida de basura y seguridad."
+   },
+   {
+    "p": "¿Qué terminaciones tienen los apartamentos?",
+    "r": "Cocina en melamina hidrófuga con tope de cuarzo, cerámicas importadas, puertas y closets en MDF, gas común, mamparas y muebles de baño."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/6dc92bce47eec22818249013c2d708df.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/82334604697096af2d15daf682d69793.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/d66fda2b33339d1d0824b150b8264c3b.jpg"
+  ],
+  "frase": "Viva e invierta en Verón, cerca del aeropuerto",
+  "nombre": "Pradera Alta",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Verón-Punta Cana es una de las zonas con mayor actividad comercial. Combina un entorno residencial y natural con acceso a vías importantes y al aeropuerto.",
+    "titulo": "Ubicación con movimiento"
+   },
+   {
+    "texto": "Su unidad cuenta con fideicomiso y Bono Vivienda, además de respaldo fiduciario. Esto le da mayor tranquilidad al comprar.",
+    "titulo": "Respaldo para su compra"
+   },
+   {
+    "texto": "El desarrollador tiene 35 años de experiencia y más de 5,000 unidades vendidas en los últimos 3 años.",
+    "titulo": "Un desarrollador con trayectoria"
+   },
+   {
+    "texto": "Disfrute de piscinas, gimnasio climatizado, área de BBQ, parques infantiles y espacio de co-working, todo dentro del residencial.",
+    "titulo": "Amenidades para toda la familia"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T20:58:04.531Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 66950,
+    "hab": 1,
+    "m2": 43
+   },
+   {
+    "banos": 2,
+    "desde": 89950,
+    "hab": 2,
+    "m2": 65
+   },
+   {
+    "banos": 0,
+    "desde": 103950,
+    "hab": 3,
+    "m2": 75
+   }
+  ],
+  "url": "",
+  "zona": "Verón, Punta Cana",
+  "id": "pmv5qhlkj8ogu6"
+ },
+ {
+  "actualizado": "2026-10-12T20:58:50.965Z",
+  "amenidades": [
+   "Piscina central",
+   "Dos canchas de pádel",
+   "Cancha de tenis",
+   "Cancha de basketball",
+   "Cancha de fútbol 5 de grama natural",
+   "Gimnasio climatizado con vestuario",
+   "Zona lounge",
+   "Área de juegos infantiles",
+   "Área de restaurante",
+   "Parque central",
+   "Pórtico de entrada con seguridad",
+   "Calles asfaltadas internas"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Playa",
+    "tiempo": "18 min"
+   }
+  ],
+  "descripcion": "Praderas del Farallón es un complejo cerrado y privado de villas independientes de 2 y 3 habitaciones. Se encuentra dentro del residencial Alta Vista, en La Otra Banda, Punta Cana, con pórtico de entrada y seguridad.\nCada villa cuenta con patio entregado con grama, cocina, sala y comedor. Usted dispondrá de casi 12,000 mt2 de áreas sociales privadas, con piscina central, canchas de pádel, tenis, basketball y fútbol 5, además de gimnasio climatizado y zona infantil.\nEl residencial ya tiene la primera etapa entregada y operativa, con calles asfaltadas y servicios. La playa queda a 18 minutos. El desarrollador ha vendido más de 5,000 unidades en los últimos 3 años, lo que respalda su experiencia.",
+  "direccion": "Residencial Alta Vista, La Otra Banda, Punta Cana",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuál es el precio de las villas?",
+    "r": "Las villas de 2 habitaciones parten desde US$89,000 y las de 3 habitaciones desde US$125,000."
+   },
+   {
+    "p": "¿Qué tamaño tienen las villas?",
+    "r": "La villa de 2 habitaciones tiene 87 mt2 de construcción y solar de 237 mt2. La de 3 habitaciones tiene 127 mt2 y solar de 292 mt2."
+   },
+   {
+    "p": "¿Se puede agregar piscina a la villa?",
+    "r": "Sí. La piscina cuesta US$16,200 como adicional. También hay pergolado con piso de parqueo por US$5,700 y pared divisoria de hierro por US$2,700."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento mensual?",
+    "r": "El mantenimiento aproximado es de US$80 a US$100. Incluye limpieza y mantenimiento de áreas comunes, recogida de basura y seguridad."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/69dd4f8e2bceafa39672578544c1c410.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/decfe8695187b23c35718024ed00d1cc.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/dd9dd1f79859085a4c63b17e490244b1.jpg",
+   "916d9a04c8df9dae8108c3dda2120ceb",
+   "432aef43ae7659883f817017d7117ec6",
+   "c3c36733fae1d0a99c1ff139131e9d13"
+  ],
+  "frase": "Villas independientes con patio, cerca de la playa",
+  "nombre": "Praderas del Farallón",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Usted estará a solo 18 minutos de la playa, dentro del residencial Alta Vista, en una de las zonas turísticas más conocidas del país.",
+    "titulo": "Cerca de la playa"
+   },
+   {
+    "texto": "Cada villa tiene su propio patio con grama y solar propio. Usted disfruta de espacio y privacidad, con opción de agregar piscina.",
+    "titulo": "Villas independientes con patio"
+   },
+   {
+    "texto": "Casi 12,000 mt2 de áreas privadas para toda la familia: canchas deportivas, piscina, gimnasio climatizado, zona lounge y área infantil.",
+    "titulo": "Amplias áreas sociales"
+   },
+   {
+    "texto": "La primera etapa del residencial ya está entregada y operativa. El desarrollador reporta más de 5,000 unidades vendidas en los últimos 3 años.",
+    "titulo": "Desarrollador con experiencia"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T20:58:50.965Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 89000,
+    "hab": 2,
+    "m2": 87
+   },
+   {
+    "banos": 2,
+    "desde": 125000,
+    "hab": 3,
+    "m2": 127
+   }
+  ],
+  "url": "",
+  "zona": "Alta Vista, La Otra Banda, Punta Cana",
+  "id": "pmv5qiledv5o0i"
+ },
+ {
+  "actualizado": "2026-10-14T21:06:52.879Z",
+  "amenidades": [
+   "Áreas sociales",
+   "Área de estacionamiento",
+   "Área de lavado",
+   "Amplios accesos",
+   "Amplias áreas"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "Eliana Guerrero",
+   "observaciones": ""
+  },
+  "descripcion": "QR2 es un proyecto de apartamentos en Ciudad Juan Bosch, Santo Domingo Este. Cada unidad ofrece 80 metros, tres habitaciones, dos baños, área de lavado y un parqueo.\nEl conjunto cuenta con amplios accesos, espacios generosos y áreas sociales para compartir. También tiene zona de estacionamiento, y hay modelos de apartamento amueblados para que usted imagine su vida allí.\nEl plan de pago es sencillo: 20% inicial y 80% en la entrega. Además, el proyecto admite el Bono Primera Vivienda o Bajo Costo, una buena ayuda para quien compra su primer hogar.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2026",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Qué tamaño tienen los apartamentos?",
+    "r": "Tienen 80 metros, con tres habitaciones, dos baños, área de lavado y un parqueo."
+   },
+   {
+    "p": "¿Cuál es el plan de pago?",
+    "r": "El plan es 20% inicial y 80% en la entrega. Se acepta el Bono Primera Vivienda o Bajo Costo."
+   },
+   {
+    "p": "¿Qué precios tienen los apartamentos?",
+    "r": "Los precios están en pesos dominicanos: primer piso RD$ 4,250,000, segundo RD$ 4,150,000, tercero RD$ 4,050,000 y cuarto RD$ 4,300,000."
+   },
+   {
+    "p": "¿Cuándo se entregan?",
+    "r": "La primera etapa ya fue entregada. La segunda etapa se entrega en diciembre de 2026 y la fecha de la tercera aún no está definida."
+   }
+  ],
+  "fotos": [
+   "5f0694f4341f4846272f8bc77ccf2a9f",
+   "11a1a8cdcf3cdeebd031200d1aa391e1",
+   "23fa87a3d4100ffd07599e0a04fb033b",
+   "7b90a3a9bed22c273c08eb70cabffcd2",
+   "e59f76505b7918ed466c1b887d794af5",
+   "603d259bf2f8e1095e1e561d7989166e"
+  ],
+  "frase": "Su hogar propio en Ciudad Juan Bosch",
+  "nombre": "QR2 Ciudad Juan Bosch",
+  "origen": "crm",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 80,
+   "firmaPct": 20,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Usted paga 20% como inicial y el 80% restante en la entrega. Es un esquema claro y fácil de planificar.",
+    "titulo": "Plan de pago simple"
+   },
+   {
+    "texto": "El proyecto acepta el Bono Primera Vivienda o Bajo Costo, que puede facilitar la compra de su apartamento.",
+    "titulo": "Apoyo para su primera vivienda"
+   },
+   {
+    "texto": "Cada apartamento tiene 80 metros, tres habitaciones y dos baños, además de área de lavado y un parqueo.",
+    "titulo": "Espacio para su familia"
+   },
+   {
+    "texto": "El conjunto ofrece áreas sociales, amplios espacios y estacionamiento, pensados para la comodidad diaria de su familia.",
+    "titulo": "Áreas para compartir"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 3750000,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 4150000,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Ciudad Juan Bosch, Santo Domingo Este",
+  "id": "pmv76dod5j3hco"
+ },
+ {
+  "actualizado": "2026-10-14T20:21:15.624Z",
+  "amenidades": [
+   "Residencial cerrado con acceso controlado",
+   "Seguridad permanente",
+   "Piscina",
+   "Gimnasio",
+   "Área de BBQ",
+   "Parques infantiles",
+   "Zonas deportivas",
+   "Ciclovía",
+   "Áreas de estar",
+   "Gazebo"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "Bianca Larisa Lopez- Remax Capital",
+   "observaciones": ""
+  },
+  "descripcion": "Residencial Brisas de Romana Green es un proyecto de apartamentos en Villa Hermosa, La Romana. Son edificios de cuatro niveles, con ocho apartamentos cada uno y dos unidades por nivel.\nEl residencial es cerrado, con acceso controlado y seguridad permanente. Usted y su familia contarán con parques infantiles, zonas deportivas, ciclovía, gimnasio, piscina, área de BBQ y espacios para compartir.\nLos apartamentos tienen sala, cocina-comedor, área de lavado y balcón. Hay modelos de dos y tres habitaciones, con una azotea con terraza, y los precios parten desde US$ 72,665, con garantía fiduciaria.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Desde qué precio se venden los apartamentos?",
+    "r": "Los apartamentos parten desde US$ 72,665. La separación es de US$ 500."
+   },
+   {
+    "p": "¿Qué modelos de apartamento hay?",
+    "r": "Hay dos modelos. El tipo A tiene tres habitaciones y dos baños. El tipo B tiene dos habitaciones y dos baños. Ambos tienen sala, cocina-comedor, área de lavado y balcón."
+   },
+   {
+    "p": "¿Qué tan grandes son los apartamentos?",
+    "r": "El tipo A mide 80.35 m² y el tipo B, 66.05 m². Cada modelo tiene además un patio, y el primer nivel incluye patio de 7.5 m² (A) o 8.2 m² (B)."
+   },
+   {
+    "p": "¿El residencial es seguro?",
+    "r": "Sí. Es un residencial cerrado con acceso controlado y seguridad permanente. El proyecto también cuenta con garantía fiduciaria."
+   }
+  ],
+  "fotos": [
+   "e3ce2a92403ca611077698c210d2bdd0",
+   "345c93eb3b313474301b718ab7b39157",
+   "cdc3e864b74e1537e8ec72fc70d4a8b0",
+   "d619afbcedc38f3c0a9922206d4eaed2",
+   "e9c95e83ac803d0cf2da3c4f09b93fd3",
+   "caea4a07f117488f56793b4223becf34"
+  ],
+  "frase": "Su hogar en un residencial cerrado y seguro",
+  "nombre": "Residencial Brisas de Romana Green",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 500
+  },
+  "porque": [
+   {
+    "texto": "El proyecto cuenta con garantía fiduciaria. Además, puede separar su apartamento con solo US$ 500.",
+    "titulo": "Compra con respaldo"
+   },
+   {
+    "texto": "Es un residencial cerrado, con acceso controlado y seguridad permanente, pensado para que su familia viva con calma.",
+    "titulo": "Seguridad y tranquilidad"
+   },
+   {
+    "texto": "Cuenta con piscina, gimnasio, ciclovía, zonas deportivas y parques infantiles, para disfrutar cada día sin salir del residencial.",
+    "titulo": "Espacios para toda la familia"
+   },
+   {
+    "texto": "Cada apartamento incluye una azotea con sala, baño, área de BBQ y terraza, ideal para reunirse con los suyos.",
+    "titulo": "Apartamentos con azotea"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T20:21:15.624Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 72665,
+    "hab": 2,
+    "m2": 66
+   },
+   {
+    "banos": 2,
+    "desde": 0,
+    "hab": 3,
+    "m2": 80
+   }
+  ],
+  "url": "",
+  "zona": "Villa Hermosa, La Romana",
+  "id": "pmv76dod741h3j"
+ },
+ {
+  "actualizado": "2026-10-13T18:58:05.249Z",
+  "amenidades": [
+   "Piscina",
+   "Gimnasio",
+   "Gazebo con área de BBQ",
+   "Media cancha de baloncesto",
+   "Áreas verdes",
+   "Juegos infantiles",
+   "Guardería",
+   "Oficina administrativa",
+   "Garita de seguridad",
+   "Muros perimetrales",
+   "Intercom para acceso",
+   "Plaza comercial"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Avenida Ecológica",
+    "tiempo": ""
+   },
+   {
+    "lugar": "Plaza comercial del complejo",
+    "tiempo": ""
+   }
+  ],
+  "descripcion": "Residencial Caney Oriental es un proyecto habitacional moderno, pensado para su comodidad y su calidad de vida. Es un conjunto cerrado, con muros perimetrales y garita de seguridad, que reúne todo lo necesario en un solo lugar.\nAquí encontrará piscina, gimnasio, gazebo con área de BBQ, media cancha de baloncesto y áreas verdes. También hay juegos infantiles, guardería y oficina administrativa. Es un entorno cómodo para compartir en familia y disfrutar cada día.\nSe encuentra en la Avenida La Gaviota, con conexión directa a la Avenida Ecológica y acceso rápido a vías principales. Los apartamentos son de 1, 2 y 3 habitaciones, con un parqueo por unidad. Una buena opción para vivir o invertir.",
+  "direccion": "Av. La Gaviota, Ciudad Juan Bosch, Santo Domingo Este",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Qué tamaños de apartamento hay?",
+    "r": "Hay apartamentos de 1, 2 y 3 habitaciones, con metrajes aproximados desde 39 m² hasta 82 m²."
+   },
+   {
+    "p": "¿Los apartamentos incluyen parqueo?",
+    "r": "Sí. Cada apartamento incluye un parqueo."
+   },
+   {
+    "p": "¿Qué amenidades tiene el residencial?",
+    "r": "Cuenta con piscina, gimnasio, gazebo con área de BBQ, media cancha de baloncesto, áreas verdes, juegos infantiles, guardería y oficina administrativa."
+   },
+   {
+    "p": "¿Dónde se encuentra el proyecto?",
+    "r": "Está en la Avenida La Gaviota, Ciudad Juan Bosch, Santo Domingo Este. Conecta directamente con la Avenida Ecológica."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/62fdebc9a9b96a5e481c880ef4f15acb.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/4fa3f4469a7d28b53df30d85b49212be.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/e1b7fc3bc5502d8fa41890528aa5deca.jpg",
+   "e9b0de52fb5ecebc24ef9d745cf4085a",
+   "1581b2a79f243df6d35e9684de40870e"
+  ],
+  "frase": "Vivir bien, en un entorno cerrado y seguro",
+  "nombre": "Residencial Caney Oriental",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está sobre la Avenida La Gaviota y conecta directamente con la Avenida Ecológica. Esto le facilita llegar a los principales puntos de la ciudad.",
+    "titulo": "Ubicación con buena conexión"
+   },
+   {
+    "texto": "El proyecto cuenta con muros perimetrales, garita de seguridad e intercom para acceso. Usted y su familia viven con mayor tranquilidad.",
+    "titulo": "Un entorno cerrado y seguro"
+   },
+   {
+    "texto": "Piscina, gimnasio, gazebo con BBQ, cancha, juegos infantiles y guardería. Todo está dentro del residencial, a pocos pasos de su hogar.",
+    "titulo": "Amenidades para toda la familia"
+   },
+   {
+    "texto": "Los apartamentos tienen cerámicas importadas, cocinas con granito importado y ventanas de aluminio y vidrio. Una opción atractiva para vivir o invertir.",
+    "titulo": "Acabados de buena calidad"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:50:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 72219,
+    "hab": 1,
+    "m2": 39
+   },
+   {
+    "banos": 0,
+    "desde": 77209,
+    "hab": 2,
+    "m2": 61
+   },
+   {
+    "banos": 0,
+    "desde": 83622,
+    "hab": 3,
+    "m2": 70
+   }
+  ],
+  "url": "",
+  "zona": "Ciudad Juan Bosch, Santo Domingo Este",
+  "id": "pmv1gpxbqumusi"
+ },
+ {
+  "actualizado": "2026-10-13T18:49:57.357Z",
+  "amenidades": [
+   "Balcón",
+   "Área de parqueo",
+   "Lavadero"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Ciudad del Sol es un residencial de viviendas de bajo costo en Verón, Punta Cana. La tipología Coral ofrece un apartamento de dos habitaciones y un baño, con sala, comedor y cocina.\nEl balcón se une a la sala y permite disfrutar del aire libre. La cocina cuenta con lavadero, y los dormitorios tienen espacio para descansar con calma. Cada apartamento incluye área de parqueo.\nEs una opción pensada para quien busca una vivienda accesible en una de las zonas de mayor crecimiento del país. Un proyecto respaldado por un fideicomiso inmobiliario, con diseño y supervisión de arquitectos.",
+  "direccion": "Avenida Punta Cana, km 5 1/2, Distrito Municipal Turístico Verón Punta Cana, La Altagracia",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántas habitaciones tiene la tipología Coral?",
+    "r": "Tiene dos habitaciones, una de ellas principal, y un baño. Además cuenta con sala, comedor, cocina, balcón y lavadero."
+   },
+   {
+    "p": "¿Cuál es el área del apartamento?",
+    "r": "El plano indica un área de 60 m² para la tipología Coral."
+   },
+   {
+    "p": "¿Incluye parqueo?",
+    "r": "Sí. La descripción de la vivienda incluye un área de parqueo."
+   },
+   {
+    "p": "¿Dónde se encuentra el proyecto?",
+    "r": "En la Avenida Punta Cana, km 5 1/2, en el Distrito Municipal Turístico Verón Punta Cana, La Altagracia."
+   }
+  ],
+  "fotos": [],
+  "frase": "Su hogar en Punta Cana, pensado para vivir",
+  "nombre": "Residencial Ciudad del Sol",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El residencial está en Verón, sobre la Avenida Punta Cana, km 5 1/2, una zona turística y en crecimiento.",
+    "titulo": "Ubicación en Punta Cana"
+   },
+   {
+    "texto": "La tipología Coral reúne balcón, sala, comedor, cocina, dos habitaciones, un baño y lavadero en 60 m².",
+    "titulo": "Distribución práctica"
+   },
+   {
+    "texto": "El proyecto se desarrolla bajo un fideicomiso inmobiliario, administrado por Partners Fiduciarios, lo que aporta orden y confianza.",
+    "titulo": "Respaldo fiduciario"
+   },
+   {
+    "texto": "Ciudad del Sol está concebido como un residencial de viviendas de bajo costo, con parqueo incluido para cada unidad.",
+    "titulo": "Vivienda accesible"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T18:49:57.357Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 1,
+    "desde": 0,
+    "hab": 2,
+    "m2": 60
+   }
+  ],
+  "url": "",
+  "zona": "Verón, Punta Cana",
+  "id": "pmv71corzbpc04"
+ },
+ {
+  "actualizado": "2026-10-14T20:22:59.310Z",
+  "amenidades": [
+   "Piscina semiolímpica",
+   "Piscina infantil",
+   "Cancha de fútbol",
+   "Cancha de pádel",
+   "Cancha de baloncesto",
+   "Gimnasio",
+   "Área social",
+   "Área de juegos infantiles",
+   "Áreas verdes",
+   "Acceso controlado y regulado"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Melido Eduardo",
+   "observaciones": ""
+  },
+  "descripcion": "Colinas de las Brisas 06 es un complejo residencial de más de 990 familias. Se encuentra en la Avenida Coronel Rafael Tomás Fernández Domínguez, también conocida como Autopista San Isidro, en Santo Domingo Este.\nLos apartamentos de la Torre Tipo A tienen 2 y 3 habitaciones. Cuentan con pisos de cerámica, baños con cerámicas importadas, puertas y cocinas de madera, y carpintería de aluminio y vidrio.\nEl residencial ofrece piscina semiolímpica, piscina infantil, canchas deportivas, gimnasio, área social y juegos infantiles. Todo con acceso controlado y regulado, para que usted viva con comodidad y tranquilidad.",
+  "direccion": "Avenida Coronel Rafael Tomás Fernández Domínguez (Autopista San Isidro), Santo Domingo Este, República Dominicana",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el residencial?",
+    "r": "En la Avenida Coronel Rafael Tomás Fernández Domínguez, conocida como Autopista San Isidro, en Santo Domingo Este, República Dominicana."
+   },
+   {
+    "p": "¿Cuántas habitaciones tienen los apartamentos?",
+    "r": "Los apartamentos de la Torre Tipo A tienen 2 y 3 habitaciones."
+   },
+   {
+    "p": "¿Qué acabados incluyen?",
+    "r": "Baños con cerámicas importadas, puertas y cocinas de madera, pisos de cerámica y carpintería de aluminio y vidrio."
+   },
+   {
+    "p": "¿Qué áreas comunes ofrece el residencial?",
+    "r": "Piscina semiolímpica, piscina infantil, canchas de fútbol, pádel y baloncesto, gimnasio, área social, juegos infantiles, áreas verdes y acceso controlado."
+   }
+  ],
+  "fotos": [
+   "7f69b23729b67bac180fe61a363ff038",
+   "5aa01b6bdc08686140bc088119805fe3",
+   "9e5054115a0feb83fc0241f3f07939e0",
+   "487548335f0c3efb77641ddfcbcafc4f",
+   "38449546426557b46cba4bd7ce52fb40"
+  ],
+  "frase": "Un gran residencial en la Autopista San Isidro",
+  "nombre": "Residencial Colinas de las Brisas 06",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "Está sobre la Autopista San Isidro, una de las principales vías de acceso y desarrollo de Santo Domingo Este.",
+    "titulo": "Ubicación estratégica"
+   },
+   {
+    "texto": "La avenida conecta con importantes vías como la Charles de Gaulle y la Hípica, lo que facilita sus traslados por la ciudad.",
+    "titulo": "Buena conexión"
+   },
+   {
+    "texto": "Los apartamentos incluyen baños con cerámicas importadas, cocinas y puertas de madera, y carpintería de aluminio y vidrio.",
+    "titulo": "Acabados de calidad"
+   },
+   {
+    "texto": "Usted cuenta con piscinas, canchas, gimnasio y áreas para niños, dentro de un residencial con acceso controlado.",
+    "titulo": "Vida activa y segura"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-11-02T19:00:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 138000,
+    "hab": 2,
+    "m2": 89
+   },
+   {
+    "banos": 2,
+    "desde": 142500,
+    "hab": 3,
+    "m2": 108
+   }
+  ],
+  "url": "",
+  "zona": "Autopista San Isidro, Santo Domingo Este",
+  "id": "pmv76docus0qe7"
+ },
+ {
+  "actualizado": "2026-10-13T18:59:34.331Z",
+  "amenidades": [
+   "Spa",
+   "Restaurante",
+   "Farmacia",
+   "Minimarket",
+   "Lavandería",
+   "Oficina administrativa"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Plaza comercial",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Supermercados",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Coco Bongo",
+    "tiempo": "12 min"
+   },
+   {
+    "lugar": "Mejores playas de Punta Cana",
+    "tiempo": "15 min"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana",
+    "tiempo": "10 min"
+   }
+  ],
+  "descripcion": "Residencial Palmeras Resipal trae a Punta Cana un concepto fresco y moderno de villas independientes, pensado para ofrecer a sus propietarios un lugar seguro y armonioso, basado en el respeto y la seguridad de las familias.\nLas villas cuentan con acabados de calidad, incluyendo jacuzzi, closets y gabinetes de melamina, topes de granito, baños revestidos en cerámica porcelanato de 60x60 y puertas principales de madera sólida, todo en un entorno rodeado de amenidades y cercano a los principales puntos de interés de la zona.\nCon entregas listas, en proceso de finalización y programadas para septiembre de 2027, el proyecto ofrece distintas modalidades de pago adaptadas a cada etapa de construcción, siendo una oportunidad ideal tanto para vivienda como para inversión.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "septiembre 2027",
+  "estado": "En construcción",
+  "faq": [
+   {
+    "p": "¿Cuáles tipologías de villas ofrece el proyecto?",
+    "r": "Villas independientes de 2 y 3 habitaciones con 2 parqueos y garaje."
+   },
+   {
+    "p": "¿Cuál es el precio de las villas?",
+    "r": "Las villas de 2 habitaciones inician en USD$179,000 y las de 3 habitaciones en USD$285,000."
+   },
+   {
+    "p": "¿Cuándo es la entrega del proyecto?",
+    "r": "Hay unidades listas, en proceso de finalización y con entrega programada para septiembre de 2027."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento?",
+    "r": "El mantenimiento es de USD$1.50 por sq+ft."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/9add59248f8876a801f3041c92f20594.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/ea970a348ccfccaf49414e63d4e5b729.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/6cc5f047e5a3c5f4e3eee82fd630ef63.jpg",
+   "a427e2efb7749d081188b4b8b13ee139",
+   "ddd9466ef9a10f9138c18f50e4eef2e6"
+  ],
+  "frase": "Villas independientes frente a la tranquilidad de Punta Cana",
+  "nombre": "Residencial Palmeras Resipal",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "A solo 10 minutos del aeropuerto internacional de Punta Cana, plazas comerciales y supermercados.",
+    "titulo": "Ubicación privilegiada"
+   },
+   {
+    "texto": "Jacuzzi, closets de melamina, topes de granito y puertas de madera sólida en cada villa.",
+    "titulo": "Acabados de calidad"
+   },
+   {
+    "texto": "A 15 minutos de las mejores playas de Punta Cana y a 12 minutos de Coco Bongo.",
+    "titulo": "Cercanía a las mejores playas"
+   },
+   {
+    "texto": "Spa, restaurante, farmacia, minimarket, lavandería y oficina administrativa dentro del residencial.",
+    "titulo": "Amenidades completas"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-09-29T21:11:54.656Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 179000,
+    "hab": 2,
+    "m2": 1184.03
+   },
+   {
+    "banos": 0,
+    "desde": 285000,
+    "hab": 3,
+    "m2": 1722.23
+   }
+  ],
+  "url": "",
+  "zona": "Punta Cana, República Dominicana",
+  "id": "pmun69bfledw0x"
+ },
+ {
+  "actualizado": "2026-10-09T21:21:47.318Z",
+  "amenidades": [
+   "Piscina de adultos y de niños",
+   "Gimnasio",
+   "Dos áreas infantiles",
+   "Media cancha de baloncesto",
+   "Pista de caminatas",
+   "Parqueo de visitas",
+   "Garita de seguridad con control de acceso",
+   "Portón eléctrico",
+   "Plaza comercial en la entrada"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Plaza comercial Pueblo Bavaro",
+    "tiempo": "2 min"
+   },
+   {
+    "lugar": "Cocobongo",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Adventure Park",
+    "tiempo": "10 min"
+   },
+   {
+    "lugar": "Downtown Mall",
+    "tiempo": "11 min"
+   },
+   {
+    "lugar": "Pearl Beach Club",
+    "tiempo": "16 min"
+   },
+   {
+    "lugar": "Playa Bibijagua",
+    "tiempo": "19 min"
+   }
+  ],
+  "descripcion": "Este proyecto reúne apartamentos de 2 habitaciones y 72 m², listos para entrega inmediata y con título disponible. Son edificios de 3 niveles dentro del Residencial Pueblo Bavaro, una comunidad con seguridad y plaza comercial en la entrada.\nUsted encontrará piscina de adultos y de niños, gimnasio, dos áreas infantiles, media cancha de baloncesto y pista de caminatas. Cada apartamento tiene sala, comedor, cocina, balcón, área de lavado y un parqueo.\nSon unidades pensadas para vivir o para rentar, ya que los edificios son airbnb friendly. Además, el servicio llave en mano le permite recibir su propiedad amueblada y lista para disfrutar o poner en renta.",
+  "direccion": "Residencial Pueblo Bavaro, Punta Cana",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "Terminado",
+  "faq": [
+   {
+    "p": "¿Cuánto cuesta reservar una unidad?",
+    "r": "La separación es de US$1,000 y no es reembolsable. Los costos de transferencia son responsabilidad del cliente."
+   },
+   {
+    "p": "¿Qué tipos de apartamento hay y a qué precio?",
+    "r": "Todos tienen 2 habitaciones y 72 m². El segundo nivel con balcón cuesta US$96,750, el primero con patio US$106,000 y el tercero con terraza US$115,000."
+   },
+   {
+    "p": "¿Cuánto es el mantenimiento estimado?",
+    "r": "El mantenimiento estimado es de US$100."
+   },
+   {
+    "p": "¿Qué es el servicio llave en mano?",
+    "r": "Es un servicio que incluye concepto, diseño, presupuesto, amueblamiento y supervisión. Así recibe su propiedad lista para disfrutar o rentar. Se recomienda presupuestarlo unos meses antes de la entrega."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/cfc4f0e91e3a71fec0540eca16c6a569.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/4f4fd814a85df87301f3764220b669a7.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/f000978166e1830b5620d89330fbd410.jpg",
+   "173707a1820c70d1f64b7c48fa6e46e4",
+   "aadbcf6e0eeaa823fcf8cda4691eec13",
+   "7926749f84322c597f5e78af5cc5a2c2"
+  ],
+  "frase": "Apartamentos listos para vivir o rentar en Punta Cana",
+  "nombre": "Residencial Pueblo Bavaro, unidades listas",
+  "parqueos": 1,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 1000
+  },
+  "porque": [
+   {
+    "texto": "Los apartamentos están terminados y con título disponible. Usted puede recibirlos de inmediato, sin esperar la construcción.",
+    "titulo": "Entrega inmediata"
+   },
+   {
+    "texto": "La plaza comercial queda a 2 minutos. El aeropuerto internacional de Punta Cana está a 20 minutos.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Los edificios son airbnb friendly. Con el servicio llave en mano, su propiedad se entrega amueblada y lista para recibir huéspedes.",
+    "titulo": "Pensado para rentar"
+   },
+   {
+    "texto": "El residencial cuenta con seguridad, control de acceso, piscinas, gimnasio y áreas para niños. Todo en un mismo lugar.",
+    "titulo": "Comunidad con servicios"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-09T21:21:47.318Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 2,
+    "desde": 96750,
+    "hab": 2,
+    "m2": 72
+   }
+  ],
+  "url": "",
+  "zona": "Pueblo Bavaro, Punta Cana",
+  "id": "pmv1h0jef3hcsx"
+ },
+ {
+  "actualizado": "2026-11-02T19:00:26.046Z",
+  "amenidades": [
+   "Piscina privada",
+   "Terraza techada",
+   "Terraza abierta",
+   "Walk-in closet en la habitación principal",
+   "Balcones en el segundo nivel",
+   "Área de lavado",
+   "Jardineras",
+   "Barandas de cristal",
+   "Pérgola y louvers de madera"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "descripcion": "Resipal Etapa II ofrece villas de dos niveles en la calle Don Pipe Rijo, en Bávaro. Hay dos modelos: la Villa Tipo A, de dos habitaciones, y la Villa Tipo B, de tres. Son casas pensadas para vivir con comodidad y buena luz natural.\nEn el primer nivel encontrará vestíbulo, sala de estar, comedor y cocina, además de un baño y un área de lavado. Hacia el exterior hay terraza techada, terraza abierta y piscina privada, con dos parqueos.\nEn el segundo nivel están las habitaciones, cada una con su baño y su balcón. La principal cuenta con walk-in closet, para disfrutar de un espacio privado.",
+  "direccion": "Calle Don Pipe Rijo, Bávaro, La Altagracia, Región Este, República Dominicana",
+  "disp": "Disponible",
+  "entrega": "Septiembre 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántas habitaciones tienen las villas?",
+    "r": "Hay dos modelos: la Villa Tipo A, con dos habitaciones, y la Villa Tipo B, con tres. Las habitaciones están en el segundo nivel y cada una tiene su baño."
+   },
+   {
+    "p": "¿Tienen piscina?",
+    "r": "Sí. Los planos muestran una piscina privada junto a una terraza techada y una terraza abierta."
+   },
+   {
+    "p": "¿Cuántos parqueos incluyen?",
+    "r": "El plano del primer nivel muestra dos áreas de parqueo, además de un acceso peatonal y una entrada."
+   },
+   {
+    "p": "¿Dónde están ubicadas?",
+    "r": "En la calle Don Pipe Rijo, en Bávaro, provincia La Altagracia, dentro del proyecto Resipal Etapa II."
+   }
+  ],
+  "fotos": [
+   "808bbc64fcf65ac051eebc23581469e9",
+   "bf0c9485ab687790f1b85ef1a98d9592",
+   "22fea88ea6f063b62d0694333fe5dc0c",
+   "38939449c4632d6392695bdf3869d5b1",
+   "2414d1a3fba82c711931133f29a71406",
+   "3a1b65eb53bcc8b7a99116b98b78ee59"
+  ],
+  "frase": "Villas de dos niveles con piscina propia",
+  "nombre": "Resipal Etapa II",
+  "parqueos": 2,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "La villa se encuentra en la calle Don Pipe Rijo, en Bávaro, una zona de la región Este del país.",
+    "titulo": "Ubicación en Bávaro"
+   },
+   {
+    "texto": "Cuenta con piscina privada y dos terrazas, una techada y otra abierta, para disfrutar del aire libre en casa.",
+    "titulo": "Piscina propia"
+   },
+   {
+    "texto": "Las áreas sociales están en el primer nivel y las habitaciones en el segundo, lo que ofrece orden e intimidad.",
+    "titulo": "Dos niveles bien distribuidos"
+   },
+   {
+    "texto": "Cada habitación tiene su baño y su balcón. La principal suma un walk-in closet amplio.",
+    "titulo": "Habitaciones con baño propio"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-12T21:50:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Villa",
+  "tipologias": [
+   {
+    "banos": 3,
+    "desde": 215000,
+    "hab": 2,
+    "m2": 123
+   },
+   {
+    "banos": 3,
+    "desde": 285000,
+    "hab": 3,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 315000,
+    "hab": 4,
+    "m2": 163
+   }
+  ],
+  "url": "",
+  "zona": "Bávaro, La Altagracia",
+  "id": "pmv1hoqqmnjk32"
+ },
+ {
+  "actualizado": "2026-10-14T21:10:00.000Z",
+  "amenidades": [
+   "Área social"
+  ],
+  "brochureUrl": "https://drive.usercontent.google.com/download?id=1kt8TxBFdIaDHPCIGsr6PHXdzkX3clpvw&export=download&confirm=t",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "3.00%",
+   "contacto": "Melba Rivas 89-920-1928",
+   "observaciones": ""
+  },
+  "descripcion": "Riverside es un proyecto de apartamentos en Jacobo Majluta. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$88,150, con unidades de hasta US$113,980. La entrega está prevista para diciembre 2027-junio 2028.\nEntre sus áreas y facilidades se encuentran: área social. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Diciembre 2027-Junio 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Riverside está en Jacobo Majluta."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$88,150. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para diciembre 2027-junio 2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "babc644e223468188d60dd5f64886ea8",
+   "2fab845481c3299cacc18ac8f64f7ed4",
+   "cb7267c7ca9a9ab2628855de7b483f9b",
+   "5658d0b2843849e0e3863ebb43bbb9b7",
+   "c4a0222b6fe8554c3308fb37abd55a38",
+   "0dda4b3f17b853771ad259daa2efd449"
+  ],
+  "frase": "Apartamentos en Jacobo Majluta",
+  "nombre": "Riverside",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Jacobo Majluta, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$88,150, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para diciembre 2027-junio 2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye área social, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 88150,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 99875,
+    "hab": 2,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 113980,
+    "hab": 3,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Jacobo Majluta",
+  "id": "pmv76dod68e8z0"
+ },
+ {
+  "actualizado": "2026-10-14T21:35:00.000Z",
+  "amenidades": [
+   "4 piscinas con 900 m² en total",
+   "Gazebo de uso común",
+   "Jardines en todo el proyecto",
+   "Ascensor en todos los bloques",
+   "Gimnasio y administración",
+   "Área infantil"
+  ],
+  "brochureUrl": "https://www.dropbox.com/scl/fo/yz027prbyud9l06elqgal/h/1-Brochure?rlkey=55ns0qntcd6pe7t8zarc2q9d5&dl=1",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [
+   {
+    "lugar": "Aeropuerto Internacional de La Romana (LRM)",
+    "tiempo": "15 km"
+   },
+   {
+    "lugar": "Altos de Chavón",
+    "tiempo": "7 km"
+   },
+   {
+    "lugar": "Isla Saona",
+    "tiempo": "22 km"
+   },
+   {
+    "lugar": "Ciudad de La Romana",
+    "tiempo": "26 km"
+   },
+   {
+    "lugar": "Aeropuerto Internacional de Punta Cana (PUJ)",
+    "tiempo": "66 km"
+   }
+  ],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "German Escarfullery",
+   "observaciones": ""
+  },
+  "descripcion": "Riviera Bayahíbe es un condominio de 154 unidades, con apartamentos de 1 y 2 habitaciones. Sus áreas de construcción van de 60 a 97 metros cuadrados. Se construirá en 4 etapas y está pensado para la familia.\nSu diseño tiene toques rústicos y respeta la naturaleza. Usted encontrará jardines por todo el proyecto, cuatro piscinas, un gazebo de uso común y un área infantil. Todos los bloques cuentan con ascensor.\nBayahíbe es un poblado turístico de playa de arena blanca y aguas tranquilas. El concepto ofrece lujo a un precio de entrada muy asequible. Además, algunas unidades pueden unirse para lograr espacios más amplios.",
+  "direccion": "Bayahíbe, San Rafael del Yuma, provincia La Altagracia, República Dominicana",
+  "disp": "Disponible",
+  "entrega": "",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Cuántas unidades tiene el proyecto?",
+    "r": "El condominio tendrá 154 unidades, de 1 y 2 habitaciones, con áreas de construcción de 60 a 97 metros cuadrados. Se construirá en 4 etapas."
+   },
+   {
+    "p": "¿Qué amenidades ofrece?",
+    "r": "Cuenta con 4 piscinas que suman 900 metros cuadrados, gazebo común, jardines, área infantil, gimnasio y administración. Todos los bloques tienen ascensor."
+   },
+   {
+    "p": "¿A qué distancia están los aeropuertos?",
+    "r": "El Aeropuerto de La Romana está a 15 km y el de Punta Cana a 66 km. El de Las Américas queda a 114 km."
+   },
+   {
+    "p": "¿Se pueden unir unidades?",
+    "r": "Sí, el brochure indica que las unidades pueden unirse para obtener espacios más amplios. La configuración debe confirmarse con los planos técnicos del proyecto."
+   }
+  ],
+  "fotos": [
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/7d9b4c0620991df72eb55845a2bfe6c0.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/dda6106c35b7311753e37e9142713fe1.jpg",
+   "https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/fotos/064d697cdeb432087e0fdbb142518f90.jpg",
+   "ec2d0c58205cd35d58d26e6a290d145d",
+   "2a7b71bc24eed2561a8d8f5dbac74e2c",
+   "4dd4913e3492b67c2092f55bcd29f50d"
+  ],
+  "frase": "Lujo junto al mar Caribe, a precio asequible",
+  "nombre": "Riviera Bayahíbe",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El Aeropuerto Internacional de La Romana está a 15 km. El de Punta Cana se encuentra a 66 km del proyecto.",
+    "titulo": "Cerca del aeropuerto"
+   },
+   {
+    "texto": "Bayahíbe tiene playa de arena blanca y aguas cristalinas. Es conocido por su buceo y por las excursiones a la isla Saona.",
+    "titulo": "Entorno de playa y buceo"
+   },
+   {
+    "texto": "El proyecto integra jardines y piscinas naturales con un diseño arquitectónico de toques rústicos, pensado para el disfrute de toda la familia.",
+    "titulo": "Diseño que respeta la naturaleza"
+   },
+   {
+    "texto": "El concepto ofrece una propuesta de lujo con un precio de entrada muy asequible. Hay unidades que pueden unirse para ganar espacio.",
+    "titulo": "Lujo a precio de entrada asequible"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:35:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 112000,
+    "hab": 1,
+    "m2": 60
+   },
+   {
+    "banos": 0,
+    "desde": 187000,
+    "hab": 2,
+    "m2": 80
+   }
+  ],
+  "url": "",
+  "zona": "Bayahíbe, San Rafael del Yuma, La Altagracia",
+  "id": "pmv5qjjgbqc0sr"
+ },
+ {
+  "actualizado": "2026-10-14T21:15:00.000Z",
+  "amenidades": [
+   "Área comercial"
+  ],
+  "brochureUrl": "https://drive.usercontent.google.com/download?id=1QtFdR8TGKr2GertBPfjELzgrzW1uUdV-&export=download&confirm=t",
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "2.54%",
+   "contacto": "Wilmer Collado 829-272-9145",
+   "observaciones": ""
+  },
+  "descripcion": "Riviera del Este Residences es un proyecto de apartamentos en San Pedro de Macorís. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nEl precio se confirma directamente con su asesor, según la unidad y la disponibilidad. La entrega está prevista para enero 2028.\nEntre sus áreas y facilidades se encuentran: área comercial. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Enero 2028",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Riviera del Este Residences está en San Pedro de Macorís."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "El precio se confirma con su asesor según la unidad disponible."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para enero 2028."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "d75ab2486b11ec7b4c378d8e9a1af44c",
+   "e70934932dd0cd5a897763f2469ad773",
+   "4ff68dd999e7369954b82160b0422500",
+   "b531485975643c262ea8dae360867859",
+   "585860eed81bd8990226998982ddf14e",
+   "d10444c487abb4c4c77cfe6f4ba51253"
+  ],
+  "frase": "Apartamentos en San Pedro de Macorís",
+  "nombre": "Riviera del Este Residences",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en San Pedro de Macorís, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "La entrega está prevista para enero 2028, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye área comercial, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-14T21:15:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 82500,
+    "hab": 1,
+    "m2": 60
+   },
+   {
+    "banos": 0,
+    "desde": 71500,
+    "hab": 2,
+    "m2": 75
+   },
+   {
+    "banos": 0,
+    "desde": 84500,
+    "hab": 3,
+    "m2": 90
+   }
+  ],
+  "url": "",
+  "zona": "San Pedro de Macorís",
+  "id": "pmv76doeusg171"
+ },
+ {
+  "actualizado": "2026-10-15T21:45:00.000Z",
+  "amenidades": [
+   "Línea blanca"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda Valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Romana South Beach II es un proyecto de apartamentos en La Romana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$197,000. La entrega está prevista para mayo 2026.\nEntre sus áreas y facilidades se encuentran: línea blanca. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Mayo 2026",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Romana South Beach II está en La Romana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$197,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para mayo 2026."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [
+   "908b3094ecca71d11f625f1d4654f64a",
+   "f27d948f5fc236265f87499797c54c28",
+   "477847be69766f12a5c03ee5675b35b0",
+   "51af0207c2e9b12613d76000dcce0165",
+   "fe9e636f2132b34a44eddacee3d80bfa",
+   "53f633d5f8615139b6fc58083a49d8e2"
+  ],
+  "frase": "Apartamentos en La Romana",
+  "nombre": "Romana South Beach II",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en La Romana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$197,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para mayo 2026, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye línea blanca, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 197000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/EiBQ0BtDUo4JbegKZrxNG6",
+  "zona": "La Romana",
+  "id": "pmv76dod8rciyz"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "—",
+   "contacto": "—",
+   "observaciones": ""
+  },
+  "descripcion": "Royal Gardens es un proyecto de apartamentos en Vista Cana, Punta Cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$84,150, con unidades de hasta US$85,680. La entrega está prevista para 30/06/2025.\nSu asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "30/06/2025",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Royal Gardens está en Vista Cana, Punta Cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$84,150. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para 30/06/2025."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Vista Cana",
+  "nombre": "Royal Gardens",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Vista Cana, Punta Cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$84,150, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para 30/06/2025, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 84150,
+    "hab": 1,
+    "m2": 0
+   },
+   {
+    "banos": 0,
+    "desde": 85680,
+    "hab": 2,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "zona": "Vista Cana, Punta Cana",
+  "id": "pmv76doebeagua"
+ },
+ {
+  "actualizado": "2026-10-13T21:30:00.000Z",
+  "amenidades": [
+   "Piscina"
+  ],
+  "captador": "German Escarfullery",
+  "captadorId": "cmuoj7lj5qjre",
+  "captadorTel": "",
+  "cercanias": [],
+  "crm": {
+   "comision": "4.00%",
+   "contacto": "Yolanda valerio",
+   "observaciones": ""
+  },
+  "descripcion": "Sand Residences At Las Canas es un proyecto de apartamentos en Punta cana. Es una opción pensada para vivir con comodidad o para invertir en una zona con buena demanda.\nLos precios empiezan desde US$317,000. La entrega está prevista para septiembre 2025.\nEntre sus áreas y facilidades se encuentran: piscina. Su asesor le enviará el brochure completo, los planos y la forma de pago.",
+  "direccion": "",
+  "disp": "Disponible",
+  "entrega": "Septiembre 2025",
+  "estado": "En planos",
+  "faq": [
+   {
+    "p": "¿Dónde está ubicado el proyecto?",
+    "r": "Sand Residences At Las Canas está en Punta cana."
+   },
+   {
+    "p": "¿Desde cuánto cuesta?",
+    "r": "Los precios empiezan desde US$317,000. Su asesor le confirma la disponibilidad y el precio de cada unidad."
+   },
+   {
+    "p": "¿Cuándo es la entrega?",
+    "r": "La entrega está prevista para septiembre 2025."
+   },
+   {
+    "p": "¿Cómo recibo el brochure y los planos?",
+    "r": "Escríbale a su asesor por WhatsApp y le enviará el brochure, los planos y la forma de pago."
+   }
+  ],
+  "fotos": [],
+  "frase": "Apartamentos en Punta cana",
+  "nombre": "Sand Residences At Las Canas",
+  "origen": "crm",
+  "parqueos": 0,
+  "plan": {
+   "cuotasPct": 0,
+   "entregaPct": 0,
+   "firmaPct": 0,
+   "meses": 0,
+   "separacion": 0
+  },
+  "porque": [
+   {
+    "texto": "El proyecto está en Punta cana, una zona con acceso a servicios y buena proyección.",
+    "titulo": "Buena ubicación"
+   },
+   {
+    "texto": "Puede entrar al proyecto desde US$317,000, con planes de pago que su asesor le explica.",
+    "titulo": "Precio de entrada"
+   },
+   {
+    "texto": "La entrega está prevista para septiembre 2025, lo que le permite planificar su inversión.",
+    "titulo": "Entrega definida"
+   },
+   {
+    "texto": "Incluye piscina, para disfrutar más de su propiedad.",
+    "titulo": "Amenidades"
+   }
+  ],
+  "precioRef": false,
+  "preciosAl": "2026-10-13T21:30:00.000Z",
+  "subidoPor": "Robert Cavallo",
+  "tipo": "Apartamento",
+  "tipologias": [
+   {
+    "banos": 0,
+    "desde": 317000,
+    "hab": 1,
+    "m2": 0
+   }
+  ],
+  "url": "",
+  "whatsapp": "https://chat.whatsapp.com/DiZHkL5L0TrJiHuBnQF6Az",
+  "zona": "Punta cana",
+  "id": "pmv76doec1nt6k"
+ }
+]
