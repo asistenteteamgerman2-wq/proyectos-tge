@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penthouse frente al mar — Punta Cana | REMAX Metropolitana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sand:#EDE6D8;
+    --sand-deep:#E1D7C0;
+    --emerald:#0B1638;
+    --emerald-soft:#16234C;
+    --emerald-pale:#E4E7F0;
+    --gold:#C6A05A;
+    --gold-deep:#9C7A3B;
+    --ink:#10182C;
+    --paper:#FAF7F1;
+    --muted: rgba(16,24,44,0.62);
+    --muted-soft: rgba(16,24,44,0.44);
+    --line: rgba(16,24,44,0.13);
+    --whatsapp:#25D366;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  p{ text-align:justify; }
+  p{ text-align:justify; }
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--sand);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Playfair Display',serif; font-weight:600; letter-spacing:-0.01em;}
+  a{color:inherit; text-decoration:none;}
+  img{display:block; max-width:100%;}
+  button{font-family:inherit; cursor:pointer;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
+  .gold-text{ color:var(--gold); }
+
+  .reveal{opacity:0; transform:translateY(16px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){ .reveal{opacity:1; transform:none;} html{scroll-behavior:auto;} }
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky; top:0; z-index:70;
+    background:var(--emerald); color:var(--sand);
+  }
+  nav.wrap{ display:flex; align-items:center; justify-content:space-between; height:76px; }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand-mark{
+    width:34px; height:34px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .brand-mark img{ width:100%; height:100%; object-fit:contain; }
+  .brand-text{ font-size:16.5px; letter-spacing:0.03em; color:rgba(237,230,216,0.9); }
+  .brand-text b{ color:var(--sand); font-weight:600; }
+  .nav-links{ display:flex; gap:26px; font-size:13.5px; }
+  .nav-links a{ color:rgba(237,230,216,0.78); transition:color .15s ease; }
+  .nav-links a:hover{ color:var(--gold); }
+  .header-cta{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--gold); color:var(--emerald);
+    padding:10px 18px; border-radius:3px; font-weight:600; font-size:13px;
+    border:none;
+  }
+  .header-cta svg{width:15px;height:15px;}
+  @media (max-width:860px){ .nav-links{ display:none; } }
+
+  /* ---------- FLOATING WHATSAPP ---------- */
+  .float-wa{
+    position:fixed; right:18px; bottom:18px; z-index:80;
+    display:flex; align-items:center; gap:10px;
+    background:var(--whatsapp); color:#fff;
+    padding:15px 20px; border-radius:100px;
+    box-shadow:0 10px 30px rgba(37,211,102,0.4);
+    font-weight:700; font-size:14px;
+  }
+  .float-wa svg{width:21px;height:21px;}
+  @media (max-width:560px){ .float-wa span{display:none;} .float-wa{padding:15px;} }
+
+  /* ---------- HERO ---------- */
+  .hero{ position:relative; min-height:94vh; display:flex; align-items:flex-end; }
+  .hero-img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 95%; }
+  .hero::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(22,35,76,0.25) 0%, rgba(22,35,76,0.35) 45%, rgba(5,9,24,0.92) 100%);
+  }
+  .hero-content{ position:relative; z-index:2; width:100%; padding-bottom:60px; }
+  .hero-badge{
+    display:inline-flex; align-items:center; gap:8px; background:rgba(176,141,91,0.16);
+    border:1px solid rgba(176,141,91,0.5); color:var(--gold);
+    padding:7px 14px; border-radius:100px; font-size:12px; font-weight:600; margin-bottom:22px;
+  }
+  .hero h1{ color:var(--sand); font-size:clamp(46px,7.5vw,84px); line-height:1.02; max-width:760px; font-weight:700; letter-spacing:-0.015em; text-shadow:0 4px 30px rgba(0,0,0,0.35); }
+  .hero h1 em{ color:var(--sand); font-style:italic; font-weight:600; }
+  .hero-loc{ display:flex; align-items:center; gap:8px; margin-top:18px; color:rgba(237,230,216,0.8); font-size:14.5px; max-width:600px; }
+  .hero-loc svg{ width:16px;height:16px; color:var(--gold); flex-shrink:0; margin-top:2px; }
+
+  .hero-bottom{
+    display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:26px;
+    margin-top:38px; padding-top:30px; border-top:1px solid rgba(237,230,216,0.18);
+  }
+  .hero-price .l{
+    color:rgba(237,230,216,0.65); font-size:11.5px; margin-bottom:10px; letter-spacing:0.16em;
+    text-transform:uppercase; display:flex; align-items:center; gap:10px;
+  }
+  .hero-price .l::before{ content:''; width:18px; height:1px; background:var(--gold); display:inline-block; }
+  .hero-price .amount{
+    font-family:'Playfair Display',serif; color:var(--sand); font-size:clamp(44px,7vw,76px); font-weight:600;
+    line-height:1; letter-spacing:-0.01em; text-shadow:0 2px 24px rgba(0,0,0,0.25);
+  }
+  .hero-price .amount .gold-text{ color:var(--gold); }
+  .hero-actions{ display:flex; gap:12px; flex-wrap:wrap; }
+  .btn-wa{
+    display:inline-flex; align-items:center; gap:9px; background:var(--whatsapp); color:#fff;
+    padding:16px 26px; border-radius:3px; font-weight:700; font-size:14.5px; border:none;
+  }
+  .btn-wa svg{ width:19px;height:19px; }
+  .btn-gold{
+    display:inline-flex; align-items:center; gap:9px; background:var(--gold); color:var(--emerald);
+    padding:16px 26px; border-radius:3px; font-weight:700; font-size:14.5px; border:none;
+  }
+
+  /* ---------- SECTION ---------- */
+  .section{ padding:96px 0; }
+  .section.tight{ padding:72px 0; }
+  .kicker{ font-size:12.5px; color:var(--gold-deep); font-weight:700; }
+  .section h2{ font-size:clamp(28px,4vw,40px); margin-top:10px; }
+  .section-sub{ color:var(--muted); font-size:15px; margin-top:14px; max-width:600px; }
+
+  /* ---------- GALLERY ---------- */
+  .media-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:32px;
+  }
+  .media-item{ position:relative; border-radius:6px; overflow:hidden; cursor:pointer; background:var(--emerald); aspect-ratio:4/3; }
+  .media-item img, .media-item video{ width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+  .media-item:hover img, .media-item:hover video{ transform:scale(1.05); }
+  .media-item.video-tile::after{
+    content:''; position:absolute; inset:0; background:rgba(5,9,24,0.28);
+  }
+  .play-badge{
+    position:absolute; inset:0; display:flex; align-items:center; justify-content:center; z-index:2;
+  }
+  .play-badge span{
+    width:56px; height:56px; border-radius:50%; background:rgba(251,248,242,0.92);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .play-badge svg{ width:20px; height:20px; color:var(--emerald); margin-left:3px; }
+  @media (max-width:860px){
+    .media-grid{ grid-template-columns:repeat(2,1fr); }
+  }
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed; inset:0; background:rgba(5,9,24,0.94); z-index:200;
+    display:none; align-items:center; justify-content:center; padding:26px;
+  }
+  .lightbox.open{ display:flex; }
+  .lightbox-content{ max-width:900px; width:100%; max-height:88vh; }
+  .lightbox-content img, .lightbox-content video{ width:100%; max-height:80vh; object-fit:contain; border-radius:4px; }
+  .lightbox-close{
+    position:absolute; top:24px; right:26px; width:42px; height:42px; border-radius:50%;
+    background:rgba(251,248,242,0.15); color:var(--sand); border:none;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .lightbox-nav{
+    position:absolute; top:50%; transform:translateY(-50%); width:46px; height:46px; border-radius:50%;
+    background:rgba(251,248,242,0.15); color:var(--sand); border:none;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .lightbox-prev{ left:18px; } .lightbox-next{ right:18px; }
+  @media (max-width:640px){ .lightbox-nav{ width:38px; height:38px; } }
+
+  /* ---------- VALUE PROP ---------- */
+  .value-section{ background:var(--emerald); color:var(--sand); }
+  .value-section .kicker{ color:var(--gold); }
+  .value-section h2{ color:var(--sand); }
+  .value-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; margin-top:44px; }
+  @media (max-width:900px){ .value-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:560px){ .value-grid{ grid-template-columns:1fr; } }
+  .value-card{ padding-top:20px; border-top:1px solid rgba(237,230,216,0.22); }
+  .value-card .num{ font-family:'Playfair Display',serif; color:var(--gold); font-size:26px; margin-bottom:12px; }
+  .value-card h3{ color:var(--sand); font-size:17px; margin-bottom:8px; }
+  .value-card p{ color:rgba(237,230,216,0.68); font-size:13.5px; }
+
+  /* ---------- AMENITIES ---------- */
+  .amenity-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:32px; }
+  @media (max-width:900px){ .amenity-grid{ grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:640px){ .amenity-grid{ grid-template-columns:repeat(2,1fr); } }
+  .amenity-card{
+    background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:24px 18px; text-align:center;
+  }
+  .amenity-card .icon{
+    width:44px; height:44px; border-radius:50%; background:var(--emerald-pale); margin:0 auto 14px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .amenity-card .icon svg{ width:20px; height:20px; color:var(--emerald); }
+  .amenity-card span{ font-size:13.5px; font-weight:600; }
+
+  .amenity-card.has-photo{
+    position:relative; padding:0; text-align:left; overflow:hidden; aspect-ratio:3/4;
+    border:none;
+  }
+  .amenity-card.has-photo img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .amenity-card.has-photo::after{
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(5,9,24,0) 45%, rgba(5,9,24,0.82) 100%);
+  }
+  .amenity-card.has-photo .icon{
+    position:relative; z-index:2; background:rgba(251,248,242,0.16); -webkit-backdrop-filter:blur(2px); backdrop-filter:blur(2px);
+    margin:16px 0 0 16px;
+  }
+  .amenity-card.has-photo .icon svg{ color:#fff; }
+  .amenity-card.has-photo span{
+    position:relative; z-index:2; color:var(--sand); display:block; padding:0 16px 16px;
+    margin-top:auto;
+  }
+  .amenity-card.has-photo{ display:flex; flex-direction:column; justify-content:space-between; }
+
+  /* ---------- SPECS STRIP ---------- */
+  .specs-strip{ background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .specs-row{ display:flex; flex-wrap:wrap; justify-content:space-between; padding:38px 0; gap:22px; }
+  .spec-item{ display:flex; align-items:center; gap:14px; flex:1; min-width:150px; }
+  .spec-item .icon{
+    width:48px; height:48px; border-radius:50%; background:var(--emerald-pale); flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .spec-item .icon svg{ width:24px; height:24px; color:var(--emerald); }
+  .spec-item .text{ text-align:left; }
+  .spec-item .v{ font-family:'Playfair Display',serif; font-size:26px; font-weight:600; color:var(--emerald); line-height:1.1; }
+  .spec-item .l{ font-size:12px; color:var(--muted-soft); margin-top:4px; }
+
+  /* ---------- LOCATION ---------- */
+  .location-grid{ display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start; margin-top:20px; }
+  @media (max-width:900px){ .location-grid{ grid-template-columns:1fr; } }
+  .addr-box{
+    background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:20px 22px; margin-top:22px;
+    display:flex; gap:12px; align-items:flex-start;
+  }
+  .addr-box svg{ width:18px; height:18px; color:var(--gold-deep); flex-shrink:0; margin-top:2px; }
+  .addr-box p{ font-size:13.5px; color:var(--ink); }
+  .nearby-list{ display:flex; flex-direction:column; gap:14px; }
+  .nearby-card{
+    display:flex; align-items:center; gap:16px; background:var(--paper); border:1px solid var(--line);
+    border-radius:8px; padding:18px 20px;
+  }
+  .nearby-card .n{ font-family:'Playfair Display',serif; font-size:20px; color:var(--gold-deep); font-weight:600; min-width:26px; }
+  .nearby-card .t{ font-weight:600; font-size:15px; color:var(--ink); }
+  .nearby-card .d{ font-family:'Playfair Display',serif; font-size:20px; color:var(--gold-deep); font-weight:700; letter-spacing:-0.01em; }
+  .map-frame{ border-radius:8px; overflow:hidden; border:1px solid var(--line); aspect-ratio:4/3; margin-top:22px; }
+  .map-frame iframe{ width:100%; height:100%; border:0; }
+
+  /* ---------- FAQ ---------- */
+  .faq-list{ margin-top:36px; max-width:760px; }
+  .faq-item{ border-bottom:1px solid var(--line); }
+  .faq-q{
+    width:100%; text-align:left; background:none; border:none; padding:22px 4px;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    font-family:'Playfair Display',serif; font-size:17px; font-weight:600; color:var(--ink);
+  }
+  .faq-q .plus{ width:22px; height:22px; flex-shrink:0; position:relative; }
+  .faq-q .plus::before, .faq-q .plus::after{
+    content:''; position:absolute; background:var(--gold-deep); border-radius:2px;
+  }
+  .faq-q .plus::before{ top:50%; left:0; width:100%; height:2px; margin-top:-1px; }
+  .faq-q .plus::after{ left:50%; top:0; height:100%; width:2px; margin-left:-1px; transition:transform .2s ease; }
+  .faq-item.open .plus::after{ transform:rotate(90deg); opacity:0; }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
+  .faq-a p{ padding:0 4px 22px; color:var(--muted); font-size:14px; max-width:640px; }
+  .faq-item.open .faq-a{ max-height:220px; }
+
+  /* ---------- CONTACT ---------- */
+  .contact-section{ background:var(--emerald); color:var(--sand); }
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start; }
+  @media (max-width:900px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-section .kicker{ color:var(--gold); }
+  .contact-section h2{ color:var(--sand); }
+  .agent-card{
+    margin-top:28px; background:rgba(251,248,242,0.06); border:1px solid rgba(237,230,216,0.18);
+    border-radius:10px; padding:22px; display:flex; gap:16px; align-items:center;
+  }
+  .agent-avatar{
+    width:52px; height:52px; border-radius:50%; background:var(--gold); color:var(--emerald);
+    display:flex; align-items:center; justify-content:center; font-family:'Playfair Display',serif;
+    font-weight:700; font-size:19px; flex-shrink:0; overflow:hidden;
+  }
+  .agent-avatar img{ width:100%; height:100%; object-fit:cover; }
+  .agent-card .name{ font-weight:600; font-size:15px; }
+  .agent-card .role{ font-size:12.5px; color:rgba(237,230,216,0.65); margin-top:2px; }
+  .agent-card .contact-line{ font-size:12.5px; color:rgba(237,230,216,0.75); margin-top:6px; }
+
+  .form-card{ background:var(--paper); border-radius:12px; padding:30px; }
+  .field{ margin-bottom:16px; }
+  .field label{ display:block; font-size:12px; font-weight:700; color:var(--muted); margin-bottom:6px; }
+  .field input, .field textarea{
+    width:100%; background:#fff; border:1px solid var(--line); color:var(--ink);
+    padding:12px 14px; border-radius:6px; font-size:14px; font-family:inherit;
+  }
+  .field textarea{ resize:vertical; min-height:90px; }
+  .field input:focus, .field textarea:focus{ outline:none; border-color:var(--gold); }
+  .submit-wa{
+    width:100%; display:inline-flex; align-items:center; justify-content:center; gap:9px;
+    background:var(--whatsapp); color:#fff; padding:15px; border-radius:6px; border:none;
+    font-weight:700; font-size:14.5px; margin-top:4px;
+  }
+  .submit-wa svg{ width:18px;height:18px; }
+
+  /* ---------- FOOTER ---------- */
+  footer{ background:#060A1C; color:rgba(237,230,216,0.7); padding:44px 0; }
+  footer .wrap{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:18px; }
+  .foot-brand{ display:flex; align-items:center; gap:12px; color:var(--sand); }
+  .foot-note{ font-size:12px; margin-top:6px; }
+  .foot-contact{ text-align:right; font-size:13px; line-height:1.7; }
+
+  @media (max-width:560px){
+    .wrap{ padding:0 18px; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Apartment",
+  "name": "Penthouse en El Cortecito, Bávaro",
+  "description": "Penthouse exclusivo a pasos de la playa en El Cortecito, Punta Cana.",
+  "url": "https://equipogerman.com/propiedades/penthouse-el-cortecito",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Punta Cana",
+    "addressRegion": "La Altagracia",
+    "addressCountry": "DO"
+  },
+  "offeredBy": {
+    "@type": "RealEstateAgent",
+    "name": "Germán Escarfullery",
+    "telephone": "+18093502370",
+    "email": "germane@remaxm.net",
+    "worksFor": {
+      "@type": "RealEstateAgent",
+      "name": "RE/MAX Metropolitana"
+    }
+  }
+}
+</script>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">
+      <div class="brand-mark"><img src="fotos/cceaad8d799bd35f58188641d9c952f5.png" alt="Logo"></div>
+      <div class="brand-text"><b>REMAX</b></div>
+    </div>
+    <div class="nav-links">
+      <a href="#galeria">Galería</a>
+      <a href="#amenidades">Amenidades</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <a class="header-cta" href="https://wa.me/18093502370?text=Hola%20Germ%C3%A1n%2C%20le%20escribo%20con%20inter%C3%A9s%20en%20el%20penthouse%20frente%20al%20mar%20en%20Punta%20Cana.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A8.8 8.8 0 0 0 3.6 16.5L2.7 21l4.6-1.2a8.8 8.8 0 0 0 12.3-8A8.8 8.8 0 0 0 17.6 6.3zM12 19.3c-1.4 0-2.7-.4-3.9-1.1l-.3-.2-2.7.7.7-2.6-.2-.3A7.3 7.3 0 1 1 12 19.3z"/></svg>
+      WhatsApp
+    </a>
+  </nav>
+</header>
+
+<a class="float-wa" href="https://wa.me/18093502370?text=Hola%20Germ%C3%A1n%2C%20le%20escribo%20con%20inter%C3%A9s%20en%20el%20penthouse%20frente%20al%20mar%20en%20Punta%20Cana.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A8.8 8.8 0 0 0 3.6 16.5L2.7 21l4.6-1.2a8.8 8.8 0 0 0 12.3-8A8.8 8.8 0 0 0 17.6 6.3zM12 19.3c-1.4 0-2.7-.4-3.9-1.1l-.3-.2-2.7.7.7-2.6-.2-.3A7.3 7.3 0 1 1 12 19.3zm4-5.5c-.2-.1-1.3-.6-1.5-.7-.2-.1-.3-.1-.5.1-.1.2-.5.7-.6.8-.1.1-.2.1-.4 0-.2-.1-.9-.3-1.7-1.1-.6-.6-1-1.3-1.2-1.5-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.2-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 3.9 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1z"/></svg>
+  <span>Agendar visita</span>
+</a>
+
+<section class="hero">
+  <img class="hero-img" src="fotos/8d11d53323e1da211b3edeed96f534f1.jpg" alt="Vista aérea del complejo frente al mar en Punta Cana">
+  <div class="hero-content wrap">
+    <h1 class="reveal">Privilegio <em>frente al mar</em></h1>
+    <div class="hero-loc reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-7.4 7-12.5A7 7 0 0 0 5 9.5C5 14.6 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+      El Cortecito, Bávaro, Punta Cana
+    </div>
+
+    <div class="hero-bottom">
+      <div class="hero-price reveal">
+        <div class="l">Precio de venta</div>
+        <div class="amount">US<span class="gold-text">$</span> 1,700,000</div>
+      </div>
+      <div class="hero-actions reveal">
+        <a class="btn-wa" href="https://wa.me/18093502370?text=Hola%20Germ%C3%A1n%2C%20le%20escribo%20con%20inter%C3%A9s%20en%20el%20penthouse%20frente%20al%20mar%20en%20Punta%20Cana.%20Me%20gustar%C3%ADa%20coordinar%20una%20visita." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A8.8 8.8 0 0 0 3.6 16.5L2.7 21l4.6-1.2a8.8 8.8 0 0 0 12.3-8A8.8 8.8 0 0 0 17.6 6.3zM12 19.3c-1.4 0-2.7-.4-3.9-1.1l-.3-.2-2.7.7.7-2.6-.2-.3A7.3 7.3 0 1 1 12 19.3z"/></svg>
+          Agendar visita por WhatsApp
+        </a>
+        <a class="btn-gold" href="#contacto">Solicitar información</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="specs-strip">
+  <div class="wrap">
+    <div class="specs-row">
+      <div class="spec-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="8" rx="1"/><path d="M7 8v3M11 8v3M15 8v3M19 8v3"/></svg></div>
+        <div class="text"><div class="v">455 m²</div><div class="l">Construcción</div></div>
+      </div>
+      <div class="spec-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20v-7a2 2 0 012-2h16a2 2 0 012 2v7"/><path d="M2 17h20"/><path d="M6 11V8a2 2 0 012-2h8a2 2 0 012 2v3"/></svg></div>
+        <div class="text"><div class="v">4</div><div class="l">Habitaciones</div></div>
+      </div>
+      <div class="spec-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 011 1v2a4 4 0 01-4 4H7a4 4 0 01-4-4v-3z"/><path d="M4 12V6a2 2 0 012-2h1"/><path d="M7 19v2M17 19v2"/></svg></div>
+        <div class="text"><div class="v">6</div><div class="l">Baños completos</div></div>
+      </div>
+      <div class="spec-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11"/><rect x="3" y="11" width="18" height="6" rx="2"/><circle cx="7.5" cy="17" r="1.4"/><circle cx="16.5" cy="17" r="1.4"/></svg></div>
+        <div class="text"><div class="v">2</div><div class="l">Parqueos privados</div></div>
+      </div>
+      <div class="spec-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20v-3h3v-3h3v-3h3V8h3V5h4"/></svg></div>
+        <div class="text"><div class="v">4º nivel</div><div class="l">Piso</div></div>
+      </div>
+      <div class="spec-item">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="9" rx="2"/><path d="M3 14.5h18"/><path d="M8 6c0 1-1 1-1 2s1 1 1 2M13 6c0 1-1 1-1 2s1 1 1 2M18 6c0 1-1 1-1 2s1 1 1 2"/></svg></div>
+        <div class="text"><div class="v">Jacuzzi</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="galeria" style="padding-top:44px;">
+  <div class="wrap">
+    <h2 class="reveal">Galería</h2>
+    <p class="section-sub reveal" style="font-size:14px; margin-top:8px; font-style:italic; color:var(--gold-deep);">Espacios diseñados para el lujo, la privacidad y el confort.</p>
+
+    <div class="media-grid reveal" id="media-grid">
+      <div class="media-item" data-index="0"><img src="fotos/9665fda4860a88e6a92d96315bc6b8cc.jpg" alt="Cocina con vista al mar"></div>
+      <div class="media-item" data-index="1"><img src="fotos/669da6335a3f23e12f9b436e1a5d026d.jpg" alt="Cocina abierta con isla de mármol"></div>
+      <div class="media-item" data-index="2"><img src="fotos/e7119957b0b7d8fffda141951a11d77b.jpg" alt="Terraza en el nivel superior con vista al mar"></div>
+      <div class="media-item" data-index="3"><img src="fotos/71dc4d6ec1f570e59a1323785aa7b7c2.jpg" alt="Jacuzzi privado en la terraza"></div>
+      <div class="media-item" data-index="4"><img src="fotos/b7d00054932bd0372ea65b83d43836fb.jpg" alt="Sala con vista al mar"></div>
+      <div class="media-item" data-index="5"><img src="fotos/76ae52a619c3d58b465b9259f6954ee5.jpg" alt="Balcón privado con vista a la piscina"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight value-section">
+  <div class="wrap">
+    <h2 class="reveal" style="color:var(--gold); font-size:clamp(28px,4vw,40px);">Beneficios de la propiedad</h2>
+    <div class="value-grid" style="margin-top:32px;">
+      <div class="value-card reveal">
+        <div class="num">01</div>
+        <h3>Primera línea de playa</h3>
+        <p>Ubicado en una de las zonas más privilegiadas de Punta Cana, con acceso directo a la arena y vistas panorámicas al mar Caribe, una ubicación que ya casi no existe en El Cortecito.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="num">02</div>
+        <h3>Diseño y amplitud</h3>
+        <p>455 m² pensados para el lujo y la privacidad: 4 habitaciones, 6 baños completos y una terraza con jacuzzi ideal para los amaneceres sobre el mar o para recibir invitados.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="num">03</div>
+        <h3>Amenidades tipo resort</h3>
+        <p>Piscinas de lujo, gimnasio totalmente equipado, restaurante beach bar, spa, kids club y seguridad 24 horas, el estilo de vida de un resort, todos los días.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="num">04</div>
+        <h3>Potencial de inversión</h3>
+        <p>Un activo premium con alta demanda en el segmento de lujo y excelente proyección de valorización, el privilegio de poseer una propiedad frente al mar, con retorno a largo plazo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="amenidades">
+  <div class="wrap">
+    <h2 class="reveal">Amenidades</h2>
+    <div class="amenity-grid">
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 17c1.5 1.5 3 1.5 4.5 0s3-1.5 4.5 0 3 1.5 4.5 0 3-1.5 4.5 0M4 12V5a1 1 0 011-1h6a1 1 0 011 1v7"/></svg></div><img src="fotos/0d8d6d4a7d818d28df44d2e1d51de48a.jpg" alt="Piscina de lujo"><span>Piscinas de lujo</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6.5 6.5l11 11M4 9l11 11 2-2L6 7z"/><path d="M15 4l5 5-2 2-5-5z"/></svg></div><img src="fotos/7bacfb80a92c2b49bcd25199e04fae2a.jpg" alt="Gimnasio equipado"><span>Gimnasio equipado</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h18M5 12V7a2 2 0 012-2h10a2 2 0 012 2v5M4 12v7h16v-7"/></svg></div><img src="fotos/079fc631aa7a83f4261f6c75dd78d3c8.jpg" alt="Beach bar frente al mar"><span>Beach bar frente al mar</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V6a4 4 0 018 0v2"/></svg></div><img src="fotos/22de2baec0b6a9f34e84c362c81232ee.jpg" alt="Lobby climatizado"><span>Lobby climatizado</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="3.2"/><path d="M4 20c0-3.5 3.5-6 8-6s8 2.5 8 6"/></svg></div><img src="fotos/2ee88b786f3fe0654735dfd7f82cc060.jpg" alt="Spa"><span>Spa</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div><img src="fotos/7909ffbbbe3d49a11ebc813069e1abbf.jpg" alt="Kids Club"><span>Kids Club</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div><img src="fotos/7b72ce3200f238e02f44040096da72bf.jpg" alt="Seguridad 24 horas"><span>Seguridad 24 horas</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 2v7a2 2 0 002 2v11M7 2v20M11 2v9M17 2c-1.5 0-3 1.5-3 4s1.5 4 3 4v10"/></svg></div><img src="fotos/f3b5939f71cfb1b2ffeb1cd4f0e96ba3.jpg" alt="Restaurante"><span>Restaurante</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div><img src="fotos/71dc4d6ec1f570e59a1323785aa7b7c2.jpg" alt="Terraza con jacuzzi privado"><span>Terraza con jacuzzi privado</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 18v-7a8 8 0 0116 0v7M2 18h20"/></svg></div><img src="fotos/a61816858cd69439d131c4eac013ff6c.jpg" alt="Vistas panorámicas al mar"><span>Vistas panorámicas al mar</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="1"/><path d="M10 7h4M10 11h4M10 15h4"/></svg></div><img src="fotos/0fa60aaa9194fb8a5670956d6a3125f7.jpg" alt="Ascensor"><span>Ascensor</span></div>
+      <div class="amenity-card has-photo"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 11l2-6h14l2 6M5 11h14v7H5z"/><circle cx="7.5" cy="16" r="1"/><circle cx="16.5" cy="16" r="1"/></svg></div><img src="fotos/4556114382ec66740c6d080aafda9dce.jpg" alt="2 parqueos techados"><span>2 parqueos techados</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" id="ubicacion" style="background:var(--sand-deep);">
+  <div class="wrap">
+    <div class="kicker reveal">Ubicación</div>
+    <h2 class="reveal">El Cortecito, Punta Cana</h2>
+    <div class="location-grid">
+      <div>
+        <p class="section-sub reveal" style="margin-top:0;">El Cortecito es una de las zonas más turísticas de Bávaro, donde predominan los alquileres de corta estancia y es común recibir viajeros con frecuencia. Es una de las áreas favoritas de los turistas, ya que allí se encuentran numerosos bares, restaurantes y acceso a la playa pública.</p>
+        <div class="map-frame reveal">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-68.4391%2C18.6826%2C-68.4191%2C18.6986&amp;layer=mapnik&amp;marker=18.6906%2C-68.4291" loading="lazy"></iframe>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Calle+Do%C3%B1a+Matilde+Piso+4+Apto+J+405,+El+Cortecito,+B%C3%A1varo,+Punta+Cana,+Hig%C3%BCey,+La+Altagracia,+Rep%C3%BAblica+Dominicana" target="_blank" rel="noopener" style="display:inline-block; margin-top:10px; font-size:12.5px; color:var(--gold-deep); font-weight:600;">Ver ruta en Google Maps →</a>
+      </div>
+      <div class="nearby-list reveal">
+        <div class="nearby-card">
+          <div><span class="d">10 minutos</span><span class="t"> - Downtown Punta Cana</span></div>
+        </div>
+        <div class="nearby-card">
+          <div><span class="d">20 minutos</span><span class="t"> - Aeropuerto Internacional de Punta Cana</span></div>
+        </div>
+        <div class="nearby-card">
+          <div><span class="d">20 minutos</span><span class="t"> - BlueMall Punta Cana</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="preguntas">
+  <div class="wrap">
+    <h2 class="reveal">Preguntas frecuentes</h2>
+    <div class="faq-list reveal" id="faq-list"></div>
+  </div>
+</section>
+
+<section class="section contact-section" id="contacto">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="kicker reveal">Contacto</div>
+        <h2 class="reveal">Conversemos sobre esta propiedad</h2>
+        <p class="section-sub reveal" style="color:rgba(237,230,216,0.72);">Completa el formulario o escríbenos directo por WhatsApp — respondemos personalmente.</p>
+        <div class="agent-card reveal">
+          <div class="agent-avatar"><img src="fotos/c8bf84200cc329f85db57681051e88db.jpg" alt="Germán Escarfullery"></div>
+          <div>
+            <div class="name">Germán Escarfullery</div>
+            <div class="role">REMAX Metropolitana</div>
+            <div class="contact-line">germane@remaxm.net · +1 809 350 2370</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="contact-form">
+          <div class="field">
+            <label for="f-name">Nombre <span style="font-weight:400; text-transform:none; letter-spacing:0;">(opcional)</span></label>
+            <input id="f-name" type="text" placeholder="Tu nombre completo">
+          </div>
+          <div class="field">
+            <label for="f-email">Correo electrónico</label>
+            <input id="f-email" type="email" placeholder="tu@correo.com" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">WhatsApp</label>
+            <input id="f-phone" type="tel" placeholder="Tu número con código de país" required>
+          </div>
+          <div class="field">
+            <label for="f-msg">Mensaje <span style="font-weight:400; text-transform:none; letter-spacing:0;">(opcional)</span></label>
+            <textarea id="f-msg" placeholder="Cuéntanos qué te interesa saber sobre el penthouse..."></textarea>
+          </div>
+          <button type="submit" class="submit-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A8.8 8.8 0 0 0 3.6 16.5L2.7 21l4.6-1.2a8.8 8.8 0 0 0 12.3-8A8.8 8.8 0 0 0 17.6 6.3zM12 19.3c-1.4 0-2.7-.4-3.9-1.1l-.3-.2-2.7.7.7-2.6-.2-.3A7.3 7.3 0 1 1 12 19.3z"/></svg>
+            Agendar visita por WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">
+        <div class="brand-mark"><img src="fotos/cceaad8d799bd35f58188641d9c952f5.png" alt="Logo"></div>
+        <div><b style="color:var(--sand)">REMAX</b></div>
+      </div>
+      <div class="foot-note">Germán Escarfullery · Agente inmobiliario</div>
+    </div>
+    <div class="foot-contact">
+      germane@remaxm.net<br>
+      +1 809 350 2370<br>
+      El Cortecito, Punta Cana, República Dominicana
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+  <div class="lightbox-content" id="lightbox-content"></div>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+</div>
+
+<script>
+// ---- reveal on scroll ----
+const els = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+}, {threshold:0.12});
+els.forEach(el=>io.observe(el));
+
+// ---- media data for lightbox ----
+const MEDIA = [
+  {type:'image', src: document.querySelector('[data-index="0"] img').src, alt:'Cocina con vista al mar'},
+  {type:'image', src: document.querySelector('[data-index="1"] img').src, alt:'Cocina abierta con isla de mármol'},
+  {type:'image', src: document.querySelector('[data-index="2"] img').src, alt:'Terraza con vista al mar'},
+  {type:'image', src: document.querySelector('[data-index="3"] img').src, alt:'Jacuzzi privado'},
+  {type:'image', src: document.querySelector('[data-index="4"] img').src, alt:'Sala con vista al mar'},
+  {type:'image', src: document.querySelector('[data-index="5"] img').src, alt:'Balcón privado'},
+];
+
+let currentIndex = 0;
+const lightbox = document.getElementById('lightbox');
+const lbContent = document.getElementById('lightbox-content');
+
+function showMedia(i){
+  currentIndex = (i + MEDIA.length) % MEDIA.length;
+  const m = MEDIA[currentIndex];
+  lbContent.innerHTML = m.type === 'video'
+    ? `<video src="${m.src}" controls autoplay playsinline></video>`
+    : `<img src="${m.src}" alt="${m.alt}">`;
+}
+
+document.querySelectorAll('.media-item').forEach(item=>{
+  item.addEventListener('click', ()=>{
+    const idx = parseInt(item.dataset.index);
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    showMedia(idx);
+  });
+});
+
+document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.getElementById('lightbox-prev').addEventListener('click', ()=>showMedia(currentIndex-1));
+document.getElementById('lightbox-next').addEventListener('click', ()=>showMedia(currentIndex+1));
+lightbox.addEventListener('click', (e)=>{ if(e.target===lightbox) closeLightbox(); });
+document.addEventListener('keydown', (e)=>{
+  if(!lightbox.classList.contains('open')) return;
+  if(e.key==='Escape') closeLightbox();
+  if(e.key==='ArrowLeft') showMedia(currentIndex-1);
+  if(e.key==='ArrowRight') showMedia(currentIndex+1);
+});
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  lbContent.innerHTML = '';
+  document.body.style.overflow = '';
+}
+
+// ---- FAQ ----
+const FAQS = [
+  {q:'¿Cuál es la cuota mensual de mantenimiento y qué incluye?', a:'US$450 mensuales. Incluye la limpieza y mantenimiento de las áreas comunes, seguridad 24 horas, suministro de agua y recogida de basura.'},
+  {q:'¿Trabajan con bancos para el financiamiento de la propiedad?', a:'Sí. Contamos con alianzas con los principales bancos del país, por lo que podemos acompañarte y ayudarte con el proceso de precalificación bancaria para facilitar la adquisición de la propiedad.'},
+  {q:'¿La propiedad está bajo CONFOTUR?', a:'Sí. El penthouse está acogido a la Ley de CONFOTUR, lo que permite disfrutar de una exención del impuesto sobre la propiedad (IPI) por 15 años, así como de la exención del impuesto de transferencia inmobiliaria.'},
+  {q:'¿Está permitido alquilar el penthouse a corto plazo por plataformas como Airbnb?', a:'Sí. Se permite la renta a corto plazo y la propiedad puede ser publicada en las principales plataformas de alquiler vacacional.'},
+  {q:'¿Qué incluye el penthouse en cuanto a equipamiento y amenidades?', a:'El penthouse incluye horno multifuncional, campana extractora, área de BBQ y jacuzzi, ofreciendo mayor comodidad y una experiencia ideal tanto para uso personal como para inversión.'},
+];
+
+const faqList = document.getElementById('faq-list');
+FAQS.forEach((item, i)=>{
+  const div = document.createElement('div');
+  div.className = 'faq-item';
+  div.innerHTML = `
+    <button class="faq-q"><span>${item.q}</span><span class="plus"></span></button>
+    <div class="faq-a"><p>${item.a}</p></div>
+  `;
+  faqList.appendChild(div);
+  div.querySelector('.faq-q').addEventListener('click', ()=>{
+    div.classList.toggle('open');
+  });
+});
+
+// ---- contact form -> WhatsApp ----
+const WA_NUMBER = '18093502370';
+document.getElementById('contact-form').addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const name = document.getElementById('f-name').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const phone = document.getElementById('f-phone').value.trim();
+  const msg = document.getElementById('f-msg').value.trim();
+  let text = `Hola Germán, le escribo con interés en el penthouse frente al mar en Punta Cana.\n`;
+  if(name) text += `Nombre: ${name}\n`;
+  text += `Correo: ${email}\nWhatsApp: ${phone}`;
+  if(msg) text += `\nMensaje: ${msg}`;
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+});
+</script>
+
+</body>
+</html>

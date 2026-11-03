@@ -1,0 +1,6 @@
+PÁGINAS DEL TEAM GERMÁN (RE/MAX)
+Cada carpeta es una página completa: index.html + fotos/ + LEEME.txt
+- penthouse-punta-cana/
+- view-macao-iii/
+- pagina-personal-german-escarfullery/
+La página Proyectos TGE (128 proyectos) está en ../pagina/ y ../paquete/.

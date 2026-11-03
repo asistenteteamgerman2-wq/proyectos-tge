@@ -1,0 +1,14 @@
+Landing de View Macao III (Macao, Punta Cana): 2 hab. desde US$129,900 y 3 hab. desde US$174,900.
+Hecho por Robert Cavallo · Team Germanescarfullery · 3 nov 2026
+
+QUÉ HAY
+- index.html: la página. Es liviana (~40 KB), se puede leer entera. Las fotos se cargan desde la carpeta fotos/.
+- fotos/: 6 fotos. El nombre de cada foto es su código de 32 letras y así aparece dentro de index.html (fotos/<código>.jpg).
+- fotos.json: la lista de fotos en el orden en que aparecen en la página.
+- view-macao-iii-completa.html: la misma página en un solo archivo con las fotos adentro (grande; solo para abrirla o publicarla tal cual).
+
+CÓMO PUBLICARLA
+- Copia index.html y la carpeta fotos/ juntos (la página busca las fotos en fotos/).
+- O usa las fotos desde GitHub:
+  https://raw.githubusercontent.com/asistenteteamgerman2-wq/proyectos-tge/main/paginas/view-macao-iii/fotos/<código>.jpg
+- No cambies textos, precios ni números de WhatsApp.
