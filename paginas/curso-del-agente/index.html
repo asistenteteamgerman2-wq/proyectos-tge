@@ -1,119 +1,87 @@
 <!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Curso del Agente TGE</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="description" content="7 lecciones en video para agentes del Team Germanescarfullery · RE/MAX">
+<meta property="og:title" content="Curso del Agente TGE"><meta property="og:description" content="7 lecciones en video para agentes del Team Germanescarfullery · RE/MAX">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;600&display=swap">
 <style>
-/* Layout: short header with progress → seven lesson rows in order: number, title, one line, video button, done tick. */
-:root{
-  --navy:#1F2329; --red:#E0313F; --accent:#E0313F; --accent-soft:#FDECEE; --blue:#2F5BEA; --blue-soft:#EAF0FE;
-  --bg:#F7F8FB; --surface:#FFFFFF; --fg:#1A1D24; --muted:#646A76; --line:#E6E8EE; --chip:#F1F2F6;
-  --ok:#1F9254; --ok-soft:#EAF7EF;
-  --display:"Lora", Georgia, serif;
-  --body:"Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#121419; --surface:#1A1D24; --fg:#ECEEF2; --muted:#9BA1AD; --line:#2A2E37; --chip:#242832; --ok:#4FCB86; --ok-soft:#15261D; --red:#FF5A66; --accent:#FF5A66; --accent-soft:#3A1C21; --blue:#7A9BFF; --blue-soft:#1C2540; --navy:#ECEEF2; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#121419; --surface:#1A1D24; --fg:#ECEEF2; --muted:#9BA1AD; --line:#2A2E37; --chip:#242832; --ok:#4FCB86; --ok-soft:#15261D; --red:#FF5A66; --accent:#FF5A66; --accent-soft:#3A1C21; --blue:#7A9BFF; --blue-soft:#1C2540; --navy:#ECEEF2; color-scheme:dark}
+:root{--accent:#E0313F;--blue:#2F5BEA;--blue-soft:#EAF0FE;--bg:#F7F8FB;--surface:#fff;--fg:#1A1D24;--muted:#646A76;--line:#E6E8EE;--ok:#1F9254;--ok-soft:#EAF7EF}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
-:focus-visible{outline:2px solid var(--red);outline-offset:3px}
-.num{font-variant-numeric:tabular-nums}
-.wrap{max-width:680px;margin:0 auto;padding-block:48px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:28px}
-
-header{display:flex;flex-direction:column;gap:8px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:40px max(16px,env(safe-area-inset-right)) 64px max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;gap:24px}
 .brand{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600}
-h1{font-family:var(--display);font-weight:600;font-size:clamp(30px,6vw,40px);line-height:1.1;margin:0}
+h1{font-family:Lora,Georgia,serif;font-weight:600;font-size:clamp(30px,6vw,40px);line-height:1.1;margin:6px 0}
 header p{margin:0;color:var(--muted)}
-.meter{display:flex;align-items:center;gap:12px;margin-top:8px}
-.bar{flex:1;height:6px;border-radius:999px;background:var(--line);overflow:hidden}
-.bar span{display:block;height:100%;width:0;background:var(--red);border-radius:999px;transition:width .4s ease}
-.meter b{font-size:13px;font-weight:600;white-space:nowrap}
-
-ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
-li{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;gap:16px;align-items:center}
-li.done{background:var(--ok-soft)}
-.n{flex:none;width:38px;height:38px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;font-weight:600;font-size:14px}
-li.done .n{background:var(--ok);color:var(--surface)}
-li.done{border-color:transparent}
-li.done .txt h2{color:var(--muted)}
+.meter{display:flex;align-items:center;gap:12px;margin-top:14px}
+.bar{flex:1;height:8px;border-radius:999px;background:var(--line);overflow:hidden}
+.bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--accent));border-radius:999px;transition:width .4s}
+.meter b{font-size:13px;white-space:nowrap}
+ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+li{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px}
+li.done{border-color:#BFE3CC}
+.hd{display:flex;gap:14px;align-items:center}
+.n{flex:none;width:38px;height:38px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;font-weight:600}
+li.done .n{background:var(--ok);color:#fff}
 .txt{flex:1;min-width:0}
-.txt h2{font-size:16px;font-weight:600;line-height:1.3;margin:0}
+h2{font-size:16px;font-weight:600;line-height:1.3;margin:0}
 .txt p{margin:2px 0 0;font-size:14px;color:var(--muted)}
-.acts{display:flex;align-items:center;gap:8px;flex:none}
-.play{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;border:0;text-decoration:none;border-radius:999px;padding:9px 16px;font-size:14px;font-weight:500;white-space:nowrap;box-shadow:0 4px 12px -4px rgba(224,49,63,.5)}
-.play:hover{filter:brightness(1.06)}
-li.done .play{background:var(--surface);color:var(--fg);box-shadow:none;border:1px solid var(--line)}
-li{transition:box-shadow .2s}
-li:hover{box-shadow:0 6px 20px -12px rgba(26,29,36,.25)}
-.tick{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:transparent;display:grid;place-items:center;cursor:pointer;color:var(--muted)}
-.tick:hover{border-color:var(--ok);color:var(--ok)}
-li.done .tick{background:var(--ok);border-color:var(--ok);color:var(--surface)}
-.bar span{background:linear-gradient(90deg,var(--blue),var(--accent))}
-.bar{height:8px}
-@media (max-width:520px){
-  li{flex-wrap:wrap;gap:12px 14px}
-  .acts{flex-basis:100%;padding-left:54px}
-  .play{flex:1;justify-content:center}
-}
-.bar span,.tick{transition:all .2s}
-@media (prefers-reduced-motion:reduce){.bar span,.tick{transition:none}}
-</style>
-</head>
-<body>
-
+.tick{flex:none;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:transparent;display:grid;place-items:center;cursor:pointer;color:var(--muted)}
+li.done .tick{background:var(--ok);border-color:var(--ok);color:#fff}
+.vid{position:relative;aspect-ratio:16/9;max-width:100%;border-radius:12px;overflow:hidden;background:#000}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt{font-size:13px;color:var(--muted);align-self:flex-start}
+footer{text-align:center;font-size:12px;color:var(--muted)}
+</style></head><body>
 <div class="wrap">
-  <header>
-    <div class="brand">Team Germanescarfullery · RE/MAX</div>
-    <h1>Curso del Agente</h1>
-    <p>7 videos en orden. Mira cada uno y márcalo cuando termines.</p>
-    <div class="meter"><div class="bar" aria-hidden="true"><span id="fill"></span></div><b class="num" id="count">0 de 7</b></div>
-  </header>
-  <ol id="list"></ol>
+<header><div class="brand">Team Germanescarfullery · RE/MAX</div><h1>Curso del Agente</h1>
+<p>7 videos en orden. Míralos aquí mismo y marca cada uno cuando termines.</p>
+<div class="meter"><div class="bar"><span id="fill"></span></div><b id="count">0 de 7</b></div></header>
+<ol id="list"><li id="l1" data-i="0">
+  <div class="hd"><span class="n">1</span><div class="txt"><h2>Plan de negocio: estableciendo mis objetivos</h2><p>Convierte tu meta de ingresos en metas semanales.</p></div>
+  <button class="tick" type="button" data-i="0" aria-label="Marcar como visto: Plan de negocio: estableciendo mis objetivos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+  <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/YqWq34IWW4A?rel=0" title="Plan de negocio: estableciendo mis objetivos" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <a class="yt" href="https://youtu.be/YqWq34IWW4A" target="_blank" rel="noopener">¿No carga? Ábrelo en YouTube</a>
+</li><li id="l2" data-i="1">
+  <div class="hd"><span class="n">2</span><div class="txt"><h2>¿Cómo captar propiedades?</h2><p>Consigue propiedades exclusivas y con buen precio.</p></div>
+  <button class="tick" type="button" data-i="1" aria-label="Marcar como visto: ¿Cómo captar propiedades?"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+  <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/wzFsYiwgeW4?rel=0" title="¿Cómo captar propiedades?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <a class="yt" href="https://youtu.be/wzFsYiwgeW4" target="_blank" rel="noopener">¿No carga? Ábrelo en YouTube</a>
+</li><li id="l3" data-i="2">
+  <div class="hd"><span class="n">3</span><div class="txt"><h2>Manejo de objeciones</h2><p>Responde las dudas del cliente sin perder la venta.</p></div>
+  <button class="tick" type="button" data-i="2" aria-label="Marcar como visto: Manejo de objeciones"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+  <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/uvVVeWZpfdk?rel=0" title="Manejo de objeciones" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <a class="yt" href="https://youtu.be/uvVVeWZpfdk" target="_blank" rel="noopener">¿No carga? Ábrelo en YouTube</a>
+</li><li id="l4" data-i="3">
+  <div class="hd"><span class="n">4</span><div class="txt"><h2>Seguimiento efectivo al cliente</h2><p>Que ningún cliente se enfríe por falta de contacto.</p></div>
+  <button class="tick" type="button" data-i="3" aria-label="Marcar como visto: Seguimiento efectivo al cliente"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+  <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/2SX44QBLchE?rel=0" title="Seguimiento efectivo al cliente" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <a class="yt" href="https://youtu.be/2SX44QBLchE" target="_blank" rel="noopener">¿No carga? Ábrelo en YouTube</a>
+</li><li id="l5" data-i="4">
+  <div class="hd"><span class="n">5</span><div class="txt"><h2>Elementos básicos de tasación</h2><p>Calcula un precio realista con comparables.</p></div>
+  <button class="tick" type="button" data-i="4" aria-label="Marcar como visto: Elementos básicos de tasación"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+  <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/mxiEo5ild3I?rel=0" title="Elementos básicos de tasación" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <a class="yt" href="https://youtu.be/mxiEo5ild3I" target="_blank" rel="noopener">¿No carga? Ábrelo en YouTube</a>
+</li><li id="l6" data-i="5">
+  <div class="hd"><span class="n">6</span><div class="txt"><h2>Redes sociales: engancha con tu comunidad</h2><p>Genera confianza y contactos con tus publicaciones.</p></div>
+  <button class="tick" type="button" data-i="5" aria-label="Marcar como visto: Redes sociales: engancha con tu comunidad"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+  <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/M0hH0yX5vqg?rel=0" title="Redes sociales: engancha con tu comunidad" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <a class="yt" href="https://youtu.be/M0hH0yX5vqg" target="_blank" rel="noopener">¿No carga? Ábrelo en YouTube</a>
+</li><li id="l7" data-i="6">
+  <div class="hd"><span class="n">7</span><div class="txt"><h2>Fotografía y video</h2><p>Muestra cada propiedad de la forma en que se vende.</p></div>
+  <button class="tick" type="button" data-i="6" aria-label="Marcar como visto: Fotografía y video"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></div>
+  <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/yhEuUKLIcKM?rel=0" title="Fotografía y video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <a class="yt" href="https://youtu.be/yhEuUKLIcKM" target="_blank" rel="noopener">¿No carga? Ábrelo en YouTube</a>
+</li></ol>
+<footer>Team Germanescarfullery · RE/MAX Metropolitana</footer>
 </div>
-
 <script>
-const L = [
-  ["Plan de negocio: estableciendo mis objetivos", "Convierte tu meta de ingresos en metas semanales.", "https://youtu.be/YqWq34IWW4A"],
-  ["¿Cómo captar propiedades?", "Consigue propiedades exclusivas y con buen precio.", "https://youtu.be/wzFsYiwgeW4"],
-  ["Manejo de objeciones", "Responde las dudas del cliente sin perder la venta.", "https://youtu.be/uvVVeWZpfdk"],
-  ["Seguimiento efectivo al cliente", "Que ningún cliente se enfríe por falta de contacto.", "https://youtu.be/2SX44QBLchE"],
-  ["Elementos básicos de tasación", "Calcula un precio realista con comparables.", "https://youtu.be/mxiEo5ild3I"],
-  ["Redes sociales: engancha con tu comunidad", "Genera confianza y contactos con tus publicaciones.", "https://youtu.be/M0hH0yX5vqg"],
-  ["Fotografía y video", "Muestra cada propiedad de la forma en que se vende.", "https://youtu.be/yhEuUKLIcKM"]
-];
-const KEY = "curso-agente-tge:hechas";
-let done = new Set();
-try { done = new Set(JSON.parse(localStorage.getItem(KEY) || "[]")); } catch (e) {}
-const save = () => { try { localStorage.setItem(KEY, JSON.stringify([...done])); } catch (e) {} };
-const check = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
-const play = '<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1v10L11 6z" fill="currentColor"/></svg>';
-
-function render(){
-  document.getElementById("list").innerHTML = L.map(([t, d, v], i) => {
-    const on = done.has(i);
-    return `<li class="${on ? "done" : ""}">
-      <span class="n num">${i + 1}</span>
-      <div class="txt"><h2>${t}</h2><p>${d}</p></div>
-      <div class="acts">
-        <a class="play" href="${v}" target="_blank" rel="noopener">${play} Ver video</a>
-        <button class="tick" type="button" data-i="${i}" aria-pressed="${on}" aria-label="${on ? "Desmarcar" : "Marcar como visto"}: ${t}">${check}</button>
-      </div></li>`;
-  }).join("");
-  document.getElementById("fill").style.width = (done.size / L.length * 100) + "%";
-  document.getElementById("count").textContent = `${done.size} de ${L.length}`;
-}
-document.getElementById("list").addEventListener("click", e => {
-  const b = e.target.closest(".tick"); if (!b) return;
-  const i = +b.dataset.i; done.has(i) ? done.delete(i) : done.add(i); save(); render();
-  document.querySelector(`.tick[data-i="${i}"]`).focus();
-});
-render();
+const KEY="curso-agente-tge:hechas";let done=new Set();
+try{done=new Set(JSON.parse(localStorage.getItem(KEY)||"[]"))}catch(e){}
+const lis=[...document.querySelectorAll("#list li")];
+function paint(){lis.forEach((li,i)=>{li.classList.toggle("done",done.has(i));li.querySelector(".tick").setAttribute("aria-pressed",done.has(i))});
+document.getElementById("fill").style.width=(done.size/lis.length*100)+"%";document.getElementById("count").textContent=done.size+" de "+lis.length}
+document.getElementById("list").addEventListener("click",e=>{const b=e.target.closest(".tick");if(!b)return;const i=+b.dataset.i;done.has(i)?done.delete(i):done.add(i);try{localStorage.setItem(KEY,JSON.stringify([...done]))}catch(e){}paint()});
+paint();
 </script>
-</body>
-</html>
+</body></html>
